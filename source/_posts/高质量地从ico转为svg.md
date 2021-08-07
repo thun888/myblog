@@ -1,0 +1,62 @@
+---
+title: 高质量地从ico转为svg
+date: 2021-05-03 19:19:00
+tags: [网站,转换]
+cover: https://bu.dusays.com/2021/07/16/aeb55485924c6.png
+description: 使用CorelDRAW将图片转为矢量图
+updated: 2021-05-03 19:19:00
+---
+
+##### 效果图
+
+先上个效果图（上原下后）
+
+![favicon.ico (128×128) (thun888.xyz)](https://thun888.xyz/favicon.ico)
+
+<img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/favicon_1.svg" alt="favicon_1" style="zoom:300%;" />
+
+##### How
+
+先下载&安装[CorelDRAW](https://share.thun888.xyz/%E8%BD%AF%E4%BB%B6/CorelDRAW_X4_SP2_%E7%B2%BE%E7%AE%80%E5%A2%9E%E5%BC%BA%E7%89%88.exe)
+
+把你可爱的ico拉到浏览器里放到最大
+
+![image-20210504155034662](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210504155034662.png)
+
+贴着边缘截张图
+
+{% noteblock like this %}
+{% image https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210504155240.png %}
+{% endnoteblock %}
+
+选择 文件---导入---（刚刚截的图）
+
+![](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210504155534.png)
+
+放置在画纸后
+
+右键---轮廓描慕---高质量图像（也可以选其他的）
+
+![](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210504155749.png)
+
+在这里你可以改变三个参数实现不同的效果
+
+![](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/dg4df56hde4568.png)
+
+点击确定后就能得到2个图像（原来的位图和生成的矢量图）
+
+![](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210504160151.png)
+
+把原图删掉后将画布调整为生成图大小（例如我这就是210*210）
+
+![](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/da21desf4s568gre46g.png)
+
+选择 文件---导出（保存为.svg)
+
+![image-20210504160641441](C:\Users\22383\AppData\Roaming\Typora\typora-user-images\image-20210504160641441.png)
+
+<img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210504161231.png" style="zoom:80%;" />
+
+##### 后记
+
+要真想更好一点可以用这个为底，重绘一遍
