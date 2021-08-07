@@ -9,12 +9,13 @@ updated: 2021-04-30 23:02:58
 之前，用着被抛弃的mi6，升级了12后并无异样，但用第三方包升到12.5后，欸，用不了了
 
 <!-- more -->
-
+{% raw %}
 {% swiper width:25 %}
 ![](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/IMG_20210424_212057.jpg)
 ![](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/Screenshot_2021-04-24-21-19-58-835_com.android.ve.jpg)
 ![](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/Screenshot_2021-04-24-21-20-21-301_com.android.ve.jpg)
 {% endswiper %}
+{% endraw %}
 
 （如图）
 
