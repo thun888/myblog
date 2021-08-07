@@ -20,10 +20,11 @@ updated: 2021-04-30 23:02:58
 （如图）
 
 显然，是新版的“照明弹”引起的
-
+{% raw %}
 {% noteblock 搜索一下可以看到有好几个 %}
 {% image https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/dsfdsvdzsggdf.jpg %}
 {% endnoteblock %}
+{% endraw %}
 
 把里面每一个权限选择了“空白通行证”的改为“始终允许”
 

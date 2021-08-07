@@ -24,11 +24,11 @@ updated: 2021-05-03 19:19:00
 ![image-20210504155034662](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210504155034662.png)
 
 贴着边缘截张图
-
+{% raw %}
 {% noteblock like this %}
 {% image https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210504155240.png %}
 {% endnoteblock %}
-
+{% endraw %}
 选择 文件---导入---（刚刚截的图）
 
 ![](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210504155534.png)
