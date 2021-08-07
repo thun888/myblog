@@ -9,7 +9,7 @@ layout: about
 居住在大陆最南端附近,普普通通的初三学生（两周一休爽爆，~~好在学校有平台可以消遣~~），
 在班里当个毫无权力的电教员（玩平台不叫我，玩坏叫我修，giao!）
 平时喜欢折腾点有关电路的小玩意儿
-
+{% raw %}
 {% tabs hobbies active:1 align:center %}
 
 <!-- tab 技能 -->
@@ -43,7 +43,7 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 {% checkbox 写个基于cf worker的██ %}
 {% checkbox 开发个在电脑上管理小米手环的工具 %}
 {% endtabs %}
-
+{% endraw %}
 ### 关于本站.
 
 #### 初衷
@@ -79,7 +79,7 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 网课时被一个朋友带偏买了.xyz，要是买top后缀一年能少花几十块大洋，~~当事人：反正就是很后悔~~
 
 #### 子站
-
+{% raw %}
 {% folding child:codeblock open:false color:yellow 子站 %}
 （仅可公开,一些测试/自用的可能会在别的地方出现，但这里绝对没有）
 
@@ -101,6 +101,7 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
   - url. =>短链
 
  {% endfolding %}
+ {% endraw %}
   ![](https://asstes.thun888.xyz/file/pic-bed/2021/07/5b73a4a33f9bb3df5e1236b4021492fe.gif)
 
 <script src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/js/Artalk.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/ArtalkJS/Artalk@master/dist/Artalk.css">

@@ -44,7 +44,7 @@ order: 3
 | admin_nicks            | obj   |                          | 管理员昵称                 |
 | admin_encrypted_emails | obj   |                          | 管理员邮箱（md5加密）      |
 | page                   | array |                          | 该页面评论信息             |
-
+{% raw %}
 {% folding child:codeblock open:false color:yellow comments %}
 
 `comments`：
@@ -65,7 +65,8 @@ order: 3
 | is_admin        | str  | true/false              | 是否为管理员                  |
 
  {% endfolding %}
-
+{% endraw %}
+{% raw %}
 {% folding child:codeblock open:false color:yellow page %}
 
 `comments`：
@@ -77,7 +78,7 @@ order: 3
 | is_close_comment | str  | true/false | 是否禁用评论       |
 
  {% endfolding %}
-
+{% endraw %}
 ### 回复评论
 
 > 请求方法:POST
