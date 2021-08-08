@@ -156,18 +156,21 @@ post_wordcount:
   min2read: true
   
  #coding: git@e.coding.net:thun888/blog-website/myblog.git
-
- #github: https://thun888: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@github.com/thun888/thun888.github.io.git,master
+ # type: git
+  #repo: 
+   # github: https://thun888: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@github.com/thun888/thun888.github.io.git,master
+ 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
-  repo: 
-    coding: 
-      url: git@e.coding.net:thun888/blog-website/myblog.git
-      token: '7d9d3280b8a1ed9b5c6b28459cc7c38d772482c1'
-      name: UeyFwoPKmu
-      email: zhengchuhe7@gmail.com
-   
+  type: cos-cdn
+  cloud: tencent
+  bucket: serverless-page-bucket-o3fbx2hf-1306723062
+  region: ap-hongkong
+  secretId: AKIDSmskMinb9RVMxHK6bqoVw6zbw0oKZXGh
+  secretKey: B5j7h03pLaYFgqjLhlY4KJ1SdX9UZNt8
+  cdnEnable: false
+  deleteExtraFiles: true
+  updatePosts: true
   branch: master
   message: "Build at {{ now('YYYY-MM-DD HH:mm:ss Z') }}"

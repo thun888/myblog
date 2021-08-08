@@ -61,8 +61,8 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 #### 部署方式
 
 我=>提交到Github=>Github Actions进行构建=>自动推送到Vercel与gh pages
-~~鉴于多方面原因，目前只走Vercel~~，走雨云CDN,如果网站受到攻击而无法打开可以访问[thun888-github-io.vercel.app](https://thun888-github-io.vercel.app/)/[blog.orzz.ml](https://blog.orzz.ml/)
-~~Coding去死~~
+~~鉴于多方面原因，目前只走Vercel~~，~~走雨云CDN~~走腾讯COS,如果网站受到攻击而无法打开可以访问[thun888-github-io.vercel.app](https://thun888-github-io.vercel.app/)/[blog.orzz.ml](https://blog.orzz.ml/)
+
 #### 所用到的资源
 
 [Github](https://github.com/) 提供博客文件存储
@@ -116,3 +116,4 @@ function load() {
 	document.body.appendChild(script)
 }
 </script>
+
