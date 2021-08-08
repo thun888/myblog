@@ -1,0 +1,29 @@
+<%
+page.robots = 'index,follow';
+if (page.menu_id == undefined) {
+  page.menu_id = 'post';
+}
+%>
+<% if (site.tags.length) { %>
+  <% page.title = __('btn.htalk'); %>
+  <% page.layout = 'htalk'; %>
+  <%- partial('_partial/main/navbar/list_post') %>
+  <div class='post-list'>
+    <h1 class='list-title h3'>随记</h1>
+  <script>document.getElementById('nav-bb').className='active'</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@1.2.0/talk.css" /> 
+<script src="https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@1.2.0/talk_user.js"></script>
+<div id="hpp_talk"></div>
+</div>
+<script>
+new hpp_talk({
+id:"hpp_talk",
+domain: "hexo.orzz.ml",
+limit: 10,//单次获取的最多条数
+start: 0,//从第几条开始
+});
+</script>
+<script src="https://cdn.jsdelivr.net/gh/thun888/tuku@latest/js/Artalk.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/ArtalkJS/Artalk@master/dist/Artalk.css">
+<script src="https://cdn.jsdelivr.net/gh/thun888/thun888.github.io@master/js/artalkconfig.min.js"></script>
+<% } %>

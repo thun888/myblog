@@ -1,0 +1,103 @@
+// list
+.post-list
+  margin: 1rem
+
+// card
+.post-list .post-card
+  display: block
+  margin: 1rem 0
+  color: var(--text-p2)
+  border-radius: $border-card
+  box-shadow: 0 2px 8px 0px rgba(0, 0, 0, 0.02)
+  trans1 box-shadow
+  overflow: hidden
+  background: var(--card)
+  .meta.cap
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    margin-bottom: 0.5rem
+    span+span
+      margin-left: 0.5rem
+    span.pin
+      line-height: 0
+      img
+        object-fit: contain
+        height: 1.5em
+.post-list .post-card:hover
+  box-shadow: 0 2px 8px 0px rgba(0, 0, 0, 0.04), 0 4px 16px 0px rgba(0, 0, 0, 0.04)
+  .preview img
+    transform: scale(1.1)
+  .excerpt .readmore
+    color: $color-link
+
+// common article
+.post-list article
+  padding: 1rem
+
+// posts
+.post-list .post-card
+  .post-cover
+    overflow: hidden
+    margin-left: -1rem
+    margin-top: -1rem
+    margin-right: -1rem
+    img
+      object-fit: cover
+      width: 100%
+      border-radius: 0
+      height: 320px
+      @media screen and (max-width: 900px)
+        height: 280px
+      @media screen and (max-width: $device-tablet)
+        height: 320px
+      @media screen and (max-width: $device-mobile)
+        height: 280px
+      @media screen and (max-width: $device-mobile-425)
+        height: 240px
+      @media screen and (max-width: $device-mobile-375)
+        height: 200px
+      &:not(.lazy)
+        trans1: transform 1s
+.post-list .post-card.post.photo .post-cover img
+  height: 400px
+  @media screen and (max-width: 900px)
+    height: 320px
+  @media screen and (max-width: $device-tablet)
+    height: 400px
+  @media screen and (max-width: $device-mobile)
+    height: 320px
+  @media screen and (max-width: $device-mobile-425)
+    height: 280px
+  @media screen and (max-width: $device-mobile-375)
+    height: 240px
+
+.post-list .post-card.post:hover
+  .post-title
+    color: $color-hover
+  .post-cover img
+    transform: scale(1.04)
+
+// wiki
+.post-list .post-card.wiki article
+  display: flex
+  flex-wrap: wrap
+  trans1 box-shadow
+  justify-content: center
+
+
+.post-list .post-card.wiki article .preview
+  display: flex
+  width: 200px
+  margin: 1rem
+  align-items: center
+  img
+    object-fit: contain
+    &:not(.lazy)
+      trans1: transform 0.75s
+.post-list .post-card.wiki article .excerpt
+  margin: 1rem
+  min-width: 220px
+  flex: 1
+  overflow: hidden
+  word-wrap: break-word

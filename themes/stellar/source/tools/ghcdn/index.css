@@ -1,0 +1,227 @@
+body
+{
+   background-color: #1D2133;
+   background-image: url(https://server-9g1wx3kb731de358-1302025169.tcloudbaseapp.com/images/background.jpg);
+   background-attachment: scroll;
+   background-position: left top;
+   background-repeat: repeat;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}
+#PageHeader
+{
+   background-color: #212121;
+   background-image: none;
+   box-sizing: border-box;
+}
+#PageHeader
+{
+   -webkit-transition: all 500ms linear 0ms;
+   -moz-transition: all 500ms linear 0ms;
+   transition: all 500ms linear 0ms;
+}
+#wb_CssMenu1
+{
+   border: 0px solid #C0C0C0;
+   background-color: transparent;
+   margin: 0;
+   text-align: right;
+}
+#wb_CssMenu1 ul
+{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   position: relative;
+   display: inline-block;
+}
+#wb_CssMenu1 li
+{
+   float: left;
+   margin: 0;
+   padding: 0px 0px 0px 0px;
+}
+#wb_CssMenu1 a
+{
+   display: block;
+   float: left;
+   color: #DCDCDC;
+   border: 0px solid #CCCCCC;
+   background-color: transparent;
+   background-image: none;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 13px;
+   font-style: normal;
+   text-decoration: none;
+   height: 40px;
+   line-height: 40px;
+   padding: 0px 5px 0px 18px;
+   vertical-align: middle;
+   text-align: center;
+}
+#wb_CssMenu1 li:hover a, #wb_CssMenu1 a:hover, #wb_CssMenu1 .active
+{
+   color: #F05F40;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #222222;
+}
+#wb_CssMenu1 li.firstmain
+{
+   padding-left: 0px;
+}
+#wb_CssMenu1 li.lastmain
+{
+   padding-right: 0px;
+}
+#wb_CssMenu1 br
+{
+   clear: both;
+   font-size: 1px;
+   height: 0;
+   line-height: 0;
+}
+#wb_CssMenu2
+{
+   border: 0px solid #C0C0C0;
+   background-color: transparent;
+   margin: 0;
+   text-align: left;
+}
+#wb_CssMenu2 ul
+{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   position: relative;
+   display: inline-block;
+}
+#wb_CssMenu2 li
+{
+   float: left;
+   margin: 0;
+   padding: 6px 4px 6px 0px;
+}
+#wb_CssMenu2 a
+{
+   display: block;
+   float: left;
+   color: #DCDCDC;
+   border: 0px solid #CCCCCC;
+   background-color: transparent;
+   background-image: none;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 13px;
+   font-style: normal;
+   text-decoration: none;
+   height: 28px;
+   line-height: 28px;
+   padding: 0px 5px 0px 5px;
+   vertical-align: middle;
+   text-align: center;
+}
+#wb_CssMenu2 li:hover a, #wb_CssMenu2 a:hover
+{
+   color: #F05F40;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #2E6DA4;
+}
+#wb_CssMenu2 li.firstmain
+{
+   padding-left: 6px;
+}
+#wb_CssMenu2 li.lastmain
+{
+   padding-right: 6px;
+}
+#wb_CssMenu2 br
+{
+   clear: both;
+   font-size: 1px;
+   height: 0;
+   line-height: 0;
+}
+#wb_Text1 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text1 div
+{
+   text-align: left;
+}
+#wb_CssMenu3
+{
+   border: 0px solid #C0C0C0;
+   background-color: transparent;
+   margin: 0;
+   text-align: left;
+}
+#wb_CssMenu3 ul
+{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   position: relative;
+   display: inline-block;
+}
+#wb_CssMenu3 li
+{
+   float: left;
+   margin: 0;
+   padding: 6px 4px 6px 0px;
+}
+#wb_CssMenu3 a
+{
+   display: block;
+   float: left;
+   color: #DCDCDC;
+   border: 0px solid #CCCCCC;
+   background-color: transparent;
+   background-image: none;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 13px;
+   font-style: normal;
+   text-decoration: none;
+   height: 28px;
+   line-height: 28px;
+   padding: 0px 5px 0px 5px;
+   vertical-align: middle;
+   text-align: center;
+}
+#wb_CssMenu3 li:hover a, #wb_CssMenu3 a:hover
+{
+   color: #F05F40;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #2E6DA4;
+}
+#wb_CssMenu3 li.firstmain
+{
+   padding-left: 6px;
+}
+#wb_CssMenu3 li.lastmain
+{
+   padding-right: 6px;
+}
+#wb_CssMenu3 br
+{
+   clear: both;
+   font-size: 1px;
+   height: 0;
+   line-height: 0;
+}
+    body{text-align:center}

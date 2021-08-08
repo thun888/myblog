@@ -1,0 +1,33 @@
+.paginator-wrap
+  margin: 1rem
+  display: flex
+  justify-content: space-between
+  align-items: center
+  font-size: 1rem
+  font-weight: 700
+  background: var(--block)
+  border-radius: $border-card
+  border: 1px solid var(--block-border)
+  overflow: hidden
+  .paginator
+    text-align: center
+  .current
+    font-family: $ff-code
+    color: var(--text-p3)
+  a.paginator
+    color: var(--text-p3)
+    padding: 1rem
+    line-height: 0
+    filter: grayscale(100%)
+    img
+      height: 1rem
+    &.disable
+      pointer-events: none
+      opacity: 0.25
+    &.prev
+      border-right: 1px solid var(--block-border)
+    &.next
+      border-left: 1px solid var(--block-border)
+  a.paginator:hover
+    background: var(--card)
+    filter: unset
