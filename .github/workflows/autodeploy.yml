@@ -56,3 +56,7 @@ jobs:
         # =====注意.deploy_git前面有个空格=====
         # 这行指令的目的是clone博客静态文件仓库，防止Hexo推送时覆盖整个静态文件仓库，而是只推送有更改的文件
         hexo d
+
+    - name: 通知
+      run: |
+        curl https://push.xuthus.cc/send/c9c54f0446e2559373adcedf05396cba?c=博客部署完成
