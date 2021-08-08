@@ -9,7 +9,7 @@ header: false
 
 ### 留言板
 
-{ % folding child:codeblock open:false color:yellow 留言/评论须知： % }
+{% folding child:codeblock open:false color:yellow 留言/评论须知： %}
 
 1. 禁止发表违法暴乱，黄赌毒（包括但不限于）的言论
 2. 本站支持邮件发送评论信息（收到回复时），在评论时请务必使用真实可用的邮箱
@@ -27,7 +27,7 @@ header: false
 10. 图床尽量避免使用自建图床（SLA有保证,不会跑路的除外）
 11. 表情存放在**去不图床**，**哔哩哔哩**，在禁用缓存下需要约0.8s，代理（eu）下需要约2.5s
 
-{ % endfolding % }
+{% endfolding %}
 
 当然我相信没人会认真看上面的文字，记住**文明上网，合理发言**就好U•ェ•*U
 

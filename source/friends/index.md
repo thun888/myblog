@@ -6,7 +6,7 @@ seo_title: 友链
 toc_title: 友链索引
 header: false
 ---
-{% raw %}
+
 {% friends %}
 
 {% noteblock color:yellow 友链更新通知 %}
@@ -14,11 +14,11 @@ header: false
 由于近期对友链系统进行了重做，原链接失效的小伙伴请按照下方交换友链的步骤进行填写。在新的友链系统中，您随时可以对自己的信息进行修改而无需等待博主更新。
 
 {% endnoteblock %}
-{% endraw %}
+
 ## 我可以交换友链吗？
 
 您的网站还应满足以下条件：
-{% raw %}
+
 {% folding child:codeblock open:false color:yellow 大部分情况您的站点都是ok的 %}
 
 - 合法的、非营利性、无商业广告
@@ -26,7 +26,7 @@ header: false
 - ~~建立时间不小于3个月~~
 
 {% endfolding %}
-{% endraw %}
+
 须知：
 
 - 内容不能违反中国大陆法律<span class="heimu">对于一些##字眼尽量少出现</span>
@@ -40,7 +40,7 @@ header: false
 - 自助添加的属于异步渲染，无 SEO ，勿刷
 
 ## 如何自助添加友链？
-{% raw %}
+
 {% timeline %}
 
 <!-- node 第一步：新建 Issue -->
@@ -69,7 +69,7 @@ screenshot: https://asstes.thun888.xyz/file/pic-bed/2021/07/a8c9547c3d14bcacc07e
 待管理员审核通过，添加了 `active` 标签后，回来刷新即可生效。
 
 {% endtimeline %}
-{% endraw %}
+
 如果您需要更新自己的友链，请直接修改 issue 内容，大约 3 分钟内生效，无需等待博客更新。如果无法修改，可以重新创建一个。
 
 <HR width="95%" color=#987cb9 SIZE=3>

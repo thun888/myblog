@@ -21,7 +21,7 @@ order: 0
 
 ![image-20210626204541312](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210626204541312.png)
 
-仓库地址{ % copy https://github.com/ArtalkJS/Artalk-API-PHP % }
+仓库地址{% copy https://github.com/ArtalkJS/Artalk-API-PHP %}
 
 ![image-20210626205315342](https://cdn.jsdelivr.net/gh/thun888/tuku@master//img/image-20210626205315342.png)
 
@@ -29,19 +29,19 @@ order: 0
 
 1.安装composer
 
-{ % copy curl -sS https://getcomposer.org/installer | php % }
+{% copy curl -sS https://getcomposer.org/installer | php %}
 
-{ % copy mv composer.phar /usr/local/bin/composer % }
+{% copy mv composer.phar /usr/local/bin/composer %}
 
 2.安装php扩展库
 
-{ % copy apt update -y % }
+{% copy apt update -y %}
 
-{ % copy apt install php7.3-gd php7.3-curl php7.3-mbstring -y % }
+{% copy apt install php7.3-gd php7.3-curl php7.3-mbstring -y %}
 
 3.安装依赖
 
-{ % copy composer install % }
+{% copy composer install %}
 
 4.下载到本地
 
@@ -66,23 +66,23 @@ order: 0
 
 ##### wsl
 
-- { % copy sudo apt install git php7.4-cli % }
+- {% copy sudo apt install git php7.4-cli %}
 
 ![image-20210712160743536](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210712160743536.png)
 
 （如果出现如图问题执行`sudo apt-get update`)
 
-- { % copy curl -sS https://getcomposer.org/installer | php % }
+- {% copy curl -sS https://getcomposer.org/installer | php %}
 
-- { % copy sudo mv composer.phar /usr/local/bin/composer % }
+- {% copy sudo mv composer.phar /usr/local/bin/composer %}
 
-- { % copy sudo apt install php7.4-gd php7.4-curl php7.4-mbstring -y % }
+- {% copy sudo apt install php7.4-gd php7.4-curl php7.4-mbstring -y %}
 
--  { % copy git clone https://github.com/ArtalkJS/Artalk-API-PHP % }
+-  {% copy git clone https://github.com/ArtalkJS/Artalk-API-PHP %}
 
-- { % copy cd Artalk-API-PHP/ % }
+- {% copy cd Artalk-API-PHP/ %}
 
-- { % copy composer install % }
+- {% copy composer install %}
 
 - 最后去它的运行目录就可以找到了（上传记得压缩）
 

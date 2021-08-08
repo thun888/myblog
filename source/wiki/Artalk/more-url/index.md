@@ -27,17 +27,17 @@ order: 6
 
 1. 极客族
 
-   { % copy https://sdn.geekzu.org/avatar/ % }
+   {% copy https://sdn.geekzu.org/avatar/ %}
    
 2. loli
-   { % copy https://gravatar.loli.net/avatar/ % }
+   {% copy https://gravatar.loli.net/avatar/ %}
    
 3. cf Workers(自搭)
-   { % copy https://gravatar.orzz.ml/avatar/ % }
+   {% copy https://gravatar.orzz.ml/avatar/ %}
    
 4. 七牛
 
-   { % copy https://dn-qiniu-avatar.qbox.me/avatar/ % }
+   {% copy https://dn-qiniu-avatar.qbox.me/avatar/ %}
 
 您也可以考虑使用[Cravatar - 中国的公共头像服务](https://cravatar.cn/)
 
