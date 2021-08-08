@@ -164,7 +164,11 @@ deploy:
   type: git
   repo: 
     github: https://thun888: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@github.com/thun888/thun888.github.io.git,master
-    coding: git@e.coding.net:thun888/blog-website/myblog.git
+    coding: 
+      url: git@e.coding.net:thun888/blog-website/myblog.git
+      token: 'd84b80cf662be9df0bdc6270e9ff8ec9947c8a00'
+      name: thun888
+      email: zhengchuhe7@gmail.com
    
   branch: master
   message: "Build at {{ now('YYYY-MM-DD HH:mm:ss Z') }}"
