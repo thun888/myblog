@@ -117,15 +117,6 @@ search:
   format: html
   limit: 10000
 
-# Deployment
-## Docs: https://hexo.io/docs/one-command-deployment
-deploy:
-  type: git
-  repo: 
-    github: https://thun888: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@github.com/thun888/thun888.github.io.git,master
-  branch: master
-  message: "Build at {{ now('YYYY-MM-DD HH:mm:ss Z') }}"
-
 # hexo-neat
 # 博文压缩
 neat_enable: true
@@ -157,3 +148,12 @@ service_worker:
   stripPrefix: public
   verbose: true
   
+
+# Deployment
+## Docs: https://hexo.io/docs/one-command-deployment
+deploy:
+  type: git
+  repo: 
+    github: https://thun888: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@github.com/thun888/thun888.github.io.git,master
+  branch: master
+  message: "Build at {{ now('YYYY-MM-DD HH:mm:ss Z') }}"
