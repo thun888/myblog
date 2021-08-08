@@ -9,7 +9,9 @@ layout: post
 
 <!-- node 8/08 -->
 1.添加简繁转换
-![](https://i0.hdslb.com/bfs/album/feabc5e51e2a47ccbd249452f4ec232eb1c8d144.gif@.webp)<br>![](https://i0.hdslb.com/bfs/album/7b6000368d0d186ae38c3f30aa0cd3bd693ecc8f.png@.webp)<br>2.修复一部分bug
+![](https://i0.hdslb.com/bfs/album/feabc5e51e2a47ccbd249452f4ec232eb1c8d144.gif@.webp)<br>![](https://i0.hdslb.com/bfs/album/7b6000368d0d186ae38c3f30aa0cd3bd693ecc8f.png@.webp)<br>2.增加字数统计
+![](https://i0.hdslb.com/bfs/album/8c585b46c04ffa6bcfa82eb2ac041db12f794400.png@.webp)<br>
+3.修复一部分bug
 <!-- node 8/01 -->
 1.改用hexo-neat插件进行加速<br>2.~~加了只喵~~
 <!-- node 7/30 -->

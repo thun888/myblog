@@ -148,12 +148,22 @@ service_worker:
   stripPrefix: public
   verbose: true
   
+# Post wordcount display settings
+# Dependencies: https://github.com/willin/hexo-wordcount
+post_wordcount:
+  item_text: true
+  wordcount: true
+  min2read: true
+  
+ #coding: git@e.coding.net:thun888/blog-website/myblog.git
 
+ 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
   repo: 
     github: https://thun888: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@github.com/thun888/thun888.github.io.git,master
+   
   branch: master
   message: "Build at {{ now('YYYY-MM-DD HH:mm:ss Z') }}"

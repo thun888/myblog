@@ -1,7 +1,7 @@
 ---
 layout: wiki
 title: 关于camc.ga
-wiki: Something
+wiki: 杂物间
 order: 1
 ---
 
