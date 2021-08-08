@@ -165,8 +165,8 @@ deploy:
   repo: 
     coding: 
       url: git@e.coding.net:thun888/blog-website/myblog.git
-      token: 'd84b80cf662be9df0bdc6270e9ff8ec9947c8a00'
-      name: thun888
+      token: '7d9d3280b8a1ed9b5c6b28459cc7c38d772482c1'
+      name: UeyFwoPKmu
       email: zhengchuhe7@gmail.com
    
   branch: master
