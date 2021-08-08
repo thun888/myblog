@@ -164,6 +164,7 @@ deploy:
   type: git
   repo: 
     github: https://thun888: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@github.com/thun888/thun888.github.io.git,master
+    coding: git@e.coding.net:thun888/blog-website/myblog.git
    
   branch: master
   message: "Build at {{ now('YYYY-MM-DD HH:mm:ss Z') }}"
