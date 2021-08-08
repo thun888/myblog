@@ -1,7 +1,7 @@
 ---
 layout: wiki
-title: camc.ga
-seo_title: 关于camc.ga
+title: 关于camc.ga
+wiki: Something
 order: 1
 ---
 
