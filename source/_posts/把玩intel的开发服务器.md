@@ -29,7 +29,7 @@ description: 如今，人们白嫖起了牙膏厂~
 
 ![image-20210808145523053](https://i0.hdslb.com/bfs/album/cda894a709a5768591ba1b476ba5378889982f10.png@.webp)
 
-在看到`Server not running`这个话前基本都500错误或者点了没反应，等半个小时就好
+在看到`Server not running`这个话前基本都500错误或者点了没反应，等半个小时就好(也可以切换网络环境等)
 
 {% swiper width:25 %}
 ![Snipaste_2021-08-07_17-49-13](https://asstes.thun888.xyz/file/pic-bed/2021/08/6cb96eb2096f29a09853a404dc1f503f.webp)
