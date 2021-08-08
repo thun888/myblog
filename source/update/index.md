@@ -5,8 +5,11 @@ description: 让我看看又更新了什么
 layout: post
 ---
 
-
 {% timeline %}
+
+<!-- node 8/08 -->
+1.添加简繁转换
+![](https://i0.hdslb.com/bfs/album/feabc5e51e2a47ccbd249452f4ec232eb1c8d144.gif@.webp)<br>![](https://i0.hdslb.com/bfs/album/7b6000368d0d186ae38c3f30aa0cd3bd693ecc8f.png@.webp)<br>2.修复一部分bug
 <!-- node 8/01 -->
 1.改用hexo-neat插件进行加速<br>2.~~加了只喵~~
 <!-- node 7/30 -->
@@ -18,7 +21,7 @@ layout: post
 <!-- node 7/20 -->
 1.添加搜索(beta)，不过主题作者曾说过要添加搜索功能，可能下个版本又要撤掉<br>2.完善了下about页面，有空继续
 <!-- node 7/18 -->
-1.artalk改为按钮加载<br>2.调整时间线样式<br>3.好吧，升级了主题时间线好了👀（Steller是我用过升级最顺的了😂）<br>4.主题版本1.0.1=>1.2.1
+1.artalk改为按钮加载<br>2.调整时间线样式<br>3.好吧，升级了主题时间线好了👀（Steller是我用过升级最顺的了😂)<br>4.主题版本1.0.1=>1.2.1
 <!-- node 7/17 -->
 1.调了时间线，主题自带的因为一些神秘原因无法使用<br>2.新增"更新历程"页面
 <!-- node 2021/5/?~2021/7/14 -->
