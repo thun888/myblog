@@ -45,7 +45,7 @@ jobs:
     - name: Generate # 生成
       run: |
         hexo clean
-        hexo generate
+        hexo g
 
     - name: 部署
       run: |
