@@ -1,14 +1,14 @@
-details
+details.folding
   display: block
   padding: 1rem
   margin: 1rem 0
   border-radius: $border-block
   font-size: $fs-14
   background: var(--theme-bg)
-  border: 1px solid var(--theme)
+  border: 1px solid var(--theme-border)
   summary
     cursor: pointer
-    padding: 1rem
+    padding: .75rem 1rem
     margin: 0 - 1rem
     border-radius: $border-block
     color: var(--text-p2)
@@ -31,9 +31,9 @@ details
         right: 1rem
 
 
-details[open]
+details.folding[open]
   >summary
-    border-bottom: 1px solid var(--theme)
+    border-bottom: 1px solid var(--theme-border)
     border-bottom-left-radius: 0
     border-bottom-right-radius: 0
     color: var(--text-p1)
@@ -54,7 +54,7 @@ details[open]
     >:last-child
       margin-bottom: 0
 
-details[child=codeblock]>div.body
+details.folding[child=codeblock]>div.body
   padding: 0
   background: transparent
   .highlight

@@ -8,7 +8,7 @@ order: 6
 #### 虚拟主机
 
 1. ~~[Gearhost](https://www.gearhost.com/)(需要梯子)~~
-2. [000webhost](https://www.000webhost.com/)(需要梯子)<span class="heimu" title="以上2个都变恶心了啊">以上2个都变恶心了啊</span>
+2. [000webhost](https://www.000webhost.com/)(需要梯子){% psw 以上2个都变恶心了啊 %}
 3. [御文云 (i.rr.rw)](https://i.rr.rw/)
 4. [Giltch](https://glitch.com/)（也能这样用[]~(￣▽￣)~*
 5. [HeloCloud](http://helocloud.ml/)

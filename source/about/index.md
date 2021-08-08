@@ -51,7 +51,7 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 
 #### 来历&历程
 
-   建于网课时光，当时是自己写(自信如我)加*.github.io，后面陆续采用Gridea+github page和wp+樱花frp的方案，最后确认使用hexo+thun888.xyz这个域名,中途换过三次主题<span class="heimu" title="你不应该知道">都是升级升炸的qwq</span>，两次评论系统,现阶段使用的Stellar和Artalk肯定是不会变的了
+   建于网课时光，当时是自己写(自信如我)加*.github.io，后面陆续采用Gridea+github page和wp+樱花frp的方案，最后确认使用hexo+thun888.xyz这个域名,中途换过三次主题{% psw <del>都是升级升炸的qwq</del> %}，两次评论系统,现阶段使用的Stellar和Artalk肯定是不会变的了
 
 #### 盈利方式
 
@@ -68,7 +68,7 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 [Github](https://github.com/) 提供博客文件存储
 [Jsdelivr](https://www.jsdelivr.com/) 提供js,css等静态资源及图片加速
 [Vercel](https://vercel.com/) 提供静态网页托管及部分对子站点的反向代理
-[cloudflare](https://www.cloudflare.com/)及[dnspod](https://dnspod.cn/)提供cdn,dns,Cloudflare是主角啦，<span class="heimu" title="你不应该知道">不过写出来就太罗嗦了</span>
+[cloudflare](https://www.cloudflare.com/)及[dnspod](https://dnspod.cn/)提供cdn,dns,Cloudflare是主角啦，{% psw 不过写出来就太罗嗦了 %}</span>
 ~~亲切可爱~~的[腾讯云]()  ~~提供~~让我买域名
 [Backblaze](https://www.backblaze.com/)&[去不图床](https://7bu.top/)&[BiliBili](https://www.bilibili.com/)提供图片储存
 [雨云](http://redirect.rainyun.cn/?ref=15366) 提供主站CDN服务
@@ -87,12 +87,12 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
   - share. =>oneindex
   - server. =>监控站
   - blog. =>Blog
-  - surl. =>文件外链<span class="heimu" title="你不应该知道">虽然速度很烂</span>
+  - surl. =>文件外链{% psw 虽然速度很烂 %}
   - ipfs. =>ipfs网盘
   - pan. =>豚云盘（自用，但开放注册，非管理员用onedrive）
   - api. => api调用接口，虽然不提供文档🧨
 - demm.tk
-  - www&@ =>二级域名分发<span class="heimu" title="你不应该知道">上年拿来水经验的竟然还有人在用</span>
+  - www&@ =>二级域名分发{% psw 上年拿来水经验的竟然还有人在用%}
 - orzz.ml(cf)
   - www&@ =>~~没用!~~重定向到.xyz
   - gravatar. =>Gravatar头像源
@@ -100,7 +100,7 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
   - url. =>短链
 
  {% endfolding %}
- 
+
   ![](https://asstes.thun888.xyz/file/pic-bed/2021/07/5b73a4a33f9bb3df5e1236b4021492fe.gif)
 
 <script src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/js/Artalk.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/ArtalkJS/Artalk@master/dist/Artalk.css">
@@ -116,4 +116,3 @@ function load() {
 	document.body.appendChild(script)
 }
 </script>
-

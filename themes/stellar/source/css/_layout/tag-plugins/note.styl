@@ -1,12 +1,11 @@
 .md .tag-plugin.note
-  $border-block = 4px
   position: relative
   margin-top: 1rem
   margin-bottom: 1rem
   padding: 0 1rem
   border-radius: $border-block
   background: var(--theme-bg)
-  border: 1px solid var(--theme)
+  border: 1px solid var(--theme-border)
   color: var(--text-p1)
   >.title
     font-size: $fs-15
@@ -41,3 +40,6 @@
     margin: 0
     >.tabs
       margin-top: .5rem
+
+.md .tag-plugin .tag-plugin.note
+  --gap-p: 1rem
