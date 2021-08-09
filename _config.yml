@@ -159,18 +159,27 @@ post_wordcount:
  # type: git
   #repo: 
    # github: https://thun888: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@github.com/thun888/thun888.github.io.git,master
- 
+ #type: cos-cdn
+ # cloud: tencent
+ # bucket: serverless-page-bucket-o3fbx2hf-1306723062
+ # region: ap-hongkong
+  #secretId: AKIDSmskMinb9RVMxHK6bqoVw6zbw0oKZXGh
+  #secretKey: B5j7h03pLaYFgqjLhlY4KJ1SdX9UZNt8
+  #cdnEnable: false
+  #deleteExtraFiles: true
+  #updatePosts: true
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: cos-cdn
-  cloud: tencent
-  bucket: serverless-page-bucket-o3fbx2hf-1306723062
-  region: ap-hongkong
-  secretId: AKIDSmskMinb9RVMxHK6bqoVw6zbw0oKZXGh
-  secretKey: B5j7h03pLaYFgqjLhlY4KJ1SdX9UZNt8
-  cdnEnable: false
-  deleteExtraFiles: true
-  updatePosts: true
+  type: git
+  repo: 
+    github: https://thun888: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@github.com/thun888/thun888.github.io.git,master
+    
   branch: master
   message: "Build at {{ now('YYYY-MM-DD HH:mm:ss Z') }}"
+
+#baidu_url_submit:
+#  count: 5 ## 比如3，代表提交最新的三个链接
+ # host: blog.thun888.xyz ## 在百度站长平台中注册的域名
+ # token: your_token ## 请注意这是您的秘钥，请不要发布在公众仓库里!
+  #path: baidu_urls.txt ## 文本文档的地址，新链接会保存在此文本文档里
