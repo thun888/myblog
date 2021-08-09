@@ -5,13 +5,13 @@ group1:
     - title: 陈YF的博客
       avatar: https://cdn.jsdelivr.net/npm/chenyfan-oss@4.0.0/512.jpg
       url: https://blog.cyfan.top
-      screenshot: https://i0.hdslb.com/bfs/album/8856051ace3c3f5e11cd6421c44c37d8a793e9b0.png@.webp
+      screenshot: https://image.thum.io/get/maxAge/12/width/700/https://blog.cyfan.top
       description: 一个在互联网角落挣扎的小小博客，很小很小
-    - title: 空山柠语
-      avatar: https://www.lemjuice.cn/00000147.png
-      url: https://www.lemjuice.cn
-      screenshot: https://i0.hdslb.com/bfs/album/9137c9d916d253461419a4fc1091b6aebba90521.png@.webp
-      description: 歲時艱，行路難。形將破，意且存，勿忘我
+    - title: Xunflash的小站
+      avatar: https://www.xunflash.top/icon.png
+      url: https://www.xunflash.top
+      screenshot: https://image.thum.io/get/maxAge/12/width/700/https://www.xunflash.top/
+      description: 真不戳，嘿嘿
 group2:
   title: 来自 GitHub 的朋友
   description: '以下友链通过 [GitHub Issue](https://github.com/thun888/friends/issues/) 提交，按 issue 最后更新时间排序：'
