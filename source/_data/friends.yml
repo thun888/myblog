@@ -7,10 +7,15 @@ group1:
       url: https://blog.cyfan.top
       screenshot: https://image.thum.io/get/maxAge/12/width/700/https://blog.cyfan.top
       description: 一个在互联网角落挣扎的小小博客，很小很小
+    - title: 空山柠语
+      avatar: https://www.lemjuice.cn/00000147.png
+      url: https://www.lemjuice.cn
+      screenshot: https://image.thum.io/get/maxAge/12/width/700/https://www.lemjuice.cn
+      description: 歲時艱，行路難。形將破，意且存，勿忘我
     - title: Xunflash的小站
       avatar: https://www.xunflash.top/icon.png
       url: https://www.xunflash.top
-      screenshot: https://image.thum.io/get/maxAge/12/width/700/https://www.xunflash.top/
+      screenshot: https://image.thum.io/get/maxAge/12/width/700/https://www.xunflash.top
       description: 真不戳，嘿嘿
 group2:
   title: 来自 GitHub 的朋友
