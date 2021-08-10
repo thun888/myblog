@@ -97,27 +97,27 @@ let eData = {
         "稽之舞": "https://i0.hdslb.com/bfs/album/452862767ab86ef77f2990e018f90b4c0db96721.gif@.webp",
         "将稽就稽": "https://i0.hdslb.com/bfs/album/e68752088c5830a4c92cf356cc3a8b818809d9cc.gif@.webp"
       }
-    },
+    },//阉割版。原版太多~
     "酷安": {
           "inputType": "image",
           "container": {
-                  "酷表面哭泣": "https://bu.dusays.com/2021/01/15/f1a49c89ec203.png",
-                  "酷表面开心": "https://i0.hdslb.com/bfs/album/e61e0abeac0201c9da1666e9d4dfd2b4ee8be51b.png@.webp",
-                  "酷滑稽": "https://bu.dusays.com/2021/01/15/bc5d47be7dd61.png",
-                  "酷流汗滑稽": "https://bu.dusays.com/2021/01/15/0677bec17b611.png",
-                  "酷受虐滑稽": "https://i0.hdslb.com/bfs/album/9622aa13f406aedf19ee4eb06c5e3086f5876c79.png@.webp",
-                  "酷cos滑稽": "https://bu.dusays.com/2021/01/15/f49a7ee4bac5b.png",
-                  "酷斗鸡眼滑稽": "https://bu.dusays.com/2021/01/15/82492e225e877.png",
-                  "酷墨镜滑稽": "https://bu.dusays.com/2021/01/15/91338ab3e04b9.png",
-                  "酷小嘴滑稽": "https://bu.dusays.com/2021/01/15/e84b0ea48383a.png",
-                  "酷doge": "https://i0.hdslb.com/bfs/album/411f3d3ffaeb94a3fc613da594ef5f34628e6778.png@.webp",
-                  "酷doge笑哭": "https://bu.dusays.com/2021/01/15/b8cc577aeab99.png",
-                  "酷doge呵斥": "https://bu.dusays.com/2021/01/15/b44cb17d1be10.png",
-                  "酷doge原谅ta": "https://bu.dusays.com/2021/01/15/3de6674a8e701.png",
-                  "酷喵喵": "https://bu.dusays.com/2021/01/15/d2ea812f4dfb5.png",
-                  "酷二哈": "https://bu.dusays.com/2021/07/16/8ed127ab83cf9.png",
+                  "酷表面哭泣": "https://i0.hdslb.com/bfs/album/1000efea0dd23e0261651e31ee647ceac0b55ab3.png@.webp",
+                  "酷表面开心": "https://i0.hdslb.com/bfs/album/ef27ce4823f35206b7303431f6b804feef19f4b6.png@.webp",
+                  "酷滑稽": "https://i0.hdslb.com/bfs/album/d243956709b1fec2f897b2349cf9cc55f271ec3d.png@.webp",
+                  "酷流汗滑稽": "https://i0.hdslb.com/bfs/album/4db7d5f3901c4ebbcbd2c604a86a2805291ddb2c.png@.webp",
+                  "酷受虐滑稽": "https://i0.hdslb.com/bfs/album/7599c9593461bfabf7ac464d7161449d11648dd2.png@.webp",
+                  "酷cos滑稽": "https://i0.hdslb.com/bfs/album/6091da5a749188285bbe91ee70f1ee3fb86f338f.png@.webp",
+                  "酷斗鸡眼滑稽": "https://i0.hdslb.com/bfs/album/73bfb3e89cb706deb99f840dea55313117a6566d.png@.webp",
+                  "酷墨镜滑稽": "https://i0.hdslb.com/bfs/album/348949887e80b2b5fb5d33afd6dd02021d02571e.png@.webp",
+                  "酷小嘴滑稽": "https://i0.hdslb.com/bfs/album/0930e4164bd416eddbf3203a4ea04a0e17c4f1af.png@.webp",
+                  "酷doge": "https://i0.hdslb.com/bfs/album/07a647d99ce041a072cb59dc90add1c55d30535c.png@.webp",
+                  "酷doge笑哭": "https://i0.hdslb.com/bfs/album/f2604b2ca484c59a951540e716bd63b477c67d1b.png@.webp",
+                  "酷doge呵斥": "https://i0.hdslb.com/bfs/album/d652b698e8136fc4576721cf6a1d4449369b38b3.png@.webp",
+                  "酷doge原谅ta": "https://i0.hdslb.com/bfs/album/104e205417a44c25c0ace9016b6af46ed6fe501b.png@.webp",
+                  "酷喵喵": "https://i0.hdslb.com/bfs/album/043e91f948bd3f7226bf0942fe805e986eec0c83.png@.webp",
+                  "酷二哈": "https://i0.hdslb.com/bfs/album/7c6194d2829148972aad0f70b5d8b5618048c6b6.png@.webp",
       }
-    },
+    },//阉割版。原版太多~
     "咖波": {
         "inputType": "image",
         "container": {
