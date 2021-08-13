@@ -43,6 +43,8 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 {% checkbox 开发个在电脑上管理小米手环的工具 %}
 {% endtabs %}
 
+> 🧪回学校了，更新暂缓
+
 ### 关于本站.
 
 #### 初衷
@@ -116,3 +118,4 @@ function load() {
 	document.body.appendChild(script)
 }
 </script>
+
