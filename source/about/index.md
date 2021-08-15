@@ -65,12 +65,12 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 我=>提交到Github=>Github Actions进行构建=>自动推送到Vercel与gh pages
 ~~鉴于多方面原因，目前只走Vercel~~，走雨云CDN,如果网站受到攻击而无法打开可以访问[thun888-github-io.vercel.app](https://thun888-github-io.vercel.app/)/[blog.orzz.ml](https://blog.orzz.ml/)
 
-#### 所用到的资源
+#### 所用到的部分资源
 
 [Github](https://github.com/) 提供博客文件存储
 [Jsdelivr](https://www.jsdelivr.com/) 提供js,css等静态资源及图片加速
 [Vercel](https://vercel.com/) 提供静态网页托管及部分对子站点的反向代理
-[cloudflare](https://www.cloudflare.com/)及[dnspod](https://dnspod.cn/)提供cdn,dns,Cloudflare是主角啦，{% psw 不过写出来就太罗嗦了 %}</span>
+[cloudflare](https://www.cloudflare.com/)及[dnspod](https://dnspod.cn/)提供cdn,dns,Cloudflare是主角啦，{% psw 不过写出来就太罗嗦了 %}
 ~~亲切可爱~~的[腾讯云]()  ~~提供~~让我买域名
 [Backblaze](https://www.backblaze.com/)&[去不图床](https://7bu.top/)&[BiliBili](https://www.bilibili.com/)提供图片储存
 [雨云](http://redirect.rainyun.cn/?ref=15366) 提供主站CDN服务
@@ -79,20 +79,38 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 
 网课时被一个朋友带偏买了.xyz，要是买top后缀一年能少花几十块大洋，~~当事人：反正就是很后悔~~
 
+#### 捐赠
+
+我并不认为我目前能接受捐赠{% psw 太菜了 %}，不过如果您愿意也可以请我喝杯奶茶{% emoji aru 50 %}
+
+{% folding child:codeblock open:false color:yellow 码 %}
+
+**Alipay**:
+
+<img src="https://asstes.thun888.xyz/file/pic-bed/2021/08/9e0898363e32055c9541873b251d8ef8.jpg" style="zoom:50%;" />
+
+**Wechat**:
+
+<img src="https://asstes.thun888.xyz/file/pic-bed/2021/08/6669b54053e15bb262467c958efe3604.png" style="zoom:50%;" />
+
+**Xmr**:`466EiZQMzS8XvgZaKybFVUL3xxjuzQT6p2pz1DY9MLNiiaJ45FcCnxU4jW8cyi4SDYPCz3oZWrS3EisaZFqaiXbL21HCsT6`
+
+{% endfolding %}
+
 #### 子站
 
 {% folding child:codeblock open:false color:yellow 子站 %}
-（仅可公开,一些测试/自用的可能会在别的地方出现，但这里绝对没有）
+（仅可公开,一些测试/自用的可能会在别的地方出现，但这里绝对没有）{% emoji aru 31 %}
 
 - thun888.xyz
-  - @ =>初定html5up写导航页，再过一年考完中考动工
-  - share. =>oneindex
+  - @ =>初定html5up写导航页，找个时间写了
+  - share. =>Onemanager
   - server. =>监控站
   - blog. =>Blog
-  - surl. =>文件外链{% psw 虽然速度很烂 %}
+  - files. =>文件外链{% psw 虽然速度很烂 %}
   - ipfs. =>ipfs网盘
   - pan. =>豚云盘（自用，但开放注册，非管理员用onedrive）
-  - api. => api调用接口，虽然不提供文档🧨
+  - api. => api调用接口，虽然不提供文档{% emoji aru 18 %}
 - demm.tk
   - www&@ =>二级域名分发{% psw 上年拿来水经验的竟然还有人在用%}
 - orzz.ml(cf)
@@ -118,4 +136,3 @@ function load() {
 	document.body.appendChild(script)
 }
 </script>
-
