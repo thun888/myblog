@@ -154,7 +154,7 @@ document.getElementById("fileup").innerHTML='(￣︶￣)↗[<a href="https://ipf
     pageKey: location.pathname,
     serverUrl: 'https://artalk.thun888.xyz/',
     readMore: { // 阅读更多配置
-      pageSize: 10, // 每次请求获取评论数
+      pageSize: 15, // 每次请求获取评论数
       autoLoad: true // 滚动到底部自动加载
     }
   });
