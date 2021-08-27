@@ -82,11 +82,11 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 
 **粗体**为`blog.thun888.xyz`所依赖的必须资源
 
-- **主站**: <span class="tag-plugin emoji"><img src="https://blog.thun888.xyz/img/satus.png"></span>
-- **Jsdelivr**:<span class="tag-plugin emoji"><img src="https://cdn.jsdelivr.net/gh/thun888/thun888.github.io@master/img/satus.png"></span>
-- 评论后端:<span class="tag-plugin emoji"><img src="https://artalk.thun888.xyz/satus.png"></span>
-- Backblaze:<span class="tag-plugin emoji"><img src="https://asstes.thun888.xyz/file/pic-bed/2021/08/24a2870127c3be646bf6acdd80dcc83f.png"></span>
-- Vercel镜像:<span class="tag-plugin emoji"><img src="https://thun888-github-io.vercel.app/img/satus.png"></span>
+- **主站**: <span style="height:1.5em" class="tag-plugin emoji"><img src="https://blog.thun888.xyz/img/satus.png"></span>
+- **Jsdelivr**:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://cdn.jsdelivr.net/gh/thun888/thun888.github.io@master/img/satus.png"></span>
+- 评论后端:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://artalk.thun888.xyz/satus.png"></span>
+- Backblaze:<span style="height:1.5em" class="tag-plugin emoji"><img src="https://asstes.thun888.xyz/file/pic-bed/2021/08/24a2870127c3be646bf6acdd80dcc83f.png"></span>
+- Vercel镜像:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://thun888-github-io.vercel.app/img/satus.png"></span>
 
 #### 捐赠
 
