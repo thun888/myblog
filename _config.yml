@@ -101,6 +101,7 @@ ignore:
 theme: stellar
 
 
+
 # 谷歌、百度站点地图生成
 Plugins:
 - hexo-generator-baidu-sitemap
