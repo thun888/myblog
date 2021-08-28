@@ -151,7 +151,7 @@ footer:
        - '[归档](/archives)'
      '项目':
        - '[Artalk-Doc](/wiki/Artalk)'
-       - '[杂物]/wiki/杂物间)'
+       - '[杂物](/wiki/杂物间)'
      '社交':
        - '[友链](/friends)'
        - '[留言板](/say)'
@@ -244,7 +244,3 @@ default:
 
 sitemap:
  path: sitemap.xml
-
-pretty_urls:
-  trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: false # Set to false to remove trailing '.html' from permalinks
