@@ -138,15 +138,13 @@ what?!啊没错，你还要编辑配置文件
 
 ![image-20210708213916199](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210708213916199.png)
 
+> 用户名和邮箱很重要~
+
 ![](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210708213519073.png)
 
 ![image-20210708213725447](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210708213725447.png)
 
 ![image-20210708214938127](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210708214938127.png)
-
-这里为了演示我改了一点
-
-![image-20210708215101895](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210708215101895.png)
 
 保存后重命名为`Config.php`
 

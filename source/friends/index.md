@@ -64,6 +64,7 @@ title: thun888's Blog
 avatar: https://asstes.thun888.xyz/file/pic-bed/2021/07/3c09905fa076d1e9c2a0f216d68bc47f.webp
 url: https://blog.thun888.xyz
 screenshot: https://asstes.thun888.xyz/file/pic-bed/2021/07/a8c9547c3d14bcacc07eeae683a5f4a5.webp
+description: 心如止水，不可暴躁（￣︶￣）
 {% endcodeblock %}
 
 待管理员审核通过，添加了 `active` 标签后，回来刷新即可生效。
