@@ -62,15 +62,14 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 #### 部署方式
 
 我=>提交到Github=>Github Actions进行构建=>自动推送到Vercel与gh pages
-~~鉴于多方面原因，目前只走Vercel~~，走雨云CDN,如果网站受到攻击而无法打开可以访问[thun888-github-io.vercel.app](https://thun888-github-io.vercel.app/)/[blog.orzz.ml](https://blog.orzz.ml/)
+~~鉴于多方面原因，目前只走Vercel~~，走雨云CDN,如果网站受到攻击而无法打开可以访问[Vercel](https://thun888-github-io.vercel.app/)/[Cloudflare](https://cfblog.thun888.xyz/)镜像
 
 #### 所用到的部分资源
 
 [Github](https://github.com/) 提供博客文件存储
 [Jsdelivr](https://www.jsdelivr.com/) 提供js,css等静态资源及图片加速
 [Vercel](https://vercel.com/) 提供静态网页托管及部分对子站点的反向代理
-[cloudflare](https://www.cloudflare.com/)及[dnspod](https://dnspod.cn/)提供cdn,dns,Cloudflare是主角啦，{% psw 不过写出来就太罗嗦了 %}
-~~亲切可爱~~的[腾讯云]()  ~~提供~~让我买域名
+[Cloudflare](https://www.cloudflare.com/) 提供cdn,dns
 [Backblaze](https://www.backblaze.com/)&[去不图床](https://7bu.top/)&[BiliBili](https://www.bilibili.com/)提供图片储存
 [雨云](http://redirect.rainyun.cn/?ref=15366) 提供主站CDN服务
 
@@ -87,6 +86,7 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 - 评论后端:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://artalk.thun888.xyz/satus.png"></span>
 - Backblaze:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://asstes.thun888.xyz/file/pic-bed/2021/08/24a2870127c3be646bf6acdd80dcc83f.png"></span>
 - Vercel镜像:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://thun888-github-io.vercel.app/img/satus.png"></span>
+- Cloudflare镜像:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://cfblog.thun888.xyz/img/satus.png"></span>
 
 #### 捐赠
 
@@ -145,4 +145,3 @@ function load() {
 	document.body.appendChild(script)
 }
 </script>
-
