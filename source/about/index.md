@@ -43,6 +43,8 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 {% endtabs %}
 
 > 🧪回学校了，更新暂缓
+>
+> 活跃状况：<span id="activetime"></span>
 
 ### 关于本站.
 
@@ -145,3 +147,6 @@ function load() {
 	document.body.appendChild(script)
 }
 </script>
+
+<script src="https://active-get.thun888.workers.dev/active/get"></script>
+
