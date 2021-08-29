@@ -36,6 +36,7 @@ function layoutDiv() {
   } else {
     el += markdown(__('footer.cishu'));
     el += markdown(__('footer.info_not_open_source', author, using));
+    el += markdown(__('footer.beian'));
   }
   if (more) {
     if ((typeof more == 'string') && more.constructor == String) {
