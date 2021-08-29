@@ -43,7 +43,7 @@ footer:
   license: '本博客所有文章除特別聲明外，均采用 %s 許可協議，轉載請註明出處。'
   info_not_open_source: '本站由 %s 使用HEXO創建，使用 %s 主題。'
   info_open_source: '本站由 %s 創建，使用 %s 作為主題，您可以在 %s 找到本站源碼。'
-  cishu: '總PV：<span id="busuanzi_value_site_pv">∞</span>,<span id="bloggeractivetime">博主在∞分鐘前偷偷瞄了一眼博客</span>'
+  cishu: '本站總訪問量：<span id="busuanzi_value_site_pv">∞</span>,<span id="bloggeractivetime">博主在∞分鐘前偷偷瞄了一眼博客</span>'
 
 page:
   error:

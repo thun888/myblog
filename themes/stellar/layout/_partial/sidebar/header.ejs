@@ -1,7 +1,11 @@
 <%
 function layoutMenu() {
   var el = '';
-  el += '<nav class="menu dis-select">'
+  el += '<nav class="menu dis-select';
+  if (where == 'main') {
+    el += ' mobile-hidden';
+  }
+  el += '">';
   for (let id of Object.keys(theme.sidebar.menu)) {
     let item = theme.sidebar.menu[id];
     if (item == undefined || item.length == 0) {
@@ -16,31 +20,6 @@ function layoutMenu() {
     el += '</a>';
   }
   el += '</nav>';
-  return el;
-}
-function layoutMainMenu() {
-  var el = '';
-  el += partial('logo');
-  el += '<nav class="menu dis-select">'
-  for (let id of Object.keys(theme.sidebar.menu)) {
-    let item = theme.sidebar.menu[id];
-    if (item == undefined || item.length == 0) {
-      continue;
-    }
-    el += '<a class="nav-item';
-    if (id == page.menu_id) {
-      el += ' active';
-    }
-    el += '" href="' + url_for(md_link(item)) + '">';
-    el += __(md_text(item));
-    el += '</a>';
-  }
-  el += '</nav>';
-  return el;
-}
-function layoutWikiMenu() {
-  var el = '';
-  el += partial('logo');
   return el;
 }
 function layoutDiv() {
@@ -51,13 +30,16 @@ function layoutDiv() {
   }
   el += '">';
   el += partial('logo');
-  if (page.layout === 'wiki' && page.wiki) {
-    if (page.menu_id !== 'wiki') {
+  if (where != 'main') {
+    if (page.layout === 'wiki' && page.wiki) {
+      if (page.menu_id !== 'wiki') {
+        el += layoutMenu();
+      }
+    } else {
       el += layoutMenu();
     }
-  } else {
-    el += layoutMenu();
   }
+
   el += '</header>';
   return el;
 }
