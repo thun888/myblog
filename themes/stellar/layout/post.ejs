@@ -18,6 +18,22 @@ function layoutTitle() {
 <%- partial('_partial/main/navbar/breadcrumb') %>
 <article class='content md <%- post.layout %><%- scrollreveal() %>'>
 <%- layoutTitle() %>
+<span class="post-time">
+  <span class="post-meta-item-icon">
+    <i class="fa fa-calendar-o"></i>
+  </span>
+  <span class="post-meta-item-text">字数统计:</span>
+  <span class="post-count"><%= wordcount(post.content) %>字</span>
+</span>
+<span class="post-time">
+&nbsp; | &nbsp;
+  <span class="post-meta-item-icon">
+    <i class="fa fa-calendar-o"></i>
+  </span>
+  <span class="post-meta-item-text">阅读时长:</span>
+  <span class="post-count"><%= min2read(post.content) %>分</span>
+</span>
+<!-- <div class="old-message">提醒：本文最后更新于 <a><strong><%= page.updated %></strong></a> 天前，其中某些信息可能已经过时，请谨慎使用！</div><div class="expired-message">你似乎正在查看一篇很久远的文章。<br>为了你这样的访客，我特地保留了我的历史博文。不要笑话过去的我，用温柔的目光看下去吧。</div> -->
 <%- post.content %>
 <%- partial('_partial/main/article/article_footer') %>
 </article>
