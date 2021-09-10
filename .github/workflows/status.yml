@@ -16,7 +16,7 @@ jobs:
         export TZ='Asia/Shanghai'
         git clone -b gh-page https://github.com/thun888/myblog.git
         rm -rf ./myblog/.git/ 
-        mv ./myblog/index.html ./lab/`date +%Y_%m_%d_%H:%M:%S`.html
+        mv ./myblog/index.html ./myblog/`date +%Y_%m_%d_%H:%M:%S`.html
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
