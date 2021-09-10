@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Thun888</title>
+  
+  <subtitle>thun888.xyz | 心如止水，不可暴躁（￣︶￣）</subtitle>
+  <link href="https://thun888.xyz/atom.xml" rel="self"/>
+  
+  <link href="https://thun888.xyz/"/>
+  <updated>2021-08-08T13:59:03.000Z</updated>
+  <id>https://thun888.xyz/</id>
+  
+  <author>
+    <name>thun888</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>把玩intel的开发服务器</title>
+    <link href="https://thun888.xyz/2021/%E6%8A%8A%E7%8E%A9intel%E7%9A%84%E5%BC%80%E5%8F%91%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    <id>https://thun888.xyz/2021/%E6%8A%8A%E7%8E%A9intel%E7%9A%84%E5%BC%80%E5%8F%91%E6%9C%8D%E5%8A%A1%E5%99%A8/</id>
+    <published>2021-08-08T13:59:03.000Z</published>
+    <updated>2021-08-08T13:59:03.000Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="获取"><a href="#获取" class="headerlink" title="获取"></a>获取</h4><p>打开<a href="https://software.intel.com/content/www/us/en/develop/tools/devcloud.html">Intel® DevCloud</a>，有账号登录，没账号注册，</p><p><img src="https://i0.hdslb.com/bfs/album/70ab0fa7d6b78c00113e4fdf509ed90e33d8f85b.png@.webp" alt="image-20210808145043855"></p><p>拉下来找到<code>Intel® DevCloud for the Edge</code>点进去</p><p><img src="https://i0.hdslb.com/bfs/album/0efa1d202fcd93523b4b47df66f8ffd5b42fac86.png" alt="zi&#39;aiziai"></p><blockquote><p>注意邮箱</p></blockquote><p><img src="https://i0.hdslb.com/bfs/album/909555a4dfb0cca2a3b2028e679a32127540e58e.png" alt="image-20210808145254426"></p><p><img src="https://i0.hdslb.com/bfs/album/b4a0c24276c0000ba7f57ecea1a6715ea658e37b.png" alt="image-20210808145347119"></p><p><img src="https://i0.hdslb.com/bfs/album/5ffac9ce9ba7e01cfbc1e8f75e04aa06ca74c337.png@.webp" alt="image-20210808145438494"></p><p><img src="https://i0.hdslb.com/bfs/album/d7a29cac823190098cd7f7539ae0039c6de14f43.png" alt="image-20210808145505189"></p><p><img src="https://i0.hdslb.com/bfs/album/cda894a709a5768591ba1b476ba5378889982f10.png@.webp" alt="image-20210808145523053"></p><p>在看到<code>Server not running</code>这个话前基本都500错误或者点了没反应，等半个小时就好(也可以切换网络环境等)</p><div class="tag-plugin swiper-container" id="swiper-api" width="25"><div class="swiper-wrapper"><div class="swiper-slide"><img no-lazy src="https://asstes.thun888.xyz/file/pic-bed/2021/08/6cb96eb2096f29a09853a404dc1f503f.webp" alt="Snipaste_2021-08-07_17-49-13"></div><div class="swiper-slide"><img no-lazy src="https://asstes.thun888.xyz/file/pic-bed/2021/08/af67af93cf0930982014779af16e3fbb.webp" alt="Snipaste_2021-08-07_18-35-16"></div></div><div class="swiper-pagination"></div><div class="swiper-button-prev blur"></div><div class="swiper-button-next blur"></div></div><p><img src="https://i0.hdslb.com/bfs/album/64382e008a7370faf48fbe86fa9e4a7e2e0cc981.png" alt="image-20210808145540103"></p><p>打开终端</p><p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/08/481501951a14dd2878ffc24041159847.png" alt="Snipaste_2021-08-07_18-11-33"></p><p>然后就可以<del>为所欲为了</del><u>没有root</u>的啦<span class="tag-plugin emoji"><img no-lazy="" class="inline" src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji@master/aru/11.png"/></span></p><h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><p>80核，256g( ‵▽′)ψ，（共用）</p><p><img src="https://i0.hdslb.com/bfs/album/66be24a1d2241fd55f07cb6a57da3e62e10d9edd.png" alt="Snipaste_2021-08-07_18-21-17"></p><p><img src="https://i0.hdslb.com/bfs/album/96b7ae52860621cc64505f85ab157e27ba4cb645.png" alt="Snipaste_2021-08-07_18-28-07"></p><p>proot容器内测试</p><p><img src="https://i0.hdslb.com/bfs/album/2f59a92fde2ababeba2875c0e633bcf79507f2c4.png@.webp" alt="image-20210808150809533"></p><h4 id="网速"><a href="#网速" class="headerlink" title="网速"></a>网速</h4><p>Asia</p><p><img src="https://i0.hdslb.com/bfs/album/025702cd24eb25032b72130b0b2f7338a6f9887a.png@.webp" alt="image-20210808151147629"></p><p>Another</p><p><img src="https://i0.hdslb.com/bfs/album/5ab9b54d5b2e132c830cde770ff2da63e1a687ba.png@.webp" alt="image-20210808151132419"></p><p><img src="https://i0.hdslb.com/bfs/album/66f9de085b4020a6cdf9d5b92a5190011440080e.png@.webp" alt="image-20210808151201095"></p><h4 id="伪获取root权限"><a href="#伪获取root权限" class="headerlink" title="伪获取root权限"></a>伪获取root权限</h4><p>在终端内复制粘贴以下命令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wget https://share.thun888.xyz/%E8%BD%AF%E4%BB%B6/root.sh</span><br><span class="line">chmod 777 root.sh</span><br><span class="line">./root.sh</span><br></pre></td></tr></table></figure><p><img src="https://i0.hdslb.com/bfs/album/6619c36a9f57e6322a0e125d93130accc2cf34f2.png" alt="image-20210808140827984"></p><p>当$变为#就ok</p><p>不过wget,curl这些都没有，所以还要自行安装</p><p>PS:可以开新一个终端下载一些必要依赖包（deb）再离线安装</p><blockquote><p><a href="https://packages.debian.org/">https://packages.debian.org</a></p></blockquote><p><img src="https://i0.hdslb.com/bfs/album/d5cc376d6bed2cfab939795ca8aa69244f8dae21.png" alt="image-20210808143134070"></p><blockquote><p>该服务器使用时间只有10小时，但10小时后还可以再来一次<span class="tag-plugin emoji"><img no-lazy="" class="inline" src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji@master/aru/51.png"/></span></p></blockquote>]]></content>
+    
+    
+    <summary type="html">如今，人们白嫖起了牙膏厂~</summary>
+    
+    
+    
+    
+    <category term="Intel" scheme="https://thun888.xyz/tags/Intel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>解决Cloudflare Wrangler无法获取授权</title>
+    <link href="https://thun888.xyz/2021/%E8%A7%A3%E5%86%B3Cloudflare-Wrangler%E6%97%A0%E6%B3%95%E8%8E%B7%E5%8F%96%E6%8E%88%E6%9D%83/"/>
+    <id>https://thun888.xyz/2021/%E8%A7%A3%E5%86%B3Cloudflare-Wrangler%E6%97%A0%E6%B3%95%E8%8E%B7%E5%8F%96%E6%8E%88%E6%9D%83/</id>
+    <published>2021-07-29T18:18:05.000Z</published>
+    <updated>2021-07-29T18:18:05.000Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>昨天，因为要本地提交点东西到worker就装了Wrangler，没想到啊，它就这么卡着不动了（在waiting for api token那里我等了半个世纪）<img src="https://i0.hdslb.com/bfs/album/d67b6608f64d49767cbad18817e44584264bec84.png@.webp" alt="Snipaste_2021-07-26_20-36-47"></p><h4 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h4><ul><li><p>在刚刚的授权页面点击<code>API令牌</code></p><p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/07/2d2f0a22ca9bbbcc3e07c41ff6377fe0.png" alt="llll"></p></li><li><p>点<code>投放</code>–<code>copy</code></p><p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/07/a7e09112785852a85b04d6f90895fe20.png" alt="Snipaste_2021-07-26_20-38-00"></p><p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/07/a70b057f822616bcebe746fcf8f76f0c.png" alt="Snipaste_2021-07-26_20-38-15"></p></li><li><p>输入<code>wrangler config</code>,粘贴刚刚copy的token</p></li></ul><p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/07/8e9a0559716dfe77abe44b9c755c4c2d.png" alt="Snipaste_2021-07-26_20-37-15"></p><ul><li><p>回车后看到sucess就好了</p><p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/07/e9a3460d8ba6bd5c1b2593db4c7de141.png" alt="Snipaste_2021-07-26_20-38-30"></p></li></ul><h4 id="后"><a href="#后" class="headerlink" title="后"></a>后</h4><p>写这篇时为了截图换了个账号，然后它能用了~~~~</p><p><img src="https://i0.hdslb.com/bfs/album/7ddfb24e2a1ed73dba16eb7447a3e9d0ef99f4f8.png@.webp" alt="Snipaste_2021-07-29_18-26-37"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h4 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h4&gt;&lt;p&gt;昨天，因为要本地提交点东西到worker就装了Wrangler，没想到啊，它就这么卡着不动了（在waiting for api token那</summary>
+      
+    
+    
+    
+    
+    <category term="Clouddlare" scheme="https://thun888.xyz/tags/Clouddlare/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>解决VSCode安装Go扩展报错</title>
+    <link href="https://thun888.xyz/2021/%E8%A7%A3%E5%86%B3VSCode%E5%AE%89%E8%A3%85Go%E6%89%A9%E5%B1%95%E6%8A%A5%E9%94%99/"/>
+    <id>https://thun888.xyz/2021/%E8%A7%A3%E5%86%B3VSCode%E5%AE%89%E8%A3%85Go%E6%89%A9%E5%B1%95%E6%8A%A5%E9%94%99/</id>
+    <published>2021-07-26T18:37:56.000Z</published>
+    <updated>2021-07-26T18:37:56.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>不多哔哔，直入主题</p><p>先转到新建环境变量这里（图示为win11</p><p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/07/70d23cfa483b297e2dd987502cc7e683.webp"></p><p>新建2个（如图）</p><p><img src="https://i0.hdslb.com/bfs/album/705b3a231b995cd3ac7ed8dd103075fdb024fa43.png@.webp" alt="image-20210726184350014"></p><table><thead><tr><th>变量名</th><th>变量值</th></tr></thead><tbody><tr><td>GOPROXY</td><td><a href="https://goproxy.io/">https://goproxy.io</a></td></tr><tr><td>GO111MODULE</td><td>on</td></tr></tbody></table><p>点确定后<strong>重启</strong>再进VSCode里选择<code>install all</code>安装就好</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;不多哔哔，直入主题&lt;/p&gt;
+&lt;p&gt;先转到新建环境变量这里（图示为win11&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://asstes.thun888.xyz/file/pic-bed/2021/07/70d23cfa483b297e2dd987502cc7e683.w</summary>
+      
+    
+    
+    
+    
+    <category term="Go" scheme="https://thun888.xyz/tags/Go/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>为Stellar主题添加HPP的&quot;说说&quot;功能</title>
+    <link href="https://thun888.xyz/2021/%E4%B8%BAStellar%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0HPP%E8%AF%B4%E8%AF%B4%E5%8A%9F%E8%83%BD/"/>
+    <id>https://thun888.xyz/2021/%E4%B8%BAStellar%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0HPP%E8%AF%B4%E8%AF%B4%E5%8A%9F%E8%83%BD/</id>
+    <published>2021-07-15T20:09:32.000Z</published>
+    <updated>2021-07-15T20:09:32.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>HPP,即<code>HexoPlusPlus</code>,其中自带了”说说”功能，但我正在用的Stellar不支持，那就自己加吧</p><blockquote><p>挺离谱的，主题更新后这一排在手机上都会隐藏，改到下面去了</p></blockquote><h4 id="选址"><a href="#选址" class="headerlink" title="选址"></a>选址</h4><p>纵观全局，我看到了左侧栏的”文章”，加了进去，却成了这个鸟样子（橙框为我手动框出来的）</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210715185701431.png" alt="image-20210715185701431"></p><p>再品，放这里不就好了😎</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210715185830748.png" alt="image-20210715185830748"></p><h4 id="开工"><a href="#开工" class="headerlink" title="开工"></a>开工</h4><p>因为主题在不同语言时有不同显示，所以先从语言文件下手</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210715190020030.png" alt="image-20210715190020030"></p><p>找到”归档”对应的是<code>archives</code>，再用<code>everything</code>在主题文件中搜索</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210715190202563.png" alt="image-20210715190202563"></p><p>前4个是语言文件，第5个是生成归档页面的，那第6个就有很大嫌疑了，打开看看</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210715190356447.png" alt="image-20210715190356447"></p><p>啊没错，就是它，而且类名也对的上（当初直接查类名更快啊＞﹏＜）</p><p>格式就像这样</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;% if (site.posts &amp;&amp; site.posts.length &gt; 0) &#123; %&gt;</span><br><span class="line">  &lt;% if (is_archive()) &#123; %&gt;</span><br><span class="line">    &lt;a class&#x3D;&#39;active&#39; href&#x3D;&#39;&lt;%- url_for(config.archive_dir) %&gt;&#39;&gt;&lt;%- __(&#39;btn.archives&#39;) %&gt;&lt;&#x2F;a&gt;</span><br><span class="line">  &lt;% &#125; else &#123; %&gt;</span><br><span class="line">    &lt;a href&#x3D;&#39;&lt;%- url_for(config.archive_dir) %&gt;&#39;&gt;&lt;%- __(&#39;btn.archives&#39;) %&gt;&lt;&#x2F;a&gt;</span><br><span class="line">  &lt;% &#125; %&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure><p>添加上去后把所有<code>archives</code>给替换成了<code>htalk</code>,但是一运行那报错和放鞭炮没什么不同(。﹏。)</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210715203736270.png" alt="image-20210715203736270"></p><p>从代码上说，这句是判断当前是什么页面的，我翻了亿下没找到它的定义在哪个文件，就先改回posts（只是影响了按钮底色，问题不大(❁´◡`❁)）</p><p>在<code>\themes\stellar\layout</code>下新建<code>htalk.ejs</code>,从隔壁<code>tag.ejs</code>借鉴点代码过来，除了site.tags.length其他都改为htalk</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210715204525167.png" alt="image-20210715204525167"></p><p>可以看出第11行到21行都是页面中可以显示出来的部分<del>（不太严谨的样子</del></p><p>把HPP文档中的”引入部分”插到里面</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210715205153957.png" alt="image-20210715205153957"></p><p>¯_(ツ)_/¯</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210715204930656.png" alt="image-20210715204930656"></p><p>加个题目</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">class</span>=<span class="string">&#x27;list-title h3&#x27;</span>&gt;</span>说说（瞎扯）<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210715205203844.png" alt="image-20210715205203844"></p><hr><p>承 接 前 文，看着”说说”按钮选中时没有底色还是有点不爽，回到前面</p><p>把判定部分<del>都删了</del>删到只剩下一个基础的判定（虽然没用但删了就报错），给它加上<code>id=&quot;nav-bb&quot;</code>的属性</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210715210320086.png" alt="image-20210715210320086"></p><p>再在htalk.ejs中加上</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"><span class="built_in">document</span>.getElementById(<span class="string">&#x27;nav-bb&#x27;</span>).className=<span class="string">&#x27;active&#x27;</span></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure><p>( •̀ ω •́ )✧</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210715205705037.png" alt="image-20210715205705037"></p><h4 id="最终代码"><a href="#最终代码" class="headerlink" title="最终代码"></a>最终代码</h4><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210715205828548.png" alt="image-20210715205828548"></p><div class="admonition warning"><p class="admonition-title">warning</p><p>1.记得使用<code>hexo new page htalk</code>并在<code>layout</code>中改为<code>htalk</code><br>2.在博客根目录下的<code>_config.yml</code>中要指明<code>htalk_dir: htalk</code></p></div>]]></content>
+    
+    
+    <summary type="html">HPP,即`HexoPlusPlus`,其中自带了&quot;说说&quot;功能，但我正在用的Stellar不支持，那就自己加吧</summary>
+    
+    
+    
+    
+    <category term="blog" scheme="https://thun888.xyz/tags/blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>优化Oneindex的nexmoe主题的加载速度</title>
+    <link href="https://thun888.xyz/2021/%E4%BC%98%E5%8C%96Oneindex%E7%9A%84nexmoe%E4%B8%BB%E9%A2%98%E7%9A%84%E5%8A%A0%E8%BD%BD%E9%80%9F%E5%BA%A6/"/>
+    <id>https://thun888.xyz/2021/%E4%BC%98%E5%8C%96Oneindex%E7%9A%84nexmoe%E4%B8%BB%E9%A2%98%E7%9A%84%E5%8A%A0%E8%BD%BD%E9%80%9F%E5%BA%A6/</id>
+    <published>2021-06-10T14:37:59.000Z</published>
+    <updated>2021-06-10T14:37:59.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>在一些带宽小的机子上部署Oneindex又用nexmoe主题，就算套了cdn也慢（深有体会）</p><p>在学校开来给同学下电影开了十几秒愣是没加载出来<img src="https://cdn.jsdelivr.net/gh/thun888/jian@master/coolapk_emotion_42_diaoxie.png" style="zoom:25%;" /></p><h4 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h4><p>定位到网址目录下的/view/nexmoe</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210610144611.png" alt="image-20210610144610288"></p><p>将框选的（第7行的第11行）</p><p>进行替换</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210610145355.png" alt="image-20210610145355484"></p><p>第7行</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;//cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure><p>第11行</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;//cdn.jsdelivr.net/gh/thun888/tuku@master/img/mdui.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure><p>like this </p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210610145809.png" alt="image-20210610145809885"></p><h4 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h4><p>修改前</p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210610150256.png" alt="image-20210610150255933" style="zoom:67%;" /><p>修改后</p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210610150015.png" alt="image-20210610150015253" style="zoom:67%;" />]]></content>
+    
+    
+    <summary type="html">在一些带宽小的机子上部署Oneindex又用nexmoe主题，在学校开来给同学下电影开了十几秒愣是没加载出来</summary>
+    
+    
+    
+    
+    <category term="oneindex" scheme="https://thun888.xyz/tags/oneindex/"/>
+    
+    <category term="web" scheme="https://thun888.xyz/tags/web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>记一次简单的水卡破解</title>
+    <link href="https://thun888.xyz/2021/%E8%AE%B0%E4%B8%80%E6%AC%A1%E7%AE%80%E5%8D%95%E7%9A%84%E6%B0%B4%E5%8D%A1%E7%A0%B4%E8%A7%A3/"/>
+    <id>https://thun888.xyz/2021/%E8%AE%B0%E4%B8%80%E6%AC%A1%E7%AE%80%E5%8D%95%E7%9A%84%E6%B0%B4%E5%8D%A1%E7%A0%B4%E8%A7%A3/</id>
+    <published>2021-05-04T16:28:00.000Z</published>
+    <updated>2021-05-04T16:28:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>大概一个月前吧，学校新发了2份文件，一份关于空调的，一份关于水的。之前是免费的，选择突然收费了，说着节水节电（提倡节水节电没错，但之前提倡节水节电时学校没鸟过，现在股东撤资就来搞这种事情，恶臭），实际上只是想省钱<img src="https://cdn.jsdelivr.net/gh/thun888/jian@master/coolapk_emotion_81_naikezui.png" style="zoom:25%;" /></p><h5 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h5><ol><li>pn532</li><li>一台win7的电脑（在我win10上识别不出来，win7/10都有蓝屏风险）</li><li><a href="https://share.thun888.xyz/%E8%BD%AF%E4%BB%B6/pn532.zip">软件包</a></li></ol><h5 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h5><p>去学校刷了2次卡，用“上位机”扫了3次得到这3个东西</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210504170454.png"></p><p>对比可知水卡余额和这两行数据有关</p><div class="tag-plugin swiper-container" id="swiper-api" width="max"><div class="swiper-wrapper"><div class="swiper-slide"><img no-lazy src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210504170904.png"></div><div class="swiper-slide"><img no-lazy src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210504170927.png"></div><div class="swiper-slide"><img no-lazy src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210504171001.png"></div></div><div class="swiper-pagination"></div><div class="swiper-button-prev blur"></div><div class="swiper-button-next blur"></div></div><p>第一张有60.96，第二张有60.46，第三张有45.66</p><p>以第一张为例，用计算器算算</p><table><thead><tr><th>十六进制值</th><th>十进制值</th></tr></thead><tbody><tr><td>3C</td><td>60</td></tr><tr><td>60</td><td>96</td></tr></tbody></table><p>显而易见，这两位就是控制余额的（前面00用来存&gt;255时的数据）</p><p>但是，最后一位怎么看都对不上，那肯定就是校检位</p><h5 id="校检"><a href="#校检" class="headerlink" title="校检"></a>校检</h5><p>一般卡都会用<strong>按位取反、CRC冗余校验、BCC异或运算及LRC和校验计算方法</strong></p><table><thead><tr><th align="center">方法</th><th align="center">网址</th></tr></thead><tbody><tr><td align="center">按位取反</td><td align="center">建议用笔，纸外加计算器</td></tr><tr><td align="center">CRC冗余校验</td><td align="center"><a href="http://www.ip33.com/crc.html">CRC（循环冗余校验）在线计算_ip33.com</a></td></tr><tr><td align="center">BCC异或运算</td><td align="center"><a href="http://www.ip33.com/bcc.html">BCC校验(异或校验)在线计算_ip33.com</a></td></tr><tr><td align="center">LRC和校验计算</td><td align="center"><a href="http://www.ip33.com/lrc.html">LRC校验(纵向冗余校验)在线计算_ip33.com</a></td></tr><tr><td align="center">校验计算</td><td align="center">建议用笔，纸外加计算器</td></tr></tbody></table><p>这里一个一个试就可以算出来它是BCC校检</p><p>金额改成200，对应写C8 00，校检码为C8</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210504175001.png"></p><p>保存，刷入，嘿，快乐~</p><h5 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h5><p>改饭卡/买东西的就不要想了，这种的本地只有个UID,<del>（当然你可以改成别人的👀）</del></p><p>而我们学校水卡本来就是免费的（冲买东西的钱60送水卡60），所以…<img src="https://cdn.jsdelivr.net/gh/thun888/jian@master/coolapk_emotion_65_coshuaji.png" style="zoom:25%;" /><img src="https://cdn.jsdelivr.net/gh/thun888/jian@master/coolapk_emotion_65_coshuaji.png" style="zoom:25%;" /><img src="https://cdn.jsdelivr.net/gh/thun888/jian@master/coolapk_emotion_65_coshuaji.png" style="zoom:25%;" /></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;大概一个月前吧，学校新发了2份文件，一份关于空调的，一份关于水的。之前是免费的，选择突然收费了，说着节水节电（提倡节水节电没错，但之前提倡节水节电时学校没鸟过，现在股东撤资就来搞这种事情，恶臭），实际上只是想省钱&lt;img src=&quot;https://cdn.jsdelivr.</summary>
+      
+    
+    
+    
+    
+    <category term="free" scheme="https://thun888.xyz/tags/free/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>高质量地从ico转为svg</title>
+    <link href="https://thun888.xyz/2021/%E9%AB%98%E8%B4%A8%E9%87%8F%E5%9C%B0%E4%BB%8Eico%E8%BD%AC%E4%B8%BAsvg/"/>
+    <id>https://thun888.xyz/2021/%E9%AB%98%E8%B4%A8%E9%87%8F%E5%9C%B0%E4%BB%8Eico%E8%BD%AC%E4%B8%BAsvg/</id>
+    <published>2021-05-03T19:19:00.000Z</published>
+    <updated>2021-05-03T19:19:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h5><p>先上个效果图（上原下后）</p><p><img src="https://thun888.xyz/favicon.ico" alt="favicon.ico (128×128) (thun888.xyz)"></p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/favicon_1.svg" alt="favicon_1" style="zoom:300%;" /><h5 id="How"><a href="#How" class="headerlink" title="How"></a>How</h5><p>先下载&amp;安装<a href="https://share.thun888.xyz/%E8%BD%AF%E4%BB%B6/CorelDRAW_X4_SP2_%E7%B2%BE%E7%AE%80%E5%A2%9E%E5%BC%BA%E7%89%88.exe">CorelDRAW</a></p><p>把你可爱的ico拉到浏览器里放到最大</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210504155034662.png" alt="image-20210504155034662"></p><p>贴着边缘截张图</p><div class="tag-plugin note" ><div class="title"><strong>like this</strong></div><div class="body"><div class="tag-plugin image"><div class="image-bg"><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210504155240.png"/></div></div></div></div><p>选择 文件—导入—（刚刚截的图）</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210504155534.png"></p><p>放置在画纸后</p><p>右键—轮廓描慕—高质量图像（也可以选其他的）</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210504155749.png"></p><p>在这里你可以改变三个参数实现不同的效果</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/dg4df56hde4568.png"></p><p>点击确定后就能得到2个图像（原来的位图和生成的矢量图）</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210504160151.png"></p><p>把原图删掉后将画布调整为生成图大小（例如我这就是210*210）</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/da21desf4s568gre46g.png"></p><p>选择 文件—导出（保存为.svg)</p><p><img src="C:\Users\22383\AppData\Roaming\Typora\typora-user-images\image-20210504160641441.png" alt="image-20210504160641441"></p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210504161231.png" style="zoom:80%;" /><h5 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h5><p>要真想更好一点可以用这个为底，重绘一遍</p>]]></content>
+    
+    
+    <summary type="html">使用CorelDRAW将图片转为矢量图</summary>
+    
+    
+    
+    
+    <category term="网站" scheme="https://thun888.xyz/tags/%E7%BD%91%E7%AB%99/"/>
+    
+    <category term="转换" scheme="https://thun888.xyz/tags/%E8%BD%AC%E6%8D%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>解决小米手机升级MIUI12.5后无法进入谷歌商店</title>
+    <link href="https://thun888.xyz/2021/%E8%A7%A3%E5%86%B3%E5%B0%8F%E7%B1%B3%E6%89%8B%E6%9C%BA%E5%8D%87%E7%BA%A7MIUI12-5%E5%90%8E%E6%97%A0%E6%B3%95%E8%BF%9B%E5%85%A5%E8%B0%B7%E6%AD%8C%E5%95%86%E5%BA%97/"/>
+    <id>https://thun888.xyz/2021/%E8%A7%A3%E5%86%B3%E5%B0%8F%E7%B1%B3%E6%89%8B%E6%9C%BA%E5%8D%87%E7%BA%A7MIUI12-5%E5%90%8E%E6%97%A0%E6%B3%95%E8%BF%9B%E5%85%A5%E8%B0%B7%E6%AD%8C%E5%95%86%E5%BA%97/</id>
+    <published>2021-04-30T23:02:58.000Z</published>
+    <updated>2021-04-30T23:02:58.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>之前，用着被抛弃的mi6，升级了12后并无异样，但用第三方包升到12.5后，欸，用不了了</p><span id="more"></span><div class="tag-plugin swiper-container" id="swiper-api" width="25"><div class="swiper-wrapper"><div class="swiper-slide"><img no-lazy src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/IMG_20210424_212057.jpg"></div><div class="swiper-slide"><img no-lazy src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/Screenshot_2021-04-24-21-19-58-835_com.android.ve.jpg"></div><div class="swiper-slide"><img no-lazy src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/Screenshot_2021-04-24-21-20-21-301_com.android.ve.jpg"></div></div><div class="swiper-pagination"></div><div class="swiper-button-prev blur"></div><div class="swiper-button-next blur"></div></div><p>（如图）</p><p>显然，是新版的“照明弹”引起的</p><div class="tag-plugin note" ><div class="title"><strong>搜索一下可以看到有好几个</strong></div><div class="body"><div class="tag-plugin image"><div class="image-bg"><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/dsfdsvdzsggdf.jpg"/></div></div></div></div><p>把里面每一个权限选择了“空白通行证”的改为“始终允许”</p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/Screenshot_2021-04-30-23-12-52-256_com.miui.secur.jpg" style="zoom: 80%;" />]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;之前，用着被抛弃的mi6，升级了12后并无异样，但用第三方包升到12.5后，欸，用不了了&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="MIUI" scheme="https://thun888.xyz/tags/MIUI/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GitHub打不开的临时方法</title>
+    <link href="https://thun888.xyz/2021/GitHub%E6%89%93%E4%B8%8D%E5%BC%80%E7%9A%84%E4%B8%B4%E6%97%B6%E6%96%B9%E6%B3%95/"/>
+    <id>https://thun888.xyz/2021/GitHub%E6%89%93%E4%B8%8D%E5%BC%80%E7%9A%84%E4%B8%B4%E6%97%B6%E6%96%B9%E6%B3%95/</id>
+    <published>2021-04-05T14:03:30.000Z</published>
+    <updated>2021-04-05T14:03:30.000Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h4><p>先看看github在国内的访问情况</p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210405140926865.png" alt="image-20210405140926865" style="zoom:80%;" /><p>挺好的，但我有时就死活打不开/加载不出来/慢（今年开始的，估计是墙加高了），过了几个小时又可以了，甚烦也</p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210405141149140.png" alt="image-20210405141149140" style="zoom:67%;" /><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210405141843803.png" alt="image-20210405141843803"></p><p>而平时开飞机也不会一直开着，用镜像源替换也很麻烦，故有此计</p><h4 id="How"><a href="#How" class="headerlink" title="How"></a>How</h4><p>因为我平时只是在Github查东西等不需要账号登录的操作，所以把发往github.com的请求全部重定向到hub.fastgit.org这个镜像源就ok了</p><p>先安装<a href="https://share.thun888.xyz/%E8%BD%AF%E4%BB%B6/HeaderEditor.zip">Header Editor</a>下载解压安装到浏览器就好</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210405142037440.png" alt="image-20210405142037440"></p><p>点到上面的‘导出于导入’，再在‘下载规则’一栏中1填</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;share.thun888.xyz&#x2F;%E8%BD%AF%E4%BB%B6&#x2F;github%E9%87%8D%E5%AE%9A%E5%90%91.json</span><br></pre></td></tr></table></figure><p>点右边的下载箭头，再点下面的保存就好</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210405142528347.png" alt="image-20210405142528347"></p><h4 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h4><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210405142707436.png" alt="image-20210405142707436"></p><p>（当然，别用它来登账号）</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h4 id=&quot;起因&quot;&gt;&lt;a href=&quot;#起因&quot; class=&quot;headerlink&quot; title=&quot;起因&quot;&gt;&lt;/a&gt;起因&lt;/h4&gt;&lt;p&gt;先看看github在国内的访问情况&lt;/p&gt;
+&lt;img src=&quot;https://cdn.jsdelivr.net/gh/thun888/tu</summary>
+      
+    
+    
+    
+    
+    <category term="github" scheme="https://thun888.xyz/tags/github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>免费游玩《戴森球计划》</title>
+    <link href="https://thun888.xyz/2021/%E5%85%8D%E8%B4%B9%E6%B8%B8%E7%8E%A9%E3%80%8A%E6%88%B4%E6%A3%AE%E7%90%83%E8%AE%A1%E5%88%92%E3%80%8B/"/>
+    <id>https://thun888.xyz/2021/%E5%85%8D%E8%B4%B9%E6%B8%B8%E7%8E%A9%E3%80%8A%E6%88%B4%E6%A3%AE%E7%90%83%E8%AE%A1%E5%88%92%E3%80%8B/</id>
+    <published>2021-04-04T12:24:14.000Z</published>
+    <updated>2021-04-04T12:24:14.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>多说无益</p><span id="more"></span><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210404122529333.png" alt="image-20210404122529333"></p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210404122649005.png" alt="image-20210404122649005"></p><p>下载地址：<br>teambition:<a href="http://camc.ga:5218/Dyson%20Sphere%20Program/">http://camc.ga:5218/Dyson%20Sphere%20Program/</a><br>oneindex:<a href="https://share.thun888.xyz/GAMES/Dyson%20Sphere%20Program/">https://share.thun888.xyz/GAMES/Dyson%20Sphere%20Program/</a></p><p>白给了一个硬币<img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/coolapk_emotion_1020.png" alt="coolapk_emotion_1020" style="zoom:25%;" /></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;多说无益&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="free" scheme="https://thun888.xyz/tags/free/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VM虚拟机安装甜糖及配置教程</title>
+    <link href="https://thun888.xyz/2021/vm%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E7%94%9C%E7%B3%96%E5%8F%8A%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/"/>
+    <id>https://thun888.xyz/2021/vm%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E7%94%9C%E7%B3%96%E5%8F%8A%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/</id>
+    <published>2021-02-07T10:05:21.000Z</published>
+    <updated>2021-02-07T10:05:21.000Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h4><p>一开始我是在电脑上挂网心，但这玩意儿写入缓存不仅多（以至于写掉盘了），钱还给的少。而甜糖在恩山论坛上面的都是Linux下操作的，对我这docker小白很不友好，今天就总结一下最简单的方法</p><p><em>以下内容建议使用FinalShell操作</em></p><h4 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h4><ol><li>映像包（<a href="http://camc.ga:5218/ttnode">500g/100g</a>)(在我写的时候又有新版了<img src="https://cdn.jsdelivr.net/gh/thun888/jian@master/coolapk_emotion_58_dogeyuanliangta.png" style="zoom:25%;" />)</li><li>vmware</li></ol><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><ol><li>安装vmware(废话)</li><li>解压压缩包后。点击后缀为vmx的文件导入</li></ol><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210207111610777.png" alt="image-20210207111610777"></p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210207111650865.png" alt="image-20210207111650865"></p><p>然后点击网络适配器一来生成新的MAC地址（避免用uid重复）</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210207111823559.png" alt="image-20210207111823559"></p><p>点击开启虚拟机</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210207111851540.png" alt="image-20210207111851540"></p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210207112026798.png" alt="image-20210207112026798"></p><p>当然开起成功后就可以通过甜糖app绑定了</p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/Screenshot_2021-02-07-11-22-10-647_com.tt.turbo.jpg" alt="Screenshot_2021-02-07-11-22-10-647_com.tt.turbo" style="zoom:33%;" /><p>当然有时候如果你的网络环境比较复杂搜不到就要在ssh里面查看。</p><p>使用ssh连接(账号密码都是root)</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210207112118813.png" alt="image-20210207112118813"></p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210207112607312.png" alt="image-20210207112607312"></p><p>输入(进入容器)</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker <span class="built_in">exec</span> -it ttnode /bin/bash</span><br><span class="line">/usr/node/ttnode -p /mnts </span><br></pre></td></tr></table></figure><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210207112818753.png" alt="image-20210207112818753"></p><p>用<a href="http://2v.dedecms.com/">二维码生成工具</a>，把uid生成二维码再用手机扫码绑定.</p><p>如果它显示未配置网络的话就继续看吧</p>  <script>  new Artalk({    el: '#ArtalkComments', // 元素选择    placeholder: '来啊，快活啊 ( ゜- ゜)', // 占位符    noComment: '快来成为第一个评论的人吧~', // 无评论时显示    serverUrl: 'https://artalk.thun888.xyz/',    readMore: { // 阅读更多配置      pageSize: 15, // 每次请求获取评论数      autoLoad: true // 滚动到底部自动加载    }  });  </script><p>输入</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netstat -tnlp </span><br></pre></td></tr></table></figure><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210207121851667.png" alt="image-20210207121851667"></p><p>除计下出65432和22以外的三个端口后在路由器后台设置端口转发这里，以小米路由器为例</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210207122326918.png" alt="image-20210207122326918"></p><p>等上十几二十分钟甜糖后台同步后即可。</p><p>这样甜糖就做好了，但是还有很多东西也可以搞</p><p>1.自动领取星愿</p><p>保持在容器内不要退出</p><p>输入</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">apt update</span><br><span class="line">apt install wget curl sudo -y</span><br></pre></td></tr></table></figure><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://dachui.co/ttnode/node2.sh &amp;&amp; sh node2.sh</span><br></pre></td></tr></table></figure><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210207120438729.png" alt="image-20210207120438729"></p><p>输入no后回车(第2步输入y回车即可)</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210207120714379.png" alt="image-20210207120714379"></p><p>这里面还有很多功能，但我用到的只是5，有需求的可以把都搞上(除了1.2<img src="https://cdn.jsdelivr.net/gh/thun888/jian@master/coolapk_emotion_58_dogeyuanliangta.png" style="zoom:25%;" />)</p><p>选择5后回车</p><p>输入手机号码</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210207120856494.png" alt="image-20210207120856494"></p><p>输入验证码即可</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210207121007656.png" alt="image-20210207121007656"></p><p>如果还要用到微信通知就继续</p><p>在server酱的官网用登录+微信关注后取得sckey填入</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210207121247337.png" alt="image-20210207121247337"></p><p>成功以后</p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/Screenshot_2021-02-07-12-14-30-735_com.tencent.mm.jpg" alt="image-20210207121352264" style="zoom: 33%;" /><p>3.网速监控</p><p>虽然FinalShell自带网速监控，<img src="C:\Users\22383\AppData\Roaming\Typora\typora-user-images\image-20210207130000887.png" alt="image-20210207130000887" style="zoom: 67%;" />但也不总是每天都在电脑旁</p><p>输入</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apk add nload</span><br></pre></td></tr></table></figure><p>然后就可以通过nload eth0来监控了</p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210207130443674.png" alt="image-20210207130443674" style="zoom: 67%;" /><h4 id="Q-amp-A"><a href="#Q-amp-A" class="headerlink" title="Q&amp;A"></a>Q&amp;A</h4><ol><li><p>Q:明明什么都设置好了，但就是获取不了IP。</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202021-02-05%20123641.png" alt="屏幕截图 2021-02-05 123641"></p><p>A:(该问题常见于多网卡的情况)</p></li></ol><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/ada.png"/><p> 2.Q:为什么收不到验证码？</p><p>​    A:再来一次(如果你一天内已经错了14次的话，就明天再做吧)</p><p>3.Q:输指令报错 xxx not found</p><p>   A:缺啥补啥，在容器外用apk add xxx ,容器内用apt install xxx</p><p>more….</p><h4 id="所参考资料"><a href="#所参考资料" class="headerlink" title="所参考资料"></a>所参考资料</h4><p><a href="https://www.right.com.cn/forum/thread-4063192-1-2.html">[2021-01-27]让软路由来赚钱ESXi/X86上跑dock甜糖/一键导入简单无脑，小白，懒人专属</a></p><p><a href="https://www.right.com.cn/forum/thread-4052765-1-1.html">【非op套娃】x86以ubuntu为底层跑docker甜糖服务</a></p><p><a href="https://www.right.com.cn/forum/thread-4059329-1-1.html">迄今为止最小的甜糖(ttnode)docker镜像</a></p><p><a href="https://www.right.com.cn/forum/thread-4060057-1-1.html">爱快虚拟机甜糖镜像及pve,esxi等虚拟机安装轻量化Linux详细安装甜糖教程</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h4 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h4&gt;&lt;p&gt;一开始我是在电脑上挂网心，但这玩意儿写入缓存不仅多（以至于写掉盘了），钱还给的少。而甜糖在恩山论坛上面的都是Linux下操作的，对我这doc</summary>
+      
+    
+    
+    
+    
+    <category term="甜糖" scheme="https://thun888.xyz/tags/%E7%94%9C%E7%B3%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搭建Teambition网盘的目录索引</title>
+    <link href="https://thun888.xyz/2021/%E6%90%AD%E5%BB%BATeambition%E7%BD%91%E7%9B%98%E7%9A%84%E7%9B%AE%E5%BD%95%E7%B4%A2%E5%BC%95/"/>
+    <id>https://thun888.xyz/2021/%E6%90%AD%E5%BB%BATeambition%E7%BD%91%E7%9B%98%E7%9A%84%E7%9B%AE%E5%BD%95%E7%B4%A2%E5%BC%95/</id>
+    <published>2021-01-01T09:39:47.000Z</published>
+    <updated>2021-01-01T09:39:47.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>github链接：<a href="https://github.com/FlxSNX/TeambitionShare">TeambitionShare</a></p><h4 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h4><ul><li><p>Teambition账号</p></li><li><p>一台云服务器/支持PHP的虚拟主机</p></li></ul><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>这里以宝塔面板为例</p><p>先创建</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210101095911579.png" alt="image-20210101095911579"></p><p>从github把源码下载后上传然后解压</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210101100249006.png" alt="image-20210101100249006"></p><p>进到/TeambitionShare-master里把源码拉出来</p><p>gif:<img src="https://i0.hdslb.com/bfs/album/b393371cf417e3953d6271c955e1d8be21e3d6fe.gif" alt="20210101100433"></p><p>然后配置伪静态（不设置会404）</p><p>Nginx</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">#根目录伪静态</span><br><span class="line">location &#x2F; &#123;</span><br><span class="line">  if (!-e $request_filename)&#123;</span><br><span class="line">    rewrite ^(.*)$ &#x2F;index.php&#x2F;?s&#x3D;$1;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">#二级目录伪静态，自行修改pan为你的二级目录名字</span><br><span class="line">location &#x2F;pan &#123;</span><br><span class="line">  if (!-e $request_filename)&#123;</span><br><span class="line">    rewrite ^&#x2F;pan&#x2F;(.*)$ &#x2F;pan&#x2F;index.php&#x2F;?s&#x3D;$1;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>Apache</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&lt;IfModule</span> <span class="string">mod_rewrite.c&gt;</span></span><br><span class="line">  <span class="string">Options</span> <span class="string">+FollowSymlinks</span> <span class="string">-Multiviews</span></span><br><span class="line">  <span class="string">RewriteEngine</span> <span class="string">On</span></span><br><span class="line">  <span class="string">RewriteCond</span> <span class="string">%&#123;REQUEST_FILENAME&#125;</span> <span class="string">!-d</span></span><br><span class="line">  <span class="string">RewriteCond</span> <span class="string">%&#123;REQUEST_FILENAME&#125;</span> <span class="string">!-f</span></span><br><span class="line">  <span class="string">RewriteRule</span> <span class="string">^(.*)$</span> <span class="string">index.php/?s=$1</span> [<span class="string">QSA</span>,<span class="string">PT</span>,<span class="string">L</span>]</span><br><span class="line"><span class="string">&lt;/IfModule&gt;</span></span><br></pre></td></tr></table></figure><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210101101126292.png" alt="image-20210101101126292"></p><p>在<a href="http://www.teambition.com上登录账号/">www.teambition.com上登录账号</a></p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210101101410967.png" alt="image-20210101101410967"></p><p>新建一个项目（<strong>更多</strong>里）（<strong>不创建项目网盘中的所有的内容都会展示出来</strong>）</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210101101526.gif" alt="20210101101526"></p><p>获取项目id</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210101102115026.png" alt="image-20210101102115026"></p><p>获取cookie</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210101111420025.png" alt="image-20210101111420025"></p><p>访问刚刚部署的网站，把cookie和项目id填好</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210101111500122.png" alt="image-20210101111500122"></p><p>（如果出现500可以删除/config/app.cfg.php重来）</p><h4 id="ok"><a href="#ok" class="headerlink" title="ok"></a>ok</h4><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210101111805262.png" alt="image-20210101111805262"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;github链接：&lt;a href=&quot;https://github.com/FlxSNX/TeambitionShare&quot;&gt;TeambitionShare&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;准备&quot;&gt;&lt;a href=&quot;#准备&quot; class=&quot;headerlink&quot; title=&quot;</summary>
+      
+    
+    
+    
+    
+    <category term="web" scheme="https://thun888.xyz/tags/web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo更新pages出错应急方法</title>
+    <link href="https://thun888.xyz/2020/hexo%E6%9B%B4%E6%96%B0pages%E5%87%BA%E9%94%99%E5%BA%94%E6%80%A5%E6%96%B9%E6%B3%95/"/>
+    <id>https://thun888.xyz/2020/hexo%E6%9B%B4%E6%96%B0pages%E5%87%BA%E9%94%99%E5%BA%94%E6%80%A5%E6%96%B9%E6%B3%95/</id>
+    <published>2020-12-25T18:53:16.000Z</published>
+    <updated>2020-12-25T18:53:16.000Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li><p>背景</p><p>一天，我像往常一样更新，但却哪里不对劲</p></li></ul><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201225185519095.png" alt="image-20201225185519095"></p><p>输过账号密码后就闪退了，但还是有办法的</p><ul><li><p>The way</p><p>先装上GitHub Desktop</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201225185853225.png" alt="image-20201225185853225"></p></li></ul><p>把仓库fork到本地</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201225185950616.png" alt="image-20201225185950616"></p><p>记下这个文件夹的名字和路径后删了它<br>来到你hexo部署的文件夹里找到<code>.deploy_git</code>文件夹</p><p>复制路径</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201225190647497.png" alt="image-20201225190647497"></p><p>打开cmd</p><p>输入<code>mklink /d &quot;先前fork下来的仓库的路径&quot; &quot;刚刚hexo部署的路径&quot;</code></p><p>eg：<code>mklink /d &quot;f:/thun888.github.io&quot; &quot;G:\BLOG\.deploy_git&quot;</code></p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201225191032334.png" alt="image-20201225191032161"></p><p>这时候再打开GitHub Desktop同步文件即可</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201225191125949.png" alt="image-20201225191125949"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;背景&lt;/p&gt;
+&lt;p&gt;一天，我像往常一样更新，但却哪里不对劲&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201225185</summary>
+      
+    
+    
+    
+    
+    <category term="cmd命令" scheme="https://thun888.xyz/tags/cmd%E5%91%BD%E4%BB%A4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>用Batocera搭建属于你的游戏天地</title>
+    <link href="https://thun888.xyz/2020/%E7%94%A8batocera%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E4%BD%A0%E7%9A%84%E6%B8%B8%E6%88%8F%E5%A4%A9%E5%9C%B0/"/>
+    <id>https://thun888.xyz/2020/%E7%94%A8batocera%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E4%BD%A0%E7%9A%84%E6%B8%B8%E6%88%8F%E5%A4%A9%E5%9C%B0/</id>
+    <published>2020-11-14T17:42:35.000Z</published>
+    <updated>2020-11-14T17:42:35.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>batocera,是一个以linux为基础，运行在电脑上的一个模拟上古游戏机的系统。</p><p>为了使用它，首先我们需要以下物品</p><h4 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h4><ul><li>手和脑子</li><li>U盘（最好3.0，不过2.0也能运行）</li><li>电脑</li><li>balenaEtcher（选用）（安装方法一）</li><li>Ventoy（选用）（安装方法二）</li></ul><h4 id="安装方法一"><a href="#安装方法一" class="headerlink" title="安装方法一"></a>安装方法一</h4><p><strong>声明</strong>：这种方法会<strong>丢失U盘全部数据</strong>，<strong>需要备份</strong></p><p>安装好balenaEtcher</p><p>打开来是这个样子</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201114175521447.png" alt="image-20201114175521447"></p><p>下载好<a href="https://batocera.org/">batocera</a>（它的服务器对国内挺不友好，可以从<a href="https://pan.miaoent.com/#/s/JOUo">这里</a>下载）</p><p>点击flash from file,选择刚刚下载好的镜像</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201114175955744.png" alt="image-20201114175955744"></p><p>点击 Select target,选择你准备好的U盘</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201114180210307.png" alt="image-20201114180210307"></p><p><strong>确认选择无误</strong>后点击 Flash！ 即可完成</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201114190128591.png" alt="image-20201114190128591"></p><h4 id="安装方法二"><a href="#安装方法二" class="headerlink" title="安装方法二"></a>安装方法二</h4><p><strong>声明</strong>：这种方法会<strong>丢失U盘全部数据</strong>，<strong>需要备份</strong>（但相比第一种还可以用来存文件~)</p><p>下载<a href="https://www.ventoy.net/cn/index.html">ventoy</a>解压后点Ventoy2Disk.exe运行</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201114180544409.png" alt="image-20201114180544409"></p><p>next，</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201114180821706.png" alt="image-20201114180821706"></p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201114180853314.png" alt="image-20201114180853314"></p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201114180937948.png" alt="image-20201114180937948"></p><p>然后将刚刚下载后的镜像复制进U盘里（最大的那个分区）即可</p><h4 id=""><a href="#" class="headerlink" title=""></a></h4><h4 id="后："><a href="#后：" class="headerlink" title="后："></a>后：</h4><ul><li>在一些电脑上要按F12选择从U盘启动</li><li>它将全部机能分配在游戏运行上，相比模拟器性能好许多，对老电脑友好</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;batocera,是一个以linux为基础，运行在电脑上的一个模拟上古游戏机的系统。&lt;/p&gt;
+&lt;p&gt;为了使用它，首先我们需要以下物品&lt;/p&gt;
+&lt;h4 id=&quot;准备&quot;&gt;&lt;a href=&quot;#准备&quot; class=&quot;headerlink&quot; title=&quot;准备&quot;&gt;&lt;/a&gt;准备&lt;/h4</summary>
+      
+    
+    
+    
+    
+    <category term="linux" scheme="https://thun888.xyz/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>定时关机</title>
+    <link href="https://thun888.xyz/2020/%E5%AE%9A%E6%97%B6%E5%85%B3%E6%9C%BA/"/>
+    <id>https://thun888.xyz/2020/%E5%AE%9A%E6%97%B6%E5%85%B3%E6%9C%BA/</id>
+    <published>2020-10-31T09:37:04.000Z</published>
+    <updated>2020-10-31T09:37:04.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Shutdown"><a href="#Shutdown" class="headerlink" title="Shutdown"></a>Shutdown</h2><p>首先祭出主角</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Shutdown</span><br></pre></td></tr></table></figure><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20201031094718.png"></p><p>假设我们要在60秒后关机，只需输</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Shutdown -s -t 60</span><br></pre></td></tr></table></figure><p>但这还不够，这样每次都要输一次指令，所以可以这样</p><h2 id="食用"><a href="#食用" class="headerlink" title="食用"></a>食用</h2><ul><li>再桌面右键—新建—文本文档</li></ul><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201031095122093.png" alt="image-20201031095122093"></p><p>名称随意</p><ul><li>打开这个新建的文本文档，复制以下内容</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@echo off</span><br><span class="line">set &#x2F;P time&#x3D;多少秒后关机 </span><br><span class="line">shutdown -s -t %time%</span><br></pre></td></tr></table></figure><p>保存为.bat/.cmd后缀名(因为有中文所以还要把编码改为ANSI)</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20201031095819.png"></p><p>运行效果</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20201031100207.png"></p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201031100248613.png" alt="image-20201031100248613"></p><ul><li>但这还不够，都做到这个地步了，平时倒计时都是以分钟为单位，还输秒怎么能行？/滑稽</li></ul><p>再改一下</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">@echo off</span><br><span class="line">set &#x2F;P min&#x3D;多少分后关机 </span><br><span class="line">set &#x2F;a time &#x3D; %min%*60</span><br><span class="line">shutdown -s -t %time%</span><br></pre></td></tr></table></figure><p>效果</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20201031100717.png"></p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20201031100735.png"></p><p>ps：可以用</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">shutdown -a</span><br></pre></td></tr></table></figure><p>来取消</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Shutdown&quot;&gt;&lt;a href=&quot;#Shutdown&quot; class=&quot;headerlink&quot; title=&quot;Shutdown&quot;&gt;&lt;/a&gt;Shutdown&lt;/h2&gt;&lt;p&gt;首先祭出主角&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;ta</summary>
+      
+    
+    
+    
+    
+    <category term="cmd命令" scheme="https://thun888.xyz/tags/cmd%E5%91%BD%E4%BB%A4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>弹出C盘の快乐</title>
+    <link href="https://thun888.xyz/2020/%E5%BC%B9%E5%87%BAC%E7%9B%98%E3%81%AE%E5%BF%AB%E4%B9%90/"/>
+    <id>https://thun888.xyz/2020/%E5%BC%B9%E5%87%BAC%E7%9B%98%E3%81%AE%E5%BF%AB%E4%B9%90/</id>
+    <published>2020-10-30T22:21:01.000Z</published>
+    <updated>2020-10-30T22:21:01.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>想必大家都有想过：如果在电脑运行的时候弹出C盘，会发生什么呢？</p><p>我们需要用到一条命令</p><figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mountvol c: /d</span><br></pre></td></tr></table></figure><p>这里用windows沙盒来演示</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/asd.png"></p><p>（还不知道要经历悲剧的沙盒)</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/asd030223651.png"></p><p>win+r打开cmd</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20201030224031.png"></p><p>把指令输进去（危）</p><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20201030224416.png"></p><p>按回车</p><iframe src="//player.bilibili.com/player.html?aid=970026140&bvid=BV1Np4y1k7QW&cid=251045938&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><p>直 接 白 给</p><p>不推荐在实体机上试！</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;想必大家都有想过：如果在电脑运行的时候弹出C盘，会发生什么呢？&lt;/p&gt;
+&lt;p&gt;我们需要用到一条命令&lt;/p&gt;
+&lt;figure class=&quot;highlight dos&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;</summary>
+      
+    
+    
+    
+    
+    <category term="cmd命令" scheme="https://thun888.xyz/tags/cmd%E5%91%BD%E4%BB%A4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Free Minecraft Dungeons</title>
+    <link href="https://thun888.xyz/2020/Free%20Minecraft%20Dungeons/"/>
+    <id>https://thun888.xyz/2020/Free%20Minecraft%20Dungeons/</id>
+    <published>2020-08-29T22:36:27.000Z</published>
+    <updated>2020-08-29T22:36:27.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>新版：<a href="https://drive.google.com/file/d/16eStWG4Np0DSYVhAemYNKg2TKzCTWdQD/view?usp=sharing">https://drive.google.com/file/d/16eStWG4Np0DSYVhAemYNKg2TKzCTWdQD/view?usp=sharing</a></p><p>新旧版之间无法联机</p><hr><p>游戏本体及汉化文件：onedrive </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http:&#x2F;&#x2F;share.thun888.xyz&#x2F;GAMES&#x2F;Minecraft%20Dungeons&#x2F;</span><br></pre></td></tr></table></figure><p>Gd </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;drive.google.com&#x2F;u&#x2F;0&#x2F;uc?export&#x3D;download&amp;confirm&#x3D;Kjoc&amp;id&#x3D;1AMtcsREk0C1X3OiR2wq03nFQSTjsEQtv</span><br></pre></td></tr></table></figure><p>Bd </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;pan.baidu.com&#x2F;s&#x2F;1POxhNB5ioFMv9u0mEbIINA</span><br></pre></td></tr></table></figure><p> 提取码：2333</p><p>（汉化文件来自mcbbs，原帖：<a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=1018057%EF%BC%89">https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=1018057）</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;新版：&lt;a href=&quot;https://drive.google.com/file/d/16eStWG4Np0DSYVhAemYNKg2TKzCTWdQD/view?usp=sharing&quot;&gt;https://drive.google.com/file/d/16eStWG4N</summary>
+      
+    
+    
+    
+    
+    <category term="Minecraft" scheme="https://thun888.xyz/tags/Minecraft/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>来在MC里玩电脑</title>
+    <link href="https://thun888.xyz/2020/%E6%9D%A5%E5%9C%A8MC%E9%87%8C%E7%8E%A9%E7%94%B5%E8%84%91/"/>
+    <id>https://thun888.xyz/2020/%E6%9D%A5%E5%9C%A8MC%E9%87%8C%E7%8E%A9%E7%94%B5%E8%84%91/</id>
+    <published>2020-08-22T18:18:02.000Z</published>
+    <updated>2020-08-22T18:18:02.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>开学了，没时间写文字版了，看视频吧[doge]</p><iframe src="//player.bilibili.com/player.html?aid=371716567&bvid=BV1CZ4y1M7pM&cid=223846699&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><p><a href="https://www.bilibili.com/video/BV1CZ4y1M7pM">https://www.bilibili.com/video/BV1CZ4y1M7pM</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;开学了，没时间写文字版了，看视频吧[doge]&lt;/p&gt;
+&lt;iframe src=&quot;//player.bilibili.com/player.html?aid=371716567&amp;bvid=BV1CZ4y1M7pM&amp;cid=223846699&amp;page=1&quot; scrollin</summary>
+      
+    
+    
+    
+    
+    <category term="Minecraft" scheme="https://thun888.xyz/tags/Minecraft/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>现已通过myssl认证</title>
+    <link href="https://thun888.xyz/2020/%E7%8E%B0%E5%B7%B2%E9%80%9A%E8%BF%87myssl%E8%AE%A4%E8%AF%81/"/>
+    <id>https://thun888.xyz/2020/%E7%8E%B0%E5%B7%B2%E9%80%9A%E8%BF%87myssl%E8%AE%A4%E8%AF%81/</id>
+    <published>2020-08-12T17:44:05.000Z</published>
+    <updated>2020-08-12T17:44:05.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>awa</p><div title="MySSL 安全签章" id="myssl_seal" onclick="window.open('https://myssl.com/seal/detail?domain=thun888.xyz','MySSL安全签章','height=800,width=470,top=0,right=0,toolbar=no,menubar=no,scrollbars=no,resizable=no,location=no,status=no')" style="text-align: center"><img src="https://sealres.myssl.com/seal/img/1x/seal.png?domain=thun888.xyz" alt="MySSL 安全签章" style="width: 100px; height: auto; cursor: pointer"></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;awa&lt;/p&gt;
+&lt;div title=&quot;MySSL 安全签章&quot; id=&quot;myssl_seal&quot; onclick=&quot;window.open(&#39;https://myssl.com/seal/detail?domain=thun888.xyz&#39;,&#39;MySSL安全签章&#39;,&#39;heig</summary>
+      
+    
+    
+    
+    
+    <category term="ssl认证" scheme="https://thun888.xyz/tags/ssl%E8%AE%A4%E8%AF%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>杂物</title>
+    <link href="https://thun888.xyz/2020/%E6%9D%82%E7%89%A9/"/>
+    <id>https://thun888.xyz/2020/%E6%9D%82%E7%89%A9/</id>
+    <published>2020-01-01T00:00:00.000Z</published>
+    <updated>2020-01-01T00:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="af415e486f47d406"><a href="#af415e486f47d406" class="headerlink" title="af415e486f47d406"></a>af415e486f47d406</h2><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"http://192.168.1.5:91/hls/cctv1hd.m3u8"},"danmaku":{"id":"9E2E3368B56CDBB4","api":"http://dplayer.daoapp.io","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;af415e486f47d406&quot;&gt;&lt;a href=&quot;#af415e486f47d406&quot; class=&quot;headerlink&quot; title=&quot;af415e486f47d406&quot;&gt;&lt;/a&gt;af415e486f47d406&lt;/h2&gt;&lt;div id=&quot;dplayer0</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
