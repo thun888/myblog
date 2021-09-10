@@ -1,10 +1,10 @@
 ######## Stellar info ########
 stellar:
-  version: '1.4.1'
+  version: '1.5.1'
   homepage: 'https://xaoxuu.com/wiki/stellar/'
   repo: 'https://github.com/xaoxuu/hexo-theme-stellar'
-  cdn_css: https://cdn.jsdelivr.net/gh/thun888/thun888.github.io@master/css/main.css # Use cdn links instead of /css/main.css
-  cdn_js: https://cdn.jsdelivr.net/gh/thun888/thun888.github.io@master/js/main.js # Use cdn links instead of /js/main.js
+  cdn_css: https://cdn.jsdelivr.net/gh/thun888/myblog@gh-page/css/main.css # Use cdn links instead of /css/main.css
+  cdn_js: https://cdn.jsdelivr.net/gh/thun888/myblog@gh-page/js/main.min.js # Use cdn links instead of /js/main.js
 
 
 ######## head tags ########
@@ -46,12 +46,18 @@ sidebar:
       content:
         - '<p id="hitokoto">:D 获取中...</p><script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>'
 
+
+
+######## Main ########
+breadcrumb:
+  home: config.title # config.title / config.author / home or custom content
+
 ######## Article ########
 article:
   # 如果没有指定封面，是否根据 tags 作为关键词搜索封面？
   auto_cover: false # search from https://source.unsplash.com/
   # 如果没有指定 excerpt 和 description，将自动取多长的内容作为文章摘要？
-  auto_excerpt: 85
+  auto_excerpt: 100
   # 分类颜色
   category_color:
     '新闻稿': '#DA0F47'
@@ -62,9 +68,10 @@ article:
   # 相关文章，需要安装插件 (for layout: post)
   # npm i hexo-related-popular-posts
   related_posts:
-    enable: false
+    enable: true
     max_count: 5
-    
+    auto_cover: true # 如果没有封面就根据 tags 作为关键词搜索封面，开了此项将不会自动从文章中提取首张图片作为封面了。
+
 
 
 ######## Comments ########
@@ -175,11 +182,12 @@ tag_plugins:
   checkbox:
     interactive: false # enable interactive for user
   emoji:
-    default: https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/qq/%s.gif
+    default: https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji@master/qq/%s.gif
     twemoji: https://cdn.jsdelivr.net/gh/twitter/twemoji/assets/svg/%s.svg
-    qq: https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/qq/%s.gif
-    aru: https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/aru/%s.png
-    tieba: https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/tieba/%s.png
+    qq: https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji@master/qq/%s.gif
+    aru: https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji@master/aru/%s.png
+    aru-l: https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji@master/aru-l/%s.gif
+    tieba: https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji@master/tieba/%s.png
 
 
 ######## JS Plugins ########
@@ -187,7 +195,7 @@ plugins:
   ## required plugins ##
   # jquery
   jquery: https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js
-  jqpjaxjs: https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js
+
   ## lazyload plugins ##
   # fancybox
   fancybox: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css
@@ -197,10 +205,9 @@ plugins:
     css: https://unpkg.com/swiper/swiper-bundle.min.css
     js: https://unpkg.com/swiper/swiper-bundle.min.js
   # issues api
-  sitesjs: https://cdn.jsdelivr.net/gh/thun888/thun888.github.io@master/js/plugins/friends.js
+  sitesjs: https://cdn.jsdelivr.net/gh/thun888/thun888.github.io@master/js/plugins/sites.js
   friendsjs: https://cdn.jsdelivr.net/gh/thun888/thun888.github.io@master/js/plugins/friends.js
   
-
   ## optional plugins ##
   # preload
   preload:
@@ -218,7 +225,7 @@ plugins:
 
   # https://scrollrevealjs.org/api/reveal.html
   scrollreveal:
-    enable: #true
+    enable: true
     js: https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js
     distance: 8px
     duration: 500 # ms
@@ -226,10 +233,10 @@ plugins:
     scale: 1 # 0.1~1
 
 style:
-  darkmode: auto # set 'auto' to enable, set 'false' to disable
+  darkmode: auto # auto / always / false
   theme:
     light: '#f8f8f8'
-    dark: '#20252B'
+    dark: '#313438'
   animated_avatar:
     animate: auto # auto, always
     background: https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.2/avatar/round/rainbow64@3x.webp

@@ -36,6 +36,7 @@ function layoutDiv() {
   } else {
     el += markdown(__('footer.cishu'));
     el += markdown(__('footer.info_not_open_source', author, using));
+    el += markdown(__('footer.beian'));
   }
   if (more) {
     if ((typeof more == 'string') && more.constructor == String) {
@@ -52,7 +53,7 @@ function layoutDiv() {
 %>
 <center><span class="page-footer fs12" id="timeDate">载入天数...</span><span class="page-footer fs12">&</span><span class="page-footer fs12" id="times">载入时分秒...</span></center>
 <%- layoutDiv() %>
-<script type="text/javascript">document.onreadystatechange=function(){if(document.readyState=="complete"){var ele=document.createElement("script");ele.src="https://hexo.orzz.ml/hpp/api/getblogeractive";document.body.appendChild(ele)}}</script>
+<script type="text/javascript">document.onreadystatechange=function(){if(document.readyState=="complete"){var ele=document.createElement("script");ele.src="https://active-get.thun888.workers.dev/active/get";document.body.appendChild(ele)}}</script>
 <script src="//cdn.jsdelivr.net/gh/thun888/tuku@master/js/799902d582.js"></script>
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>

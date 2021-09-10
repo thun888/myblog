@@ -47,21 +47,23 @@ jobs:
         hexo clean
         hexo g
 
-    - name: 部署
-      run: |
-        git config --global user.name "thun888"
-        git config --global user.email "2238342947@qq.com"
-        git clone https://github.com/thun888/thun888.github.io.git .deploy_git
-        # 此处务必用HTTPS链接。SSH链接可能有权限报错的隐患
-        # =====注意.deploy_git前面有个空格=====
-        # 这行指令的目的是clone博客静态文件仓库，防止Hexo推送时覆盖整个静态文件仓库，而是只推送有更改的文件
-        hexo d
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.TOKEN }}
+        publish_branch: gh-page
+        publish_dir: ./public
 
     - name: clear cache
       run: |
-        curl https://purge.jsdelivr.net/gh/thun888/thun888.github.io@master/css/main.css
-        curl https://purge.jsdelivr.net/gh/thun888/thun888.github.io@master/js/main.js
+        curl https://purge.jsdelivr.net/gh/thun888/myblog@gh-page/css/main.css
+        curl https://purge.jsdelivr.net/gh/thun888/myblog@gh-page/js/main.min.js
 
     - name: 通知
       run: |
         curl https://push.xuthus.cc/send/c9c54f0446e2559373adcedf05396cba?c=博客部署完成
+
+    - name: get cache
+      run: |
+        curl https://cdn.jsdelivr.net/gh/thun888/myblog@gh-page/css/main.css
+        curl https://cdn.jsdelivr.net/gh/thun888/myblog@gh-page/js/main.min.js

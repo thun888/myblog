@@ -13,17 +13,17 @@ $color-cat-hover = darken($color-cat, 20)
 $light-site-bg = convert(hexo-config('style.theme.light'))
 $light-block = #f2f2f2
 $light-title = #000
-$light-text = #444
+$light-text = #333
 $light-code = #111
 $light-card = white
 
 // 深色
 $dark-site-bg = convert(hexo-config('style.theme.dark'))
-$dark-block = #2E353D
+$dark-block = darken(saturate($dark-site-bg, 40%), 2)
 $dark-title = #fff
 $dark-text = #eee
 $dark-code = #ff7043
-$dark-card = #40454B
+$dark-card = lighten(saturate($dark-site-bg, 50%), 10)
 
 // 移动端深色背景（OLED调成纯黑可以省电）
 $dark-site-bg-mobile = black
@@ -57,7 +57,6 @@ $fs-p    = $fs-15
 $fs-code = $fs-13
 
 $border-card = 12px
-$border-widget = 4px
 $border-block = 6px
 $border-image = 6px
 
