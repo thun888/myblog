@@ -156,19 +156,6 @@ post_wordcount:
   wordcount: true
   min2read: true
   
- #coding: git@e.coding.net:thun888/blog-website/myblog.git
- # type: git
-  #repo: 
-   # github: https://thun888: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@github.com/thun888/thun888.github.io.git,master
- #type: cos-cdn
- # cloud: tencent
- # bucket: serverless-page-bucket-o3fbx2hf-1306723062
- # region: ap-hongkong
-  #secretId: AKIDSmskMinb9RVMxHK6bqoVw6zbw0oKZXGh
-  #secretKey: B5j7h03pLaYFgqjLhlY4KJ1SdX9UZNt8
-  #cdnEnable: false
-  #deleteExtraFiles: true
-  #updatePosts: true
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
