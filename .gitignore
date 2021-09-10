@@ -7,4 +7,5 @@ public/
 .deploy*/
 .deploy_git*/
 .idea
+yarn.lock
 themes/stellar/.git
