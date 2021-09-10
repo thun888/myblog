@@ -241,36 +241,6 @@
       </tags>
   </entry>
   <entry>
-    <title>优化Oneindex的nexmoe主题的加载速度</title>
-    <url>/2021/%E4%BC%98%E5%8C%96Oneindex%E7%9A%84nexmoe%E4%B8%BB%E9%A2%98%E7%9A%84%E5%8A%A0%E8%BD%BD%E9%80%9F%E5%BA%A6/</url>
-    <content><![CDATA[<p>在一些带宽小的机子上部署Oneindex又用nexmoe主题，就算套了cdn也慢（深有体会）</p>
-<p>在学校开来给同学下电影开了十几秒愣是没加载出来<img src="https://cdn.jsdelivr.net/gh/thun888/jian@master/coolapk_emotion_42_diaoxie.png" style="zoom:25%;" /></p>
-<h4 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h4><p>定位到网址目录下的/view/nexmoe</p>
-<p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210610144611.png" alt="image-20210610144610288"></p>
-<p>将框选的（第7行的第11行）</p>
-<p>进行替换</p>
-<p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210610145355.png" alt="image-20210610145355484"></p>
-<p>第7行</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;//cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>第11行</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;//cdn.jsdelivr.net/gh/thun888/tuku@master/img/mdui.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>like this </p>
-<p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210610145809.png" alt="image-20210610145809885"></p>
-<h4 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h4><p>修改前</p>
-<img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210610150256.png" alt="image-20210610150255933" style="zoom:67%;" />
-
-<p>修改后</p>
-<img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210610150015.png" alt="image-20210610150015253" style="zoom:67%;" />
-
-]]></content>
-      <tags>
-        <tag>oneindex</tag>
-        <tag>web</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>免费游玩《戴森球计划》</title>
     <url>/2021/%E5%85%8D%E8%B4%B9%E6%B8%B8%E7%8E%A9%E3%80%8A%E6%88%B4%E6%A3%AE%E7%90%83%E8%AE%A1%E5%88%92%E3%80%8B/</url>
     <content><![CDATA[<p>多说无益</p>
@@ -327,6 +297,36 @@
 ]]></content>
       <tags>
         <tag>cmd命令</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>优化Oneindex的nexmoe主题的加载速度</title>
+    <url>/2021/%E4%BC%98%E5%8C%96Oneindex%E7%9A%84nexmoe%E4%B8%BB%E9%A2%98%E7%9A%84%E5%8A%A0%E8%BD%BD%E9%80%9F%E5%BA%A6/</url>
+    <content><![CDATA[<p>在一些带宽小的机子上部署Oneindex又用nexmoe主题，就算套了cdn也慢（深有体会）</p>
+<p>在学校开来给同学下电影开了十几秒愣是没加载出来<img src="https://cdn.jsdelivr.net/gh/thun888/jian@master/coolapk_emotion_42_diaoxie.png" style="zoom:25%;" /></p>
+<h4 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h4><p>定位到网址目录下的/view/nexmoe</p>
+<p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210610144611.png" alt="image-20210610144610288"></p>
+<p>将框选的（第7行的第11行）</p>
+<p>进行替换</p>
+<p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210610145355.png" alt="image-20210610145355484"></p>
+<p>第7行</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;//cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>第11行</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;//cdn.jsdelivr.net/gh/thun888/tuku@master/img/mdui.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>like this </p>
+<p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210610145809.png" alt="image-20210610145809885"></p>
+<h4 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h4><p>修改前</p>
+<img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210610150256.png" alt="image-20210610150255933" style="zoom:67%;" />
+
+<p>修改后</p>
+<img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210610150015.png" alt="image-20210610150015253" style="zoom:67%;" />
+
+]]></content>
+      <tags>
+        <tag>oneindex</tag>
+        <tag>web</tag>
       </tags>
   </entry>
   <entry>
