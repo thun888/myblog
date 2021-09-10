@@ -15,11 +15,13 @@ jobs:
       run: |
         export TZ='Asia/Shanghai'
         git clone -b gh-page https://github.com/thun888/myblog.git
-        rm -rf ./myblog/.git/ 
-        mv ./myblog/index.html ./myblog/`date +%Y_%m_%d_%H:%M:%S`.html
+        rm -rf ./myblog/.git/
+        rm -fr ./myblog/!(index.html)
+        git clone -b status-page https://github.com/thun888/myblog.git ./status
+        mv ./myblog/index.html ./status/`date +%Y_%m_%d_%H:%M:%S`.html
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.TOKEN }}
         publish_branch: status-page
-        publish_dir: ./myblog
+        publish_dir: ./status
