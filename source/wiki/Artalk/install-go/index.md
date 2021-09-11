@@ -3,7 +3,7 @@ layout: wiki
 wiki: Artalk-doc # 这是项目名
 title: 安装（GO）
 keywords: 安装artalk,Artalk,配置Artalk
-order: 0
+order: 1
 ---
 
 !!! warning 注意
@@ -24,7 +24,9 @@ order: 0
 
 2.cd到/ArtalkGo/目录下后，运行main.go以下载依赖（如果go版本<1.16就有报错）
 
-{% copy go run main.go %}![Snipaste_2021-08-29_15-05-10](https://i0.hdslb.com/bfs/album/7e67e4bbe1de13df28547fe2427db965cf99fb30.png@.webp)
+{% copy go run main.go %}
+
+![Snipaste_2021-08-29_15-05-10](https://i0.hdslb.com/bfs/album/7e67e4bbe1de13df28547fe2427db965cf99fb30.png@.webp)
 
 3.安装完后再运行一遍，不出意外应该是这样的
 
