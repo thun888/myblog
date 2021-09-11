@@ -1,13 +1,13 @@
 ---
 layout: wiki
 wiki: Artalk-doc # 这是项目名
-title: 安装
-keywords: 安装artalk,Artalk,配置artalk
+title: 安装（PHP）
+keywords: 安装artalk,Artalk,配置Artalk
 order: 0
 ---
 
 !!! warning 注意
-    本文档建于2021/7/21，在日后的版本中可能不再适用，请以仓库为准
+    本页面最后编辑时间为2021/7/21，在日后的版本中可能不再适用，请以仓库为准
 
 #### 补全依赖
 
@@ -163,7 +163,7 @@ what?!啊没错，你还要编辑配置文件
     placeholder: '来啊，快活啊 ( ゜- ゜)', // 占位符
     noComment: '快来成为第一个评论的人吧~', // 无评论时显示
     pageKey: '[页面唯一标识]',
-    serverUrl: 'https://artalk.thun888.xyz/',  //改为刚刚送的二级域名
+    serverUrl: 'https://artalk.thun888.xyz/',  //改为刚刚送的二级域名h
     readMore: { // 阅读更多配置
       pageSize: 15, // 每次请求获取评论数
       autoLoad: true // 滚动到底部自动加载
