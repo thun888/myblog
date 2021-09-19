@@ -61,7 +61,7 @@ jobs:
 
     - name: 通知
       run: |
-        curl ${{ secrets.POST }}
+        curl http://{{ secrets.POSTURL }}/send_private_msg?access_token=${{ secrets.QPTOKEN }}&user_id=${{ secrets.QQ }}&message=博客部署完成
 
     - name: get cache
       run: |
