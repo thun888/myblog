@@ -358,47 +358,47 @@
     <title>把玩intel的开发服务器</title>
     <url>/2021/%E6%8A%8A%E7%8E%A9intel%E7%9A%84%E5%BC%80%E5%8F%91%E6%9C%8D%E5%8A%A1%E5%99%A8/</url>
     <content><![CDATA[<h4 id="获取"><a href="#获取" class="headerlink" title="获取"></a>获取</h4><p>打开<a href="https://software.intel.com/content/www/us/en/develop/tools/devcloud.html">Intel® DevCloud</a>，有账号登录，没账号注册，</p>
-<p><img src="https://i0.hdslb.com/bfs/album/70ab0fa7d6b78c00113e4fdf509ed90e33d8f85b.png@.webp" alt="image-20210808145043855"></p>
+<p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/09/ef46bbe0629c26f319994291f15ffd7d.webp" alt="image-20210808145043855"></p>
 <p>拉下来找到<code>Intel® DevCloud for the Edge</code>点进去</p>
-<p><img src="https://i0.hdslb.com/bfs/album/0efa1d202fcd93523b4b47df66f8ffd5b42fac86.png" alt="zi&#39;aiziai"></p>
+<p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/09/e841141c1c3607d209f5f304ee6c66f8.webp" alt="zi&#39;aiziai"></p>
 <blockquote>
 <p>注意邮箱</p>
 </blockquote>
-<p><img src="https://i0.hdslb.com/bfs/album/909555a4dfb0cca2a3b2028e679a32127540e58e.png" alt="image-20210808145254426"></p>
-<p><img src="https://i0.hdslb.com/bfs/album/b4a0c24276c0000ba7f57ecea1a6715ea658e37b.png" alt="image-20210808145347119"></p>
-<p><img src="https://i0.hdslb.com/bfs/album/5ffac9ce9ba7e01cfbc1e8f75e04aa06ca74c337.png@.webp" alt="image-20210808145438494"></p>
-<p><img src="https://i0.hdslb.com/bfs/album/d7a29cac823190098cd7f7539ae0039c6de14f43.png" alt="image-20210808145505189"></p>
-<p><img src="https://i0.hdslb.com/bfs/album/cda894a709a5768591ba1b476ba5378889982f10.png@.webp" alt="image-20210808145523053"></p>
+<p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/09/ba8c1d1d603b115415bab41adecb89b5.webp" alt="image-20210808145254426"></p>
+<p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/09/f0a5d66164ab31df9391789ece645c39.webp" alt="image-20210808145347119"></p>
+<p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/09/9f73af78b9012faf311e0f89ad66c844.webp" alt="image-20210808145438494"></p>
+<p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/09/852d775017db5b8422066e61947b875e.webp" alt="image-20210808145505189"></p>
+<p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/09/4c76da099f1acc95ab57c02b2343a02b.webp" alt="image-20210808145523053"></p>
 <p>在看到<code>Server not running</code>这个话前基本都500错误或者点了没反应，等半个小时就好(也可以切换网络环境等)</p>
 <div class="tag-plugin swiper-container" id="swiper-api" width="25"><div class="swiper-wrapper"><div class="swiper-slide"><img no-lazy src="https://asstes.thun888.xyz/file/pic-bed/2021/08/6cb96eb2096f29a09853a404dc1f503f.webp" alt="Snipaste_2021-08-07_17-49-13"></div><div class="swiper-slide"><img no-lazy src="https://asstes.thun888.xyz/file/pic-bed/2021/08/af67af93cf0930982014779af16e3fbb.webp" alt="Snipaste_2021-08-07_18-35-16"></div></div><div class="swiper-pagination"></div><div class="swiper-button-prev blur"></div><div class="swiper-button-next blur"></div></div>
 
 
 
-<p><img src="https://i0.hdslb.com/bfs/album/64382e008a7370faf48fbe86fa9e4a7e2e0cc981.png" alt="image-20210808145540103"></p>
+<p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/09/ff14d0acd34b753b4db1982ba29a55b5.webp" alt="image-20210808145540103"></p>
 <p>打开终端</p>
 <p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/08/481501951a14dd2878ffc24041159847.png" alt="Snipaste_2021-08-07_18-11-33"></p>
 <p>然后就可以<del>为所欲为了</del><u>没有root</u>的啦<span class="tag-plugin emoji"><img no-lazy="" class="inline" src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji@master/aru/11.png"/></span></p>
 <h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><p>80核，256g( ‵▽′)ψ，（共用）</p>
-<p><img src="https://i0.hdslb.com/bfs/album/66be24a1d2241fd55f07cb6a57da3e62e10d9edd.png" alt="Snipaste_2021-08-07_18-21-17"></p>
-<p><img src="https://i0.hdslb.com/bfs/album/96b7ae52860621cc64505f85ab157e27ba4cb645.png" alt="Snipaste_2021-08-07_18-28-07"></p>
+<p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/09/c17e77e93eb1345670b437862da0d8ea.webp" alt="Snipaste_2021-08-07_18-21-17"></p>
+<p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/09/e3e8744bbd18b55ecf68bd7f7b13bd6a.webp" alt="Snipaste_2021-08-07_18-28-07"></p>
 <p>proot容器内测试</p>
-<p><img src="https://i0.hdslb.com/bfs/album/2f59a92fde2ababeba2875c0e633bcf79507f2c4.png@.webp" alt="image-20210808150809533"></p>
+<p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/09/e2eb75975a18902b1b388cfc9116b8b2.webp" alt="image-20210808150809533"></p>
 <h4 id="网速"><a href="#网速" class="headerlink" title="网速"></a>网速</h4><p>Asia</p>
-<p><img src="https://i0.hdslb.com/bfs/album/025702cd24eb25032b72130b0b2f7338a6f9887a.png@.webp" alt="image-20210808151147629"></p>
+<p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/09/fe71087f9bb8efe3880c4c05cfeb471e.webp" alt="image-20210808151147629"></p>
 <p>Another</p>
-<p><img src="https://i0.hdslb.com/bfs/album/5ab9b54d5b2e132c830cde770ff2da63e1a687ba.png@.webp" alt="image-20210808151132419"></p>
-<p><img src="https://i0.hdslb.com/bfs/album/66f9de085b4020a6cdf9d5b92a5190011440080e.png@.webp" alt="image-20210808151201095"></p>
+<p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/09/8758a70509e83b3e05ebfebd5287ac18.webp" alt="image-20210808151132419"></p>
+<p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/09/85c8fd28052bceea467090cc84e5709a.webp" alt="image-20210808151201095"></p>
 <h4 id="伪获取root权限"><a href="#伪获取root权限" class="headerlink" title="伪获取root权限"></a>伪获取root权限</h4><p>在终端内复制粘贴以下命令</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget https://share.thun888.xyz/%E8%BD%AF%E4%BB%B6/root.sh</span><br><span class="line">chmod 777 root.sh</span><br><span class="line">./root.sh</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://i0.hdslb.com/bfs/album/6619c36a9f57e6322a0e125d93130accc2cf34f2.png" alt="image-20210808140827984"></p>
+<p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/09/1fabbd48980280fd587ca78e7b95afbd.webp" alt="image-20210808140827984"></p>
 <p>当$变为#就ok</p>
 <p>不过wget,curl这些都没有，所以还要自行安装</p>
 <p>PS:可以开新一个终端下载一些必要依赖包（deb）再离线安装</p>
 <blockquote>
 <p><a href="https://packages.debian.org/">https://packages.debian.org</a></p>
 </blockquote>
-<p><img src="https://i0.hdslb.com/bfs/album/d5cc376d6bed2cfab939795ca8aa69244f8dae21.png" alt="image-20210808143134070"></p>
+<p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/09/ee233bc3f9e26963348624942c45da8c.webp" alt="image-20210808143134070"></p>
 <blockquote>
 <p>该服务器使用时间只有10小时，但10小时后还可以再来一次<span class="tag-plugin emoji"><img no-lazy="" class="inline" src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji@master/aru/51.png"/></span></p>
 </blockquote>
@@ -423,7 +423,7 @@
 <p>从github把源码下载后上传然后解压</p>
 <p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210101100249006.png" alt="image-20210101100249006"></p>
 <p>进到/TeambitionShare-master里把源码拉出来</p>
-<p>gif:<img src="https://i0.hdslb.com/bfs/album/b393371cf417e3953d6271c955e1d8be21e3d6fe.gif" alt="20210101100433"></p>
+<p>gif:<img src="https://asstes.thun888.xyz/file/pic-bed/2021/09/5f5c8175d7b846cfe33f818b4b7e0791.webp" alt="20210101100433"></p>
 <p>然后配置伪静态（不设置会404）</p>
 <p>Nginx</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#根目录伪静态</span><br><span class="line">location &#x2F; &#123;</span><br><span class="line">  if (!-e $request_filename)&#123;</span><br><span class="line">    rewrite ^(.*)$ &#x2F;index.php&#x2F;?s&#x3D;$1;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">#二级目录伪静态，自行修改pan为你的二级目录名字</span><br><span class="line">location &#x2F;pan &#123;</span><br><span class="line">  if (!-e $request_filename)&#123;</span><br><span class="line">    rewrite ^&#x2F;pan&#x2F;(.*)$ &#x2F;pan&#x2F;index.php&#x2F;?s&#x3D;$1;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -520,7 +520,7 @@
   <entry>
     <title>解决Cloudflare Wrangler无法获取授权</title>
     <url>/2021/%E8%A7%A3%E5%86%B3Cloudflare-Wrangler%E6%97%A0%E6%B3%95%E8%8E%B7%E5%8F%96%E6%8E%88%E6%9D%83/</url>
-    <content><![CDATA[<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>昨天，因为要本地提交点东西到worker就装了Wrangler，没想到啊，它就这么卡着不动了（在waiting for api token那里我等了半个世纪）<img src="https://i0.hdslb.com/bfs/album/d67b6608f64d49767cbad18817e44584264bec84.png@.webp" alt="Snipaste_2021-07-26_20-36-47"></p>
+    <content><![CDATA[<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>昨天，因为要本地提交点东西到worker就装了Wrangler，没想到啊，它就这么卡着不动了（在waiting for api token那里我等了半个世纪）<img src="https://asstes.thun888.xyz/file/pic-bed/2021/09/d3eb68ed7fb7175f3ba36fa0969e7808.webp" alt="Snipaste_2021-07-26_20-36-47"></p>
 <h4 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h4><ul>
 <li><p>在刚刚的授权页面点击<code>API令牌</code></p>
 <p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/07/2d2f0a22ca9bbbcc3e07c41ff6377fe0.png" alt="llll"></p>
@@ -539,7 +539,7 @@
 </li>
 </ul>
 <h4 id="后"><a href="#后" class="headerlink" title="后"></a>后</h4><p>写这篇时为了截图换了个账号，然后它能用了~~~~</p>
-<p><img src="https://i0.hdslb.com/bfs/album/7ddfb24e2a1ed73dba16eb7447a3e9d0ef99f4f8.png@.webp" alt="Snipaste_2021-07-29_18-26-37"></p>
+<p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/09/cfc4d441f6daf3a7fcfb6b8913761440.webp" alt="Snipaste_2021-07-29_18-26-37"></p>
 ]]></content>
       <tags>
         <tag>Clouddlare</tag>
@@ -552,7 +552,7 @@
 <p>先转到新建环境变量这里（图示为win11</p>
 <p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/07/70d23cfa483b297e2dd987502cc7e683.webp"></p>
 <p>新建2个（如图）</p>
-<p><img src="https://i0.hdslb.com/bfs/album/705b3a231b995cd3ac7ed8dd103075fdb024fa43.png@.webp" alt="image-20210726184350014"></p>
+<p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/09/ad8580f69486b02efda6957d9714ddd7.webp" alt="image-20210726184350014"></p>
 <table>
 <thead>
 <tr>
