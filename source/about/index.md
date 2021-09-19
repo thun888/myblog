@@ -98,7 +98,7 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 
   **Alipay**:
 
-<img src="https://asstes.thun888.xyz/file/pic-bed/2021/08/9e0898363e32055c9541873b251d8ef8.jpg" style="zoom:50%;" />
+<img src="https://do-cloud.oss-cn-guangzhou.aliyuncs.com/img/qq_pic_merged_1632056324335.jpg?x-oss-process=blog" style="zoom:50%;" />
 
   **Wechat**:
 
@@ -147,3 +147,4 @@ function load() {
 	document.body.appendChild(script)
 }
 </script>
+
