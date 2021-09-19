@@ -19,6 +19,7 @@ order: 6
 10. [灵藏互联](http://www.m3mo.cn/index.php/buy/index/17/)
 11. [番茄互联](https://www.fqidc.cn/index.php/buy/index/10/)
 12. [奇乐互联](http://cloud.zhaodh.top/cart?fid=1)
+13. [ProFreeHost](https://profreehost.com/)
 
 !!! warning 注意
     无论用哪个都要经常备份！
