@@ -61,7 +61,7 @@ jobs:
 
     - name: 通知
       run: |
-        curl https://push.xuthus.cc/send/c9c54f0446e2559373adcedf05396cba?c=博客部署完成
+        curl ${{ secrets.POST }}博客部署完成
 
     - name: get cache
       run: |
