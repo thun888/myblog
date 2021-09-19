@@ -8,7 +8,7 @@ layout: post
 {% timeline %}
 
 <!-- node 9/19 -->
-1.全面移除bili图床
+1.全面停用bilibili图床（bili -> b2）
 
 <!-- node 9/11 -->
 1.调整页面宽度<br>![image-20210911105945989](https://asstes.thun888.xyz/file/pic-bed/2021/09/d4c4fe0a9738db2849de1090af4d8b06.png)
