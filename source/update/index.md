@@ -7,6 +7,9 @@ layout: post
 
 {% timeline %}
 
+<!-- node 9/19 -->
+1.全面移除bili图床
+
 <!-- node 9/11 -->
 1.调整页面宽度<br>![image-20210911105945989](https://asstes.thun888.xyz/file/pic-bed/2021/09/d4c4fe0a9738db2849de1090af4d8b06.png)
 
@@ -14,8 +17,8 @@ layout: post
 1.合并仓库&开源
 <!-- node 8/08 -->
 1.添加简繁转换
-![](https://i0.hdslb.com/bfs/album/feabc5e51e2a47ccbd249452f4ec232eb1c8d144.gif@.webp)<br>![](https://i0.hdslb.com/bfs/album/7b6000368d0d186ae38c3f30aa0cd3bd693ecc8f.png@.webp)<br>2.增加字数统计
-![](https://i0.hdslb.com/bfs/album/8c585b46c04ffa6bcfa82eb2ac041db12f794400.png@.webp)<br>
+![](https://asstes.thun888.xyz/file/pic-bed/2021/09/e9f34601035b8e673b92013e8a53e7b7.webp)<br>![](https://asstes.thun888.xyz/file/pic-bed/2021/09/4bef4d0bfd5f4e9fe31c53343ff97557.webp)<br>2.增加字数统计
+![](https://asstes.thun888.xyz/file/pic-bed/2021/09/3fe3f01a855a2f480b9ca64af04e46cc.webp)<br>
 3.修复一部分bug
 <!-- node 8/01 -->
 1.改用hexo-neat插件进行加速<br>2.~~加了只喵~~

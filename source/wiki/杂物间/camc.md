@@ -9,7 +9,7 @@ order: 1
 
 82
 
-![image-20210805231328530](https://i0.hdslb.com/bfs/album/46b7956bee1696def91411d01f91348663d20739.png@.webp)
+![image-20210805231328530](https://asstes.thun888.xyz/file/pic-bed/2021/09/da097b75244c36c00527c69cacfa435c.webp)
 84 Teambition直链
 85
 ![image-20201225205618608](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201225205618608.png)

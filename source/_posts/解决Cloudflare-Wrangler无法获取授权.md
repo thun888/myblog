@@ -7,7 +7,7 @@ updated: 2021-07-29 18:18:05
 
 #### 前言
 
-昨天，因为要本地提交点东西到worker就装了Wrangler，没想到啊，它就这么卡着不动了（在waiting for api token那里我等了半个世纪）![Snipaste_2021-07-26_20-36-47](https://i0.hdslb.com/bfs/album/d67b6608f64d49767cbad18817e44584264bec84.png@.webp)
+昨天，因为要本地提交点东西到worker就装了Wrangler，没想到啊，它就这么卡着不动了（在waiting for api token那里我等了半个世纪）![Snipaste_2021-07-26_20-36-47](https://asstes.thun888.xyz/file/pic-bed/2021/09/d3eb68ed7fb7175f3ba36fa0969e7808.webp)
 
 #### 方法
 
@@ -33,4 +33,4 @@ updated: 2021-07-29 18:18:05
 
 写这篇时为了截图换了个账号，然后它能用了~~~~
 
-![Snipaste_2021-07-29_18-26-37](https://i0.hdslb.com/bfs/album/7ddfb24e2a1ed73dba16eb7447a3e9d0ef99f4f8.png@.webp)
+![Snipaste_2021-07-29_18-26-37](https://asstes.thun888.xyz/file/pic-bed/2021/09/cfc4d441f6daf3a7fcfb6b8913761440.webp)

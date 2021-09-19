@@ -26,11 +26,11 @@ order: 1
 
 {% copy go run main.go %}
 
-![Snipaste_2021-08-29_15-05-10](https://i0.hdslb.com/bfs/album/7e67e4bbe1de13df28547fe2427db965cf99fb30.png@.webp)
+![Snipaste_2021-08-29_15-05-10](https://asstes.thun888.xyz/file/pic-bed/2021/09/8140e9b285f7724a0b19d6286b1775ee.webp)
 
 3.安装完后再运行一遍，不出意外应该是这样的
 
-![image-20210911094243644](https://i0.hdslb.com/bfs/album/7cdf91869089ca65e31daaa4228cafb6e36d8941.png@.webp)
+![image-20210911094243644](https://asstes.thun888.xyz/file/pic-bed/2021/09/9588e34f11217da4250fb4bc3a79019c.webp)
 
 #### 配置
 
@@ -40,7 +40,7 @@ order: 1
 
 这里为了演示改了点
 
-![image-20210911095835151](https://i0.hdslb.com/bfs/album/b42021a48f273df687c93150860c1cc84242ac6e.png@.webp)
+![image-20210911095835151](https://asstes.thun888.xyz/file/pic-bed/2021/09/bb9ae0f3da5cdc5b3e81215c5400404b.webp)
 
 #### 运行
 

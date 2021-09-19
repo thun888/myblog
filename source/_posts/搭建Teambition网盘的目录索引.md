@@ -27,7 +27,7 @@ github链接：[TeambitionShare](https://github.com/FlxSNX/TeambitionShare)
 
 进到/TeambitionShare-master里把源码拉出来
 
-gif:![20210101100433](https://i0.hdslb.com/bfs/album/b393371cf417e3953d6271c955e1d8be21e3d6fe.gif)
+gif:![20210101100433](https://asstes.thun888.xyz/file/pic-bed/2021/09/5f5c8175d7b846cfe33f818b4b7e0791.webp)
 
 然后配置伪静态（不设置会404）
 

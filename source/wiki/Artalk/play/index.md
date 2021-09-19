@@ -9,7 +9,7 @@ order: 5
 
 > From [Artalk DEMO](https://artalk.js.org/)
 
-![image-20210805234614312](https://i0.hdslb.com/bfs/album/92cc1aa830f8a037f5415a1473a97810380aee84.png)
+![image-20210805234614312](https://asstes.thun888.xyz/file/pic-bed/2021/09/e9d951d0777109d297ca6f741ee246fe.webp)
 
 emm挺厉害的，首先这样邮件提醒就没用了，回复也及时不了了
 
@@ -23,7 +23,7 @@ emm挺厉害的，首先这样邮件提醒就没用了，回复也及时不了�
 
 在后端`/public`下新建个xxx.php（xxx一定要换）
 
-![image-20210806123453298](https://i0.hdslb.com/bfs/album/91782224bfaa9cc70760c7b59789a2399b586ca9.png)
+![image-20210806123453298](https://asstes.thun888.xyz/file/pic-bed/2021/09/30ba298e3ebbcf92fe7f2e8674321302.webp)
 
 在xxx.php里写上
 

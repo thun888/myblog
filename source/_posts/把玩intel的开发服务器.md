@@ -2,7 +2,7 @@
 title: 把玩intel的开发服务器
 date: 2021-08-08 13:59:03
 tags: Intel
-cover: https://i0.hdslb.com/bfs/album/f26f600ba60fc65aac6c46680e76326b6a2dca36.jpg@.webp
+cover: https://do-cloud.oss-cn-guangzhou.aliyuncs.com/img/f26f600ba60fc65aac6c46680e76326b6a2dca36.jpg?x-oss-process=blog
 updated: 2021-08-08 13:59:03
 description: 如今，人们白嫖起了牙膏厂~
 ---
@@ -11,23 +11,23 @@ description: 如今，人们白嫖起了牙膏厂~
 
 打开[Intel® DevCloud](https://software.intel.com/content/www/us/en/develop/tools/devcloud.html)，有账号登录，没账号注册，
 
-![image-20210808145043855](https://i0.hdslb.com/bfs/album/70ab0fa7d6b78c00113e4fdf509ed90e33d8f85b.png@.webp)
+![image-20210808145043855](https://asstes.thun888.xyz/file/pic-bed/2021/09/ef46bbe0629c26f319994291f15ffd7d.webp)
 
 拉下来找到`Intel® DevCloud for the Edge`点进去
 
-![zi'aiziai](https://i0.hdslb.com/bfs/album/0efa1d202fcd93523b4b47df66f8ffd5b42fac86.png)
+![zi'aiziai](https://asstes.thun888.xyz/file/pic-bed/2021/09/e841141c1c3607d209f5f304ee6c66f8.webp)
 
 > 注意邮箱
 
-![image-20210808145254426](https://i0.hdslb.com/bfs/album/909555a4dfb0cca2a3b2028e679a32127540e58e.png)
+![image-20210808145254426](https://asstes.thun888.xyz/file/pic-bed/2021/09/ba8c1d1d603b115415bab41adecb89b5.webp)
 
-![image-20210808145347119](https://i0.hdslb.com/bfs/album/b4a0c24276c0000ba7f57ecea1a6715ea658e37b.png)
+![image-20210808145347119](https://asstes.thun888.xyz/file/pic-bed/2021/09/f0a5d66164ab31df9391789ece645c39.webp)
 
-![image-20210808145438494](https://i0.hdslb.com/bfs/album/5ffac9ce9ba7e01cfbc1e8f75e04aa06ca74c337.png@.webp)
+![image-20210808145438494](https://asstes.thun888.xyz/file/pic-bed/2021/09/9f73af78b9012faf311e0f89ad66c844.webp)
 
-![image-20210808145505189](https://i0.hdslb.com/bfs/album/d7a29cac823190098cd7f7539ae0039c6de14f43.png)
+![image-20210808145505189](https://asstes.thun888.xyz/file/pic-bed/2021/09/852d775017db5b8422066e61947b875e.webp)
 
-![image-20210808145523053](https://i0.hdslb.com/bfs/album/cda894a709a5768591ba1b476ba5378889982f10.png@.webp)
+![image-20210808145523053](https://asstes.thun888.xyz/file/pic-bed/2021/09/4c76da099f1acc95ab57c02b2343a02b.webp)
 
 在看到`Server not running`这个话前基本都500错误或者点了没反应，等半个小时就好(也可以切换网络环境等)
 
@@ -38,7 +38,7 @@ description: 如今，人们白嫖起了牙膏厂~
 
 
 
-![image-20210808145540103](https://i0.hdslb.com/bfs/album/64382e008a7370faf48fbe86fa9e4a7e2e0cc981.png)
+![image-20210808145540103](https://asstes.thun888.xyz/file/pic-bed/2021/09/ff14d0acd34b753b4db1982ba29a55b5.webp)
 
 打开终端
 
@@ -50,25 +50,25 @@ description: 如今，人们白嫖起了牙膏厂~
 
 80核，256g( ‵▽′)ψ，（共用）
 
-![Snipaste_2021-08-07_18-21-17](https://i0.hdslb.com/bfs/album/66be24a1d2241fd55f07cb6a57da3e62e10d9edd.png)
+![Snipaste_2021-08-07_18-21-17](https://asstes.thun888.xyz/file/pic-bed/2021/09/c17e77e93eb1345670b437862da0d8ea.webp)
 
-![Snipaste_2021-08-07_18-28-07](https://i0.hdslb.com/bfs/album/96b7ae52860621cc64505f85ab157e27ba4cb645.png)
+![Snipaste_2021-08-07_18-28-07](https://asstes.thun888.xyz/file/pic-bed/2021/09/e3e8744bbd18b55ecf68bd7f7b13bd6a.webp)
 
 proot容器内测试
 
-![image-20210808150809533](https://i0.hdslb.com/bfs/album/2f59a92fde2ababeba2875c0e633bcf79507f2c4.png@.webp)
+![image-20210808150809533](https://asstes.thun888.xyz/file/pic-bed/2021/09/e2eb75975a18902b1b388cfc9116b8b2.webp)
 
 #### 网速
 
 Asia
 
-![image-20210808151147629](https://i0.hdslb.com/bfs/album/025702cd24eb25032b72130b0b2f7338a6f9887a.png@.webp)
+![image-20210808151147629](https://asstes.thun888.xyz/file/pic-bed/2021/09/fe71087f9bb8efe3880c4c05cfeb471e.webp)
 
 Another
 
-![image-20210808151132419](https://i0.hdslb.com/bfs/album/5ab9b54d5b2e132c830cde770ff2da63e1a687ba.png@.webp)
+![image-20210808151132419](https://asstes.thun888.xyz/file/pic-bed/2021/09/8758a70509e83b3e05ebfebd5287ac18.webp)
 
-![image-20210808151201095](https://i0.hdslb.com/bfs/album/66f9de085b4020a6cdf9d5b92a5190011440080e.png@.webp)
+![image-20210808151201095](https://asstes.thun888.xyz/file/pic-bed/2021/09/85c8fd28052bceea467090cc84e5709a.webp)
 
 
 
@@ -82,7 +82,7 @@ chmod 777 root.sh
 ./root.sh
 ```
 
-![image-20210808140827984](https://i0.hdslb.com/bfs/album/6619c36a9f57e6322a0e125d93130accc2cf34f2.png)
+![image-20210808140827984](https://asstes.thun888.xyz/file/pic-bed/2021/09/1fabbd48980280fd587ca78e7b95afbd.webp)
 
 当$变为#就ok
 
@@ -92,7 +92,7 @@ PS:可以开新一个终端下载一些必要依赖包（deb）再离线安装
 
 > https://packages.debian.org
 
-![image-20210808143134070](https://i0.hdslb.com/bfs/album/d5cc376d6bed2cfab939795ca8aa69244f8dae21.png)
+![image-20210808143134070](https://asstes.thun888.xyz/file/pic-bed/2021/09/ee233bc3f9e26963348624942c45da8c.webp)
 
 > 该服务器使用时间只有10小时，但10小时后还可以再来一次{% emoji aru 51 %}
 

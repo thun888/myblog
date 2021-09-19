@@ -2,7 +2,7 @@
 title: 解决VSCode安装Go扩展报错
 date: 2021-07-26 18:37:56
 tags: Go
-cover: https://i0.hdslb.com/bfs/album/caff7cce9e3327236c326bc55185a31d79ebb65c.png@.webp
+cover: https://do-cloud.oss-cn-guangzhou.aliyuncs.com/img/caff7cce9e3327236c326bc55185a31d79ebb65c.png?x-oss-process=blog
 updated: 2021-07-26 18:37:56
 ---
 
@@ -14,7 +14,7 @@ updated: 2021-07-26 18:37:56
 
 新建2个（如图）
 
-![image-20210726184350014](https://i0.hdslb.com/bfs/album/705b3a231b995cd3ac7ed8dd103075fdb024fa43.png@.webp)
+![image-20210726184350014](https://asstes.thun888.xyz/file/pic-bed/2021/09/ad8580f69486b02efda6957d9714ddd7.webp)
 
 | 变量名      | 变量值             |
 | ----------- | ------------------ |

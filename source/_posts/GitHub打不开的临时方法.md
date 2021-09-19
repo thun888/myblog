@@ -3,7 +3,7 @@ title: GitHub打不开的临时方法
 date: 2021-04-05 14:03:30
 tags: github
 updated: 2021-04-05 14:03:30
-cover: https://i0.hdslb.com/bfs/album/0d94f86abc974ce1f20eddbc78ce48128abe2303.jpg@.webp
+cover: https://do-cloud.oss-cn-guangzhou.aliyuncs.com/img/0d94f86abc974ce1f20eddbc78ce48128abe2303.jpg@.webp?x-oss-process=blog
 ---
 
 #### 起因
