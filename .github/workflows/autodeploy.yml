@@ -61,7 +61,7 @@ jobs:
 
     - name: 通知
       run: |
-        curl ${{ secrets.POST }}博客部署完成
+        curl ${{ secrets.POST }}
 
     - name: get cache
       run: |
