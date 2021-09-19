@@ -84,7 +84,7 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 **粗体**为`blog.thun888.xyz`所依赖的必须资源
 
 - **主站（雨云cdn）**: <span class="tag-plugin emoji"><img style="height:1.5em" src="https://blog.thun888.xyz/img/satus.png"></span>
-- **Jsdelivr**:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://cdn.jsdelivr.net/gh/thun888/thun888.github.io@master/img/satus.png"></span>
+- **Jsdelivr**:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://cdn.jsdelivr.net/gh/thun888/myblog@gh-page/img/satus.png"></span>
 - 评论后端:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://artalk.thun888.xyz/satus.png"></span>
 - Backblaze:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://asstes.thun888.xyz/file/pic-bed/2021/08/24a2870127c3be646bf6acdd80dcc83f.png"></span>
 - Vercel镜像:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://thun888-github-io.vercel.app/img/satus.png"></span>
@@ -98,7 +98,7 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 
   **Alipay**:
 
-<img src="https://do-cloud.oss-cn-guangzhou.aliyuncs.com/img/qq_pic_merged_1632056324335.jpg?x-oss-process=blog" style="zoom:50%;" />
+<img src="https://asstes.thun888.xyz/file/pic-bed/2021/09/75e19448bce154d097347d7e96e96755.webp" style="zoom:50%;" />
 
   **Wechat**:
 
@@ -147,4 +147,3 @@ function load() {
 	document.body.appendChild(script)
 }
 </script>
-
