@@ -2,7 +2,7 @@
 title: 把玩intel的开发服务器
 date: 2021-08-08 13:59:03
 tags: Intel
-cover: https://do-cloud.oss-cn-guangzhou.aliyuncs.com/img/f26f600ba60fc65aac6c46680e76326b6a2dca36.jpg?x-oss-process=style/blog
+cover: https://do-cloud.oss-cn-guangzhou.aliyuncs.com/img/f26f600ba60fc65aac6c46680e76326b6a2dca36.webp?x-oss-process=style/tiny
 updated: 2021-08-08 13:59:03
 description: 如今，人们白嫖起了牙膏厂~
 ---
