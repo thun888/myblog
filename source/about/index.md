@@ -6,8 +6,8 @@ layout: about
 
 ### 关于我
 
-居住在大陆最南端附近,普普通通的初三学生（两周一休爽爆，~~好在学校有平台可以消遣~~），
-在班里当个毫无权力的电教员（玩平台不叫我，玩坏叫我修，giao!）
+居住在大陆最南端附近,普普通通的初三学生
+在班里当个毫无权力的电教员
 平时喜欢折腾点有关电路的小玩意儿
 {% tabs hobbies active:1 align:center %}
 
@@ -39,7 +39,8 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 
 开发方面
 {% checkbox 写个可以便捷管理Cloudflare的浏览器插件 %}
-{% checkbox 写个基于cf worker的工具 %}
+{% checkbox 写个基于cfw的工具 %}
+{% checkbox golang %}
 {% endtabs %}
 
 > 🧪回学校了，更新暂缓
@@ -85,6 +86,7 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 
 - **主站（雨云cdn）**: <span class="tag-plugin emoji"><img style="height:1.5em" src="https://blog.thun888.xyz/img/satus.png"></span>
 - **Jsdelivr**:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://cdn.jsdelivr.net/gh/thun888/myblog@gh-page/img/satus.png"></span>
+- Github_raw_proxy:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://raw.thun888.xyz/thun888/myblog/gh-page/img/satus.png"></span>
 - 评论后端:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://artalk.thun888.xyz/satus.png"></span>
 - Backblaze:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://asstes.thun888.xyz/file/pic-bed/2021/08/24a2870127c3be646bf6acdd80dcc83f.png"></span>
 - Vercel镜像:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://thun888-github-io.vercel.app/img/satus.png"></span>
@@ -118,16 +120,13 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
   - share. =>Oneindex
   - server. =>监控站
   - blog. =>Blog
-  - files. =>文件外链{% psw 虽然速度很烂 %}
-  - ipfs. =>ipfs网盘
-  - pan. =>豚云盘（自用，但开放注册，基于onedrive）
+  - pan. =>云盘（自用，但开放注册，基于onedrive）
   - api. => api调用接口，虽然不提供文档{% emoji aru 18 %}
 - demm.tk
   - www&@ =>二级域名分发{% psw 上年拿来水经验的竟然还有人在用%}
 - orzz.ml(cf)
   - www&@ =>~~没用!~~短链，与url.共用数据
   - gravatar. =>Gravatar头像源
-  - blog. =>反代主站
   - url. =>短链
 
  {% endfolding %}
@@ -147,3 +146,4 @@ function load() {
 	document.body.appendChild(script)
 }
 </script>
+
