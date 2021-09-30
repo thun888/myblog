@@ -72,7 +72,7 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 [Jsdelivr](https://www.jsdelivr.com/) 提供js,css等静态资源及图片加速
 [Vercel](https://vercel.com/) 提供静态网页托管及部分对子站点的反向代理
 [Cloudflare](https://www.cloudflare.com/) 提供cdn,dns
-[Backblaze](https://www.backblaze.com/)&[去不图床](https://7bu.top/)&[BiliBili](https://www.bilibili.com/)提供图片储存
+[Backblaze](https://www.backblaze.com/)&[去不图床](https://7bu.top/)&[阿里云](https://www.aliyun.com/)提供图片储存
 [雨云](http://redirect.rainyun.cn/?ref=15366) 提供主站CDN服务
 
 #### 运行状况
