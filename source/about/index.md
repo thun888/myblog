@@ -98,13 +98,9 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 
 {% folding child:codeblock open:false color:yellow 码 %}
 
-  **Alipay**:
-
-<img src="https://asstes.thun888.xyz/file/pic-bed/2021/09/75e19448bce154d097347d7e96e96755.webp" style="zoom:50%;" />
-
-  **Wechat**:
-
-<img src="https://asstes.thun888.xyz/file/pic-bed/2021/08/6669b54053e15bb262467c958efe3604.png" style="zoom:50%;" />
+| Alipay                                                       | Wechat                                                       |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| <img src="https://asstes.thun888.xyz/file/pic-bed/2021/09/75e19448bce154d097347d7e96e96755.webp" style="zoom:42.5%;" /> | <img src="https://asstes.thun888.xyz/file/pic-bed/2021/08/6669b54053e15bb262467c958efe3604.png" style="zoom:50%;" /> |
 
   **Xmr**:`466EiZQMzS8XvgZaKybFVUL3xxjuzQT6p2pz1DY9MLNiiaJ45FcCnxU4jW8cyi4SDYPCz3oZWrS3EisaZFqaiXbL21HCsT6`
 
@@ -146,4 +142,3 @@ function load() {
 	document.body.appendChild(script)
 }
 </script>
-

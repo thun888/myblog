@@ -1,3 +1,3 @@
 git add .
-git commit -m "github action update"
+git commit -m "update"
 git push origin main

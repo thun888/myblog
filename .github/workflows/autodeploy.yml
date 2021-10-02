@@ -58,6 +58,7 @@ jobs:
       run: |
         curl https://purge.jsdelivr.net/gh/thun888/myblog@gh-page/css/main.css
         curl https://purge.jsdelivr.net/gh/thun888/myblog@gh-page/js/main.min.js
+        curl https://purge.jsdelivr.net/gh/thun888/myblog@gh-page/morecss/main.css
 
     - name: 通知
       run: |
@@ -67,3 +68,4 @@ jobs:
       run: |
         curl https://cdn.jsdelivr.net/gh/thun888/myblog@gh-page/css/main.css
         curl https://cdn.jsdelivr.net/gh/thun888/myblog@gh-page/js/main.min.js
+        curl https://cdn.jsdelivr.net/gh/thun888/myblog@gh-page/morecss/main.css
