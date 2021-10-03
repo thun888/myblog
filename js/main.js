@@ -293,7 +293,7 @@ document.addEventListener('copy',function(){var notyf=new Notyf({duration:1500,p
 //https!
 var nhttps=getCookie("nhttps");var targetProtocol="https:";if(nhttps!="yes"){if(window.location.protocol!=targetProtocol){var notyf=new Notyf({duration:10000,position:{x:'right',y:'top',},});notyf.success('10秒后将跳转到https');setTimeout(function(){window.location.href=targetProtocol+window.location.href.substring(window.location.protocol.length)},10000)}}else{var notyf=new Notyf({duration:2000,position:{x:'right',y:'top',},});notyf.error('您正通过http方式访问')}
 function tohttp(){nhttps=getCookie("nhttps");if(nhttps!="yes"){document.cookie="nhttps=yes"}else{document.cookie="nhttps="}}
-
+/*
 window.onload = () => {
   const menu = document.querySelector('.menu')
   const menuHeight = menu.offsetHeight - parseInt(getComputedStyle(menu)['paddingTop']) - parseInt(getComputedStyle(menu)['paddingBottom'])
@@ -318,4 +318,4 @@ window.onload = () => {
       menu.classList.remove('is-active')
   }
   window.onclick = () => colseMenu()
-}
+}*/
