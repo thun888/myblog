@@ -94,7 +94,7 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 
 #### 捐赠
 
-我并不认为我目前能接受捐赠{% psw 太菜了 %}，不过如果您愿意也可以请我喝杯奶茶{% emoji aru 50 %}
+我并不认为我目前能接受捐赠~~太菜了~~，不过如果您愿意也可以请我喝杯奶茶{% emoji aru 50 %}
 
 {% folding child:codeblock open:false color:yellow 码 %}
 
@@ -142,3 +142,4 @@ function load() {
 	document.body.appendChild(script)
 }
 </script>
+
