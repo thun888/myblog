@@ -86,7 +86,7 @@
     <content><![CDATA[<h4 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h4><p>一开始我是在电脑上挂网心，但这玩意儿写入缓存不仅多（以至于写掉盘了），钱还给的少。而甜糖在恩山论坛上面的都是Linux下操作的，对我这docker小白很不友好，今天就总结一下最简单的方法</p>
 <p><em>以下内容建议使用FinalShell操作</em></p>
 <h4 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h4><ol>
-<li>映像包（<a href="http://camc.ga:5218/ttnode">500g/100g</a>)(在我写的时候又有新版了<img src="https://cdn.jsdelivr.net/gh/thun888/jian@master/coolapk_emotion_58_dogeyuanliangta.png" style="zoom:25%;" />)</li>
+<li>映像包（<a href="https://share.thun888.xyz/ali/%E6%96%87%E4%BB%B6/ttnode/">500g/100g</a>)(在我写的时候又有新版了<img src="https://cdn.jsdelivr.net/gh/thun888/jian@master/coolapk_emotion_58_dogeyuanliangta.png" style="zoom:25%;" />)</li>
 <li>vmware</li>
 </ol>
 <h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><ol>
@@ -278,7 +278,7 @@
 
 <p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210404122529333.png" alt="image-20210404122529333"></p>
 <p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210404122649005.png" alt="image-20210404122649005"></p>
-<p>下载地址：<br>teambition:<a href="http://camc.ga:5218/Dyson%20Sphere%20Program/">http://camc.ga:5218/Dyson%20Sphere%20Program/</a><br>oneindex:<a href="https://share.thun888.xyz/GAMES/Dyson%20Sphere%20Program/">https://share.thun888.xyz/GAMES/Dyson%20Sphere%20Program/</a></p>
+<p>下载地址：<br>Aliyun:<a href="https://share.thun888.xyz/ali/Dyson%20Sphere%20Program/0.6.17.6137.zip">https://share.thun888.xyz/ali/Dyson%20Sphere%20Program/0.6.17.6137.zip</a><br>onedrive:<a href="https://share.thun888.xyz/GAMES/Dyson%20Sphere%20Program/">https://share.thun888.xyz/GAMES/Dyson%20Sphere%20Program/</a></p>
 <p>白给了一个硬币<img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/coolapk_emotion_1020.png" alt="coolapk_emotion_1020" style="zoom:25%;" /></p>
 ]]></content>
       <tags>
@@ -677,11 +677,11 @@
 <img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/favicon_1.svg" alt="favicon_1" style="zoom:300%;" />
 
 <h5 id="How"><a href="#How" class="headerlink" title="How"></a>How</h5><p>先下载&amp;安装<a href="https://share.thun888.xyz/%E8%BD%AF%E4%BB%B6/CorelDRAW_X4_SP2_%E7%B2%BE%E7%AE%80%E5%A2%9E%E5%BC%BA%E7%89%88.exe">CorelDRAW</a></p>
-<p>把你可爱的ico拉到浏览器里放到最大</p>
-<p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210504155034662.png" alt="image-20210504155034662"></p>
-<p>贴着边缘截张图</p>
-<div class="tag-plugin note" ><div class="title"><strong>like this</strong></div><div class="body"><div class="tag-plugin image"><div class="image-bg"><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210504155240.png"/></div></div></div></div>
-<p>选择 文件—导入—（刚刚截的图）</p>
+<p>打开ps将ico转为png</p>
+<p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/14dsf352gf.gif" alt="14dsf352gf"></p>
+<p>导出后像这样</p>
+<p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/icon.png" alt="icon"></p>
+<p>选择 文件—导入—（刚刚的图）</p>
 <p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210504155534.png"></p>
 <p>放置在画纸后</p>
 <p>右键—轮廓描慕—高质量图像（也可以选其他的）</p>
