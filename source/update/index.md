@@ -7,6 +7,9 @@ layout: post
 
 {% timeline %}
 
+<!-- node 10/04 -->
+1.更改评论后端线路（~20ms）
+
 <!-- node 9/19 -->
 1.全面停用bilibili图床（bili -> b2）
 

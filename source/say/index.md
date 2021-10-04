@@ -21,7 +21,7 @@ header: false
    - 广告链接（京东淘宝等，不过会看情况处理，合理讨论不会删除）
 5. 网址可留空
 6. 头像基于[Gravarar](http://cn.gravatar.com/)而不是QQ
-7. 评论后端在韩国，如果遇到加载缓慢记得刷新~
+7. 如果遇到加载缓慢记得刷新~
 8. 邮箱，IP仅对管理员可见，后端支持ssl，评论数据将全程加密，大可放心
 9. 数据会经常备份，但在开学后会降到1~2月备份一次
 10. 图床尽量避免使用自建图床（SLA有保证,不会跑路的除外）
@@ -29,9 +29,9 @@ header: false
 
 {% endfolding %}
 
-当然我相信没人会认真看上面的文字，记住**文明上网，合理发言**就好U•ェ•*U
+当然，记住**文明上网，合理发言**就好U*•ェ•U
 
-
+在下方开始留言吧~
 
 
 <HR width="95%" color=#987cb9 SIZE=3>
@@ -50,3 +50,4 @@ header: false
   <script>
 function load(){var script=document.createElement("script");script.type="text/javascript";script.src='/js/artalkconfig.js';document.body.appendChild(script)}
   </script>
+
