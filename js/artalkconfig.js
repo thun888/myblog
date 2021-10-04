@@ -152,7 +152,7 @@ document.getElementById("fileup").innerHTML='(￣︶￣)↗[<a href="https://ipf
     placeholder: '来评论啊ヾ(≧▽≦*)', // 占位符
     noComment: '此处无声胜有声~', // 无评论时显示
     pageKey: location.pathname,
-    serverUrl: 'https://artalk.thun888.xyz/',
+    serverUrl: 'https://artalk.thun888.xyz:444/',
     readMore: { // 阅读更多配置
       pageSize: 15, // 每次请求获取评论数
       autoLoad: true // 滚动到底部自动加载
