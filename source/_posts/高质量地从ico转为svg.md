@@ -1,6 +1,6 @@
 ---
 title: 高质量地从ico转为svg
-date: 2021-05-03 19:19:00
+date: 2021-10-04 13:57:00
 tags: [网站,转换]
 cover: https://asstes.thun888.xyz/file/pic-bed/2021/09/e6905593f50890da134d5cf2e7ad1541.png
 description: 使用CorelDRAW将图片转为矢量图
@@ -19,15 +19,15 @@ updated: 2021-05-03 19:19:00
 
 先下载&安装[CorelDRAW](https://share.thun888.xyz/%E8%BD%AF%E4%BB%B6/CorelDRAW_X4_SP2_%E7%B2%BE%E7%AE%80%E5%A2%9E%E5%BC%BA%E7%89%88.exe)
 
-把你可爱的ico拉到浏览器里放到最大
+打开ps将ico转为png
 
-![image-20210504155034662](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210504155034662.png)
+![14dsf352gf](https://raw.thun888.xyz/thun888/tuku/master/img/14dsf352gf.gif)
 
-贴着边缘截张图
-{% noteblock like this %}
-{% image https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210504155240.png %}
-{% endnoteblock %}
-选择 文件---导入---（刚刚截的图）
+导出后像这样
+
+![icon](https://raw.thun888.xyz/thun888/tuku/master/img/icon.png)
+
+选择 文件---导入---（刚刚的图）
 
 ![](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210504155534.png)
 

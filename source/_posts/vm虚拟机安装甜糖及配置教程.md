@@ -13,7 +13,7 @@ updated: 2021-02-07 10:05:21
 
 #### 准备工作
 
-1. 映像包（[500g/100g](http://camc.ga:5218/ttnode))(在我写的时候又有新版了<img src="https://cdn.jsdelivr.net/gh/thun888/jian@master/coolapk_emotion_58_dogeyuanliangta.png" style="zoom:25%;" />)
+1. 映像包（[500g/100g](https://share.thun888.xyz/ali/文件/ttnode/))(在我写的时候又有新版了<img src="https://cdn.jsdelivr.net/gh/thun888/jian@master/coolapk_emotion_58_dogeyuanliangta.png" style="zoom:25%;" />)
 2. vmware
 
 #### 安装
