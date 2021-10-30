@@ -92,7 +92,6 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 - **主站（雨云cdn）**: <span class="tag-plugin emoji"><img style="height:1.5em" src="https://blog.thun888.xyz/img/satus.png"></span>
 - **Jsdelivr**:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://cdn.jsdelivr.net/gh/thun888/myblog@gh-page/img/satus.png"></span>
 - Github_raw_proxy:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://raw.thun888.xyz/thun888/myblog/gh-page/img/satus.png"></span>
-- 评论后端:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://artalk.thun888.xyz:444/satus.png"></span>
 - Backblaze:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://asstes.thun888.xyz/file/pic-bed/2021/08/24a2870127c3be646bf6acdd80dcc83f.png"></span>
 - Vercel镜像:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://thun888-github-io.vercel.app/img/satus.png"></span>
 - Cloudflare镜像:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://cfblog.thun888.xyz/img/satus.png"></span>
@@ -143,3 +142,4 @@ function load() {
 	document.body.appendChild(script)
 }
 </script>
+
