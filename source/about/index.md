@@ -134,7 +134,7 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 <HR width="95%" color=#987cb9 SIZE=3>
 <a id="artalkup" href="javascript:load();" style="text-align: center;display:block;background-color:var(--link-hover-bg-color);font-size:20px">(o゜▽゜)o点击加载留言</a><span id="fileup" style="text-align: center;display:block;"></span>
 <HR width="95%" color=#987cb9 SIZE=3>
-    <div id="ArtalkComments"></div>
+    <div id="Comments"></div>
 <script>
 function load() {
 	var script = document.createElement("script");
