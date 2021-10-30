@@ -12,7 +12,7 @@ layout: about
 
 Thun888 目前是一个初三学生,没有太多时间打理博客，
 
-{% navbar [文章](/) [项目](/wiki/) [GitHub](https://github.com/thun888) [友链](/friends/) [留言](/say) %}
+{% navbar [文章](/) [项目](/wiki/) [GitHub](https://github.com/thun888/) [友链](/friends/) [留言](/say/) %}
 
 {% endabout %}
 {% tabs hobbies active:2 align:center %}
