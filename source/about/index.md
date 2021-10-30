@@ -129,6 +129,8 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 
   ![](https://asstes.thun888.xyz/file/pic-bed/2021/07/5b73a4a33f9bb3df5e1236b4021492fe.gif)
 
+  <script src="https://cdn.jsdelivr.net/npm/artalk@2.0.4/dist/Artalk.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/artalk@2.0.4/dist/Artalk.css">
 <HR width="95%" color=#987cb9 SIZE=3>
 <a id="artalkup" href="javascript:load();" style="text-align: center;display:block;background-color:var(--link-hover-bg-color);font-size:20px">(o゜▽゜)o点击加载留言</a><span id="fileup" style="text-align: center;display:block;"></span>
 <HR width="95%" color=#987cb9 SIZE=3>
