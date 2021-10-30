@@ -6,12 +6,14 @@ layout: post
 ---
 
 {% timeline %}
+<!-- node 10/29 -->
+1.更新评论系统前端，后端（PHP -> Go）<br>2.对一部分“文章”进行归档处理
 
 <!-- node 10/04 -->
 1.更改评论后端线路（~20ms）
 
 <!-- node 9/19 -->
-1.全面停用bilibili图床（bili -> b2）
+1.全面停用以BiliBili作图床（bili -> b2）
 
 <!-- node 9/11 -->
 1.调整页面宽度<br>![image-20210911105945989](https://asstes.thun888.xyz/file/pic-bed/2021/09/d4c4fe0a9738db2849de1090af4d8b06.png)

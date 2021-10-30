@@ -157,7 +157,6 @@ footer:
        - '[后台](https://hexo.orzz.ml/hpp/admin/dash/home)'
        - '[归档](/archives)'
      '项目':
-       - '[Artalk-Doc](/wiki/Artalk)'
        - '[杂物](/wiki/杂物间)'
      '社交':
        - '[友链](/friends)'
@@ -205,8 +204,8 @@ plugins:
     css: https://unpkg.com/swiper/swiper-bundle.min.css
     js: https://unpkg.com/swiper/swiper-bundle.min.js
   # issues api
-  sitesjs: https://cdn.jsdelivr.net/gh/thun888/thun888.github.io@master/js/plugins/sites.js
-  friendsjs: https://cdn.jsdelivr.net/gh/thun888/thun888.github.io@master/js/plugins/friends.js
+  sitesjs: https://cdn.jsdelivr.net/gh/thun888/myblog@gh-page/js/plugins/sites.js
+  friendsjs: https://cdn.jsdelivr.net/gh/thun888/myblog@gh-page/js/plugins/friends.js
   
   ## optional plugins ##
   # preload

@@ -2,7 +2,7 @@
 layout: wiki
 wiki: Artalk-doc # 这是项目名
 title: About Artalk
-seo_title: 一个Artalk的非官方文档，Artalk是什么,artalk
+seo_title: 一个Artalk的非官方文档
 order: -1
 ---
 
@@ -11,6 +11,15 @@ order: -1
 ![banner-2021.png](https://bu.dusays.com/2021/07/16/8ea9ca8418e55.png)
 
 > 一款简洁有趣的自托管评论系统
+
+
+
+!!! warning 注意
+    官方文档：[Artalk](https://artalk.js.org/)，本页面做存档处理，不再更新
+
+
+
+
 ## 特性
 
 - 有趣有爱

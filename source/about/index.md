@@ -4,16 +4,22 @@ date: 2021-07-29 19:00:02
 layout: about
 ---
 
-### 关于我
+{% about avatar:https://vkceyugu.cdn.bspapp.com/VKCEYUGU-35c12a92-e00c-4a70-8ef5-7bc728310bb5/c69734e0-f836-44b3-916a-77e618c57c70.webp height:80px %}
 
-居住在大陆最南端附近,普普通通的初三学生
-在班里当个毫无权力的电教员
-平时喜欢折腾点有关电路的小玩意儿
-{% tabs hobbies active:1 align:center %}
+<img height="32px" alt="XAOXUU" src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-35c12a92-e00c-4a70-8ef5-7bc728310bb5/666e5dce-5861-45b1-846a-9652ab60f2eb.png">
+
+
+
+Thun888 目前是一个初三学生,没有太多时间打理博客，
+
+{% navbar [文章](/) [项目](/wiki/) [GitHub](https://github.com/thun888) [友链](/friends/) [留言](/say) %}
+
+{% endabout %}
+{% tabs hobbies active:2 align:center %}
 
 <!-- tab 技能 -->
 
-加点JavaScript，加点CSS，~~鲜上加鲜~~,在学Go
+~~废物~~,在学Go
 
 <!-- tab 联系方式 -->
 
@@ -32,6 +38,8 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 学习方面
 {% checkbox 中考考个好成绩，进到实验班 %}
 
+> 以下内容待定
+
 网站方面
 {% checkbox 设立导航页 %}
 {% checkbox 添加“收藏夹”页面 %}
@@ -40,11 +48,8 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 开发方面
 {% checkbox 写个可以便捷管理Cloudflare的浏览器插件 %}
 {% checkbox 写个基于cfw的工具 %}
-{% checkbox golang %}
+{% checkbox Golang %}
 {% endtabs %}
-
-> 🧪回学校了，更新暂缓
->
 
 
 ### 关于本站.
@@ -96,15 +101,11 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 
 我并不认为我目前能接受捐赠~~太菜了~~，不过如果您愿意也可以请我喝杯奶茶{% emoji aru 50 %}
 
-{% folding child:codeblock open:false color:yellow 码 %}
-
 | Alipay                                                       | Wechat                                                       |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src="https://asstes.thun888.xyz/file/pic-bed/2021/09/75e19448bce154d097347d7e96e96755.webp" style="zoom:42.5%;" /> | <img src="https://asstes.thun888.xyz/file/pic-bed/2021/08/6669b54053e15bb262467c958efe3604.png" style="zoom:50%;" /> |
+| <img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-35c12a92-e00c-4a70-8ef5-7bc728310bb5/f8de3cd8-3c97-4c20-a8e2-c5f921a1af99.webp" style="zoom:42.5%;" /> | <img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-35c12a92-e00c-4a70-8ef5-7bc728310bb5/1388167e-adb3-4302-8a8e-f206e4601795.png" style="zoom:50%;" /> |
 
   **Xmr**:`466EiZQMzS8XvgZaKybFVUL3xxjuzQT6p2pz1DY9MLNiiaJ45FcCnxU4jW8cyi4SDYPCz3oZWrS3EisaZFqaiXbL21HCsT6`
-
-{% endfolding %}
 
 #### 子站
 
@@ -112,12 +113,12 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 （仅可公开,一些测试/自用的可能会在别的地方出现，但这里绝对没有）{% emoji aru 31 %}
 
 - thun888.xyz
-  - @ =>初定html5up写导航页，找个时间写了
+  - @ =>导航页，找个时间写了
   - share. =>Oneindex
   - server. =>监控站
   - blog. =>Blog
   - pan. =>云盘（自用，但开放注册，基于onedrive）
-  - api. => api调用接口，虽然不提供文档{% emoji aru 18 %}
+  - api. => 部分api调用接口，虽然不提供文档{% emoji aru 18 %}
 - demm.tk
   - www&@ =>二级域名分发{% psw 上年拿来水经验的竟然还有人在用%}
 - orzz.ml(cf)

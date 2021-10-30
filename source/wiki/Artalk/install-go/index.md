@@ -6,10 +6,7 @@ keywords: 安装artalk,Artalk,配置Artalk
 order: 1
 ---
 
-!!! warning 注意
-    Go版本仍处于测试阶段，在前端js未更新前仍无法使用
 
-相对于php版本，go版本支持许多新的特性，并且安装也简单{% emoji aru 17 %}
 
 #### 环境
 
