@@ -5,5 +5,5 @@ document.getElementById("fileup").innerHTML='(￣︶￣)↗[<a href="https://ipf
     pageKey:   window.location.href,
     pageTitle: '来评论啊ヾ(≧▽≦*)',
     server:    'https://artalk.thun888.xyz:444/api/',
-    site:      'blog',
+    site:      'Blog',
   })
