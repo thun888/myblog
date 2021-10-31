@@ -149,7 +149,7 @@ document.getElementById("fileup").innerHTML='(￣︶￣)↗[<a href="https://ipf
   new Artalk({
     emotions,
     el:        '#Comments',
-    pageKey:   window.location.href,
+    pageKey:  location.pathname,
     placeholder: '来啊，快活啊[]~(￣▽￣)~*', // 占位符
     sendBtn: 'Fire!',
     pageTitle: '',
