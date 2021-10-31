@@ -143,4 +143,3 @@ function load() {
 	document.body.appendChild(script)
 }
 </script>
-
