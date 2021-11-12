@@ -149,10 +149,11 @@ document.getElementById("fileup").innerHTML='(￣︶￣)↗[<a href="https://ipf
   new Artalk({
     emotions,
     el:        '#Comments',
-    pageKey:  location.pathname,
+    pageKey:  window.location.href.split('#')[0],
     placeholder: '来啊，快活啊[]~(￣▽￣)~*', // 占位符
     sendBtn: 'Fire!',
+    reqTimeout: 60,
     pageTitle: '',
-    server:    'https://artalk.thun888.xyz:444/api/',
+    server:    'https://artalk.thun888.xyz/api/',
     site:      'Blog',
-  })
+  })  
