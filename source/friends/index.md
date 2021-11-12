@@ -73,20 +73,13 @@ description: 心如止水，不可暴躁（￣︶￣）
 
 如果您需要更新自己的友链，请直接修改 issue 内容，大约 3 分钟内生效，无需等待博客更新。如果无法修改，可以重新创建一个。
 
-  <script src="https://cdn.jsdelivr.net/npm/artalk@2.0.4/dist/Artalk.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/artalk@2.0.4/dist/Artalk.css">
 <HR width="95%" color=#987cb9 SIZE=3>
-<a id="artalkup" href="javascript:load();" style="text-align: center;display:block;background-color:var(--link-hover-bg-color);font-size:20px">(o゜▽゜)o点击加载留言</a><span id="fileup" style="text-align: center;display:block;"></span>
-<HR width="95%" color=#987cb9 SIZE=3>
-    <div id="Comments"></div>
-<script>
-function load() {
-	var script = document.createElement("script");
-	script.type = "text/javascript";
-	script.src = '/js/artalkconfig.js';
-	document.body.appendChild(script)
-}
-</script>
-
-
+  <a id="artalkup" href="javascript:load();" style="text-align: center;display:block;background-color:var(--link-hover-bg-color);font-size:20px">(o゜▽゜)o点击加载留言</a><span id="fileup" style="text-align: center;display:block;"></span>
+  <HR width="95%" color=#987cb9 SIZE=3>
+  <div id="Comments"></div>
+  <link href="https://cdn.jsdelivr.net/npm/artalk@2.1.1/dist/Artalk.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/artalk@2.1.1/dist/Artalk.js"></script>
+  <script>
+function load(){var script=document.createElement("script");script.type="text/javascript";script.src='/js/artalkconfig.js';document.body.appendChild(script)}
+  </script>
 

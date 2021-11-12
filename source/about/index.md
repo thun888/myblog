@@ -6,7 +6,7 @@ layout: about
 
 {% about avatar:https://vkceyugu.cdn.bspapp.com/VKCEYUGU-35c12a92-e00c-4a70-8ef5-7bc728310bb5/c69734e0-f836-44b3-916a-77e618c57c70.webp height:80px %}
 
-<img height="32px" alt="XAOXUU" src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-35c12a92-e00c-4a70-8ef5-7bc728310bb5/666e5dce-5861-45b1-846a-9652ab60f2eb.png">
+<img height="32px" alt="XAOXUU" src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-35c12a92-e00c-4a70-8ef5-7bc728310bb5/7fb9a508-78e1-4d8c-9d8e-ac3f5921cf8e.png">
 
 
 
@@ -27,7 +27,6 @@ Thun888 目前是一个初三学生,没有太多时间打理博客，
 - [酷安](https://www.coolapk.com/u/2399850)
 - [GitHub](https://www.github.com/thun888)
 - [QQ邮箱](mailto:thun888@qq.com)
-- [Outlook邮箱](mailto:thun888@thun888.xyz)
 
 <!-- tab 游戏 -->
 
@@ -129,17 +128,12 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 
   ![](https://asstes.thun888.xyz/file/pic-bed/2021/07/5b73a4a33f9bb3df5e1236b4021492fe.gif)
 
-  <script src="https://cdn.jsdelivr.net/npm/artalk@2.0.4/dist/Artalk.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/artalk@2.0.4/dist/Artalk.css">
 <HR width="95%" color=#987cb9 SIZE=3>
-<a id="artalkup" href="javascript:load();" style="text-align: center;display:block;background-color:var(--link-hover-bg-color);font-size:20px">(o゜▽゜)o点击加载留言</a><span id="fileup" style="text-align: center;display:block;"></span>
-<HR width="95%" color=#987cb9 SIZE=3>
-    <div id="Comments"></div>
-<script>
-function load() {
-	var script = document.createElement("script");
-	script.type = "text/javascript";
-	script.src = '/js/artalkconfig.js';
-	document.body.appendChild(script)
-}
-</script>
+  <a id="artalkup" href="javascript:load();" style="text-align: center;display:block;background-color:var(--link-hover-bg-color);font-size:20px">(o゜▽゜)o点击加载留言</a><span id="fileup" style="text-align: center;display:block;"></span>
+  <HR width="95%" color=#987cb9 SIZE=3>
+  <div id="Comments"></div>
+  <link href="https://cdn.jsdelivr.net/npm/artalk@2.1.1/dist/Artalk.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/artalk@2.1.1/dist/Artalk.js"></script>
+  <script>
+function load(){var script=document.createElement("script");script.type="text/javascript";script.src='/js/artalkconfig.js';document.body.appendChild(script)}
+  </script>
