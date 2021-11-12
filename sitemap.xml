@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://thun888.xyz/about/</loc>
+    
+    <lastmod>2021-11-12</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://thun888.xyz/htalk/</loc>
+    
+    <lastmod>2021-11-12</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://thun888.xyz/update/</loc>
     
     <lastmod>2021-11-12</lastmod>
@@ -24,20 +38,6 @@
   
   <url>
     <loc>https://thun888.xyz/wiki/%E6%9D%82%E7%89%A9%E9%97%B4/</loc>
-    
-    <lastmod>2021-11-12</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://thun888.xyz/wiki/Artalk/API/</loc>
-    
-    <lastmod>2021-11-12</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://thun888.xyz/wiki/Artalk/QandA/</loc>
     
     <lastmod>2021-11-12</lastmod>
     
@@ -93,14 +93,14 @@
   </url>
   
   <url>
-    <loc>https://thun888.xyz/about/</loc>
+    <loc>https://thun888.xyz/wiki/Artalk/API/</loc>
     
     <lastmod>2021-11-12</lastmod>
     
   </url>
   
   <url>
-    <loc>https://thun888.xyz/htalk/</loc>
+    <loc>https://thun888.xyz/wiki/Artalk/QandA/</loc>
     
     <lastmod>2021-11-12</lastmod>
     
