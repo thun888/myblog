@@ -6,7 +6,7 @@ layout: about
 
 {% about avatar:https://vkceyugu.cdn.bspapp.com/VKCEYUGU-35c12a92-e00c-4a70-8ef5-7bc728310bb5/c69734e0-f836-44b3-916a-77e618c57c70.webp height:80px %}
 
-<img height="32px" alt="XAOXUU" src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-35c12a92-e00c-4a70-8ef5-7bc728310bb5/7fb9a508-78e1-4d8c-9d8e-ac3f5921cf8e.png">
+<img height="42px" alt="logo" src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-35c12a92-e00c-4a70-8ef5-7bc728310bb5/b4b1c874-e3bf-42da-94cd-1968d4dfa5bc.svg">
 
 
 
@@ -45,9 +45,8 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 {% checkbox 让百度收录到达10+ %}<del>ljbd</del>
 
 开发方面
-{% checkbox 写个可以便捷管理Cloudflare的浏览器插件 %}
 {% checkbox 写个基于cfw的工具 %}
-{% checkbox Golang %}
+{% checkbox Golang入门 %}
 {% endtabs %}
 
 
@@ -137,3 +136,4 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
   <script>
 function load(){var script=document.createElement("script");script.type="text/javascript";script.src='/js/artalkconfig.js';document.body.appendChild(script)}
   </script>
+

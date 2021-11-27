@@ -15,8 +15,7 @@ order: -1
 
 
 !!! warning 注意
-    官方文档：[Artalk](https://artalk.js.org/)，本页面做存档处理，不再更新
-
+    官方文档：[Artalk (v2)](https://artalk.js.org/)，本文档做存档处理，不再更新
 
 
 
@@ -34,11 +33,7 @@ order: -1
 
 - 管理员密码，防冒名
 
-  ![](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210709083442937.png)
-
 - 验证码，提交频率限制
-
-  ![](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210709082837.png)
 
 - 通知中心，邮件提醒
 
