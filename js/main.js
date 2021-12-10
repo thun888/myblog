@@ -319,7 +319,3 @@ window.onload = () => {
   }
   window.onclick = () => colseMenu()
 }*/
-
-$(window).on("load",function(){
-  $(".loader").fadeOut("slow");
-});
