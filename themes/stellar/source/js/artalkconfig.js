@@ -146,13 +146,17 @@ const emotions = {
 
 document.getElementById("artalkup").innerHTML=''
 document.getElementById("fileup").innerHTML='(￣︶￣)↗[<a href="https://ipfs.thun888.xyz">文件</a>/<a href="https://pic.thun888.xyz">图片</a>上传,<a href="https://emotion.xiaokang.me">更多表情</a>]'
-  new Artalk({
-    emotions,
-    el:        '#Comments',
-    pageKey:  window.location.href.split('#')[0],
+var page = window.location.href.split('#')[0]
+if (page.endsWith("index.html")) {
+  pagekey = page.substring(0, page.length - 10)
+}
+new Artalk({
+    emotions: emotions,
+    el: '#Comments',
+    pageKey:  pagekey,
     placeholder: '来啊，快活啊[]~(￣▽￣)~*', // 占位符
     sendBtn: 'Fire!',
     pageTitle: '',
-    server:    'https://artalk.thun888.xyz/api/',
-    site:      'Blog',
+    server: 'https://artalk.thun888.xyz/api/',
+    site: 'Blog',
   })  
