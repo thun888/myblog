@@ -291,31 +291,10 @@ var lololo="t";var zh_default="n";var zh_choose="n";var zh_expires=7;var zh_clas
 document.addEventListener('copy',function(){var notyf=new Notyf({duration:1500,position:{x:'right',y:'top',},});notyf.success('复制成功，转载请注明出处。');
 })
 //https!
-var nhttps=getCookie("nhttps");var targetProtocol="https:";if(nhttps!="yes"){if(window.location.protocol!=targetProtocol){var notyf=new Notyf({duration:10000,position:{x:'right',y:'top',},});notyf.success('10秒后将跳转到https');setTimeout(function(){window.location.href=targetProtocol+window.location.href.substring(window.location.protocol.length)},10000)}}else{var notyf=new Notyf({duration:2000,position:{x:'right',y:'top',},});notyf.error('您正通过http方式访问')}
-function tohttp(){nhttps=getCookie("nhttps");if(nhttps!="yes"){document.cookie="nhttps=yes"}else{document.cookie="nhttps="}}
-/*
-window.onload = () => {
-  const menu = document.querySelector('.menu')
-  const menuHeight = menu.offsetHeight - parseInt(getComputedStyle(menu)['paddingTop']) - parseInt(getComputedStyle(menu)['paddingBottom'])
-  menu.style.height = '0'
-
-  openMenu = e => {
-    if(event.ctrlKey){
-      　return false
-    }
-    if(document.body.clientWidth < 750){
-      　return false
-    }
-      e.preventDefault()
-      menu.style.left = `${e.clientX}px`
-      menu.style.top = `${e.clientY + 5}px`
-      menu.style.height = `${menuHeight}px`
-      menu.classList.add('is-active')
-      return false
-  }
-  colseMenu = () => {
-      menu.style.height = '0'
-      menu.classList.remove('is-active')
-  }
-  window.onclick = () => colseMenu()
-}*/
+//var nhttps=getCookie("nhttps");var targetProtocol="https:";if(nhttps!="yes"){if(window.location.protocol!=targetProtocol){var notyf=new Notyf({duration:10000,position:{x:'right',y:'top',},});notyf.success('10秒后将跳转到https');setTimeout(function(){window.location.href=targetProtocol+window.location.href.substring(window.location.protocol.length)},10000)}}else{var notyf=new Notyf({duration:2000,position:{x:'right',y:'top',},});notyf.error('您正通过http方式访问')}
+//function tohttp(){nhttps=getCookie("nhttps");if(nhttps!="yes"){document.cookie="nhttps=yes"}else{document.cookie="nhttps="}}
+//更新时间
+gtime_days = Math.floor((new Date() - new Date('<%= page.updated %>')) / 1000 / 60 / 60 / 24);
+if (gtime_days > 60) {
+  document.getElementById('gtime_days').innerHTML = "提醒：本文最后更新于 "+gtime_days+" 天前，其中某些信息可能已经过时，请谨慎使用！";
+}
