@@ -33,7 +33,7 @@ function layoutTitle() {
   <span class="post-meta-item-text">阅读时长:</span>
   <span class="post-count"><%= min2read(post.content) %>分</span>
 </span>
-<script>var gtime_r = new Date('<%= page.updated %>');</script>
+<script>gtime_days = Math.floor((new Date() - new Date('<%= page.updated %>')) / 1000 / 60 / 60 / 24);</script>
 <div class="old-message" id='gtime_days'></div>
 <%- post.content %>
 <%- partial('_partial/main/article/article_footer') %>

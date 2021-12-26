@@ -4,7 +4,7 @@ stellar:
   homepage: 'https://xaoxuu.com/wiki/stellar/'
   repo: 'https://github.com/xaoxuu/hexo-theme-stellar'
   cdn_css:  # Use cdn links instead of /css/main.css
-  cdn_js:  # Use cdn links instead of /js/main.js
+  cdn_js: https://7463-tcb-lwgveavg22ebc8-1dwxf232fec28-1308292100.tcb.qcloud.la/assets/main.js # Use cdn links instead of /js/main.js
 
 
 ######## head tags ########
@@ -16,7 +16,7 @@ open_graph:
 ######## Sidebar ########
 sidebar:
   logo:
-    avatar: '[https://do-cloud.oss-cn-guangzhou.aliyuncs.com/img/avatar.webp](/about/)' # you can set avatar link in _config.yml or '[https://xxx.png](/about/)'
+    avatar: '[https://7463-tcb-lwgveavg22ebc8-1dwxf232fec28-1308292100.tcb.qcloud.la/pic/avatar.webp](/about/)' # you can set avatar link in _config.yml or '[https://xxx.png](/about/)'
     title: '[config.title](/)' # you can set html tag like: '[<img no-lazy height="32px" src="xxx"/>](/)'
   menu:
     post:  '[btn.blog](/)'

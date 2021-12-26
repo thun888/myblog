@@ -149,6 +149,8 @@ document.getElementById("fileup").innerHTML='(￣︶￣)↗[<a href="https://ipf
 var page = window.location.href.split('#')[0]
 if (page.endsWith("index.html")) {
   pagekey = page.substring(0, page.length - 10)
+}else{
+  pagekey = page
 }
 new Artalk({
     emotions: emotions,

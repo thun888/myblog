@@ -31,7 +31,7 @@ header: false
 
 - 内容不能违反中国大陆法律{% psw 对于一些##字眼尽量少出现 %}
 
-  如果存在大量`违法`色情信息（包括但不限于）经举报/检查发现后永久移除并与网警深切交流♂
+  如果存在大量`违法`色情信息（包括但不限于）经举报/检查发现后永久移除
 
 - 如果您的网站超过15天无法以https方式访问我方将移动您的友链至`待恢复`分类中，达到30天会移除
 
@@ -63,7 +63,7 @@ header: false
 title: thun888's Blog
 avatar: https://asstes.thun888.xyz/file/pic-bed/2021/07/3c09905fa076d1e9c2a0f216d68bc47f.webp
 url: https://blog.thun888.xyz
-screenshot: https://asstes.thun888.xyz/file/pic-bed/2021/07/a8c9547c3d14bcacc07eeae683a5f4a5.webp
+screenshot: https://asstes.thun888.xyz/file/pic-bed/2021/11/blog.thun888.xyz.png
 description: 心如止水，不可暴躁（￣︶￣）
 {% endcodeblock %}
 
@@ -82,4 +82,3 @@ description: 心如止水，不可暴躁（￣︶￣）
   <script>
 function load(){var script=document.createElement("script");script.type="text/javascript";script.src='/js/artalkconfig.js';document.body.appendChild(script)}
   </script>
-

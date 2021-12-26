@@ -7,13 +7,7 @@ description: 使用CorelDRAW将图片转为矢量图
 updated: 2021-05-03 19:19:00
 ---
 
-##### 效果图
 
-先上个效果图（上原下后）
-
-![favicon.ico (128×128) (thun888.xyz)](https://thun888.xyz/favicon.ico)
-
-<img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/favicon_1.svg" alt="favicon_1" style="zoom:300%;" />
 
 ##### How
 
