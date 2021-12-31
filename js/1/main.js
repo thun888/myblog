@@ -288,7 +288,4 @@ var lololo="t";var zh_default="n";var zh_choose="n";var zh_expires=7;var zh_clas
 //复制提醒
 document.addEventListener('copy',function(){var notyf=new Notyf({duration:1500,position:{x:'right',y:'top',},});notyf.success('复制成功，转载请注明出处。');
 })
-//更新时间
-if (gtime_days > 60) {
-  document.getElementById('gtime_days').innerHTML = "提醒：本文最后更新于 "+gtime_days+" 天前，其中某些信息可能已经过时，请谨慎使用！";
-}
+
