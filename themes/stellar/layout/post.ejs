@@ -33,10 +33,16 @@ function layoutTitle() {
   <span class="post-meta-item-text">阅读时长:</span>
   <span class="post-count"><%= min2read(post.content) %>分</span>
 </span>
-<script>gtime_days = Math.floor((new Date() - new Date('<%= page.updated %>')) / 1000 / 60 / 60 / 24);</script>
-<div class="old-message" id='gtime_days'></div>
+<div id="gtime"></div>
 <%- post.content %>
 <%- partial('_partial/main/article/article_footer') %>
+<script>
+  //更新时间
+  gtime_days = Math.floor((new Date() - new Date('<%= page.updated %>')) / 1000 / 60 / 60 / 24);
+  if (gtime_days > 60) {
+    document.getElementById('gtime_days').innerHTML = "<div class='old-message' id='gtime_days'>提醒：本文最后更新于 "+gtime_days+" 天前，其中某些信息可能已经过时，请谨慎使用！</div>";
+  }
+</script>
 </article>
 <%- partial('_partial/main/article/read_next') %>
 <%- partial('_partial/main/article/related_posts') %>
