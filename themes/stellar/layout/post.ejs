@@ -18,29 +18,21 @@ function layoutTitle() {
 <%- partial('_partial/main/navbar/breadcrumb') %>
 <article class='content md <%- post.layout %><%- scrollreveal() %>'>
 <%- layoutTitle() %>
-<span class="post-time">
-  <span class="post-meta-item-icon">
-    <i class="fa fa-calendar-o"></i>
-  </span>
+<div id="gtime"></div>
+<div class="expired-message">
   <span class="post-meta-item-text">字数统计:</span>
   <span class="post-count"><%= wordcount(post.content) %>字</span>
-</span>
-<span class="post-time">
 &nbsp; | &nbsp;
-  <span class="post-meta-item-icon">
-    <i class="fa fa-calendar-o"></i>
-  </span>
   <span class="post-meta-item-text">阅读时长:</span>
   <span class="post-count"><%= min2read(post.content) %>分</span>
-</span>
-<div id="gtime"></div>
+</div>
 <%- post.content %>
 <%- partial('_partial/main/article/article_footer') %>
 <script>
   //更新时间
   gtime_days = Math.floor((new Date() - new Date('<%= page.updated %>')) / 1000 / 60 / 60 / 24);
   if (gtime_days > 60) {
-    document.getElementById('gtime_days').innerHTML = "<div class='old-message' id='gtime_days'>提醒：本文最后更新于 "+gtime_days+" 天前，其中某些信息可能已经过时，请谨慎使用！</div>";
+    document.getElementById('gtime').innerHTML = "<div class='old-message'>提醒：本文最后更新于 "+gtime_days+" 天前，其中某些信息可能已经过时，请谨慎使用！</div>";
   }
 </script>
 </article>
