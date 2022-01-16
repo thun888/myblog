@@ -409,15 +409,17 @@
     <url>/2021/%E8%AE%B0%E4%B8%80%E6%AC%A1%E7%AE%80%E5%8D%95%E7%9A%84%E6%B0%B4%E5%8D%A1%E7%A0%B4%E8%A7%A3/</url>
     <content><![CDATA[<p>大概一个月前吧，学校新发了2份文件，一份关于空调的，一份关于水的。之前是免费的，选择突然收费了，说着节水节电（提倡节水节电没错，但之前提倡节水节电时学校没鸟过，现在股东撤资就来搞这种事情，恶臭），实际上只是想省钱<img src="https://cdn.jsdelivr.net/gh/thun888/jian@master/coolapk_emotion_81_naikezui.png" style="zoom:25%;" /></p>
 <h5 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h5><ol>
-<li>pn532，当然别的<code>usb to ttl</code>也可以</li>
+<li>pn532</li>
+<li>usb to ttl</li>
 <li>电脑x1</li>
 <li><a href="https://share.thun888.xyz/%E8%BD%AF%E4%BB%B6/pn532.zip">软件包</a></li>
 </ol>
 <h5 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h5><p>去学校刷了2次卡，用“上位机”扫了3次得到这3个东西</p>
 <p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210504170454.png"></p>
 <p>对比可知水卡余额和这两行数据有关</p>
-<div class="tag-plugin swiper-container" id="swiper-api" width="max"><div class="swiper-wrapper"><div class="swiper-slide"><img no-lazy src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210504170904.png"></div><div class="swiper-slide"><img no-lazy src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210504170927.png"></div><div class="swiper-slide"><img no-lazy src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210504171001.png"></div></div><div class="swiper-pagination"></div><div class="swiper-button-prev blur"></div><div class="swiper-button-next blur"></div></div>
-<p>第一张有60.96，第二张有60.46，第三张有45.66</p>
+<p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210504170904.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210504170927.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210504171001.png"><br>第一张有60.96，第二张有60.46，第三张有45.66</p>
 <p>以第一张为例，用计算器算算</p>
 <table>
 <thead>
