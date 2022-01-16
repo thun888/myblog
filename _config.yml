@@ -165,3 +165,14 @@ deploy:
     
   branch: master
   message: "Build at {{ now('YYYY-MM-DD HH:mm:ss Z') }}"
+
+service_worker:
+  runtimeCaching:
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: cdn.jsdelivr.net
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: asstes.thun888.xyz
