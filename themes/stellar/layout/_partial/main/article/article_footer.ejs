@@ -124,20 +124,4 @@ function layoutDiv() {
         <div id="Comments"></div>
         <link href="https://cdn.jsdelivr.net/npm/artalk@2.1.1/dist/Artalk.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/artalk@2.1.1/dist/Artalk.js"></script>
-        <script>
-            var page = window.location.href.split('#')[0]
-            if (page.endsWith("index.html")) {
-                pagekey = page.substring(0, page.length - 10)
-            } else {
-                pagekey = page
-            }
-            new Artalk({
-                el: '#Comments',
-                pageKey: decodeURI(pagekey),
-                placeholder: '来啊，快活啊[]~(￣▽￣)~*', // 占位符
-                sendBtn: 'Fire!',
-                pageTitle: '',
-                server: 'https://artalk.thun888.xyz/api/',
-                site: 'Blog',
-            })
-        </script>
+        <script src="/js/artalkconfig.js"></script>
