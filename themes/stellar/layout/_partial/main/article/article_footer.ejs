@@ -132,9 +132,8 @@ function layoutDiv() {
                 pagekey = page
             }
             new Artalk({
-                emotions: emotions,
                 el: '#Comments',
-                pageKey: pagekey,
+                pageKey: decodeURI(pagekey),
                 placeholder: '来啊，快活啊[]~(￣▽￣)~*', // 占位符
                 sendBtn: 'Fire!',
                 pageTitle: '',
