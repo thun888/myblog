@@ -143,6 +143,9 @@ const emotions = {
         }
     }
 }
+
+document.getElementById("artalkup").innerHTML = ''
+document.getElementById("fileup").innerHTML = '(￣︶￣)↗[<a href="https://upload.thun888.xyz">文件/图片</a>上传,<a href="https://emotion.xiaokang.me">更多表情</a>]'
 var page = window.location.href.split('#')[0]
 if (page.endsWith("index.html")) {
     pagekey = page.substring(0, page.length - 10)
