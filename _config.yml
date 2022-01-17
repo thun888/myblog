@@ -141,14 +141,6 @@ neat_js:
     - '**/jquery.fancybox.pack.js'
     - '**/index.js'  
 
-# offline config passed to sw-precache.
-service_worker:
-  maximumFileSizeToCacheInBytes: 5242880
-  staticFileGlobs:
-  - public/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2}
-  stripPrefix: public
-  verbose: true
-  
 # Post wordcount display settings
 # Dependencies: https://github.com/willin/hexo-wordcount
 post_wordcount:
@@ -167,6 +159,11 @@ deploy:
   message: "Build at {{ now('YYYY-MM-DD HH:mm:ss Z') }}"
 
 service_worker:
+  maximumFileSizeToCacheInBytes: 5242880
+  staticFileGlobs:
+  - public/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2}
+  stripPrefix: public
+  verbose: true
   runtimeCaching:
     - urlPattern: /*
       handler: cacheFirst
