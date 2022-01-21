@@ -15,7 +15,7 @@
         "babel-core": "^6.26.3",
         "babel-plugin-transform-remove-strict-mode": "0.0.2",
         "babel-preset-es2015": "^6.24.1",
-        "hexo": "^5.0.0",
+        "hexo": "^6.0.0",
         "hexo-admonition": "^1.1.2",
         "hexo-deployer-cos-cdn": "^1.7.1",
         "hexo-deployer-git": "^3.0.0",
