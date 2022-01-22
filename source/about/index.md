@@ -67,8 +67,8 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 
 #### 部署方式
 
-我=>提交到Github=>Github Actions进行构建=>自动推送到Vercel与gh pages
-~~鉴于多方面原因，目前只走Vercel~~，走雨云CDN,如果网站受到攻击而无法打开可以访问[Vercel](https://thun888-github-io.vercel.app/)/[Cloudflare](https://cfblog.thun888.xyz/)镜像
+我=>提交到Github=>Github Actions进行构建=>自动推送到gh pages等
+如果网站受到攻击而无法打开可以访问[Vercel](https://thun888-github-io.vercel.app/)/[Cloudflare](https://cfblog.thun888.xyz/)镜像
 
 #### 所用到的部分资源
 
@@ -77,7 +77,7 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 [Vercel](https://vercel.com/) 提供静态网页托管及部分对子站点的反向代理
 [Cloudflare](https://www.cloudflare.com/) 提供cdn,dns
 [Backblaze](https://www.backblaze.com/)&[去不图床](https://7bu.top/)&[阿里云](https://www.aliyun.com/)提供图片储存
-[雨云](http://redirect.rainyun.cn/?ref=15366) 提供主站CDN服务
+~~[雨云](http://redirect.rainyun.cn/?ref=15366) 提供主站CDN服务~~
 
 #### 运行状况
 
@@ -88,16 +88,12 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 {% folding child:codeblock open:false color:yellow 状况 %}
 
 - **主站**: <span class="tag-plugin emoji"><img style="height:1.5em" src="https://img.shields.io/website?url=https://blog.thun888.xyz"></span>
-
 - **Jsdelivr**:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://img.shields.io/website?url=https://cdn.jsdelivr.net/gh/thun888/myblog@gh-page/img/satus.png"></span>
-
 - Github_raw_proxy:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://img.shields.io/website?url=https://raw.thun888.xyz/thun888/myblog/gh-page/img/satus.png"></span>
-
 - Backblaze:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://img.shields.io/website?url=https://asstes.thun888.xyz/file/pic-bed/2021/08/24a2870127c3be646bf6acdd80dcc83f.png"></span>
-
 - Vercel镜像:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://img.shields.io/website?url=https://thun888-github-io.vercel.app"></span>
-
 - Cloudflare镜像:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://img.shields.io/website?url=https://cfblog.thun888.xyz"></span>
+- 统计服务器:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://img.shields.io/website?url=https://tongji.thun888.xyz:456/index.php"></span>
 
 
 {% endfolding %}
@@ -108,12 +104,12 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 
 数据基于自己写的[Otn Analytics](https://tongji.thun888.xyz:456/index.php)
 
-| 本站总访问量     | <span id="otna_value_site_pv"></span> |
-| ---------------- | ------------------------------------- |
-| 该页面访问量     | <span id="otna_value_page_pv"></span> |
-| 总访客量         | <span id="otna_value_site_uv"></span> |
-| 实时访客量       | <span id="otna_site_online"></span>   |
-| *统计服务器延时* | <span id="otna_value_delay"></span>   |
+| 本站总访问量     | <span id="otna_value_site_pv">∞</span> |
+| ---------------- | -------------------------------------- |
+| 该页面访问量     | <span id="otna_value_page_pv">∞</span> |
+| 总访客量         | <span id="otna_value_site_uv">∞</span> |
+| 实时访客量       | <span id="otna_site_online">∞</span>   |
+| *统计服务器延时* | <span id="otna_value_delay">∞</span>   |
 
 
 
@@ -138,4 +134,3 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
   <script>
 function load(){var script=document.createElement("script");script.type="text/javascript";script.src='/js/artalkconfig.js';document.body.appendChild(script)}
   </script>
-
