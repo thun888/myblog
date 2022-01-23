@@ -104,7 +104,7 @@ function layoutDiv() {
       el += '</div>';
       if (theme.article.share.includes('wechat')) {
         el += '<div class="qrcode" id="qrcode-wechat" style="visibility:hidden;height:0">';
-        el += '<img src="https://qrcode.thun888.workers.dev/bg=f2f2f2/qz=0/?' + url + '"/>';
+        el += '<img src="https://tenapi.cn/qr/?txt=' + url + '"/>';
         el += '</div>';
       }
       el += '</div>';
@@ -116,7 +116,7 @@ function layoutDiv() {
   return el;
 }
 %>
-    <%- layoutDiv(); %>
+<%- layoutDiv(); %>
 
         <HR width="95%" color=#987cb9 SIZE=3>
         <span id="fileup" style="text-align: center;display:block;">(￣︶￣)↗[<a href="https://upload.thun888.xyz">文件/图片</a>上传,<a href="https://emotion.xiaokang.me">更多表情</a>]</span>

@@ -1,0 +1,131 @@
+<%
+function generate_title() {
+  if (page.layout == 'wiki' && page.wiki && (page.title || page.seo_title)) {
+    return page.wiki + __('symbol.colon') + (page.seo_title || page.title) + ' - ' + config.title;
+  } else if (page.seo_title || page.title || page.wiki) {
+    return (page.seo_title || page.title || page.wiki) + ' - ' + config.title;
+  } else if (page.category) {
+    return __('btn.category') + __('symbol.colon') + page.category + ' - ' + config.title;
+  } else if (page.tag) {
+    return __('btn.tag') + __('symbol.colon') + page.tag + ' - ' + config.title;
+  } else {
+    return config.title;
+  }
+  return '';
+}
+function generate_description() {
+  // 索引页
+  if (theme.open_graph && theme.open_graph.enable) {
+    return '';
+  }
+  if (page.description || page.excerpt || page.content) {
+    return '<meta name="description" content="' + truncate(strip_html(page.description || page.excerpt || page.content), {length: 150}) + '">';
+  }
+  return '<meta name="description" content="' + config.description + '">';
+}
+
+function generate_robots() {
+  if (is_home() == true) {
+    return '';
+  }
+  if (page.robots) {
+    return '<meta name="robots" content="' + page.robots + '">';
+  }
+}
+function og_args() {
+  var args = {};
+  if (theme.open_graph.twitter_id) {
+    args.twitter_id = theme.open_graph.twitter_id;
+  }
+  if (page.layout == 'post' && page.cover) {
+    args.twitter_card = 'summary_large_image';
+  }
+  return args;
+}
+%>
+<head>
+  <%- meta_generator() %>
+  <meta charset="utf-8">
+  <%- generate_robots() %>
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  <link rel='dns-prefetch' href='https://cdn.jsdelivr.net'>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#f8f8f8">
+  <title><%- generate_title() %></title>
+
+  <% if (theme.open_graph && theme.open_graph.enable) { %>
+    <%- open_graph(og_args()) %>
+  <% } %>
+  <%- generate_description() %>
+
+  <!-- feed -->
+  <% if (config.feed && config.feed.path) { %>
+    <%- feed_tag(config.feed.path, {title: config.title}) %>
+  <% } %>
+
+  <% if (theme.stellar.cdn_css) { %>
+    <%- css(theme.stellar.cdn_css) %>
+  <% } else { %>
+    <%- css('/css/main.css') %>
+  <% } %>
+
+  <% if (config.favicon) { %>
+    <%- favicon_tag(config.favicon) %>
+  <% } %>
+
+  <% if (config.inject && config.inject.head){ %>
+    <% (config.inject.head||[]).forEach(function(item){ %>
+      <%- item %>
+    <% }) %>
+  <% } %>
+  <link rel="icon" type="image/png" href="/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/thun888/myblog@gh-page/morecss/main.min.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-831BBQ2K9S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-831BBQ2K9S');
+</script>
+<script src="https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+<!--搜索-->
+<div id="ins-search" class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+      <div class="ins-input-wrapper">
+          <input type="text" id="local-search-input" class="ins-search-input" placeholder="想要查找什么...">
+          <span onclick="CSearch('ins-search');" class="ins-close ins-selectable"><i class="zmdi zmdi-close">x</i></span>
+      </div>
+      <div class="ins-section-wrapper">
+          <div id="local-search-result" class="ins-section-container"></div>
+      </div>
+  </div>
+</div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+<style>
+  .loader{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+</style>
+<div class='loader'>
+<p>Load...</p>
+</div>
+</head>

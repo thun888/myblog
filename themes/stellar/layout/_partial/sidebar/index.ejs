@@ -2,16 +2,20 @@
 // 默认组件
 if (page.sidebar == undefined) {
   if (page.layout == 'post' && page.content) {
-    page.sidebar = ['toc', 'repo_info'];
+    page.sidebar = theme.sidebar.widget_layout.post;
   } else if (page.layout == 'wiki' && page.content && page.wiki) {
     let proj = theme.wiki.projects[page.wiki];
     if (proj.sidebar) {
       page.sidebar = proj.sidebar;
     } else {
-      page.sidebar = ['toc', 'repo_info', 'wiki_more'];
+      page.sidebar = theme.sidebar.widget_layout.wiki;
     }
+  } else if (is_home() || ['categories', 'tags', 'archives', 'index', '404', undefined].includes(page.layout)) {
+    page.sidebar = theme.sidebar.widget_layout.index;
+  } else if (page.layout == 'page') {
+    page.sidebar = theme.sidebar.widget_layout.page;
   } else {
-    page.sidebar = theme.sidebar.widgets.default_layout;
+    page.sidebar = [];
   }
 }
 function layoutWidgets() {
@@ -31,10 +35,11 @@ function layoutWidgets() {
   return el;
 }
 function layoutFooterDiv() {
-  if (page.layout !== 'wiki' && theme.footer.social && theme.footer.social.length > 0) {
+  if (page.layout !== 'wiki' && theme.footer.social) {
     var el = '<footer class="footer dis-select">';
     el += '<div class="social-wrap">';
-    theme.footer.social.forEach(item => {
+    for (let id of Object.keys(theme.footer.social)) {
+      let item = theme.footer.social[id];
       if (item.icon && (item.url || item.onclick)) {
         el += '<a class="social"';
         if (item.title) {
@@ -55,7 +60,7 @@ function layoutFooterDiv() {
         el += item.icon;
         el += '</a>';
       }
-    });
+    }
     el += '</div>';
     el += '</footer>';
     return el;

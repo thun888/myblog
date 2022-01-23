@@ -16,7 +16,7 @@ function layoutTitle() {
 %>
 <% let post = page; %>
 <%- partial('_partial/main/navbar/breadcrumb') %>
-<article class='content md <%- post.layout %><%- scrollreveal() %>'>
+<article class='content md <%- post.layout %><%- post.indent ? ' indent' : '' %><%- scrollreveal() %>'>
 <%- layoutTitle() %>
 <div id="gtime"></div>
 <div class="expired-message">
