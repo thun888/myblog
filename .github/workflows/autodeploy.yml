@@ -54,6 +54,10 @@ jobs:
         publish_branch: gh-page
         publish_dir: ./public
 
+    - name: Tgbot # 发送消息
+      run: |
+        curl -d 'chat_id=1183316935' -d 'text=博客部署完成' -X POST ${{ secrets.POST }}
+
     - name: clear cache
       run: |
         curl https://purge.jsdelivr.net/gh/thun888/myblog@gh-page/css/main.css
