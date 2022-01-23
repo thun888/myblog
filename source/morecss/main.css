@@ -357,6 +357,15 @@
   }
 /* end */
 
+/* logo */
+@font-face {
+  font-family: "BrandFont";
+  src: url("https://blog.thun888.xyz/morecss/font/thun888.ttf");
+}
+.main {
+font-family: BrandFont, sans-serif;
+}
+
 /* 文章过期提醒 */
 .old-message {
     padding: 5px 10px;
