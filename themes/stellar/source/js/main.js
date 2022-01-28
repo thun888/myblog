@@ -314,4 +314,4 @@ var lololo="t";var zh_default="n";var zh_choose="n";var zh_expires=7;var zh_clas
 }if(getCookie("zh_autoLang_checked")){return false}if(navigator.language){zh_browserLang=navigator.language}else{if(navigator.browserLanguage){zh_browserLang=navigator.browserLanguage}}if(zh_autoLang_t&&zh_langReg_t.test(zh_browserLang)){zh_choose="t"}else{if(zh_autoLang_s&&zh_langReg_s.test(zh_browserLang)){zh_choose="s"}}zh_autoLang_checked=1;setCookie("zh_choose",zh_choose,zh_expires);if(zh_choose==zh_default){return false}return true}function zh_init(){zh_getLang();c=document.getElementById(zh_class+"_"+zh_choose);if(zh_choose!=zh_default){if(window.onload){window.onload_before_zh_init=window.onload;window.onload=function(){zh_tran(zh_choose);if(getCookie("zh_autoLang_check")){alert(zh_autoLang_msg)}window.onload_before_zh_init()}}else{window.onload=function(){zh_tran(zh_choose);if(getCookie("zh_autoLang_check")){alert(zh_autoLang_msg)}}}}}zh_init();;
 //复制提醒
 document.addEventListener('copy',function(){var notyf=new Notyf({duration:1500,position:{x:'right',y:'top',},});notyf.success('复制成功，转载请注明出处。');
-});
+})

@@ -58,25 +58,16 @@ jobs:
       run: |
         curl -d 'chat_id=1183316935' -d 'text=博客部署完成' -X POST ${{ secrets.POST }}
 
-    - name: Down
+    - name: clear cache
       run: |
-        wget https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css
-        wget https://raw.githubusercontent.com/thun888/myblog/gh-page/css/main.css
-        wget https://raw.githubusercontent.com/thun888/myblog/gh-page/morecss/main.css -O morecss.css
-        wget https://raw.githubusercontent.com/thun888/myblog/gh-page/js/main.js
-        wget https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js
-        wget https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js
-        
-    - name: Generate # 生成
+        curl https://purge.jsdelivr.net/gh/thun888/myblog@gh-page/css/main.css
+        curl https://purge.jsdelivr.net/gh/thun888/myblog@gh-page/js/main.min.js
+        curl https://purge.jsdelivr.net/gh/thun888/myblog@gh-page/morecss/main.css
+
+
+
+    - name: get cache
       run: |
-        mkdir asstes
-        cat main.css morecss.css notyf.min.css > ./asstes/allin.css
-        cat main.js Meting.min.js APlayer.min.js > ./asstes/allin.js
-        curl -d 'chat_id=1183316935' -d 'text=资源处理完成' -X POST ${{ secrets.POST }}
-        
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.TOKEN }}
-        publish_branch: asstes
-        publish_dir: ./asstes
+        curl https://cdn.jsdelivr.net/gh/thun888/myblog@gh-page/css/main.css
+        curl https://cdn.jsdelivr.net/gh/thun888/myblog@gh-page/js/main.min.js
+        curl https://cdn.jsdelivr.net/gh/thun888/myblog@gh-page/morecss/main.css
