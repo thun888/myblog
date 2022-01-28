@@ -2,17 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.thun888.xyz/about/</loc>
-    
-    <lastmod>2022-01-28</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.thun888.xyz/htalk/</loc>
     
     <lastmod>2022-01-28</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -20,6 +15,8 @@
     
     <lastmod>2022-01-28</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -27,6 +24,8 @@
     
     <lastmod>2022-01-28</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -34,6 +33,8 @@
     
     <lastmod>2022-01-28</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -41,6 +42,8 @@
     
     <lastmod>2022-01-28</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -48,6 +51,8 @@
     
     <lastmod>2022-01-28</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -55,6 +60,8 @@
     
     <lastmod>2022-01-28</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -62,6 +69,8 @@
     
     <lastmod>2022-01-28</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -69,6 +78,8 @@
     
     <lastmod>2022-01-28</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -76,6 +87,8 @@
     
     <lastmod>2022-01-28</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -83,6 +96,8 @@
     
     <lastmod>2022-01-28</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -90,6 +105,8 @@
     
     <lastmod>2022-01-28</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -97,6 +114,8 @@
     
     <lastmod>2022-01-28</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -104,6 +123,17 @@
     
     <lastmod>2022-01-28</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thun888.xyz/about/</loc>
+    
+    <lastmod>2022-01-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -111,6 +141,8 @@
     
     <lastmod>2021-08-08</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -118,6 +150,8 @@
     
     <lastmod>2021-07-29</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -125,6 +159,8 @@
     
     <lastmod>2021-07-26</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -132,6 +168,8 @@
     
     <lastmod>2021-07-15</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -139,6 +177,8 @@
     
     <lastmod>2021-06-10</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -146,6 +186,8 @@
     
     <lastmod>2021-05-04</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -153,6 +195,8 @@
     
     <lastmod>2021-05-03</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -160,6 +204,8 @@
     
     <lastmod>2021-04-30</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -167,6 +213,8 @@
     
     <lastmod>2021-04-05</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -174,6 +222,8 @@
     
     <lastmod>2021-04-04</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -181,6 +231,8 @@
     
     <lastmod>2021-02-07</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -188,6 +240,8 @@
     
     <lastmod>2021-01-01</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -195,6 +249,8 @@
     
     <lastmod>2020-12-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -202,6 +258,8 @@
     
     <lastmod>2020-11-14</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -209,6 +267,8 @@
     
     <lastmod>2020-10-31</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -216,6 +276,8 @@
     
     <lastmod>2020-10-30</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -223,6 +285,8 @@
     
     <lastmod>2020-08-29</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -230,6 +294,8 @@
     
     <lastmod>2020-08-22</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -237,6 +303,8 @@
     
     <lastmod>2020-08-12</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -244,6 +312,8 @@
     
     <lastmod>2020-01-01</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
 
@@ -258,85 +328,85 @@
   <url>
     <loc>https://blog.thun888.xyz/tags/%E7%94%9C%E7%B3%96/</loc>
     <lastmod>2022-01-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.thun888.xyz/tags/blog/</loc>
     <lastmod>2022-01-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.thun888.xyz/tags/oneindex/</loc>
     <lastmod>2022-01-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.thun888.xyz/tags/web/</loc>
     <lastmod>2022-01-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.thun888.xyz/tags/Intel/</loc>
     <lastmod>2022-01-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.thun888.xyz/tags/linux/</loc>
     <lastmod>2022-01-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.thun888.xyz/tags/Clouddlare/</loc>
     <lastmod>2022-01-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.thun888.xyz/tags/Go/</loc>
     <lastmod>2022-01-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.thun888.xyz/tags/MIUI/</loc>
     <lastmod>2022-01-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.thun888.xyz/tags/free/</loc>
     <lastmod>2022-01-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.thun888.xyz/tags/%E7%BD%91%E7%AB%99/</loc>
     <lastmod>2022-01-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.thun888.xyz/tags/%E8%BD%AC%E6%8D%A2/</loc>
     <lastmod>2022-01-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
 
