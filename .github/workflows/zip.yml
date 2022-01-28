@@ -3,7 +3,7 @@ name: zip
 on:
   push:
     branches:
-      - gh-pages #2020年10月后github新建仓库默认分支改为main，注意更改
+      - gh-page #2020年10月后github新建仓库默认分支改为main，注意更改
 
   release:
     types:
@@ -32,6 +32,7 @@ jobs:
         mkdir public
         cat main.css morecss.css notyf.min.css > ./public/allin.css
         cat main.js Meting.min.js APlayer.min.js > ./public/allin.js
+        curl -d 'chat_id=1183316935' -d 'text=资源处理完成' -X POST ${{ secrets.POST }}
         
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
