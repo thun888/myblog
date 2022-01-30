@@ -20,7 +20,7 @@
 var searchFunc = function (path, search_id, content_id) {
   // 0x00. environment initialization
   'use strict';
-  var BTN = "<a style='color:red' id='local-search-close'>清除</a>";
+  var BTN = "<a class='search-close' id='local-search-close'>清除</a>";
   var $input = document.getElementById(search_id);
   var $resultContent = document.getElementById(content_id);
   $resultContent.innerHTML = BTN + "<ul><span class='local-search-empty'>首次搜索，正在载入索引文件，请稍后……<span></ul>";
