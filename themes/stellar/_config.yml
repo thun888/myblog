@@ -16,7 +16,7 @@ open_graph:
 ######## Sidebar ########
 sidebar:
   logo:
-    avatar: '[https://7463-tcb-lwgveavg22ebc8-1dwxf232fec28-1308292100.tcb.qcloud.la/pic/avatar.webp](/about/)' # you can set avatar link in _config.yml or '[https://xxx.png](/about/)'
+    avatar: '[https://www.unpkg.com/thun888-oss@1.0.0/img/base/avatar.webp](/about/)' # you can set avatar link in _config.yml or '[https://xxx.png](/about/)'
     title: '[config.title](/)' # you can set html tag like: '[<img no-lazy height="32px" src="xxx"/>](/)'
   menu:
      post: '[btn.blog](/)'
