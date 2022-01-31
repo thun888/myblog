@@ -6,7 +6,7 @@
     <content><![CDATA[<h4 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h4><p>一开始我是在电脑上挂网心，但这玩意儿写入缓存不仅多（以至于写掉盘了），钱还给的少。而甜糖在恩山论坛上面的都是Linux下操作的，对我这docker小白很不友好，今天就总结一下最简单的方法</p>
 <p><em>以下内容建议使用FinalShell操作</em></p>
 <h4 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h4><ol>
-<li>映像包（<a href="https://share.thun888.xyz/ali/%E6%96%87%E4%BB%B6/ttnode/">500g/100g</a>)(在我写的时候又有新版了<img src="https://cdn.jsdelivr.net/gh/thun888/jian@master/coolapk_emotion_58_dogeyuanliangta.png" style="zoom:25%;" />)</li>
+<li>映像包（<a href="https://share.thun888.xyz/ali/%E6%96%87%E4%BB%B6/ttnode/">500g&#x2F;100g</a>)(在我写的时候又有新版了<img src="https://cdn.jsdelivr.net/gh/thun888/jian@master/coolapk_emotion_58_dogeyuanliangta.png" style="zoom:25%;" />)</li>
 <li>vmware</li>
 </ol>
 <h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><ol>
@@ -97,7 +97,7 @@
 <p>3.Q:输指令报错 xxx not found</p>
 <p>   A:缺啥补啥，在容器外用apk add xxx ,容器内用apt install xxx</p>
 <p>more….</p>
-<h4 id="所参考资料"><a href="#所参考资料" class="headerlink" title="所参考资料"></a>所参考资料</h4><p><a href="https://www.right.com.cn/forum/thread-4063192-1-2.html">[2021-01-27]让软路由来赚钱ESXi/X86上跑dock甜糖/一键导入简单无脑，小白，懒人专属</a></p>
+<h4 id="所参考资料"><a href="#所参考资料" class="headerlink" title="所参考资料"></a>所参考资料</h4><p><a href="https://www.right.com.cn/forum/thread-4063192-1-2.html">[2021-01-27]让软路由来赚钱ESXi&#x2F;X86上跑dock甜糖&#x2F;一键导入简单无脑，小白，懒人专属</a></p>
 <p><a href="https://www.right.com.cn/forum/thread-4052765-1-1.html">【非op套娃】x86以ubuntu为底层跑docker甜糖服务</a></p>
 <p><a href="https://www.right.com.cn/forum/thread-4059329-1-1.html">迄今为止最小的甜糖(ttnode)docker镜像</a></p>
 <p><a href="https://www.right.com.cn/forum/thread-4060057-1-1.html">爱快虚拟机甜糖镜像及pve,esxi等虚拟机安装轻量化Linux详细安装甜糖教程</a></p>
@@ -129,13 +129,13 @@
 
 <p>添加上去后把所有<code>archives</code>给替换成了<code>htalk</code>,但是一运行那报错和放鞭炮没什么不同(。﹏。)</p>
 <p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210715203736270.png" alt="image-20210715203736270"></p>
-<p>从代码上说，这句是判断当前是什么页面的，我翻了亿下没找到它的定义在哪个文件，就先改回posts（只是影响了按钮底色，问题不大(❁´◡`❁)）</p>
+<p>从代码上说，这句是判断当前是什么页面的，我翻了亿下没找到它的定义在哪个文件，就先改回posts（只是影响了按钮底色，问题不大(❁´◡&#96;❁)）</p>
 <p>在<code>\themes\stellar\layout</code>下新建<code>htalk.ejs</code>,从隔壁<code>tag.ejs</code>借鉴点代码过来，除了site.tags.length其他都改为htalk</p>
 <p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210715204525167.png" alt="image-20210715204525167"></p>
 <p>可以看出第11行到21行都是页面中可以显示出来的部分<del>（不太严谨的样子</del></p>
 <p>把HPP文档中的”引入部分”插到里面</p>
 <p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210715205153957.png" alt="image-20210715205153957"></p>
-<p>¯_(ツ)_/¯</p>
+<p>¯_(ツ)_&#x2F;¯</p>
 <p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210715204930656.png" alt="image-20210715204930656"></p>
 <p>加个题目</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">class</span>=<span class="string">&#x27;list-title h3&#x27;</span>&gt;</span>说说（瞎扯）<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -165,7 +165,7 @@
     <url>/2021/%E4%BC%98%E5%8C%96Oneindex%E7%9A%84nexmoe%E4%B8%BB%E9%A2%98%E7%9A%84%E5%8A%A0%E8%BD%BD%E9%80%9F%E5%BA%A6/</url>
     <content><![CDATA[<p>在一些带宽小的机子上部署Oneindex又用nexmoe主题，就算套了cdn也慢（深有体会）</p>
 <p>在学校开来给同学下电影开了十几秒愣是没加载出来<img src="https://cdn.jsdelivr.net/gh/thun888/jian@master/coolapk_emotion_42_diaoxie.png" style="zoom:25%;" /></p>
-<h4 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h4><p>定位到网址目录下的/view/nexmoe</p>
+<h4 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h4><p>定位到网址目录下的&#x2F;view&#x2F;nexmoe</p>
 <p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210610144611.png" alt="image-20210610144610288"></p>
 <p>将框选的（第7行的第11行）</p>
 <p>进行替换</p>
@@ -250,7 +250,7 @@
 <h4 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h4><ul>
 <li><p>Teambition账号</p>
 </li>
-<li><p>一台云服务器/支持PHP的虚拟主机</p>
+<li><p>一台云服务器&#x2F;支持PHP的虚拟主机</p>
 </li>
 </ul>
 <h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>这里以宝塔面板为例</p>
@@ -258,7 +258,7 @@
 <p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210101095911579.png" alt="image-20210101095911579"></p>
 <p>从github把源码下载后上传然后解压</p>
 <p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210101100249006.png" alt="image-20210101100249006"></p>
-<p>进到/TeambitionShare-master里把源码拉出来</p>
+<p>进到&#x2F;TeambitionShare-master里把源码拉出来</p>
 <p>gif:<img src="https://asstes.thun888.xyz/file/pic-bed/2021/09/5f5c8175d7b846cfe33f818b4b7e0791.webp" alt="20210101100433"></p>
 <p>然后配置伪静态（不设置会404）</p>
 <p>Nginx</p>
@@ -278,7 +278,7 @@
 <p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210101111420025.png" alt="image-20210101111420025"></p>
 <p>访问刚刚部署的网站，把cookie和项目id填好</p>
 <p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210101111500122.png" alt="image-20210101111500122"></p>
-<p>（如果出现500可以删除/config/app.cfg.php重来）</p>
+<p>（如果出现500可以删除&#x2F;config&#x2F;app.cfg.php重来）</p>
 <h4 id="ok"><a href="#ok" class="headerlink" title="ok"></a>ok</h4><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210101111805262.png" alt="image-20210101111805262"></p>
 ]]></content>
       <tags>
@@ -472,7 +472,7 @@
 <p>金额改成200，对应写C8 00（包括小数位），校检码为C8</p>
 <p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210504175001.png"></p>
 <p>保存，刷入，嘿，快乐~</p>
-<h5 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h5><p>改饭卡/买东西的就不要想了，这种的本地有个单独的分区存储信息,<del>（当然你可以改成别人的👀）</del></p>
+<h5 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h5><p>改饭卡&#x2F;买东西的就不要想了，这种的本地有个单独的分区存储信息,<del>（当然你可以改成别人的👀）</del></p>
 <p>而我们学校水卡本来就是免费的（冲买东西的钱60送水卡60），所以…<img src="https://cdn.jsdelivr.net/gh/thun888/jian@master/coolapk_emotion_65_coshuaji.png" style="zoom:25%;" /><img src="https://cdn.jsdelivr.net/gh/thun888/jian@master/coolapk_emotion_65_coshuaji.png" style="zoom:25%;" /><img src="https://cdn.jsdelivr.net/gh/thun888/jian@master/coolapk_emotion_65_coshuaji.png" style="zoom:25%;" /></p>
 ]]></content>
       <tags>
