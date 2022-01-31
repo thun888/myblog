@@ -47,7 +47,7 @@ sidebar:
       layout: markdown
       title: 欢迎
       content: | # support markdown
-        <p id="hitokoto">:D 获取中...</p><script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+        <script src="https://tenapi.cn/yiyan/?format=js"></script>
 
 
 
