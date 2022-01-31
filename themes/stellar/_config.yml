@@ -16,7 +16,7 @@ open_graph:
 ######## Sidebar ########
 sidebar:
   logo:
-    avatar: '[https://www.unpkg.com/thun888-oss@1.0.0/img/base/avatar.webp](/about/)' # you can set avatar link in _config.yml or '[https://xxx.png](/about/)'
+    avatar: '[/img/avatar.webp](/about/)' # you can set avatar link in _config.yml or '[https://xxx.png](/about/)'
     title: '[config.title](/)' # you can set html tag like: '[<img no-lazy height="32px" src="xxx"/>](/)'
   menu:
      post: '[btn.blog](/)'
@@ -135,23 +135,23 @@ footer:
      #- icon: '<img src="https://i0.hdslb.com/bfs/album/df39fd4aa9f091095c4023217a6b9b5d644ec642.webp"/>'
      #  url: https://evolution-host.com/
      - title: RSS
-     - icon: '<img src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/social/25678f144c438.svg"/>'
+     - icon: '<img src="/img/icons/25678f144c438.svg"/>'
        url: /atom.xml
-     - icon: '<img src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/social/08a41b181ce68.svg"/>'
+     - icon: '<img src="/img/icons/08a41b181ce68.svg"/>'
        url: https://github.com/thun888
-     - icon: '<img src="https://www.bilibili.com/favicon.ico"/>'
+     - icon: '<img src="/img/icons/bilibili.ico"/>'
        url: https://space.bilibili.com/451090261
     # - icon: '<img src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/social/cf1ae151f9e83.svg"/>'
     #   url: /
     # - icon: '<img src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/social/942ebbf1a4b91.svg"/>'
     #   url: /
-     - icon: '<img src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/social/a1b00e20f425d.svg"/>'
+     - icon: '<img src="/img/icons/a1b00e20f425d.svg"/>'
        url: mailto:thun888@qq.com
-     - icon: '<img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210610162918.svg"/>'
+     - icon: '<img src="/img/icons/20210610162918.svg"/>'
        url: https://share.thun888.xyz
-     - icon: '<img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/nxfhj.svg"/>'
+     - icon: '<img src="/img/icons/nxfhj.svg"/>'
        url: javascript:SSearch('ins-search');
-     - icon: '<img id="tr" src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/s54vgdz54.svg"/>'
+     - icon: '<img id="tr" src="/img/icons/s54vgdz54.svg"/>'
        url: javascript:zh_tran(lololo);
   sitemap:
      '博客':
@@ -218,7 +218,7 @@ plugins:
   # preload
   preload:
     enable: true
-    service: flying_pages # instant_page, flying_pages
+    service: instant_page # instant_page, flying_pages
     instant_page: https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js
     flying_pages: https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js
 
@@ -227,7 +227,7 @@ plugins:
   lazyload:
     enable: true # [hexo clean && hexo s] is required after changing this value.
     js: https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js
-    transition: blur # blur, fade
+    transition: fade # blur, fade
 
   # https://scrollrevealjs.org/api/reveal.html
   scrollreveal:
@@ -256,15 +256,15 @@ style:
     dark: '#313438'
   animated_avatar:
     animate: auto # auto, always
-    background: https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.2/avatar/round/rainbow64@3x.webp
+    background: /img/rainbow64@3x.webp
   codeblock:
     scrollbar: 4px
 
 default:
-  avatar: https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/avatar/round/3442075.svg
-  link: https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/link/8f277b4ee0ecd.svg
-  cover: https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/cover/76b86c0226ffd.svg
-  image: https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/image/2659360.svg
+  avatar: /img/svg/3442075.svg
+  link: /img/svg/8f277b4ee0ecd.svg
+  cover: /img/svg/76b86c0226ffd.svg
+  image: /img/svg/2659360.svg
 
 sitemap:
   path: sitemap.xml
