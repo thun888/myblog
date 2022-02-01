@@ -173,3 +173,7 @@ service_worker:
       handler: cacheFirst
       options:
         origin: asstes.thun888.xyz
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: blog.thun888.xyz

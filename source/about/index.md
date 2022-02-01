@@ -33,22 +33,8 @@ Thun888 目前是一个初三学生,没有太多时间打理博客，
 Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 
 <!-- tab Todo -->
-
-学习方面
 {% checkbox 中考考个好成绩，进到实验班 %}
-
-> 以下内容待定
-
-网站方面
-{% checkbox 设立导航页 %}
-{% checkbox 添加“收藏夹”页面 %}
-{% checkbox 让百度收录到达10+ %}<del>ljbd</del>
-
-开发方面
-{% checkbox 写个基于cfw的工具 %}
-{% checkbox Golang入门 %}
 {% endtabs %}
-
 
 ### 关于本站.
 
@@ -134,3 +120,4 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
   <script>
 function load(){var script=document.createElement("script");script.type="text/javascript";script.src='/js/artalkconfig.js';document.body.appendChild(script)}
   </script>
+
