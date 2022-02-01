@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>2021旧年总结</title>
+    <url>/2022/2021%E6%97%A7%E5%B9%B4%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<h2 id="2021-has-ended-but-2022-begins"><a href="#2021-has-ended-but-2022-begins" class="headerlink" title="2021 has ended but 2022 begins"></a>2021 has ended but 2022 begins</h2><p>新年伊始，又是新的一年。做个年终总结吧。<del>证明我还活着</del></p>
+<p>先看看曾经定的Todo list</p>
+<ul>
+<li><input disabled="" type="checkbox"> 进到实验班。<del>还没考呢</del></li>
+<li><input checked="" disabled="" type="checkbox"> 设立导航</li>
+<li><input disabled="" type="checkbox"> 被百度收录。看淡了，我把站点地图怼它脸上，写个脚本每4分钟提交一次，还没收录，<del>百度是神马东西</del></li>
+<li><input checked="" disabled="" type="checkbox"> 写个基于cfw的工具。写了不少</li>
+<li><input checked="" disabled="" type="checkbox"> Golang入门。大概吧</li>
+</ul>
+<p>过去的一年，好像时间变快了不少，不知不觉就过去了。6月份往前都在备考生地，放个暑假回来后又是各种考试，<del>两周一休算了算回家的次数好像还不到10次<span class="tag-plugin emoji"><img style="height:1.5em" src="https://cdn.jsdelivr.net/gh/thun888/Coolapk-Emoji@master/coolapk_emotion_56_dogexiaoku.png"></span></del></p>
+<p>学会了很多，也见证了不少（省略数千字）</p>
+<blockquote>
+<p>定个目标</p>
+</blockquote>
+<ul>
+<li><input disabled="" type="checkbox"> 考上一中!</li>
+<li><input disabled="" type="checkbox"> 最好再进实验班</li>
+</ul>
+<h4 id="附"><a href="#附" class="headerlink" title="附"></a>附</h4><p>因为没啥时间，也没有写到什么实质上的内容，不过也有2200+的小伙伴来访~<span class="tag-plugin emoji"><img style="height:1.5em" src="https://cdn.jsdelivr.net/gh/thun888/Coolapk-Emoji@master/coolapk_emotion_38_wozuimei.png"></span><br><img src="https://raw.thun888.xyz/thun888/asstes/master/img/202202011232766.png" alt="Snipaste_2022-01-31_19-35-02"><br><img src="https://raw.thun888.xyz/thun888/asstes/master/img/202202011231533.png" alt="Snipaste_2022-01-31_19-35-28"><br><img src="https://raw.thun888.xyz/thun888/asstes/master/img/202202011232299.png" alt="大家梯子地区真广（划掉）"></p>
+<hr>
+<p>祝各位虎年大吉，虎虎生威<span class="tag-plugin emoji"><img style="height:1.5em" src="https://cdn.jsdelivr.net/gh/thun888/Coolapk-Emoji@master/coolapk_emotion_57_dogehechi.png"></span><img src="https://raw.thun888.xyz/thun888/asstes/master/img/202202011237099.jpg" alt="e0752da35b9e7a4b089f962442192898"></p>
+]]></content>
+      <tags>
+        <tag>yearreport</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>VM虚拟机安装甜糖及配置教程</title>
     <url>/2021/vm%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E7%94%9C%E7%B3%96%E5%8F%8A%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<h4 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h4><p>一开始我是在电脑上挂网心，但这玩意儿写入缓存不仅多（以至于写掉盘了），钱还给的少。而甜糖在恩山论坛上面的都是Linux下操作的，对我这docker小白很不友好，今天就总结一下最简单的方法</p>
