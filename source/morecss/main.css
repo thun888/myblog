@@ -146,6 +146,7 @@ background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, tr
 /* logo */
 @font-face {
   font-family: "BrandFont";
+  font-display: swap;
   src: url("https://blog.thun888.xyz/morecss/font/thun888.ttf");
 }
 .main {
