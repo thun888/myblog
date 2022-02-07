@@ -3,7 +3,7 @@ stellar:
   version: '1.6.1'
   homepage: 'https://xaoxuu.com/wiki/stellar/'
   repo: 'https://github.com/xaoxuu/hexo-theme-stellar'
-  cdn_css: https://cdn.jsdelivr.net/gh/thun888/myblog@gh-page/css/main.css # Use cdn links instead of /css/main.css
+  cdn_css: https://cdn.jsdelivr.net/combine/gh/thun888/myblog@gh-page/css/main.css,gh/thun888/myblog@gh-page/morecss/main.min.css # Use cdn links instead of /css/main.css
   cdn_js: https://cdn.jsdelivr.net/gh/thun888/myblog@gh-page/js/main.min.js # Use cdn links instead of /js/main.js
 
 
