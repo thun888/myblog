@@ -47,24 +47,6 @@
   </url>
   
   <url>
-    <loc>https://blog.thun888.xyz/wiki/dreamming/material</loc>
-    
-    <lastmod>2022-04-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thun888.xyz/wiki/dreamming/mod</loc>
-    
-    <lastmod>2022-04-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.thun888.xyz/wiki/%E6%9D%82%E7%89%A9%E9%97%B4/camc</loc>
     
     <lastmod>2022-04-04</lastmod>
@@ -147,6 +129,24 @@
   
   <url>
     <loc>https://blog.thun888.xyz/wiki/Artalk/use/</loc>
+    
+    <lastmod>2022-04-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thun888.xyz/wiki/dreamming/material/</loc>
+    
+    <lastmod>2022-04-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thun888.xyz/wiki/dreamming/mod/</loc>
     
     <lastmod>2022-04-04</lastmod>
     
