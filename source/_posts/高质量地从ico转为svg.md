@@ -5,9 +5,8 @@ tags: [网站,转换]
 cover: https://asstes.thun888.xyz/file/pic-bed/2021/09/e6905593f50890da134d5cf2e7ad1541.png
 description: 使用CorelDRAW将图片转为矢量图
 updated: 2021-05-03 19:19:00
+last: 2021-05-03 19:19:00
 ---
-
-
 
 ##### How
 
@@ -39,13 +38,13 @@ updated: 2021-05-03 19:19:00
 
 ![](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210504160151.png)
 
-把原图删掉后将画布调整为生成图大小（例如我这就是210*210）
+把原图删掉后将画布调整为生成图大小（例如我这就是210\*210）
 
 ![](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/da21desf4s568gre46g.png)
 
 选择 文件---导出（保存为.svg)
 
-![image-20210504160641441](C:\Users\22383\AppData\Roaming\Typora\typora-user-images\image-20210504160641441.png)
+![image-20210504160641441](C:%5CUsers%5C22383%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210504160641441.png)
 
 <img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210504161231.png" style="zoom:80%;" />
 

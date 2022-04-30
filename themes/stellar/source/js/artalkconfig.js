@@ -145,7 +145,7 @@ const emotions = {
 }
 
 document.getElementById("artalkup").innerHTML = ''
-document.getElementById("fileup").innerHTML = '(￣︶￣)↗[<a href="https://upload.thun888.xyz">文件/图片</a>上传,<a href="https://emotion.xiaokang.me">更多表情</a>]'
+document.getElementById("fileup").innerHTML = '(￣︶￣)↗[<a href="https://upload.thun888.xyz">文件</a>上传,<a href="https://emotion.xiaokang.me">更多表情</a>]'
 var page = window.location.href.split('#')[0]
 if (page.endsWith("index.html")) {
     pagekey = page.substring(0, page.length - 10)
@@ -153,12 +153,12 @@ if (page.endsWith("index.html")) {
     pagekey = page
 }
 new Artalk({
-    emotions: emotions,
     el: '#Comments',
-    pageKey: pagekey,
+    pageKey: decodeURI(pagekey),
     placeholder: '来啊，快活啊[]~(￣▽￣)~*', // 占位符
     sendBtn: 'Fire!',
     pageTitle: '',
-    server: 'https://artalk.thun888.xyz/api/',
+    server: 'https://camc.thun888.xyz:600',
     site: 'Blog',
 })
+document.getElementsByClassName("atk-sidebar-layer")[0].style.display = "none"

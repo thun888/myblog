@@ -3,6 +3,7 @@ title: 用Batocera搭建属于你的游戏天地
 date: 2020-11-14 17:42:35
 tags: linux
 updated: 2020-11-14 17:42:35
+last: 2020-11-14 17:42:35
 ---
 
 batocera,是一个以linux为基础，运行在电脑上的一个模拟上古游戏机的系统。

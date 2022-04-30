@@ -3,6 +3,7 @@ title: VM虚拟机安装甜糖及配置教程
 date: 2021-02-07 10:05:21
 tags: 甜糖
 updated: 2021-02-07 10:05:21
+last: 2021-02-07 10:05:21
 cover: https://asstes.thun888.xyz/file/pic-bed/2021/12/54gdf56g4f653g.jpg
 ---
 
@@ -14,12 +15,14 @@ cover: https://asstes.thun888.xyz/file/pic-bed/2021/12/54gdf56g4f653g.jpg
 
 #### 准备工作
 
-1. 映像包（[500g/100g](https://share.thun888.xyz/ali/文件/ttnode/))(在我写的时候又有新版了<img src="https://cdn.jsdelivr.net/gh/thun888/jian@master/coolapk_emotion_58_dogeyuanliangta.png" style="zoom:25%;" />)
+1. 映像包（[500g/100g](https://share.thun888.xyz/ali/%E6%96%87%E4%BB%B6/ttnode/))(在我写的时候又有新版了<img src="https://cdn.jsdelivr.net/gh/thun888/jian@master/coolapk_emotion_58_dogeyuanliangta.png" style="zoom:25%;" />)
+
 2. vmware
 
 #### 安装
 
 1. 安装vmware(废话)
+
 2. 解压压缩包后。点击后缀为vmx的文件导入
 
 ![image-20210207111610777](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210207111610777.png)
@@ -61,18 +64,18 @@ docker exec -it ttnode /bin/bash
 
 如果它显示未配置网络的话就继续看吧
 
-  <script>
-  new Artalk({
-    el: '#ArtalkComments', // 元素选择
-    placeholder: '来啊，快活啊 ( ゜- ゜)', // 占位符
-    noComment: '快来成为第一个评论的人吧~', // 无评论时显示
-    serverUrl: 'https://artalk.thun888.xyz/',
-    readMore: { // 阅读更多配置
-      pageSize: 15, // 每次请求获取评论数
-      autoLoad: true // 滚动到底部自动加载
-    }
-  });
-  </script>
+<script>
+new Artalk({
+el: '#ArtalkComments', // 元素选择
+placeholder: '来啊，快活啊 ( ゜- ゜)', // 占位符
+noComment: '快来成为第一个评论的人吧\~', // 无评论时显示
+serverUrl: 'https://artalk.thun888.xyz/',
+readMore: { // 阅读更多配置
+pageSize: 15, // 每次请求获取评论数
+autoLoad: true // 滚动到底部自动加载
+}
+});
+</script>
 
 输入
 
@@ -90,7 +93,7 @@ netstat -tnlp
 
 这样甜糖就做好了，但是还有很多东西也可以搞
 
-1.自动领取星愿
+1\.自动领取星愿
 
 保持在容器内不要退出
 
@@ -108,8 +111,6 @@ wget https://dachui.co/ttnode/node2.sh && sh node2.sh
 ![image-20210207120438729](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210207120438729.png)
 
 输入no后回车(第2步输入y回车即可)
-
-
 
 ![image-20210207120714379](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210207120714379.png)
 
@@ -135,9 +136,9 @@ wget https://dachui.co/ttnode/node2.sh && sh node2.sh
 
 <img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/Screenshot_2021-02-07-12-14-30-735_com.tencent.mm.jpg" alt="image-20210207121352264" style="zoom: 33%;" />
 
-3.网速监控
+3\.网速监控
 
-虽然FinalShell自带网速监控，<img src="C:\Users\22383\AppData\Roaming\Typora\typora-user-images\image-20210207130000887.png" alt="image-20210207130000887" style="zoom: 67%;" />但也不总是每天都在电脑旁
+虽然FinalShell自带网速监控，<img src="C:\\Users\\22383\\AppData\\Roaming\\Typora\\typora-user-images\\image-20210207130000887.png" alt="image-20210207130000887" style="zoom: 67%;" />但也不总是每天都在电脑旁
 
 输入
 
@@ -159,19 +160,19 @@ apk add nload
 
 <img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/ada.png"/>
 
- 2.Q:为什么收不到验证码？
+2\.Q:为什么收不到验证码？
 
 ​    A:再来一次(如果你一天内已经错了14次的话，就明天再做吧)
 
-3.Q:输指令报错 xxx not found
+3\.Q:输指令报错 xxx not found
 
-   A:缺啥补啥，在容器外用apk add xxx ,容器内用apt install xxx
+A:缺啥补啥，在容器外用apk add xxx ,容器内用apt install xxx
 
 more....
 
 #### 所参考资料
 
-[[2021-01-27]让软路由来赚钱ESXi/X86上跑dock甜糖/一键导入简单无脑，小白，懒人专属](https://www.right.com.cn/forum/thread-4063192-1-2.html)
+[\[2021-01-27\]让软路由来赚钱ESXi/X86上跑dock甜糖/一键导入简单无脑，小白，懒人专属](https://www.right.com.cn/forum/thread-4063192-1-2.html)
 
 [【非op套娃】x86以ubuntu为底层跑docker甜糖服务](https://www.right.com.cn/forum/thread-4052765-1-1.html)
 

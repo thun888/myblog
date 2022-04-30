@@ -4,6 +4,7 @@ date: 2021-08-08 13:59:03
 tags: Intel
 cover: https://vkceyugu.cdn.bspapp.com/VKCEYUGU-35c12a92-e00c-4a70-8ef5-7bc728310bb5/ac4aac48-a984-46cf-b326-df2b780a7515.webp
 updated: 2021-08-08 13:59:03
+last: 2021-08-08 13:59:03
 description: 如今，人们白嫖起了牙膏厂~
 ---
 
@@ -35,8 +36,6 @@ description: 如今，人们白嫖起了牙膏厂~
 ![Snipaste_2021-08-07_17-49-13](https://asstes.thun888.xyz/file/pic-bed/2021/08/6cb96eb2096f29a09853a404dc1f503f.webp)
 ![Snipaste_2021-08-07_18-35-16](https://asstes.thun888.xyz/file/pic-bed/2021/08/af67af93cf0930982014779af16e3fbb.webp)
 {% endswiper %}
-
-
 
 ![image-20210808145540103](https://asstes.thun888.xyz/file/pic-bed/2021/09/ff14d0acd34b753b4db1982ba29a55b5.webp)
 
@@ -70,8 +69,6 @@ Another
 
 ![image-20210808151201095](https://asstes.thun888.xyz/file/pic-bed/2021/09/85c8fd28052bceea467090cc84e5709a.webp)
 
-
-
 #### 伪获取root权限
 
 在终端内复制粘贴以下命令
@@ -95,6 +92,3 @@ PS:可以开新一个终端下载一些必要依赖包（deb）再离线安装
 ![image-20210808143134070](https://asstes.thun888.xyz/file/pic-bed/2021/09/ee233bc3f9e26963348624942c45da8c.webp)
 
 > 该服务器使用时间只有10小时，但10小时后还可以再来一次{% emoji aru-l 0180 %}
-
-
-

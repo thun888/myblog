@@ -3,6 +3,7 @@ title: 解决Cloudflare Wrangler无法获取授权
 date: 2021-07-29 18:18:05
 tags: Clouddlare
 updated: 2021-07-29 18:18:05
+last: 2021-07-29 18:18:05
 ---
 
 #### 前言
@@ -31,6 +32,6 @@ updated: 2021-07-29 18:18:05
 
 #### 后
 
-写这篇时为了截图换了个账号，然后它能用了~~~~
+写这篇时为了截图换了个账号，然后它能用了\~\~\~\~
 
 ![Snipaste_2021-07-29_18-26-37](https://asstes.thun888.xyz/file/pic-bed/2021/09/cfc4d441f6daf3a7fcfb6b8913761440.webp)

@@ -4,6 +4,7 @@ date: 2021-06-10 14:37:59
 tags: [oneindex,web]
 description: 在一些带宽小的机子上部署Oneindex又用nexmoe主题，在学校开来给同学下电影开了十几秒愣是没加载出来
 updated: 2021-06-10 14:37:59
+last: 2021-06-10 14:37:59
 ---
 
 

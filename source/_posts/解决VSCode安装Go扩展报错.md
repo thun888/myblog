@@ -4,6 +4,7 @@ date: 2021-07-26 18:37:56
 tags: Go
 cover: https://vkceyugu.cdn.bspapp.com/VKCEYUGU-35c12a92-e00c-4a70-8ef5-7bc728310bb5/a12e31fc-68cf-49f0-b51f-277450416e0d.png
 updated: 2021-07-26 18:37:56
+last: 2021-07-26 18:37:56
 ---
 
 不多哔哔，直入主题
@@ -16,10 +17,9 @@ updated: 2021-07-26 18:37:56
 
 ![image-20210726184350014](https://asstes.thun888.xyz/file/pic-bed/2021/09/ad8580f69486b02efda6957d9714ddd7.webp)
 
-| 变量名      | 变量值             |
-| ----------- | ------------------ |
-| GOPROXY     | https://goproxy.io |
-| GO111MODULE | on                 |
+|变量名|变量值|
+|-|-|
+|GOPROXY|https://goproxy.io|
+|GO111MODULE|on|
 
 点确定后**重启**再进VSCode里选择`install all`安装就好
-
