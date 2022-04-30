@@ -2,45 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.thun888.xyz/about/</loc>
-    
-    <lastmod>2022-04-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thun888.xyz/htalk/</loc>
-    
-    <lastmod>2022-04-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thun888.xyz/update/</loc>
-    
-    <lastmod>2022-04-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thun888.xyz/wiki/Artalk/</loc>
-    
-    <lastmod>2022-04-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.thun888.xyz/wiki/dreamming/</loc>
     
-    <lastmod>2022-04-04</lastmod>
+    <lastmod>2022-04-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -49,7 +13,7 @@
   <url>
     <loc>https://blog.thun888.xyz/wiki/%E6%9D%82%E7%89%A9%E9%97%B4/camc</loc>
     
-    <lastmod>2022-04-04</lastmod>
+    <lastmod>2022-04-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -58,70 +22,7 @@
   <url>
     <loc>https://blog.thun888.xyz/wiki/%E6%9D%82%E7%89%A9%E9%97%B4/</loc>
     
-    <lastmod>2022-04-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thun888.xyz/wiki/Artalk/API/</loc>
-    
-    <lastmod>2022-04-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thun888.xyz/wiki/Artalk/QandA/</loc>
-    
-    <lastmod>2022-04-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thun888.xyz/wiki/Artalk/develop/</loc>
-    
-    <lastmod>2022-04-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thun888.xyz/wiki/Artalk/install/</loc>
-    
-    <lastmod>2022-04-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thun888.xyz/wiki/Artalk/install-go/</loc>
-    
-    <lastmod>2022-04-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thun888.xyz/wiki/Artalk/more-url/</loc>
-    
-    <lastmod>2022-04-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.thun888.xyz/wiki/Artalk/play/</loc>
-    
-    <lastmod>2022-04-04</lastmod>
+    <lastmod>2022-04-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -130,7 +31,7 @@
   <url>
     <loc>https://blog.thun888.xyz/wiki/Artalk/use/</loc>
     
-    <lastmod>2022-04-04</lastmod>
+    <lastmod>2022-04-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -139,7 +40,7 @@
   <url>
     <loc>https://blog.thun888.xyz/wiki/dreamming/material/</loc>
     
-    <lastmod>2022-04-04</lastmod>
+    <lastmod>2022-04-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -148,7 +49,7 @@
   <url>
     <loc>https://blog.thun888.xyz/wiki/dreamming/mod/</loc>
     
-    <lastmod>2022-04-04</lastmod>
+    <lastmod>2022-04-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -157,7 +58,106 @@
   <url>
     <loc>https://blog.thun888.xyz/wiki/%E6%9D%82%E7%89%A9%E9%97%B4/old-pages/</loc>
     
-    <lastmod>2022-04-04</lastmod>
+    <lastmod>2022-04-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thun888.xyz/about/</loc>
+    
+    <lastmod>2022-04-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thun888.xyz/htalk/</loc>
+    
+    <lastmod>2022-04-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thun888.xyz/update/</loc>
+    
+    <lastmod>2022-04-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thun888.xyz/wiki/Artalk/</loc>
+    
+    <lastmod>2022-04-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thun888.xyz/wiki/Artalk/API/</loc>
+    
+    <lastmod>2022-04-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thun888.xyz/wiki/Artalk/QandA/</loc>
+    
+    <lastmod>2022-04-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thun888.xyz/wiki/Artalk/develop/</loc>
+    
+    <lastmod>2022-04-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thun888.xyz/wiki/Artalk/install/</loc>
+    
+    <lastmod>2022-04-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thun888.xyz/wiki/Artalk/install-go/</loc>
+    
+    <lastmod>2022-04-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thun888.xyz/wiki/Artalk/more-url/</loc>
+    
+    <lastmod>2022-04-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.thun888.xyz/wiki/Artalk/play/</loc>
+    
+    <lastmod>2022-04-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -355,7 +355,7 @@
 
   <url>
     <loc>https://blog.thun888.xyz/</loc>
-    <lastmod>2022-04-04</lastmod>
+    <lastmod>2022-04-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -363,91 +363,91 @@
   
   <url>
     <loc>https://blog.thun888.xyz/tags/yearreport/</loc>
-    <lastmod>2022-04-04</lastmod>
+    <lastmod>2022-04-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.thun888.xyz/tags/%E7%94%9C%E7%B3%96/</loc>
-    <lastmod>2022-04-04</lastmod>
+    <lastmod>2022-04-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.thun888.xyz/tags/blog/</loc>
-    <lastmod>2022-04-04</lastmod>
+    <lastmod>2022-04-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.thun888.xyz/tags/oneindex/</loc>
-    <lastmod>2022-04-04</lastmod>
+    <lastmod>2022-04-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.thun888.xyz/tags/web/</loc>
-    <lastmod>2022-04-04</lastmod>
+    <lastmod>2022-04-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.thun888.xyz/tags/Intel/</loc>
-    <lastmod>2022-04-04</lastmod>
+    <lastmod>2022-04-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.thun888.xyz/tags/linux/</loc>
-    <lastmod>2022-04-04</lastmod>
+    <lastmod>2022-04-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.thun888.xyz/tags/Clouddlare/</loc>
-    <lastmod>2022-04-04</lastmod>
+    <lastmod>2022-04-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.thun888.xyz/tags/Go/</loc>
-    <lastmod>2022-04-04</lastmod>
+    <lastmod>2022-04-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.thun888.xyz/tags/MIUI/</loc>
-    <lastmod>2022-04-04</lastmod>
+    <lastmod>2022-04-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.thun888.xyz/tags/free/</loc>
-    <lastmod>2022-04-04</lastmod>
+    <lastmod>2022-04-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.thun888.xyz/tags/%E7%BD%91%E7%AB%99/</loc>
-    <lastmod>2022-04-04</lastmod>
+    <lastmod>2022-04-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.thun888.xyz/tags/%E8%BD%AC%E6%8D%A2/</loc>
-    <lastmod>2022-04-04</lastmod>
+    <lastmod>2022-04-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
