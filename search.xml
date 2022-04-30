@@ -6,11 +6,21 @@
     <content><![CDATA[<h2 id="2021-has-ended-but-2022-begins"><a href="#2021-has-ended-but-2022-begins" class="headerlink" title="2021 has ended but 2022 begins"></a>2021 has ended but 2022 begins</h2><p>新年伊始，又是新的一年。做个年终总结吧。<del>证明我还活着</del></p>
 <p>先看看曾经定的Todo list</p>
 <ul>
-<li><input disabled="" type="checkbox"> 进到实验班。<del>还没考呢</del></li>
-<li><input checked="" disabled="" type="checkbox"> 设立导航</li>
-<li><input disabled="" type="checkbox"> 被百度收录。看淡了，我把站点地图怼它脸上，写个脚本每4分钟提交一次，还没收录，<del>百度是神马东西</del></li>
-<li><input checked="" disabled="" type="checkbox"> 写个基于cfw的工具。写了不少</li>
-<li><input checked="" disabled="" type="checkbox"> Golang入门。大概吧</li>
+<li><p><input disabled="" type="checkbox"> 
+进到实验班。~~还没考呢~~<del>还没考呢</del></p>
+</li>
+<li><p><input checked="" disabled="" type="checkbox"> 
+设立导航</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+被百度收录。看淡了，我把站点地图怼它脸上，写个脚本每4分钟提交一次，还没收录，~~百度是神马东西~~<del>百度是神马东西</del></p>
+</li>
+<li><p><input checked="" disabled="" type="checkbox"> 
+写个基于cfw的工具。写了不少</p>
+</li>
+<li><p><input checked="" disabled="" type="checkbox"> 
+Golang入门。大概吧</p>
+</li>
 </ul>
 <p>过去的一年，好像时间变快了不少，不知不觉就过去了。6月份往前都在备考生地，放个暑假回来后又是各种考试，<del>两周一休算了算回家的次数好像还不到10次<span class="tag-plugin emoji"><img style="height:1.5em" src="https://cdn.jsdelivr.net/gh/thun888/Coolapk-Emoji@master/coolapk_emotion_56_dogexiaoku.png"></span></del></p>
 <p>学会了很多，也见证了不少（省略数千字）</p>
@@ -18,8 +28,12 @@
 <p>定个目标</p>
 </blockquote>
 <ul>
-<li><input disabled="" type="checkbox"> 考上一中!</li>
-<li><input disabled="" type="checkbox"> 最好再进实验班</li>
+<li><p><input disabled="" type="checkbox"> 
+考上一中!</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+最好再进实验班</p>
+</li>
 </ul>
 <h4 id="附"><a href="#附" class="headerlink" title="附"></a>附</h4><p>因为没啥时间，也没有写到什么实质上的内容，不过也有2200+的小伙伴来访~<span class="tag-plugin emoji"><img style="height:1.5em" src="https://cdn.jsdelivr.net/gh/thun888/Coolapk-Emoji@master/coolapk_emotion_38_wozuimei.png"></span><br><img src="https://raw.thun888.xyz/thun888/asstes/master/img/202202011232766.png" alt="Snipaste_2022-01-31_19-35-02"><br><img src="https://raw.thun888.xyz/thun888/asstes/master/img/202202011231533.png" alt="Snipaste_2022-01-31_19-35-28"><br><img src="https://raw.thun888.xyz/thun888/asstes/master/img/202202011232299.png" alt="大家梯子地区真广（划掉）"></p>
 <hr>
@@ -35,12 +49,16 @@
     <content><![CDATA[<h4 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h4><p>一开始我是在电脑上挂网心，但这玩意儿写入缓存不仅多（以至于写掉盘了），钱还给的少。而甜糖在恩山论坛上面的都是Linux下操作的，对我这docker小白很不友好，今天就总结一下最简单的方法</p>
 <p><em>以下内容建议使用FinalShell操作</em></p>
 <h4 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h4><ol>
-<li>映像包（<a href="https://share.thun888.xyz/ali/%E6%96%87%E4%BB%B6/ttnode/">500g&#x2F;100g</a>)(在我写的时候又有新版了<img src="https://cdn.jsdelivr.net/gh/thun888/jian@master/coolapk_emotion_58_dogeyuanliangta.png" style="zoom:25%;" />)</li>
-<li>vmware</li>
+<li><p>映像包（<a href="https://share.thun888.xyz/ali/%E6%96%87%E4%BB%B6/ttnode/">500g&#x2F;100g</a>)(在我写的时候又有新版了<img src="https://cdn.jsdelivr.net/gh/thun888/jian@master/coolapk_emotion_58_dogeyuanliangta.png" style="zoom:25%;" />)</p>
+</li>
+<li><p>vmware</p>
+</li>
 </ol>
 <h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><ol>
-<li>安装vmware(废话)</li>
-<li>解压压缩包后。点击后缀为vmx的文件导入</li>
+<li><p>安装vmware(废话)</p>
+</li>
+<li><p>解压压缩包后。点击后缀为vmx的文件导入</p>
+</li>
 </ol>
 <p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210207111610777.png" alt="image-20210207111610777"></p>
 <p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210207111650865.png" alt="image-20210207111650865"></p>
@@ -62,18 +80,18 @@
 <p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210207112818753.png" alt="image-20210207112818753"></p>
 <p>用<a href="http://2v.dedecms.com/">二维码生成工具</a>，把uid生成二维码再用手机扫码绑定.</p>
 <p>如果它显示未配置网络的话就继续看吧</p>
-  <script>
-  new Artalk({
-    el: '#ArtalkComments', // 元素选择
-    placeholder: '来啊，快活啊 ( ゜- ゜)', // 占位符
-    noComment: '快来成为第一个评论的人吧~', // 无评论时显示
-    serverUrl: 'https://artalk.thun888.xyz/',
-    readMore: { // 阅读更多配置
-      pageSize: 15, // 每次请求获取评论数
-      autoLoad: true // 滚动到底部自动加载
-    }
-  });
-  </script>
+<script>
+new Artalk({
+el: '#ArtalkComments', // 元素选择
+placeholder: '来啊，快活啊 ( ゜- ゜)', // 占位符
+noComment: '快来成为第一个评论的人吧\~', // 无评论时显示
+serverUrl: 'https://artalk.thun888.xyz/',
+readMore: { // 阅读更多配置
+pageSize: 15, // 每次请求获取评论数
+autoLoad: true // 滚动到底部自动加载
+}
+});
+</script>
 
 <p>输入</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">netstat -tnlp </span><br></pre></td></tr></table></figure>
@@ -106,7 +124,7 @@
 <img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/Screenshot_2021-02-07-12-14-30-735_com.tencent.mm.jpg" alt="image-20210207121352264" style="zoom: 33%;" />
 
 <p>3.网速监控</p>
-<p>虽然FinalShell自带网速监控，<img src="C:\Users\22383\AppData\Roaming\Typora\typora-user-images\image-20210207130000887.png" alt="image-20210207130000887" style="zoom: 67%;" />但也不总是每天都在电脑旁</p>
+<p>虽然FinalShell自带网速监控，<img src="C:\\Users\\22383\\AppData\\Roaming\\Typora\\typora-user-images\\image-20210207130000887.png" alt="image-20210207130000887" style="zoom: 67%;" />但也不总是每天都在电脑旁</p>
 <p>输入</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">apk add nload</span><br></pre></td></tr></table></figure>
 
@@ -121,10 +139,10 @@
 </ol>
 <img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/ada.png"/>
 
-<p> 2.Q:为什么收不到验证码？</p>
+<p>2.Q:为什么收不到验证码？</p>
 <p>​    A:再来一次(如果你一天内已经错了14次的话，就明天再做吧)</p>
 <p>3.Q:输指令报错 xxx not found</p>
-<p>   A:缺啥补啥，在容器外用apk add xxx ,容器内用apt install xxx</p>
+<p>A:缺啥补啥，在容器外用apk add xxx ,容器内用apt install xxx</p>
 <p>more….</p>
 <h4 id="所参考资料"><a href="#所参考资料" class="headerlink" title="所参考资料"></a>所参考资料</h4><p><a href="https://www.right.com.cn/forum/thread-4063192-1-2.html">[2021-01-27]让软路由来赚钱ESXi&#x2F;X86上跑dock甜糖&#x2F;一键导入简单无脑，小白，懒人专属</a></p>
 <p><a href="https://www.right.com.cn/forum/thread-4052765-1-1.html">【非op套娃】x86以ubuntu为底层跑docker甜糖服务</a></p>
@@ -158,10 +176,10 @@
 
 <p>添加上去后把所有<code>archives</code>给替换成了<code>htalk</code>,但是一运行那报错和放鞭炮没什么不同(。﹏。)</p>
 <p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210715203736270.png" alt="image-20210715203736270"></p>
-<p>从代码上说，这句是判断当前是什么页面的，我翻了亿下没找到它的定义在哪个文件，就先改回posts（只是影响了按钮底色，问题不大(❁´◡&#96;❁)）</p>
+<p>从代码上说，这句是判断当前是什么页面的，我翻了亿下没找到它的定义在哪个文件，就先改回posts（只是影响了按钮底色，问题不大(❁´◡`❁)）</p>
 <p>在<code>\themes\stellar\layout</code>下新建<code>htalk.ejs</code>,从隔壁<code>tag.ejs</code>借鉴点代码过来，除了site.tags.length其他都改为htalk</p>
 <p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210715204525167.png" alt="image-20210715204525167"></p>
-<p>可以看出第11行到21行都是页面中可以显示出来的部分<del>（不太严谨的样子</del></p>
+<p>可以看出第11行到21行都是页面中可以显示出来的部分~~（不太严谨的样子~~</p>
 <p>把HPP文档中的”引入部分”插到里面</p>
 <p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210715205153957.png" alt="image-20210715205153957"></p>
 <p>¯_(ツ)_&#x2F;¯</p>
@@ -180,10 +198,7 @@
 <p>( •̀ ω •́ )✧</p>
 <p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210715205705037.png" alt="image-20210715205705037"></p>
 <h4 id="最终代码"><a href="#最终代码" class="headerlink" title="最终代码"></a>最终代码</h4><p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210715205828548.png" alt="image-20210715205828548"></p>
-<div class="admonition warning"><p class="admonition-title">warning</p><p>1.记得使用<code>hexo new page htalk</code>并在<code>layout</code>中改为<code>htalk</code><br>
-2.在博客根目录下的<code>_config.yml</code>中要指明<code>htalk_dir: htalk</code></p>
-</div>
-
+<p>!!!  warning<br>1.记得使用<code>hexo new page htalk</code>并在<code>layout</code>中改为<code>htalk</code><br><br>2.在博客根目录下的<code>_config.yml</code>中要指明<code>htalk_dir: htalk</code></p>
 ]]></content>
       <tags>
         <tag>blog</tag>
@@ -236,8 +251,6 @@
 <p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/09/4c76da099f1acc95ab57c02b2343a02b.webp" alt="image-20210808145523053"></p>
 <p>在看到<code>Server not running</code>这个话前基本都500错误或者点了没反应，等半个小时就好(也可以切换网络环境等)</p>
 <div class="tag-plugin swiper-container" id="swiper-api" width="25"><div class="swiper-wrapper"><div class="swiper-slide"><img no-lazy src="https://asstes.thun888.xyz/file/pic-bed/2021/08/6cb96eb2096f29a09853a404dc1f503f.webp" alt="Snipaste_2021-08-07_17-49-13"></div><div class="swiper-slide"><img no-lazy src="https://asstes.thun888.xyz/file/pic-bed/2021/08/af67af93cf0930982014779af16e3fbb.webp" alt="Snipaste_2021-08-07_18-35-16"></div></div><div class="swiper-pagination"></div><div class="swiper-button-prev blur"></div><div class="swiper-button-next blur"></div></div>
-
-
 
 <p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/09/ff14d0acd34b753b4db1982ba29a55b5.webp" alt="image-20210808145540103"></p>
 <p>打开终端</p>
@@ -420,15 +433,12 @@
 
 <div class="tag-plugin swiper-container" id="swiper-api" width="25"><div class="swiper-wrapper"><div class="swiper-slide"><img no-lazy src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/IMG_20210424_212057.jpg"></div><div class="swiper-slide"><img no-lazy src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/Screenshot_2021-04-24-21-19-58-835_com.android.ve.jpg"></div><div class="swiper-slide"><img no-lazy src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/Screenshot_2021-04-24-21-20-21-301_com.android.ve.jpg"></div></div><div class="swiper-pagination"></div><div class="swiper-button-prev blur"></div><div class="swiper-button-next blur"></div></div>
 
-
 <p>（如图）</p>
 <p>显然，是新版的“照明弹”引起的</p>
 <div class="tag-plugin note" ><div class="title"><strong>搜索一下可以看到有好几个</strong></div><div class="body"><div class="tag-plugin image"><div class="image-bg"><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/dsfdsvdzsggdf.jpg"/></div></div></div></div>
 
-
 <p>把里面每一个权限选择了“空白通行证”的改为“始终允许”</p>
-<img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/Screenshot_2021-04-30-23-12-52-256_com.miui.secur.jpg" style="zoom: 80%;" />
-]]></content>
+<img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/Screenshot_2021-04-30-23-12-52-256_com.miui.secur.jpg" style="zoom: 80%;" />]]></content>
       <tags>
         <tag>MIUI</tag>
       </tags>
@@ -438,10 +448,14 @@
     <url>/2021/%E8%AE%B0%E4%B8%80%E6%AC%A1%E7%AE%80%E5%8D%95%E7%9A%84%E6%B0%B4%E5%8D%A1%E7%A0%B4%E8%A7%A3/</url>
     <content><![CDATA[<p>大概一个月前吧，学校新发了2份文件，一份关于空调的，一份关于水的。之前是免费的，选择突然收费了，说着节水节电（提倡节水节电没错，但之前提倡节水节电时学校没鸟过，现在股东撤资就来搞这种事情，恶臭），实际上只是想省钱<img src="https://cdn.jsdelivr.net/gh/thun888/jian@master/coolapk_emotion_81_naikezui.png" style="zoom:25%;" /></p>
 <h5 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h5><ol>
-<li>pn532</li>
-<li>usb to ttl</li>
-<li>电脑x1</li>
-<li><a href="https://share.thun888.xyz/%E8%BD%AF%E4%BB%B6/pn532.zip">软件包</a></li>
+<li><p>pn532</p>
+</li>
+<li><p>usb to ttl</p>
+</li>
+<li><p>电脑x1</p>
+</li>
+<li><p><a href="https://share.thun888.xyz/%E8%BD%AF%E4%BB%B6/pn532.zip">软件包</a></p>
+</li>
 </ol>
 <h5 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h5><p>去学校刷了2次卡，用“上位机”扫了3次得到这3个东西</p>
 <p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210504170454.png"></p>
@@ -472,29 +486,29 @@
 <table>
 <thead>
 <tr>
-<th align="center">方法</th>
-<th align="center">网址</th>
+<th>方法</th>
+<th>网址</th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">按位取反</td>
-<td align="center"><del>建议用笔，纸外加计算器</del></td>
+<td>按位取反</td>
+<td><del>建议用笔，纸外加计算器</del></td>
 </tr>
 <tr>
-<td align="center">CRC冗余校验</td>
-<td align="center"><a href="http://www.ip33.com/crc.html">CRC（循环冗余校验）在线计算_ip33.com</a></td>
+<td>CRC冗余校验</td>
+<td><a href="http://www.ip33.com/crc.html">CRC（循环冗余校验）在线计算_ip33.com</a></td>
 </tr>
 <tr>
-<td align="center">BCC异或运算</td>
-<td align="center"><a href="http://www.ip33.com/bcc.html">BCC校验(异或校验)在线计算_ip33.com</a></td>
+<td>BCC异或运算</td>
+<td><a href="http://www.ip33.com/bcc.html">BCC校验(异或校验)在线计算_ip33.com</a></td>
 </tr>
 <tr>
-<td align="center">LRC和校验计算</td>
-<td align="center"><a href="http://www.ip33.com/lrc.html">LRC校验(纵向冗余校验)在线计算_ip33.com</a></td>
+<td>LRC和校验计算</td>
+<td><a href="http://www.ip33.com/lrc.html">LRC校验(纵向冗余校验)在线计算_ip33.com</a></td>
 </tr>
 <tr>
-<td align="center">校验计算</td>
-<td align="center"><del>建议用笔，纸外加计算器</del></td>
+<td>校验计算</td>
+<td><del>建议用笔，纸外加计算器</del></td>
 </tr>
 </tbody></table>
 <p>这里一个一个试就可以算出来它是BCC校检</p>
@@ -528,7 +542,7 @@
 <p>把原图删掉后将画布调整为生成图大小（例如我这就是210*210）</p>
 <p><img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/da21desf4s568gre46g.png"></p>
 <p>选择 文件—导出（保存为.svg)</p>
-<p><img src="C:\Users\22383\AppData\Roaming\Typora\typora-user-images\image-20210504160641441.png" alt="image-20210504160641441"></p>
+<p><img src="C:%5CUsers%5C22383%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210504160641441.png" alt="image-20210504160641441"></p>
 <img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/20210504161231.png" style="zoom:80%;" />
 
 <h5 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h5><p>要真想更好一点可以用这个为底，重绘一遍</p>
