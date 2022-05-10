@@ -57,11 +57,11 @@ function layoutDiv() {
 //version 0.0.3
 var otna_domain = window.location.host;
 var otna_pathname = window.location.pathname;
-var otna_url = "https://otna.thun888.xyz/index.php";
+var otna_url = "https://camc.thun888.xyz:603/index.php";
 var otna_nowtime = new Date().getTime()
 fetch(otna_url, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'text/plain' },
         body: JSON.stringify({ domain: otna_domain, pathname: otna_pathname })
     }).then(function(response) {
         return response.json();
