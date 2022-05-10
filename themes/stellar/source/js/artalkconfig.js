@@ -158,7 +158,7 @@ new Artalk({
     placeholder: '来啊，快活啊[]~(￣▽￣)~*', // 占位符
     sendBtn: 'Fire!',
     pageTitle: '',
-    server: 'https://camc.thun888.xyz:600',
+    server: 'https://artalk.thun888.xyz/',
     site: 'Blog',
 })
 document.getElementsByClassName("atk-sidebar-layer")[0].style.display = "none"
