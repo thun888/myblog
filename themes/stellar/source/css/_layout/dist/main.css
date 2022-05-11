@@ -1,0 +1,21 @@
+.l_main {
+  position: relative;
+  padding-bottom: calc(1 * var(--gap-l));
+}
+@media screen and (min-width: 1280px) {
+  .l_main {
+    margin-left: calc(2 * var(--gap-l));
+    margin-right: calc(2 * var(--gap-l) + var(--width-left));
+  }
+}
+@media screen and (min-width: $device-tablet) {
+  .l_main {
+    padding-top: calc(2 * var(--gap-l));
+  }
+}
+.l_main header {
+  margin: 4rem 1rem 2rem;
+}
+.l_main header .logo-wrap {
+  margin: 0;
+}

@@ -1,0 +1,34 @@
+.widget-wrap#repo-info .widget-body >.items {
+  margin: 4px 0;
+  border: 1px solid var(--block-border);
+  border-radius: $border-block;
+  background: var(--block);
+  overflow: hidden;
+}
+.widget-wrap#repo-info .widget-body .line {
+  margin: 0;
+  height: 1px;
+  background: var(--block-border);
+}
+.widget-wrap#repo-info .widget-body .line+.line,
+.widget-wrap#repo-info .widget-body .line:first-child,
+.widget-wrap#repo-info .widget-body .line:last-child {
+  display: none;
+}
+.widget-wrap#repo-info .widget-body a.item-link {
+  color: var(--text-p2);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.5rem;
+  font-size: $fs-13;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.widget-wrap#repo-info .widget-body a.item-link svg {
+  width: 1em;
+  height: 1em;
+}
+.widget-wrap#repo-info .widget-body a:hover {
+  background: var(--block-hover);
+}

@@ -1,6 +1,6 @@
 ######## Stellar info ########
 stellar:
-  version: '1.6.1'
+  version: '1.7.0'
   homepage: 'https://xaoxuu.com/wiki/stellar/'
   repo: 'https://github.com/xaoxuu/hexo-theme-stellar'
   cdn_css: https://cdn.jsdelivr.net/combine/gh/thun888/myblog@gh-page/css/main.css,gh/thun888/myblog@gh-page/morecss/main.min.css # Use cdn links instead of /css/main.css
@@ -197,6 +197,9 @@ tag_plugins:
     qq: https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/qq/%s.gif
     aru: https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/aru-l/%s.gif
     tieba: https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/tieba/%s.png
+  # {% image %}
+  image:
+    fancybox: true
 
 
 ######## JS Plugins ########
@@ -205,11 +208,6 @@ plugins:
   # jquery
   jquery: https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js
 
-  # swiper
-  swiper:
-    enable: true
-    css: https://unpkg.com/swiper@6/swiper-bundle.min.css
-    js: https://unpkg.com/swiper@6/swiper-bundle.min.js
   # issues api
   sitesjs: https://cdn.jsdelivr.net/gh/thun888/myblog@gh-page/js/plugins/sites.js
   friendsjs: https://cdn.jsdelivr.net/gh/thun888/myblog@gh-page/js/plugins/friends.js
@@ -231,23 +229,38 @@ plugins:
 
   # https://scrollrevealjs.org/api/reveal.html
   scrollreveal:
-    enable: true
+    enable: #true
     js: https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js
     distance: 8px
     duration: 500 # ms
     interval: 100 # ms
     scale: 1 # 0.1~1
-  
+
   # https://fancyapps.com/docs/ui/fancybox/
+  # available for {% image xxx %}
   fancybox:
-    enable: #true
+    enable: true
     js: https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js
     css: https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css
-    comment: 
-     enable: #true # 是否处理评论区的图片，注意：不支持 iframe 类评论系统
-     selector:     # 评论区图片选择器，例：
-                   # valine: .vcontent img:not(.vemoji)
-                   # twikoo: .tk-content img:not([class*="emo"]) 
+    # 可以处理评论区的图片（不支持 iframe 类评论系统）例如：
+    # 使用valine评论可以写: .vcontent img:not(.vemoji)
+    # 使用twikoo评论可以写: .tk-content img:not([class*="emo"])
+    selector: .swiper-slide img # 多个选择器用英文逗号隔开
+
+  # swiper
+  swiper:
+    enable: true
+    css: https://unpkg.com/swiper@6/swiper-bundle.min.css
+    js: https://unpkg.com/swiper@6/swiper-bundle.min.js
+
+
+  # 赫蹏 (Heti) - 专为中文网页内容设计的排版样式增强
+  # https://github.com/sivan/heti
+  heti:
+    enable: true
+    css: https://unpkg.com/heti/umd/heti.min.css
+    js: https://unpkg.com/heti/umd/heti-addon.min.js
+
 
 style:
   darkmode: auto # auto / always / false
@@ -261,10 +274,7 @@ style:
     scrollbar: 4px
 
 default:
-  avatar: /img/svg/3442075.svg
-  link: /img/svg/8f277b4ee0ecd.svg
-  cover: /img/svg/76b86c0226ffd.svg
-  image: /img/svg/2659360.svg
-
-sitemap:
-  path: sitemap.xml
+  avatar: https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/avatar/round/3442075.svg
+  link: https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/link/8f277b4ee0ecd.svg
+  cover: https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/cover/76b86c0226ffd.svg
+  image: https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/image/2659360.svg

@@ -1,0 +1,54 @@
+pre {
+  font-family: $ff-code;
+  font-size: $fs-code;
+  tab-size: 4;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  -webkit-tab-size: 4;
+}
+a {
+  text-decoration: none;
+  color: $color-link;
+}
+a:hover {
+  color: $color-hover;
+}
+hr {
+  color: var(--text-meta);
+  opacity: 0.1;
+}
+img {
+  max-width: 100%;
+}
+li {
+  font-size: $fs-15;
+}
+ul,
+ol {
+  padding-left: 1.5rem;
+}
+table:not([class]) {
+  border-collapse: collapse;
+  overflow: auto;
+  display: block;
+  margin: 1rem 0;
+  max-width: 100%;
+  vertical-align: text-top;
+  font-size: $fs-14;
+}
+table:not([class]) th {
+  background: var(--block);
+}
+table:not([class]) td,
+table:not([class]) th {
+  padding: 0.5em 1em;
+  border: 1px solid var(--block-hover);
+  line-height: 1.5;
+}
+table:not([class]) tr {
+  word-break: keep-all;
+  white-space: nowrap;
+}
+table:not([class]) tr:hover {
+  background: var(--block);
+}

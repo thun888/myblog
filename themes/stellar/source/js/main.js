@@ -276,12 +276,10 @@ if (stellar.plugins.preload) {
 
 // fancybox
 if (stellar.plugins.fancybox) {
-  let selector = 'article .tag-plugin.image img';
-
-  if (stellar.plugins.fancybox.comment.enable) {
-    selector += `, ${stellar.plugins.fancybox.comment.selector}`
+  let selector = 'img[fancybox]:not(.error)';
+  if (stellar.plugins.fancybox.selector) {
+    selector += `, ${stellar.plugins.fancybox.selector}`
   }
-
   if (document.querySelectorAll(selector).length !== 0) {
     stellar.loadCSS(stellar.plugins.fancybox.css);
     stellar.loadScript(stellar.plugins.fancybox.js, { defer: true }).then(function () {
@@ -299,6 +297,15 @@ if (stellar.plugins.fancybox) {
   }
 }
 
+// heti
+if (stellar.plugins.heti) {
+  stellar.loadCSS(stellar.plugins.heti.css);
+  stellar.loadScript(stellar.plugins.heti.js, { defer: true }).then(function () {
+    const heti = new Heti('.heti p');
+    heti.autoSpacing();
+    stellar.plugins.heti.enable = false;
+  });
+}
 
 /* 水印 */
 console.log("%c\n           ", "font-size:65px;background:url('https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/%E6%B0%B4%E5%8D%B01.png') no-repeat");

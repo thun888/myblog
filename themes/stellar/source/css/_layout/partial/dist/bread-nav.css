@@ -1,0 +1,25 @@
+.bread-nav {
+  padding: 1rem 1rem 0;
+  color: var(--text-p3);
+  font-weight: 500;
+}
+.bread-nav div#breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.bread-nav div#breadcrumb:not([style]) a {
+  color: $color-link;
+}
+.bread-nav div#breadcrumb[style] a {
+  color: inherit;
+}
+.bread-nav div#breadcrumb span.sep {
+  color: var(--text-p3);
+}
+.bread-nav div#breadcrumb a.cap:hover {
+  color: $color-hover;
+}
+.bread-nav div#post-meta {
+  margin-top: 2px;
+}

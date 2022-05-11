@@ -67,9 +67,6 @@ function layoutDiv() {
           }
           if (item == 'wechat') {
             el += ' onclick="util.toggle(&quot;qrcode-wechat&quot)"';
-          } else if (item == 'qq') {
-            el += ' href="https://connect.qq.com/widget/shareqq/index.html?url=' + page.permalink;
-            el += '"';
           } else if (item == 'weibo') {
             el += ' href="https://service.weibo.com/share/share.php?url=' + page.permalink;
             el += '&title=' + (page.seo_title || page.title) + ' - ' + config.title;
@@ -79,6 +76,9 @@ function layoutDiv() {
               el += '&pics=' + page.logo.src;
             }
             el += '&summary=' + truncate(page.description || strip_html(page.excerpt || page.content), {length: 120});
+            el += '"';
+          } else if (item == 'qq') {
+            el += ' href="https://connect.qq.com/widget/shareqq/index.html?url=' + page.permalink;
             el += '"';
           } else if (item == 'email') {
             el += ' href="mailto:?subject=' + (page.title || page.seo_title) + ' - ' + config.title + '&amp;'
@@ -104,7 +104,7 @@ function layoutDiv() {
       el += '</div>';
       if (theme.article.share.includes('wechat')) {
         el += '<div class="qrcode" id="qrcode-wechat" style="visibility:hidden;height:0">';
-        el += '<img src="https://tenapi.cn/qr/?txt=' + url + '"/>';
+        el += '<img src="https://api.qrserver.com/v1/create-qr-code/?size=256x256&data=' + url + '"/>';
         el += '</div>';
       }
       el += '</div>';
@@ -118,27 +118,27 @@ function layoutDiv() {
 %>
 <%- layoutDiv(); %>
 
-        <HR width="95%" color=#987cb9 SIZE=3>
-        <span id="fileup" style="text-align: center;display:block;">(￣︶￣)↗[<a href="https://upload.thun888.xyz">文件</a>上传,<a href="https://emotion.xiaokang.me">更多表情</a>]</span>
-        <HR width="95%" color=#987cb9 SIZE=3>
-        <div id="Comments"></div>
-        <link href="https://cdn.jsdelivr.net/npm/artalk@2.2.12/dist/Artalk.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/artalk@2.2.12/dist/Artalk.js"></script>
-        <script>
-            var page = window.location.href.split('#')[0]
-            if (page.endsWith("index.html")) {
-                pagekey = page.substring(0, page.length - 10)
-            } else {
-                pagekey = page
-            }
-            new Artalk({
-                el: '#Comments',
-                pageKey: decodeURI(pagekey),
-                placeholder: '来啊，快活啊[]~(￣▽￣)~*', // 占位符
-                sendBtn: 'Fire!',
-                pageTitle: '',
-                server: 'https://artalk.thun888.xyz/',
-                site: 'Blog',
-            })
-            document.getElementsByClassName("atk-sidebar-layer")[0].style.display = "none"
-        </script>
+<HR width="95%" color=#987cb9 SIZE=3>
+  <span id="fileup" style="text-align: center;display:block;">(￣︶￣)↗[<a href="https://upload.thun888.xyz">文件</a>上传,<a href="https://emotion.xiaokang.me">更多表情</a>]</span>
+  <HR width="95%" color=#987cb9 SIZE=3>
+  <div id="Comments"></div>
+  <link href="https://cdn.jsdelivr.net/npm/artalk@2.2.12/dist/Artalk.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/artalk@2.2.12/dist/Artalk.js"></script>
+  <script>
+      var page = window.location.href.split('#')[0]
+      if (page.endsWith("index.html")) {
+          pagekey = page.substring(0, page.length - 10)
+      } else {
+          pagekey = page
+      }
+      new Artalk({
+          el: '#Comments',
+          pageKey: decodeURI(pagekey),
+          placeholder: '来啊，快活啊[]~(￣▽￣)~*', // 占位符
+          sendBtn: 'Fire!',
+          pageTitle: '',
+          server: 'https://artalk.thun888.xyz/',
+          site: 'Blog',
+      })
+      document.getElementsByClassName("atk-sidebar-layer")[0].style.display = "none"
+  </script>

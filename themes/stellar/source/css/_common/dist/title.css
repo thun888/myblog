@@ -1,0 +1,70 @@
+h1,
+.h1 {
+  font-size: $fs-h1;
+  font-weight: 700;
+}
+@media screen and (max-width: $device-mobile) {
+  h1,
+  .h1 {
+    font-size: $fs-h1;
+  }
+}
+h2,
+.h2 {
+  font-size: $fs-h2;
+}
+h3,
+.h3 {
+  font-size: $fs-h3;
+}
+h4,
+.h4 {
+  font-size: $fs-h4;
+}
+h5 {
+  font-size: $fs-h5;
+}
+h6 {
+  font-size: $fs-h6;
+}
+.fs14 {
+  font-size: $fs-14;
+}
+.fs14 p {
+  font-size: $fs-14 !important;
+}
+.fs14 li {
+  font-size: $fs-14 !important;
+}
+.fs12 {
+  font-size: $fs-12;
+}
+.post-list .post-title {
+  font-weight: 500;
+  margin: 0.75rem 0 0.5rem;
+  line-height: 1.2;
+  font-size: $fs-h3;
+  border-bottom: none;
+  color: var(--text-p0);
+  trans1: color;
+}
+.post-list .wiki .post-title {
+  margin-top: 0.5rem;
+  font-weight: 700;
+}
+.widgets .post-title {
+  margin: 0.75rem 0;
+  line-height: 1.2;
+  display: block;
+}
+.widgets .post-title .cap {
+  margin-bottom: 2px;
+  opacity: 0.5;
+}
+.widgets .post-title a {
+  color: inherit;
+  font-weight: 500;
+}
+.widgets .post-title a:hover {
+  color: $color-hover;
+}

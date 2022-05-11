@@ -1,0 +1,10 @@
+.md .tag-plugin.emoji {
+  display: inline-block;
+  margin: -4px 2px 0;
+  vertical-align: middle;
+}
+.md .tag-plugin.emoji img {
+  display: block;
+  object-fit: contain;
+  height: 1.75em;
+}

@@ -72,7 +72,7 @@ fetch(otna_url, {
         if (otna_res.status == "200") {
             otna_write(otna_res.pagepv,otna_res.allpv,otna_res.alluv,otna_res.online,otna_delay + "ms");
         } else {
-            otna_write("Error","Error","Error","Error","Error");
+            otna_write("Err","Err","Err","Err","Err");
             console.log("Otn Analytics Error");
             console.error(otna_res);
         }

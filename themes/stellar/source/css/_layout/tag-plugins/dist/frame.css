@@ -1,0 +1,62 @@
+.md .frame-wrap {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.md .frame-wrap img,
+.md .frame-wrap video {
+  border-radius: 0;
+}
+.md .frame-wrap .frame {
+  z-index: 1;
+  display: block;
+  position: absolute;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.md .tag-plugin.img-wrap .frame-wrap[focus] {
+  height: auto;
+}
+.md .frame-wrap#iphone11 img,
+.md .frame-wrap#iphone11 video {
+  width: 287px;
+  margin-top: 19px;
+  margin-bottom: 20px;
+}
+.md .frame-wrap#iphone11 .frame {
+  background-image: url("https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/frame/iphone11.svg");
+  width: 329px;
+  height: 658px;
+}
+.md .frame-wrap[focus='top'] img,
+.md .frame-wrap[focus='top'] video {
+  margin-bottom: 0 !important;
+}
+.md .frame-wrap:not([focus='bottom']) .frame {
+  top: 0;
+}
+.md .frame-wrap[focus='bottom'] img,
+.md .frame-wrap[focus='bottom'] video {
+  bottom: 0;
+  margin-top: 0 !important;
+}
+.md .frame-wrap[focus='bottom'] .frame {
+  bottom: 0;
+}
+@media screen and (max-width: $device-mobile) {
+  .md .frame-wrap#iphone11 img,
+  .md .frame-wrap#iphone11 video {
+    width: 208px;
+    margin-top: 13px;
+    margin-bottom: 14px;
+  }
+  .md .frame-wrap#iphone11 .frame {
+    width: 238px;
+    height: 476px;
+  }
+}

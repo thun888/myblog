@@ -1,0 +1,102 @@
+.md .tag-plugin.quot {
+  text-align: center;
+  position: relative;
+  align-items: center;
+}
+.md .tag-plugin.quot:not(span) {
+  display: flex;
+  align-self: center;
+  border-bottom: none;
+  font-weight: 700;
+  padding: 16px 24px 8px 24px;
+  line-height: 1.2;
+}
+.md .tag-plugin.quot:not(span):first-child {
+  margin-top: 1.5rem;
+}
+.md .tag-plugin.quot:not(span) a.headerlink:before {
+  content: '';
+}
+@media screen and (max-width: $device-mobile) {
+  .md .tag-plugin.quot:not(span) {
+    padding: 16px 20px 8px;
+  }
+}
+article.md.content .quot:not(span) {
+  color: var(--text-p0);
+}
+article.md.content h1.quot {
+  font-size: $fs-h1;
+  font-weight: 900;
+  padding: 20px 32px 12px 32px;
+}
+@media screen and (max-width: $device-mobile) {
+  article.md.content h1.quot {
+    padding: 20px 24px 12px;
+  }
+}
+article.md.content h2.quot,
+article.md.content h3.quot,
+article.md.content h4.quot,
+article.md.content h5.quot,
+article.md.content h6.quot {
+  font-size: $fs-h3;
+}
+article.md.content p.quot {
+  font-size: $fs-h4;
+}
+.md .tag-plugin.quot[type=text]:not(span):before,
+.md .tag-plugin.quot[type=text]:not(span):after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 14px;
+}
+.md .tag-plugin.quot[type=text]:not(span):before {
+  top: 8px;
+  left: 0;
+  border-top: 6px solid $color-highlight;
+  border-left: 6px solid $color-highlight;
+}
+.md .tag-plugin.quot[type=text]:not(span):after {
+  right: 0;
+  bottom: 0;
+  border-right: 6px solid $color-highlight;
+  border-bottom: 6px solid $color-highlight;
+}
+article.md.content h1.quot[type=text]:before,
+article.md.content h1.quot[type=text]:after {
+  width: 12px;
+  height: 20px;
+  border-width: 8px;
+}
+.md .tag-plugin.quot[type=icon]:not(span) .icon {
+  height: 1.5em;
+  display: inline-block;
+  color: $color-highlight;
+  border-radius: 0;
+}
+.md .tag-plugin.quot[type=icon]:not(span) .icon.prefix {
+  margin-right: 0.5rem;
+}
+.md .tag-plugin.quot[type=icon]:not(span) .icon.suffix {
+  margin-left: 0.5rem;
+}
+.md span.tag-plugin.quot {
+  font-weight: 500;
+}
+.md span.tag-plugin.quot:before,
+.md span.tag-plugin.quot:after {
+  color: $color-highlight;
+  font-weight: 900;
+}
+.md span.tag-plugin.quot:before {
+  content: "「";
+  margin-left: -0.125em;
+  margin-right: 0.125em;
+}
+.md span.tag-plugin.quot:after {
+  content: "」";
+  margin-left: 0.125em;
+  margin-right: -0.125em;
+}

@@ -1,0 +1,265 @@
+.cmt-body.valine {
+  --more-before: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(246,246,246,0.9));
+  --more-after: rgba(246,246,246,0.9);
+  margin-top: 1rem;
+}
+.cmt-body.valine #valine_container {
+  line-height: 1.5 !important;
+}
+.cmt-body.valine #valine_container img {
+  display: inline;
+}
+.cmt-body.valine #valine_container .vwrap {
+  background: var(--card);
+  border-radius: $border-block;
+  border-style: dashed;
+  border: 1px dashed var(--text-meta);
+}
+.cmt-body.valine #valine_container .vwrap:hover {
+  border-color: $color-theme;
+}
+.cmt-body.valine #valine_container .vwrap:hover .vheader {
+  border-color: $color-theme;
+}
+.cmt-body.valine #valine_container .vwrap .cancel-reply {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.cmt-body.valine #valine_container .vwrap .vheader {
+  margin: -10px;
+  padding: 5px 10px 0;
+  background: var(--site-bg);
+  border-bottom: 1px dashed var(--text-meta);
+}
+.cmt-body.valine #valine_container .vwrap .vheader .vinput {
+  border: none;
+}
+.cmt-body.valine #valine_container .vwrap .vheader .vnick {
+  margin-left: 0;
+}
+.cmt-body.valine #valine_container .vwrap .vedit .vicon {
+  height: 22px;
+}
+.cmt-body.valine #valine_container .vwrap .vemojis,
+.cmt-body.valine #valine_container .vwrap .vpreview {
+  background: var(--block);
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+.cmt-body.valine #valine_container .vwrap .vemojis .vemoji,
+.cmt-body.valine #valine_container .vwrap .vpreview .vemoji {
+  max-height: 22px;
+  max-width: 100px;
+}
+.cmt-body.valine #valine_container .vwrap .vemojis i,
+.cmt-body.valine #valine_container .vwrap .vpreview i {
+  width: auto;
+  padding: 8px;
+  border-radius: 4px;
+  trans2: box-shadow background;
+}
+.cmt-body.valine #valine_container .vwrap .vemojis i:hover,
+.cmt-body.valine #valine_container .vwrap .vpreview i:hover {
+  background: linear-gradient(145deg, #eee, #fff);
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.1), -1px -1px 2px rgba(255,255,255,0.5), inset 8px 8px 16px rgba(0,0,0,0.05), inset -8px -8px 16px rgba(255,255,255,0.4);
+}
+.cmt-body.valine #valine_container .vwrap .vemojis i:active,
+.cmt-body.valine #valine_container .vwrap .vpreview i:active {
+  background: linear-gradient(145deg, #eee, #fff);
+  box-shadow: 0px 0px 0px rgba(0,0,0,0.1), 0px 0px 0px rgba(255,255,255,0.8), inset 2px 2px 4px rgba(0,0,0,0.1), inset -2px -2px 4px #fff, inset -8px -8px 16px rgba(255,255,255,0.4);
+}
+.cmt-body.valine #valine_container .vwrap .vedit .vctrl span {
+  padding: 0;
+  margin: 10px;
+}
+.cmt-body.valine #valine_container .vwrap .vedit span {
+  fill: var(--text-p1);
+}
+.cmt-body.valine #valine_container .vwrap .vedit span.actived {
+  fill: $color-theme;
+}
+.cmt-body.valine #valine_container .vcount {
+  color: var(--text-p1);
+  font-size: $fs-13;
+  padding: 0;
+  font-weight: inherit;
+}
+.cmt-body.valine #valine_container .vcount .vnum {
+  color: var(--text-p1);
+  font-size: $fs-h2;
+  font-weight: 700;
+}
+.cmt-body.valine #valine_container button {
+  border: none;
+  padding: 4px 2rem;
+  border-radius: 4px;
+  background: var(--block);
+  color: var(--text-p1);
+  line-height: 2;
+  font-size: 14px;
+  font-weight: 500;
+}
+.cmt-body.valine #valine_container button:hover {
+  background: var(--block-hover);
+}
+.cmt-body.valine #valine_container button.vmore {
+  width: 100%;
+  padding: 8px 2rem;
+}
+.cmt-body.valine #valine_container .vcards {
+  margin-top: 0.5rem;
+}
+.cmt-body.valine #valine_container .vcards .vcard {
+  display: flex;
+  position: relative;
+}
+.cmt-body.valine #valine_container .vcards .vcard .vcontent.expand:before {
+  background: var(--more-before);
+}
+.cmt-body.valine #valine_container .vcards .vcard .vcontent.expand:after {
+  background: var(--more-after);
+}
+.cmt-body.valine #valine_container .vcards .vcard .vimg {
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
+.cmt-body.valine #valine_container .vcards .vcard .vh {
+  margin-left: -46px;
+  padding-bottom: 0;
+  width: 100%;
+  position: relative;
+}
+.cmt-body.valine #valine_container .vcards .vcard .vh .vhead {
+  line-height: 1.2;
+}
+.cmt-body.valine #valine_container .vcards .vcard .vh .vhead .vnick {
+  margin-left: 44px;
+  line-height: inherit;
+  font-size: $fs-14;
+}
+.cmt-body.valine #valine_container .vcards .vcard .vh .vtime {
+  margin-left: 44px;
+  font-size: $fs-12;
+  font-weight: 500;
+}
+.cmt-body.valine #valine_container .vcards .vcard .vh .vat {
+  font-size: $fs-12;
+}
+.cmt-body.valine #valine_container .vcards .vcard .vh .vvisitor {
+  display: none;
+}
+.cmt-body.valine #valine_container .vcards >.vcard {
+  border-radius: $border-block;
+  background: var(--card);
+  border: 1px dashed var(--block-border);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.cmt-body.valine #valine_container .vcards >.vcard:hover {
+  border-color: $color-theme;
+}
+.cmt-body.valine #valine_container .vcards >.vcard >.vh {
+  border-bottom: none;
+}
+.cmt-body.valine #valine_container .vcards >.vcard >.vh >.vquote {
+  border-left: none;
+  padding-left: 0;
+}
+.cmt-body.valine #valine_container .vcards >.vcard >.vh >.vquote >.vcard {
+  border-top: 1px dashed var(--block-border);
+}
+.cmt-body.valine #valine_container .vcards .vimg {
+  padding: 0;
+  background: var(--block);
+}
+.cmt-body.valine #valine_container .vcards .vhead span.vnick {
+  color: var(--text-p2);
+  cursor: default;
+}
+.cmt-body.valine #valine_container .vcards .vhead a.vnick {
+  color: #ff9800;
+  font-weight: 700;
+}
+.cmt-body.valine #valine_container .vcards .vhead a.vnick:hover {
+  color: $color-hover;
+}
+.cmt-body.valine #valine_container .vcards .vhead .vsys {
+  display: none;
+}
+.cmt-body.valine #valine_container .vcards .vmeta {
+  position: static !important;
+}
+.cmt-body.valine #valine_container .vcards .vmeta .vat {
+  font-weight: bold;
+  color: var(--text-p1);
+  background: var(--card);
+  padding: 4px 8px;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.cmt-body.valine #valine_container .vcards .vmeta .vat:hover {
+  color: $color-hover;
+  background-color: var(--block);
+}
+.cmt-body.valine #valine_container .vcards .vcontent {
+  padding-top: 0;
+  margin-top: 0.75em;
+}
+.cmt-body.valine #valine_container .vcards .vcontent blockquote {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: var(--block);
+  border-left: 3px solid $color-theme;
+}
+.cmt-body.valine #valine_container .vcards .vcontent code {
+  color: var(--text-p1);
+  background: var(--block);
+  margin: 0 2px;
+}
+.cmt-body.valine #valine_container .vcards .vcontent pre {
+  background: var(--block);
+}
+.cmt-body.valine #valine_container .vcards .vcontent pre code {
+  border: none;
+}
+.cmt-body.valine #valine_container .vcards .vcontent a {
+  color: $color-link;
+  line-height: inherit;
+}
+.cmt-body.valine #valine_container .vcards .vcontent a:hover {
+  color: $color-hover;
+  text-decoration: underline;
+}
+.cmt-body.valine #valine_container .vcards .vcontent p {
+  color: var(--text-p1);
+  line-height: inherit;
+}
+.cmt-body.valine #valine_container .vcards .vcontent .vemoji {
+  max-height: 24px;
+  border-radius: 0;
+  margin-top: -10px;
+  max-width: 100px;
+}
+.cmt-body.valine #valine_container .vempty {
+  color: var(--color-meta);
+}
+.cmt-body.valine #valine_container .vpower,
+.cmt-body.valine #valine_container .vpower a {
+  font-size: $fs-12;
+}
+.cmt-body.valine #valine_container .vpower a {
+  color: var(--text-p1);
+}
+.cmt-body.valine #valine_container .vpower a:hover {
+  text-decoration: underline;
+  color: $color-hover;
+}
+.cmt-body.valine #valine_container .vinput {
+  color: var(--text-p1);
+}
+.cmt-body.valine #valine_container p {
+  color: var(--text-p1);
+}

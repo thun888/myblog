@@ -1,0 +1,60 @@
+.md .tag-plugin.poetry {
+  align-self: center;
+}
+.md .tag-plugin.poetry[align=center] {
+  align-items: center;
+}
+.md .tag-plugin.poetry >.title {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: var(--gap-p);
+}
+.md .tag-plugin.poetry >.meta {
+  color: var(--text-p2);
+  font-size: $fs-12;
+  font-weight: 500;
+}
+.md .tag-plugin.poetry >.meta span+span {
+  margin-left: 4px;
+}
+.md .tag-plugin.poetry >.body {
+  margin: var(--gap-p) 0;
+  border-top: 1px dashed var(--block-border);
+  border-bottom: 1px dashed var(--block-border);
+}
+.md .tag-plugin.poetry >.body p {
+  font-size: $fs-14;
+}
+.md .tag-plugin.poetry >.footer {
+  font-style: italic;
+  color: var(--text-p4);
+  margin: var(--gap-p) 0;
+  font-size: $fs-12;
+}
+.md .tag-plugin.poetry {
+  padding-left: 1rem;
+  position: relative;
+}
+.md .tag-plugin.poetry:before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  left: -4px;
+  top: 4px;
+  bottom: 4px;
+  border-radius: 4px;
+  background: var(--block);
+}
+.md .tag-plugin.poetry >.title {
+  position: relative;
+}
+.md .tag-plugin.poetry >.title:before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  left: calc(-1rem - 4px);
+  top: 6px;
+  bottom: 6px;
+  border-radius: 4px;
+  background: $color-highlight;
+}
