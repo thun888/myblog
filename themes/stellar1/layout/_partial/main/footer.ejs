@@ -1,0 +1,112 @@
+<%
+const author = '[@' + config.author + '](' + config.url + config.root + ')';
+const using = '[' + stellar_info('name') + '](' + stellar_info('tree') + ' "v' + stellar_info('version') + '")';
+const source = theme.footer.source;
+const more = theme.footer.more;
+function layoutDiv() {
+  var el = '';
+  el += '<footer class="page-footer reveal fs12">';
+  el += '<hr>';
+  // sitemap
+  if (theme.footer.sitemap && Object.keys(theme.footer.sitemap).length > 0) {
+    el += '<div class="sitemap">';
+    for (let group of Object.keys(theme.footer.sitemap)) {
+      let items = theme.footer.sitemap[group];
+      if (items == undefined || items.length == 0) {
+        continue;
+      }
+      el += '<div class="sitemap-group">';
+      el += '<span class="fs14">' + group + '</span>';
+      items.forEach((item, i) => {
+        el += '<a href="' + url_for(md_link(item)) + '">';
+        el += __(md_text(item));
+        el += '</a>';
+      });
+      el += '</div>';
+    }
+    el += '</div>';
+  }
+  // footer
+  el += '<div class="text">';
+  if (theme.footer.license) {
+    el += markdown(__('footer.license', theme.footer.license));
+  }
+  if (source) {
+    el += markdown(__('footer.info_open_source', author, using, source));
+  } else {
+    el += markdown(__('footer.cishu'));
+    el += markdown(__('footer.info_not_open_source', author, using));
+  }
+  if (more) {
+    if ((typeof more == 'string') && more.constructor == String) {
+      el += markdown(more);
+    } else if ((typeof more == 'object') && more.constructor == Array) {
+      more.forEach((item, i) => {
+        el += markdown(item);
+      });
+    }
+  }
+  el += '</div></footer>';
+  return el;
+}
+%>
+<center><span class="page-footer fs12" id="timeDate">载入天数...</span><span class="page-footer fs12">&</span><span class="page-footer fs12" id="times">载入时分秒...</span></center>
+<%- layoutDiv() %>
+    <script>
+      //Otn Analytics
+//version 0.0.3
+var otna_domain = window.location.host;
+var otna_pathname = window.location.pathname;
+var otna_url = "https://otna.thun888.xyz/index.php";
+var otna_nowtime = new Date().getTime()
+fetch(otna_url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'text/plain' },
+        body: JSON.stringify({ domain: otna_domain, pathname: otna_pathname })
+    }).then(function(response) {
+        return response.json();
+    })
+    .then(function(myJson) {
+        otna_res = myJson;
+        var otna_delay = new Date().getTime() - otna_nowtime;
+        if (otna_res.status == "200") {
+            otna_write(otna_res.pagepv,otna_res.allpv,otna_res.alluv,otna_res.online,otna_delay + "ms");
+        } else {
+            otna_write("Error","Error","Error","Error","Error");
+            console.log("Otn Analytics Error");
+            console.error(otna_res);
+        }
+    })
+
+function otna_write(a,b,c,d,e){
+    if (document.getElementById("otna_value_page_pv")) {
+        document.getElementById("otna_value_page_pv").innerHTML = a;
+    }
+    if (document.getElementById("otna_value_site_pv")) {
+        document.getElementById("otna_value_site_pv").innerHTML = b;
+    }
+    if (document.getElementById("otna_value_site_uv")) {
+        document.getElementById("otna_value_site_uv").innerHTML = c;
+    }
+    if (document.getElementById("otna_site_online")) {
+        document.getElementById("otna_site_online").innerHTML = d;
+    }
+    if (document.getElementById("otna_value_delay")) {
+        document.getElementById("otna_value_delay").innerHTML = e;
+    }
+}
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-831BBQ2K9S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-831BBQ2K9S');
+  function closeLoader(){
+      document.querySelector('.loader').style.display = 'none';
+    }
+</script>
+
+

@@ -1,0 +1,61 @@
+btn:
+  home: 主页
+  blog: 文章
+  wiki: 项目
+  recent_publish: 近期发布
+  all_wiki: 所有项目
+  category: 分类
+  categories: 分类
+  tag: 标签
+  tags: 标签
+  archives: 归档
+  getting_started: 开始使用
+
+meta:
+  recent_update: 最近更新
+  toc: 本文目录
+  read_next: 接下来阅读
+  prev: 上一篇
+  next: 下一篇
+  older: 较早
+  newer: 较新
+  references: 参考资料
+  related_posts: 您可能感兴趣的文章
+  comment_title: 快来参与讨论吧
+  back_to_top: 回到顶部
+  more: '更多%s'
+  created: 发布于
+  updated: 更新于
+  license: 许可协议
+  share: 分享文章
+  repo_info: 项目仓库
+  date_suffix:
+    just: 刚刚
+    min: 分钟前
+    hour: 小时前
+    day: 天前
+    month: 个月前
+
+footer:
+  license: '本博客所有文章除特别声明外，均采用 %s 许可协议，转载请注明出处。'
+  info_not_open_source: '本站由 %s 使用HEXO创建，使用 %s 主题。'
+  info_open_source: '本站由 %s 创建，使用 %s 作为主题，您可以在 %s 找到本站源码。'
+  cishu: '本站总访问量：<span id="otna_value_site_pv">∞</span> | 该页面访问量：<span id="otna_value_page_pv">∞</span>,<a href="https://icp.gov.moe/?keyword=20210043" target="_blank">萌ICP备20210043号</a>'
+
+
+page:
+  error:
+    what: 很抱歉，您访问的页面不存在
+    how: (本站调整了url结构，可以尝试将url中的月份和日期删除,eg:2021/1/1/xxx=>2021/xxx)
+    why: 可能是输入地址有误或该地址已被删除
+    action: 返回主页
+    
+message:
+  copied: 复制成功
+
+symbol:
+  comma: "，"
+  period: "。"
+  colon: "："
+  brackets_l: "（"
+  brackets_r: "）"

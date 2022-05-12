@@ -16,7 +16,7 @@ open_graph:
 ######## Sidebar ########
 sidebar:
   logo:
-    avatar: '[/img/avatar.webp](/about/)' # you can set avatar link in _config.yml or '[https://xxx.png](/about/)'
+    avatar: '[config.avatar](/about/)' # you can set avatar link in _config.yml or '[https://xxx.png](/about/)'
     title: '[config.title](/)' # you can set html tag like: '[<img no-lazy height="32px" src="xxx"/>](/)'
   menu:
      post: '[btn.blog](/)'
@@ -50,7 +50,6 @@ sidebar:
         <script src="https://tenapi.cn/yiyan/?format=js"></script>
 
 
-
 ######## Main ########
 breadcrumb:
   home: home # config.title / config.author / home or custom content
@@ -67,7 +66,7 @@ article:
   # 文章许可协议
   license: '本文采用 [署名-非商业性使用-相同方式共享 4.0 国际](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。'
   # 分享
-  share: [wechat, qq, weibo, email, link]
+  share: [wechat, weibo, email, link]
   # 相关文章，需要安装插件 (for layout: post)
   # npm i hexo-related-popular-posts
   related_posts:
@@ -174,7 +173,6 @@ footer:
   source: #'[GitHub](https://github.com/xaoxuu/hexo-theme-stellar)'
   more: 
 
-
 ######## Tag Plugins ########
 tag_plugins:
   # {% note text %}
@@ -199,7 +197,7 @@ tag_plugins:
     tieba: https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/tieba/%s.png
   # {% image %}
   image:
-    fancybox: true
+    fancybox:  true
 
 
 ######## JS Plugins ########
@@ -211,6 +209,7 @@ plugins:
   # issues api
   sitesjs: https://cdn.jsdelivr.net/gh/thun888/myblog@gh-page/js/plugins/sites.js
   friendsjs: https://cdn.jsdelivr.net/gh/thun888/myblog@gh-page/js/plugins/friends.js
+
 
   ## optional plugins ##
   # preload
@@ -225,11 +224,11 @@ plugins:
   lazyload:
     enable: true # [hexo clean && hexo s] is required after changing this value.
     js: https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js
-    transition: fade # blur, fade
+    transition: blur # blur, fade
 
   # https://scrollrevealjs.org/api/reveal.html
   scrollreveal:
-    enable: #true
+    enable: true
     js: https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js
     distance: 8px
     duration: 500 # ms
@@ -257,7 +256,7 @@ plugins:
   # 赫蹏 (Heti) - 专为中文网页内容设计的排版样式增强
   # https://github.com/sivan/heti
   heti:
-    enable: true
+    enable: false
     css: https://unpkg.com/heti/umd/heti.min.css
     js: https://unpkg.com/heti/umd/heti-addon.min.js
 
@@ -269,12 +268,15 @@ style:
     dark: '#313438'
   animated_avatar:
     animate: auto # auto, always
-    background: /img/rainbow64@3x.webp
+    background: https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.2/avatar/round/rainbow64@3x.webp
   codeblock:
     scrollbar: 4px
 
 default:
-  avatar: https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/avatar/round/3442075.svg
-  link: https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/link/8f277b4ee0ecd.svg
-  cover: https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/cover/76b86c0226ffd.svg
-  image: https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/image/2659360.svg
+  avatar: /img/svg/3442075.svg
+  link: /img/svg/8f277b4ee0ecd.svg
+  cover: /img/svg/76b86c0226ffd.svg
+  image: /img/svg/2659360.svg
+
+sitemap:
+  path: sitemap.xml

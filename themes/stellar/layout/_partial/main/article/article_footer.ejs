@@ -60,7 +60,7 @@ function layoutDiv() {
       el += '<div class="link"><input class="copy-area" readonly="true" id="copy-link" value="' + page.permalink + '" /></div>';
       el += '<div class="social-wrap dis-select">';
       theme.article.share.forEach((item, i) => {
-        if (['wechat', 'qq', 'weibo', 'email', 'link'].includes(item)) {
+        if (['wechat', 'weibo', 'email', 'link'].includes(item)) {
           el += '<a class="social share-item ' + item + '"';
           if (item == 'weibo') {
             el += ' target="_blank" rel="external nofollow noopener noreferrer"';
@@ -77,9 +77,6 @@ function layoutDiv() {
             }
             el += '&summary=' + truncate(page.description || strip_html(page.excerpt || page.content), {length: 120});
             el += '"';
-          } else if (item == 'qq') {
-            el += ' href="https://connect.qq.com/widget/shareqq/index.html?url=' + page.permalink;
-            el += '"';
           } else if (item == 'email') {
             el += ' href="mailto:?subject=' + (page.title || page.seo_title) + ' - ' + config.title + '&amp;'
             el += 'body=' + page.permalink + '"';
@@ -93,8 +90,6 @@ function layoutDiv() {
             el += '<img src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/social/80c07e4dbb303.svg"/>';
           } else if (item == 'email') {
             el += '<img src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/social/a1b00e20f425d.svg"/>';
-          } else if (item == 'qq') {
-            el += '<img src="https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/favicon.ico"/>';
           } else if (item == 'link') {
             el += '<img src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/social/8411ed322ced6.svg"/>';
           }

@@ -1,0 +1,41 @@
+<%
+if (page.menu_id == undefined) {
+  page.menu_id = 'post';
+}
+if (page.header == undefined) {
+  page.header = false;
+}
+function layoutTitle() {
+  const title = page.h1 || page.title;
+  if (title && title.length > 0) {
+    return '<h1 class="article-title"><span>' + title + '</span></h1>';
+  } else {
+    return '';
+  }
+}
+%>
+<% let post = page; %>
+<%- partial('_partial/main/navbar/breadcrumb') %>
+<article class='content md <%- post.layout %><%- post.indent ? ' indent' : '' %><%- scrollreveal() %>'>
+<%- layoutTitle() %>
+<div id="gtime"></div>
+<div class="expired-message">
+  <span class="post-meta-item-text">字数统计:</span>
+  <span class="post-count"><%= wordcount(post.content) %>字</span>
+&nbsp; | &nbsp;
+  <span class="post-meta-item-text">阅读时长:</span>
+  <span class="post-count"><%= min2read(post.content) %>分</span>
+</div>
+<%- post.content %>
+<%- partial('_partial/main/article/article_footer') %>
+<script>
+  //更新时间
+  gtime_days = Math.floor((new Date() - new Date('<%= page.last %>')) / 1000 / 60 / 60 / 24);
+  if (gtime_days > 60) {
+    document.getElementById('gtime').innerHTML = "<div class='old-message'>提醒：本文最后更新于 "+gtime_days+" 天前，其中某些信息可能已经过时，请谨慎使用！</div>";
+  }
+</script>
+</article>
+<%- partial('_partial/main/article/read_next') %>
+<%- partial('_partial/main/article/related_posts') %>
+<%- partial('_partial/plugins/comments/layout') %>
