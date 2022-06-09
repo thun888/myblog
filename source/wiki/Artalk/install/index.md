@@ -19,11 +19,11 @@ order: 0
 
 新建容器
 
-![image-20210626204541312](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210626204541312.png)
+![image-20210626204541312](https://raw.thun888.xyz/thun888/tuku@master/img/image-20210626204541312.png)
 
 仓库地址{% copy https://github.com/ArtalkJS/Artalk-API-PHP %}
 
-![image-20210626205315342](https://cdn.jsdelivr.net/gh/thun888/tuku@master//img/image-20210626205315342.png)
+![image-20210626205315342](https://raw.thun888.xyz/thun888/tuku@master//img/image-20210626205315342.png)
 
 完成后在代码框中依次输入
 
@@ -54,21 +54,21 @@ order: 0
 
   注:/workspace/Artalk-API-PHP根据实际修改
 
-  ![image-20210708204807295](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210708204807295.png)
+  ![image-20210708204807295](https://raw.thun888.xyz/thun888/tuku@master/img/image-20210708204807295.png)
 
 - 再取得ssh连接地址，端口及私钥
 
-![](https://cdn.jsdelivr.net/gh/thun888/tuku@master//img/image-20210627103209657.png)
+![](https://raw.thun888.xyz/thun888/tuku@master//img/image-20210627103209657.png)
 
 - 然后用wincsp连接上，下载
 
-![](https://cdn.jsdelivr.net/gh/thun888/tuku@master//img/image-20210627103531802.png)
+![](https://raw.thun888.xyz/thun888/tuku@master//img/image-20210627103531802.png)
 
 ##### wsl
 
 - {% copy sudo apt install git php7.4-cli %}
 
-![image-20210712160743536](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210712160743536.png)
+![image-20210712160743536](https://raw.thun888.xyz/thun888/tuku@master/img/image-20210712160743536.png)
 
 （如果出现如图问题执行`sudo apt-get update`)
 
@@ -86,7 +86,7 @@ order: 0
 
 - 最后去它的运行目录就可以找到了（上传记得压缩）
 
-  ![im](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210712162253307.png)
+  ![im](https://raw.thun888.xyz/thun888/tuku@master/img/image-20210712162253307.png)
 
 ##### Github
 >不与[别的文章](https://blog.csdn.net/qq_36227473/article/details/108980651)重复
@@ -100,31 +100,31 @@ order: 0
 
 新开通的像这样
 
-![image-20210708205806499](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210708205806499.png)
+![image-20210708205806499](https://raw.thun888.xyz/thun888/tuku@master/img/image-20210708205806499.png)
 
 点`控制台：一键登录`跳到`文件管理`，把原来有的文件删除
 
-![image-20210708205924595.png](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210708205924595.png)
+![image-20210708205924595.png](https://raw.thun888.xyz/thun888/tuku@master/img/image-20210708205924595.png)
 
 上传(完成后点下右上角的刷新)
 
-![image-20210708210045772](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210708210045772.png)
+![image-20210708210045772](https://raw.thun888.xyz/thun888/tuku@master/img/image-20210708210045772.png)
 
 解压后将文件移动到根目录 （可以删掉workspace和artalk.zip了>_）
 
-![mxtm8-p22e5](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/mxtm8-p22e5.gif)
+![mxtm8-p22e5](https://raw.thun888.xyz/thun888/tuku@master/img/mxtm8-p22e5.gif)
 
 修改运行目录为`/public`
 
-![image-20210708212155981](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210708212155981.png)
+![image-20210708212155981](https://raw.thun888.xyz/thun888/tuku@master/img/image-20210708212155981.png)
 
 启用PHP
 
-![image-20210708212334576](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210708212334576.png)
+![image-20210708212334576](https://raw.thun888.xyz/thun888/tuku@master/img/image-20210708212334576.png)
 
 此时在基本功能-域名绑定里可以访问送的二级域名来看看了>_<
 
-![image-20210708212905641](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210708212905641.png)
+![image-20210708212905641](https://raw.thun888.xyz/thun888/tuku@master/img/image-20210708212905641.png)
 
 what?!啊没错，你还要编辑配置文件
 
@@ -132,31 +132,31 @@ what?!啊没错，你还要编辑配置文件
 
 返回文件管理中编辑`Config.example.php`
 
-![image-20210708212619901](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210708212619901.png)
+![image-20210708212619901](https://raw.thun888.xyz/thun888/tuku@master/img/image-20210708212619901.png)
 
 配置
 
-![image-20210708213916199](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210708213916199.png)
+![image-20210708213916199](https://raw.thun888.xyz/thun888/tuku@master/img/image-20210708213916199.png)
 
 > 用户名和邮箱很重要~
 
-![](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210708213519073.png)
+![](https://raw.thun888.xyz/thun888/tuku@master/img/image-20210708213519073.png)
 
-![image-20210708213725447](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210708213725447.png)
+![image-20210708213725447](https://raw.thun888.xyz/thun888/tuku@master/img/image-20210708213725447.png)
 
-![image-20210708214938127](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210708214938127.png)
+![image-20210708214938127](https://raw.thun888.xyz/thun888/tuku@master/img/image-20210708214938127.png)
 
 保存后重命名为`Config.php`
 
-![](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210709080426615.png)![](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210709080444423.png)
+![](https://raw.thun888.xyz/thun888/tuku@master/img/image-20210709080426615.png)![](https://raw.thun888.xyz/thun888/tuku@master/img/image-20210709080444423.png)
 
 #### 前端插入
 
 ```html
  <div id="ArtalkComments"></div>
   <!-- ... -->
-  <script src="https://cdn.jsdelivr.net/gh/ArtalkJS/Artalk@master/dist/Artalk.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/ArtalkJS/Artalk@master/dist/Artalk.css">
+  <script src="https://raw.thun888.xyz/ArtalkJS/Artalk@master/dist/Artalk.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://raw.thun888.xyz/ArtalkJS/Artalk@master/dist/Artalk.css">
   <script>
   new Artalk({
     el: '#ArtalkComments', // 元素选择

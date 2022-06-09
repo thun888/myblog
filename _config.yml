@@ -169,11 +169,15 @@ service_worker:
     - urlPattern: /*
       handler: cacheFirst
       options:
-        origin: cdn.jsdelivr.net
+        origin: unpkg.com
     - urlPattern: /*
       handler: cacheFirst
       options:
         origin: asstes.thun888.xyz
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: raw.thun888.xyz
     - urlPattern: /*
       handler: cacheFirst
       options:

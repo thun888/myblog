@@ -4,7 +4,7 @@ stellar:
   homepage: 'https://xaoxuu.com/wiki/stellar/'
   repo: 'https://github.com/xaoxuu/hexo-theme-stellar'
   cdn_css: https://cdn.jsdelivr.net/combine/gh/thun888/myblog@gh-page/css/main.css,gh/thun888/myblog@gh-page/morecss/main.min.css # Use cdn links instead of /css/main.css
-  cdn_js: https://cdn.jsdelivr.net/gh/thun888/myblog@gh-page/js/main.min.js # Use cdn links instead of /js/main.js
+  cdn_js: https://raw.thun888.xyz/thun888/myblog@gh-page/js/main.min.js # Use cdn links instead of /js/main.js
 
 
 ######## head tags ########
@@ -102,7 +102,7 @@ comments:
     theme: preferred-color-scheme
     label:
   valine:
-    js: https://cdn.jsdelivr.net/gh/XuxuGood/simple-blog-cdn@main/js/Valine.min.js
+    js: https://raw.thun888.xyz/XuxuGood/simple-blog-cdn@main/js/Valine.min.js
     appId: # your appId
     appKey: # your appKey
     placeholder:
@@ -126,7 +126,7 @@ comments:
   # Twikoo
   # https://twikoo.js.org/
   twikoo:
-    js: https://cdn.jsdelivr.net/npm/twikoo@1.4.0/dist/twikoo.all.min.js # 建议锁定版本
+    js: https://unpkg.com/twikoo@1.4.0/dist/twikoo.all.min.js # 建议锁定版本
     envId: https://xxx # vercel函数
 
 ######## Footer ########
@@ -141,9 +141,9 @@ footer:
        url: https://github.com/thun888
      - icon: '<img src="/img/icons/bilibili.ico"/>'
        url: https://space.bilibili.com/451090261
-    # - icon: '<img src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/social/cf1ae151f9e83.svg"/>'
+    # - icon: '<img src="https://raw.thun888.xyz/cdn-x/placeholder@1.0.1/social/cf1ae151f9e83.svg"/>'
     #   url: /
-    # - icon: '<img src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/social/942ebbf1a4b91.svg"/>'
+    # - icon: '<img src="https://raw.thun888.xyz/cdn-x/placeholder@1.0.1/social/942ebbf1a4b91.svg"/>'
     #   url: /
      - icon: '<img src="/img/icons/a1b00e20f425d.svg"/>'
        url: mailto:thun888@qq.com
@@ -192,18 +192,18 @@ tag_plugins:
       prefix: https://s2.loli.net/2022/01/04/UvHcsa73jQPnobq.png
   # {% emoji %}
   emoji:
-    default: https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/qq/%s.gif
-    twemoji: https://cdn.jsdelivr.net/gh/twitter/twemoji/assets/svg/%s.svg
-    qq: https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/qq/%s.gif
-    aru: https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/aru-l/%s.gif
-    tieba: https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/tieba/%s.png
+    default: https://raw.thun888.xyz/volantis-x/cdn-emoji/qq/%s.gif
+    twemoji: https://raw.thun888.xyz/twitter/twemoji/assets/svg/%s.svg
+    qq: https://raw.thun888.xyz/volantis-x/cdn-emoji/qq/%s.gif
+    aru: https://raw.thun888.xyz/volantis-x/cdn-emoji/aru-l/%s.gif
+    tieba: https://raw.thun888.xyz/volantis-x/cdn-emoji/tieba/%s.png
 
 
 ######## JS Plugins ########
 plugins:
   ## required plugins ##
   # jquery
-  jquery: https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js
+  jquery: https://unpkg.com/jquery@3.5.1/dist/jquery.min.js
 
   # swiper
   swiper:
@@ -211,28 +211,28 @@ plugins:
     css: https://unpkg.com/swiper@6/swiper-bundle.min.css
     js: https://unpkg.com/swiper@6/swiper-bundle.min.js
   # issues api
-  sitesjs: https://cdn.jsdelivr.net/gh/thun888/myblog@gh-page/js/plugins/sites.js
-  friendsjs: https://cdn.jsdelivr.net/gh/thun888/myblog@gh-page/js/plugins/friends.js
+  sitesjs: https://raw.thun888.xyz/thun888/myblog@gh-page/js/plugins/sites.js
+  friendsjs: https://raw.thun888.xyz/thun888/myblog@gh-page/js/plugins/friends.js
 
   ## optional plugins ##
   # preload
   preload:
     enable: true
     service: instant_page # instant_page, flying_pages
-    instant_page: https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js
-    flying_pages: https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js
+    instant_page: https://raw.thun888.xyz/volantis-x/cdn-volantis@4.1.2/js/instant_page.js
+    flying_pages: https://raw.thun888.xyz/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js
 
   # image lazyload
   # https://www.npmjs.com/package/vanilla-lazyload
   lazyload:
     enable: true # [hexo clean && hexo s] is required after changing this value.
-    js: https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js
+    js: https://unpkg.com/vanilla-lazyload@17.3.1/dist/lazyload.min.js
     transition: fade # blur, fade
 
   # https://scrollrevealjs.org/api/reveal.html
   scrollreveal:
     enable: true
-    js: https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js
+    js: https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js
     distance: 8px
     duration: 500 # ms
     interval: 100 # ms
@@ -241,8 +241,8 @@ plugins:
   # https://fancyapps.com/docs/ui/fancybox/
   fancybox:
     enable: #true
-    js: https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js
-    css: https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css
+    js: https://unpkg.com/@fancyapps/ui@4.0/dist/fancybox.umd.js
+    css: https://unpkg.com/@fancyapps/ui@4.0/dist/fancybox.css
     comment: 
      enable: #true # 是否处理评论区的图片，注意：不支持 iframe 类评论系统
      selector:     # 评论区图片选择器，例：

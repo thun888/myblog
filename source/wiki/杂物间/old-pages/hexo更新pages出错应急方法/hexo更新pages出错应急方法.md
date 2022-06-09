@@ -9,7 +9,7 @@ updated: 2020-12-25 18:53:16
 
   一天，我像往常一样更新，但却哪里不对劲
 
-![image-20201225185519095](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201225185519095.png)
+![image-20201225185519095](https://raw.thun888.xyz/thun888/tuku@master/img/image-20201225185519095.png)
 
 输过账号密码后就闪退了，但还是有办法的
 
@@ -17,11 +17,11 @@ updated: 2020-12-25 18:53:16
 
   先装上GitHub Desktop
 
-  ![image-20201225185853225](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201225185853225.png)
+  ![image-20201225185853225](https://raw.thun888.xyz/thun888/tuku@master/img/image-20201225185853225.png)
 
 把仓库fork到本地
 
-![image-20201225185950616](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201225185950616.png)
+![image-20201225185950616](https://raw.thun888.xyz/thun888/tuku@master/img/image-20201225185950616.png)
 
 记下这个文件夹的名字和路径后删了它
 来到你hexo部署的文件夹里找到`.deploy_git`文件夹
@@ -30,7 +30,7 @@ updated: 2020-12-25 18:53:16
 
 
 
-![image-20201225190647497](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201225190647497.png)
+![image-20201225190647497](https://raw.thun888.xyz/thun888/tuku@master/img/image-20201225190647497.png)
 
 打开cmd
 
@@ -38,10 +38,10 @@ updated: 2020-12-25 18:53:16
 
 eg：`mklink /d "f:/thun888.github.io" "G:\BLOG\.deploy_git"`
 
-![image-20201225191032161](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201225191032334.png)
+![image-20201225191032161](https://raw.thun888.xyz/thun888/tuku@master/img/image-20201225191032334.png)
 
 这时候再打开GitHub Desktop同步文件即可
 
 
 
-![image-20201225191125949](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20201225191125949.png)
+![image-20201225191125949](https://raw.thun888.xyz/thun888/tuku@master/img/image-20201225191125949.png)

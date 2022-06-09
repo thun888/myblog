@@ -1015,7 +1015,7 @@
     z-index: 20;
     width: 70px;
     height: 900px;
-    background: url(//cdn.jsdelivr.net/gh/thun888/tuku@master/img/443930af0ee54778babad7724291bfed9b431dd5.png@.webp);
+    background: url(//raw.thun888.xyz/thun888/tuku@master/img/443930af0ee54778babad7724291bfed9b431dd5.png@.webp);
     transition: all .5s ease-in-out;
     opacity: 1;
 }

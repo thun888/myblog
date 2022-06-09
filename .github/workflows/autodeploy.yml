@@ -68,6 +68,6 @@ jobs:
 
     - name: get cache
       run: |
-        curl https://cdn.jsdelivr.net/gh/thun888/myblog@gh-page/css/main.css
-        curl https://cdn.jsdelivr.net/gh/thun888/myblog@gh-page/js/main.min.js
-        curl https://cdn.jsdelivr.net/gh/thun888/myblog@gh-page/morecss/main.css
+        curl https://raw.thun888.xyz/thun888/myblog@gh-page/css/main.css
+        curl https://raw.thun888.xyz/thun888/myblog@gh-page/js/main.min.js
+        curl https://raw.thun888.xyz/thun888/myblog@gh-page/morecss/main.css

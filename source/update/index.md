@@ -64,13 +64,13 @@ layout: post
 
 - ~~加了chatra~~
 
-  ![image-20210710190716051](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210710190716051.png)
+  ![image-20210710190716051](https://raw.thun888.xyz/thun888/tuku@master/img/image-20210710190716051.png)
 
 - 优化SEO
   - 改变url结构
   - 修好sitemap
 
 - ？
-![image-20210714164056055](https://cdn.jsdelivr.net/gh/thun888/tuku@master/img/image-20210714164056055.png)
+![image-20210714164056055](https://raw.thun888.xyz/thun888/tuku@master/img/image-20210714164056055.png)
 
 - 增加不算子统计

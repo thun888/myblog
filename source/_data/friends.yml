@@ -3,7 +3,7 @@ group1:
   description: 排列顺序按照添加友链前后排列
   items:
     - title: 陈YF的博客
-      avatar: https://cdn.jsdelivr.net/npm/chenyfan-oss@4.0.0/512.jpg
+      avatar: https://unpkg.com/chenyfan-oss@4.0.0/512.jpg
       url: https://blog.cyfan.top
       screenshot: https://image.thum.io/get/maxAge/12/width/700/https://blog.cyfan.top
       description: 一个在互联网角落挣扎的小小博客，很小很小
