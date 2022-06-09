@@ -23,11 +23,11 @@ order: 4
   - A:检查配置文件中的博客名称中是否有`‘`，如果没有就检查下配置文件有没有哪里有问题，~~如果不是Artalk的问题就去百度~~
 
 - Q:”传送门“跳转到404
-  ![image-20210803115954976](https://raw.thun888.xyz/thun888/tuku@master/img/image-20210803115954976.png)
+  ![image-20210803115954976](https://raw.thun888.xyz/thun888/tuku/master/img/image-20210803115954976.png)
 
   - A:打开/email-tpl/default.html，在第6行{{reply_link}}前加上自己的博客链接
   
-    ![image-20210803120135574](https://raw.thun888.xyz/thun888/tuku@master/img/image-20210803120135574.png)
+    ![image-20210803120135574](https://raw.thun888.xyz/thun888/tuku/master/img/image-20210803120135574.png)
 
 
 

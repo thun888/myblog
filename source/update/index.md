@@ -6,8 +6,10 @@ layout: post
 ---
 
 {% timeline %}
+<!-- node 2022/6/09 -->
+使用umami进行统计
 <!-- node 2022/1/1 -->
-1.重写访问量统计程序
+~~1.重写访问量统计程序~~
 <!-- node 11/26 -->
 1.增加长时间未更新提醒
 <!-- node 10/29 -->
@@ -64,13 +66,13 @@ layout: post
 
 - ~~加了chatra~~
 
-  ![image-20210710190716051](https://raw.thun888.xyz/thun888/tuku@master/img/image-20210710190716051.png)
+  ![image-20210710190716051](https://raw.thun888.xyz/thun888/tuku/master/img/image-20210710190716051.png)
 
 - 优化SEO
   - 改变url结构
   - 修好sitemap
 
 - ？
-![image-20210714164056055](https://raw.thun888.xyz/thun888/tuku@master/img/image-20210714164056055.png)
+![image-20210714164056055](https://raw.thun888.xyz/thun888/tuku/master/img/image-20210714164056055.png)
 
 - 增加不算子统计

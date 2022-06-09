@@ -20,11 +20,11 @@ github链接：[TeambitionShare](https://github.com/FlxSNX/TeambitionShare)
 
 先创建
 
-![image-20210101095911579](https://raw.thun888.xyz/thun888/tuku@master/img/image-20210101095911579.png)
+![image-20210101095911579](https://raw.thun888.xyz/thun888/tuku/master/img/image-20210101095911579.png)
 
 从github把源码下载后上传然后解压
 
-![image-20210101100249006](https://raw.thun888.xyz/thun888/tuku@master/img/image-20210101100249006.png)
+![image-20210101100249006](https://raw.thun888.xyz/thun888/tuku/master/img/image-20210101100249006.png)
 
 进到/TeambitionShare-master里把源码拉出来
 
@@ -61,30 +61,30 @@ Apache
 </IfModule>
 ```
 
-![image-20210101101126292](https://raw.thun888.xyz/thun888/tuku@master/img/image-20210101101126292.png)
+![image-20210101101126292](https://raw.thun888.xyz/thun888/tuku/master/img/image-20210101101126292.png)
 
 在www.teambition.com上登录账号
 
-![image-20210101101410967](https://raw.thun888.xyz/thun888/tuku@master/img/image-20210101101410967.png)
+![image-20210101101410967](https://raw.thun888.xyz/thun888/tuku/master/img/image-20210101101410967.png)
 
 新建一个项目（**更多**里）（**不创建项目网盘中的所有的内容都会展示出来**）
 
-![20210101101526](https://raw.thun888.xyz/thun888/tuku@master/img/20210101101526.gif)
+![20210101101526](https://raw.thun888.xyz/thun888/tuku/master/img/20210101101526.gif)
 
 获取项目id
 
-![image-20210101102115026](https://raw.thun888.xyz/thun888/tuku@master/img/image-20210101102115026.png)
+![image-20210101102115026](https://raw.thun888.xyz/thun888/tuku/master/img/image-20210101102115026.png)
 
 获取cookie
 
-![image-20210101111420025](https://raw.thun888.xyz/thun888/tuku@master/img/image-20210101111420025.png)
+![image-20210101111420025](https://raw.thun888.xyz/thun888/tuku/master/img/image-20210101111420025.png)
 
 访问刚刚部署的网站，把cookie和项目id填好
 
-![image-20210101111500122](https://raw.thun888.xyz/thun888/tuku@master/img/image-20210101111500122.png)
+![image-20210101111500122](https://raw.thun888.xyz/thun888/tuku/master/img/image-20210101111500122.png)
 
 （如果出现500可以删除/config/app.cfg.php重来）
 
 #### ok
 
-![image-20210101111805262](https://raw.thun888.xyz/thun888/tuku@master/img/image-20210101111805262.png)
+![image-20210101111805262](https://raw.thun888.xyz/thun888/tuku/master/img/image-20210101111805262.png)

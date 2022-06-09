@@ -76,7 +76,7 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 
 - **主站**: <span class="tag-plugin emoji"><img style="height:1.5em" src="https://img.shields.io/website?url=https://blog.thun888.xyz"></span>
 
-- **Jsdelivr**:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://img.shields.io/website?url=https://raw.thun888.xyz/thun888/myblog@gh-page/img/satus.png"></span>
+- **Jsdelivr**:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://img.shields.io/website?url=https://raw.thun888.xyz/thun888/myblog/gh-page/img/satus.png"></span>
 
 - Github_raw_proxy:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://img.shields.io/website?url=https://raw.thun888.xyz/thun888/myblog/gh-page/img/satus.png"></span>
 
@@ -92,14 +92,7 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 
 #### 统计信息
 
-数据基于自己写的[Otn Analytics](https://otna.thun888.xyz/index.php)
-
-|本站总访问量|<span id="otna_value_site_pv">∞</span>|
-|-|-|
-|该页面访问量|<span id="otna_value_page_pv">∞</span>|
-|总访客量|<span id="otna_value_site_uv">∞</span>|
-|实时访客量|<span id="otna_site_online">∞</span>|
-|*统计服务器延时*|<span id="otna_value_delay">∞</span>|
+数据基于[Umami](https://record.thun888.xyz/share/KlXk1pgS/Blog)
 
 #### 捐赠
 
