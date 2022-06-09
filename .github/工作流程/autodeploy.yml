@@ -28,7 +28,8 @@ jobs:
       run: |
         export TZ='Asia/Shanghai'
 
-        npm install hexo-cli -g
+        npm install hexo-cli -g npm-check-updates
+        ncu
 
     - name: Cache Modules # 缓存 Node 插件
       uses: actions/cache@v1
@@ -57,17 +58,3 @@ jobs:
     - name: Tgbot # 发送消息
       run: |
         curl -d 'chat_id=1183316935' -d 'text=博客部署完成' -X POST ${{ secrets.POST }}
-
-    - name: clear cache
-      run: |
-        curl https://purge.jsdelivr.net/gh/thun888/myblog@gh-page/css/main.css
-        curl https://purge.jsdelivr.net/gh/thun888/myblog@gh-page/js/main.min.js
-        curl https://purge.jsdelivr.net/gh/thun888/myblog@gh-page/morecss/main.css
-
-
-
-    - name: get cache
-      run: |
-        curl https://raw.thun888.xyz/thun888/myblog@gh-page/css/main.css
-        curl https://raw.thun888.xyz/thun888/myblog@gh-page/js/main.min.js
-        curl https://raw.thun888.xyz/thun888/myblog@gh-page/morecss/main.css
