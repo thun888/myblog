@@ -43,6 +43,6 @@
   },
   "devDependencies": {
     "gulp-autoprefixer": "^8.0.0",
-    "terser": "^5.13.1"
+    "terser": "^5.14.0"
   }
 }
