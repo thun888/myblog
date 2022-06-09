@@ -15,19 +15,19 @@ mountvol c: /d
 
 这里用windows沙盒来演示
 
-![](https://raw.thun888.xyz/thun888/tuku@master/img/asd.png)
+![](https://raw.thun888.xyz/thun888/tuku/master/img/asd.png)
 
 （还不知道要经历悲剧的沙盒)
 
-![](https://raw.thun888.xyz/thun888/tuku@master/img/asd030223651.png)
+![](https://raw.thun888.xyz/thun888/tuku/master/img/asd030223651.png)
 
 win+r打开cmd
 
-![](https://raw.thun888.xyz/thun888/tuku@master/img/20201030224031.png)
+![](https://raw.thun888.xyz/thun888/tuku/master/img/20201030224031.png)
 
 把指令输进去（危）
 
-![](https://raw.thun888.xyz/thun888/tuku@master/img/20201030224416.png)
+![](https://raw.thun888.xyz/thun888/tuku/master/img/20201030224416.png)
 
 按回车
 

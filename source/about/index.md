@@ -76,7 +76,7 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 
 - **主站**: <span class="tag-plugin emoji"><img style="height:1.5em" src="https://img.shields.io/website?url=https://blog.thun888.xyz"></span>
 
-- **Jsdelivr**:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://img.shields.io/website?url=https://raw.thun888.xyz/thun888/myblog@gh-page/img/satus.png"></span>
+- **Jsdelivr**:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://img.shields.io/website?url=https://raw.thun888.xyz/thun888/myblog/gh-page/img/satus.png"></span>
 
 - Github_raw_proxy:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://img.shields.io/website?url=https://raw.thun888.xyz/thun888/myblog/gh-page/img/satus.png"></span>
 
