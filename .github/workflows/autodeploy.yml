@@ -1,60 +1,45 @@
-# 当有改动推送到master分支时，启动Action
 name: 自动部署
-
-on:
-  push:
-    branches:
-      - main #2020年10月后github新建仓库默认分支改为main，注意更改
-
-  release:
-    types:
-      - published
-
+'on':
+  - workflow_dispatch
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: 检查分支
-      uses: actions/checkout@v2
-      with:
-        ref: main #2020年10月后github新建仓库默认分支改为main，注意更改
+      - name: 检查分支
+        uses: actions/checkout@v2
+        with:
+          ref: main
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - name: Install Hexo
+        run: |
+          export TZ='Asia/Shanghai'
 
-    - name: Setup Node # 安装 Node.js
-      uses: actions/setup-node@v1
-      with:
-        node-version: "14.x"
-
-    - name: Install Hexo # 安装 Hexo；更改时区
-      run: |
-        export TZ='Asia/Shanghai'
-
-        npm install hexo-cli -g npm-check-updates
-        ncu
-
-    - name: Cache Modules # 缓存 Node 插件
-      uses: actions/cache@v1
-      id: cache-modules
-      with:
-        path: node_modules
-        key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
-
-    - name: Install Dependencies # 如果没有缓存或 插件有更新，则安装插件
-      if: steps.cache-modules.outputs.cache-hit != 'true'
-      run: | # **如果仓库里没有 package-lock.json，上传一下，npm ci 必须要有 package-lock.json**
-        npm ci
-
-    - name: Generate # 生成
-      run: |
-        hexo clean
-        hexo g
-
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.TOKEN }}
-        publish_branch: gh-page
-        publish_dir: ./public
-
-    - name: Tgbot # 发送消息
-      run: |
-        curl -d 'chat_id=1183316935' -d 'text=博客部署完成' -X POST ${{ secrets.POST }}
+          npm install hexo-cli -g npm-check-updates
+          ncu
+      - name: Cache Modules
+        uses: actions/cache@v1
+        id: cache-modules
+        with:
+          path: node_modules
+          key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
+      - name: Install Dependencies
+        if: steps.cache-modules.outputs.cache-hit != 'true'
+        run: |
+          npm ci
+      - name: Generate
+        run: |
+          hexo clean
+          hexo g
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.TOKEN }}
+          publish_branch: gh-page
+          publish_dir: ./public
+      - name: Tgbot
+        run: >
+          curl -d 'chat_id=1183316935' -d 'text=博客部署完成' -X POST ${{ secrets.POST
+          }}
