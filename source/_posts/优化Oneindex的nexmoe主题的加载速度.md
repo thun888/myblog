@@ -34,7 +34,7 @@ last: 2021-06-10 14:37:59
 第11行
 
 ```html
-<script src="//raw.thun888.xyz/thun888/tuku/master/img/mdui.min.js"></script>
+<script src="//raw.githubusercontent.com/thun888/tuku/master/img/mdui.min.js"></script>
 ```
 
 like this 

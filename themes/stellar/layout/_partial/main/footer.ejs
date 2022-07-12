@@ -51,14 +51,8 @@ function layoutDiv() {
 %>
 <center><span class="page-footer fs12" id="timeDate">载入天数...</span><span class="page-footer fs12">&</span><span class="page-footer fs12" id="times">载入时分秒...</span></center>
 <%- layoutDiv() %>
-<script src="https://unpkg.com/notyf@3/notyf.min.js"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-831BBQ2K9S"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-831BBQ2K9S');
+<script src="https://cdn.bootcdn.net/ajax/libs/notyf/3.10.0/notyf.min.js"></script>
+
 function closeLoader(){
   document.querySelector('.loader').style.display = 'none';
 }

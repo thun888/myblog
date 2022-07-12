@@ -108,8 +108,8 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 <a id="artalkup" href="javascript:load();" style="text-align: center;display:block;background-color:var(--link-hover-bg-color);font-size:20px">(o゜▽゜)o点击加载留言</a><span id="fileup" style="text-align: center;display:block;"></span>
 <HR width="95%" color=#987cb9 SIZE=3>
 <div id="Comments"></div>
-<link href="https://unpkg.com/artalk@2.2.8/dist/Artalk.css" rel="stylesheet">
-<script src="https://unpkg.com/artalk@2.2.8/dist/Artalk.js"></script>
+<link href="https://cdn.bootcdn.net/ajax/libs/artalk/2.3.4/Artalk.min.css" rel="stylesheet">
+<script src="https://cdn.bootcdn.net/ajax/libs/artalk/2.3.4/Artalk.js"></script>
 
 <script>
 function load(){var script=document.createElement("script");script.type="text/javascript";script.src='/js/artalkconfig.js';document.body.appendChild(script)}

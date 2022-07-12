@@ -204,7 +204,7 @@ tag_plugins:
 plugins:
   ## required plugins ##
   # jquery
-  jquery: https://unpkg.com/jquery@3.5.1/dist/jquery.min.js
+  jquery: https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js
 
   # issues api
   sitesjs: https://raw.thun888.xyz/thun888/myblog/gh-page/js/plugins/sites.js
@@ -216,20 +216,20 @@ plugins:
   preload:
     enable: true
     service: instant_page # instant_page, flying_pages
-    instant_page: https://raw.thun888.xyz/volantis-x/cdn-volantis/4.1.2/js/instant_page.js
+    instant_page: /js/instant_page.js
     flying_pages: https://raw.thun888.xyz/gijo-varghese/flying-pages/2.1.2/flying-pages.min.js
 
   # image lazyload
   # https://www.npmjs.com/package/vanilla-lazyload
   lazyload:
     enable: true # [hexo clean && hexo s] is required after changing this value.
-    js: https://unpkg.com/vanilla-lazyload@17.3.1/dist/lazyload.min.js
+    js: https://cdn.bootcdn.net/ajax/libs/vanilla-lazyload/17.3.1/lazyload.min.js
     transition: blur # blur, fade
 
   # https://scrollrevealjs.org/api/reveal.html
   scrollreveal:
     enable: true
-    js: https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js
+    js: https://cdn.bootcdn.net/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js
     distance: 8px
     duration: 500 # ms
     interval: 100 # ms
@@ -249,8 +249,8 @@ plugins:
   # swiper
   swiper:
     enable: true
-    css: https://unpkg.com/swiper@6/swiper-bundle.min.css
-    js: https://unpkg.com/swiper@6/swiper-bundle.min.js
+    css: https://cdn.bootcdn.net/ajax/libs/Swiper/8.3.0/swiper-bundle.min.css
+    js: https://cdn.bootcdn.net/ajax/libs/Swiper/8.3.0/swiper-bundle.min.js
 
 
   # 赫蹏 (Heti) - 专为中文网页内容设计的排版样式增强
@@ -268,7 +268,7 @@ style:
     dark: '#313438'
   animated_avatar:
     animate: auto # auto, always
-    background: https://raw.thun888.xyz/cdn-x/placeholder/1.0.2/avatar/round/rainbow64@3x.webp
+    background: /img/rainbow64@3x.webp
   codeblock:
     scrollbar: 4px
 
