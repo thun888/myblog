@@ -218,7 +218,7 @@ autoLoad: true // 滚动到底部自动加载
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;//unpkg.com/mdui@1.0.1/dist/css/mdui.min.css&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>第11行</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;//raw.thun888.xyz/thun888/tuku/master/img/mdui.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;//raw.githubusercontent.com/thun888/tuku/master/img/mdui.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>like this </p>
 <p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/20210610145809.png" alt="image-20210610145809885"></p>
@@ -396,54 +396,6 @@ autoLoad: true // 滚动到底部自动加载
       </tags>
   </entry>
   <entry>
-    <title>解决VSCode安装Go扩展报错</title>
-    <url>/2021/%E8%A7%A3%E5%86%B3VSCode%E5%AE%89%E8%A3%85Go%E6%89%A9%E5%B1%95%E6%8A%A5%E9%94%99/</url>
-    <content><![CDATA[<p>不多哔哔，直入主题</p>
-<p>先转到新建环境变量这里（图示为win11</p>
-<p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/07/70d23cfa483b297e2dd987502cc7e683.webp"></p>
-<p>新建2个（如图）</p>
-<p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/09/ad8580f69486b02efda6957d9714ddd7.webp" alt="image-20210726184350014"></p>
-<table>
-<thead>
-<tr>
-<th>变量名</th>
-<th>变量值</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>GOPROXY</td>
-<td><a href="https://goproxy.io/">https://goproxy.io</a></td>
-</tr>
-<tr>
-<td>GO111MODULE</td>
-<td>on</td>
-</tr>
-</tbody></table>
-<p>点确定后<strong>重启</strong>再进VSCode里选择<code>install all</code>安装就好</p>
-]]></content>
-      <tags>
-        <tag>Go</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解决小米手机升级MIUI12.5后无法进入谷歌商店</title>
-    <url>/2021/%E8%A7%A3%E5%86%B3%E5%B0%8F%E7%B1%B3%E6%89%8B%E6%9C%BA%E5%8D%87%E7%BA%A7MIUI12-5%E5%90%8E%E6%97%A0%E6%B3%95%E8%BF%9B%E5%85%A5%E8%B0%B7%E6%AD%8C%E5%95%86%E5%BA%97/</url>
-    <content><![CDATA[<p>之前，用着被抛弃的mi6，升级了12后并无异样，但用第三方包升到12.5后，欸，用不了了</p>
-<span id="more"></span>
-
-<div class="tag-plugin swiper-container" id="swiper-api" width="25"><div class="swiper-wrapper"><div class="swiper-slide"><img no-lazy src="https://raw.thun888.xyz/thun888/tuku/master/img/IMG_20210424_212057.jpg"></div><div class="swiper-slide"><img no-lazy src="https://raw.thun888.xyz/thun888/tuku/master/img/Screenshot_2021-04-24-21-19-58-835_com.android.ve.jpg"></div><div class="swiper-slide"><img no-lazy src="https://raw.thun888.xyz/thun888/tuku/master/img/Screenshot_2021-04-24-21-20-21-301_com.android.ve.jpg"></div></div><div class="swiper-pagination"></div><div class="swiper-button-prev blur"></div><div class="swiper-button-next blur"></div></div>
-
-<p>（如图）</p>
-<p>显然，是新版的“照明弹”引起的</p>
-<div class="tag-plugin note" ><div class="title"><strong>搜索一下可以看到有好几个</strong></div><div class="body"><div class="tag-plugin image"><div class="image-bg"><img src="https://raw.thun888.xyz/thun888/tuku/master/img/dsfdsvdzsggdf.jpg" fancybox="true"/></div></div></div></div>
-
-<p>把里面每一个权限选择了“空白通行证”的改为“始终允许”</p>
-<img src="https://raw.thun888.xyz/thun888/tuku/master/img/Screenshot_2021-04-30-23-12-52-256_com.miui.secur.jpg" style="zoom: 80%;" />]]></content>
-      <tags>
-        <tag>MIUI</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>记一次简单的水卡破解</title>
     <url>/2021/%E8%AE%B0%E4%B8%80%E6%AC%A1%E7%AE%80%E5%8D%95%E7%9A%84%E6%B0%B4%E5%8D%A1%E7%A0%B4%E8%A7%A3/</url>
     <content><![CDATA[<p>大概一个月前吧，学校新发了2份文件，一份关于空调的，一份关于水的。之前是免费的，选择突然收费了，说着节水节电（提倡节水节电没错，但之前提倡节水节电时学校没鸟过，现在股东撤资就来搞这种事情，恶臭），实际上只是想省钱<img src="https://raw.thun888.xyz/thun888/jian/master/coolapk_emotion_81_naikezui.png" style="zoom:25%;" /></p>
@@ -550,6 +502,54 @@ autoLoad: true // 滚动到底部自动加载
       <tags>
         <tag>网站</tag>
         <tag>转换</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解决小米手机升级MIUI12.5后无法进入谷歌商店</title>
+    <url>/2021/%E8%A7%A3%E5%86%B3%E5%B0%8F%E7%B1%B3%E6%89%8B%E6%9C%BA%E5%8D%87%E7%BA%A7MIUI12-5%E5%90%8E%E6%97%A0%E6%B3%95%E8%BF%9B%E5%85%A5%E8%B0%B7%E6%AD%8C%E5%95%86%E5%BA%97/</url>
+    <content><![CDATA[<p>之前，用着被抛弃的mi6，升级了12后并无异样，但用第三方包升到12.5后，欸，用不了了</p>
+<span id="more"></span>
+
+<div class="tag-plugin swiper-container" id="swiper-api" width="25"><div class="swiper-wrapper"><div class="swiper-slide"><img no-lazy src="https://raw.thun888.xyz/thun888/tuku/master/img/IMG_20210424_212057.jpg"></div><div class="swiper-slide"><img no-lazy src="https://raw.thun888.xyz/thun888/tuku/master/img/Screenshot_2021-04-24-21-19-58-835_com.android.ve.jpg"></div><div class="swiper-slide"><img no-lazy src="https://raw.thun888.xyz/thun888/tuku/master/img/Screenshot_2021-04-24-21-20-21-301_com.android.ve.jpg"></div></div><div class="swiper-pagination"></div><div class="swiper-button-prev blur"></div><div class="swiper-button-next blur"></div></div>
+
+<p>（如图）</p>
+<p>显然，是新版的“照明弹”引起的</p>
+<div class="tag-plugin note" ><div class="title"><strong>搜索一下可以看到有好几个</strong></div><div class="body"><div class="tag-plugin image"><div class="image-bg"><img src="https://raw.thun888.xyz/thun888/tuku/master/img/dsfdsvdzsggdf.jpg" fancybox="true"/></div></div></div></div>
+
+<p>把里面每一个权限选择了“空白通行证”的改为“始终允许”</p>
+<img src="https://raw.thun888.xyz/thun888/tuku/master/img/Screenshot_2021-04-30-23-12-52-256_com.miui.secur.jpg" style="zoom: 80%;" />]]></content>
+      <tags>
+        <tag>MIUI</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解决VSCode安装Go扩展报错</title>
+    <url>/2021/%E8%A7%A3%E5%86%B3VSCode%E5%AE%89%E8%A3%85Go%E6%89%A9%E5%B1%95%E6%8A%A5%E9%94%99/</url>
+    <content><![CDATA[<p>不多哔哔，直入主题</p>
+<p>先转到新建环境变量这里（图示为win11</p>
+<p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/07/70d23cfa483b297e2dd987502cc7e683.webp"></p>
+<p>新建2个（如图）</p>
+<p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/09/ad8580f69486b02efda6957d9714ddd7.webp" alt="image-20210726184350014"></p>
+<table>
+<thead>
+<tr>
+<th>变量名</th>
+<th>变量值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>GOPROXY</td>
+<td><a href="https://goproxy.io/">https://goproxy.io</a></td>
+</tr>
+<tr>
+<td>GO111MODULE</td>
+<td>on</td>
+</tr>
+</tbody></table>
+<p>点确定后<strong>重启</strong>再进VSCode里选择<code>install all</code>安装就好</p>
+]]></content>
+      <tags>
+        <tag>Go</tag>
       </tags>
   </entry>
 </search>
