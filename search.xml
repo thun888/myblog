@@ -286,46 +286,6 @@ autoLoad: true // 滚动到底部自动加载
       </tags>
   </entry>
   <entry>
-    <title>用Batocera搭建属于你的游戏天地</title>
-    <url>/2020/%E7%94%A8batocera%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E4%BD%A0%E7%9A%84%E6%B8%B8%E6%88%8F%E5%A4%A9%E5%9C%B0/</url>
-    <content><![CDATA[<p>batocera,是一个以linux为基础，运行在电脑上的一个模拟上古游戏机的系统。</p>
-<p>为了使用它，首先我们需要以下物品</p>
-<h4 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h4><ul>
-<li>手和脑子</li>
-<li>U盘（最好3.0，不过2.0也能运行）</li>
-<li>电脑</li>
-<li>balenaEtcher（选用）（安装方法一）</li>
-<li>Ventoy（选用）（安装方法二）</li>
-</ul>
-<h4 id="安装方法一"><a href="#安装方法一" class="headerlink" title="安装方法一"></a>安装方法一</h4><p><strong>声明</strong>：这种方法会<strong>丢失U盘全部数据</strong>，<strong>需要备份</strong></p>
-<p>安装好balenaEtcher</p>
-<p>打开来是这个样子</p>
-<p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/image-20201114175521447.png" alt="image-20201114175521447"></p>
-<p>下载好<a href="https://batocera.org/">batocera</a>（它的服务器对国内挺不友好，可以从<a href="https://pan.miaoent.com/#/s/JOUo">这里</a>下载）</p>
-<p>点击flash from file,选择刚刚下载好的镜像</p>
-<p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/image-20201114175955744.png" alt="image-20201114175955744"></p>
-<p>点击 Select target,选择你准备好的U盘</p>
-<p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/image-20201114180210307.png" alt="image-20201114180210307"></p>
-<p><strong>确认选择无误</strong>后点击 Flash！ 即可完成</p>
-<p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/image-20201114190128591.png" alt="image-20201114190128591"></p>
-<h4 id="安装方法二"><a href="#安装方法二" class="headerlink" title="安装方法二"></a>安装方法二</h4><p><strong>声明</strong>：这种方法会<strong>丢失U盘全部数据</strong>，<strong>需要备份</strong>（但相比第一种还可以用来存文件~)</p>
-<p>下载<a href="https://www.ventoy.net/cn/index.html">ventoy</a>解压后点Ventoy2Disk.exe运行</p>
-<p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/image-20201114180544409.png" alt="image-20201114180544409"></p>
-<p>next，</p>
-<p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/image-20201114180821706.png" alt="image-20201114180821706"></p>
-<p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/image-20201114180853314.png" alt="image-20201114180853314"></p>
-<p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/image-20201114180937948.png" alt="image-20201114180937948"></p>
-<p>然后将刚刚下载后的镜像复制进U盘里（最大的那个分区）即可</p>
-<h4 id=""><a href="#" class="headerlink" title=""></a></h4><h4 id="后："><a href="#后：" class="headerlink" title="后："></a>后：</h4><ul>
-<li>在一些电脑上要按F12选择从U盘启动</li>
-<li>它将全部机能分配在游戏运行上，相比模拟器性能好许多，对老电脑友好</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>搭建Teambition网盘的目录索引</title>
     <url>/2021/%E6%90%AD%E5%BB%BATeambition%E7%BD%91%E7%9B%98%E7%9A%84%E7%9B%AE%E5%BD%95%E7%B4%A2%E5%BC%95/</url>
     <content><![CDATA[<p>github链接：<a href="https://github.com/FlxSNX/TeambitionShare">TeambitionShare</a></p>
@@ -368,6 +328,46 @@ autoLoad: true // 滚动到底部自动加载
       </tags>
   </entry>
   <entry>
+    <title>用Batocera搭建属于你的游戏天地</title>
+    <url>/2020/%E7%94%A8batocera%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E4%BD%A0%E7%9A%84%E6%B8%B8%E6%88%8F%E5%A4%A9%E5%9C%B0/</url>
+    <content><![CDATA[<p>batocera,是一个以linux为基础，运行在电脑上的一个模拟上古游戏机的系统。</p>
+<p>为了使用它，首先我们需要以下物品</p>
+<h4 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h4><ul>
+<li>手和脑子</li>
+<li>U盘（最好3.0，不过2.0也能运行）</li>
+<li>电脑</li>
+<li>balenaEtcher（选用）（安装方法一）</li>
+<li>Ventoy（选用）（安装方法二）</li>
+</ul>
+<h4 id="安装方法一"><a href="#安装方法一" class="headerlink" title="安装方法一"></a>安装方法一</h4><p><strong>声明</strong>：这种方法会<strong>丢失U盘全部数据</strong>，<strong>需要备份</strong></p>
+<p>安装好balenaEtcher</p>
+<p>打开来是这个样子</p>
+<p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/image-20201114175521447.png" alt="image-20201114175521447"></p>
+<p>下载好<a href="https://batocera.org/">batocera</a>（它的服务器对国内挺不友好，可以从<a href="https://pan.miaoent.com/#/s/JOUo">这里</a>下载）</p>
+<p>点击flash from file,选择刚刚下载好的镜像</p>
+<p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/image-20201114175955744.png" alt="image-20201114175955744"></p>
+<p>点击 Select target,选择你准备好的U盘</p>
+<p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/image-20201114180210307.png" alt="image-20201114180210307"></p>
+<p><strong>确认选择无误</strong>后点击 Flash！ 即可完成</p>
+<p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/image-20201114190128591.png" alt="image-20201114190128591"></p>
+<h4 id="安装方法二"><a href="#安装方法二" class="headerlink" title="安装方法二"></a>安装方法二</h4><p><strong>声明</strong>：这种方法会<strong>丢失U盘全部数据</strong>，<strong>需要备份</strong>（但相比第一种还可以用来存文件~)</p>
+<p>下载<a href="https://www.ventoy.net/cn/index.html">ventoy</a>解压后点Ventoy2Disk.exe运行</p>
+<p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/image-20201114180544409.png" alt="image-20201114180544409"></p>
+<p>next，</p>
+<p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/image-20201114180821706.png" alt="image-20201114180821706"></p>
+<p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/image-20201114180853314.png" alt="image-20201114180853314"></p>
+<p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/image-20201114180937948.png" alt="image-20201114180937948"></p>
+<p>然后将刚刚下载后的镜像复制进U盘里（最大的那个分区）即可</p>
+<h4 id=""><a href="#" class="headerlink" title=""></a></h4><h4 id="后："><a href="#后：" class="headerlink" title="后："></a>后：</h4><ul>
+<li>在一些电脑上要按F12选择从U盘启动</li>
+<li>它将全部机能分配在游戏运行上，相比模拟器性能好许多，对老电脑友好</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>解决Cloudflare Wrangler无法获取授权</title>
     <url>/2021/%E8%A7%A3%E5%86%B3Cloudflare-Wrangler%E6%97%A0%E6%B3%95%E8%8E%B7%E5%8F%96%E6%8E%88%E6%9D%83/</url>
     <content><![CDATA[<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>昨天，因为要本地提交点东西到worker就装了Wrangler，没想到啊，它就这么卡着不动了（在waiting for api token那里我等了半个世纪）<img src="https://asstes.thun888.xyz/file/pic-bed/2021/09/d3eb68ed7fb7175f3ba36fa0969e7808.webp" alt="Snipaste_2021-07-26_20-36-47"></p>
@@ -393,6 +393,54 @@ autoLoad: true // 滚动到底部自动加载
 ]]></content>
       <tags>
         <tag>Clouddlare</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解决VSCode安装Go扩展报错</title>
+    <url>/2021/%E8%A7%A3%E5%86%B3VSCode%E5%AE%89%E8%A3%85Go%E6%89%A9%E5%B1%95%E6%8A%A5%E9%94%99/</url>
+    <content><![CDATA[<p>不多哔哔，直入主题</p>
+<p>先转到新建环境变量这里（图示为win11</p>
+<p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/07/70d23cfa483b297e2dd987502cc7e683.webp"></p>
+<p>新建2个（如图）</p>
+<p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/09/ad8580f69486b02efda6957d9714ddd7.webp" alt="image-20210726184350014"></p>
+<table>
+<thead>
+<tr>
+<th>变量名</th>
+<th>变量值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>GOPROXY</td>
+<td><a href="https://goproxy.io/">https://goproxy.io</a></td>
+</tr>
+<tr>
+<td>GO111MODULE</td>
+<td>on</td>
+</tr>
+</tbody></table>
+<p>点确定后<strong>重启</strong>再进VSCode里选择<code>install all</code>安装就好</p>
+]]></content>
+      <tags>
+        <tag>Go</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解决小米手机升级MIUI12.5后无法进入谷歌商店</title>
+    <url>/2021/%E8%A7%A3%E5%86%B3%E5%B0%8F%E7%B1%B3%E6%89%8B%E6%9C%BA%E5%8D%87%E7%BA%A7MIUI12-5%E5%90%8E%E6%97%A0%E6%B3%95%E8%BF%9B%E5%85%A5%E8%B0%B7%E6%AD%8C%E5%95%86%E5%BA%97/</url>
+    <content><![CDATA[<p>之前，用着被抛弃的mi6，升级了12后并无异样，但用第三方包升到12.5后，欸，用不了了</p>
+<span id="more"></span>
+
+<div class="tag-plugin swiper-container" id="swiper-api" width="25"><div class="swiper-wrapper"><div class="swiper-slide"><img no-lazy src="https://raw.thun888.xyz/thun888/tuku/master/img/IMG_20210424_212057.jpg"></div><div class="swiper-slide"><img no-lazy src="https://raw.thun888.xyz/thun888/tuku/master/img/Screenshot_2021-04-24-21-19-58-835_com.android.ve.jpg"></div><div class="swiper-slide"><img no-lazy src="https://raw.thun888.xyz/thun888/tuku/master/img/Screenshot_2021-04-24-21-20-21-301_com.android.ve.jpg"></div></div><div class="swiper-pagination"></div><div class="swiper-button-prev blur"></div><div class="swiper-button-next blur"></div></div>
+
+<p>（如图）</p>
+<p>显然，是新版的“照明弹”引起的</p>
+<div class="tag-plugin note" ><div class="title"><strong>搜索一下可以看到有好几个</strong></div><div class="body"><div class="tag-plugin image"><div class="image-bg"><img src="https://raw.thun888.xyz/thun888/tuku/master/img/dsfdsvdzsggdf.jpg" fancybox="true"/></div></div></div></div>
+
+<p>把里面每一个权限选择了“空白通行证”的改为“始终允许”</p>
+<img src="https://raw.thun888.xyz/thun888/tuku/master/img/Screenshot_2021-04-30-23-12-52-256_com.miui.secur.jpg" style="zoom: 80%;" />]]></content>
+      <tags>
+        <tag>MIUI</tag>
       </tags>
   </entry>
   <entry>
@@ -502,54 +550,6 @@ autoLoad: true // 滚动到底部自动加载
       <tags>
         <tag>网站</tag>
         <tag>转换</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解决小米手机升级MIUI12.5后无法进入谷歌商店</title>
-    <url>/2021/%E8%A7%A3%E5%86%B3%E5%B0%8F%E7%B1%B3%E6%89%8B%E6%9C%BA%E5%8D%87%E7%BA%A7MIUI12-5%E5%90%8E%E6%97%A0%E6%B3%95%E8%BF%9B%E5%85%A5%E8%B0%B7%E6%AD%8C%E5%95%86%E5%BA%97/</url>
-    <content><![CDATA[<p>之前，用着被抛弃的mi6，升级了12后并无异样，但用第三方包升到12.5后，欸，用不了了</p>
-<span id="more"></span>
-
-<div class="tag-plugin swiper-container" id="swiper-api" width="25"><div class="swiper-wrapper"><div class="swiper-slide"><img no-lazy src="https://raw.thun888.xyz/thun888/tuku/master/img/IMG_20210424_212057.jpg"></div><div class="swiper-slide"><img no-lazy src="https://raw.thun888.xyz/thun888/tuku/master/img/Screenshot_2021-04-24-21-19-58-835_com.android.ve.jpg"></div><div class="swiper-slide"><img no-lazy src="https://raw.thun888.xyz/thun888/tuku/master/img/Screenshot_2021-04-24-21-20-21-301_com.android.ve.jpg"></div></div><div class="swiper-pagination"></div><div class="swiper-button-prev blur"></div><div class="swiper-button-next blur"></div></div>
-
-<p>（如图）</p>
-<p>显然，是新版的“照明弹”引起的</p>
-<div class="tag-plugin note" ><div class="title"><strong>搜索一下可以看到有好几个</strong></div><div class="body"><div class="tag-plugin image"><div class="image-bg"><img src="https://raw.thun888.xyz/thun888/tuku/master/img/dsfdsvdzsggdf.jpg" fancybox="true"/></div></div></div></div>
-
-<p>把里面每一个权限选择了“空白通行证”的改为“始终允许”</p>
-<img src="https://raw.thun888.xyz/thun888/tuku/master/img/Screenshot_2021-04-30-23-12-52-256_com.miui.secur.jpg" style="zoom: 80%;" />]]></content>
-      <tags>
-        <tag>MIUI</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解决VSCode安装Go扩展报错</title>
-    <url>/2021/%E8%A7%A3%E5%86%B3VSCode%E5%AE%89%E8%A3%85Go%E6%89%A9%E5%B1%95%E6%8A%A5%E9%94%99/</url>
-    <content><![CDATA[<p>不多哔哔，直入主题</p>
-<p>先转到新建环境变量这里（图示为win11</p>
-<p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/07/70d23cfa483b297e2dd987502cc7e683.webp"></p>
-<p>新建2个（如图）</p>
-<p><img src="https://asstes.thun888.xyz/file/pic-bed/2021/09/ad8580f69486b02efda6957d9714ddd7.webp" alt="image-20210726184350014"></p>
-<table>
-<thead>
-<tr>
-<th>变量名</th>
-<th>变量值</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>GOPROXY</td>
-<td><a href="https://goproxy.io/">https://goproxy.io</a></td>
-</tr>
-<tr>
-<td>GO111MODULE</td>
-<td>on</td>
-</tr>
-</tbody></table>
-<p>点确定后<strong>重启</strong>再进VSCode里选择<code>install all</code>安装就好</p>
-]]></content>
-      <tags>
-        <tag>Go</tag>
       </tags>
   </entry>
 </search>
