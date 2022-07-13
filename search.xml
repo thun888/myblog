@@ -220,15 +220,13 @@ autoLoad: true // 滚动到底部自动加载
 <p>第11行</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;//raw.githubusercontent.com/thun888/tuku/master/img/mdui.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p>like this </p>
+<p>like this</p>
 <p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/20210610145809.png" alt="image-20210610145809885"></p>
 <h4 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h4><p>修改前</p>
 <img src="https://raw.thun888.xyz/thun888/tuku/master/img/20210610150256.png" alt="image-20210610150255933" style="zoom:67%;" />
 
 <p>修改后</p>
-<img src="https://raw.thun888.xyz/thun888/tuku/master/img/20210610150015.png" alt="image-20210610150015253" style="zoom:67%;" />
-
-]]></content>
+<img src="https://raw.thun888.xyz/thun888/tuku/master/img/20210610150015.png" alt="image-20210610150015253" style="zoom:67%;" />]]></content>
       <tags>
         <tag>oneindex</tag>
         <tag>web</tag>
