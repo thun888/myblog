@@ -2,7 +2,7 @@
 title: 为Stellar主题添加HPP的"说说"功能
 date: 2021-07-15 20:09:32
 tags: blog
-cover: https://asstes.thun888.xyz/file/pic-bed/2021/09/7392db97e9d8cea0eb0a6a60656695b5.png
+cover: https://blog.thun888.xyz/img/post/7392db97e9d8cea0eb0a6a60656695b5.png
 description: HPP,即`HexoPlusPlus`,其中自带了"说说"功能，但我正在用的Stellar不支持，那就自己加吧
 updated: 2021-07-15 20:09:32
 last: 2021-07-15 20:09:32

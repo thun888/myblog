@@ -7,8 +7,6 @@ updated: 2021-06-10 14:37:59
 last: 2021-06-10 14:37:59
 ---
 
-
-
 在一些带宽小的机子上部署Oneindex又用nexmoe主题，就算套了cdn也慢（深有体会）
 
 在学校开来给同学下电影开了十几秒愣是没加载出来<img src="https://raw.thun888.xyz/thun888/jian/master/coolapk_emotion_42_diaoxie.png" style="zoom:25%;" />
@@ -37,7 +35,7 @@ last: 2021-06-10 14:37:59
 <script src="//raw.githubusercontent.com/thun888/tuku/master/img/mdui.min.js"></script>
 ```
 
-like this 
+like this
 
 ![image-20210610145809885](https://raw.thun888.xyz/thun888/tuku/master/img/20210610145809.png)
 
@@ -50,4 +48,3 @@ like this
 修改后
 
 <img src="https://raw.thun888.xyz/thun888/tuku/master/img/20210610150015.png" alt="image-20210610150015253" style="zoom:67%;" />
-

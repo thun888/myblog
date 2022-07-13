@@ -2,7 +2,7 @@
 title: 解决小米手机升级MIUI12.5后无法进入谷歌商店
 date: 2021-04-30 23:02:58
 tags: MIUI
-cover: https://asstes.thun888.xyz/file/pic-bed/2021/09/6c7e9bc86977ab6e2e4e11098c745889.webp
+cover: https://blog.thun888.xyz/img/post/6c7e9bc86977ab6e2e4e11098c745889.webp
 updated: 2021-04-30 23:02:58
 last: 2021-04-30 23:02:58
 ---
