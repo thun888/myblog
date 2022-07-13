@@ -64,8 +64,8 @@ function og_args() {
   <title><%- generate_title() %></title>
 
   <% if (theme.heti) { %>
-    <link rel="stylesheet" href="//unpkg.com/heti/umd/heti.min.css">
-    <script src="//unpkg.com/heti/umd/heti-addon.min.js"></script>
+    <link rel="stylesheet" href="/morecss/heti.min.css">
+    <script src="/js/outofsites/heti-addon.min.js"></script>
     <script defer>
       const heti = new Heti('.heti');
       heti.autoSpacing(); // 自动进行中西文混排美化和标点挤压
@@ -111,7 +111,7 @@ function og_args() {
       </div>
   </div>
 </div>
-<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/notyf/3.10.0/notyf.min.css">
+
 <link rel="stylesheet" href="/morecss/main.css">
 <div style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: #fff;z-index: 9999;display: flex;justify-content: center;align-items: center;flex-direction: column;" class='loader'>
 <p>Load...</p>
