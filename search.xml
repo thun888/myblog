@@ -286,6 +286,46 @@ autoLoad: true // 滚动到底部自动加载
       </tags>
   </entry>
   <entry>
+    <title>用Batocera搭建属于你的游戏天地</title>
+    <url>/2020/%E7%94%A8batocera%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E4%BD%A0%E7%9A%84%E6%B8%B8%E6%88%8F%E5%A4%A9%E5%9C%B0/</url>
+    <content><![CDATA[<p>batocera,是一个以linux为基础，运行在电脑上的一个模拟上古游戏机的系统。</p>
+<p>为了使用它，首先我们需要以下物品</p>
+<h4 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h4><ul>
+<li>手和脑子</li>
+<li>U盘（最好3.0，不过2.0也能运行）</li>
+<li>电脑</li>
+<li>balenaEtcher（选用）（安装方法一）</li>
+<li>Ventoy（选用）（安装方法二）</li>
+</ul>
+<h4 id="安装方法一"><a href="#安装方法一" class="headerlink" title="安装方法一"></a>安装方法一</h4><p><strong>声明</strong>：这种方法会<strong>丢失U盘全部数据</strong>，<strong>需要备份</strong></p>
+<p>安装好balenaEtcher</p>
+<p>打开来是这个样子</p>
+<p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/image-20201114175521447.png" alt="image-20201114175521447"></p>
+<p>下载好<a href="https://batocera.org/">batocera</a>（它的服务器对国内挺不友好，可以从<a href="https://pan.miaoent.com/#/s/JOUo">这里</a>下载）</p>
+<p>点击flash from file,选择刚刚下载好的镜像</p>
+<p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/image-20201114175955744.png" alt="image-20201114175955744"></p>
+<p>点击 Select target,选择你准备好的U盘</p>
+<p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/image-20201114180210307.png" alt="image-20201114180210307"></p>
+<p><strong>确认选择无误</strong>后点击 Flash！ 即可完成</p>
+<p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/image-20201114190128591.png" alt="image-20201114190128591"></p>
+<h4 id="安装方法二"><a href="#安装方法二" class="headerlink" title="安装方法二"></a>安装方法二</h4><p><strong>声明</strong>：这种方法会<strong>丢失U盘全部数据</strong>，<strong>需要备份</strong>（但相比第一种还可以用来存文件~)</p>
+<p>下载<a href="https://www.ventoy.net/cn/index.html">ventoy</a>解压后点Ventoy2Disk.exe运行</p>
+<p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/image-20201114180544409.png" alt="image-20201114180544409"></p>
+<p>next，</p>
+<p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/image-20201114180821706.png" alt="image-20201114180821706"></p>
+<p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/image-20201114180853314.png" alt="image-20201114180853314"></p>
+<p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/image-20201114180937948.png" alt="image-20201114180937948"></p>
+<p>然后将刚刚下载后的镜像复制进U盘里（最大的那个分区）即可</p>
+<h4 id=""><a href="#" class="headerlink" title=""></a></h4><h4 id="后："><a href="#后：" class="headerlink" title="后："></a>后：</h4><ul>
+<li>在一些电脑上要按F12选择从U盘启动</li>
+<li>它将全部机能分配在游戏运行上，相比模拟器性能好许多，对老电脑友好</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>搭建Teambition网盘的目录索引</title>
     <url>/2021/%E6%90%AD%E5%BB%BATeambition%E7%BD%91%E7%9B%98%E7%9A%84%E7%9B%AE%E5%BD%95%E7%B4%A2%E5%BC%95/</url>
     <content><![CDATA[<p>github链接：<a href="https://github.com/FlxSNX/TeambitionShare">TeambitionShare</a></p>
@@ -325,46 +365,6 @@ autoLoad: true // 滚动到底部自动加载
 ]]></content>
       <tags>
         <tag>web</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>用Batocera搭建属于你的游戏天地</title>
-    <url>/2020/%E7%94%A8batocera%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E4%BD%A0%E7%9A%84%E6%B8%B8%E6%88%8F%E5%A4%A9%E5%9C%B0/</url>
-    <content><![CDATA[<p>batocera,是一个以linux为基础，运行在电脑上的一个模拟上古游戏机的系统。</p>
-<p>为了使用它，首先我们需要以下物品</p>
-<h4 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h4><ul>
-<li>手和脑子</li>
-<li>U盘（最好3.0，不过2.0也能运行）</li>
-<li>电脑</li>
-<li>balenaEtcher（选用）（安装方法一）</li>
-<li>Ventoy（选用）（安装方法二）</li>
-</ul>
-<h4 id="安装方法一"><a href="#安装方法一" class="headerlink" title="安装方法一"></a>安装方法一</h4><p><strong>声明</strong>：这种方法会<strong>丢失U盘全部数据</strong>，<strong>需要备份</strong></p>
-<p>安装好balenaEtcher</p>
-<p>打开来是这个样子</p>
-<p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/image-20201114175521447.png" alt="image-20201114175521447"></p>
-<p>下载好<a href="https://batocera.org/">batocera</a>（它的服务器对国内挺不友好，可以从<a href="https://pan.miaoent.com/#/s/JOUo">这里</a>下载）</p>
-<p>点击flash from file,选择刚刚下载好的镜像</p>
-<p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/image-20201114175955744.png" alt="image-20201114175955744"></p>
-<p>点击 Select target,选择你准备好的U盘</p>
-<p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/image-20201114180210307.png" alt="image-20201114180210307"></p>
-<p><strong>确认选择无误</strong>后点击 Flash！ 即可完成</p>
-<p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/image-20201114190128591.png" alt="image-20201114190128591"></p>
-<h4 id="安装方法二"><a href="#安装方法二" class="headerlink" title="安装方法二"></a>安装方法二</h4><p><strong>声明</strong>：这种方法会<strong>丢失U盘全部数据</strong>，<strong>需要备份</strong>（但相比第一种还可以用来存文件~)</p>
-<p>下载<a href="https://www.ventoy.net/cn/index.html">ventoy</a>解压后点Ventoy2Disk.exe运行</p>
-<p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/image-20201114180544409.png" alt="image-20201114180544409"></p>
-<p>next，</p>
-<p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/image-20201114180821706.png" alt="image-20201114180821706"></p>
-<p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/image-20201114180853314.png" alt="image-20201114180853314"></p>
-<p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/image-20201114180937948.png" alt="image-20201114180937948"></p>
-<p>然后将刚刚下载后的镜像复制进U盘里（最大的那个分区）即可</p>
-<h4 id=""><a href="#" class="headerlink" title=""></a></h4><h4 id="后："><a href="#后：" class="headerlink" title="后："></a>后：</h4><ul>
-<li>在一些电脑上要按F12选择从U盘启动</li>
-<li>它将全部机能分配在游戏运行上，相比模拟器性能好许多，对老电脑友好</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
