@@ -53,6 +53,20 @@ function layoutDiv() {
 <%- layoutDiv() %>
 <script src="https://cdn.bootcdn.net/ajax/libs/notyf/3.10.0/notyf.min.js"></script>
 
+<!--搜索-->
+<div id="ins-search" class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+      <div class="ins-input-wrapper">
+          <input type="text" id="local-search-input" class="ins-search-input" placeholder="想要查找什么...">
+          <span onclick="CSearch('ins-search');" class="ins-close ins-selectable"><i class="zmdi zmdi-close">x</i></span>
+      </div>
+      <div class="ins-section-wrapper">
+          <div id="local-search-result" class="ins-section-container"></div>
+      </div>
+  </div>
+</div>
+
 function closeLoader(){
   document.querySelector('.loader').style.display = 'none';
 }

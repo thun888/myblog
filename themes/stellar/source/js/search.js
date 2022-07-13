@@ -19,10 +19,12 @@
 
 var searchFunc = function (path, search_id, content_id) {
   // 0x00. environment initialization
-  'use strict';
+  /* 'use strict'; */
   var BTN = "<a class='search-close' id='local-search-close'>清除</a>";
   var $input = document.getElementById(search_id);
   var $resultContent = document.getElementById(content_id);
+  var recent = document.getElementsByClassName('widget-body fs14')[1];
+  ago = '<span class="upago">最近更新</span>'+recent.innerHTML;
   $resultContent.innerHTML = BTN + "<ul><span class='local-search-empty'>首次搜索，正在载入索引文件，请稍后……<span></ul>";
   $.ajax({
     // 0x01. load xml file
@@ -37,13 +39,13 @@ var searchFunc = function (path, search_id, content_id) {
           url: $("url", this).text()
         };
       }).get();
-      $resultContent.innerHTML = "";
+      $resultContent.innerHTML = ago;
 
       $input.addEventListener('input', function () {
         // 0x03. parse query to keywords list
         var str = '<ul class=\"search-result-list\">';
         var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-        $resultContent.innerHTML = "";
+        $resultContent.innerHTML = ago;
         if (this.value.trim().length <= 0) {
           return;
         }
