@@ -1,6 +1,6 @@
 ---
 layout: wiki
-wiki: Dreamming # 这是项目名
+wiki: dreaming # 这是项目名
 title: 资料
 order: 2
 ---

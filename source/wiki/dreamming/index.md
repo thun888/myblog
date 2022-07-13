@@ -1,7 +1,7 @@
 ---
 layout: wiki
-wiki: Dreamming # 这是项目名
-title: Dreamming
+wiki: dreaming # 这是项目名
+title: dreaming
 seo_title: 一个QQ机器人插件
 order: -1
 ---

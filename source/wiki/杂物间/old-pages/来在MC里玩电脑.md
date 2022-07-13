@@ -3,6 +3,9 @@ title: 来在MC里玩电脑
 date: 2020-08-22 18:18:02
 tags: Minecraft
 updated: 2020-08-22 18:18:02
+layout: wiki
+wiki: 杂物间
+order: 16
 ---
 
 开学了，没时间写文字版了，看视频吧[doge]
