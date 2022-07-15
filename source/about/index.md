@@ -8,7 +8,7 @@ layout: about
 
 <img height="42px" alt="logo" src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-35c12a92-e00c-4a70-8ef5-7bc728310bb5/b4b1c874-e3bf-42da-94cd-1968d4dfa5bc.svg">
 
-Thun888 目前是一个初三学生,没有太多时间打理博客，
+Thun888 ==>咸鱼
 
 {% navbar [文章](/) [项目](/wiki/) [GitHub](https://github.com/thun888/) [友链](/friends/) [留言](/say/) %}
 
@@ -86,7 +86,7 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 
 - Cloudflare镜像:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://img.shields.io/website?url=https://cfblog.thun888.xyz"></span>
 
-- 统计服务器:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://img.shields.io/website?url=https://tongji.thun888.xyz:456/index.php"></span>
+- 统计服务器:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://img.shields.io/website?url=https://record.thun888.xyz"></span>
 
 {% endfolding %}
 
@@ -102,7 +102,7 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 |-|-|
 |<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-35c12a92-e00c-4a70-8ef5-7bc728310bb5/f8de3cd8-3c97-4c20-a8e2-c5f921a1af99.webp" style="zoom:42.5%;" />|<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-35c12a92-e00c-4a70-8ef5-7bc728310bb5/1388167e-adb3-4302-8a8e-f206e4601795.png" style="zoom:50%;" />|
 
-![](https://asstes.thun888.xyz/file/pic-bed/2021/07/5b73a4a33f9bb3df5e1236b4021492fe.gif)
+![](/img/post/5b73a4a33f9bb3df5e1236b4021492fe.gif)
 
 <HR width="95%" color=#987cb9 SIZE=3>
 <a id="artalkup" href="javascript:load();" style="text-align: center;display:block;background-color:var(--link-hover-bg-color);font-size:20px">(o゜▽゜)o点击加载留言</a><span id="fileup" style="text-align: center;display:block;"></span>

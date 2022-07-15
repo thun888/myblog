@@ -193,7 +193,7 @@ tag_plugins:
     default: https://raw.thun888.xyz/volantis-x/cdn-emoji/qq/%s.gif
     twemoji: https://raw.thun888.xyz/twitter/twemoji/assets/svg/%s.svg
     qq: https://raw.thun888.xyz/volantis-x/cdn-emoji/qq/%s.gif
-    aru: https://raw.thun888.xyz/volantis-x/cdn-emoji/aru-l/%s.gif
+    aru: https://raw.thun888.xyz/volantis-x/cdn-emoji/1.0.0/aru/%s.png
     tieba: https://raw.thun888.xyz/volantis-x/cdn-emoji/tieba/%s.png
   # {% image %}
   image:

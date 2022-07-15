@@ -22,7 +22,9 @@ header: false
 {% folding child:codeblock open:false color:yellow 大部分情况您的站点都是ok的 %}
 
 - 合法的、非营利性、无商业广告
+
 - 有实质性原创内容的 `HTTPS` 站点
+
 - ~~建立时间不小于3个月~~
 
 {% endfolding %}
@@ -50,7 +52,9 @@ header: false
 {% folding child:codeblock open:false color:yellow 为了提高图片加载速度，建议优化头像： %}
 
 1. 打开 [压缩图](https://www.yasuotu.com/) 上传自己的头像，将图片尺寸调整到 `96px` 后下载。
+
 2. 将压缩后的图片上传到 [去不图床](https://7bu.top/) 并使用此图片链接作为头像。
+
 3. 使用webp格式
 
 {% endfolding %}
@@ -74,11 +78,11 @@ description: 心如止水，不可暴躁（￣︶￣）
 如果您需要更新自己的友链，请直接修改 issue 内容，大约 3 分钟内生效，无需等待博客更新。如果无法修改，可以重新创建一个。
 
 <HR width="95%" color=#987cb9 SIZE=3>
-  <a id="artalkup" href="javascript:load();" style="text-align: center;display:block;background-color:var(--link-hover-bg-color);font-size:20px">(o゜▽゜)o点击加载留言</a><span id="fileup" style="text-align: center;display:block;"></span>
-  <HR width="95%" color=#987cb9 SIZE=3>
-  <div id="Comments"></div>
-  <link href="https://cdn.bootcdn.net/ajax/libs/artalk/2.3.4/Artalk.min.css" rel="stylesheet">
-  <script src="https://cdn.bootcdn.net/ajax/libs/artalk/2.3.4/Artalk.js"></script>
-  <script>
+<a id="artalkup" href="javascript:load();" style="text-align: center;display:block;background-color:var(--link-hover-bg-color);font-size:20px">(o゜▽゜)o点击加载留言</a><span id="fileup" style="text-align: center;display:block;"></span>
+<HR width="95%" color=#987cb9 SIZE=3>
+<div id="Comments"></div>
+<link href="https://cdn.bootcdn.net/ajax/libs/artalk/2.3.4/Artalk.min.css" rel="stylesheet">
+<script src="https://cdn.bootcdn.net/ajax/libs/artalk/2.3.4/Artalk.js"></script>
+<script>
 function load(){var script=document.createElement("script");script.type="text/javascript";script.src='/js/artalkconfig.js';document.body.appendChild(script)}
-  </script>
+</script>
