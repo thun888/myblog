@@ -7,6 +7,16 @@ page.robots = 'none';
 %>
 <article class='md error-page'>
   <h1><img id='error' src='https://raw.thun888.xyz/cdn-x/placeholder/1.0.1/404/1c830bfcd517d.svg' alt='404'></h1>
+  <style>
+        #detil_card {
+        margin: 0 auto;
+        width: 80%;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        
+    }
+</style>
   <p class='what'>
     <strong>
       <%- __('page.error.what') %>
@@ -16,6 +26,35 @@ page.robots = 'none';
     <%- __('page.error.why') %>
   </p>
   <br><br>
+  <p class="card-text">附：状态公告</p>
+  <div id="detil"></div>
   <a class='button theme' id='back' href="<%- config.root %>"><%- __('page.error.action') %></a>
+  <script>
+    //获取并解析./content (1).json
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'https://vercel-asstes.thun888.xyz/status/status.json', true);
+    xhr.send(null);
+    xhr.onreadystatechange = function () {
+        console.log(xhr);
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            var data = JSON.parse(xhr.responseText);
+            console.log(data);
+            code =data['code']
+            if (code == 0) {
+                document.getElementById('detil').innerHTML = "<p id='detil_card' style='background-color: rgb(166, 253, 220);'>正常</p>";
+            }   
+            else{
+                num = data['num']
+                for (i = 1; i < num+1; i++) {
+                    datah =data[i]['title'] + "：" + "<br>"+ data[i]['msg'] + "<br>"
+                    document.getElementById('detil').innerHTML += "<p id='detil_card' style='background-color: rgba(255, 242, 124, 0.712);'>" + datah + "</p>";
+                }
+            }
+        }else if (xhr.readyState == 4 && xhr.status != 200) {
+            document.getElementById('detil').innerHTML = "<p id='detil_card' style='background-color: rgba(255, 155, 124, 0.712);'>无法链接到服务器</p>";   
+        }
+    }
+
+</script>
 </article>
 <%- partial('_partial/plugins/comments/layout') %>
