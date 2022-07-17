@@ -68,6 +68,8 @@ Golang入门。大概吧</p>
 
 <div class="tag-plugin ghcard"><a class="ghcard" rel="external nofollow noopener noreferrer" href="https://github.com/thun888/altium-helper"><img src="https://github-readme-stats.vercel.app/api/pin/?username=thun888&repo=altium-helper&theme=dark&show_owner=true"/></a></div>
 
+<p>再生成原理图库复制到自己的库就行了</p>
+<p><img src="https://cdn.staticaly.com/gh/thun888/asstes@master/img/Snipaste_2022-07-17_09-13-24.5nl33h2t9n80.webp" alt="Snipaste_2022-07-17_09-13-24"></p>
 <h3 id="小说明"><a href="#小说明" class="headerlink" title="小说明"></a>小说明</h3><h4 id="放置类型"><a href="#放置类型" class="headerlink" title="放置类型"></a>放置类型</h4><table>
 <thead>
 <tr>
@@ -82,7 +84,7 @@ Golang入门。大概吧</p>
 <td><img src="https://cdn.staticaly.com/gh/thun888/asstes@master/img/Snipaste_2022-07-15_12-03-26.7adv59llyrc0.webp" alt="Snipaste_2022-07-15_12-03-26"></td>
 </tr>
 </tbody></table>
-<h3 id="执行效果"><a href="#执行效果" class="headerlink" title="执行效果"></a>执行效果</h3><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"https://raw.thun888.xyz/thun888/asstes/master/files/bandicam%202022-07-14%2016-49-46-008.mp4"},"danmaku":{"id":"9E2E3368B56CDBB4","api":"http://dplayer.daoapp.io","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+<h3 id="执行效果"><a href="#执行效果" class="headerlink" title="执行效果"></a>执行效果</h3><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"https://vkceyugu.cdn.bspapp.com/VKCEYUGU-35c12a92-e00c-4a70-8ef5-7bc728310bb5/e78a98ec-b56e-49df-8bc6-cf23693b4eea.mp4"},"danmaku":{"id":"9E2E3368B56CDBB4","api":"http://dplayer.daoapp.io","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
 <p><img src="https://cdn.staticaly.com/gh/thun888/asstes@master/img/Snipaste_2022-07-14_19-18-29.6spzg360wqo0.webp" alt="Snipaste_2022-07-14_19-18-29"></p>
 <h3 id="值得注意的点"><a href="#值得注意的点" class="headerlink" title="值得注意的点"></a>值得注意的点</h3><p>1. 在”模板“的头部中，<code>WEIGHT</code>代表着剩余的部件量，如果设置的太小当AD读取完后就不会往下读了，就会导致缺这缺那</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">|<span class="variable constant_">HEADER</span>=<span class="title class_">Protel</span> <span class="keyword">for</span> <span class="title class_">Windows</span> - <span class="title class_">Schematic</span> <span class="title class_">Capture</span> <span class="title class_">Ascii</span> <span class="title class_">File</span> <span class="title class_">Version</span> <span class="number">5.0</span>|<span class="variable constant_">WEIGHT</span>=<span class="number">38</span></span><br></pre></td></tr></table></figure>
