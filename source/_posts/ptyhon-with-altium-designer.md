@@ -2,8 +2,9 @@
 title: 使用Python半自动生成Altium原理图封装
 date: 2022-07-14 12:29:32
 tags: python
-cover: /img/post/57zua6hz6vk0.webp
+cover: https://vkceyugu.cdn.bspapp.com/VKCEYUGU-35c12a92-e00c-4a70-8ef5-7bc728310bb5/0cf27202-4133-4e1e-b852-f7e7b7163379.webp
 updated: 2022-07-14 12:29:32
+description: 直接一套组合拳
 ---
 
 ### 前言
@@ -230,6 +231,10 @@ if __name__ == "__main__":
 
 {% ghcard thun888/altium-helper theme:dark %}
 
+再生成原理图库复制到自己的库就行了
+
+![Snipaste_2022-07-17_09-13-24](https://cdn.staticaly.com/gh/thun888/asstes@master/img/Snipaste_2022-07-17_09-13-24.5nl33h2t9n80.webp)
+
 ### 小说明
 
 #### 放置类型
@@ -240,7 +245,7 @@ if __name__ == "__main__":
 
 ### 执行效果
 
-{% dplayer "url=https://raw.thun888.xyz/thun888/asstes/master/files/bandicam%202022-07-14%2016-49-46-008.mp4" "api=http://dplayer.daoapp.io"  "id=9E2E3368B56CDBB4" "loop=yes" "theme=#FADFA3" "autoplay=false" "token=tokendemo" %}
+{% dplayer "url=https://vkceyugu.cdn.bspapp.com/VKCEYUGU-35c12a92-e00c-4a70-8ef5-7bc728310bb5/e78a98ec-b56e-49df-8bc6-cf23693b4eea.mp4" "api=http://dplayer.daoapp.io"  "id=9E2E3368B56CDBB4" "loop=yes" "theme=#FADFA3" "autoplay=false" "token=tokendemo" %}
 ![Snipaste_2022-07-14_19-18-29](https://cdn.staticaly.com/gh/thun888/asstes@master/img/Snipaste_2022-07-14_19-18-29.6spzg360wqo0.webp)
 
 ### 值得注意的点
