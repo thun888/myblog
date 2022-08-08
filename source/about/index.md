@@ -78,13 +78,9 @@ c今年广东考了个屁
 
 - Cloudflare镜像:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://img.shields.io/website?url=https://cfblog.thun888.xyz"></span>
 
-- 统计服务器:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://img.shields.io/website?url=https://record.thun888.xyz"></span>
 
 {% endfolding %}
 
-#### 统计信息
-
-数据基于[Umami](https://record.thun888.xyz/share/KlXk1pgS/Blog)
 
 #### 捐赠
 
