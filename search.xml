@@ -84,7 +84,7 @@ Golang入门。大概吧</p>
 <td><img src="https://cdn.staticaly.com/gh/thun888/asstes@master/img/Snipaste_2022-07-15_12-03-26.7adv59llyrc0.webp" alt="Snipaste_2022-07-15_12-03-26"></td>
 </tr>
 </tbody></table>
-<h3 id="执行效果"><a href="#执行效果" class="headerlink" title="执行效果"></a>执行效果</h3><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"https://vkceyugu.cdn.bspapp.com/VKCEYUGU-35c12a92-e00c-4a70-8ef5-7bc728310bb5/e78a98ec-b56e-49df-8bc6-cf23693b4eea.mp4"},"danmaku":{"id":"9E2E3368B56CDBB4","api":"http://dplayer.daoapp.io","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+<h3 id="执行效果"><a href="#执行效果" class="headerlink" title="执行效果"></a>执行效果</h3><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"https://onep.thun888.xyz/mount/e78a98ec-b56e-49df-8bc6-cf23693b4eea.mp4"},"danmaku":{"id":"9E2E3368B56CDBB4","api":"http://dplayer.daoapp.io","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
 <p><img src="https://cdn.staticaly.com/gh/thun888/asstes@master/img/Snipaste_2022-07-14_19-18-29.6spzg360wqo0.webp" alt="Snipaste_2022-07-14_19-18-29"></p>
 <h3 id="值得注意的点"><a href="#值得注意的点" class="headerlink" title="值得注意的点"></a>值得注意的点</h3><p>1. 在”模板“的头部中，<code>WEIGHT</code>代表着剩余的部件量，如果设置的太小当AD读取完后就不会往下读了，就会导致缺这缺那</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">|<span class="variable constant_">HEADER</span>=<span class="title class_">Protel</span> <span class="keyword">for</span> <span class="title class_">Windows</span> - <span class="title class_">Schematic</span> <span class="title class_">Capture</span> <span class="title class_">Ascii</span> <span class="title class_">File</span> <span class="title class_">Version</span> <span class="number">5.0</span>|<span class="variable constant_">WEIGHT</span>=<span class="number">38</span></span><br></pre></td></tr></table></figure>
@@ -347,7 +347,7 @@ autoLoad: true // 滚动到底部自动加载
     <title>搭建Teambition网盘的目录索引</title>
     <url>/2021/%E6%90%AD%E5%BB%BATeambition%E7%BD%91%E7%9B%98%E7%9A%84%E7%9B%AE%E5%BD%95%E7%B4%A2%E5%BC%95/</url>
     <content><![CDATA[<p>github链接：<a href="https://github.com/FlxSNX/TeambitionShare">TeambitionShare</a></p>
-<h4 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h4><ul>
+<h4 id="文章已过期！"><a href="#文章已过期！" class="headerlink" title="文章已过期！"></a>文章已过期！</h4><h4 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h4><ul>
 <li><p>Teambition账号</p>
 </li>
 <li><p>一台云服务器&#x2F;支持PHP的虚拟主机</p>
@@ -583,15 +583,15 @@ autoLoad: true // 滚动到底部自动加载
   <entry>
     <title>高质量地从ico转为svg</title>
     <url>/2021/%E9%AB%98%E8%B4%A8%E9%87%8F%E5%9C%B0%E4%BB%8Eico%E8%BD%AC%E4%B8%BAsvg/</url>
-    <content><![CDATA[<h5 id="How"><a href="#How" class="headerlink" title="How"></a>How</h5><p>先下载&amp;安装<a href="https://share.thun888.xyz/%E8%BD%AF%E4%BB%B6/CorelDRAW_X4_SP2_%E7%B2%BE%E7%AE%80%E5%A2%9E%E5%BC%BA%E7%89%88.exe">CorelDRAW</a></p>
+    <content><![CDATA[<h5 id="How"><a href="#How" class="headerlink" title="How"></a>How</h5><p>先下载&amp;安装<a href="https://share.thun888.xyz/api?path=/%E8%BD%AF%E4%BB%B6/CorelDRAW_X4_SP2_%E7%B2%BE%E7%AE%80%E5%A2%9E%E5%BC%BA%E7%89%88.exe&raw=true">CorelDRAW</a></p>
 <p>打开ps将ico转为png</p>
 <p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/14dsf352gf.gif" alt="14dsf352gf"></p>
 <p>导出后像这样</p>
 <p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/icon.png" alt="icon"></p>
-<p>选择 文件—导入—（刚刚的图）</p>
+<p>选择 文件—导入—（选择刚刚的图）</p>
 <p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/20210504155534.png"></p>
 <p>放置在画纸后</p>
-<p>右键—轮廓描慕—高质量图像（也可以选其他的）</p>
+<p>右键—轮廓描慕—高质量图像（也可以选其他的,根据实际情况~）</p>
 <p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/20210504155749.png"></p>
 <p>在这里你可以改变三个参数实现不同的效果</p>
 <p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/dg4df56hde4568.png"></p>
@@ -600,7 +600,6 @@ autoLoad: true // 滚动到底部自动加载
 <p>把原图删掉后将画布调整为生成图大小（例如我这就是210*210）</p>
 <p><img src="https://raw.thun888.xyz/thun888/tuku/master/img/da21desf4s568gre46g.png"></p>
 <p>选择 文件—导出（保存为.svg)</p>
-<p><img src="C:%5CUsers%5C22383%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210504160641441.png" alt="image-20210504160641441"></p>
 <img src="https://raw.thun888.xyz/thun888/tuku/master/img/20210504161231.png" style="zoom:80%;" />
 
 <h5 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h5><p>要真想更好一点可以用这个为底，重绘一遍</p>
