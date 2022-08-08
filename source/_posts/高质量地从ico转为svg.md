@@ -10,7 +10,7 @@ last: 2021-05-03 19:19:00
 
 ##### How
 
-先下载&安装[CorelDRAW](https://share.thun888.xyz/%E8%BD%AF%E4%BB%B6/CorelDRAW_X4_SP2_%E7%B2%BE%E7%AE%80%E5%A2%9E%E5%BC%BA%E7%89%88.exe)
+先下载&安装[CorelDRAW](https://share.thun888.xyz/api?path=/%E8%BD%AF%E4%BB%B6/CorelDRAW_X4_SP2_%E7%B2%BE%E7%AE%80%E5%A2%9E%E5%BC%BA%E7%89%88.exe&raw=true)
 
 打开ps将ico转为png
 
@@ -20,13 +20,13 @@ last: 2021-05-03 19:19:00
 
 ![icon](https://raw.thun888.xyz/thun888/tuku/master/img/icon.png)
 
-选择 文件---导入---（刚刚的图）
+选择 文件---导入---（选择刚刚的图）
 
 ![](https://raw.thun888.xyz/thun888/tuku/master/img/20210504155534.png)
 
 放置在画纸后
 
-右键---轮廓描慕---高质量图像（也可以选其他的）
+右键---轮廓描慕---高质量图像（也可以选其他的,根据实际情况~）
 
 ![](https://raw.thun888.xyz/thun888/tuku/master/img/20210504155749.png)
 
@@ -44,7 +44,6 @@ last: 2021-05-03 19:19:00
 
 选择 文件---导出（保存为.svg)
 
-![image-20210504160641441](C:%5CUsers%5C22383%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210504160641441.png)
 
 <img src="https://raw.thun888.xyz/thun888/tuku/master/img/20210504161231.png" style="zoom:80%;" />
 

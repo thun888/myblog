@@ -8,6 +8,8 @@ last: 2021-01-01 09:39:47
 
 github链接：[TeambitionShare](https://github.com/FlxSNX/TeambitionShare)
 
+#### 文章已过期！
+
 #### 准备
 
 - Teambition账号

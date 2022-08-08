@@ -245,7 +245,7 @@ if __name__ == "__main__":
 
 ### 执行效果
 
-{% dplayer "url=https://vkceyugu.cdn.bspapp.com/VKCEYUGU-35c12a92-e00c-4a70-8ef5-7bc728310bb5/e78a98ec-b56e-49df-8bc6-cf23693b4eea.mp4" "api=http://dplayer.daoapp.io"  "id=9E2E3368B56CDBB4" "loop=yes" "theme=#FADFA3" "autoplay=false" "token=tokendemo" %}
+{% dplayer "url=https://onep.thun888.xyz/mount/e78a98ec-b56e-49df-8bc6-cf23693b4eea.mp4" "api=http://dplayer.daoapp.io"  "id=9E2E3368B56CDBB4" "loop=yes" "theme=#FADFA3" "autoplay=false" "token=tokendemo" %}
 ![Snipaste_2022-07-14_19-18-29](https://cdn.staticaly.com/gh/thun888/asstes@master/img/Snipaste_2022-07-14_19-18-29.6spzg360wqo0.webp)
 
 ### 值得注意的点
