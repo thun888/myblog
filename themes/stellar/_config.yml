@@ -166,7 +166,8 @@ footer:
     #   - '[Unsplash](/)'
      '更多':
        - '[关于本站](/about)'
-       - '[Aria](https://aria.thun888.xyz)'
+       - '[云盘](https://pan.thun888.xyz)'
+       - '[图床](https://pic.thun888.xyz)'
        #- '[https?](javascript:tohttp();)'
   license: '[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)'
   source: #'[GitHub](https://github.com/xaoxuu/hexo-theme-stellar)'
