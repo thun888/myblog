@@ -47,8 +47,7 @@ sidebar:
       layout: markdown
       title: 欢迎
       content: | # support markdown
-        <script type="text/javascript" src="https://q6q.cc/api/yiyan/api.php?format=js&charset=utf-8"></script><div id="hitokoto"><script>hitokoto()</script></div>
-
+          夏日当空,心如深渊
 
 ######## Main ########
 breadcrumb:
