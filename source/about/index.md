@@ -38,7 +38,7 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 
 c今年广东考了个屁
 
- {% endtabs %}
+{% endtabs %}
 
 ### 关于本站.
 
@@ -78,9 +78,7 @@ c今年广东考了个屁
 
 - Cloudflare镜像:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://img.shields.io/website?url=https://cfblog.thun888.xyz"></span>
 
-
 {% endfolding %}
-
 
 #### 捐赠
 

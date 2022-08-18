@@ -149,8 +149,6 @@ footer:
        url: https://share.thun888.xyz
      - icon: '<img src="/img/icons/nxfhj.svg"/>'
        url: javascript:SSearch('ins-search');
-     - icon: '<img id="tr" src="/img/icons/s54vgdz54.svg"/>'
-       url: javascript:zh_tran(lololo);
   sitemap:
      '博客':
        - '[更新历程](/update)'

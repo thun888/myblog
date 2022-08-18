@@ -9,9 +9,9 @@ order: 5
 
 > From [Artalk DEMO](https://artalk.js.org/)
 
-![image-20210805234614312](https://asstes.thun888.xyz/file/pic-bed/2021/09/e9d951d0777109d297ca6f741ee246fe.webp)
+![image-20210805234614312](http://pic.thun888.xyz/i/2022/08/18/62fde6c58f094.png)
 
-emm挺厉害的，首先这样邮件提醒就没用了，回复也及时不了了
+emm，首先这样邮件提醒就没用了，回复也及时不了了
 
 > 仅提供思路
 
@@ -23,7 +23,7 @@ emm挺厉害的，首先这样邮件提醒就没用了，回复也及时不了�
 
 在后端`/public`下新建个xxx.php（xxx一定要换）
 
-![image-20210806123453298](https://asstes.thun888.xyz/file/pic-bed/2021/09/30ba298e3ebbcf92fe7f2e8674321302.webp)
+![image-20210806123453298](http://pic.thun888.xyz/i/2022/08/18/62fde6d2ee293.png)
 
 在xxx.php里写上
 
@@ -42,8 +42,6 @@ fclose($​file);
 ?>
 ```
 
-
 把pass修改为自己的密码，然后通过/xxx.php?pass=xxx来调用
 
-然后去cf开个worker，get然后保存到kv,代码自己写U•ェ•*U
-
+然后去cf开个worker，get然后保存到kv,代码自己写U•ェ•\*U
