@@ -43,9 +43,5 @@
   "devDependencies": {
     "gulp-autoprefixer": "^8.0.0",
     "terser": "^5.14.0"
-  },
-  "scripts": {
-    "dev": "node --max_old_space_size=4096 build/dev-server.js",
-    "build": "node --max_old_space_size=4096 build/build.js"
   }
 }
