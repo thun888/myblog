@@ -17,7 +17,7 @@ layout: about
 
 <!-- tab 技能 -->
 
-~~废物~~,在学Go
+~~废物~~,在学python
 
 <!-- tab 联系方式 -->
 
@@ -34,9 +34,7 @@ layout: about
 Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 
 <!-- tab Todo -->
-{% checkbox 中考考个好成绩，进到实验班 %}
-
-c今年广东考了个屁
+{% checkbox 活着 %}
 
 {% endtabs %}
 
@@ -60,7 +58,6 @@ c今年广东考了个屁
 [Github](https://github.com/) 提供博客文件和图片存储
 [Vercel](https://vercel.com/) 提供静态网页托管及部分对子站点的反向代理,提供js,css等静态资源及图片加速
 [Cloudflare](https://www.cloudflare.com/) 提供cdn,dns
-[~~雨云~~](http://redirect.rainyun.cn/?ref=15366) ~~提供主站CDN服务~~
 
 #### 运行状况
 

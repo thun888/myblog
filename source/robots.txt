@@ -18,5 +18,5 @@ Disallow: /vendors/
 Disallow: /img/
 Disallow: /tuku/
 
-Sitemap: https://thun888.xyz/sitemap.xml
-Sitemap: https://thun888.xyz/baidusitemap.xml
+Sitemap: https://blog.thun888.xyz/sitemap.xml
+Sitemap: https://blog.thun888.xyz/baidusitemap.xml

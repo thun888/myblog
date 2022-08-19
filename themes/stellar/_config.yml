@@ -137,14 +137,14 @@ footer:
        url: /atom.xml
      - icon: '<img src="/img/icons/08a41b181ce68.svg"/>'
        url: https://github.com/thun888
-     - icon: '<img src="/img/icons/bilibili.ico"/>'
-       url: https://space.bilibili.com/451090261
+    # - icon: '<img src="/img/icons/bilibili.ico"/>'
+    #   url: https://space.bilibili.com/451090261
     # - icon: '<img src="https://raw.thun888.xyz/cdn-x/placeholder/1.0.1/social/cf1ae151f9e83.svg"/>'
     #   url: /
     # - icon: '<img src="https://raw.thun888.xyz/cdn-x/placeholder/1.0.1/social/942ebbf1a4b91.svg"/>'
     #   url: /
-     - icon: '<img src="/img/icons/a1b00e20f425d.svg"/>'
-       url: mailto:thun888@qq.com
+    # - icon: '<img src="/img/icons/a1b00e20f425d.svg"/>'
+    #   url: mailto:thun888@qq.com
      - icon: '<img src="/img/icons/20210610162918.svg"/>'
        url: https://share.thun888.xyz
      - icon: '<img src="/img/icons/nxfhj.svg"/>'
@@ -160,13 +160,13 @@ footer:
      '社交':
        - '[友链](/friends)'
        - '[留言板](/say)'
-    #   - '[Spotify](/)'
-    #   - '[Unsplash](/)'
+       - '[BiliBili](https://space.bilibili.com/451090261)'
+       - '[邮箱](mailto:thun888@qq.com)'
      '更多':
        - '[关于本站](/about)'
        - '[云盘](https://pan.thun888.xyz)'
        - '[Gitea](https://git.thun888.xyz)'
-       #- '[https?](javascript:tohttp();)'
+       #- '[Onedrive](https://share.thun888.xyz)'
   license: '[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)'
   source: #'[GitHub](https://github.com/xaoxuu/hexo-theme-stellar)'
   more: 
@@ -195,7 +195,7 @@ tag_plugins:
     tieba: https://raw.thun888.xyz/volantis-x/cdn-emoji/tieba/%s.png
   # {% image %}
   image:
-    fancybox:  true
+    fancybox:  false
 
 
 ######## JS Plugins ########
@@ -213,7 +213,7 @@ plugins:
   # preload
   preload:
     enable: true
-    service: instant_page # instant_page, flying_pages
+    service: flying_pages # instant_page, flying_pages
     instant_page: /js/instant_page.js
     flying_pages: https://raw.thun888.xyz/gijo-varghese/flying-pages/2.1.2/flying-pages.min.js
 
@@ -222,11 +222,11 @@ plugins:
   lazyload:
     enable: true # [hexo clean && hexo s] is required after changing this value.
     js: https://cdn.bootcdn.net/ajax/libs/vanilla-lazyload/17.3.1/lazyload.min.js
-    transition: blur # blur, fade
+    transition: fade # blur, fade
 
   # https://scrollrevealjs.org/api/reveal.html
   scrollreveal:
-    enable: false
+    enable: true
     js: https://cdn.bootcdn.net/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js
     distance: 8px
     duration: 500 # ms
@@ -236,7 +236,7 @@ plugins:
   # https://fancyapps.com/docs/ui/fancybox/
   # available for {% image xxx %}
   fancybox:
-    enable: true
+    enable: false
     js: https://unpkg.com/@fancyapps/ui@4.0/dist/fancybox.umd.js
     css: https://unpkg.com/@fancyapps/ui@4.0/dist/fancybox.css
     # 可以处理评论区的图片（不支持 iframe 类评论系统）例如：
