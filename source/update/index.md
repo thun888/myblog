@@ -20,9 +20,6 @@ layout: post
 <!-- node 10/29 -->
 1\.更新评论系统前端，后端（PHP -> Go）<br>2.对一部分“文章”进行归档处理
 
-<!-- node 9/19 -->
-1\.全面停用以BiliBili作图床（bili -> b2）
-
 <!-- node 9/11 -->
 1\.调整页面宽度<br>![image-20210911105945989](https://asstes.thun888.xyz/file/pic-bed/2021/09/d4c4fe0a9738db2849de1090af4d8b06.png)
 
@@ -39,8 +36,6 @@ layout: post
 调整博客域名(thun888.xyz =>blog.thun888.xyz)
 <!-- node 7/20 -->
 1\.添加搜索页面<br>2.完善了下about页面，有空继续
-<!-- node 7/18 -->
-主题版本1.0.1=>1.2.1
 <!-- node 7/17 -->
 新增"更新历程"页面
 <!-- node 2021/5/?\~2021/7/14 -->
