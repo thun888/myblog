@@ -78,6 +78,17 @@ article.md .highlight
 table:not([class])
   border-collapse: collapse
 
+
+article.md pre
+  >.caption
+    color: var(--text-p3)
+  >.hljs
+    padding: 1rem
+    border-radius: $border-block
+    border: 1px solid var(--block-border)
+    line-height: 1.5
+    box-sizing: border-box
+
 article.md .highlight
   .code
     vertical-align: top
@@ -133,7 +144,7 @@ article.md .highlight
     content: "Python"
   &.php .code:before
     content: "PHP"
-  &.rust .code:before
+  &.rust .code:before,&.rs .code:before
     content: "Rust"
   &.sql .code:before
     content: "SQL"
@@ -143,8 +154,8 @@ article.md .highlight
     content: "Makefile"
   &.go .code:before
     content: "Go"
-  &.typescript .code:before
-    content: "TypeScript"
+  &.typescript .code:before,&.ts .code:before
+    content: "TS"
 
 
 

@@ -4,7 +4,7 @@
 
 # Site
 title: Thun888
-subtitle: 心如止水，不可暴躁（￣︶￣） | thun888.xyz
+subtitle: 夏日当空,心如深渊 | thun888.xyz
 description: 喵~|thun888's Blog
 keywords: 喵~|thun888's Blog
 author: thun888
@@ -121,7 +121,7 @@ search:
 
 # hexo-neat
 # 博文压缩
-neat_enable: true
+neat_enable: false
 # 压缩html
 neat_html:
   enable: true
@@ -160,7 +160,7 @@ deploy:
   message: "Build at {{ now('YYYY-MM-DD HH:mm:ss Z') }}"
 
 service_worker:
-  maximumFileSizeToCacheInBytes: 5242880
+  maximumFileSizeToCacheInBytes: 10485760
   staticFileGlobs:
   - public/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2}
   stripPrefix: public
@@ -173,7 +173,7 @@ service_worker:
     - urlPattern: /*
       handler: cacheFirst
       options:
-        origin: asstes.thun888.xyz
+        origin: pic.thun888.xyz
     - urlPattern: /*
       handler: cacheFirst
       options:

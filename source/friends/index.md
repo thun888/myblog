@@ -9,37 +9,23 @@ header: false
 
 {% friends %}
 
-{% noteblock color:yellow 友链更新通知 %}
-
-由于近期对友链系统进行了重做，原链接失效的小伙伴请按照下方交换友链的步骤进行填写。在新的友链系统中，您随时可以对自己的信息进行修改而无需等待博主更新。
-
-{% endnoteblock %}
-
 ## 我可以交换友链吗？
 
 您的网站还应满足以下条件：
 
-{% folding child:codeblock open:false color:yellow 大部分情况您的站点都是ok的 %}
-
 - 合法的、非营利性、无商业广告
 
-- 有实质性原创内容的 `HTTPS` 站点
-
-- ~~建立时间不小于3个月~~
-
-{% endfolding %}
+- 有实质性原创内容
 
 须知：
 
 - 内容不能违反中国大陆法律{% psw 对于一些##字眼尽量少出现 %}
 
-  如果存在大量`违法`色情信息（包括但不限于）经举报/检查发现后永久移除
+  如果存在大量`违法色情`信息（包括但不限于）经举报/检查发现后永久移除
 
 - 如果您的网站超过15天无法以https方式访问我方将移动您的友链至`待恢复`分类中，达到30天会移除
 
 - 如果友链信息有变更可以在下方留言
-
-- 自助添加的属于异步渲染，无 SEO ，勿刷
 
 ## 如何自助添加友链？
 
@@ -53,9 +39,7 @@ header: false
 
 1. 打开 [压缩图](https://www.yasuotu.com/) 上传自己的头像，将图片尺寸调整到 `96px` 后下载。
 
-2. 将压缩后的图片上传到 [去不图床](https://7bu.top/) 并使用此图片链接作为头像。
-
-3. 使用webp格式
+2. 使用webp格式
 
 {% endfolding %}
 
@@ -65,10 +49,10 @@ header: false
 
 {% codeblock lang:yaml %}
 title: thun888's Blog
-avatar: https://asstes.thun888.xyz/file/pic-bed/2021/07/3c09905fa076d1e9c2a0f216d68bc47f.webp
+avatar: https://kodo.thun888.xyz/2022/08/21/63019c1179f9f.webp
 url: https://blog.thun888.xyz
 screenshot: https://asstes.thun888.xyz/file/pic-bed/2021/11/blog.thun888.xyz.png
-description: 心如止水，不可暴躁（￣︶￣）
+description: 夏日当空,心如深渊
 {% endcodeblock %}
 
 待管理员审核通过，添加了 `active` 标签后，回来刷新即可生效。
