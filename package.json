@@ -18,7 +18,7 @@
     "c": "^1.1.1",
     "hexo": "^6.2.0",
     "hexo-admonition": "^1.1.2",
-    "hexo-deployer-cos-cdn": "^1.1.2",
+    "hexo-deployer-cos-cdn": "^1.7.1",
     "hexo-deployer-git": "^3.0.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-baidu-sitemap": "^0.1.9",
