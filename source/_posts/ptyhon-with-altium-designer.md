@@ -245,7 +245,16 @@ if __name__ == "__main__":
 
 ### 执行效果
 
-{% dplayer "url=https://onep.thun888.xyz/mount/e78a98ec-b56e-49df-8bc6-cf23693b4eea.mp4" "api=http://dplayer.daoapp.io"  "id=9E2E3368B56CDBB4" "loop=yes" "theme=#FADFA3" "autoplay=false" "token=tokendemo" %}
+<div id="player_22348439d6dcc85b"></div>
+<script type="text/javascript" src="https://player.dogecloud.com/js/loader"></script>
+<script type="text/javascript">
+var player = new DogePlayer({
+    container: document.getElementById('player_22348439d6dcc85b'),
+    userId: 4322,
+    vcode: '22348439d6dcc85b',
+    autoPlay: false
+});
+</script>
 ![Snipaste_2022-07-14_19-18-29](https://cdn.staticaly.com/gh/thun888/asstes@master/img/Snipaste_2022-07-14_19-18-29.6spzg360wqo0.webp)
 
 ### 值得注意的点
