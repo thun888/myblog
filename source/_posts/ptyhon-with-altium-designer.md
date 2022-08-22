@@ -255,7 +255,9 @@ var player = new DogePlayer({
     autoPlay: false
 });
 </script>
-![Snipaste_2022-07-14_19-18-29](https://cdn.staticaly.com/gh/thun888/asstes@master/img/Snipaste_2022-07-14_19-18-29.6spzg360wqo0.webp)
+
+
+![Snipaste_2022-07-14_19-18-29](https://kodo.thun888.xyz/2022/08/22/6303717c45a8a.webp)
 
 ### 值得注意的点
 
