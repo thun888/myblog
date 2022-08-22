@@ -197,68 +197,6 @@ tag_plugins:
   image:
     fancybox: true
 
-
-######## JS Plugins ########
-plugins:
-  ## required plugins ##
-  # jquery
-  jquery: https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js
-
-  # issues api
-  sitesjs: https://raw.thun888.xyz/thun888/myblog/gh-page/js/plugins/sites.js
-  friendsjs: https://raw.thun888.xyz/thun888/myblog/gh-page/js/plugins/friends.js
-
-
-  ## optional plugins ##
-  # preload
-  preload:
-    enable: true
-    service: flying_pages # instant_page, flying_pages
-    instant_page: /js/instant_page.js
-    flying_pages: https://raw.thun888.xyz/gijo-varghese/flying-pages/2.1.2/flying-pages.min.js
-
-  # image lazyload
-  # https://www.npmjs.com/package/vanilla-lazyload
-  lazyload:
-    enable: true # [hexo clean && hexo s] is required after changing this value.
-    js: https://cdn.bootcdn.net/ajax/libs/vanilla-lazyload/17.3.1/lazyload.min.js
-    transition: fade # blur, fade
-
-  # https://scrollrevealjs.org/api/reveal.html
-  scrollreveal:
-    enable: #true
-    js: https://cdn.bootcdn.net/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js
-    distance: 8px
-    duration: 500 # ms
-    interval: 100 # ms
-    scale: 1 # 0.1~1
-
-  # https://fancyapps.com/docs/ui/fancybox/
-  # available for {% image xxx %}
-  fancybox:
-    enable: false
-    js: https://unpkg.com/@fancyapps/ui@4.0/dist/fancybox.umd.js
-    css: https://unpkg.com/@fancyapps/ui@4.0/dist/fancybox.css
-    # 可以处理评论区的图片（不支持 iframe 类评论系统）例如：
-    # 使用valine评论可以写: .vcontent img:not(.vemoji)
-    # 使用twikoo评论可以写: .tk-content img:not([class*="emo"])
-    selector: .swiper-slide img # 多个选择器用英文逗号隔开
-
-  # swiper
-  swiper:
-    enable: true
-    css: https://cdn.bootcdn.net/ajax/libs/Swiper/8.3.0/swiper-bundle.min.css
-    js: https://cdn.bootcdn.net/ajax/libs/Swiper/8.3.0/swiper-bundle.min.js
-
-
-  # 赫蹏 (Heti) - 专为中文网页内容设计的排版样式增强
-  # https://github.com/sivan/heti
-  heti:
-    enable: false
-    css: https://unpkg.com/heti/umd/heti.min.css
-    js: https://unpkg.com/heti/umd/heti-addon.min.js
-
-
 style:
   darkmode: auto # auto / always / false
   theme:
