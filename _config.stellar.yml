@@ -195,7 +195,7 @@ tag_plugins:
     tieba: https://raw.thun888.xyz/volantis-x/cdn-emoji/tieba/%s.png
   # {% image %}
   image:
-    fancybox:  false
+    fancybox: true
 
 
 ######## JS Plugins ########
