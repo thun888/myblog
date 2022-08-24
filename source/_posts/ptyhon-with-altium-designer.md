@@ -241,7 +241,7 @@ if __name__ == "__main__":
 
 |И|凵(常用)|Z|
 |-|-|-|
-|![Snipaste_2022-07-15_12-01-30](https://kodo.thun888.xyz/2022/08/23/63043a2dd7177.webp)|![Snipaste_2022-07-15_12-02-37](https://pic.thun888.xyz/i/2022/08/23/63043a72e7aa3.webp)|![Snipaste_2022-07-15_12-03-26](https://pic.thun888.xyz/i/2022/08/23/63043a851122a.webp)|
+|![Snipaste_2022-07-15_12-01-30](https://k.thun888.xyz/2022/08/23/63043a2dd7177.webp)|![Snipaste_2022-07-15_12-02-37](https://pic.thun888.xyz/i/2022/08/23/63043a72e7aa3.webp)|![Snipaste_2022-07-15_12-03-26](https://pic.thun888.xyz/i/2022/08/23/63043a851122a.webp)|
 
 ### 执行效果
 
@@ -249,15 +249,14 @@ if __name__ == "__main__":
 <script type="text/javascript" src="https://player.dogecloud.com/js/loader"></script>
 <script type="text/javascript">
 var player = new DogePlayer({
-    container: document.getElementById('player_22348439d6dcc85b'),
-    userId: 4322,
-    vcode: '22348439d6dcc85b',
-    autoPlay: false
+container: document.getElementById('player_22348439d6dcc85b'),
+userId: 4322,
+vcode: '22348439d6dcc85b',
+autoPlay: false
 });
 </script>
 
-
-![Snipaste_2022-07-14_19-18-29](https://kodo.thun888.xyz/2022/08/22/6303717c45a8a.webp)
+![Snipaste_2022-07-14_19-18-29](https://k.thun888.xyz/2022/08/22/6303717c45a8a.webp)
 
 ### 值得注意的点
 
@@ -277,4 +276,4 @@ var player = new DogePlayer({
 
 1. [Python删除小数点后多余的0_XerCis的博客](https://blog.csdn.net/lly1122334/article/details/108770141)
 
-2. [Altium schematic file format](https://github.com/vadmium/python-altium/blob/master/format.md)
+2. [Altium schematic file formatn88](https://github.com/vadmium/python-altium/blob/master/format.md)

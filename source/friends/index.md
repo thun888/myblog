@@ -49,7 +49,7 @@ header: false
 
 {% codeblock lang:yaml %}
 title: thun888's Blog
-avatar: https://kodo.thun888.xyz/2022/08/21/63019c1179f9f.webp
+avatar: https://k.thun888.xyz/2022/08/21/63019c1179f9f.webp
 url: https://blog.thun888.xyz
 screenshot: https://asstes.thun888.xyz/file/pic-bed/2021/11/blog.thun888.xyz.png
 description: 夏日当空,心如深渊
