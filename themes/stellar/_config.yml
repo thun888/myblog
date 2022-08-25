@@ -138,8 +138,8 @@ comments:
     js: https://fastly.jsdelivr.net/npm/twikoo@1.4.0/dist/twikoo.all.min.js # 建议锁定版本
     envId: https://xxx # vercel函数
   waline:
-    js: https://unpkg.com/@waline/client@v2/dist/waline.js
-    css: https://unpkg.com/@waline/client@v2/dist/waline.css
+    js: https://unpkg.com/@waline/client@2.6.3/dist/waline.js
+    css: https://unpkg.com/@waline/client@2.6.3/dist/waline.css
     # Waline server address url, you should set this to your own link
     serverURL:
 
@@ -294,16 +294,16 @@ plugins:
   # swiper
   swiper:
     enable: true
-    css: https://unpkg.com/swiper@6/swiper-bundle.min.css
-    js: https://unpkg.com/swiper@6/swiper-bundle.min.js
+    css: https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css
+    js: https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js
 
 
   # 赫蹏 (Heti) - 专为中文网页内容设计的排版样式增强
   # https://github.com/sivan/heti
   heti:
     enable: false
-    css: https://unpkg.com/heti/umd/heti.min.css
-    js: https://unpkg.com/heti/umd/heti-addon.min.js
+    css: https://unpkg.com/heti@0.9.2/umd/heti.min.css
+    js: https://unpkg.com/heti@0.9.2/umd/heti-addon.min.js
 
   # MathJax
   # 需在Markdown文件开头加入mathjax: true
