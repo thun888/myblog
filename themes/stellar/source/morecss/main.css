@@ -90,7 +90,7 @@
   bottom: 0;
   overflow-y: auto;
   position: absolute;
-  border-radius: 0 0 0 15px;
+  /*border-radius: 0 0 0 15px;*/
 }
 .ins-section-container {
   overflow: ellipsis;
