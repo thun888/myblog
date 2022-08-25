@@ -168,7 +168,7 @@ footer:
        - '[Gitea](https://git.thun888.xyz)'
        #- '[Onedrive](https://share.thun888.xyz)'
   license: '[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)'
-  source: #'[GitHub](https://github.com/xaoxuu/hexo-theme-stellar)'
+  source: '[GitHub](https://github.com/thun888/stellar)'
   more: <script type="text/javascript" src="//js.users.51.la/21421523.js"></script>
 
 ######## Tag Plugins ########
