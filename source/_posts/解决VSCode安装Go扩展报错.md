@@ -11,11 +11,11 @@ last: 2021-07-26 18:37:56
 
 先转到新建环境变量这里（图示为win11
 
-![](http://pic.thun888.xyz/i/2022/08/18/62fde67a827da.png)
+![](https://k.thun888.xyz/2022/08/18/62fde67a827da.png)
 
 新建2个（如图）
 
-![image-20210726184350014](http://pic.thun888.xyz/i/2022/08/18/62fde685a8fe8.png)
+![image-20210726184350014](https://k.thun888.xyz/2022/08/18/62fde685a8fe8.png)
 
 |变量名|变量值|
 |-|-|
