@@ -245,17 +245,6 @@ if __name__ == "__main__":
 
 ### 执行效果
 
-<div id="player_22348439d6dcc85b"></div>
-<script type="text/javascript" src="https://player.dogecloud.com/js/loader"></script>
-<script type="text/javascript">
-var player = new DogePlayer({
-container: document.getElementById('player_22348439d6dcc85b'),
-userId: 4322,
-vcode: '22348439d6dcc85b',
-autoPlay: false
-});
-</script>
-
 ![Snipaste_2022-07-14_19-18-29](https://k.thun888.xyz/2022/08/22/6303717c45a8a.webp)
 
 ### 值得注意的点

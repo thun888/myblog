@@ -151,7 +151,7 @@ footer:
        url: javascript:SSearch('ins-search');
   sitemap:
      '博客':
-       - '[更新历程](/update)'
+       - '[大事记](/big)'
        - '[随记](/htalk)'
        - '[后台](https://hexo.orzz.ml/hpp/admin/dash/home)'
        - '[归档](/archives)'

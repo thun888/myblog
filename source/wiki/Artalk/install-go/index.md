@@ -4,6 +4,7 @@ wiki: Artalk-doc # 这是项目名
 title: 安装（GO）
 keywords: 安装artalk,Artalk,配置Artalk
 order: 1
+updated: 2022-02-12 22:33:00
 ---
 
 #### 环境

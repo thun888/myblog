@@ -4,10 +4,11 @@ wiki: Artalk-doc # 这是项目名
 title: 安装（PHP）
 keywords: 安装artalk,Artalk,配置Artalk
 order: 0
+updated: 2022-02-12 22:33:00
 ---
 
 !!! warning 注意
-    本页面最后编辑时间为2021/7/21，在日后的版本中可能不再适用，请以仓库为准
+本页面最后编辑时间为2021/7/21，在日后的版本中可能不再适用，请以仓库为准
 
 #### 补全依赖
 
@@ -27,23 +28,23 @@ order: 0
 
 完成后在代码框中依次输入
 
-1.安装composer
+1\.安装composer
 
 {% copy curl -sS https://getcomposer.org/installer | php %}
 
 {% copy mv composer.phar /usr/local/bin/composer %}
 
-2.安装php扩展库
+2\.安装php扩展库
 
 {% copy apt update -y %}
 
 {% copy apt install php7.3-gd php7.3-curl php7.3-mbstring -y %}
 
-3.安装依赖
+3\.安装依赖
 
 {% copy composer install %}
 
-4.下载到本地
+4\.下载到本地
 
 - 压缩
 
@@ -78,7 +79,7 @@ order: 0
 
 - {% copy sudo apt install php7.4-gd php7.4-curl php7.4-mbstring -y %}
 
--  {% copy git clone https://github.com/ArtalkJS/Artalk-API-PHP %}
+- {% copy git clone https://github.com/ArtalkJS/Artalk-API-PHP %}
 
 - {% copy cd Artalk-API-PHP/ %}
 
@@ -89,7 +90,9 @@ order: 0
   ![im](https://raw.thun888.xyz/thun888/tuku/master/img/image-20210712162253307.png)
 
 ##### Github
->不与[别的文章](https://blog.csdn.net/qq_36227473/article/details/108980651)重复
+
+> 不与[别的文章](https://blog.csdn.net/qq_36227473/article/details/108980651)重复
+
 #### 部署
 
 因为Artalk用php作为后端，所以我们需要找个能运行php的虚拟主机
@@ -110,7 +113,7 @@ order: 0
 
 ![image-20210708210045772](https://raw.thun888.xyz/thun888/tuku/master/img/image-20210708210045772.png)
 
-解压后将文件移动到根目录 （可以删掉workspace和artalk.zip了>_）
+解压后将文件移动到根目录 （可以删掉workspace和artalk.zip了>\_）
 
 ![mxtm8-p22e5](https://raw.thun888.xyz/thun888/tuku/master/img/mxtm8-p22e5.gif)
 
@@ -122,7 +125,7 @@ order: 0
 
 ![image-20210708212334576](https://raw.thun888.xyz/thun888/tuku/master/img/image-20210708212334576.png)
 
-此时在基本功能-域名绑定里可以访问送的二级域名来看看了>_<
+此时在基本功能-域名绑定里可以访问送的二级域名来看看了>\_<
 
 ![image-20210708212905641](https://raw.thun888.xyz/thun888/tuku/master/img/image-20210708212905641.png)
 
@@ -138,7 +141,7 @@ what?!啊没错，你还要编辑配置文件
 
 ![image-20210708213916199](https://raw.thun888.xyz/thun888/tuku/master/img/image-20210708213916199.png)
 
-> 用户名和邮箱很重要~
+> 用户名和邮箱很重要\~
 
 ![](https://raw.thun888.xyz/thun888/tuku/master/img/image-20210708213519073.png)
 
