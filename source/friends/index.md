@@ -31,8 +31,6 @@ header: false
 
 {% timeline %}
 
-<!-- node 第一步：新建 Issue -->
-
 新建 [GitHub Issue](https://github.com/xaoxuu/friends/issues/) 按照模板格式填写并提交。
 
 {% folding child:codeblock open:false color:yellow 为了提高图片加载速度，建议优化头像： %}
@@ -43,13 +41,11 @@ header: false
 
 {% endfolding %}
 
-<!-- node 第二步：添加友链并等待管理员审核 -->
-
 请添加本站到您的友链中，如果您也使用 issue 作为友链源，只需要告知您的友链源仓库即可。
 
 {% codeblock lang:yaml %}
 title: thun888's Blog
-avatar: https://k.thun888.xyz/2022/08/21/63019c1179f9f.webp
+avatar: https://blog.thun888.xyz/img/avatar.webp
 url: https://blog.thun888.xyz
 screenshot: https://asstes.thun888.xyz/file/pic-bed/2021/11/blog.thun888.xyz.png
 description: 夏日当空,心如深渊
@@ -60,13 +56,3 @@ description: 夏日当空,心如深渊
 {% endtimeline %}
 
 如果您需要更新自己的友链，请直接修改 issue 内容，大约 3 分钟内生效，无需等待博客更新。如果无法修改，可以重新创建一个。
-
-<HR width="95%" color=#987cb9 SIZE=3>
-<a id="artalkup" href="javascript:load();" style="text-align: center;display:block;background-color:var(--link-hover-bg-color);font-size:20px">(o゜▽゜)o点击加载留言</a><span id="fileup" style="text-align: center;display:block;"></span>
-<HR width="95%" color=#987cb9 SIZE=3>
-<div id="Comments"></div>
-<link href="https://cdn.bootcdn.net/ajax/libs/artalk/2.3.4/Artalk.min.css" rel="stylesheet">
-<script src="https://cdn.bootcdn.net/ajax/libs/artalk/2.3.4/Artalk.js"></script>
-<script>
-function load(){var script=document.createElement("script");script.type="text/javascript";script.src='/js/artalkconfig.js';document.body.appendChild(script)}
-</script>
