@@ -51,6 +51,16 @@ screenshot: https://asstes.thun888.xyz/file/pic-bed/2021/11/blog.thun888.xyz.png
 description: 夏日当空,心如深渊
 {% endcodeblock %}
 
+For yml
+
+```yaml
+    - title: thun888's Blog
+      avatar: https://blog.thun888.xyz/img/avatar.webp
+      url: https://blog.thun888.xyz
+      screenshot: https://asstes.thun888.xyz/file/pic-bed/2021/11/blog.thun888.xyz.png
+      description: 夏日当空,心如深渊
+```
+
 待管理员审核通过，添加了 `active` 标签后，回来刷新即可生效。
 
 {% endtimeline %}
