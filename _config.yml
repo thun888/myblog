@@ -182,3 +182,7 @@ service_worker:
       handler: cacheFirst
       options:
         origin: blog.thun888.xyz
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: k.thun888.xyz
