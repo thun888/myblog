@@ -47,7 +47,7 @@ sidebar:
       layout: markdown
       title: 欢迎
       content: | # support markdown
-          夏日当空,心如深渊
+          <span id="jinrishici-sentence">夏日当空，心如深渊</span><script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
 
 ######## Main ########
 breadcrumb:
