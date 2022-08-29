@@ -151,19 +151,19 @@ footer:
        url: javascript:SSearch('ins-search');
   sitemap:
      '博客':
-       - '[大事记](/big)'
-       - '[随记](/htalk)'
-       - '[后台](https://hexo.orzz.ml/hpp/admin/dash/home)'
-       - '[归档](/archives)'
+       - '[大事记](/big/)'
+       - '[随记](/htalk/)'
+       - '[后台](https://hexo.orzz.ml/hpp/admin/dash/home/)'
+       - '[归档](/archives/)'
      '项目':
-       - '[杂物](/wiki/杂物间)'
+       - '[杂物](/wiki/杂物间/)'
      '社交':
-       - '[友链](/friends)'
-       - '[留言板](/say)'
+       - '[友链](/friends/)'
+       - '[留言板](/say/)'
        - '[BiliBili](https://space.bilibili.com/451090261)'
        - '[邮箱](mailto:thun888@qq.com)'
      '更多':
-       - '[关于本站](/about)'
+       - '[关于本站](/about/)'
        - '[云盘](https://pan.thun888.xyz)'
        - '[Gitea](https://git.thun888.xyz)'
        #- '[Onedrive](https://share.thun888.xyz)'
