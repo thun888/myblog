@@ -3,13 +3,14 @@ layout: wiki
 wiki: Artalk-doc # 这是项目名
 title: 娱乐向
 order: 5
+updated: 2022-02-12 22:33:00
 ---
 
-#### 怎 样 设 置 不 输 入 邮 箱 即 可 评 论
+#### "怎 样 设 置 不 输 入 邮 箱 即 可 评 论"
 
 > From [Artalk DEMO](https://artalk.js.org/)
 
-![image-20210805234614312](http://pic.thun888.xyz/i/2022/08/18/62fde6c58f094.png)
+![image-20210805234614312](https://k.thun888.xyz/2022/08/18/62fde6c58f094.png)
 
 emm，首先这样邮件提醒就没用了，回复也及时不了了
 
@@ -23,7 +24,7 @@ emm，首先这样邮件提醒就没用了，回复也及时不了了
 
 在后端`/public`下新建个xxx.php（xxx一定要换）
 
-![image-20210806123453298](http://pic.thun888.xyz/i/2022/08/18/62fde6d2ee293.png)
+![image-20210806123453298](https://k.thun888.xyz/2022/08/18/62fde6d2ee293.png)
 
 在xxx.php里写上
 

@@ -34,8 +34,7 @@ win+r打开cmd
 
 按回车
 
-<iframe src="//player.bilibili.com/player.html?aid=970026140&bvid=BV1Np4y1k7QW&cid=251045938&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-
 直 接 白 给
+<iframe src="//player.bilibili.com/player.html?aid=970026140&bvid=BV1Np4y1k7QW&cid=251045938&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
 不推荐在实体机上试！

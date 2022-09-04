@@ -47,7 +47,7 @@ sidebar:
       layout: markdown
       title: 欢迎
       content: | # support markdown
-          夏日当空,心如深渊
+          <span id="jinrishici-sentence">夏日当空，心如深渊</span><script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
 
 ######## Main ########
 breadcrumb:
@@ -151,26 +151,25 @@ footer:
        url: javascript:SSearch('ins-search');
   sitemap:
      '博客':
-       - '[更新历程](/update)'
-       - '[随记](/htalk)'
-       - '[后台](https://hexo.orzz.ml/hpp/admin/dash/home)'
-       - '[归档](/archives)'
+       - '[大事记](/big/)'
+       - '[随记](/htalk/)'
+       - '[后台](https://hexo.orzz.ml/hpp/admin/dash/home/)'
+       - '[归档](/archives/)'
      '项目':
-       - '[杂物](/wiki/杂物间)'
+       - '[杂物](/wiki/杂物间/)'
      '社交':
-       - '[友链](/friends)'
-       - '[留言板](/say)'
+       - '[友链](/friends/)'
+       - '[留言板](/say/)'
        - '[BiliBili](https://space.bilibili.com/451090261)'
        - '[邮箱](mailto:thun888@qq.com)'
      '更多':
-       - '[关于本站](/about)'
+       - '[关于本站](/about/)'
        - '[云盘](https://pan.thun888.xyz)'
        - '[Gitea](https://git.thun888.xyz)'
        #- '[Onedrive](https://share.thun888.xyz)'
   license: '[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)'
-  source: #'[GitHub](https://github.com/xaoxuu/hexo-theme-stellar)'
-  more: 
-
+  source: '[GitHub](https://github.com/thun888/stellar)'
+  more: <script>!function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"JnLm5m7MJcDkpWaM",ck:"JnLm5m7MJcDkpWaM"});</script>
 ######## Tag Plugins ########
 tag_plugins:
   # {% note text %}

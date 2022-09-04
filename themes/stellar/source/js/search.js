@@ -23,7 +23,7 @@ var searchFunc = function (path, search_id, content_id) {
   var BTN = "<a class='search-close' id='local-search-close'>清除</a>";
   var $input = document.getElementById(search_id);
   var $resultContent = document.getElementById(content_id);
-  var recent = document.getElementsByClassName('widget-body fs14')[1];
+  var recent = document.getElementsByClassName('widget-body fs14')[0];
   ago = '<span class="upago">最近更新</span>'+recent.innerHTML;
   $resultContent.innerHTML = BTN + "<ul><span class='local-search-empty'>首次搜索，正在载入索引文件，请稍后……<span></ul>";
   $.ajax({

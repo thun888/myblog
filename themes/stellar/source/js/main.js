@@ -332,7 +332,3 @@ function SSearch(show_div){var script=document.createElement("script");script.ty
 //复制提醒
 document.addEventListener('copy',function(){var notyf=new Notyf({duration:1500,position:{x:'right',y:'top',},});notyf.success('复制成功，转载请注明出处。');
 })
-
-/* 搜索内最近文章 */
-var recent = document.getElementsByClassName('widget-body fs14')[1];
-document.getElementById('local-search-result').innerHTML = '<span class="upago">最近更新</span>'+recent.innerHTML;

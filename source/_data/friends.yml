@@ -22,6 +22,18 @@ group1:
       url: https://qwqaq.com/
       screenshot: https://image.thum.io/get/maxAge/12/width/700/https://qwqaq.com
       description: 生命不止，折腾不息 ( ゜- ゜)
+    - title: 土土博客
+      avatar: https://www.tutime.cn/favorite.png
+      url: https://www.tutime.cn
+      screenshot: https://image.thum.io/get/maxAge/12/width/700/https://www.tutime.cn
+      description: 追逐幻想
+    - title: Joseph Z.
+      url: https://josephz.top/
+      avatar: https://josephz.top/image/joseph.png
+      description: 有理想的人，生活总是火热的。
+
+
+
 group2:
   title: 来自 GitHub 的朋友
   description: '以下友链通过 [GitHub Issue](https://github.com/thun888/friends/issues/) 提交，按 issue 最后更新时间排序：'
