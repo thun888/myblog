@@ -30,6 +30,7 @@ header: false
 ## 如何自助添加友链？
 
 {% timeline %}
+<!-- node 第一步：新建 Issue -->
 
 新建 [GitHub Issue](https://github.com/xaoxuu/friends/issues/) 按照模板格式填写并提交。
 
@@ -41,6 +42,8 @@ header: false
 
 {% endfolding %}
 
+<!-- node 第二步：添加友链并等待管理员审核 -->
+
 请添加本站到您的友链中，如果您也使用 issue 作为友链源，只需要告知您的友链源仓库即可。
 
 {% codeblock lang:yaml %}
@@ -50,16 +53,6 @@ url: https://blog.thun888.xyz
 screenshot: https://asstes.thun888.xyz/file/pic-bed/2021/11/blog.thun888.xyz.png
 description: 夏日当空,心如深渊
 {% endcodeblock %}
-
-For yml
-
-```yaml
-    - title: thun888's Blog
-      avatar: https://blog.thun888.xyz/img/avatar.webp
-      url: https://blog.thun888.xyz
-      screenshot: https://asstes.thun888.xyz/file/pic-bed/2021/11/blog.thun888.xyz.png
-      description: 夏日当空,心如深渊
-```
 
 待管理员审核通过，添加了 `active` 标签后，回来刷新即可生效。
 
