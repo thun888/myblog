@@ -152,8 +152,8 @@ footer:
   sitemap:
      '博客':
        - '[大事记](/big/)'
-       - '[随记](/htalk/)'
-       - '[后台](https://hexo.orzz.ml/hpp/admin/dash/home/)'
+       - '[随记](https://notes.thun888.xyz/)'
+      # - '[后台](https://hexo.orzz.ml/hpp/admin/dash/home/)'
        - '[归档](/archives/)'
      '项目':
        - '[杂物](/wiki/杂物间/)'
