@@ -266,7 +266,7 @@ tag_plugins:
 plugins:
   ## required plugins ##
   # jquery
-  jquery: https://fastly.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js
+  jquery: /js/outofsites/jquery.min.js
 
   # issues api
   sitesjs: /js/plugins/sites.js
