@@ -88,12 +88,25 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 ![](/img/post/5b73a4a33f9bb3df5e1236b4021492fe.gif)
 
 <HR width="95%" color=#987cb9 SIZE=3>
-<a id="artalkup" href="javascript:load();" style="text-align: center;display:block;background-color:var(--link-hover-bg-color);font-size:20px">(o゜▽゜)o点击加载留言</a><span id="fileup" style="text-align: center;display:block;"></span>
-<HR width="95%" color=#987cb9 SIZE=3>
-<div id="Comments"></div>
-<link href="https://cdn.bootcdn.net/ajax/libs/artalk/2.3.4/Artalk.min.css" rel="stylesheet">
-<script src="https://cdn.bootcdn.net/ajax/libs/artalk/2.3.4/Artalk.js"></script>
-
-<script>
-function load(){var script=document.createElement("script");script.type="text/javascript";script.src='/js/artalkconfig.js';document.body.appendChild(script)}
-</script>
+  <div id="Comments"></div>
+  <link href="https://cdn.bootcdn.net/ajax/libs/artalk/2.3.4/Artalk.min.css" rel="stylesheet">
+  <script src="https://cdn.bootcdn.net/ajax/libs/artalk/2.3.4/Artalk.js"></script>
+  <script>
+      var page = window.location.href.split('#')[0]
+      if (page.endsWith("index.html")) {
+          pagekey = page.substring(0, page.length - 10)
+      } else {
+          pagekey = page
+      }
+      new Artalk({
+          el: '#Comments',
+          pageKey: decodeURI(pagekey),
+          placeholder: '来啊，快活啊[]~(￣▽￣)~*', // 占位符
+          sendBtn: 'Fire!',
+          pageTitle: '',
+          server: 'https://artalk.thun888.xyz/',
+          site: 'Blog',
+          emoticons: "https://raw.thun888.xyz/thun888/asstes/master/files/json/artalk/default.json",
+      })
+      document.getElementsByClassName("atk-sidebar-layer")[0].style.display = "none"
+  </script>
