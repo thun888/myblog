@@ -4,9 +4,9 @@ date: 2021-07-29 19:00:02
 layout: about
 ---
 
-{% about avatar:https://vkceyugu.cdn.bspapp.com/VKCEYUGU-35c12a92-e00c-4a70-8ef5-7bc728310bb5/c69734e0-f836-44b3-916a-77e618c57c70.webp height:80px %}
+{% about avatar:https://vkceyugu.cdn.bspapp.com/VKCEYUGU-35c12a92-e00c-4a70-8ef5-7bc728310bb5/c69734e0-f836-44b3-916a-77e618c57c70.webp height:85px %}
 
-<img height="42px" alt="logo" src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-35c12a92-e00c-4a70-8ef5-7bc728310bb5/b4b1c874-e3bf-42da-94cd-1968d4dfa5bc.svg">
+<img height="85px" alt="logo" src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-35c12a92-e00c-4a70-8ef5-7bc728310bb5/91cb94b1-2a0b-41bb-9bd3-1c621e2cf468.svg">
 
 咸鱼一条
 
@@ -50,7 +50,7 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 
 #### 部署方式
 
-我=>提交到Github=>GA进行构建并发布到gh-pages=>Vercel
+我=>提交到Gitea(Github)=>GA进行构建并发布到gh-pages=>Vercel
 如果网站因为种种原因而无法打开可以访问[Cloudflare](https://cfblog.thun888.xyz/)镜像
 
 #### 所用到的部分资源
