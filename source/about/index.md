@@ -4,9 +4,7 @@ date: 2021-07-29 19:00:02
 layout: about
 ---
 
-{% about avatar:https://vkceyugu.cdn.bspapp.com/VKCEYUGU-35c12a92-e00c-4a70-8ef5-7bc728310bb5/c69734e0-f836-44b3-916a-77e618c57c70.webp height:85px %}
-
-<img height="85px" alt="logo" src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-35c12a92-e00c-4a70-8ef5-7bc728310bb5/91cb94b1-2a0b-41bb-9bd3-1c621e2cf468.svg">
+{% about avatar:https://vkceyugu.cdn.bspapp.com/VKCEYUGU-35c12a92-e00c-4a70-8ef5-7bc728310bb5/91cb94b1-2a0b-41bb-9bd3-1c621e2cf468.svg height:85px %}
 
 咸鱼一条
 
@@ -38,28 +36,28 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 
 {% endtabs %}
 
-### 关于本站.
+## 关于本站.
 
-#### 初衷
+### 初衷
 
 一开始只是想要学习html吧，现在主要是为了记录自己折腾过的时光
 
-#### 来历&历程
+### 来历&历程
 
 建于网课时光，当时是自己写(自信如我)加\*.github.io，后面陆续采用Gridea+github page和wp+樱花frp的方案，最后确认使用hexo+thun888.xyz这个域名,中途换过三次主题{% psw <del>都是升级升炸的qwq</del> %}，两次评论系统,现阶段使用的Stellar和Artalk肯定是不会变的了
 
-#### 部署方式
+### 部署方式
 
 我=>提交到Gitea(Github)=>GA进行构建并发布到gh-pages=>Vercel
 如果网站因为种种原因而无法打开可以访问[Cloudflare](https://cfblog.thun888.xyz/)镜像
 
-#### 所用到的部分资源
+### 所用到的部分资源
 
 [Github](https://github.com/) 提供博客文件和图片存储
 [Vercel](https://vercel.com/) 提供静态网页托管及部分对子站点的反向代理,提供js,css等静态资源及图片加速
 [Cloudflare](https://www.cloudflare.com/) 提供cdn,dns
 
-#### 运行状况
+### 运行状况
 
 *您可以在*[*监控站*](https://status.thun888.xyz/)*中查看更多历史运行状况*
 
@@ -77,7 +75,7 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 
 {% endfolding %}
 
-#### 捐赠
+### 捐赠
 
 我并不认为我目前能接受捐赠~~太菜了~~，不过如果您愿意也可以请我喝杯奶茶{% emoji aru 50 %}
 

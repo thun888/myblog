@@ -1,18 +1,3 @@
-######## Stellar info ########
-stellar:
-  version: '1.7.0'
-  homepage: 'https://xaoxuu.com/wiki/stellar/'
-  repo: 'https://github.com/xaoxuu/hexo-theme-stellar'
-  cdn_css:  # Use cdn links instead of /css/main.css
-  cdn_js:  # Use cdn links instead of /js/main.js
-
-
-######## head tags ########
-open_graph:
-  enable: true
-  twitter_id: # for open_graph meta
-
-
 ######## Sidebar ########
 sidebar:
   logo:
