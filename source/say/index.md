@@ -26,28 +26,3 @@ header: false
 当然，记住**文明上网，合理发言**就好U*•ェ•U
 
 在下方开始留言吧~
-
-
-<HR width="95%" color=#987cb9 SIZE=3>
-  <div id="Comments"></div>
-  <link href="https://cdn.bootcdn.net/ajax/libs/artalk/2.3.4/Artalk.min.css" rel="stylesheet">
-  <script src="https://cdn.bootcdn.net/ajax/libs/artalk/2.3.4/Artalk.js"></script>
-  <script>
-      var page = window.location.href.split('#')[0]
-      if (page.endsWith("index.html")) {
-          pagekey = page.substring(0, page.length - 10)
-      } else {
-          pagekey = page
-      }
-      new Artalk({
-          el: '#Comments',
-          pageKey: decodeURI(pagekey),
-          placeholder: '来啊，快活啊[]~(￣▽￣)~*', // 占位符
-          sendBtn: 'Fire!',
-          pageTitle: '',
-          server: 'https://artalk.thun888.xyz/',
-          site: 'Blog',
-          emoticons: "https://raw.thun888.xyz/thun888/asstes/master/files/json/artalk/default.json",
-      })
-      document.getElementsByClassName("atk-sidebar-layer")[0].style.display = "none"
-  </script>
