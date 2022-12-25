@@ -68,6 +68,7 @@ comments:
     server: https://artalk.thun888.xyz # 后端服务地址
     placeholder: '此时无声胜有声'
     site: Blog
+    emoticons: https://raw.thun888.xyz/thun888/asstes/master/files/json/artalk/default.json
     darkMode: auto
 
 ######## Footer ########
