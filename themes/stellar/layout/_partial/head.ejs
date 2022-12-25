@@ -1,22 +1,36 @@
 <%
 function generate_title() {
-  if (page.layout == 'wiki' && page.wiki && (page.title || page.seo_title)) {
-    return page.wiki + __('symbol.colon') + (page.seo_title || page.title) + ' - ' + config.title;
-  } else if (page.seo_title || page.title || page.wiki) {
-    return (page.seo_title || page.title || page.wiki) + ' - ' + config.title;
-  } else if (page.category) {
-    return __('btn.category') + __('symbol.colon') + page.category + ' - ' + config.title;
-  } else if (page.tag) {
-    return __('btn.tag') + __('symbol.colon') + page.tag + ' - ' + config.title;
-  } else {
-    return config.title;
+  if (page.seo_title) {
+    return page.seo_title;
   }
-  return '';
+  if (page.wiki) {
+    let proj = theme.wiki.projects[page.wiki];
+    let wiki = (proj && proj.name) || page.wiki;
+    if (page.title) {
+      return wiki + __('symbol.colon') + page.title + ' - ' + config.title;
+    } else {
+      return wiki + ' - ' + config.title;
+    }
+  } else {
+    if (page.title) {
+      return page.title + ' - ' + config.title;
+    } else if (page.category) {
+      return __('btn.category') + __('symbol.colon') + page.category + ' - ' + config.title;
+    } else if (page.tag) {
+      return __('btn.tag') + __('symbol.colon') + page.tag + ' - ' + config.title;
+    }
+  }
+  return config.title;
 }
 function generate_description() {
-  // 索引页
   if (theme.open_graph && theme.open_graph.enable) {
     return '';
+  }
+  if (page.layout == 'wiki' && page.wiki) {
+    let proj = theme.wiki.projects[page.wiki];
+    if (proj && proj.description) {
+      return '<meta name="description" content="' + proj.description + '">';
+    }
   }
   if (page.description || page.excerpt || page.content) {
     return '<meta name="description" content="' + truncate(strip_html(page.description || page.excerpt || page.content), {length: 150}) + '">';
@@ -45,13 +59,14 @@ function og_args() {
 %>
 <head>
   <%- meta_generator() %>
+  <meta name="hexo-theme" content="<%- stellar_info('tree') %>">
   <meta charset="utf-8">
   <%- generate_robots() %>
 
   <meta http-equiv='x-dns-prefetch-control' content='on' />
-  <link rel='dns-prefetch' href='https://pic.thun888.xyz'>
-  <link rel="preconnect" href="https://raw.thun888.xyz" crossorigin>
-  <link rel='dns-prefetch' href='https://unpkg.com'>
+  <link rel='dns-prefetch' href='https://gcore.jsdelivr.net'>
+  <link rel="preconnect" href="https://gcore.jsdelivr.net" crossorigin>
+  <link rel='dns-prefetch' href='//unpkg.com'>
 
   <meta name="renderer" content="webkit">
   <meta name="force-rendering" content="webkit">
@@ -60,6 +75,7 @@ function og_args() {
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="theme-color" content="#f8f8f8">
+  
   <title><%- generate_title() %></title>
 
   <% if (theme.open_graph && theme.open_graph.enable) { %>
@@ -98,9 +114,7 @@ function og_args() {
       <%- item %>
     <% }) %>
   <% } %>
-  <link rel="icon" type="image/png" href="/favicon.ico">
-<div class="loading_b"><div class="loading_a"></div></div>
-<style>.loading_b{position : absolute;width : 100%;height : 100%;margin : 0;padding : 0;background: rgba(255, 255, 255, 0.72);backdrop-filter: saturate(180%) blur(20px);z-index: 9998;}.loading_a{z-index: 9999;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) rotate(75deg);width:15px;height:15px}.loading_a::before,.loading_a::after{content:"";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:15px;height:15px;border-radius:15px;animation:loading_a 1.5s infinite linear}.loading_a::before{box-shadow:15px 15px #e77f67,-15px -15px #778beb}.loading_a::after{box-shadow:15px 15px #f8a5c2,-15px -15px #f5cd79;transform:translate(-50%,-50%) rotate(90deg)}@keyframes loading_a{50%{height:45px}}</style>
-<link rel="stylesheet" href="/morecss/main.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/lxgwwenkaiscreen.css" media="all">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/notyf@3/notyf.min.css">
+<link rel="stylesheet" href="/mcss/mcss.css">
 </head>
-

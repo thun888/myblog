@@ -69,29 +69,29 @@ function layoutDiv() {
             el += ' onclick="util.toggle(&quot;qrcode-wechat&quot)"';
           } else if (item == 'weibo') {
             el += ' href="https://service.weibo.com/share/share.php?url=' + page.permalink;
-            el += '&title=' + (page.seo_title || page.title) + ' - ' + config.title;
-            if (page.latyout == 'post' && page.cover) {
+            el += '&title=' + (page.seo_title || (page.title + ' - ' + config.title));
+            if (page.layout == 'post' && page.cover) {
               el += '&pics=' + page.cover;
-            } else if (page.latyout == 'wiki' && page.logo && page.logo.src) {
+            } else if (page.layout == 'wiki' && page.logo && page.logo.src) {
               el += '&pics=' + page.logo.src;
             }
             el += '&summary=' + truncate(page.description || strip_html(page.excerpt || page.content), {length: 120});
             el += '"';
           } else if (item == 'email') {
-            el += ' href="mailto:?subject=' + (page.title || page.seo_title) + ' - ' + config.title + '&amp;'
+            el += ' href="mailto:?subject=' + ((page.title + ' - ' + config.title) || page.seo_title) + '&amp;'
             el += 'body=' + page.permalink + '"';
           } else if (item == 'link') {
             el += ' onclick="util.copy(&quot;copy-link&quot;, &quot;' + __('message.copied') + '&quot;)"';
           }
           el += '>';
           if (item == 'wechat') {
-            el += '<img src="https://raw.thun888.xyz/cdn-x/placeholder/1.0.1/social/b32ef3da1162a.svg"/>';
+            el += '<img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/social/b32ef3da1162a.svg"/>';
           } else if (item == 'weibo') {
-            el += '<img src="https://raw.thun888.xyz/cdn-x/placeholder/1.0.1/social/80c07e4dbb303.svg"/>';
+            el += '<img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/social/80c07e4dbb303.svg"/>';
           } else if (item == 'email') {
-            el += '<img src="https://raw.thun888.xyz/cdn-x/placeholder/1.0.1/social/a1b00e20f425d.svg"/>';
+            el += '<img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/social/a1b00e20f425d.svg"/>';
           } else if (item == 'link') {
-            el += '<img src="https://raw.thun888.xyz/cdn-x/placeholder/1.0.1/social/8411ed322ced6.svg"/>';
+            el += '<img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/social/8411ed322ced6.svg"/>';
           }
           el += '</a>';
         }
@@ -112,29 +112,3 @@ function layoutDiv() {
 }
 %>
 <%- layoutDiv(); %>
-
-<HR width="95%" color=#987cb9 SIZE=3>
-  <span id="fileup" style="text-align: center;display:block;">(￣︶￣)↗[<a href="https://upload.thun888.xyz">文件</a>上传,<a href="https://emotion.xiaokang.me">更多表情</a>]</span>
-  <HR width="95%" color=#987cb9 SIZE=3>
-  <div id="Comments"></div>
-  <link href="https://cdn.bootcdn.net/ajax/libs/artalk/2.3.4/Artalk.min.css" rel="stylesheet">
-  <script src="https://cdn.bootcdn.net/ajax/libs/artalk/2.3.4/Artalk.js"></script>
-  <script>
-      var page = window.location.href.split('#')[0]
-      if (page.endsWith("index.html")) {
-          pagekey = page.substring(0, page.length - 10)
-      } else {
-          pagekey = page
-      }
-      new Artalk({
-          el: '#Comments',
-          pageKey: decodeURI(pagekey),
-          placeholder: '来啊，快活啊[]~(￣▽￣)~*', // 占位符
-          sendBtn: 'Fire!',
-          pageTitle: '',
-          server: 'https://artalk.thun888.xyz/',
-          site: 'Blog',
-          emoticons: "https://raw.thun888.xyz/thun888/asstes/master/files/json/artalk/default.json",
-      })
-      document.getElementsByClassName("atk-sidebar-layer")[0].style.display = "none"
-  </script>

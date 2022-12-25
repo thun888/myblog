@@ -1,12 +1,26 @@
 .tag-plugin.about
   background: var(--block)
-  border-radius: $border-block
+  border-radius: $border-card
   padding: 2rem
+  position: relative
+  .nav-back
+    display: none
+    position: absolute
+    line-height: 1
+    overflow: hidden
+    left: 0.75rem
+    top: 0.75rem
+    align-items: center
+    @media screen and (max-width: $device-mobile-max)
+      display: flex
+    svg  
+      width: 1rem
+      height: 1rem
   .about-header
-    display flex
-    flex-direction: row-reverse
-    justify-content: space-between
+    display: flex
+    justify-content: center
     flex-wrap: wrap
+    margin: 1.5rem 0
     img
       object-fit: contain
     >img
@@ -27,29 +41,16 @@
   .about-body
     >p
       line-height: 1.5
-    .tag-plugin.navbar:last-child
-      nav.cap
-        margin-top: 1rem
-        a
-          margin: 0
-          color: $color-link
-          background: var(--block-hover)
-          &.active
-            background: none
-          &:hover
-            color: $color-hover
-            background: var(--block-border)
-        a+a
-          margin-left: .5rem
+      &:first-child
+        margin-top: 2.5rem
+    p+.tag-plugin.navbar .cap
+      margin-top: 1rem
   .about-header+.about-body
-    margin-top: 1.5rem
+    margin-top: 2rem
 
 @media screen and (max-width: $device-mobile)
   .tag-plugin.about
-    padding: 1rem
+    padding: 2rem 1rem
     .about-header
-      flex-direction: column
-      .avatar
-        margin: 1rem auto
       p
         width 100%

@@ -71,84 +71,32 @@ article:
   related_posts:
     enable: true
     max_count: 5
-    auto_cover: false # 如果没有封面就根据 tags 作为关键词搜索封面，开了此项将不会自动从文章中提取首张图片作为封面了。
-
-
 
 ######## Comments ########
 comments:
-  service: # beaudar, utterances, valine, twikoo
-  # beaudar
-  # https://beaudar.lipk.org/
-  beaudar:
-    repo: xxx/xxx
-    issue-term: pathname
-    issue-number:
-    theme: preferred-color-scheme
-    label:
-    input-position: top # top/bottom 评论框位置
-    comment-order: desc # desc 排序
-    keep-theme: # true/false
-    loading: false
-    branch: main
-  # utterances
-  # https://utteranc.es/
-  utterances:
-    repo: xxx/xxx
-    issue-term: pathname
-    issue-number:
-    theme: preferred-color-scheme
-    label:
-  valine:
-    js: https://raw.thun888.xyz/XuxuGood/simple-blog-cdn/main/js/Valine.min.js
-    appId: # your appId
-    appKey: # your appKey
-    placeholder:
-    requiredFields: [nick, mail]
-    enableQQ: true # Unstable avatar link
-    recordIP: false # Record commenter IP
-    avatar: robohash # gravatar style https://valine.js.org/avatar
-    pageSize: 10 # comment list page size
-    lang: zh-cn
-    highlight: true
-    mathJax: false
-    tagMeta: [博主, 小伙伴, 访客] # 标签要显示的文字,默认'博主,小伙伴,访客'
-    metaPlaceholder:
-      nick: "昵称/QQ号(必填)"
-      mail: "邮箱（必填，完全保密）"
-      link: "网址(https://)"
-    master: #md5加密后的博主邮箱
-      - 6783037F2DF30EAB99F9FC256157D875
-    friends: #md5加密后的小伙伴邮箱
-      - 6783037F2DF30EAB99F9FC256157D875
-  # Twikoo
-  # https://twikoo.js.org/
-  twikoo:
-    js: https://unpkg.com/twikoo/1.4.0/dist/twikoo.all.min.js # 建议锁定版本
-    envId: https://xxx # vercel函数
+  service: artalk
+  # Artalk
+  # https://artalk.js.org/
+  artalk:
+    css: https://unpkg.com/artalk@2.4.3/dist/Artalk.css
+    js: https://unpkg.com/artalk@2.4.3/dist/Artalk.js 
+    server: https://artalk.thun888.xyz # 后端服务地址
+    placeholder: '此时无声胜有声'
+    site: Blog
+    darkMode: auto
 
 ######## Footer ########
 footer:
   social:
-     #- icon: '<img src="https://i0.hdslb.com/bfs/album/df39fd4aa9f091095c4023217a6b9b5d644ec642.webp"/>'
-     #  url: https://evolution-host.com/
      - title: RSS
      - icon: '<img src="/img/icons/25678f144c438.svg"/>'
        url: /atom.xml
      - icon: '<img src="/img/icons/08a41b181ce68.svg"/>'
        url: https://github.com/thun888
-    # - icon: '<img src="/img/icons/bilibili.ico"/>'
-    #   url: https://space.bilibili.com/451090261
-    # - icon: '<img src="https://raw.thun888.xyz/cdn-x/placeholder/1.0.1/social/cf1ae151f9e83.svg"/>'
-    #   url: /
-    # - icon: '<img src="https://raw.thun888.xyz/cdn-x/placeholder/1.0.1/social/942ebbf1a4b91.svg"/>'
-    #   url: /
-    # - icon: '<img src="/img/icons/a1b00e20f425d.svg"/>'
-    #   url: mailto:thun888@qq.com
+     - icon: '<img src="/img/icons/a1b00e20f425d.svg"/>'
+       url: mailto:thun888@qq.com
      - icon: '<img src="/img/icons/20210610162918.svg"/>'
        url: https://share.thun888.xyz
-     - icon: '<img src="/img/icons/nxfhj.svg"/>'
-       url: javascript:SSearch('ins-search');
   sitemap:
      '博客':
        - '[大事记](/big/)'
@@ -166,33 +114,12 @@ footer:
        - '[关于本站](/about/)'
        - '[云盘](https://pan.thun888.xyz)'
        - '[Gitea](https://git.thun888.xyz)'
-       #- '[Onedrive](https://share.thun888.xyz)'
-  license: '[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)'
-  source: '[GitHub](https://github.com/thun888/stellar)'
-  more: <script>!function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"JnLm5m7MJcDkpWaM",ck:"JnLm5m7MJcDkpWaM"});</script>
+  content: | # 支持 Markdown 格式
+    本站由 [@thun888](/) 使用 [Stellar](https://github.com/xaoxuu/hexo-theme-stellar) 主题创建。
+    本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。
+    <script>!function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"JnLm5m7MJcDkpWaM",ck:"JnLm5m7MJcDkpWaM"});</script>
 ######## Tag Plugins ########
 tag_plugins:
-  # {% note text %}
-  note:
-    default_color: '' # light, dark, red, orange, yellow, green, cyan, blue, purple
-  # {% checkbox %}
-  checkbox:
-    interactive: true # enable interactive for user
-  # {% quot %}
-  quot:
-    default: # 可以自行配置多种图标方案
-      prefix: https://s2.loli.net/2022/01/04/vsTB5pGrIHfPxSj.png
-      suffix: https://s2.loli.net/2022/01/04/NORdtjlAhifZSns.png
-    hashtag:
-      prefix: https://s2.loli.net/2022/01/04/UvHcsa73jQPnobq.png
-  # {% emoji %}
-  emoji:
-    default: https://raw.thun888.xyz/volantis-x/cdn-emoji/qq/%s.gif
-    twemoji: https://raw.thun888.xyz/twitter/twemoji/assets/svg/%s.svg
-    qq: https://raw.thun888.xyz/volantis-x/cdn-emoji/qq/%s.gif
-    aru: https://raw.thun888.xyz/volantis-x/cdn-emoji/1.0.0/aru/%s.png
-    tieba: https://raw.thun888.xyz/volantis-x/cdn-emoji/tieba/%s.png
-  # {% image %}
   image:
     fancybox: true
 
@@ -206,6 +133,9 @@ style:
     background: /img/rainbow64@3x.webp
   codeblock:
     scrollbar: 4px
+  gradient: # https://webgradients.com/
+    start: 'linear-gradient(to right, #92fe9d 0%, #00c9ff 50%, #92fe9d 100%)'
+    search: 'linear-gradient(to right, #e0e0e0,#e0e0e0)'
 
 default:
   avatar: /img/svg/3442075.svg

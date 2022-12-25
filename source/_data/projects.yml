@@ -1,7 +1,7 @@
 Artalk-doc:
   title: Artalk-doc
   subtitle: 一个Artalk的非官方文档 
-  group: 文档
+  tags: 文档
   cover: true
   logo:
     src: https://raw.thun888.xyz/thun888/tuku/master/img/artalk-logo.svg
@@ -14,7 +14,7 @@ Artalk-doc:
 杂物间:
   title: 杂物间
   subtitle: 一个存放文件的地方 
-  group: 文件
+  tags: 文件
   cover: true
   logo:
     src: https://raw.thun888.xyz/thun888/tuku/master/img/%E7%AE%B1%E5%AD%90.svg
@@ -24,3 +24,15 @@ Artalk-doc:
   repo: 
   index: true
 
+dreaming:
+  title: dreaming
+  subtitle: 一个QQ机器人插件
+  tags: 插件
+  cover: true
+  logo:
+    src: https://raw.thun888.xyz/thun888/tuku/master/img/%E7%AE%B1%E5%AD%90.svg
+    small: 80px
+    large: 150px
+  description: 一个存放文件的地方
+  repo: 
+  index: true

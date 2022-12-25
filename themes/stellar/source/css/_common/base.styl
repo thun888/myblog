@@ -1,6 +1,6 @@
 pre
-  font-family: $ff-code
-  font-size: $fs-code
+  font-family: $ff-codeblock
+  font-size: $fs-codeblock
   tab-size: 4
   -moz-tab-size: 4
   -o-tab-size: 4
@@ -8,19 +8,12 @@ pre
 
 a
   text-decoration: none
-  color: $color-link
+  color: var(--theme-link)
   &:hover
     color: $color-hover
 
-// md > a
-p, li
-  >a:not([class])
-    margin: 0 1px
-    padding: 4px
-    border-radius: 4px
-    &:hover
-      color: darken($color-hover, 10)
-      background: alpha($color-hover, 0.08)
+.md-text p:not([class]) 
+  text-align: convert(hexo-config('style.text-align'))
 
 hr
   color: var(--text-meta)
@@ -60,3 +53,6 @@ table:not([class])
     trans()
     &:hover
       background: var(--block)
+
+*[ff=title]
+  font-family: $ff-logo

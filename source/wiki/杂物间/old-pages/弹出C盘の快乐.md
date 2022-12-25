@@ -1,7 +1,6 @@
 ---
 title: 弹出C盘の快乐
 date: 2020-10-30 22:21:01
-tags: cmd命令
 updated: 2020-10-30 22:21:01
 layout: wiki
 wiki: 杂物间

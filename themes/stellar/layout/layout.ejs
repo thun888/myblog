@@ -17,16 +17,5 @@
   <div class='scripts'>
     <%- partial('_partial/scripts/index') %>
   </div>
-  <script>
-    //隐藏loader
-    function loader() {
-        if (document.readyState === 'complete') {
-            document.querySelector('.loading_b').style.display = 'none';
-        } else {
-            setTimeout(loader, 10);
-        }
-    }
-    loader();
-</script>
 </body>
 </html>

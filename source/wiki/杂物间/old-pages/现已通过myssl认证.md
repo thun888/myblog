@@ -1,7 +1,6 @@
 ---
 title: 现已通过myssl认证
 date: 2020-08-12 17:44:05
-tags: ssl认证
 updated: 2020-08-12 17:44:05
 layout: wiki
 wiki: 杂物间

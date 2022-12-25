@@ -1,42 +1,42 @@
 code
   -webkit-font-smoothing: auto
   -moz-osx-font-smoothing: auto
-  color: var(--text-code)
   font-family: $ff-code
-  word-break: break-all
-  font-size: 85%
-  background: var(--block)
-  padding: .2em .4em
-  border-radius: 4px
 
-article.md .highlight
+p>code:not([class]),li>code:not([class])
+  font-size: $fs-code
+  background: var(--block)
+  padding: .2em
+  border-radius: 4px
+  color: var(--text-code)
+
+.md-text .highlight, pre:not([class]):has(>code)
   margin: var(--gap-p) 0
   border-radius: $border-block
   overflow: hidden
   background: var(--block)
-  border: 1px solid var(--block-border)
   line-height: 1.5
-  font-family: $ff-code
+  font-family: $ff-codeblock
   box-sizing: border-box
   @media screen and (min-width: $device-mobile)
-    min-width: 280px
+    min-width: 180px
 
-article.md .highlight
+.md-text .highlight
   position: relative
   overflow: auto
   display: block
   figcaption
     color: var(--text-p2)
-    font-size: $fs-code
-    padding: 4px 0.5rem
-    position: sticky
-    left: 0
-    background: var(--block-hover)
-    border-top-left-radius: "calc(%s - 1px)" % $border-block
-    border-top-right-radius: "calc(%s - 1px)" % $border-block
-    border-bottom: 1px solid var(--block-border)
+    font-size: $fs-codeblock
+    font-weight: 500
+    margin-left: 0.5rem
+    display: inline-block
     span
-      margin-right: 4px
+      padding: 4px 0.5rem
+      display: block
+      border-bottom-left-radius: $border-bar
+      border-bottom-right-radius: $border-bar
+      background: var(--block-hover)
   >table
     overflow: auto
     display: block
@@ -74,22 +74,37 @@ article.md .highlight
   .gutter+.code pre
     padding-left: 0.25em
 
+.md-text .gist 
+  .gist-file 
+    border: 1px solid var(--block-border)
+    border-radius: $border-block
+  .gist-data
+    border-bottom: 1px solid var(--block-border)
+  .highlight
+    display: inherit
+    border: none
+    border-radius: 0
+    background: none
+    margin: 0
+    padding: 1em 0
+  .gist-meta
+    background: var(--block-border)
+
 
 table:not([class])
   border-collapse: collapse
 
 
-article.md pre
+.md-text pre
   >.caption
     color: var(--text-p3)
   >.hljs
     padding: 1rem
     border-radius: $border-block
-    border: 1px solid var(--block-border)
     line-height: 1.5
     box-sizing: border-box
 
-article.md .highlight
+.md-text .highlight
   .code
     vertical-align: top
     &:before
@@ -168,7 +183,7 @@ $hl-red = #EE2B29
 $hl-orange = #FB3F1B
 $hl-amber = #FD8607
 $hl-text = var(--text-p1)
-pre
+.code>pre
   .code:before
     display: none
   // 行

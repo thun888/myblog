@@ -1,5 +1,5 @@
 <script type="text/javascript">
-  stellar = {
+  const stellar = {
     // 懒加载 css https://github.com/filamentgroup/loadCSS
     loadCSS: (href, before, media, attributes) => {
       var doc = window.document;
@@ -90,6 +90,7 @@
       }
     }
   };
+  stellar.version = '<%- theme.stellar.version %>';
   stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/<%- theme.stellar.version %>';
   stellar.config = {
     date_suffix: {
@@ -103,11 +104,22 @@
 
   // required plugins (only load if needs)
   stellar.plugins = {
-    jQuery: '<%- url_for(theme.plugins.jquery || "https://unpkg.com/jquery@3.6.0/dist/jquery.min.js") %>',
-    sitesjs: '<%- url_for(theme.plugins.sitesjs) %>',
-    friendsjs: '<%- url_for(theme.plugins.friendsjs) %>',
+    jQuery: '<%- url_for(theme.plugins.jquery || "https://gcore.jsdelivr.net/npm/jquery@3.6.2/dist/jquery.min.js") %>'
   };
 
+  if ('<%- theme.search.service %>') {
+    stellar.search = {};
+    stellar.search.service = '<%- theme.search.service %>';
+    if (stellar.search.service == 'local_search') {
+      let service_obj = Object.assign({}, <%- JSON.stringify(theme.search.local_search) %>);
+      stellar.search[stellar.search.service] = service_obj;
+    }
+  }
+
+  // stellar js
+  stellar.plugins.stellar = Object.assign(<%- JSON.stringify(theme.plugins.stellar) %>);
+
+  stellar.plugins.marked = Object.assign(<%- JSON.stringify(theme.plugins.marked) %>);
   // optional plugins
   if ('<%- theme.plugins.lazyload.enable %>' == 'true') {
     stellar.plugins.lazyload = Object.assign(<%- JSON.stringify(theme.plugins.lazyload) %>);

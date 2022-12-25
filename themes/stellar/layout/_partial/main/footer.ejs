@@ -1,8 +1,5 @@
 <%
-const author = '[@' + config.author + '](' + config.url + config.root + ')';
-const using = '[' + stellar_info('name') + '](' + stellar_info('tree') + ' "v' + stellar_info('version') + '")';
-const source = theme.footer.source;
-const more = theme.footer.more;
+const content = theme.footer.content;
 function layoutDiv() {
   var el = '';
   el += '<footer class="page-footer reveal fs12">';
@@ -28,19 +25,11 @@ function layoutDiv() {
   }
   // footer
   el += '<div class="text">';
-  if (theme.footer.license) {
-    el += markdown(__('footer.license', theme.footer.license));
-  }
-  if (source) {
-    el += markdown(__('footer.info_open_source', author, using, source));
-  } else {
-    el += markdown(__('footer.info_not_open_source', author, using));
-  }
-  if (more) {
-    if ((typeof more == 'string') && more.constructor == String) {
-      el += markdown(more);
-    } else if ((typeof more == 'object') && more.constructor == Array) {
-      more.forEach((item, i) => {
+  if (content) {
+    if ((typeof content == 'string') && content.constructor == String) {
+      el += markdown(content);
+    } else if ((typeof content == 'object') && content.constructor == Array) {
+      content.forEach((item, i) => {
         el += markdown(item);
       });
     }
@@ -51,18 +40,5 @@ function layoutDiv() {
 %>
 <center><span class="page-footer fs12" id="timeDate">载入天数...</span><span class="page-footer fs12">&</span><span class="page-footer fs12" id="times">载入时分秒...</span></center>
 <%- layoutDiv() %>
-<script src="https://cdn.bootcdn.net/ajax/libs/notyf/3.10.0/notyf.min.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
 
-<!--搜索-->
-<div id="ins-search" class="ins-search">
-  <div class="ins-search-mask"></div>
-  <div class="ins-search-container">
-      <div class="ins-input-wrapper">
-          <input type="text" id="local-search-input" class="ins-search-input" placeholder="想要查找什么...">
-          <span onclick="CSearch('ins-search');" class="ins-close ins-selectable"><i class="zmdi zmdi-close">x</i></span>
-      </div>
-      <div class="ins-section-wrapper">
-          <div id="local-search-result" class="ins-section-container"></div>
-      </div>
-  </div>
-</div>

@@ -9,7 +9,7 @@ description: 喵~|thun888's Blog
 keywords: 喵~|thun888's Blog
 author: thun888
 avatar: /img/avatar.webp
-language: [zh-CN, en, zh-CN, zh-TW]
+language: zh-CN
 timezone: ''
 
 # URL
@@ -154,7 +154,7 @@ post_wordcount:
 deploy:
   type: git
   repo: 
-    github: https://thun888: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@github.com/thun888/thun888.github.io.git,master
+    github: https://thun888:ghp_JpFfSRWxN*************T37oL9zvo3Q49kT@github.com/thun888/thun888.github.io.git,master
     
   branch: master
   message: "Build at {{ now('YYYY-MM-DD HH:mm:ss Z') }}"
@@ -173,7 +173,7 @@ service_worker:
     - urlPattern: /*
       handler: cacheFirst
       options:
-        origin: pic.thun888.xyz
+        origin: onep.thun888.xyz
     - urlPattern: /*
       handler: cacheFirst
       options:
@@ -186,3 +186,8 @@ service_worker:
       handler: cacheFirst
       options:
         origin: k.thun888.xyz
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: gcore.jsdelivr.net
+        
