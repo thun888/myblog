@@ -189,5 +189,5 @@ service_worker:
     - urlPattern: /*
       handler: cacheFirst
       options:
-        origin: gcore.jsdelivr.net
+        origin: jsd.thun888.xyz
         
