@@ -1,1 +1,368 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 6.2.0"><meta charset="utf-8"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://raw.thun888.xyz"><link rel="preconnect" href="https://raw.thun888.xyz" crossorigin><link rel="dns-prefetch" href="https://unpkg.com"><link rel="dns-prefetch" href="https://record.thun888.xyz"><meta name="renderer" content="webkit"><meta name="force-rendering" content="webkit"><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"><meta name="HandheldFriendly" content="True"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta name="theme-color" content="#f8f8f8"><title>Artalk-doc：FAQ - Thun888</title><meta name="description" content="Q:使用Artalk时一直转圈无法加载  A:打开artalk.js，搜索5e3，5e3即5x10³，5000对应5s，把它改为6e4即60s   Q:提交评论卡死  A:Issue #6 · ArtalkJS&#x2F;Artalk (github.com)   如果禁用pcntl_fork()函数会导致无法发信及评论完成页面不刷新     Q:CORS跨域问题？  A:检查配置文件中的博客名"><meta property="og:type" content="website"><meta property="og:title" content="FAQ"><meta property="og:url" content="https://blog.thun888.xyz/wiki/Artalk/QandA/"><meta property="og:site_name" content="Thun888"><meta property="og:description" content="Q:使用Artalk时一直转圈无法加载  A:打开artalk.js，搜索5e3，5e3即5x10³，5000对应5s，把它改为6e4即60s   Q:提交评论卡死  A:Issue #6 · ArtalkJS&#x2F;Artalk (github.com)   如果禁用pcntl_fork()函数会导致无法发信及评论完成页面不刷新     Q:CORS跨域问题？  A:检查配置文件中的博客名"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://bu.dusays.com/2021/07/29/b577b44674270.png"><meta property="og:image" content="https://raw.thun888.xyz/thun888/tuku/master/img/image-20210803115954976.png"><meta property="og:image" content="https://raw.thun888.xyz/thun888/tuku/master/img/image-20210803120135574.png"><meta property="article:published_time" content="2022-08-08T11:59:46.954Z"><meta property="article:modified_time" content="2022-08-08T11:59:46.954Z"><meta property="article:author" content="thun888"><meta property="article:tag" content="喵~|thun888&#39;s Blog"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://bu.dusays.com/2021/07/29/b577b44674270.png"><link rel="alternate" href="/atom.xml" title="Thun888" type="application/atom+xml"><link rel="stylesheet" href="/css/main.css"><link rel="icon" type="image/png" href="/favicon.ico"><div class="loading"></div><style>.loading{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) rotate(75deg);width:15px;height:15px}.loading::after,.loading::before{content:"";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:15px;height:15px;border-radius:15px;animation:loading 1.5s infinite linear}.loading::before{box-shadow:15px 15px #e77f67,-15px -15px #778beb}.loading::after{box-shadow:15px 15px #f8a5c2,-15px -15px #f5cd79;transform:translate(-50%,-50%) rotate(90deg)}@keyframes loading{50%{height:45px}}</style><link rel="stylesheet" href="/morecss/main.css"></head><body><div class="l_body" id="start"><aside class="l_left" layout="wiki"><header class="header"><div class="logo-wrap wiki"><a style="filter:grayscale(100%)" class="wiki-home cap" href="/"><svg aria-hidden="true" viewBox="0 0 16 16" width="1rem" height="1rem" fill="currentColor"><path fill-rule="evenodd" d="M7.78 12.53a.75.75 0 01-1.06 0L2.47 8.28a.75.75 0 010-1.06l4.25-4.25a.75.75 0 011.06 1.06L4.81 7h7.44a.75.75 0 010 1.5H4.81l2.97 2.97a.75.75 0 010 1.06z"></path></svg>所有项目</a><a class="title" href="/wiki/Artalk/"><div class="main">Artalk-doc</div><div class="sub cap">一个Artalk的非官方文档</div></a></div></header><div class="widgets"><div class="widget-wrap multi" id="toc"><div class="widget-header cap dis-select"><span class="name">本文目录</span></div><div class="widget-body fs14"><div class="doc-tree"><a class="doc-tree-link" href="/wiki/Artalk/"><span class="toc-text">About Artalk</span></a></div><div class="doc-tree"><a class="doc-tree-link" href="/wiki/Artalk/install/"><span class="toc-text">安装（PHP）</span></a></div><div class="doc-tree"><a class="doc-tree-link" href="/wiki/Artalk/install-go/"><span class="toc-text">安装（GO）</span></a></div><div class="doc-tree"><a class="doc-tree-link" href="/wiki/Artalk/use/"><span class="toc-text">使用</span></a></div><div class="doc-tree"><a class="doc-tree-link" href="/wiki/Artalk/API/"><span class="toc-text">API</span></a></div><div class="doc-tree"><a class="doc-tree-link" href="/wiki/Artalk/develop/"><span class="toc-text">开发</span></a></div><div class="doc-tree active"><a class="doc-tree-link active" href="/wiki/Artalk/QandA/"><span class="toc-text">FAQ</span></a></div><div class="doc-tree"><a class="doc-tree-link" href="/wiki/Artalk/play/"><span class="toc-text">娱乐向</span></a></div><div class="doc-tree"><a class="doc-tree-link" href="/wiki/Artalk/more-url/"><span class="toc-text">相关链接</span></a></div></div></div><div class="widget-wrap" id="repo-info"><div class="widget-header cap dis-select"><span class="name">项目仓库</span></div><div class="widget-body fs14"><div class="items"><div class="line"></div><a class="item-link" title="https://github.com/ArtalkJS/Artalk" href="https://github.com/ArtalkJS/Artalk" target="_blank" rel="external nofollow noopener noreferrer"><svg aria-hidden="true" role="img" class="color-icon-primary" viewBox="0 0 16 16" width="1rem" height="1rem" fill="currentColor" style="display:inline-block;user-select:none;vertical-align:text-bottom;overflow:visible"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg><span>GitHub</span></a><div class="line"></div><a class="item-link" title="https://github.com/ArtalkJS/Artalk/releases" href="https://github.com/ArtalkJS/Artalk/releases" target="_blank" rel="external nofollow noopener noreferrer"><svg aria-hidden="true" role="img" class="color-icon-primary" viewBox="0 0 16 16" width="1rem" height="1rem" fill="currentColor" style="display:inline-block;user-select:none;vertical-align:text-bottom;overflow:visible"><path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"></path></svg><span>Releases</span></a><div class="line"></div><a class="item-link" title="https://github.com/ArtalkJS/Artalk/archive/refs/heads/main.zip" href="https://github.com/ArtalkJS/Artalk/archive/refs/heads/main.zip" target="_blank" rel="external nofollow noopener noreferrer"><svg aria-hidden="true" role="img" class="color-icon-primary" viewBox="0 0 16 16" width="1rem" height="1rem" fill="currentColor" style="display:inline-block;user-select:none;vertical-align:text-bottom;overflow:visible"><path fill-rule="evenodd" d="M7.47 10.78a.75.75 0 001.06 0l3.75-3.75a.75.75 0 00-1.06-1.06L8.75 8.44V1.75a.75.75 0 00-1.5 0v6.69L4.78 5.97a.75.75 0 00-1.06 1.06l3.75 3.75zM3.75 13a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5z"></path></svg><span>Download</span></a><div class="line"></div><a class="item-link" title="https://github.com/ArtalkJS/Artalk/issues" href="https://github.com/ArtalkJS/Artalk/issues" target="_blank" rel="external nofollow noopener noreferrer"><svg aria-hidden="true" role="img" class="color-icon-primary" viewBox="0 0 16 16" width="1rem" height="1rem" fill="currentColor" style="display:inline-block;user-select:none;vertical-align:text-bottom;overflow:visible"><path d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path><path fill-rule="evenodd" d="M8 0a8 8 0 100 16A8 8 0 008 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"></path></svg><span>Issues</span></a></div></div></div></div><script>var meting_api="https://api.mizore.cn/meting/api.php?server=:server&type=:type&id=:id"</script><a href="https://travellings.link/" target="_blank" rel="noopener" title="开往-友链接力"><img no-lazy src="/img/travellings.gif" data-src="/img/travellings.gif" alt="开往-友链接力" width="120" data-ll-status="loaded" onerror="javascript:this.classList.add('error');this.src='/img/svg/2659360.svg';"></a></aside><div class="l_main"><div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" id="home" href="/">主页</a><span class="sep"></span><a class="cap breadcrumb" id="menu" href="/wiki/">项目</a><span class="sep"></span><a class="cap breadcrumb" id="proj" href="/wiki/Artalk/">Artalk-doc</a></div><div id="post-meta">更新于&nbsp;<time datetime="2022-08-08T11:59:46.954Z">2022-08-08</time></div></div><article class="content md wiki"><h1 class="article-title"><span>FAQ</span></h1><ul><li><p>Q:使用Artalk时一直转圈无法加载</p><ul><li>A:打开artalk.js，搜索5e3，5e3即5x10³，5000对应5s，把它改为6e4即60s</li></ul></li><li><p>Q:提交评论卡死</p><ul><li><p>A:<a target="_blank" rel="noopener" href="https://github.com/ArtalkJS/Artalk/issues/6">Issue #6 · ArtalkJS&#x2F;Artalk (github.com)</a></p><p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://bu.dusays.com/2021/07/29/b577b44674270.png"></p><blockquote><p>如果禁用pcntl_fork()函数会导致无法发信及评论完成页面不刷新</p></blockquote></li></ul></li><li><p>Q:CORS跨域问题？</p><ul><li>A:检查配置文件中的博客名称中是否有<code>‘</code>，如果没有就检查下配置文件有没有哪里有问题，<del>如果不是Artalk的问题就去百度</del></li></ul></li><li><p>Q:”传送门“跳转到404<br><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.thun888.xyz/thun888/tuku/master/img/image-20210803115954976.png" alt="image-20210803115954976"></p><ul><li><p>A:打开&#x2F;email-tpl&#x2F;default.html，在第6行前加上自己的博客链接</p><p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.thun888.xyz/thun888/tuku/master/img/image-20210803120135574.png" alt="image-20210803120135574"></p></li></ul></li></ul><p>（内容待补充）</p><hr width="95%" color="#987cb9" size="3"><span id="fileup" style="text-align:center;display:block">(￣︶￣)↗[<a target="_blank" rel="noopener" href="https://upload.thun888.xyz">文件</a>上传,<a target="_blank" rel="noopener" href="https://emotion.xiaokang.me">更多表情</a>]</span><hr width="95%" color="#987cb9" size="3"><div id="Comments"></div><link href="https://cdn.bootcdn.net/ajax/libs/artalk/2.3.4/Artalk.min.css" rel="stylesheet"><script src="https://cdn.bootcdn.net/ajax/libs/artalk/2.3.4/Artalk.js"></script><script>var page=window.location.href.split("#")[0];pagekey=page.endsWith("index.html")?page.substring(0,page.length-10):page,new Artalk({el:"#Comments",pageKey:decodeURI(pagekey),placeholder:"来啊，快活啊[]~(￣▽￣)~*",sendBtn:"Fire!",pageTitle:"",server:"https://artalk.thun888.xyz/",site:"Blog"}),document.getElementsByClassName("atk-sidebar-layer")[0].style.display="none"</script></article><div class="related-wrap reveal" id="read-next"><section class="header cap theme"><span>接下来阅读</span></section><section class="body fs14"><a id="next" href="/wiki/Artalk/play/">娱乐向<span class="note">下一篇</span></a><div class="line"></div><a id="prev" href="/wiki/Artalk/API/">API<span class="note">上一篇</span></a></section></div><center><span class="page-footer fs12" id="timeDate">载入天数...</span><span class="page-footer fs12">&</span><span class="page-footer fs12" id="times">载入时分秒...</span></center><footer class="page-footer reveal fs12"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs14">博客</span><a href="/update">更新历程</a><a href="/htalk">随记</a><a target="_blank" rel="noopener" href="https://hexo.orzz.ml/hpp/admin/dash/home">后台</a><a href="/archives">归档</a></div><div class="sitemap-group"><span class="fs14">项目</span><a href="/wiki/%E6%9D%82%E7%89%A9%E9%97%B4">杂物</a></div><div class="sitemap-group"><span class="fs14">社交</span><a href="/friends">友链</a><a href="/say">留言板</a></div><div class="sitemap-group"><span class="fs14">更多</span><a href="/about">关于本站</a><a target="_blank" rel="noopener" href="https://aria.thun888.xyz">Aria</a></div></div><div class="text"><p>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p><p>本站由 <a href="https://blog.thun888.xyz/">@thun888</a> 使用HEXO创建，使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.7.0" title="v1.7.0">Stellar</a> 主题。</p></div></footer><script src="https://cdn.bootcdn.net/ajax/libs/notyf/3.10.0/notyf.min.js"></script><div id="ins-search" class="ins-search"><div class="ins-search-mask"></div><div class="ins-search-container"><div class="ins-input-wrapper"><input type="text" id="local-search-input" class="ins-search-input" placeholder="想要查找什么..."> <span onclick='CSearch("ins-search")' class="ins-close ins-selectable"><i class="zmdi zmdi-close">x</i></span></div><div class="ins-section-wrapper"><div id="local-search-result" class="ins-section-container"></div></div></div></div><div class="float-panel mobile-only blur" style="display:none"><button type="button" class="sidebar-toggle mobile" onclick="sidebar.toggle()"><svg class="icon" style="width:1em;height:1em;vertical-align:middle;fill:currentColor;overflow:hidden" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15301"><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 2.3 26.8 24.6 47.5 51.6 47.6h416.5v4z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15302"></path><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 1.9 27.7 23.9 49.7 51.6 51.6h416.5z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15303"></path></svg></button></div></div></div><div class="scripts"><script type="text/javascript">stellar={loadCSS:(e,t,n,s)=>{var a,i,l=window.document,r=l.createElement("link");i=t||(a=(l.body||l.getElementsByTagName("head")[0]).childNodes)[a.length-1];var o=l.styleSheets;if(s)for(var d in s)s.hasOwnProperty(d)&&r.setAttribute(d,s[d]);r.rel="stylesheet",r.href=e,r.media="only x",function e(t){if(l.body)return t();setTimeout(function(){e(t)})}(function(){i.parentNode.insertBefore(r,t?i:i.nextSibling)});function u(e){for(var t=r.href,n=o.length;n--;)if(o[n].href===t)return e();setTimeout(function(){u(e)})}function c(){r.addEventListener&&r.removeEventListener("load",c),r.media=n||"all"}return r.addEventListener&&r.addEventListener("load",c),r.onloadcssdefined=u,u(c),r},loadScript:(a,i)=>new Promise((t,e)=>{var n=document.createElement("script");if(n.src=a,i)for(var s of Object.keys(i))n[s]=i[s];else n.async=!0;n.onerror=e,n.onload=n.onreadystatechange=function(){var e=this.readyState;e&&"loaded"!==e&&"complete"!==e||(n.onload=n.onreadystatechange=null,t())},document.head.appendChild(n)}),jQuery:e=>{"undefined"==typeof jQuery?stellar.loadScript(stellar.plugins.jQuery).then(e):e()},github:"https://github.com/xaoxuu/hexo-theme-stellar/tree/1.7.0",config:{date_suffix:{just:"刚刚",min:"分钟前",hour:"小时前",day:"天前",month:"个月前"}},plugins:{jQuery:"https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js",sitesjs:"https://raw.thun888.xyz/thun888/myblog/gh-page/js/plugins/sites.js",friendsjs:"https://raw.thun888.xyz/thun888/myblog/gh-page/js/plugins/friends.js"}},stellar.plugins.lazyload=Object.assign({enable:!0,js:"https://cdn.bootcdn.net/ajax/libs/vanilla-lazyload/17.3.1/lazyload.min.js",transition:"blur"}),stellar.plugins.swiper=Object.assign({enable:!0,css:"https://cdn.bootcdn.net/ajax/libs/Swiper/8.3.0/swiper-bundle.min.css",js:"https://cdn.bootcdn.net/ajax/libs/Swiper/8.3.0/swiper-bundle.min.js"}),stellar.plugins.preload=Object.assign({enable:!0,service:"instant_page",instant_page:"/js/instant_page.js",flying_pages:"https://raw.thun888.xyz/gijo-varghese/flying-pages/2.1.2/flying-pages.min.js"}),stellar.plugins.fancybox=Object.assign({enable:!0,js:"https://unpkg.com/@fancyapps/ui@4.0/dist/fancybox.umd.js",css:"https://unpkg.com/@fancyapps/ui@4.0/dist/fancybox.css",selector:".swiper-slide img"})</script><script src="/js/main.js" async></script></div><script>function loader(){"complete"===document.readyState?document.querySelector(".loading").style.display="none":setTimeout(loader,10)}loader()</script><script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
+<!DOCTYPE html>
+<html lang='zh-CN'>
+
+<head>
+  <meta name="generator" content="Hexo 6.3.0">
+  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.18.5">
+  <meta charset="utf-8">
+  
+
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  <link rel='dns-prefetch' href='https://jsd.thun888.xyz'>
+  <link rel="preconnect" href="https://jsd.thun888.xyz" crossorigin>
+  <link rel='dns-prefetch' href='//unpkg.com'>
+
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#f8f8f8">
+  
+  <title>Artalk-doc：FAQ - Thun888</title>
+
+  
+    <meta name="description" content="Q:使用Artalk时一直转圈无法加载  A:打开artalk.js，搜索5e3，5e3即5x10³，5000对应5s，把它改为6e4即60s   Q:提交评论卡死  A:Issue #6 · ArtalkJS&#x2F;Artalk (github.com)   如果禁用pcntl_fork()函数会导致无法发信及评论完成页面不刷新     Q:CORS跨域问题？  A:检查配置文件中的博客名">
+<meta property="og:type" content="website">
+<meta property="og:title" content="FAQ">
+<meta property="og:url" content="https://blog.thun888.xyz/wiki/Artalk/QandA/">
+<meta property="og:site_name" content="Thun888">
+<meta property="og:description" content="Q:使用Artalk时一直转圈无法加载  A:打开artalk.js，搜索5e3，5e3即5x10³，5000对应5s，把它改为6e4即60s   Q:提交评论卡死  A:Issue #6 · ArtalkJS&#x2F;Artalk (github.com)   如果禁用pcntl_fork()函数会导致无法发信及评论完成页面不刷新     Q:CORS跨域问题？  A:检查配置文件中的博客名">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://bu.dusays.com/2021/07/29/b577b44674270.png">
+<meta property="og:image" content="https://raw.thun888.xyz/thun888/tuku/master/img/image-20210803115954976.png">
+<meta property="og:image" content="https://raw.thun888.xyz/thun888/tuku/master/img/image-20210803120135574.png">
+<meta property="article:published_time" content="2022-12-26T11:12:20.464Z">
+<meta property="article:modified_time" content="2022-02-12T22:33:00.000Z">
+<meta property="article:author" content="thun888">
+<meta property="article:tag" content="喵~|thun888&#39;s Blog">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://bu.dusays.com/2021/07/29/b577b44674270.png">
+  
+  
+
+  <!-- feed -->
+  
+    <link rel="alternate" href="/atom.xml" title="Thun888" type="application/atom+xml">
+  
+
+  
+    
+<link rel="stylesheet" href="/css/main.css">
+
+  
+
+  
+
+  
+
+  
+
+
+  
+<link rel="stylesheet" href="https://jsd.thun888.xyz/npm/lxgw-wenkai-screen-webfont@1.1.0/lxgwwenkaiscreen.css" media="all">
+<link rel="stylesheet" href="https://jsd.thun888.xyz/npm/notyf@3/notyf.min.css">
+<link rel="stylesheet" href="/mcss/mcss.css">                                                                            
+</head>
+
+<body>
+  
+
+
+
+
+  <div class='l_body' id='start'>
+    <aside class='l_left' layout='wiki'>
+    
+
+  
+
+
+
+
+<div class="widgets"><widget class="widget-wrapper logo-wrap wiki"><div class="widget-body"><a style="filter: grayscale(100%)" class="wiki-home cap" href="/"><svg aria-hidden="true" viewBox="0 0 16 16" width="1rem" height="1rem" fill="currentColor"><path fill-rule="evenodd" d="M7.78 12.53a.75.75 0 01-1.06 0L2.47 8.28a.75.75 0 010-1.06l4.25-4.25a.75.75 0 011.06 1.06L4.81 7h7.44a.75.75 0 010 1.5H4.81l2.97 2.97a.75.75 0 010 1.06z"></path></svg>所有项目</a><a class="title" href="/wiki/Artalk/"><div class="main" ff="title">Artalk-doc</div><div class="sub cap">一个Artalk的非官方文档</div></a></div></widget>
+<widget class="widget-wrapper search"><div class="widget-body"><div class="search-wrapper" id="search"><form class="search-form"><input type="text" class="search-input" id="search-input" data-filter="/wiki/Artalk/" placeholder="在 /wiki/Artalk/ 中搜索"><svg t="1670596976048" class="icon search-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2676" width="200" height="200"><path d="M938.2 832.6L723.8 618.1c-2.5-2.5-5.3-4.4-7.9-6.4 36.2-55.6 57.3-121.8 57.3-193.1C773.3 222.8 614.6 64 418.7 64S64 222.8 64 418.6c0 195.9 158.8 354.6 354.6 354.6 71.3 0 137.5-21.2 193.2-57.4 2 2.7 3.9 5.4 6.3 7.8L832.5 938c14.6 14.6 33.7 21.9 52.8 21.9 19.1 0 38.2-7.3 52.8-21.8 29.2-29.1 29.2-76.4 0.1-105.5M418.7 661.3C284.9 661.3 176 552.4 176 418.6 176 284.9 284.9 176 418.7 176c133.8 0 242.6 108.9 242.6 242.7 0 133.7-108.9 242.6-242.6 242.6" p-id="2677"></path></svg></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div></div></widget>
+
+<widget class="widget-wrapper ghrepo"><div class="widget-body"><div class="items stellar-ghinfo-api" api="https://api.github.com/repos/ArtalkJS/Artalk"><a class="repo" href="https://github.com/ArtalkJS/Artalk" target="_blank" rel="external nofollow noopener noreferrer"><div class="repo-name flex-row"><svg aria-hidden="true" role="img" class="color-icon-primary" viewBox="0 0 16 16" width="1em" height="1em" fill="currentColor" style="user-select:none;overflow:visible"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>ArtalkJS/Artalk</div><div class="repo-desc"><span type="text" id="description">&nbsp;</span></div><div class="grid"><div class="flex-row"><svg aria-hidden="true" role="img" class="color-icon-primary" viewBox="0 0 16 16" width="1em" height="1em" fill="currentColor" style="user-select:none;overflow:visible"><path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"></path></svg><span type="text" id="stargazers_count"></span></div><div class="flex-row"><svg aria-hidden="true" role="img" class="color-icon-primary" viewBox="0 0 16 16" width="1em" height="1em" fill="currentColor" style="user-select:none;overflow:visible"><path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"></path></svg><span type="text" id="forks_count"></span></div><div class="flex-row stellar-ghinfo-api" index="0" api="https://api.github.com/repos/ArtalkJS/Artalk/tags"><svg aria-hidden="true" role="img" class="color-icon-primary" viewBox="0 0 16 16" width="1em" height="1em" fill="currentColor" style="user-select:none;overflow:visible"><path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"></path></svg><span type="text" id="latest-tag-name">0</span></div></div></a></div></div></widget>
+
+
+<widget class="widget-wrapper toc multi" id="data-toc"><div class="widget-header cap dis-select"><span class="name">FAQ</span></div><div class="widget-body fs14"><div class="doc-tree"><a class="doc-tree-link" href="/wiki/Artalk/#start"><span class="toc-text">About Artalk</span></a></div><div class="doc-tree"><a class="doc-tree-link" href="/wiki/Artalk/install/"><span class="toc-text">安装（PHP）</span></a></div><div class="doc-tree"><a class="doc-tree-link" href="/wiki/Artalk/install-go/"><span class="toc-text">安装（GO）</span></a></div><div class="doc-tree"><a class="doc-tree-link" href="/wiki/Artalk/use/"><span class="toc-text">使用</span></a></div><div class="doc-tree"><a class="doc-tree-link" href="/wiki/Artalk/API/"><span class="toc-text">API</span></a></div><div class="doc-tree"><a class="doc-tree-link" href="/wiki/Artalk/develop/"><span class="toc-text">开发</span></a></div><div class="doc-tree active"><a class="doc-tree-link active" href="/wiki/Artalk/QandA/"><span class="toc-text">FAQ</span></a></div><div class="doc-tree"><a class="doc-tree-link" href="/wiki/Artalk/play/"><span class="toc-text">娱乐向</span></a></div><div class="doc-tree"><a class="doc-tree-link" href="/wiki/Artalk/more-url/"><span class="toc-text">相关链接</span></a></div></div></widget>
+
+<widget class="widget-wrapper timeline"><div class="widget-body fs14"><div class="tag-plugin timeline stellar-timeline-api" api="https://api.github.com/repos/ArtalkJS/Artalk/issues?per_page=3"></div></div></widget>
+
+
+</div>
+<a href="https://www.foreverblog.cn/go.html" target="_blank"> <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.foreverblog.cn/wormhole_4_tp.gif" alt="" style="width:auto;height:32px;" title="穿梭虫洞-随机访问十年之约友链博客"></a>
+<a href="https://travellings.link/" target="_blank" rel="noopener" title="开往-友链接力"><img no-lazy src="https://raw.thun888.xyz/travellings-link/travellings/master/assets/travelling.gif" data-src="https://raw.thun888.xyz/travellings-link/travellings/master/assets/travelling.gif" alt="开往-友链接力" width="120" data-ll-status="loaded" onerror="javascript:this.classList.add('error');this.src='/img/svg/2659360.svg';"></a>
+
+
+    </aside>
+    <div class='l_main'>
+      
+
+      
+
+  
+  
+<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" id="home" href="/">主页</a><span class="sep"></span><a class="cap breadcrumb" id="menu" href="/wiki/">项目</a><span class="sep"></span><a class="cap breadcrumb" id="proj" href="/wiki/Artalk/">Artalk-doc</a></div><div id="post-meta">更新于&nbsp;<time datetime="2022-02-12T22:33:00.000Z">2022-02-12</time></div></div>
+
+  <article class='md-text content wiki'>
+  <h1 class="article-title"><span>FAQ</span></h1>
+  <ul>
+<li><p>Q:使用Artalk时一直转圈无法加载</p>
+<ul>
+<li>A:打开artalk.js，搜索5e3，5e3即5x10³，5000对应5s，把它改为6e4即60s</li>
+</ul>
+</li>
+<li><p>Q:提交评论卡死</p>
+<ul>
+<li><p>A:<a target="_blank" rel="noopener" href="https://github.com/ArtalkJS/Artalk/issues/6">Issue #6 · ArtalkJS&#x2F;Artalk (github.com)</a></p>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://bu.dusays.com/2021/07/29/b577b44674270.png"></p>
+<blockquote>
+<p>如果禁用pcntl_fork()函数会导致无法发信及评论完成页面不刷新</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>Q:CORS跨域问题？</p>
+<ul>
+<li>A:检查配置文件中的博客名称中是否有<code>‘</code>，如果没有就检查下配置文件有没有哪里有问题，<del>如果不是Artalk的问题就去百度</del></li>
+</ul>
+</li>
+<li><p>Q:”传送门“跳转到404<br><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.thun888.xyz/thun888/tuku/master/img/image-20210803115954976.png" alt="image-20210803115954976"></p>
+<ul>
+<li><p>A:打开&#x2F;email-tpl&#x2F;default.html，在第6行前加上自己的博客链接</p>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.thun888.xyz/thun888/tuku/master/img/image-20210803120135574.png" alt="image-20210803120135574"></p>
+</li>
+</ul>
+</li>
+</ul>
+<p>（内容待补充）</p>
+
+  
+
+
+  </article>
+  
+<div class="related-wrap reveal" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">回顾上一篇</div><a href="/wiki/Artalk/API/">API</a></div><div class="item" id="next"><div class="note">接下来阅读</div><a href="/wiki/Artalk/play/">娱乐向</a></div></section></div>
+
+  
+
+  <div class='related-wrap md-text reveal' id="comments">
+    <section class='header cmt-title cap theme'>
+      快来参与讨论吧
+    </section>
+    <section class='body cmt-body artalk'>
+      
+
+<div id="artalk_container"><svg class="loading" style="vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg></div>
+    </section>
+  </div>
+
+
+
+
+      
+<center><span class="page-footer fs12" id="timeDate">载入天数...</span><span class="page-footer fs12">&</span><span class="page-footer fs12" id="times">载入时分秒...</span></center>
+<footer class="page-footer reveal fs12"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs14">博客</span><a href="/big/">大事记</a><a target="_blank" rel="noopener" href="https://notes.thun888.xyz/">随记</a><a href="/archives/">归档</a></div><div class="sitemap-group"><span class="fs14">项目</span><a href="/wiki/%E6%9D%82%E7%89%A9%E9%97%B4/">杂物</a></div><div class="sitemap-group"><span class="fs14">社交</span><a href="/friends/">友链</a><a href="/say/">留言板</a><a target="_blank" rel="noopener" href="https://space.bilibili.com/451090261">BiliBili</a><a href="mailto:thun888@qq.com">邮箱</a></div><div class="sitemap-group"><span class="fs14">更多</span><a href="/about/">关于本站</a><a target="_blank" rel="noopener" href="https://pan.thun888.xyz">云盘</a><a target="_blank" rel="noopener" href="https://git.thun888.xyz">Gitea</a></div></div><div class="text"><p>本站由 <a href="/">@thun888</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar">Stellar</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+<script>!function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"JnLm5m7MJcDkpWaM",ck:"JnLm5m7MJcDkpWaM"});</script>
+</div></footer>
+<script src="https://jsd.thun888.xyz/npm/notyf@3/notyf.min.js"></script>
+
+
+      <div class='float-panel mobile-only blur' style='display:none'>
+  <button type='button' class='sidebar-toggle mobile' onclick='sidebar.toggle()'>
+    <svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15301"><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 2.3 26.8 24.6 47.5 51.6 47.6h416.5v4z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15302"></path><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 1.9 27.7 23.9 49.7 51.6 51.6h416.5z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15303"></path></svg>
+  </button>
+</div>
+
+    </div>
+  </div>
+  <div class='scripts'>
+    <script type="text/javascript">
+  const stellar = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    loadCSS: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    // 从 butterfly 和 volantis 获得灵感
+    loadScript: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    // https://github.com/jerryc127/hexo-theme-butterfly
+    jQuery: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        stellar.loadScript(stellar.plugins.jQuery).then(fn)
+      } else {
+        fn()
+      }
+    }
+  };
+  stellar.version = '1.18.5';
+  stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/1.18.5';
+  stellar.config = {
+    date_suffix: {
+      just: '刚刚',
+      min: '分钟前',
+      hour: '小时前',
+      day: '天前',
+      month: '个月前',
+    },
+  };
+
+  // required plugins (only load if needs)
+  stellar.plugins = {
+    jQuery: 'https://jsd.thun888.xyz/npm/jquery@3.6.2/dist/jquery.min.js'
+  };
+
+  if ('local_search') {
+    stellar.search = {};
+    stellar.search.service = 'local_search';
+    if (stellar.search.service == 'local_search') {
+      let service_obj = Object.assign({}, {"field":"all","path":"/search.json","content":true,"sort":"-date"});
+      stellar.search[stellar.search.service] = service_obj;
+    }
+  }
+
+  // stellar js
+  stellar.plugins.stellar = Object.assign({"sites":"/js/plugins/sites.js","friends":"/js/plugins/friends.js","ghinfo":"/js/plugins/ghinfo.js","timeline":"/js/plugins/timeline.js","linkcard":"/js/plugins/linkcard.js","fcircle":"/js/plugins/fcircle.js","weibo":"/js/plugins/weibo.js"});
+
+  stellar.plugins.marked = Object.assign("https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js");
+  // optional plugins
+  if ('true' == 'true') {
+    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://jsd.thun888.xyz/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js","transition":"blur"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.css","js":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.js"});
+  }
+  if ('' == 'true') {
+    stellar.plugins.scrollreveal = Object.assign({"enable":null,"js":"https://jsd.thun888.xyz/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.preload = Object.assign({"enable":true,"service":"flying_pages","instant_page":"https://jsd.thun888.xyz/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js","flying_pages":"https://jsd.thun888.xyz/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.fancybox = Object.assign({"enable":true,"js":"https://jsd.thun888.xyz/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js","css":"https://jsd.thun888.xyz/npm/@fancyapps/ui@4.0/dist/fancybox.css","selector":".swiper-slide img"});
+  }
+  if ('false' == 'true') {
+    stellar.plugins.heti = Object.assign({"enable":false,"css":"https://unpkg.com/heti@0.9.2/umd/heti.min.css","js":"https://unpkg.com/heti@0.9.2/umd/heti-addon.min.js"});
+  }
+</script>
+
+<!-- required -->
+
+  
+<script src="/js/main.js" async></script>
+
+
+
+<!-- optional -->
+
+  <script>
+  function load_artalk() {
+    if (!document.querySelectorAll("#artalk_container")[0]) return;
+    stellar.loadCSS('https://unpkg.com/artalk@2.4.3/dist/Artalk.css');
+    stellar.loadScript('https://unpkg.com/artalk@2.4.3/dist/Artalk.js', {defer: true}).then(function () {
+      const el = document.getElementById("artalk_container");
+      var path = el.getAttribute('comment_id');
+      if (!path) {
+        path = decodeURI(window.location.pathname);
+      }
+      var artalk = new Artalk({
+        el: '#artalk_container',
+        pageKey: path,
+        pageTitle: 'FAQ',
+        server: 'https://artalk.thun888.xyz',
+        placeholder: '此时无声胜有声',
+        site: 'Blog',
+        darkMode: 'auto',
+        emoticons: 'https://raw.thun888.xyz/thun888/asstes/master/files/json/artalk/default.json',
+        })
+      });
+  }
+  window.addEventListener('DOMContentLoaded', (event) => {
+    load_artalk();
+  });
+</script>
+
+
+
+<!-- inject -->
+
+
+  </div>
+<script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
