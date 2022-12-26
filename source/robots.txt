@@ -1,22 +1,2 @@
-#hexo robots.txt
-User-agent: *
-
-Allow: /
-Allow: /archives/
-Allow: /wiki/
-Allow: /tags/
-Allow: /about/
-Allow: /2021/
-Allow: /2020/
-
-
-Disallow: /vendors/
-Disallow: /js/
-Disallow: /css/
-Disallow: /fonts/
-Disallow: /vendors/
-Disallow: /img/
-Disallow: /tuku/
-
-Sitemap: https://blog.thun888.xyz/sitemap.xml
-Sitemap: https://blog.thun888.xyz/baidusitemap.xml
+User-Agent: *
+Allow: /sitemap.xml
