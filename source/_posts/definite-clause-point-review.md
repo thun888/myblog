@@ -2,8 +2,9 @@
 title: 定语从句要点复习（笔记）
 date: 2022-12-31 17:16:23
 tags: 笔记
-cover:
+cover: https://onep.thun888.xyz/mount/pic/2022/12/31/63b003b95b4ed.webp
 updated: 2022-12-31 17:16:23
+description: 网课内容：定语从句要点复习
 ---
 
 ### 要点一：判断
