@@ -103,13 +103,11 @@ of 可表所属关系，抽象点理解可以得到第二种
 
 {% mark as以整个句子作为先行词，翻译为“**正如**” color:orange %}
 
-as is known（众所周知）, / as is said（据说）,/ as is reported（据报道）,
-
-as is announced（据宣布）,/as is expected（据期待）,/as we know（正如我们知道的那样）, as we expect（正如我们期待的那样）,/as often happens（正如经常发生的那样）,/as is often the case（正如通常情况下）,...
+as is known（众所周知）, / as is said（据说）,/ as is reported（据报道）,as is announced（据宣布）,/as is expected（据期待）,/as we know（正如我们知道的那样）, as we expect（正如我们期待的那样）,/as often happens（正如经常发生的那样）,/as is often the case（正如通常情况下）,...
 
 ### 要点八：the way 作为先行词的定语从句*
 
-I don't like {% mark the way color:orange %} that/in which/省略 you speak to your Mom.
+I don't like {% mark the way color:orange %} {% u that/in which/省略 %} you speak to your Mom.
 
 {% mark 通常为that color:orange %}
 
@@ -121,7 +119,7 @@ I don't like {% mark the way color:orange %} that/in which/省略 you speak to y
 
    当先行词被{% mark the only one of color:orange %}修饰，定从谓语用{% mark 单数 color:orange %}；
 
-3.{% mark as和which以整个句子作为先行词 color:orange %}，定从谓语用单数 color:orange %}；
+3.{% mark as和which以整个句子作为先行词 color:orange %}，定从谓语用{% mark 单数 color:orange %}；
 
 > 理解
 
