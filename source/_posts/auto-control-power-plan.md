@@ -9,7 +9,7 @@ description: 之前搞了一套E5扔在角落里吃灰，这几天想起来准�
 
 ### 代码部分
 
-之前搞了一套E5扔在角落里吃灰，这几天想起来准备当nas用。不过在最高频率下运行功率实在恐怖（140w+），在Windows下限制CPU频率心理有频率最简单的就是电源计划了，话不多说{% emoji blobcat ablobcatattentionreverse %}
+之前搞了一套E5扔在角落里吃灰，这几天想起来准备当nas用。不过在最高频率下运行功率实在恐怖（140w+），在Windows下限制CPU频率最简单的就是电源计划了，话不多说{% emoji blobcat ablobcatattentionreverse %}
 
 ```python
 import subprocess
