@@ -7,7 +7,7 @@
 </p>
 
 
-如要申请友链可到[这里](https://blog.thun888.xyz/friends/)~
+如要申请友链可到[这里](https://blog.hzchu.top/friends/)~
 
 由近期调整部署方式，现已开源并合并仓库
 

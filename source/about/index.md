@@ -49,7 +49,7 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 ### 部署方式
 
 我=>提交到Gitea(Github)=>GA进行构建并发布到gh-pages=>Vercel
-如果网站因为种种原因而无法打开可以访问[Cloudflare](https://cfblog.thun888.xyz/)镜像
+如果网站因为种种原因而无法打开可以访问[Cloudflare](https://cfblog.hzchu.top/)镜像
 
 ### 所用到的部分资源
 
@@ -61,15 +61,15 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 
 *您可以在*[*监控站*](https://status.thun888.xyz/)*中查看更多历史运行状况*
 
-**粗体**为`blog.thun888.xyz`所依赖的必须资源
+**粗体**为`blog.hzchu.top`所依赖的必须资源
 
 {% folding child:codeblock open:false color:yellow 状况 %}
 
-- **主站**: <span class="tag-plugin emoji"><img style="height:1.5em" src="https://img.shields.io/website?url=https://blog.thun888.xyz"></span>
+- **主站**: <span class="tag-plugin emoji"><img style="height:1.5em" src="https://img.shields.io/website?url=https://blog.hzchu.top"></span>
 
 - **Github_raw_proxy**:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://img.shields.io/website?url=https://raw.thun888.xyz/thun888/myblog/gh-page/img/satus.png"></span>
 
-- Cloudflare镜像:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://img.shields.io/website?url=https://cfblog.thun888.xyz"></span>
+- Cloudflare镜像:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://img.shields.io/website?url=https://cfblog.hzchu.top"></span>
 
 {% endfolding %}
 

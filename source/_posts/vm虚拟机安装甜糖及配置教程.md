@@ -4,7 +4,7 @@ date: 2021-02-07 10:05:21
 tags: 甜糖
 updated: 2021-02-07 10:05:21
 last: 2021-02-07 10:05:21
-cover: https://blog.thun888.xyz/img/post/54gdf56g4f653g.jpg
+cover: https://blog.hzchu.top/img/post/54gdf56g4f653g.jpg
 ---
 
 #### 背景

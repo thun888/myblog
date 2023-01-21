@@ -32,11 +32,11 @@ layout: post
 ## 吾之链：
 {% codeblock lang:yaml %}
 title: thun888's Blog
-avatar: https://blog.thun888.xyz/img/avatar.webp
-url: https://blog.thun888.xyz
+avatar: https://blog.hzchu.top/img/avatar.webp
+url: https://blog.hzchu.top
 screenshot: https://asstes.thun888.xyz/file/pic-bed/2021/11/blog.thun888.xyz.png
 description: 夏日当空,心如深渊
 {% endcodeblock %}
 
-> 目前已取消自助友联申请，如果你想与我交换友链的话请在下方留言哦！
+> 目前已取消自助友链申请，如果你想与我交换友链的话请在下方留言哦！
 

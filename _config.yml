@@ -14,7 +14,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://blog.thun888.xyz
+url: https://blog.hzchu.top
 permalink: :year/:title/
 permalink_defaults:
 pretty_urls:
@@ -181,7 +181,7 @@ service_worker:
     - urlPattern: /*
       handler: cacheFirst
       options:
-        origin: blog.thun888.xyz
+        origin: blog.hzchu.top
     - urlPattern: /*
       handler: cacheFirst
       options:

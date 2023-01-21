@@ -2,7 +2,7 @@
 title: 高质量地从ico转为svg
 date: 2021-05-03 19:19:00
 tags: [网站,转换]
-cover: https://blog.thun888.xyz/img/post/e6905593f50890da134d5cf2e7ad1541.png
+cover: https://blog.hzchu.top/img/post/e6905593f50890da134d5cf2e7ad1541.png
 description: 使用CorelDRAW将图片转为矢量图
 updated: 2021-05-03 19:19:00
 last: 2021-05-03 19:19:00
