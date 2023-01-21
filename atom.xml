@@ -3,11 +3,11 @@
   <title>Thun888</title>
   
   <subtitle>夏日当空,心如深渊 | thun888.xyz</subtitle>
-  <link href="https://blog.thun888.xyz/atom.xml" rel="self"/>
+  <link href="https://blog.hzchu.top/atom.xml" rel="self"/>
   
-  <link href="https://blog.thun888.xyz/"/>
+  <link href="https://blog.hzchu.top/"/>
   <updated>2023-01-17T19:38:20.000Z</updated>
-  <id>https://blog.thun888.xyz/</id>
+  <id>https://blog.hzchu.top/</id>
   
   <author>
     <name>thun888</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Windows下的电源计划自动控制</title>
-    <link href="https://blog.thun888.xyz/2023/auto-control-power-plan/"/>
-    <id>https://blog.thun888.xyz/2023/auto-control-power-plan/</id>
+    <link href="https://blog.hzchu.top/2023/auto-control-power-plan/"/>
+    <id>https://blog.hzchu.top/2023/auto-control-power-plan/</id>
     <published>2023-01-17T19:07:20.000Z</published>
     <updated>2023-01-17T19:38:20.000Z</updated>
     
@@ -31,14 +31,14 @@
     
     
     
-    <category term="Windows" scheme="https://blog.thun888.xyz/tags/Windows/"/>
+    <category term="Windows" scheme="https://blog.hzchu.top/tags/Windows/"/>
     
   </entry>
   
   <entry>
     <title>定语从句要点复习（笔记）</title>
-    <link href="https://blog.thun888.xyz/2022/definite-clause-point-review/"/>
-    <id>https://blog.thun888.xyz/2022/definite-clause-point-review/</id>
+    <link href="https://blog.hzchu.top/2022/definite-clause-point-review/"/>
+    <id>https://blog.hzchu.top/2022/definite-clause-point-review/</id>
     <published>2022-12-31T17:16:23.000Z</published>
     <updated>2022-12-31T17:16:23.000Z</updated>
     
@@ -50,14 +50,14 @@
     
     
     
-    <category term="笔记" scheme="https://blog.thun888.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://blog.hzchu.top/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>更便利地操控表彰大会--AHK</title>
-    <link href="https://blog.thun888.xyz/2022/Easier-Control-of-Recognition-Conferences-AHK/"/>
-    <id>https://blog.thun888.xyz/2022/Easier-Control-of-Recognition-Conferences-AHK/</id>
+    <link href="https://blog.hzchu.top/2022/Easier-Control-of-Recognition-Conferences-AHK/"/>
+    <id>https://blog.hzchu.top/2022/Easier-Control-of-Recognition-Conferences-AHK/</id>
     <published>2022-12-25T14:44:07.000Z</published>
     <updated>2022-12-25T14:44:07.000Z</updated>
     
@@ -69,14 +69,14 @@
     
     
     
-    <category term="AHK" scheme="https://blog.thun888.xyz/tags/AHK/"/>
+    <category term="AHK" scheme="https://blog.hzchu.top/tags/AHK/"/>
     
   </entry>
   
   <entry>
     <title>使用Python半自动生成Altium原理图封装</title>
-    <link href="https://blog.thun888.xyz/2022/ptyhon-with-altium-designer/"/>
-    <id>https://blog.thun888.xyz/2022/ptyhon-with-altium-designer/</id>
+    <link href="https://blog.hzchu.top/2022/ptyhon-with-altium-designer/"/>
+    <id>https://blog.hzchu.top/2022/ptyhon-with-altium-designer/</id>
     <published>2022-07-14T12:29:32.000Z</published>
     <updated>2022-07-14T12:29:32.000Z</updated>
     
@@ -88,14 +88,14 @@
     
     
     
-    <category term="python" scheme="https://blog.thun888.xyz/tags/python/"/>
+    <category term="python" scheme="https://blog.hzchu.top/tags/python/"/>
     
   </entry>
   
   <entry>
     <title>2021旧年总结</title>
-    <link href="https://blog.thun888.xyz/2022/2021%E6%97%A7%E5%B9%B4%E6%80%BB%E7%BB%93/"/>
-    <id>https://blog.thun888.xyz/2022/2021%E6%97%A7%E5%B9%B4%E6%80%BB%E7%BB%93/</id>
+    <link href="https://blog.hzchu.top/2022/2021%E6%97%A7%E5%B9%B4%E6%80%BB%E7%BB%93/"/>
+    <id>https://blog.hzchu.top/2022/2021%E6%97%A7%E5%B9%B4%E6%80%BB%E7%BB%93/</id>
     <published>2022-01-31T21:37:15.000Z</published>
     <updated>2022-02-01T12:54:15.000Z</updated>
     
@@ -107,14 +107,14 @@
     
     
     
-    <category term="yearreport" scheme="https://blog.thun888.xyz/tags/yearreport/"/>
+    <category term="yearreport" scheme="https://blog.hzchu.top/tags/yearreport/"/>
     
   </entry>
   
   <entry>
     <title>把玩intel的开发服务器</title>
-    <link href="https://blog.thun888.xyz/2021/%E6%8A%8A%E7%8E%A9intel%E7%9A%84%E5%BC%80%E5%8F%91%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    <id>https://blog.thun888.xyz/2021/%E6%8A%8A%E7%8E%A9intel%E7%9A%84%E5%BC%80%E5%8F%91%E6%9C%8D%E5%8A%A1%E5%99%A8/</id>
+    <link href="https://blog.hzchu.top/2021/%E6%8A%8A%E7%8E%A9intel%E7%9A%84%E5%BC%80%E5%8F%91%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    <id>https://blog.hzchu.top/2021/%E6%8A%8A%E7%8E%A9intel%E7%9A%84%E5%BC%80%E5%8F%91%E6%9C%8D%E5%8A%A1%E5%99%A8/</id>
     <published>2021-08-08T13:59:03.000Z</published>
     <updated>2021-08-08T13:59:03.000Z</updated>
     
@@ -126,14 +126,14 @@
     
     
     
-    <category term="Intel" scheme="https://blog.thun888.xyz/tags/Intel/"/>
+    <category term="Intel" scheme="https://blog.hzchu.top/tags/Intel/"/>
     
   </entry>
   
   <entry>
     <title>解决Cloudflare Wrangler无法获取授权</title>
-    <link href="https://blog.thun888.xyz/2021/%E8%A7%A3%E5%86%B3Cloudflare-Wrangler%E6%97%A0%E6%B3%95%E8%8E%B7%E5%8F%96%E6%8E%88%E6%9D%83/"/>
-    <id>https://blog.thun888.xyz/2021/%E8%A7%A3%E5%86%B3Cloudflare-Wrangler%E6%97%A0%E6%B3%95%E8%8E%B7%E5%8F%96%E6%8E%88%E6%9D%83/</id>
+    <link href="https://blog.hzchu.top/2021/%E8%A7%A3%E5%86%B3Cloudflare-Wrangler%E6%97%A0%E6%B3%95%E8%8E%B7%E5%8F%96%E6%8E%88%E6%9D%83/"/>
+    <id>https://blog.hzchu.top/2021/%E8%A7%A3%E5%86%B3Cloudflare-Wrangler%E6%97%A0%E6%B3%95%E8%8E%B7%E5%8F%96%E6%8E%88%E6%9D%83/</id>
     <published>2021-07-29T18:18:05.000Z</published>
     <updated>2021-07-29T18:18:05.000Z</updated>
     
@@ -148,14 +148,14 @@
     
     
     
-    <category term="Clouddlare" scheme="https://blog.thun888.xyz/tags/Clouddlare/"/>
+    <category term="Clouddlare" scheme="https://blog.hzchu.top/tags/Clouddlare/"/>
     
   </entry>
   
   <entry>
     <title>解决VSCode安装Go扩展报错</title>
-    <link href="https://blog.thun888.xyz/2021/%E8%A7%A3%E5%86%B3VSCode%E5%AE%89%E8%A3%85Go%E6%89%A9%E5%B1%95%E6%8A%A5%E9%94%99/"/>
-    <id>https://blog.thun888.xyz/2021/%E8%A7%A3%E5%86%B3VSCode%E5%AE%89%E8%A3%85Go%E6%89%A9%E5%B1%95%E6%8A%A5%E9%94%99/</id>
+    <link href="https://blog.hzchu.top/2021/%E8%A7%A3%E5%86%B3VSCode%E5%AE%89%E8%A3%85Go%E6%89%A9%E5%B1%95%E6%8A%A5%E9%94%99/"/>
+    <id>https://blog.hzchu.top/2021/%E8%A7%A3%E5%86%B3VSCode%E5%AE%89%E8%A3%85Go%E6%89%A9%E5%B1%95%E6%8A%A5%E9%94%99/</id>
     <published>2021-07-26T18:37:56.000Z</published>
     <updated>2021-07-26T18:37:56.000Z</updated>
     
@@ -174,14 +174,14 @@
     
     
     
-    <category term="Go" scheme="https://blog.thun888.xyz/tags/Go/"/>
+    <category term="Go" scheme="https://blog.hzchu.top/tags/Go/"/>
     
   </entry>
   
   <entry>
     <title>为Stellar主题添加HPP的&quot;说说&quot;功能</title>
-    <link href="https://blog.thun888.xyz/2021/%E4%B8%BAStellar%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0HPP%E8%AF%B4%E8%AF%B4%E5%8A%9F%E8%83%BD/"/>
-    <id>https://blog.thun888.xyz/2021/%E4%B8%BAStellar%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0HPP%E8%AF%B4%E8%AF%B4%E5%8A%9F%E8%83%BD/</id>
+    <link href="https://blog.hzchu.top/2021/%E4%B8%BAStellar%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0HPP%E8%AF%B4%E8%AF%B4%E5%8A%9F%E8%83%BD/"/>
+    <id>https://blog.hzchu.top/2021/%E4%B8%BAStellar%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0HPP%E8%AF%B4%E8%AF%B4%E5%8A%9F%E8%83%BD/</id>
     <published>2021-07-15T20:09:32.000Z</published>
     <updated>2021-07-15T20:09:32.000Z</updated>
     
@@ -193,14 +193,14 @@
     
     
     
-    <category term="blog" scheme="https://blog.thun888.xyz/tags/blog/"/>
+    <category term="blog" scheme="https://blog.hzchu.top/tags/blog/"/>
     
   </entry>
   
   <entry>
     <title>优化Oneindex的nexmoe主题的加载速度</title>
-    <link href="https://blog.thun888.xyz/2021/%E4%BC%98%E5%8C%96Oneindex%E7%9A%84nexmoe%E4%B8%BB%E9%A2%98%E7%9A%84%E5%8A%A0%E8%BD%BD%E9%80%9F%E5%BA%A6/"/>
-    <id>https://blog.thun888.xyz/2021/%E4%BC%98%E5%8C%96Oneindex%E7%9A%84nexmoe%E4%B8%BB%E9%A2%98%E7%9A%84%E5%8A%A0%E8%BD%BD%E9%80%9F%E5%BA%A6/</id>
+    <link href="https://blog.hzchu.top/2021/%E4%BC%98%E5%8C%96Oneindex%E7%9A%84nexmoe%E4%B8%BB%E9%A2%98%E7%9A%84%E5%8A%A0%E8%BD%BD%E9%80%9F%E5%BA%A6/"/>
+    <id>https://blog.hzchu.top/2021/%E4%BC%98%E5%8C%96Oneindex%E7%9A%84nexmoe%E4%B8%BB%E9%A2%98%E7%9A%84%E5%8A%A0%E8%BD%BD%E9%80%9F%E5%BA%A6/</id>
     <published>2021-06-10T14:37:59.000Z</published>
     <updated>2021-06-10T14:37:59.000Z</updated>
     
@@ -212,16 +212,16 @@
     
     
     
-    <category term="oneindex" scheme="https://blog.thun888.xyz/tags/oneindex/"/>
+    <category term="oneindex" scheme="https://blog.hzchu.top/tags/oneindex/"/>
     
-    <category term="web" scheme="https://blog.thun888.xyz/tags/web/"/>
+    <category term="web" scheme="https://blog.hzchu.top/tags/web/"/>
     
   </entry>
   
   <entry>
     <title>记一次简单的水卡破解</title>
-    <link href="https://blog.thun888.xyz/2021/%E8%AE%B0%E4%B8%80%E6%AC%A1%E7%AE%80%E5%8D%95%E7%9A%84%E6%B0%B4%E5%8D%A1%E7%A0%B4%E8%A7%A3/"/>
-    <id>https://blog.thun888.xyz/2021/%E8%AE%B0%E4%B8%80%E6%AC%A1%E7%AE%80%E5%8D%95%E7%9A%84%E6%B0%B4%E5%8D%A1%E7%A0%B4%E8%A7%A3/</id>
+    <link href="https://blog.hzchu.top/2021/%E8%AE%B0%E4%B8%80%E6%AC%A1%E7%AE%80%E5%8D%95%E7%9A%84%E6%B0%B4%E5%8D%A1%E7%A0%B4%E8%A7%A3/"/>
+    <id>https://blog.hzchu.top/2021/%E8%AE%B0%E4%B8%80%E6%AC%A1%E7%AE%80%E5%8D%95%E7%9A%84%E6%B0%B4%E5%8D%A1%E7%A0%B4%E8%A7%A3/</id>
     <published>2021-05-04T16:28:00.000Z</published>
     <updated>2021-05-04T16:28:00.000Z</updated>
     
@@ -236,14 +236,14 @@
     
     
     
-    <category term="free" scheme="https://blog.thun888.xyz/tags/free/"/>
+    <category term="free" scheme="https://blog.hzchu.top/tags/free/"/>
     
   </entry>
   
   <entry>
     <title>高质量地从ico转为svg</title>
-    <link href="https://blog.thun888.xyz/2021/%E9%AB%98%E8%B4%A8%E9%87%8F%E5%9C%B0%E4%BB%8Eico%E8%BD%AC%E4%B8%BAsvg/"/>
-    <id>https://blog.thun888.xyz/2021/%E9%AB%98%E8%B4%A8%E9%87%8F%E5%9C%B0%E4%BB%8Eico%E8%BD%AC%E4%B8%BAsvg/</id>
+    <link href="https://blog.hzchu.top/2021/%E9%AB%98%E8%B4%A8%E9%87%8F%E5%9C%B0%E4%BB%8Eico%E8%BD%AC%E4%B8%BAsvg/"/>
+    <id>https://blog.hzchu.top/2021/%E9%AB%98%E8%B4%A8%E9%87%8F%E5%9C%B0%E4%BB%8Eico%E8%BD%AC%E4%B8%BAsvg/</id>
     <published>2021-05-03T19:19:00.000Z</published>
     <updated>2021-05-03T19:19:00.000Z</updated>
     
@@ -255,16 +255,16 @@
     
     
     
-    <category term="网站" scheme="https://blog.thun888.xyz/tags/%E7%BD%91%E7%AB%99/"/>
+    <category term="网站" scheme="https://blog.hzchu.top/tags/%E7%BD%91%E7%AB%99/"/>
     
-    <category term="转换" scheme="https://blog.thun888.xyz/tags/%E8%BD%AC%E6%8D%A2/"/>
+    <category term="转换" scheme="https://blog.hzchu.top/tags/%E8%BD%AC%E6%8D%A2/"/>
     
   </entry>
   
   <entry>
     <title>解决小米手机升级MIUI12.5后无法进入谷歌商店</title>
-    <link href="https://blog.thun888.xyz/2021/%E8%A7%A3%E5%86%B3%E5%B0%8F%E7%B1%B3%E6%89%8B%E6%9C%BA%E5%8D%87%E7%BA%A7MIUI12-5%E5%90%8E%E6%97%A0%E6%B3%95%E8%BF%9B%E5%85%A5%E8%B0%B7%E6%AD%8C%E5%95%86%E5%BA%97/"/>
-    <id>https://blog.thun888.xyz/2021/%E8%A7%A3%E5%86%B3%E5%B0%8F%E7%B1%B3%E6%89%8B%E6%9C%BA%E5%8D%87%E7%BA%A7MIUI12-5%E5%90%8E%E6%97%A0%E6%B3%95%E8%BF%9B%E5%85%A5%E8%B0%B7%E6%AD%8C%E5%95%86%E5%BA%97/</id>
+    <link href="https://blog.hzchu.top/2021/%E8%A7%A3%E5%86%B3%E5%B0%8F%E7%B1%B3%E6%89%8B%E6%9C%BA%E5%8D%87%E7%BA%A7MIUI12-5%E5%90%8E%E6%97%A0%E6%B3%95%E8%BF%9B%E5%85%A5%E8%B0%B7%E6%AD%8C%E5%95%86%E5%BA%97/"/>
+    <id>https://blog.hzchu.top/2021/%E8%A7%A3%E5%86%B3%E5%B0%8F%E7%B1%B3%E6%89%8B%E6%9C%BA%E5%8D%87%E7%BA%A7MIUI12-5%E5%90%8E%E6%97%A0%E6%B3%95%E8%BF%9B%E5%85%A5%E8%B0%B7%E6%AD%8C%E5%95%86%E5%BA%97/</id>
     <published>2021-04-30T23:02:58.000Z</published>
     <updated>2021-04-30T23:02:58.000Z</updated>
     
@@ -276,14 +276,14 @@
     
     
     
-    <category term="MIUI" scheme="https://blog.thun888.xyz/tags/MIUI/"/>
+    <category term="MIUI" scheme="https://blog.hzchu.top/tags/MIUI/"/>
     
   </entry>
   
   <entry>
     <title>VM虚拟机安装甜糖及配置教程</title>
-    <link href="https://blog.thun888.xyz/2021/vm%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E7%94%9C%E7%B3%96%E5%8F%8A%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/"/>
-    <id>https://blog.thun888.xyz/2021/vm%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E7%94%9C%E7%B3%96%E5%8F%8A%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/</id>
+    <link href="https://blog.hzchu.top/2021/vm%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E7%94%9C%E7%B3%96%E5%8F%8A%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/"/>
+    <id>https://blog.hzchu.top/2021/vm%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E7%94%9C%E7%B3%96%E5%8F%8A%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/</id>
     <published>2021-02-07T10:05:21.000Z</published>
     <updated>2021-02-07T10:05:21.000Z</updated>
     
@@ -298,14 +298,14 @@
     
     
     
-    <category term="甜糖" scheme="https://blog.thun888.xyz/tags/%E7%94%9C%E7%B3%96/"/>
+    <category term="甜糖" scheme="https://blog.hzchu.top/tags/%E7%94%9C%E7%B3%96/"/>
     
   </entry>
   
   <entry>
     <title>搭建Teambition网盘的目录索引</title>
-    <link href="https://blog.thun888.xyz/2021/%E6%90%AD%E5%BB%BATeambition%E7%BD%91%E7%9B%98%E7%9A%84%E7%9B%AE%E5%BD%95%E7%B4%A2%E5%BC%95/"/>
-    <id>https://blog.thun888.xyz/2021/%E6%90%AD%E5%BB%BATeambition%E7%BD%91%E7%9B%98%E7%9A%84%E7%9B%AE%E5%BD%95%E7%B4%A2%E5%BC%95/</id>
+    <link href="https://blog.hzchu.top/2021/%E6%90%AD%E5%BB%BATeambition%E7%BD%91%E7%9B%98%E7%9A%84%E7%9B%AE%E5%BD%95%E7%B4%A2%E5%BC%95/"/>
+    <id>https://blog.hzchu.top/2021/%E6%90%AD%E5%BB%BATeambition%E7%BD%91%E7%9B%98%E7%9A%84%E7%9B%AE%E5%BD%95%E7%B4%A2%E5%BC%95/</id>
     <published>2021-01-01T09:39:47.000Z</published>
     <updated>2021-01-01T09:39:47.000Z</updated>
     
@@ -321,14 +321,14 @@
     
     
     
-    <category term="web" scheme="https://blog.thun888.xyz/tags/web/"/>
+    <category term="web" scheme="https://blog.hzchu.top/tags/web/"/>
     
   </entry>
   
   <entry>
     <title>用Batocera搭建属于你的游戏天地</title>
-    <link href="https://blog.thun888.xyz/2020/%E7%94%A8batocera%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E4%BD%A0%E7%9A%84%E6%B8%B8%E6%88%8F%E5%A4%A9%E5%9C%B0/"/>
-    <id>https://blog.thun888.xyz/2020/%E7%94%A8batocera%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E4%BD%A0%E7%9A%84%E6%B8%B8%E6%88%8F%E5%A4%A9%E5%9C%B0/</id>
+    <link href="https://blog.hzchu.top/2020/%E7%94%A8batocera%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E4%BD%A0%E7%9A%84%E6%B8%B8%E6%88%8F%E5%A4%A9%E5%9C%B0/"/>
+    <id>https://blog.hzchu.top/2020/%E7%94%A8batocera%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E4%BD%A0%E7%9A%84%E6%B8%B8%E6%88%8F%E5%A4%A9%E5%9C%B0/</id>
     <published>2020-11-14T17:42:35.000Z</published>
     <updated>2020-11-14T17:42:35.000Z</updated>
     
@@ -345,7 +345,7 @@
     
     
     
-    <category term="linux" scheme="https://blog.thun888.xyz/tags/linux/"/>
+    <category term="linux" scheme="https://blog.hzchu.top/tags/linux/"/>
     
   </entry>
   
