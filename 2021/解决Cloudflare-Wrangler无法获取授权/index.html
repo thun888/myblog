@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang='zh-CN'>
 
-<head>
-  <meta name="generator" content="Hexo 6.3.0">
-  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.18.5">
-  <meta charset="utf-8">
-  
 
-  <meta http-equiv='x-dns-prefetch-control' content='on' />
-  <link rel='dns-prefetch' href='https://jsd.hzchu.top'>
-  <link rel="preconnect" href="https://jsd.hzchu.top" crossorigin>
-  <link rel='dns-prefetch' href='//unpkg.com'>
+    <head>
+        <meta name="generator" content="Hexo 6.3.0">
+            <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.18.5">
+            <meta charset="utf-8">
+            
 
-  <meta name="renderer" content="webkit">
-  <meta name="force-rendering" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-  <meta name="HandheldFriendly" content="True" >
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="theme-color" content="#f8f8f8">
-  
-  <title>解决Cloudflare Wrangler无法获取授权 - Thun888</title>
+                <meta http-equiv='x-dns-prefetch-control' content='on' />
+                <link rel='dns-prefetch' href='https://jsd.hzchu.top'>
+                <link rel="preconnect" href="https://jsd.hzchu.top" crossorigin>
+                <link rel='dns-prefetch' href='//unpkg.com'>
 
-  
-    <meta name="description" content="前言昨天，因为要本地提交点东西到worker就装了Wrangler，没想到啊，它就这么卡着不动了（在waiting for api token那里我等了半个世纪） 方法 在刚刚的授权页面点击API令牌   点投放–copy    输入wrangler config,粘贴刚刚copy的token     回车后看到sucess就好了    后写的时侯为了截图换了个账号，然后它能用了~~~~">
+                <meta name="baidu-site-verification" content="codeva-tIYplL9wDO" />
+                <meta name="renderer" content="webkit">
+                <meta name="force-rendering" content="webkit">
+                <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+                <meta name="HandheldFriendly" content="True">
+                <meta name="apple-mobile-web-app-capable" content="yes">
+                <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+                <meta name="theme-color" content="#f8f8f8">
+
+                <title>
+                    解决Cloudflare Wrangler无法获取授权 - Thun888
+                </title>
+
+                
+                    <meta name="description" content="前言昨天，因为要本地提交点东西到worker就装了Wrangler，没想到啊，它就这么卡着不动了（在waiting for api token那里我等了半个世纪） 方法 在刚刚的授权页面点击API令牌   点投放–copy    输入wrangler config,粘贴刚刚copy的token     回车后看到sucess就好了    后写的时侯为了截图换了个账号，然后它能用了~~~~">
 <meta property="og:type" content="article">
 <meta property="og:title" content="解决Cloudflare Wrangler无法获取授权">
 <meta property="og:url" content="https://blog.hzchu.top/2021/%E8%A7%A3%E5%86%B3Cloudflare-Wrangler%E6%97%A0%E6%B3%95%E8%8E%B7%E5%8F%96%E6%8E%88%E6%9D%83/">
@@ -43,33 +47,32 @@
 <meta property="article:tag" content="Clouddlare">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://k.hzchu.top/2022/08/18/62fde84075a94.png">
-  
-  
+                        
+                            
 
-  <!-- feed -->
-  
-    <link rel="alternate" href="/atom.xml" title="Thun888" type="application/atom+xml">
-  
+                                <!-- feed -->
+                                
+                                    <link rel="alternate" href="/atom.xml" title="Thun888" type="application/atom+xml">
+                                        
 
-  
-    
+                                            
+                                                        
 <link rel="stylesheet" href="/css/main.css">
 
-  
+                                                            
 
-  
+                                                                
 
-  
+                                                                            
 
-  
+                                                                                        
 
 
-  
-<link rel="stylesheet" href="https://jsd.hzchu.top/npm/lxgw-wenkai-screen-webfont@1.1.0/lxgwwenkaiscreen.css" media="all">
-<link rel="stylesheet" href="https://jsd.hzchu.top/npm/notyf@3/notyf.min.css">
-<link rel="stylesheet" href="/mcss/mcss.css">                                                                            
-</head>
-
+                                                                                                            
+                                                                                                                                <link rel="stylesheet" href="https://jsd.hzchu.top/npm/lxgw-wenkai-screen-webfont@1.1.0/lxgwwenkaiscreen.css" media="all">
+                                                                                                                                <link rel="stylesheet" href="https://jsd.hzchu.top/npm/notyf@3/notyf.min.css">
+                                                                                                                                <link rel="stylesheet" href="/mcss/mcss.css">
+    </head>
 <body>
   
 
