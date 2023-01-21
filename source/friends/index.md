@@ -31,7 +31,7 @@ layout: post
 
 ## 吾之链：
 {% codeblock lang:yaml %}
-title: thun888's Blog
+title: Thun888's Blog
 avatar: https://blog.hzchu.top/img/avatar.webp
 url: https://blog.hzchu.top
 screenshot: https://onep.hzchu.top/mount/pic/blog-hzchu-top.png
