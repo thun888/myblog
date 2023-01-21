@@ -1261,11 +1261,11 @@ nav.cap a+a {
 }
 .paginator-wrap .extend.next {
   border-left: 1px dashed var(--block-border);
-  background-image: url("https://jsd.thun888.xyz/gh/cdn-x/placeholder@1.0.4/arrow/064b95430caf4.svg");
+  background-image: url("https://jsd.hzchu.top/gh/cdn-x/placeholder@1.0.4/arrow/064b95430caf4.svg");
 }
 .paginator-wrap .extend.prev {
   border-right: 1px dashed var(--block-border);
-  background-image: url("https://jsd.thun888.xyz/gh/cdn-x/placeholder@1.0.4/arrow/f049bbd4e88ec.svg");
+  background-image: url("https://jsd.hzchu.top/gh/cdn-x/placeholder@1.0.4/arrow/f049bbd4e88ec.svg");
 }
 .paginator-wrap .current {
   font-family: Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif;
@@ -2100,7 +2100,7 @@ details.folding[child=iframe] >div.body {
   margin-bottom: 20px;
 }
 .md-text .frame-wrap#iphone11 .frame {
-  background-image: url("https://jsd.thun888.xyz/gh/cdn-x/placeholder@1.0.4/frame/iphone11.svg");
+  background-image: url("https://jsd.hzchu.top/gh/cdn-x/placeholder@1.0.4/frame/iphone11.svg");
   width: 329px;
   height: 658px;
 }

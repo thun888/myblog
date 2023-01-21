@@ -110,7 +110,7 @@ $(function () {
     var cfg = new Object();
     cfg.el = el;
     cfg.api = api;
-    cfg.avatar = 'https://jsd.thun888.xyz/gh/cdn-x/placeholder@1.0.4/avatar/round/3442075.svg';
+    cfg.avatar = 'https://jsd.hzchu.top/gh/cdn-x/placeholder@1.0.4/avatar/round/3442075.svg';
     weibojs.layoutDiv(cfg);
   }
 });
