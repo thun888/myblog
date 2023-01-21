@@ -65,10 +65,10 @@ comments:
   artalk:
     css: https://unpkg.com/artalk@2.4.3/dist/Artalk.css
     js: https://unpkg.com/artalk@2.4.3/dist/Artalk.js 
-    server: https://artalk.thun888.xyz # 后端服务地址
+    server: https://artalk.hzchu.top # 后端服务地址
     placeholder: '此时无声胜有声'
     site: Blog
-    emoticons: https://raw.thun888.xyz/thun888/asstes/master/files/json/artalk/default.json
+    emoticons: https://raw.hzchu.top/thun888/asstes/master/files/json/artalk/default.json
     darkMode: auto
 
 ######## Footer ########
@@ -82,11 +82,11 @@ footer:
      - icon: '<img src="/img/icons/a1b00e20f425d.svg"/>'
        url: mailto:thun888@qq.com
      - icon: '<img src="/img/icons/20210610162918.svg"/>'
-       url: https://share.thun888.xyz
+       url: https://share.hzchu.top
   sitemap:
      '博客':
        - '[大事记](/big/)'
-       - '[随记](https://notes.thun888.xyz/)'
+       - '[随记](https://notes.hzchu.top/)'
       # - '[后台](https://hexo.orzz.ml/hpp/admin/dash/home/)'
        - '[归档](/archives/)'
      '项目':
@@ -98,8 +98,7 @@ footer:
        - '[邮箱](mailto:thun888@qq.com)'
      '更多':
        - '[关于本站](/about/)'
-       - '[云盘](https://pan.thun888.xyz)'
-       - '[Gitea](https://git.thun888.xyz)'
+       - '[云盘](https://pan.hzchu.top)'
   content: | # 支持 Markdown 格式
     本站由 [@thun888](/) 使用 [Stellar](https://github.com/xaoxuu/hexo-theme-stellar) 主题创建。
     本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。

@@ -4,7 +4,7 @@
 
 # Site
 title: Thun888
-subtitle: 夏日当空,心如深渊 | thun888.xyz
+subtitle: 夏日当空,心如深渊 | hzchu.top
 description: 喵~|thun888's Blog
 keywords: 喵~|thun888's Blog
 author: thun888
@@ -177,7 +177,7 @@ service_worker:
     - urlPattern: /*
       handler: cacheFirst
       options:
-        origin: raw.thun888.xyz
+        origin: raw.hzchu.top
     - urlPattern: /*
       handler: cacheFirst
       options:
@@ -189,5 +189,5 @@ service_worker:
     - urlPattern: /*
       handler: cacheFirst
       options:
-        origin: jsd.thun888.xyz
+        origin: jsd.hzchu.top
         

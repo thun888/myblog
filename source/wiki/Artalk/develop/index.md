@@ -13,26 +13,26 @@ updated: 2022-02-12 22:33:00
 
 官方仓库中是在配置中确定
 
-![image-20210714150341481](https://raw.thun888.xyz/thun888/tuku/master/img/image-20210714150341481.png)
+![image-20210714150341481](https://raw.hzchu.top/thun888/tuku/master/img/image-20210714150341481.png)
 
 不过我不想每个页面都多出这么一句话来拖慢速度（虽然微乎其微但可以减少冗余代码🙃）
 
 - 打开artalk.js,搜索`cdn`
 
-  ![image-20210714150632090](https://raw.thun888.xyz/thun888/tuku/master/img/image-20210714150632090.png)
+  ![image-20210714150632090](https://raw.hzchu.top/thun888/tuku/master/img/image-20210714150632090.png)
 
 - 直接替换就好
 
 #### 自定义表情包
 
-> **仓库里也有，这里作为补充**![image-20210714150859429](https://raw.thun888.xyz/thun888/tuku/master/img/image-20210714150859429.png)
+> **仓库里也有，这里作为补充**![image-20210714150859429](https://raw.hzchu.top/thun888/tuku/master/img/image-20210714150859429.png)
 
 !!! warning 注意
-由于自定义会使原本引入代码长一大截，建议新建一个js再在需要的地方引入![image-20210714151645540](https://raw.thun888.xyz/thun888/tuku/master/img/image-20210714151645540.png)
+由于自定义会使原本引入代码长一大截，建议新建一个js再在需要的地方引入![image-20210714151645540](https://raw.hzchu.top/thun888/tuku/master/img/image-20210714151645540.png)
 
 - 在`new Artalk({`下打个回车，  粘贴`emoticons: eData,`
 
-![image-20210714152524758](https://raw.thun888.xyz/thun888/tuku/master/img/image-20210714152524758.png)
+![image-20210714152524758](https://raw.hzchu.top/thun888/tuku/master/img/image-20210714152524758.png)
 
 - 在`new Artalk({`上粘贴
 
@@ -42,11 +42,11 @@ updated: 2022-02-12 22:33:00
   }
   ```
 
-  ![image-20210714152727550](https://raw.thun888.xyz/thun888/tuku/master/img/image-20210714152727550.png)
+  ![image-20210714152727550](https://raw.hzchu.top/thun888/tuku/master/img/image-20210714152727550.png)
 
 - 打开[表情包配置格式参考](https://raw.fastgit.org/ArtalkJS/Artalk/master/src/assets/emoticons.json)，把`第一个{`和`最后一个}`中的文字复制到let eData = { }中
 
-![image-20210714153133048](https://raw.thun888.xyz/thun888/tuku/master/img/image-20210714153133048.png)
+![image-20210714153133048](https://raw.hzchu.top/thun888/tuku/master/img/image-20210714153133048.png)
 
 - 然后就是自定义了，在复制后的倒数第二个}后加个`,`，在`，`后按回车，按以下格式进行
 
@@ -70,9 +70,9 @@ updated: 2022-02-12 22:33:00
 
 `配置完像这样`
 
-![image-20210714154556238](https://raw.thun888.xyz/thun888/tuku/master/img/image-20210714154556238.png)
+![image-20210714154556238](https://raw.hzchu.top/thun888/tuku/master/img/image-20210714154556238.png)
 
-![image-20210714154729782](https://raw.thun888.xyz/thun888/tuku/master/img/image-20210714154729782.png)
+![image-20210714154729782](https://raw.hzchu.top/thun888/tuku/master/img/image-20210714154729782.png)
 
 #### 自定义按钮文字
 

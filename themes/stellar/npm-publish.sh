@@ -21,7 +21,7 @@ function prepare() {
   sub=${VERSION#*.}
   sub=${sub%%.*}
   jsdelivr=$main'.'$sub
-  sed -i "" "s/\(jsd.thun888.xyz\/npm\/hexo-theme-stellar@[^/]\{1,\}\)/jsd.thun888.xyz\/npm\/hexo-theme-stellar@${jsdelivr}/g" '_config.yml'
+  sed -i "" "s/\(jsd.hzchu.top\/npm\/hexo-theme-stellar@[^/]\{1,\}\)/jsd.hzchu.top\/npm\/hexo-theme-stellar@${jsdelivr}/g" '_config.yml'
 }
 
 # 提交

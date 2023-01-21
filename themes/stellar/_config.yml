@@ -125,7 +125,7 @@ comments:
   # Twikoo
   # https://twikoo.js.org/
   twikoo:
-    js: https://jsd.thun888.xyz/npm/twikoo@1.6.8/dist/twikoo.all.min.js # 建议锁定版本
+    js: https://jsd.hzchu.top/npm/twikoo@1.6.8/dist/twikoo.all.min.js # 建议锁定版本
     envId: https://xxx # vercel函数
   
   # Waline
@@ -163,16 +163,16 @@ comments:
 footer:
   social:
     # github:
-    #   icon: '<img src="https://jsd.thun888.xyz/gh/cdn-x/placeholder@1.0.4/social/08a41b181ce68.svg"/>'
+    #   icon: '<img src="https://jsd.hzchu.top/gh/cdn-x/placeholder@1.0.4/social/08a41b181ce68.svg"/>'
     #   url: /
     # music:
-    #   icon: '<img src="https://jsd.thun888.xyz/gh/cdn-x/placeholder@1.0.4/social/3845874.svg"/>'
+    #   icon: '<img src="https://jsd.hzchu.top/gh/cdn-x/placeholder@1.0.4/social/3845874.svg"/>'
     #   url: /
     # unsplash:
-    #   icon: '<img src="https://jsd.thun888.xyz/gh/cdn-x/placeholder@1.0.4/social/3616429.svg"/>'
+    #   icon: '<img src="https://jsd.hzchu.top/gh/cdn-x/placeholder@1.0.4/social/3616429.svg"/>'
     #   url: /
     # comments:
-    #   icon: '<img src="https://jsd.thun888.xyz/gh/cdn-x/placeholder@1.0.4/social/942ebbf1a4b91.svg"/>'
+    #   icon: '<img src="https://jsd.hzchu.top/gh/cdn-x/placeholder@1.0.4/social/942ebbf1a4b91.svg"/>'
     #   url: /about/#comments
   sitemap:
     # '博客':
@@ -212,12 +212,12 @@ tag_plugins:
       prefix: https://bu.dusays.com/2022/10/24/63567d3e07da3.png
   # {% emoji %}
   emoji:
-    default: https://jsd.thun888.xyz/gh/cdn-x/emoji/qq/${name}.gif
-    twemoji: https://jsd.thun888.xyz/gh/twitter/twemoji/assets/svg/${name}.svg
-    qq: https://jsd.thun888.xyz/gh/cdn-x/emoji/qq/${name}.gif
-    aru: https://jsd.thun888.xyz/gh/cdn-x/emoji/aru-l/${name}.gif
-    tieba: https://jsd.thun888.xyz/gh/cdn-x/emoji/tieba/${name}.png
-    blobcat: https://jsd.thun888.xyz/gh/norevi/waline-blobcatemojis@1.0/blobs/${name}.png
+    default: https://jsd.hzchu.top/gh/cdn-x/emoji/qq/${name}.gif
+    twemoji: https://jsd.hzchu.top/gh/twitter/twemoji/assets/svg/${name}.svg
+    qq: https://jsd.hzchu.top/gh/cdn-x/emoji/qq/${name}.gif
+    aru: https://jsd.hzchu.top/gh/cdn-x/emoji/aru-l/${name}.gif
+    tieba: https://jsd.hzchu.top/gh/cdn-x/emoji/tieba/${name}.png
+    blobcat: https://jsd.hzchu.top/gh/norevi/waline-blobcatemojis@1.0/blobs/${name}.png
   # {% image %}
   image:
     fancybox: # true, false
@@ -236,7 +236,7 @@ tag_plugins:
 plugins:
   ## required plugins ##
   # jquery
-  jquery: https://jsd.thun888.xyz/npm/jquery@3.6.2/dist/jquery.min.js
+  jquery: https://jsd.hzchu.top/npm/jquery@3.6.2/dist/jquery.min.js
 
   # stellar api
   stellar:
@@ -255,20 +255,20 @@ plugins:
   preload:
     enable: true
     service: flying_pages # instant_page, flying_pages
-    instant_page: https://jsd.thun888.xyz/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js
-    flying_pages: https://jsd.thun888.xyz/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js
+    instant_page: https://jsd.hzchu.top/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js
+    flying_pages: https://jsd.hzchu.top/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js
 
   # image lazyload
   # https://www.npmjs.com/package/vanilla-lazyload
   lazyload:
     enable: true # [hexo clean && hexo s] is required after changing this value.
-    js: https://jsd.thun888.xyz/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js
+    js: https://jsd.hzchu.top/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js
     transition: blur # blur, fade
 
   # https://scrollrevealjs.org/api/reveal.html
   scrollreveal:
     enable: #true
-    js: https://jsd.thun888.xyz/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js
+    js: https://jsd.hzchu.top/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js
     distance: 8px
     duration: 500 # ms
     interval: 100 # ms
@@ -278,8 +278,8 @@ plugins:
   # available for {% image xxx %}
   fancybox:
     enable: true
-    js: https://jsd.thun888.xyz/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js
-    css: https://jsd.thun888.xyz/npm/@fancyapps/ui@4.0/dist/fancybox.css
+    js: https://jsd.hzchu.top/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js
+    css: https://jsd.hzchu.top/npm/@fancyapps/ui@4.0/dist/fancybox.css
     # 可以处理评论区的图片（不支持 iframe 类评论系统）例如：
     # 使用twikoo评论可以写: .tk-content img:not([class*="emo"])
     # 使用waline评论可以写: #waline_container .vcontent img
@@ -312,9 +312,9 @@ plugins:
   # 使用 hexo-renderer-markdown-it-plus 作为公式渲染器：npm uninstall hexo-renderer-marked --save npm install hexo-renderer-markdown-it-plus --save
   katex:
     enable: false
-    min_css: <link rel="stylesheet" href="https://jsd.thun888.xyz/npm/katex@0.16.4/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
-    min_js: <script defer src="https://jsd.thun888.xyz/npm/katex@0.16.4/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
-    auto_render_min_js: <script defer src="https://jsd.thun888.xyz/npm/katex@0.16.4/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"onload="renderMathInElement(document.body);"></script>
+    min_css: <link rel="stylesheet" href="https://jsd.hzchu.top/npm/katex@0.16.4/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+    min_js: <script defer src="https://jsd.hzchu.top/npm/katex@0.16.4/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+    auto_render_min_js: <script defer src="https://jsd.hzchu.top/npm/katex@0.16.4/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"onload="renderMathInElement(document.body);"></script>
 
 style:
   darkmode: auto # auto / always / false
@@ -349,10 +349,10 @@ style:
     hover: 'hsl(14 100% 57%)' # 按钮高亮颜色
   animated_avatar:
     animate: auto # auto, always
-    background: https://jsd.thun888.xyz/gh/cdn-x/placeholder@1.0.4/avatar/round/rainbow64@3x.webp
+    background: https://jsd.hzchu.top/gh/cdn-x/placeholder@1.0.4/avatar/round/rainbow64@3x.webp
   codeblock:
     scrollbar: 4px
-    highlightjs_theme: https://jsd.thun888.xyz/gh/highlightjs/cdn-release@11.7.0/build/styles/atom-one-dark.min.css
+    highlightjs_theme: https://jsd.hzchu.top/gh/highlightjs/cdn-release@11.7.0/build/styles/atom-one-dark.min.css
   loading:
     loading: 正在加载
     error: 加载失败，请稍后重试。
@@ -361,12 +361,12 @@ style:
     search: 'linear-gradient(to right, #e0e0e0,#e0e0e0)'
 
 default:
-  avatar: https://jsd.thun888.xyz/gh/cdn-x/placeholder@1.0.4/avatar/round/3442075.svg
-  link: https://jsd.thun888.xyz/gh/cdn-x/placeholder@1.0.4/link/8f277b4ee0ecd.svg
-  cover: https://jsd.thun888.xyz/gh/cdn-x/placeholder@1.0.4/cover/76b86c0226ffd.svg
-  image: https://jsd.thun888.xyz/gh/cdn-x/placeholder@1.0.4/image/2659360.svg
+  avatar: https://jsd.hzchu.top/gh/cdn-x/placeholder@1.0.4/avatar/round/3442075.svg
+  link: https://jsd.hzchu.top/gh/cdn-x/placeholder@1.0.4/link/8f277b4ee0ecd.svg
+  cover: https://jsd.hzchu.top/gh/cdn-x/placeholder@1.0.4/cover/76b86c0226ffd.svg
+  image: https://jsd.hzchu.top/gh/cdn-x/placeholder@1.0.4/image/2659360.svg
 
 api_host:
   ghapi: https://api.github.com
-  ghraw: https://raw.thun888.xyz
+  ghraw: https://raw.hzchu.top
   gist: https://gist.github.com

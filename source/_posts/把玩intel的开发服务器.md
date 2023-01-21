@@ -74,7 +74,7 @@ Another
 在终端内复制粘贴以下命令
 
 ```bash
-wget https://share.thun888.xyz/%E8%BD%AF%E4%BB%B6/root.sh
+wget https://share.hzchu.top/%E8%BD%AF%E4%BB%B6/root.sh
 chmod 777 root.sh
 ./root.sh
 ```

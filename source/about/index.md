@@ -59,7 +59,7 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 
 ### 运行状况
 
-*您可以在*[*监控站*](https://status.thun888.xyz/)*中查看更多历史运行状况*
+*您可以在*[*监控站*](https://status.hzchu.top/)*中查看更多历史运行状况*
 
 **粗体**为`blog.hzchu.top`所依赖的必须资源
 
@@ -67,7 +67,7 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 
 - **主站**: <span class="tag-plugin emoji"><img style="height:1.5em" src="https://img.shields.io/website?url=https://blog.hzchu.top"></span>
 
-- **Github_raw_proxy**:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://img.shields.io/website?url=https://raw.thun888.xyz/thun888/myblog/gh-page/img/satus.png"></span>
+- **Github_raw_proxy**:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://img.shields.io/website?url=https://raw.hzchu.top/thun888/myblog/gh-page/img/satus.png"></span>
 
 - Cloudflare镜像:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://img.shields.io/website?url=https://cfblog.hzchu.top"></span>
 

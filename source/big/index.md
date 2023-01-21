@@ -30,7 +30,7 @@ layout: post
 <!-- node 7/29 -->
 开放友链及留言页面
 <!-- node 7/28 -->
-调整博客域名(thun888.xyz =>blog.thun888.xyz)
+调整博客域名(hzchu.top =>blog.hzchu.top)
 <!-- node 7/20 -->
 1\.添加搜索页面<br>2.完善了下about页面，有空继续
 <!-- node 7/17 -->

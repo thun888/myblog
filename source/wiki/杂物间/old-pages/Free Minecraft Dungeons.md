@@ -16,7 +16,7 @@ order: 12
 游戏本体及汉化文件：onedrive
 
 ```
-http://share.thun888.xyz/GAMES/Minecraft%20Dungeons/
+http://share.hzchu.top/GAMES/Minecraft%20Dungeons/
 ```
 
 Gd

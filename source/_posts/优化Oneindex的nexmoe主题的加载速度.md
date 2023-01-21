@@ -9,19 +9,19 @@ last: 2021-06-10 14:37:59
 
 在一些带宽小的机子上部署Oneindex又用nexmoe主题，就算套了cdn也慢（深有体会）
 
-在学校开来给同学下电影开了十几秒愣是没加载出来<img src="https://raw.thun888.xyz/thun888/jian/master/coolapk_emotion_42_diaoxie.png" style="zoom:25%;" />
+在学校开来给同学下电影开了十几秒愣是没加载出来<img src="https://raw.hzchu.top/thun888/jian/master/coolapk_emotion_42_diaoxie.png" style="zoom:25%;" />
 
 #### 方法
 
 定位到网址目录下的/view/nexmoe
 
-![image-20210610144610288](https://raw.thun888.xyz/thun888/tuku/master/img/20210610144611.png)
+![image-20210610144610288](https://raw.hzchu.top/thun888/tuku/master/img/20210610144611.png)
 
 将框选的（第7行的第11行）
 
 进行替换
 
-![image-20210610145355484](https://raw.thun888.xyz/thun888/tuku/master/img/20210610145355.png)
+![image-20210610145355484](https://raw.hzchu.top/thun888/tuku/master/img/20210610145355.png)
 
 第7行
 
@@ -37,14 +37,14 @@ last: 2021-06-10 14:37:59
 
 like this
 
-![image-20210610145809885](https://raw.thun888.xyz/thun888/tuku/master/img/20210610145809.png)
+![image-20210610145809885](https://raw.hzchu.top/thun888/tuku/master/img/20210610145809.png)
 
 #### 结果
 
 修改前
 
-<img src="https://raw.thun888.xyz/thun888/tuku/master/img/20210610150256.png" alt="image-20210610150255933" style="zoom:67%;" />
+<img src="https://raw.hzchu.top/thun888/tuku/master/img/20210610150256.png" alt="image-20210610150255933" style="zoom:67%;" />
 
 修改后
 
-<img src="https://raw.thun888.xyz/thun888/tuku/master/img/20210610150015.png" alt="image-20210610150015253" style="zoom:67%;" />
+<img src="https://raw.hzchu.top/thun888/tuku/master/img/20210610150015.png" alt="image-20210610150015253" style="zoom:67%;" />

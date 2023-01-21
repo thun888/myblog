@@ -10,42 +10,42 @@ last: 2021-05-03 19:19:00
 
 ##### How
 
-先下载&安装[CorelDRAW](https://share.thun888.xyz/api?path=/%E8%BD%AF%E4%BB%B6/CorelDRAW_X4_SP2_%E7%B2%BE%E7%AE%80%E5%A2%9E%E5%BC%BA%E7%89%88.exe&raw=true)
+先下载&安装[CorelDRAW](https://share.hzchu.top/api?path=/%E8%BD%AF%E4%BB%B6/CorelDRAW_X4_SP2_%E7%B2%BE%E7%AE%80%E5%A2%9E%E5%BC%BA%E7%89%88.exe&raw=true)
 
 打开ps将ico转为png
 
-![14dsf352gf](https://raw.thun888.xyz/thun888/tuku/master/img/14dsf352gf.gif)
+![14dsf352gf](https://raw.hzchu.top/thun888/tuku/master/img/14dsf352gf.gif)
 
 导出后像这样
 
-![icon](https://raw.thun888.xyz/thun888/tuku/master/img/icon.png)
+![icon](https://raw.hzchu.top/thun888/tuku/master/img/icon.png)
 
 选择 文件---导入---（选择刚刚的图）
 
-![](https://raw.thun888.xyz/thun888/tuku/master/img/20210504155534.png)
+![](https://raw.hzchu.top/thun888/tuku/master/img/20210504155534.png)
 
 放置在画纸后
 
 右键---轮廓描慕---高质量图像（也可以选其他的,根据实际情况~）
 
-![](https://raw.thun888.xyz/thun888/tuku/master/img/20210504155749.png)
+![](https://raw.hzchu.top/thun888/tuku/master/img/20210504155749.png)
 
 在这里你可以改变三个参数实现不同的效果
 
-![](https://raw.thun888.xyz/thun888/tuku/master/img/dg4df56hde4568.png)
+![](https://raw.hzchu.top/thun888/tuku/master/img/dg4df56hde4568.png)
 
 点击确定后就能得到2个图像（原来的位图和生成的矢量图）
 
-![](https://raw.thun888.xyz/thun888/tuku/master/img/20210504160151.png)
+![](https://raw.hzchu.top/thun888/tuku/master/img/20210504160151.png)
 
 把原图删掉后将画布调整为生成图大小（例如我这就是210\*210）
 
-![](https://raw.thun888.xyz/thun888/tuku/master/img/da21desf4s568gre46g.png)
+![](https://raw.hzchu.top/thun888/tuku/master/img/da21desf4s568gre46g.png)
 
 选择 文件---导出（保存为.svg)
 
 
-<img src="https://raw.thun888.xyz/thun888/tuku/master/img/20210504161231.png" style="zoom:80%;" />
+<img src="https://raw.hzchu.top/thun888/tuku/master/img/20210504161231.png" style="zoom:80%;" />
 
 ##### 后记
 

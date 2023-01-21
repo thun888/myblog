@@ -4,7 +4,7 @@ Artalk-doc:
   tags: 文档
   cover: true
   logo:
-    src: https://raw.thun888.xyz/thun888/tuku/master/img/artalk-logo.svg
+    src: https://raw.hzchu.top/thun888/tuku/master/img/artalk-logo.svg
     small: 80px
     large: 150px
   description: 一个Artalk的非官方文档
@@ -17,7 +17,7 @@ Artalk-doc:
   tags: 文件
   cover: true
   logo:
-    src: https://raw.thun888.xyz/thun888/tuku/master/img/%E7%AE%B1%E5%AD%90.svg
+    src: https://raw.hzchu.top/thun888/tuku/master/img/%E7%AE%B1%E5%AD%90.svg
     small: 80px
     large: 150px
   description: 一个存放文件的地方
@@ -30,7 +30,7 @@ dreaming:
   tags: 插件
   cover: true
   logo:
-    src: https://raw.thun888.xyz/thun888/tuku/master/img/%E7%AE%B1%E5%AD%90.svg
+    src: https://raw.hzchu.top/thun888/tuku/master/img/%E7%AE%B1%E5%AD%90.svg
     small: 80px
     large: 150px
   description: 一个存放文件的地方
