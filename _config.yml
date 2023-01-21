@@ -173,7 +173,7 @@ service_worker:
     - urlPattern: /*
       handler: cacheFirst
       options:
-        origin: onep.thun888.xyz
+        origin: onep.hzchu.top
     - urlPattern: /*
       handler: cacheFirst
       options:
