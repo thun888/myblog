@@ -57,64 +57,68 @@ function og_args() {
   return args;
 }
 %>
-<head>
-  <%- meta_generator() %>
-  <meta name="hexo-theme" content="<%- stellar_info('tree') %>">
-  <meta charset="utf-8">
-  <%- generate_robots() %>
 
-  <meta http-equiv='x-dns-prefetch-control' content='on' />
-  <link rel='dns-prefetch' href='https://jsd.hzchu.top'>
-  <link rel="preconnect" href="https://jsd.hzchu.top" crossorigin>
-  <link rel='dns-prefetch' href='//unpkg.com'>
+    <head>
+        <%- meta_generator() %>
+            <meta name="hexo-theme" content="<%- stellar_info('tree') %>">
+            <meta charset="utf-8">
+            <%- generate_robots() %>
 
-  <meta name="renderer" content="webkit">
-  <meta name="force-rendering" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-  <meta name="HandheldFriendly" content="True" >
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="theme-color" content="#f8f8f8">
-  
-  <title><%- generate_title() %></title>
+                <meta http-equiv='x-dns-prefetch-control' content='on' />
+                <link rel='dns-prefetch' href='https://jsd.hzchu.top'>
+                <link rel="preconnect" href="https://jsd.hzchu.top" crossorigin>
+                <link rel='dns-prefetch' href='//unpkg.com'>
 
-  <% if (theme.open_graph && theme.open_graph.enable) { %>
-    <%- open_graph(og_args()) %>
-  <% } %>
-  <%- generate_description() %>
+                <meta name="baidu-site-verification" content="codeva-tIYplL9wDO" />
+                <meta name="renderer" content="webkit">
+                <meta name="force-rendering" content="webkit">
+                <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+                <meta name="HandheldFriendly" content="True">
+                <meta name="apple-mobile-web-app-capable" content="yes">
+                <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+                <meta name="theme-color" content="#f8f8f8">
 
-  <!-- feed -->
-  <% if (config.feed && config.feed.path) { %>
-    <%- feed_tag(config.feed.path, {title: config.title}) %>
-  <% } %>
+                <title>
+                    <%- generate_title() %>
+                </title>
 
-  <% if (theme.stellar.cdn_css) { %>
-    <%- css(theme.stellar.cdn_css) %>
-  <% } else { %>
-    <%- css('/css/main.css') %>
-  <% } %>
+                <% if (theme.open_graph && theme.open_graph.enable) { %>
+                    <%- open_graph(og_args()) %>
+                        <% } %>
+                            <%- generate_description() %>
 
-  <% if (config.favicon) { %>
-    <%- favicon_tag(config.favicon) %>
-  <% } %>
+                                <!-- feed -->
+                                <% if (config.feed && config.feed.path) { %>
+                                    <%- feed_tag(config.feed.path, {title: config.title}) %>
+                                        <% } %>
 
-  <% if (config.highlight && config.highlight.enable == true && config.highlight.hljs == true) { %>
-    <%- css(theme.style.codeblock.highlightjs_theme) %>
-  <% } %>
+                                            <% if (theme.stellar.cdn_css) { %>
+                                                <%- css(theme.stellar.cdn_css) %>
+                                                    <% } else { %>
+                                                        <%- css('/css/main.css') %>
+                                                            <% } %>
 
-  <% if (theme.plugins.katex && theme.plugins.katex.enable) { %>
-    <%- theme.plugins.katex.min_css %>
-    <%- theme.plugins.katex.min_js %>
-    <%- theme.plugins.katex.auto_render_min_js %>
-  <% } %>
+                                                                <% if (config.favicon) { %>
+                                                                    <%- favicon_tag(config.favicon) %>
+                                                                        <% } %>
+
+                                                                            <% if (config.highlight && config.highlight.enable == true && config.highlight.hljs == true) { %>
+                                                                                <%- css(theme.style.codeblock.highlightjs_theme) %>
+                                                                                    <% } %>
+
+                                                                                        <% if (theme.plugins.katex && theme.plugins.katex.enable) { %>
+                                                                                            <%- theme.plugins.katex.min_css %>
+                                                                                                <%- theme.plugins.katex.min_js %>
+                                                                                                    <%- theme.plugins.katex.auto_render_min_js %>
+                                                                                                        <% } %>
 
 
-  <% if (config.inject && config.inject.head){ %>
-    <% (config.inject.head||[]).forEach(function(item){ %>
-      <%- item %>
-    <% }) %>
-  <% } %>
-<link rel="stylesheet" href="https://jsd.hzchu.top/npm/lxgw-wenkai-screen-webfont@1.1.0/lxgwwenkaiscreen.css" media="all">
-<link rel="stylesheet" href="https://jsd.hzchu.top/npm/notyf@3/notyf.min.css">
-<link rel="stylesheet" href="/mcss/mcss.css">                                                                            
-</head>
+                                                                                                            <% if (config.inject && config.inject.head){ %>
+                                                                                                                <% (config.inject.head||[]).forEach(function(item){ %>
+                                                                                                                    <%- item %>
+                                                                                                                        <% }) %>
+                                                                                                                            <% } %>
+                                                                                                                                <link rel="stylesheet" href="https://jsd.hzchu.top/npm/lxgw-wenkai-screen-webfont@1.1.0/lxgwwenkaiscreen.css" media="all">
+                                                                                                                                <link rel="stylesheet" href="https://jsd.hzchu.top/npm/notyf@3/notyf.min.css">
+                                                                                                                                <link rel="stylesheet" href="/mcss/mcss.css">
+    </head>
