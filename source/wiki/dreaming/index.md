@@ -33,4 +33,4 @@ xxx：哇，。。。。
 
 ### 图片
 
-![部分功能](https://k.thun888.xyz/imges/-24a29d1113cb9680.jpg "部分功能")
+![部分功能](https://k.hzchu.top/imges/-24a29d1113cb9680.jpg "部分功能")

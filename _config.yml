@@ -185,7 +185,7 @@ service_worker:
     - urlPattern: /*
       handler: cacheFirst
       options:
-        origin: k.thun888.xyz
+        origin: k.hzchu.top
     - urlPattern: /*
       handler: cacheFirst
       options:

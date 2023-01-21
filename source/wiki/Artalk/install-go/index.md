@@ -23,11 +23,11 @@ updated: 2022-02-12 22:33:00
 
 {% copy go run main.go %}
 
-![Snipaste_2021-08-29_15-05-10](https://k.thun888.xyz/2022/08/18/62fde7031bb78.png)
+![Snipaste_2021-08-29_15-05-10](https://k.hzchu.top/2022/08/18/62fde7031bb78.png)
 
 3\.安装完后再运行一遍，不出意外应该是这样的
 
-![image-20210911094243644](https://k.thun888.xyz/2022/08/18/62fde7100e90f.png)
+![image-20210911094243644](https://k.hzchu.top/2022/08/18/62fde7100e90f.png)
 
 #### 配置
 
@@ -37,7 +37,7 @@ updated: 2022-02-12 22:33:00
 
 这里为了演示改了点
 
-![image-20210911095835151](https://k.thun888.xyz/2022/08/18/62fde735b983b.png)
+![image-20210911095835151](https://k.hzchu.top/2022/08/18/62fde735b983b.png)
 
 #### 运行
 
@@ -45,14 +45,14 @@ updated: 2022-02-12 22:33:00
 
 {% copy go run main.go serve %}
 
-![image-20210911100107336](https://k.thun888.xyz/2022/08/18/62fde79777dc8.png)
+![image-20210911100107336](https://k.hzchu.top/2022/08/18/62fde79777dc8.png)
 
 随后便可以通过设置的监听地址访问了
 
-![image-20210911100226980](https://k.thun888.xyz/2022/08/18/62fde7a5c421b.png)
+![image-20210911100226980](https://k.hzchu.top/2022/08/18/62fde7a5c421b.png)
 
 当然，新的版本中规范了api，直接用肯定是不行的
 
-![image-20210911101200601](https://k.thun888.xyz/2022/08/18/62fde7b86c7f1.png)
+![image-20210911101200601](https://k.hzchu.top/2022/08/18/62fde7b86c7f1.png)
 
-![image-20210911101245911](https://k.thun888.xyz/2022/08/18/62fde6e9979dd.png)
+![image-20210911101245911](https://k.hzchu.top/2022/08/18/62fde6e9979dd.png)
