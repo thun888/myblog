@@ -34,7 +34,7 @@ layout: post
 title: thun888's Blog
 avatar: https://blog.hzchu.top/img/avatar.webp
 url: https://blog.hzchu.top
-screenshot: https://onep.hzchu.top/mount/pic/blog.thun888.xyz.png
+screenshot: https://onep.hzchu.top/mount/pic/blog-hzchu-top.png
 description: 夏日当空,心如深渊
 {% endcodeblock %}
 
