@@ -32,7 +32,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://raw.thun888.xyz/thun888/tuku/master/img/image-20210101095911579.png">
 <meta property="og:image" content="https://raw.thun888.xyz/thun888/tuku/master/img/image-20210101100249006.png">
-<meta property="og:image" content="https://asstes.thun888.xyz/file/pic-bed/2021/09/5f5c8175d7b846cfe33f818b4b7e0791.webp">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/2021/09/5f5c8175d7b846cfe33f818b4b7e0791.webp">
 <meta property="og:image" content="https://raw.thun888.xyz/thun888/tuku/master/img/image-20210101101126292.png">
 <meta property="og:image" content="https://raw.thun888.xyz/thun888/tuku/master/img/image-20210101101410967.png">
 <meta property="og:image" content="https://raw.thun888.xyz/thun888/tuku/master/img/20210101101526.gif">
@@ -137,7 +137,7 @@
 <p>从github把源码下载后上传然后解压</p>
 <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.thun888.xyz/thun888/tuku/master/img/image-20210101100249006.png" alt="image-20210101100249006"></p>
 <p>进到&#x2F;TeambitionShare-master里把源码拉出来</p>
-<p>gif:<img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://asstes.thun888.xyz/file/pic-bed/2021/09/5f5c8175d7b846cfe33f818b4b7e0791.webp" alt="20210101100433"></p>
+<p>gif:<img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2021/09/5f5c8175d7b846cfe33f818b4b7e0791.webp" alt="20210101100433"></p>
 <p>然后配置伪静态（不设置会404）</p>
 <p>Nginx</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">#根目录伪静态</span><br><span class="line">location / &#123;</span><br><span class="line">  if (!-e $request_filename)&#123;</span><br><span class="line">    rewrite ^(.*)$ /index.php/?s=$1;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">#二级目录伪静态，自行修改pan为你的二级目录名字</span><br><span class="line">location /pan &#123;</span><br><span class="line">  if (!-e $request_filename)&#123;</span><br><span class="line">    rewrite ^/pan/(.*)$ /pan/index.php/?s=$1;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
