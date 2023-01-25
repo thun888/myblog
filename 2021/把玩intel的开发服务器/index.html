@@ -387,30 +387,32 @@
 <!-- optional -->
 
   <script>
-  function load_artalk() {
-    if (!document.querySelectorAll("#artalk_container")[0]) return;
-    stellar.loadCSS('https://unpkg.com/artalk@2.4.3/dist/Artalk.css');
-    stellar.loadScript('https://unpkg.com/artalk@2.4.3/dist/Artalk.js', {defer: true}).then(function () {
-      const el = document.getElementById("artalk_container");
-      var path = el.getAttribute('comment_id');
-      if (!path) {
-        path = decodeURI(window.location.pathname);
-      }
-      var artalk = new Artalk({
-        el: '#artalk_container',
-        pageKey: path,
-        pageTitle: '把玩intel的开发服务器',
-        server: 'https://artalk.hzchu.top',
-        placeholder: '此时无声胜有声',
-        site: 'Blog',
-        darkMode: 'auto',
-        emoticons: 'https://raw.hzchu.top/thun888/asstes/master/files/json/artalk/default.json',
-        })
-      });
-  }
-  window.addEventListener('DOMContentLoaded', (event) => {
-    load_artalk();
-  });
+    function load_artalk() {
+        if (!document.querySelectorAll("#artalk_container")[0]) return;
+        stellar.loadCSS('https://unpkg.com/artalk@2.4.3/dist/Artalk.css');
+        stellar.loadScript('https://unpkg.com/artalk@2.4.3/dist/Artalk.js', {
+            defer: true
+        }).then(function() {
+            const el = document.getElementById("artalk_container");
+            var path = el.getAttribute('comment_id');
+            if (!path) {
+                path = decodeURI(window.location.pathname);
+            }
+            var artalk = new Artalk({
+                el: '#artalk_container',
+                pageKey: path,
+                pageTitle: '把玩intel的开发服务器',
+                server: 'https://artalk.hzchu.top',
+                placeholder: '此时无声胜有声',
+                site: 'Blog',
+                darkMode: 'auto',
+                emoticons: 'https://raw.hzchu.top/thun888/asstes/master/files/json/artalk/default.json',
+            })
+        });
+    }
+    window.addEventListener('DOMContentLoaded', (event) => {
+        load_artalk();
+    });
 </script>
 
 

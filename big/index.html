@@ -36,7 +36,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://onep.hzchu.top/mount/pic/2021/09/d4c4fe0a9738db2849de1090af4d8b06.png">
 <meta property="article:published_time" content="2021-07-10T19:06:52.000Z">
-<meta property="article:modified_time" content="2023-01-23T11:04:01.386Z">
+<meta property="article:modified_time" content="2023-01-25T10:46:29.390Z">
 <meta property="article:author" content="thun888">
 <meta property="article:tag" content="喵~|thun888&#39;s Blog">
 <meta name="twitter:card" content="summary">
@@ -327,30 +327,32 @@
 <!-- optional -->
 
   <script>
-  function load_artalk() {
-    if (!document.querySelectorAll("#artalk_container")[0]) return;
-    stellar.loadCSS('https://unpkg.com/artalk@2.4.3/dist/Artalk.css');
-    stellar.loadScript('https://unpkg.com/artalk@2.4.3/dist/Artalk.js', {defer: true}).then(function () {
-      const el = document.getElementById("artalk_container");
-      var path = el.getAttribute('comment_id');
-      if (!path) {
-        path = decodeURI(window.location.pathname);
-      }
-      var artalk = new Artalk({
-        el: '#artalk_container',
-        pageKey: path,
-        pageTitle: '更新历程',
-        server: 'https://artalk.hzchu.top',
-        placeholder: '此时无声胜有声',
-        site: 'Blog',
-        darkMode: 'auto',
-        emoticons: 'https://raw.hzchu.top/thun888/asstes/master/files/json/artalk/default.json',
-        })
-      });
-  }
-  window.addEventListener('DOMContentLoaded', (event) => {
-    load_artalk();
-  });
+    function load_artalk() {
+        if (!document.querySelectorAll("#artalk_container")[0]) return;
+        stellar.loadCSS('https://unpkg.com/artalk@2.4.3/dist/Artalk.css');
+        stellar.loadScript('https://unpkg.com/artalk@2.4.3/dist/Artalk.js', {
+            defer: true
+        }).then(function() {
+            const el = document.getElementById("artalk_container");
+            var path = el.getAttribute('comment_id');
+            if (!path) {
+                path = decodeURI(window.location.pathname);
+            }
+            var artalk = new Artalk({
+                el: '#artalk_container',
+                pageKey: path,
+                pageTitle: '更新历程',
+                server: 'https://artalk.hzchu.top',
+                placeholder: '此时无声胜有声',
+                site: 'Blog',
+                darkMode: 'auto',
+                emoticons: 'https://raw.hzchu.top/thun888/asstes/master/files/json/artalk/default.json',
+            })
+        });
+    }
+    window.addEventListener('DOMContentLoaded', (event) => {
+        load_artalk();
+    });
 </script>
 
 

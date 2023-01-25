@@ -34,7 +34,7 @@
 <meta property="og:site_name" content="Thun888">
 <meta property="og:description" content="宝箱类型   类型 所需积分 阶数    青铜 5000 5~8   白银 1万 +2   黄金 5万 +4   白金 10万 +6   钻石 50万 +8    其它在青铜上加（eg:黄金9~12）  以青铜为例，7%抽到空气，20%抽到5阶，40%抽到6阶，23%抽到7阶，10%抽到8阶 物品阶数-积分   阶数 积分 阶数 积分    1 250 14 50万   2 500 15 75万">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-01-23T11:04:01.394Z">
+<meta property="article:published_time" content="2023-01-25T10:46:29.398Z">
 <meta property="article:modified_time" content="2022-07-14T12:29:32.000Z">
 <meta property="article:author" content="thun888">
 <meta property="article:tag" content="喵~|thun888&#39;s Blog">
@@ -427,30 +427,32 @@
 <!-- optional -->
 
   <script>
-  function load_artalk() {
-    if (!document.querySelectorAll("#artalk_container")[0]) return;
-    stellar.loadCSS('https://unpkg.com/artalk@2.4.3/dist/Artalk.css');
-    stellar.loadScript('https://unpkg.com/artalk@2.4.3/dist/Artalk.js', {defer: true}).then(function () {
-      const el = document.getElementById("artalk_container");
-      var path = el.getAttribute('comment_id');
-      if (!path) {
-        path = decodeURI(window.location.pathname);
-      }
-      var artalk = new Artalk({
-        el: '#artalk_container',
-        pageKey: path,
-        pageTitle: '资料',
-        server: 'https://artalk.hzchu.top',
-        placeholder: '此时无声胜有声',
-        site: 'Blog',
-        darkMode: 'auto',
-        emoticons: 'https://raw.hzchu.top/thun888/asstes/master/files/json/artalk/default.json',
-        })
-      });
-  }
-  window.addEventListener('DOMContentLoaded', (event) => {
-    load_artalk();
-  });
+    function load_artalk() {
+        if (!document.querySelectorAll("#artalk_container")[0]) return;
+        stellar.loadCSS('https://unpkg.com/artalk@2.4.3/dist/Artalk.css');
+        stellar.loadScript('https://unpkg.com/artalk@2.4.3/dist/Artalk.js', {
+            defer: true
+        }).then(function() {
+            const el = document.getElementById("artalk_container");
+            var path = el.getAttribute('comment_id');
+            if (!path) {
+                path = decodeURI(window.location.pathname);
+            }
+            var artalk = new Artalk({
+                el: '#artalk_container',
+                pageKey: path,
+                pageTitle: '资料',
+                server: 'https://artalk.hzchu.top',
+                placeholder: '此时无声胜有声',
+                site: 'Blog',
+                darkMode: 'auto',
+                emoticons: 'https://raw.hzchu.top/thun888/asstes/master/files/json/artalk/default.json',
+            })
+        });
+    }
+    window.addEventListener('DOMContentLoaded', (event) => {
+        load_artalk();
+    });
 </script>
 
 
