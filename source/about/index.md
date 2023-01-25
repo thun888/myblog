@@ -79,6 +79,6 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 
 |Alipay|Wechat|
 |-|-|
-|<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-35c12a92-e00c-4a70-8ef5-7bc728310bb5/f8de3cd8-3c97-4c20-a8e2-c5f921a1af99.webp" style="zoom:42.5%;" />|<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-35c12a92-e00c-4a70-8ef5-7bc728310bb5/1388167e-adb3-4302-8a8e-f206e4601795.png" style="zoom:50%;" />|
+|<img src="https://onep.hzchu.top/mount/pic/2023/01/25/63d0a914495c1.webp" style="zoom:42.5%;" />|<img src="https://onep.hzchu.top/mount/pic/2023/01/25/63d0a92955df2.webp" style="zoom:50%;" />|
 
 ![](/img/post/5b73a4a33f9bb3df5e1236b4021492fe.gif)
