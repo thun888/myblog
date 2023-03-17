@@ -2,7 +2,7 @@
 title: 使用Python半自动生成Altium原理图封装
 date: 2022-07-14 12:29:32
 tags: python
-cover: https://mp-b9758f71-20f5-4584-a594-df1c04cfa0a0.cdn.bspapp.com/cloudstorage/7d02f611-d6cc-430f-a2ad-a3ed0d5800b9.png
+cover: https://onep.hzchu.top/mount/pic/2023/02/05/63df2d8b52d38.webp
 updated: 2022-07-14 12:29:32
 description: 直接一套组合拳
 ---

@@ -4,7 +4,7 @@ date: 2021-07-29 19:00:02
 layout: about
 ---
 
-{% about avatar:https://mp-b9758f71-20f5-4584-a594-df1c04cfa0a0.cdn.bspapp.com/cloudstorage/3771f6c1-f1bb-4316-92f2-6dd19643042c.svg height:85px %}
+{% about avatar:https://onep.hzchu.top/mount/logo.svg height:85px %}
 
 咸鱼一条
 
