@@ -6,13 +6,15 @@ order: 8
 updated: 2023-05-01 13:55:32
 ---
 
-1.Q：无法连接到服务器
+> 有更多疑问，欢迎反馈
+
+1.无法连接到服务器
 
 ​	eg:未知的主机，连接重置等
 
-​	A：由于动态公网的问题，在连接量过大时可能会被强行下线并更换IP，一般情况下需要5~7min。您可以关注[服务器状态](https://mcweb.hzchu.top/status/)
+​	A：由于动态公网的问题，且在连接量过大时可能会被强行下线并更换IP，一般情况下需要5~7min。您可以关注[服务器状态](https://mcweb.hzchu.top/status/)
 
-2.Q：在绑定成功后仍显示无白名单（You are not white-listed on this server!）
+2.在绑定成功后仍显示无白名单（You are not white-listed on this server!）
 
 ​	A：问题在于你的id存在对应的正版用户，或你的正版账号登录出现问题，以离线的方式进入服务器，两者的UUID不相同。
 

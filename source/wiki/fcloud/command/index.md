@@ -59,6 +59,27 @@ updated: 2023-05-01 14:01:32
 - /workbench 打开工作台(类似于随身工作台)
 - /enderchest 打开自己的未影箱
 
+### Dynmap
+
+> 大量删减
+>
+> 详细参阅[命令 ·webbukkit/dynmap Wiki (github.com)](https://github.com/webbukkit/dynmap/wiki/Commands)
+
+**隐藏和显示玩家**
+
+- /dynmap hide：在地图上隐藏自己。
+- /dynmap show：在地图上显示自己。
+
+**标记**
+
+- /dmarker add <labelname> icon:<icon> set:<set-id>：在玩家的当前位置添加一个新标记，具有`标签名字`，`（可选）图标`，`（可选）标记集`参数
+- /dmarker update <label> icon:<newicon> newlabel:<newlabel>：更新与给定标签匹配的第一个标记的图标或标签
+
+- /dmarker delete <labelname>：删除标记
+- /dmarker listsets：列出所有标记
+
+ 
+
 ### Carpet
 
 **生物检测**
