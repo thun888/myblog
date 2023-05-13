@@ -52,7 +52,7 @@ updated: 2023-05-013 18:35:12
 
 语法：@ <playername> msg
 
-![image-20230513184738276](C:\Users\22383\AppData\Roaming\Typora\typora-user-images\image-20230513184738276.png)
+![image-20230513184738276](https://onep.hzchu.top/mount/pic/2023/05/13/645f6ed57b5fd.webp)
 
 ### MOD
 
@@ -65,3 +65,4 @@ updated: 2023-05-013 18:35:12
 #### 语音交流
 
 参阅[[SVC\]简单的语音聊天 (Simple Voice Chat) - MC百科|最大的Minecraft中文MOD百科 (mcmod.cn)](https://www.mcmod.cn/class/3693.html)
+
