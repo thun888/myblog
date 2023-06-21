@@ -2,7 +2,6 @@
 layout: wiki
 wiki: fcloud
 title: 峰间云海
-seo_title: 一个纯生存MC服务器(DOC)
 order: -1
 updated: 2023-05-01 13:55:32
 ---
