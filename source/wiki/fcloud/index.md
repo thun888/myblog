@@ -3,7 +3,7 @@ layout: wiki
 wiki: fcloud
 title: 峰间云海
 order: -1
-updated: 2023-05-01 13:55:32
+updated: 2023-06-21 13:55:32
 ---
 
 ## Hey
@@ -14,19 +14,28 @@ updated: 2023-05-01 13:55:32
 
 1. 我们使用了carpet(fabric)作为服务端，并加载了一些对原版生存无影响的mod
 
-   modlist:
+   以下为模组列表：
 
    | MOD名                                                        | 简析                                                         |
    | ------------------------------------------------------------ | ------------------------------------------------------------ |
+   | [Carpet](https://github.com/gnembon/fabric-carpet)           | 地毯端，提供一些实用的功能                                   |
    | [Carpet-tis](https://github.com/TISUnion/Carpet-TIS-Addition) | 一个 [Carpet mod](https://github.com/gnembon/fabric-carpet) (fabric-carpet) 的扩展 mod |
-   | voicechat                                                    | 语音聊天，需搭配对应客户端mod                                |
+   | Voicechat                                                    | 语音聊天，需搭配对应客户端mod                                |
    | ShowMeWhatYouGot                                             | 在聊天框中展现物品                                           |
    | Dynmap                                                       | 在线地图                                                     |
-   | essential_commands                                           | 提供一些实用的命令                                           |
-   | Fabric-API                                                   | Fabric的API库                                                |
-   | [fabric-carpet](https://github.com/gnembon/fabric-carpet)    | 地毯端，提供一些实用的功能                                   |
+   | Essential_commands                                           | 提供一些实用的命令                                           |
+   | [Image2map](https://www.mcmod.cn/class/3006.html)            | 将图片转化为地图                                             |
+   | PingMe                                                       | @Somebody                                                    |
+   | [HTM](https://www.mcmod.cn/class/5172.html)                  | *用于保护您的箱子、潜影盒、木桶、熔炉、高炉、烟熏炉等容器并设置信任人们打开它们。* |
+   | [Letmedespawn](https://www.mcmod.cn/class/7415.html)         | *即便一个生物拿起过武器、盔甲或者别的东西，它也会自然消失。当它们消失时，拿起的东西都会重新掉到地上* |
+   | [EditSign](https://www.mcmod.cn/class/2987.html)             | *右键点击告示牌即可编辑告示牌*                               |
+   | [Deathlog](https://www.mcmod.cn/class/4113.html)             | 死亡日志，记录死亡地点和背包物品                             |
+   | [Starlight](https://www.mcmod.cn/class/3303.html)            | 优化**光照渲染**                                             |
    | [LuckPerms](https://luckperms.net/)                          | 权限管理                                                     |
+   | [C^2M](https://www.mcmod.cn/class/3511.html)                 | 优化                                                         |
    | lithium                                                      | 优化                                                         |
+   | krypton                                                      | 优化                                                         |
+   | [Ferritecore](https://www.mcmod.cn/class/3888.html)          | 优化                                                         |
    | Clumps                                                       | 优化                                                         |
    | smoothchunk                                                  | 优化                                                         |
 
@@ -37,6 +46,8 @@ updated: 2023-05-01 13:55:32
    | AdvancedCalculator | 计算器           |
    | Beep               | @对方            |
    | DayCountNBT        | 显示开服天数     |
+   | Bot                | 记录假人         |
+   | QuickBackupM       | 备份             |
    | talk               | 记录玩家聊天信息 |
 
    

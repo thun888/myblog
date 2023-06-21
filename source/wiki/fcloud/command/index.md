@@ -2,7 +2,7 @@
 layout: wiki
 wiki: fcloud
 title: 实用命令
-order: 7
+order: 6
 updated: 2023-05-01 14:01:32
 ---
 
@@ -12,52 +12,34 @@ updated: 2023-05-01 14:01:32
 
 1.玩家间tp
 
-- /tpa <目标玩家> 请求传送到xxx玩家
-- /tpahere <目标玩家> 请求玩家传送到你这儿
-- /tpaccept <目标玩家> 接受传送请求
-- /tpdeny  <目标玩家> 拒绝传送请求
+- `/tpa <目标玩家>` ：请求传送到xxx玩家
+- `/tpahere <目标玩家>`：请求玩家传送到你这儿
+- `/tpaccept <目标玩家>`：接受传送请求
+- `/tpdeny <目标玩家>`：拒绝传送请求
 
 2.与家相关（/home)
 
-- /home set <名称> 设置家
-- /home list 显示所有已保存位置的家
-- /home tp<名称>传送至家（注：如果只设置了一个家，可以不写家的名称这个参数）
-- /home delete <名称> 删除家
+- `/home set <名称>`：设置家
+- `/home list`：显示所有已保存位置的家
+- `/home tp <名称>`：传送至家（注：如果只设置了一个家，可以不写家的名称这个参数）
+- `/home delete <名称>`：删除家
 
-3.地标相关（/warp) 
-
-> 暂不使用
-
-- /warp set <名称> 设置个新的地标
-- /warp list 显示所有已保存位置的地标
-- /warp tp <名称> 传送至某地标（注：不同于家的指令，即使只设置了一个地标，名称的参数仍需填写)
-- /warp delete <名称>删除某地标
-
-4./spawn类
+3./spawn类
 
 > 与Carpet重复，暂不使用
 
-- /spawn set 设置传送点（只能设置一个）
-- ~~/spawn 传送至设置的传送点~~
+- `/spawn set`：设置传送点（只能设置一个）
+- ~~`/spawn`：传送至设置的传送点~~
 
-5.其他
+4.其他
 
-- /back 返回传送前的位置（可用于传送回死亡位置）
-- ~~/rtp 或 /randomteleport 传送至随机位置~~
-
-**昵称相关（/nickname)**
-
-> 干扰数据库，暂不使用
-
-- /nickname set <玩家> <昵称> 设置某玩家昵称
-- /nickname clear <玩家> 清除某玩家的明称
-- /nickname reveal <昵称> 查询某昵称对应的是哪个玩家
+- `/back`：返回传送前的位置（可用于传送回死亡位置）
 
 **其他**
 
-- ~~/fly 开关飞行模式~~
-- /workbench 打开工作台(类似于随身工作台)
-- /enderchest 打开自己的未影箱
+- ~~`/fly` 开关飞行模式~~
+- `/workbench`：打开工作台(类似于随身工作台)
+- `/enderchest`：打开自己的未影箱
 
 ### Dynmap
 
@@ -67,8 +49,8 @@ updated: 2023-05-01 14:01:32
 
 **隐藏和显示玩家**
 
-- /dynmap hide：在地图上隐藏自己。
-- /dynmap show：在地图上显示自己。
+- `/dynmap hide`：在地图上隐藏自己。
+- `/dynmap show` ：在地图上显示自己。
 
 **标记**
 
