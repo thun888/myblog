@@ -40,12 +40,12 @@ updated: 2023-05-01 14:01:32
 - ~~`/fly` 开关飞行模式~~
 - `/workbench`：打开工作台(类似于随身工作台)
 - `/enderchest`：打开自己的未影箱
+- `/wastebin` 打开垃圾桶
 
 ### Dynmap
 
-> 大量删减
->
 > 详细参阅[命令 ·webbukkit/dynmap Wiki (github.com)](https://github.com/webbukkit/dynmap/wiki/Commands)
+>
 
 **隐藏和显示玩家**
 
@@ -190,5 +190,4 @@ updated: 2023-05-01 14:01:32
 
 > 该页面引用[MC百科](https://www.mcmod.cn/)
 >
-> mod有很多命令 ，这里只整理对普通玩家有用的部分
-
+> mod有很多命令 ，这里只整理对普通玩家有用的部分s

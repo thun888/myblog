@@ -3,7 +3,7 @@ layout: wiki
 wiki: fcloud
 title: 峰间云海
 order: -1
-updated: 2023-06-21 13:55:32
+updated: 2023-06-23 20:05:32
 ---
 
 ## Hey
@@ -12,69 +12,69 @@ updated: 2023-06-21 13:55:32
 
 ## 简要介绍
 
-1. 我们使用了carpet(fabric)作为服务端，并加载了一些对原版生存无影响的mod
+这是一个纯生存¹的公益服，为了更多玩家游玩，我们关闭了正版验证²。同时，我们加入了一些实用类插件³，在不破坏原版体验下提高玩家体验
 
-   以下为模组列表：
+**注**：
 
-   | MOD名                                                        | 简析                                                         |
-   | ------------------------------------------------------------ | ------------------------------------------------------------ |
-   | [Carpet](https://github.com/gnembon/fabric-carpet)           | 地毯端，提供一些实用的功能                                   |
-   | [Carpet-tis](https://github.com/TISUnion/Carpet-TIS-Addition) | 一个 [Carpet mod](https://github.com/gnembon/fabric-carpet) (fabric-carpet) 的扩展 mod |
-   | Voicechat                                                    | 语音聊天，需搭配对应客户端mod                                |
-   | ShowMeWhatYouGot                                             | 在聊天框中展现物品                                           |
-   | Dynmap                                                       | 在线地图                                                     |
-   | Essential_commands                                           | 提供一些实用的命令                                           |
-   | [Image2map](https://www.mcmod.cn/class/3006.html)            | 将图片转化为地图                                             |
-   | PingMe                                                       | @Somebody                                                    |
-   | [HTM](https://www.mcmod.cn/class/5172.html)                  | *用于保护您的箱子、潜影盒、木桶、熔炉、高炉、烟熏炉等容器并设置信任人们打开它们。* |
-   | [Letmedespawn](https://www.mcmod.cn/class/7415.html)         | *即便一个生物拿起过武器、盔甲或者别的东西，它也会自然消失。当它们消失时，拿起的东西都会重新掉到地上* |
-   | [EditSign](https://www.mcmod.cn/class/2987.html)             | *右键点击告示牌即可编辑告示牌*                               |
-   | [Deathlog](https://www.mcmod.cn/class/4113.html)             | 死亡日志，记录死亡地点和背包物品                             |
-   | [Starlight](https://www.mcmod.cn/class/3303.html)            | 优化**光照渲染**                                             |
-   | [LuckPerms](https://luckperms.net/)                          | 权限管理                                                     |
-   | [C^2M](https://www.mcmod.cn/class/3511.html)                 | 优化                                                         |
-   | lithium                                                      | 优化                                                         |
-   | krypton                                                      | 优化                                                         |
-   | [Ferritecore](https://www.mcmod.cn/class/3888.html)          | 优化                                                         |
-   | Clumps                                                       | 优化                                                         |
-   | smoothchunk                                                  | 优化                                                         |
+1. 内测期间玩家流失严重，开启了死亡不掉落降低难度
+2. 为规范玩家行为，维护游戏内秩序，我们实行`一QQ一游戏名`绑定制度（白名单）。若无QQ，亦可通过有效联系方式向我们发送申请
+3. 以下为插件列表：
 
-   MCDR list:
+| MOD名                                                        | 简析                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [Carpet](https://github.com/gnembon/fabric-carpet)           | 地毯端，提供一些实用的功能                                   |
+| [Carpet-tis](https://github.com/TISUnion/Carpet-TIS-Addition) | 一个 [Carpet mod](https://github.com/gnembon/fabric-carpet) (fabric-carpet) 的扩展 mod |
+| Voicechat                                                    | 语音聊天，需搭配对应客户端mod                                |
+| ShowMeWhatYouGot                                             | 在聊天框中展现物品                                           |
+| Dynmap                                                       | 在线地图                                                     |
+| Essential_commands                                           | 提供一些实用的命令                                           |
+| [Image2map](https://www.mcmod.cn/class/3006.html)            | 将图片转化为地图                                             |
+| PingMe                                                       | @Somebody                                                    |
+| [HTM](https://www.mcmod.cn/class/5172.html)                  | *用于保护您的箱子、潜影盒、木桶、熔炉、高炉、烟熏炉等容器并设置信任人们打开它们。* |
+| [Letmedespawn](https://www.mcmod.cn/class/7415.html)         | *即便一个生物拿起过武器、盔甲或者别的东西，它也会自然消失。当它们消失时，拿起的东西都会重新掉到地上* |
+| [EditSign](https://www.mcmod.cn/class/2987.html)             | *右键点击告示牌即可编辑告示牌*                               |
+| [Deathlog](https://www.mcmod.cn/class/4113.html)             | 死亡日志，记录死亡地点和背包物品                             |
+| [Starlight](https://www.mcmod.cn/class/3303.html)            | 优化**光照渲染**                                             |
+| [LuckPerms](https://luckperms.net/)                          | 权限管理                                                     |
+| [C^2M](https://www.mcmod.cn/class/3511.html)                 | 优化                                                         |
+| lithium                                                      | 优化                                                         |
+| krypton                                                      | 优化                                                         |
+| [Ferritecore](https://www.mcmod.cn/class/3888.html)          | 优化                                                         |
+| Clumps                                                       | 优化                                                         |
+| smoothchunk                                                  | 优化                                                         |
 
-   | 扩展名             | 简析             |
-   | ------------------ | ---------------- |
-   | AdvancedCalculator | 计算器           |
-   | Beep               | @对方            |
-   | DayCountNBT        | 显示开服天数     |
-   | Bot                | 记录假人         |
-   | QuickBackupM       | 备份             |
-   | talk               | 记录玩家聊天信息 |
+MCDR list:
 
-   
-
-2. 服务器版本为1.19.3，在插件支持新版本后会不定期升级
-
-3. 鉴于前期玩家流失严重，我们开启了死亡不掉落，其它与原版保持一致
-
-4. 服务器地址？为了减轻潜在的风险，[加群](https://jq.qq.com/?_wv=1027&k=erVXhRym)方可查看~~（当然你不加群也进不去游戏）~~
+| 扩展名             | 简析             |
+| ------------------ | ---------------- |
+| AdvancedCalculator | 计算器           |
+| Beep               | @对方            |
+| DayCountNBT        | 显示开服天数     |
+| Bot                | 记录假人         |
+| QuickBackupM       | 备份             |
+| talk               | 记录玩家聊天信息 |
 
 ## 游玩流程
 
 1. 添加[Q群](https://jq.qq.com/?_wv=1027&k=erVXhRym)
 
-2. 发送“绑定 `<playername>`”以添加白名单（若仍无法进入参考"疑难解答"）（解绑可发送“解绑”）
+   > 如果没有QQ，可[在此填写问卷](https://wj.qq.com/s2/12627429/8ace/)。（2个星期审核一次）
+
+2. 发送“`绑定` `<playername>`”以添加白名单（若仍无法进入参考"疑难解答"）（解绑可发送“`解绑`”）
+
+   > 机器人账户经常被腾讯踢下线&验证，这是我们没法预防的
 
 3. 下载客户端（集成相应mod，亦可自行使用1.19.3原版）
 
    -  下载HMCL[[点击下载]](https://share.hzchu.top/api/raw/?path=/MC/fcmodpack/HMCL3.2%E5%90%AF%E5%8A%A8%E5%99%A8.exe)
 
-   - 在`版本列表--安装整合包--从互联网下载整合包` 里填写`https://share.hzchu.top/api/raw/?path=/MC/fcmodpack/history/lastest.zip`，点击`安装`
+   -  安装`1.19.3` + `fabric` 
 
-     ![1683973747818.webp](https://onep.hzchu.top/mount/pic/2023/05/13/645f66752bb93.webp)
+   - 下载[模组包](https://thun888.lanzoum.com/itLw210fm8kh)
 
-     
+   -  解压到游戏目录中mod文件夹
 
-4. 在群公告里获取IP并连接[整合包内集成]
+4. 在群公告里获取IP并连接
 
 **附录**
 
@@ -83,6 +83,3 @@ updated: 2023-06-21 13:55:32
 ![Snipaste_2023-05-01_21-41-34.webp](https://onep.hzchu.top/mount/pic/2023/05/01/644fc215cdcc4.webp)
 
 ![1682948607925.webp](https://onep.hzchu.top/mount/pic/2023/05/01/644fc20042a10.webp)
-
-
-
