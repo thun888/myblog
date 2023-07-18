@@ -24,19 +24,6 @@ Artalk-doc:
   repo: 
   index: true
 
-dreaming:
-  title: dreaming
-  subtitle: 一个QQ机器人插件
-  tags: 插件
-  cover: true
-  logo:
-    src: https://raw.hzchu.top/thun888/tuku/master/img/%E7%AE%B1%E5%AD%90.svg
-    small: 80px
-    large: 150px
-  description: 一个存放文件的地方
-  repo: 
-  index: true
-
 fcloud:
   title: 峰间云海
   subtitle: 一个纯生存MC服务器(DOC)

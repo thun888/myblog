@@ -41,10 +41,6 @@ var player = new DogePlayer({
 >
 > 请勿使用该服务传播违法消息！
 
-#### Ping Me
-
-![1687356398587.webp](https://onep.hzchu.top/mount/pic/2023/06/21/649303f8547c9.webp)
-
 #### ShowMeWhatYouGot
 
 ![1687356500644.webp](https://onep.hzchu.top/mount/pic/2023/06/21/6493045e428fc.webp)
@@ -60,6 +56,10 @@ var player = new DogePlayer({
 
 
 ### 外部插件（MCDR）
+
+#### Beep
+
+格式：`@ playername`
 
 #### Bot
 
@@ -99,6 +99,28 @@ var player = new DogePlayer({
 
 用于取消白名单
 
-#### 离线账号修复
+#### ~~离线账号修复~~
 
-顾名思义，用于修复无白名单错误
+~~顾名思义，用于修复无白名单错误~~
+
+#### 正常流程绑定
+
+用**离线账号修复**的逻辑替代了**绑定**，如果出现问题可以试试原版的
+
+#### ！！上传图片
+
+并不需要关键词，只需要@Bot并带上图片即可，将上传到[峰间云海|相册](https://mcweb.hzchu.top/photo/)
+
+![1689348584454.webp](https://onep.hzchu.top/mount/pic/2023/07/14/64b169ea5fc2e.webp)
+
+#### be绑定
+
+> 同**绑定**
+>
+> 与**be解绑**同为管理be端白名单的命令
+>
+> 需在**绑定**前进行
+
+#### be解绑
+
+> 同**解绑**

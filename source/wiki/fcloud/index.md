@@ -10,9 +10,11 @@ updated: 2023-06-23 20:05:32
 
 这里是峰间云海官方文档
 
+
+
 ## 简要介绍
 
-这是一个纯生存¹的公益服，为了更多玩家游玩，我们关闭了正版验证²。同时，我们加入了一些实用类插件³，在不破坏原版体验下提高玩家体验
+这是一个纯生存¹的公益服（1.20.1），为了更多玩家游玩，我们关闭了正版验证²。同时，我们加入了一些实用类插件³，在不破坏原版体验下提高玩家体验
 
 **注**：
 
@@ -23,25 +25,40 @@ updated: 2023-06-23 20:05:32
 | MOD名                                                        | 简析                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [Carpet](https://github.com/gnembon/fabric-carpet)           | 地毯端，提供一些实用的功能                                   |
-| [Carpet-tis](https://github.com/TISUnion/Carpet-TIS-Addition) | 一个 [Carpet mod](https://github.com/gnembon/fabric-carpet) (fabric-carpet) 的扩展 mod |
+| [Carpet-tis](https://github.com/TISUnion/Carpet-TIS-Addition) | 一个 [Carpet](https://github.com/gnembon/fabric-carpet) (fabric-carpet) 的扩展 mod |
+| gugle-carpet-addition                                        | 一个 [Carpet](https://github.com/gnembon/fabric-carpet) (fabric-carpet) 的扩展 mod |
+| CarpetTCTCAddition                                           | 一个 [Carpet](https://github.com/gnembon/fabric-carpet) (fabric-carpet) 的扩展 mod |
+| essentialaddons                                              | 一个 [Carpet](https://github.com/gnembon/fabric-carpet) (fabric-carpet) 的扩展 mod |
+| minitweaks                                                   | 一个 [Carpet](https://github.com/gnembon/fabric-carpet) (fabric-carpet) 的扩展 mod |
 | Voicechat                                                    | 语音聊天，需搭配对应客户端mod                                |
 | ShowMeWhatYouGot                                             | 在聊天框中展现物品                                           |
 | Dynmap                                                       | 在线地图                                                     |
 | Essential_commands                                           | 提供一些实用的命令                                           |
 | [Image2map](https://www.mcmod.cn/class/3006.html)            | 将图片转化为地图                                             |
-| PingMe                                                       | @Somebody                                                    |
 | [HTM](https://www.mcmod.cn/class/5172.html)                  | *用于保护您的箱子、潜影盒、木桶、熔炉、高炉、烟熏炉等容器并设置信任人们打开它们。* |
 | [Letmedespawn](https://www.mcmod.cn/class/7415.html)         | *即便一个生物拿起过武器、盔甲或者别的东西，它也会自然消失。当它们消失时，拿起的东西都会重新掉到地上* |
-| [EditSign](https://www.mcmod.cn/class/2987.html)             | *右键点击告示牌即可编辑告示牌*                               |
+| syncmatica                                                   | 共享原理图                                                   |
 | [Deathlog](https://www.mcmod.cn/class/4113.html)             | 死亡日志，记录死亡地点和背包物品                             |
-| [Starlight](https://www.mcmod.cn/class/3303.html)            | 优化**光照渲染**                                             |
+| servux                                                       | MiniHUD服务端                                                |
+| Debugify                                                     | 修bug                                                        |
+| [Starlight](https://www.mcmod.cn/class/3303.html)            | 优化光照渲染                                                 |
+| quickshulker                                                 | 空中开盒                                                     |
+| NoChatReports                                                | 禁止聊天举报                                                 |
+| Jade                                                         | 玉支持                                                       |
 | [LuckPerms](https://luckperms.net/)                          | 权限管理                                                     |
 | [C^2M](https://www.mcmod.cn/class/3511.html)                 | 优化                                                         |
 | lithium                                                      | 优化                                                         |
 | krypton                                                      | 优化                                                         |
 | [Ferritecore](https://www.mcmod.cn/class/3888.html)          | 优化                                                         |
 | Clumps                                                       | 优化                                                         |
+| Chunky                                                       | 区块预加载                                                   |
+| chunksending                                                 | 优化                                                         |
+| nounusedchunks                                               | 优化                                                         |
 | smoothchunk                                                  | 优化                                                         |
+| servercore                                                   | 优化                                                         |
+| MCMOD                                                        | 优化                                                         |
+| memoryleakfix                                                | 优化                                                         |
+| vmp                                                          | 优化                                                         |
 
 MCDR list:
 
@@ -58,7 +75,9 @@ MCDR list:
 
 1. 添加[Q群](https://jq.qq.com/?_wv=1027&k=erVXhRym)
 
-   > 如果没有QQ，可[在此填写问卷](https://wj.qq.com/s2/12627429/8ace/)。（2个星期审核一次）
+   > ~~如果没有QQ，可[在此填写问卷](https://wj.qq.com/s2/12627429/8ace/)。（2个星期审核一次）~~
+   >
+   > 考虑到一些因素，已废弃
 
 2. 发送“`绑定` `<playername>`”以添加白名单（若仍无法进入参考"疑难解答"）（解绑可发送“`解绑`”）
 
@@ -77,6 +96,8 @@ MCDR list:
 4. 在群公告里获取IP并连接
 
 **附录**
+
+- 加入了互通（Geyser）支持，可以绑定be端游戏名后游玩
 
 - 在线地图需要注册，打开网页后按照流程即可
 
