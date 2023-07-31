@@ -36,7 +36,11 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 
 {% endtabs %}
 
-## 关于本站.
+## 关于本站
+
+### 现状
+
+想写点东西，但没时间，想去年考完中考，本想写写有关中考的事，但暑假前一个月照看家里生意，后一个月被学校拉回去补课，给我人都整麻了。还有用esp8266整个键盘啊，天气统计啊，也都因为时间不够胎死腹中。平时在学校两周一休，回家写写作业，打打游戏就过去了。学习要持之以恒，别的方面也一样，隔上两个星期什么都忘光了，~~可以说这方面一直是荒废的~~。有时候整点东西吧又觉得发上来太水，干脆不发，导致现在没几篇文章。
 
 ### 初衷
 
@@ -45,11 +49,6 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 ### 来历&历程
 
 建于网课时光，当时是自己写(自信如我)加\*.github.io，后面陆续采用Gridea+github page和wp+樱花frp的方案，最后确认使用hexo+thun888.xyz这个域名,中途换过三次主题{% psw <del>都是升级升炸的qwq</del> %}，两次评论系统,现阶段使用的Stellar和Artalk肯定是不会变的了
-
-### 部署方式
-
-我=>提交到Gitea(Github)=>GA进行构建并发布到gh-pages=>Vercel
-如果网站因为种种原因而无法打开可以访问[Cloudflare](https://cfblog.hzchu.top/)镜像
 
 ### 所用到的部分资源
 
@@ -69,13 +68,15 @@ Minecraft，缺氧，戴森球计划,~~Wallpaper Engine~~......
 
 - **Github_raw_proxy**:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://img.shields.io/website?url=https://raw.hzchu.top/thun888/myblog/gh-page/img/satus.png"></span>
 
+
+- **图床**:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://img.shields.io/website?url=https://onep.hzchu.top/mount/pic/dynmap_markers/diamond.png"></span>
 - Cloudflare镜像:<span class="tag-plugin emoji"><img style="height:1.5em" src="https://img.shields.io/website?url=https://cfblog.hzchu.top"></span>
 
 {% endfolding %}
 
 ### 捐赠
 
-我并不认为我目前能接受捐赠~~太菜了~~，不过如果您愿意也可以请我喝杯奶茶{% emoji aru 50 %}
+我并不认为我目前能接受捐赠~~太菜了~~，不过如果您愿意也可以请我喝杯奶茶{% emoji aru 0410 %}
 
 |Alipay|Wechat|
 |-|-|

@@ -63,8 +63,8 @@ comments:
   # Artalk
   # https://artalk.js.org/
   artalk:
-    css: https://unpkg.com/artalk@2.4.3/dist/Artalk.css
-    js: https://unpkg.com/artalk@2.4.3/dist/Artalk.js 
+    css: https://unpkg.com/artalk@2.5.5/dist/Artalk.css
+    js: https://unpkg.com/artalk@2.5.5/dist/Artalk.js 
     server: https://artalk.hzchu.top # 后端服务地址
     placeholder: '此时无声胜有声'
     site: Blog
