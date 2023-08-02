@@ -22,6 +22,9 @@ if (theme.plugins.heti && theme.plugins.heti.enable) {
 <% if (page.mathjax == true){ %>
     <%- partial('mathjax') %>
 <% } %>
+<% if (page.mermaid == true){ %>
+  <%- partial('mermaid') %>
+<% } %>
 <%- partial('_partial/main/navbar/breadcrumb') %>
 <article class='md-text content<%- heti %> <%- post.layout %><%- post.indent ? ' indent' : '' %><%- scrollreveal() %>'>
 <%- layoutTitle() %>
@@ -34,6 +37,9 @@ if (theme.plugins.heti && theme.plugins.heti.enable) {
   <span class="post-count"><%= min2read(post.content) %>分</span>
 </div>
 <%- post.content %>
+<% if (theme.plugins.tianli_gpt.enable && ['all', 'post'].includes(theme.plugins.tianli_gpt.field)) { %>
+  <%- partial('_partial/main/article/ai_abstract') %>
+<% } %>
 <%- partial('_partial/main/article/article_footer') %>
 <script>
   //更新时间

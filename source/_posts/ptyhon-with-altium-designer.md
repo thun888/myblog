@@ -18,7 +18,7 @@ description: 直接一套组合拳
 ### 历程
 
 随便新建一个原理图以ASCII保存。打开来可以看见这么一份”模板“，
-![Snipaste_2022-07-14_15-03-05](https://k.hzchu.top/2022/08/23/63043cea7eada.webp)
+![](https://k.hzchu.top/2022/08/23/63043cea7eada.webp)
 {% folding child:codeblock open:false color:yellow 模板 %}
 
 ```javascript

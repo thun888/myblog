@@ -10,13 +10,15 @@ updated: 2023-06-23 21:03:32
 
 这是一个纯生存的公益服，为了更多玩家游玩，我们关闭了正版验证。
 
-同时，我们加入了一些实用类插件，在不破坏原版体验下提高玩家体验。
+采用fabric服务端，偏生电
+
+加入了一些实用类插件，在不破坏原版体验下提高玩家体验。
 
 > [详细版](/wiki/fcloud/#简要介绍)
 
 [宣传片](https://pan.hzchu.top/s/8QI0/video?name=2023_07_13_07_44_20_2.mp4)
 
-[B站宣传片](https://www.bilibili.com/video/BV1Uz4y177zP/)
+[B站宣传片](https://www.bilibili.com/video/BV1BP41167UW/)
 
 ## 人员构成
 

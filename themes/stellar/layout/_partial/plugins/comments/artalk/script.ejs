@@ -1,15 +1,13 @@
 <script>
-    function load_artalk() {
-        if (!document.querySelectorAll("#artalk_container")[0]) return;
-        stellar.loadCSS('<%- theme.comments.artalk.css %>');
-        stellar.loadScript('<%- theme.comments.artalk.js %>', {
-            defer: true
-        }).then(function() {
-            const el = document.getElementById("artalk_container");
-            var path = el.getAttribute('comment_id');
-            if (!path) {
-                path = decodeURI(window.location.pathname);
-            }
+  function load_artalk() {
+    if (!document.querySelectorAll("#artalk_container")[0]) return;
+    stellar.loadCSS('<%- theme.comments.artalk.css %>');
+    stellar.loadScript('<%- theme.comments.artalk.js %>', {defer: true}).then(function () {
+      const el = document.getElementById("artalk_container");
+      var path = el.getAttribute('comment_id');
+      if (!path) {
+        path = decodeURI(window.location.pathname);
+      }
             var artalk = new Artalk({
                 el: '#artalk_container',
                 pageKey: path,
@@ -20,9 +18,9 @@
                 darkMode: '<%= theme.comments.artalk.darkMode %>',
                 emoticons: '<%= theme.comments.artalk.emoticons %>',
             })
-        });
-    }
-    window.addEventListener('DOMContentLoaded', (event) => {
-        load_artalk();
-    });
+      });
+  }
+  window.addEventListener('DOMContentLoaded', (event) => {
+    load_artalk();
+  });
 </script>

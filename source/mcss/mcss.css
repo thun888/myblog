@@ -6,7 +6,7 @@
     background-color: #eee;
     border-left: 5px solid #00d1bf;
     color: #333;
-    overflow: hidden
+    overflow: hidden;
 }
 /* 字数统计 */
 .expired-message {

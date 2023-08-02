@@ -34,9 +34,6 @@ sidebar:
       content: | # support markdown
           <span id="jinrishici-sentence">夏日当空，心如深渊</span><script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
 
-######## Main ########
-breadcrumb:
-  home: home # config.title / config.author / home or custom content
 
 ######## Article ########
 article:
@@ -107,27 +104,50 @@ footer:
 ######## Tag Plugins ########
 tag_plugins:
   image:
-    fancybox: true
+    fancybox: true # true, false
+    parse_markdown: true # 把 markdown 格式的图片解析成图片标签
+  mermaid:
+    enable: true
+    # Available themes: default | dark | forest | neutral
+    # 推荐使用 dark 主题 在夜间模式下显示效果更好
+    theme: default
+
+  # 代码块复制按钮
+  copycode:
+    enable: true
+    js: /js/plugins/copycode.js
+    default_text: 'Copy'
+    success_text: 'Copied'
+######## JS Plugins ########
+plugins:
+  ## optional plugins ##
+  fancybox:
+    enable: true
+    js: https://jsd.hzchu.top/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js
+    css: https://jsd.hzchu.top/npm/@fancyapps/ui@4.0/dist/fancybox.css
+    # 可以处理评论区的图片（不支持 iframe 类评论系统）例如：
+    # 使用twikoo评论可以写: .tk-content img:not([class*="emo"])
+    # 使用waline评论可以写: #waline_container .vcontent img
+    selector: .md-text img # 多个选择器用英文逗号隔开
 
 style:
-  darkmode: auto # auto / always / false
-  theme:
-    light: '#f8f8f8'
-    dark: '#313438'
-  animated_avatar:
-    animate: auto # auto, always
-    background: /img/rainbow64@3x.webp
-  codeblock:
-    scrollbar: 4px
-  gradient: # https://webgradients.com/
-    start: 'linear-gradient(to right, #92fe9d 0%, #00c9ff 50%, #92fe9d 100%)'
-    search: 'linear-gradient(to right, #e0e0e0,#e0e0e0)'
-
+  font-family:
+    logo: '"LXGW WenKai Screen",system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
+    body: '"LXGW WenKai Screen",system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
+    code: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif'
+    codeblock: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif'
 default:
   avatar: /img/svg/3442075.svg
   link: /img/svg/8f277b4ee0ecd.svg
   cover: /img/svg/76b86c0226ffd.svg
   image: /img/svg/2659360.svg
+
+
+api_host:
+  ghapi: https://api.github.com
+  ghraw: https://raw.hzchu.top
+  gist: https://gist.github.com
+
 
 sitemap:
   path: sitemap.xml
