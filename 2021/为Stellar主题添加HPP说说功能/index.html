@@ -1,33 +1,30 @@
 <!DOCTYPE html>
 <html lang='zh-CN'>
 
+<head>
+  <meta name="generator" content="Hexo 6.3.0">
+  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.19.0">
+  <meta charset="utf-8">
+  
+  <meta name="baidu-site-verification" content="codeva-tIYplL9wDO" />
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  <link rel='dns-prefetch' href='https://jsd.hzchu.top'>
+  <link rel="preconnect" href="https://jsd.hzchu.top" crossorigin>
+  <link rel='dns-prefetch' href='//unpkg.com'>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-    <head>
-        <meta name="generator" content="Hexo 6.3.0">
-            <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.18.5">
-            <meta charset="utf-8">
-            
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#f8f8f8">
+  
+  <title>为Stellar主题添加HPP的"说说"功能 - Thun888</title>
 
-                <meta http-equiv='x-dns-prefetch-control' content='on' />
-                <link rel='dns-prefetch' href='https://jsd.hzchu.top'>
-                <link rel="preconnect" href="https://jsd.hzchu.top" crossorigin>
-                <link rel='dns-prefetch' href='//unpkg.com'>
-
-                <meta name="baidu-site-verification" content="codeva-tIYplL9wDO" />
-                <meta name="renderer" content="webkit">
-                <meta name="force-rendering" content="webkit">
-                <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-                <meta name="HandheldFriendly" content="True">
-                <meta name="apple-mobile-web-app-capable" content="yes">
-                <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-                <meta name="theme-color" content="#f8f8f8">
-
-                <title>
-                    为Stellar主题添加HPP的"说说"功能 - Thun888
-                </title>
-
-                
-                    <meta name="description" content="HPP,即&#96;HexoPlusPlus&#96;,其中自带了&quot;说说&quot;功能，但我正在用的Stellar不支持，那就自己加吧">
+  
+    <meta name="description" content="HPP,即&#96;HexoPlusPlus&#96;,其中自带了&quot;说说&quot;功能，但我正在用的Stellar不支持，那就自己加吧">
 <meta property="og:type" content="article">
 <meta property="og:title" content="为Stellar主题添加HPP的&quot;说说&quot;功能">
 <meta property="og:url" content="https://blog.hzchu.top/2021/%E4%B8%BAStellar%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0HPP%E8%AF%B4%E8%AF%B4%E5%8A%9F%E8%83%BD/">
@@ -53,32 +50,35 @@
 <meta property="article:tag" content="blog">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://raw.hzchu.top/thun888/tuku/master/img/image-20210715185701431.png">
-                        
-                            
+  
+  
+  
+  <meta name="keywords" content="blog">
 
-                                <!-- feed -->
-                                
-                                    <link rel="alternate" href="/atom.xml" title="Thun888" type="application/atom+xml">
-                                        
+  <!-- feed -->
+  
+    <link rel="alternate" href="/atom.xml" title="Thun888" type="application/atom+xml">
+  
 
-                                            
-                                                        
+  
+    
 <link rel="stylesheet" href="/css/main.css">
 
-                                                            
+  
 
-                                                                
+  
 
-                                                                            
+  
 
-                                                                                        
+  
 
 
-                                                                                                            
-                                                                                                                                <link rel="stylesheet" href="https://jsd.hzchu.top/npm/lxgw-wenkai-screen-webfont@1.1.0/lxgwwenkaiscreen.css" media="all">
-                                                                                                                                <link rel="stylesheet" href="https://jsd.hzchu.top/npm/notyf@3/notyf.min.css">
-                                                                                                                                <link rel="stylesheet" href="/mcss/mcss.css">
-    </head>
+  
+
+<link rel="stylesheet" href="https://jsd.hzchu.top/npm/lxgw-wenkai-screen-webfont@1.1.0/lxgwwenkaiscreen.css" media="all">
+<link rel="stylesheet" href="https://jsd.hzchu.top/npm/notyf@3/notyf.min.css">
+<link rel="stylesheet" href="/mcss/mcss.css">
+</head>
 <body>
   
 
@@ -91,7 +91,7 @@
     
         
 
-<header class="header"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(/img/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="/img/avatar.webp" onerror="javascript:this.classList.add('error');this.src='/img/svg/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">Thun888</div><div class="sub normal cap">夏日当空,心如深渊</div><div class="sub hover cap" style="opacity:0"> hzchu.top</div></a></div>
+<header class="header"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://jsd.hzchu.top/gh/cdn-x/placeholder@1.0.4/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="/img/avatar.webp" onerror="javascript:this.classList.add('error');this.src='/img/svg/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">Thun888</div><div class="sub normal cap">夏日当空,心如深渊</div><div class="sub hover cap" style="opacity:0"> hzchu.top</div></a></div>
 
 <nav class="menu dis-select"><a class="nav-item active" href="/">文章</a><a class="nav-item" href="/wiki/">项目</a><a class="nav-item" href="/friends/">友链</a><a class="nav-item" href="/about/">关于</a></nav>
 </header>
@@ -117,6 +117,7 @@
       
 
 
+
 <div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a><span class="sep"></span><a class="cap breadcrumb" href="/">文章</a></div><div id="post-meta">发布于&nbsp;<time datetime="2021-07-15T20:09:32.000Z">2021-07-15</time></div></div>
 
 <article class='md-text content post'>
@@ -124,7 +125,7 @@
 <div id="gtime"></div>
 <div class="expired-message">
   <span class="post-meta-item-text">字数统计:</span>
-  <span class="post-count">579字</span>
+  <span class="post-count">605字</span>
 &nbsp; | &nbsp;
   <span class="post-meta-item-text">阅读时长:</span>
   <span class="post-count">2分</span>
@@ -134,49 +135,62 @@
 <p>与某个页面合并了</p>
 </blockquote>
 <h4 id="选址"><a href="#选址" class="headerlink" title="选址"></a>选址</h4><p>纵观全局，我看到了左侧栏的”文章”，加了进去，却成了这个鸟样子（橙框为我手动框出来的）</p>
-<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.hzchu.top/thun888/tuku/master/img/image-20210715185701431.png" alt="image-20210715185701431"></p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.hzchu.top/thun888/tuku/master/img/image-20210715185701431.png" alt="image-20210715185701431" fancybox="true"/></div><div class="image-meta"><span class="image-caption center">image-20210715185701431</span></div></div>
+
 <p>再品，放这里不就好了😎</p>
-<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.hzchu.top/thun888/tuku/master/img/image-20210715185830748.png" alt="image-20210715185830748"></p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.hzchu.top/thun888/tuku/master/img/image-20210715185830748.png" alt="image-20210715185830748" fancybox="true"/></div><div class="image-meta"><span class="image-caption center">image-20210715185830748</span></div></div>
+
 <h4 id="开工"><a href="#开工" class="headerlink" title="开工"></a>开工</h4><p>因为主题在不同语言时有不同显示，所以先从语言文件下手</p>
-<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.hzchu.top/thun888/tuku/master/img/image-20210715190020030.png" alt="image-20210715190020030"></p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.hzchu.top/thun888/tuku/master/img/image-20210715190020030.png" alt="image-20210715190020030" fancybox="true"/></div><div class="image-meta"><span class="image-caption center">image-20210715190020030</span></div></div>
+
 <p>找到”归档”对应的是<code>archives</code>，再用<code>everything</code>在主题文件中搜索</p>
-<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.hzchu.top/thun888/tuku/master/img/image-20210715190202563.png" alt="image-20210715190202563"></p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.hzchu.top/thun888/tuku/master/img/image-20210715190202563.png" alt="image-20210715190202563" fancybox="true"/></div><div class="image-meta"><span class="image-caption center">image-20210715190202563</span></div></div>
+
 <p>前4个是语言文件，第5个是生成归档页面的，那第6个就有很大嫌疑了，打开看看</p>
-<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.hzchu.top/thun888/tuku/master/img/image-20210715190356447.png" alt="image-20210715190356447"></p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.hzchu.top/thun888/tuku/master/img/image-20210715190356447.png" alt="image-20210715190356447" fancybox="true"/></div><div class="image-meta"><span class="image-caption center">image-20210715190356447</span></div></div>
+
 <p>啊没错，就是它，而且类名也对的上（当初直接查类名更快啊＞﹏＜）</p>
 <p>格式就像这样</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;% if (site.posts &amp;&amp; site.posts.length &gt; 0) &#123; %&gt;</span><br><span class="line">  &lt;% if (is_archive()) &#123; %&gt;</span><br><span class="line">    &lt;a class=&#x27;active&#x27; href=&#x27;&lt;%- url_for(config.archive_dir) %&gt;&#x27;&gt;&lt;%- __(&#x27;btn.archives&#x27;) %&gt;&lt;/a&gt;</span><br><span class="line">  &lt;% &#125; else &#123; %&gt;</span><br><span class="line">    &lt;a href=&#x27;&lt;%- url_for(config.archive_dir) %&gt;&#x27;&gt;&lt;%- __(&#x27;btn.archives&#x27;) %&gt;&lt;/a&gt;</span><br><span class="line">  &lt;% &#125; %&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
 
 <p>添加上去后把所有<code>archives</code>给替换成了<code>htalk</code>,但是一运行那报错和放鞭炮没什么不同(。﹏。)</p>
-<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.hzchu.top/thun888/tuku/master/img/image-20210715203736270.png" alt="image-20210715203736270"></p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.hzchu.top/thun888/tuku/master/img/image-20210715203736270.png" alt="image-20210715203736270" fancybox="true"/></div><div class="image-meta"><span class="image-caption center">image-20210715203736270</span></div></div>
+
 <p>从代码上说，这句是判断当前是什么页面的，我翻了亿下没找到它的定义在哪个文件，就先改回posts（只是影响了按钮底色，问题不大(❁´◡`❁)）</p>
 <p>在<code>\themes\stellar\layout</code>下新建<code>htalk.ejs</code>,从隔壁<code>tag.ejs</code>借鉴点代码过来，除了site.tags.length其他都改为htalk</p>
-<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.hzchu.top/thun888/tuku/master/img/image-20210715204525167.png" alt="image-20210715204525167"></p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.hzchu.top/thun888/tuku/master/img/image-20210715204525167.png" alt="image-20210715204525167" fancybox="true"/></div><div class="image-meta"><span class="image-caption center">image-20210715204525167</span></div></div>
+
 <p>可以看出第11行到21行都是页面中可以显示出来的部分~~（不太严谨的样子~~</p>
 <p>把HPP文档中的”引入部分”插到里面</p>
-<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.hzchu.top/thun888/tuku/master/img/image-20210715205153957.png" alt="image-20210715205153957"></p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.hzchu.top/thun888/tuku/master/img/image-20210715205153957.png" alt="image-20210715205153957" fancybox="true"/></div><div class="image-meta"><span class="image-caption center">image-20210715205153957</span></div></div>
+
 <p>¯_(ツ)_&#x2F;¯</p>
-<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.hzchu.top/thun888/tuku/master/img/image-20210715204930656.png" alt="image-20210715204930656"></p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.hzchu.top/thun888/tuku/master/img/image-20210715204930656.png" alt="image-20210715204930656" fancybox="true"/></div><div class="image-meta"><span class="image-caption center">image-20210715204930656</span></div></div>
+
 <p>加个题目</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">class</span>=<span class="string">&#x27;list-title h3&#x27;</span>&gt;</span>说说（瞎扯）<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.hzchu.top/thun888/tuku/master/img/image-20210715205203844.png" alt="image-20210715205203844"></p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.hzchu.top/thun888/tuku/master/img/image-20210715205203844.png" alt="image-20210715205203844" fancybox="true"/></div><div class="image-meta"><span class="image-caption center">image-20210715205203844</span></div></div>
+
 <hr>
 <p>承 接 前 文，看着”说说”按钮选中时没有底色还是有点不爽，回到前面</p>
 <p>把判定部分<del>都删了</del>删到只剩下一个基础的判定（虽然没用但删了就报错），给它加上<code>id=&quot;nav-bb&quot;</code>的属性</p>
-<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.hzchu.top/thun888/tuku/master/img/image-20210715210320086.png" alt="image-20210715210320086"></p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.hzchu.top/thun888/tuku/master/img/image-20210715210320086.png" alt="image-20210715210320086" fancybox="true"/></div><div class="image-meta"><span class="image-caption center">image-20210715210320086</span></div></div>
+
 <p>再在htalk.ejs中加上</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"><span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;nav-bb&#x27;</span>).<span class="property">className</span>=<span class="string">&#x27;active&#x27;</span></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>( •̀ ω •́ )✧</p>
-<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.hzchu.top/thun888/tuku/master/img/image-20210715205705037.png" alt="image-20210715205705037"></p>
-<h4 id="最终代码"><a href="#最终代码" class="headerlink" title="最终代码"></a>最终代码</h4><p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.hzchu.top/thun888/tuku/master/img/image-20210715205828548.png" alt="image-20210715205828548"></p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.hzchu.top/thun888/tuku/master/img/image-20210715205705037.png" alt="image-20210715205705037" fancybox="true"/></div><div class="image-meta"><span class="image-caption center">image-20210715205705037</span></div></div>
+
+<h4 id="最终代码"><a href="#最终代码" class="headerlink" title="最终代码"></a>最终代码</h4><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.hzchu.top/thun888/tuku/master/img/image-20210715205828548.png" alt="image-20210715205828548" fancybox="true"/></div><div class="image-meta"><span class="image-caption center">image-20210715205828548</span></div></div>
+
 <p>!!!  warning<br>1.记得使用<code>hexo new page htalk</code>并在<code>layout</code>中改为<code>htalk</code><br><br>2.在博客根目录下的<code>_config.yml</code>中要指明<code>htalk_dir: htalk</code></p>
 
 
-<div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
-</div></section><section id="share"><div class="header"><span>分享文章</span></div><div class="body"><div class="link"><input class="copy-area" readonly="true" id="copy-link" value="https://blog.hzchu.top/2021/%E4%B8%BAStellar%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0HPP%E8%AF%B4%E8%AF%B4%E5%8A%9F%E8%83%BD/" /></div><div class="social-wrap dis-select"><a class="social share-item wechat" onclick="util.toggle(&quot;qrcode-wechat&quot)"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://jsd.hzchu.top/gh/cdn-x/placeholder@1.0.4/social/b32ef3da1162a.svg"/></a><a class="social share-item weibo" target="_blank" rel="external nofollow noopener noreferrer" href="https://service.weibo.com/share/share.php?url=https://blog.hzchu.top/2021/%E4%B8%BAStellar%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0HPP%E8%AF%B4%E8%AF%B4%E5%8A%9F%E8%83%BD/&title=为Stellar主题添加HPP的"说说"功能 - Thun888&pics=https://blog.hzchu.top/img/post/7392db97e9d8cea0eb0a6a60656695b5.png&summary=HPP,即`HexoPlusPlus`,其中自带了"说说"功能，但我正在用的Stellar不支持，那就自己加吧"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://jsd.hzchu.top/gh/cdn-x/placeholder@1.0.4/social/80c07e4dbb303.svg"/></a><a class="social share-item email" href="mailto:?subject=为Stellar主题添加HPP的"说说"功能 - Thun888&amp;body=https://blog.hzchu.top/2021/%E4%B8%BAStellar%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0HPP%E8%AF%B4%E8%AF%B4%E5%8A%9F%E8%83%BD/"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://jsd.hzchu.top/gh/cdn-x/placeholder@1.0.4/social/a1b00e20f425d.svg"/></a><a class="social share-item link" onclick="util.copy(&quot;copy-link&quot;, &quot;复制成功&quot;)"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://jsd.hzchu.top/gh/cdn-x/placeholder@1.0.4/social/8411ed322ced6.svg"/></a></div><div class="qrcode" id="qrcode-wechat" style="visibility:hidden;height:0"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://api.qrserver.com/v1/create-qr-code/?size=256x256&data=https://blog.hzchu.top/2021/%E4%B8%BAStellar%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0HPP%E8%AF%B4%E8%AF%B4%E5%8A%9F%E8%83%BD/index.html"/></div></div></section></div>
 
+    <div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div></section><section id="share"><div class="header"><span>分享文章</span></div><div class="body"><div class="link"><input class="copy-area" readonly="true" id="copy-link" value="https://blog.hzchu.top/2021/%E4%B8%BAStellar%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0HPP%E8%AF%B4%E8%AF%B4%E5%8A%9F%E8%83%BD/" /></div><div class="social-wrap dis-select"><a class="social share-item wechat" onclick="util.toggle(&quot;qrcode-wechat&quot)"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://jsd.hzchu.top/gh/cdn-x/placeholder@1.0.4/social/b32ef3da1162a.svg"/></a><a class="social share-item weibo" target="_blank" rel="external nofollow noopener noreferrer" href="https://service.weibo.com/share/share.php?url=https://blog.hzchu.top/2021/%E4%B8%BAStellar%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0HPP%E8%AF%B4%E8%AF%B4%E5%8A%9F%E8%83%BD/&title=为Stellar主题添加HPP的"说说"功能 - Thun888&pics=https://blog.hzchu.top/img/post/7392db97e9d8cea0eb0a6a60656695b5.png&summary=HPP,即`HexoPlusPlus`,其中自带了"说说"功能，但我正在用的Stellar不支持，那就自己加吧"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://jsd.hzchu.top/gh/cdn-x/placeholder@1.0.4/social/80c07e4dbb303.svg"/></a><a class="social share-item email" href="mailto:?subject=为Stellar主题添加HPP的"说说"功能 - Thun888&amp;body=https://blog.hzchu.top/2021/%E4%B8%BAStellar%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0HPP%E8%AF%B4%E8%AF%B4%E5%8A%9F%E8%83%BD/"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://jsd.hzchu.top/gh/cdn-x/placeholder@1.0.4/social/a1b00e20f425d.svg"/></a><a class="social share-item link" onclick="util.copy(&quot;copy-link&quot;, &quot;复制成功&quot;)"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://jsd.hzchu.top/gh/cdn-x/placeholder@1.0.4/social/8411ed322ced6.svg"/></a></div><div class="qrcode" id="qrcode-wechat" style="visibility:hidden;height:0"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://api.qrserver.com/v1/create-qr-code/?size=256x256&data=https://blog.hzchu.top/2021/%E4%B8%BAStellar%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0HPP%E8%AF%B4%E8%AF%B4%E5%8A%9F%E8%83%BD/"/></div></div></section></div>
 <script>
   //更新时间
   gtime_days = Math.floor((new Date() - new Date('Thu Jul 15 2021 20:09:32 GMT+0000 (Coordinated Universal Time)')) / 1000 / 60 / 60 / 24);
@@ -212,7 +226,7 @@
 
 
       
-    <center><span class="page-footer fs12" id="timeDate">载入天数...</span><span class="page-footer fs12">&</span><span class="page-footer fs12" id="times">载入时分秒...</span></center>
+    <div style="text-align: center;color: #808080;"><span style="font-size: 12px;" id="timeDate">载入天数...</span><span style="font-size: 12px;">&</span><span style="font-size: 12px;" id="times">载入时分秒...</span></div>
     <footer class="page-footer reveal fs12"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs14">博客</span><a href="/big/">大事记</a><a target="_blank" rel="noopener" href="https://notes.hzchu.top/">随记</a><a href="/archives/">归档</a></div><div class="sitemap-group"><span class="fs14">项目</span><a href="/wiki/%E6%9D%82%E7%89%A9%E9%97%B4/">杂物</a><a href="/wiki/fcloud/">峰间云海</a></div><div class="sitemap-group"><span class="fs14">社交</span><a href="/friends/">友链</a><a href="/say/">留言板</a><a target="_blank" rel="noopener" href="https://space.bilibili.com/451090261">BiliBili</a><a href="mailto:thun888@qq.com">邮箱</a></div><div class="sitemap-group"><span class="fs14">更多</span><a href="/about/">关于本站</a><a target="_blank" rel="noopener" href="https://pan.hzchu.top">云盘</a></div></div><div class="text"><p>本站由 <a href="/about/">@thun888</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar">Stellar</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
 <script>!function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"JnLm5m7MJcDkpWaM",ck:"JnLm5m7MJcDkpWaM"});</script>
 </div></footer>
@@ -228,169 +242,174 @@
   </div>
   <div class='scripts'>
     <script type="text/javascript">
-  const stellar = {
-    // 懒加载 css https://github.com/filamentgroup/loadCSS
-    loadCSS: (href, before, media, attributes) => {
-      var doc = window.document;
-      var ss = doc.createElement("link");
-      var ref;
-      if (before) {
-        ref = before;
-      } else {
-        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
-        ref = refs[refs.length - 1];
-      }
-      var sheets = doc.styleSheets;
-      if (attributes) {
-        for (var attributeName in attributes) {
-          if (attributes.hasOwnProperty(attributeName)) {
-            ss.setAttribute(attributeName, attributes[attributeName]);
+    const stellar = {
+      // 懒加载 css https://github.com/filamentgroup/loadCSS
+      loadCSS: (href, before, media, attributes) => {
+        var doc = window.document;
+        var ss = doc.createElement("link");
+        var ref;
+        if (before) {
+          ref = before;
+        } else {
+          var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+          ref = refs[refs.length - 1];
+        }
+        var sheets = doc.styleSheets;
+        if (attributes) {
+          for (var attributeName in attributes) {
+            if (attributes.hasOwnProperty(attributeName)) {
+              ss.setAttribute(attributeName, attributes[attributeName]);
+            }
           }
         }
-      }
-      ss.rel = "stylesheet";
-      ss.href = href;
-      ss.media = "only x";
-      function ready(cb) {
-        if (doc.body) {
-          return cb();
-        }
-        setTimeout(function () {
-          ready(cb);
-        });
-      }
-      ready(function () {
-        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
-      });
-      var onloadcssdefined = function (cb) {
-        var resolvedHref = ss.href;
-        var i = sheets.length;
-        while (i--) {
-          if (sheets[i].href === resolvedHref) {
+        ss.rel = "stylesheet";
+        ss.href = href;
+        ss.media = "only x";
+        function ready(cb) {
+          if (doc.body) {
             return cb();
           }
+          setTimeout(function () {
+            ready(cb);
+          });
         }
-        setTimeout(function () {
-          onloadcssdefined(cb);
+        ready(function () {
+          ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
         });
-      };
-      function loadCB() {
+        var onloadcssdefined = function (cb) {
+          var resolvedHref = ss.href;
+          var i = sheets.length;
+          while (i--) {
+            if (sheets[i].href === resolvedHref) {
+              return cb();
+            }
+          }
+          setTimeout(function () {
+            onloadcssdefined(cb);
+          });
+        };
+        function loadCB() {
+          if (ss.addEventListener) {
+            ss.removeEventListener("load", loadCB);
+          }
+          ss.media = media || "all";
+        }
         if (ss.addEventListener) {
-          ss.removeEventListener("load", loadCB);
+          ss.addEventListener("load", loadCB);
         }
-        ss.media = media || "all";
-      }
-      if (ss.addEventListener) {
-        ss.addEventListener("load", loadCB);
-      }
-      ss.onloadcssdefined = onloadcssdefined;
-      onloadcssdefined(loadCB);
-      return ss;
-    },
-
-    // 从 butterfly 和 volantis 获得灵感
-    loadScript: (src, opt) => new Promise((resolve, reject) => {
-      var script = document.createElement('script');
-      script.src = src;
-      if (opt) {
-        for (let key of Object.keys(opt)) {
-          script[key] = opt[key]
-        }
-      } else {
-        // 默认异步，如果需要同步，第二个参数传入 {} 即可
-        script.async = true
-      }
-      script.onerror = reject
-      script.onload = script.onreadystatechange = function() {
-        const loadState = this.readyState
-        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-        script.onload = script.onreadystatechange = null
-        resolve()
-      }
-      document.head.appendChild(script)
-    }),
-
-    // https://github.com/jerryc127/hexo-theme-butterfly
-    jQuery: (fn) => {
-      if (typeof jQuery === 'undefined') {
-        stellar.loadScript(stellar.plugins.jQuery).then(fn)
-      } else {
-        fn()
-      }
-    }
-  };
-  stellar.version = '1.18.5';
-  stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/1.18.5';
-  stellar.config = {
-    date_suffix: {
-      just: '刚刚',
-      min: '分钟前',
-      hour: '小时前',
-      day: '天前',
-      month: '个月前',
-    },
-  };
-
-  // required plugins (only load if needs)
-  stellar.plugins = {
-    jQuery: 'https://jsd.hzchu.top/npm/jquery@3.6.2/dist/jquery.min.js'
-  };
-
-  if ('local_search') {
-    stellar.search = {};
-    stellar.search.service = 'local_search';
-    if (stellar.search.service == 'local_search') {
-      let service_obj = Object.assign({}, {"field":"all","path":"/search.json","content":true,"sort":"-date"});
-      stellar.search[stellar.search.service] = service_obj;
-    }
-  }
-
-  // stellar js
-  stellar.plugins.stellar = Object.assign({"sites":"/js/plugins/sites.js","friends":"/js/plugins/friends.js","ghinfo":"/js/plugins/ghinfo.js","timeline":"/js/plugins/timeline.js","linkcard":"/js/plugins/linkcard.js","fcircle":"/js/plugins/fcircle.js","weibo":"/js/plugins/weibo.js"});
-
-  stellar.plugins.marked = Object.assign("https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js");
-  // optional plugins
-  if ('true' == 'true') {
-    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://jsd.hzchu.top/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js","transition":"blur"});
-  }
-  if ('true' == 'true') {
-    stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.css","js":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.js"});
-  }
-  if ('' == 'true') {
-    stellar.plugins.scrollreveal = Object.assign({"enable":null,"js":"https://jsd.hzchu.top/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
-  }
-  if ('true' == 'true') {
-    stellar.plugins.preload = Object.assign({"enable":true,"service":"flying_pages","instant_page":"https://jsd.hzchu.top/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js","flying_pages":"https://jsd.hzchu.top/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"});
-  }
-  if ('true' == 'true') {
-    stellar.plugins.fancybox = Object.assign({"enable":true,"js":"https://jsd.hzchu.top/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js","css":"https://jsd.hzchu.top/npm/@fancyapps/ui@4.0/dist/fancybox.css","selector":".swiper-slide img"});
-  }
-  if ('false' == 'true') {
-    stellar.plugins.heti = Object.assign({"enable":false,"css":"https://unpkg.com/heti@0.9.2/umd/heti.min.css","js":"https://unpkg.com/heti@0.9.2/umd/heti-addon.min.js"});
-  }
-</script>
-
-<!-- required -->
-
+        ss.onloadcssdefined = onloadcssdefined;
+        onloadcssdefined(loadCB);
+        return ss;
+      },
   
+      // 从 butterfly 和 volantis 获得灵感
+      loadScript: (src, opt) => new Promise((resolve, reject) => {
+        var script = document.createElement('script');
+        if (src.startsWith('/')){
+          src = stellar.config.root + src.substring(1);
+        }
+        script.src = src;
+        if (opt) {
+          for (let key of Object.keys(opt)) {
+            script[key] = opt[key]
+          }
+        } else {
+          // 默认异步，如果需要同步，第二个参数传入 {} 即可
+          script.async = true
+        }
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(script)
+      }),
+  
+      // https://github.com/jerryc127/hexo-theme-butterfly
+      jQuery: (fn) => {
+        if (typeof jQuery === 'undefined') {
+          stellar.loadScript(stellar.plugins.jQuery).then(fn)
+        } else {
+          fn()
+        }
+      }
+    };
+    stellar.version = '1.19.0';
+    stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/1.19.0';
+    stellar.config = {
+      date_suffix: {
+        just: '刚刚',
+        min: '分钟前',
+        hour: '小时前',
+        day: '天前',
+        month: '个月前',
+      },
+      root : '/',
+    };
+  
+    // required plugins (only load if needs)
+    stellar.plugins = {
+      jQuery: 'https://jsd.hzchu.top/npm/jquery@3.6.2/dist/jquery.min.js'
+    };
+  
+    if ('local_search') {
+      stellar.search = {};
+      stellar.search.service = 'local_search';
+      if (stellar.search.service == 'local_search') {
+        let service_obj = Object.assign({}, {"field":"all","path":"/search.json","content":true,"sort":"-date"});
+        stellar.search[stellar.search.service] = service_obj;
+      }
+    }
+  
+    // stellar js
+    stellar.plugins.stellar = Object.assign({"sites":"/js/plugins/sites.js","friends":"/js/plugins/friends.js","ghinfo":"/js/plugins/ghinfo.js","timeline":"/js/plugins/timeline.js","linkcard":"/js/plugins/linkcard.js","fcircle":"/js/plugins/fcircle.js","weibo":"/js/plugins/weibo.js"});
+  
+    stellar.plugins.marked = Object.assign("https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js");
+    // optional plugins
+    if ('true' == 'true') {
+      stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://jsd.hzchu.top/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js","transition":"blur"});
+    }
+    if ('true' == 'true') {
+      stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.css","js":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.js"});
+    }
+    if ('' == 'true') {
+      stellar.plugins.scrollreveal = Object.assign({"enable":null,"js":"https://jsd.hzchu.top/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
+    }
+    if ('true' == 'true') {
+      stellar.plugins.preload = Object.assign({"enable":true,"service":"flying_pages","instant_page":"https://jsd.hzchu.top/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js","flying_pages":"https://jsd.hzchu.top/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"});
+    }
+    if ('true' == 'true') {
+      stellar.plugins.fancybox = Object.assign({"enable":true,"js":"https://jsd.hzchu.top/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js","css":"https://jsd.hzchu.top/npm/@fancyapps/ui@4.0/dist/fancybox.css","selector":".md-text img"});
+    }
+    if ('false' == 'true') {
+      stellar.plugins.heti = Object.assign({"enable":false,"css":"https://unpkg.com/heti@0.9.2/umd/heti.min.css","js":"https://unpkg.com/heti@0.9.2/umd/heti-addon.min.js"});
+    }
+    if ('true' == 'true') {
+      stellar.plugins.copycode = Object.assign({"enable":true,"js":"/js/plugins/copycode.js","default_text":"Copy","success_text":"Copied"});
+    }
+  </script>
+  
+  <!-- required -->
+  
+    
 <script src="/js/main.js" async></script>
 
-
-
-<!-- optional -->
-
+  
+  
+  <!-- optional -->
+  
   <script>
-    function load_artalk() {
-        if (!document.querySelectorAll("#artalk_container")[0]) return;
-        stellar.loadCSS('https://unpkg.com/artalk@2.5.5/dist/Artalk.css');
-        stellar.loadScript('https://unpkg.com/artalk@2.5.5/dist/Artalk.js', {
-            defer: true
-        }).then(function() {
-            const el = document.getElementById("artalk_container");
-            var path = el.getAttribute('comment_id');
-            if (!path) {
-                path = decodeURI(window.location.pathname);
-            }
+  function load_artalk() {
+    if (!document.querySelectorAll("#artalk_container")[0]) return;
+    stellar.loadCSS('https://unpkg.com/artalk@2.5.5/dist/Artalk.css');
+    stellar.loadScript('https://unpkg.com/artalk@2.5.5/dist/Artalk.js', {defer: true}).then(function () {
+      const el = document.getElementById("artalk_container");
+      var path = el.getAttribute('comment_id');
+      if (!path) {
+        path = decodeURI(window.location.pathname);
+      }
             var artalk = new Artalk({
                 el: '#artalk_container',
                 pageKey: path,
@@ -401,17 +420,17 @@
                 darkMode: 'auto',
                 emoticons: 'https://raw.hzchu.top/thun888/asstes/master/files/json/artalk/default.json',
             })
-        });
-    }
-    window.addEventListener('DOMContentLoaded', (event) => {
-        load_artalk();
-    });
+      });
+  }
+  window.addEventListener('DOMContentLoaded', (event) => {
+    load_artalk();
+  });
 </script>
 
 
-
-<!-- inject -->
-
-
+  
+  <!-- inject -->
+  
+  
   </div>
 <script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>

@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+
+<head>
+  <meta name="generator" content="Hexo 6.3.0">
+  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.19.0">
+  <meta charset="utf-8">
+  
+  <meta name="baidu-site-verification" content="codeva-tIYplL9wDO" />
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  <link rel='dns-prefetch' href='https://jsd.hzchu.top'>
+  <link rel="preconnect" href="https://jsd.hzchu.top" crossorigin>
+  <link rel='dns-prefetch' href='//unpkg.com'>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#f8f8f8">
+  
+  <title>基于Onedrive的高可用性图床 - Thun888</title>
+
+  
+    <meta name="description" content="前言一直以来，我都在尝试各种图片存储方案，一开始便是经典的Github+jsd，但考虑到违反了tos后面就用了cf+b2，但速度不尽人意。后来用了vercel反代gh和一些杂七杂八的，但换汤不换药嘛，还是不靠谱。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="基于Onedrive的高可用性图床">
+<meta property="og:url" content="https://blog.hzchu.top/2023/photoononedrive/">
+<meta property="og:site_name" content="Thun888">
+<meta property="og:description" content="前言一直以来，我都在尝试各种图片存储方案，一开始便是经典的Github+jsd，但考虑到违反了tos后面就用了cf+b2，但速度不尽人意。后来用了vercel反代gh和一些杂七杂八的，但换汤不换药嘛，还是不靠谱。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/cf1/2022/08/29/630c0d1c1087e.webp">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/2023/08/01/64c90aaccffac.webp">
+<meta property="og:image" content="https://jsd.hzchu.top/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatneutral.png">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/2023/07/31/64c78ef1d6bdd.webp">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/2023/07/31/64c78ee02488b.webp">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/2023/07/31/64c78d2be701c.webp">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/2023/07/31/64c78d6802369.webp">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/2023/07/31/64c790cd11e2f.webp">
+<meta property="og:image" content="https://jsd.hzchu.top/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatbox.png">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/2023/07/31/64c791e12d260.webp">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/2023/07/31/64c791ad2e565.webp">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/2023/07/31/64c7b69648695.webp">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/2023/07/31/64c7bd10e5167.webp">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/2023/07/31/64c7c05cc5077.webp">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/2023/07/31/64c7c4a67fdad.webp">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/2023/07/31/64c7c5eaae480.webp">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/2023/07/31/64c7c61147819.webp">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/2023/08/02/64ca059284ed4.webp">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/2023/08/02/64ca3aef2cf43.webp">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/2023/08/01/64c85bab42978.webp">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/2023/08/01/64c85bceda8cc.webp">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/2023/08/01/64c85ada80fe5.webp">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/2023/08/02/64ca4417e3b0d.webp">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/2023/07/31/64c7c747d041a.webp">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/2023/08/02/64ca523d745c7.webp">
+<meta property="og:image" content="https://jsd.hzchu.top/gh/norevi/waline-blobcatemojis@1.0/blobs/ablobcatattentionreverse.png">
+<meta property="og:image" content="https://github-readme-stats.xaoxuu.com/api/pin/?username=thun888&repo=MNSLXOD&theme=dark&show_owner=true">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/2023/08/02/64ca32eb1fac5.webp">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/2023/07/31/64c72c298f397.webp">
+<meta property="article:published_time" content="2023-07-31T11:53:17.000Z">
+<meta property="article:modified_time" content="2023-07-31T11:53:17.000Z">
+<meta property="article:author" content="thun888">
+<meta property="article:tag" content="MNSLXOD">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://onep.hzchu.top/mount/pic/cf1/2022/08/29/630c0d1c1087e.webp">
+  
+  
+  
+  <meta name="keywords" content="MNSLXOD">
+
+  <!-- feed -->
+  
+    <link rel="alternate" href="/atom.xml" title="Thun888" type="application/atom+xml">
+  
+
+  
+    
+<link rel="stylesheet" href="/css/main.css">
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+<link rel="stylesheet" href="https://jsd.hzchu.top/npm/lxgw-wenkai-screen-webfont@1.1.0/lxgwwenkaiscreen.css" media="all">
+<link rel="stylesheet" href="https://jsd.hzchu.top/npm/notyf@3/notyf.min.css">
+<link rel="stylesheet" href="/mcss/mcss.css">
+</head>
+<body>
+  
+
+
+
+
+  <div class='l_body' id='start'>
+    <aside class='l_left' layout='post'>
+    
+    
+        
+
+<header class="header"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://jsd.hzchu.top/gh/cdn-x/placeholder@1.0.4/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="/img/avatar.webp" onerror="javascript:this.classList.add('error');this.src='/img/svg/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">Thun888</div><div class="sub normal cap">夏日当空,心如深渊</div><div class="sub hover cap" style="opacity:0"> hzchu.top</div></a></div>
+
+<nav class="menu dis-select"><a class="nav-item active" href="/">文章</a><a class="nav-item" href="/wiki/">项目</a><a class="nav-item" href="/friends/">友链</a><a class="nav-item" href="/about/">关于</a></nav>
+</header>
+
+            
+                <div class="widgets">
+<widget class="widget-wrapper search"><div class="widget-body"><div class="search-wrapper" id="search"><form class="search-form"><input type="text" class="search-input" id="search-input" data-filter="/blog/" placeholder="文章搜索"><svg t="1670596976048" class="icon search-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2676" width="200" height="200"><path d="M938.2 832.6L723.8 618.1c-2.5-2.5-5.3-4.4-7.9-6.4 36.2-55.6 57.3-121.8 57.3-193.1C773.3 222.8 614.6 64 418.7 64S64 222.8 64 418.6c0 195.9 158.8 354.6 354.6 354.6 71.3 0 137.5-21.2 193.2-57.4 2 2.7 3.9 5.4 6.3 7.8L832.5 938c14.6 14.6 33.7 21.9 52.8 21.9 19.1 0 38.2-7.3 52.8-21.8 29.2-29.1 29.2-76.4 0.1-105.5M418.7 661.3C284.9 661.3 176 552.4 176 418.6 176 284.9 284.9 176 418.7 176c133.8 0 242.6 108.9 242.6 242.7 0 133.7-108.9 242.6-242.6 242.6" p-id="2677"></path></svg></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div></div></widget>
+
+
+<widget class="widget-wrapper toc single" id="data-toc"><div class="widget-header cap dis-select"><span class="name">基于Onedrive的高可用性图床</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF"><span class="toc-text">思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%86%E5%A4%87"><span class="toc-text">准备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%EF%BC%88%E5%9B%BE%E5%BA%8A%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%89"><span class="toc-text">安装（图床服务器）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%89%8D%E7%BD%AE"><span class="toc-text">前置</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#libfuse"><span class="toc-text">libfuse</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#rclone"><span class="toc-text">rclone</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#LNMP"><span class="toc-text">LNMP</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE"><span class="toc-text">配置</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%9B%BE%E5%BA%8A%E6%9C%AC%E4%BD%93"><span class="toc-text">图床本体</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Rclone"><span class="toc-text">Rclone</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%EF%BC%88%E4%B8%BB%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%89"><span class="toc-text">安装（主服务器）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%AD%E9%80%94-%E5%BC%80%E9%A6%99%E6%A7%9F-%E6%B5%8B%E8%AF%95"><span class="toc-text">中途 开香槟 测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%EF%BC%88%E5%89%AF%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%89"><span class="toc-text">安装（副服务器）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%8A%82%E7%82%B9"><span class="toc-text">节点</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%88%E6%9E%9C"><span class="toc-text">效果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%93%E8%AF%AD"><span class="toc-text">结语</span></a></li></ol></div></div></widget>
+
+
+
+
+</div>
+                    <a href="https://www.foreverblog.cn/go.html" target="_blank"> <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.foreverblog.cn/wormhole_4_tp.gif" alt="" style="width:auto;height:32px;" title="穿梭虫洞-随机访问十年之约友链博客"></a>
+                    <a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener" title="开往-友链接力"><img no-lazy src="https://raw.hzchu.top/travellings-link/travellings/master/assets/travelling.gif" data-src="https://raw.hzchu.top/travellings-link/travellings/master/assets/travelling.gif" alt="开往-友链接力" width="120" data-ll-status="loaded" onerror="javascript:this.classList.add('error');this.src='/img/svg/2659360.svg';"></a>
+                    <footer class="footer dis-select"><div class="social-wrap"><a class="social" href="/atom.xml" rel="noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/img/icons/25678f144c438.svg"/></a><a class="social" href="https://github.com/thun888" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/img/icons/08a41b181ce68.svg"/></a><a class="social" href="mailto:thun888@qq.com" rel="noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/img/icons/a1b00e20f425d.svg"/></a><a class="social" href="https://share.hzchu.top" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/img/icons/20210610162918.svg"/></a></div></footer>
+    </aside>
+    <div class='l_main'>
+      
+
+      
+
+
+  
+  <script type="text/javascript" src="https://unpkg.com/mermaid@10.3.0/dist/mermaid.min.js"></script>
+
+  <script>
+    var mermaid_config = {
+      startOnLoad: true,
+      theme: 'default',
+      logLevel: 3,
+      themeVariables: {
+        darkMode: true
+      },
+      flowchart: {
+        useMaxWidth: false,
+        htmlLabels: true,
+        curve: 'linear'
+      },
+      gantt: {
+        axisFormat: '%m/%d/%Y'
+      },
+      sequence: {
+        actorMargin: 50
+      }
+    }
+    // if (window.mermaid) {
+    //     mermaid.initialize(mermaid_config);
+    // }
+  </script>
+
+
+
+
+<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a><span class="sep"></span><a class="cap breadcrumb" href="/">文章</a></div><div id="post-meta">发布于&nbsp;<time datetime="2023-07-31T11:53:17.000Z">2023-07-31</time></div></div>
+
+<article class='md-text content post'>
+<h1 class="article-title"><span>基于Onedrive的高可用性图床</span></h1>
+<div id="gtime"></div>
+<div class="expired-message">
+  <span class="post-meta-item-text">字数统计:</span>
+  <span class="post-count">2.4k字</span>
+&nbsp; | &nbsp;
+  <span class="post-meta-item-text">阅读时长:</span>
+  <span class="post-count">10分</span>
+</div>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>一直以来，我都在尝试各种图片存储方案，一开始便是经典的Github+jsd，但考虑到违反了tos后面就用了cf+b2，但速度不尽人意。后来用了vercel反代gh和一些杂七杂八的，但换汤不换药嘛，还是不靠谱。</p>
+<span id="more"></span>
+
+<p>在差不多一年前，我在捣鼓网心云时想到个主意：何不用家里电脑作为图片存储，通过非标准端口访问绕过备案要求。于是在<a target="_blank" rel="noopener" href="https://notes.hzchu.top/">随记</a>上提出个简易pcdn的想法</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/cf1/2022/08/29/630c0d1c1087e.webp" fancybox="true"/></div></div>
+
+<p>不过像我这种小站没必要搞那么重量级了，于是改进了下</p>
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/08/01/64c90aaccffac.webp" fancybox="true"/></div></div>
+
+<p>首先，本质上是个缓存服务，存储在OneDrive（下文简称od），通过各个节点分发图片，<del>就是给od套了个CDN嘛</del>。</p>
+<p>因为我这网站也没多少流量，并发不高，我更倾向葫芦娃救爷爷式的单节点当主力，挂了再切换到其它节点的方式。</p>
+<p>最后就是轻量，总不能把od下放到每个节点吧。<span class="tag-plugin emoji"><img no-lazy="" class="inline lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://jsd.hzchu.top/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatneutral.png"/></span></p>
+<p>故：</p>
+<ol>
+<li>设立一个“主服务器”，用来将od的内容分发到节点，可以用无服务器函数，也可以直接和”图床服务器“合并。同时因为服务器间同步有延时，在”图床服务器“要留个口直接下载刚刚上传的图片。</li>
+<li>设立一个”副服务器“，负责检测节点状况和跳转到对应节点。</li>
+<li>”图床服务器“：使用lsky-pro作为图床程序，将od使用rclone挂载到对应的存储策略文件夹上。</li>
+<li>节点：获取访问的链接，检查本地有无缓存，有就返回，没有就下载再返回。考虑到要用php的话配置起来麻烦，直接用py了。</li>
+</ol>
+<h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><ol>
+<li>服务器 &gt;&#x3D;1台，最好是访问速度快的</li>
+<li>一个微软账户（我这里用的是E5订阅账户）</li>
+<li><em>有公网IP的家庭宽带（可选）</em></li>
+</ol>
+<p>在od中新建<code>/share/mount</code>目录，若自行更改请注意将下文涉及的地方一起修改</p>
+<p>推荐使用Linux，如果使用Windows下文操作将有所不同，需自行更改</p>
+<h3 id="安装（图床服务器）"><a href="#安装（图床服务器）" class="headerlink" title="安装（图床服务器）"></a>安装（图床服务器）</h3><p>首先完成“图床服务器”的搭建。</p>
+<h4 id="前置"><a href="#前置" class="headerlink" title="前置"></a>前置</h4><h5 id="libfuse"><a href="#libfuse" class="headerlink" title="libfuse"></a>libfuse</h5><p>安装<code>meson ninja</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install meson ninja</span><br></pre></td></tr></table></figure>
+
+<p>从 <a target="_blank" rel="noopener" href="https://github.com/libfuse/libfuse/releases">https://github.com/libfuse/libfuse/releases</a> 下载libfuse的源码</p>
+<p>解压，创建一个（临时）构建目录，然后 运行<code>meson</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">tar xzf fuse-3.15.1.tar.gz; <span class="built_in">cd</span> fuse-3.15.1/</span><br><span class="line"><span class="built_in">mkdir</span> build; <span class="built_in">cd</span> build</span><br><span class="line">meson setup ..</span><br></pre></td></tr></table></figure>
+
+<p>运行<code>ninja</code>进行安装</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ninja install</span><br></pre></td></tr></table></figure>
+
+<h5 id="rclone"><a href="#rclone" class="headerlink" title="rclone"></a>rclone</h5><p>安装：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl https://rclone.org/install.sh | sudo bash</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>同时在本地也要安装，用来获取token</p>
+</blockquote>
+<p>在本地运行rclone config进行配置</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/07/31/64c78ef1d6bdd.webp" fancybox="true"/></div></div>
+
+<p>把token复制出来备用（token包括两端的{}）</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/07/31/64c78ee02488b.webp" fancybox="true"/></div></div>
+
+<p>在服务端进行同样的操作，但在<code>Edit advanced config</code>中填<code>y</code></p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/07/31/64c78d2be701c.webp" alt="image-20230731182953894" fancybox="true"/></div><div class="image-meta"><span class="image-caption center">image-20230731182953894</span></div></div>
+
+
+
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/07/31/64c78d6802369.webp" alt="image-20230731183101473" fancybox="true"/></div><div class="image-meta"><span class="image-caption center">image-20230731183101473</span></div></div>
+
+<p>然后一路回车，在<code>Already have a token - refresh?</code>填<code>n</code></p>
+<p>然后按要求填写</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/07/31/64c790cd11e2f.webp" fancybox="true"/></div></div>
+
+<blockquote>
+<p>会自动获取drive_id,drive_type，不要回车太快按过了</p>
+</blockquote>
+<p>挂载试试吧</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> mount</span><br><span class="line">rclone mount one:/share/mount/ ./mount/</span><br></pre></td></tr></table></figure>
+
+<p>不出意外你能看见这个报错<span class="tag-plugin emoji"><img no-lazy="" class="inline lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://jsd.hzchu.top/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatbox.png"/></span></p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/07/31/64c791e12d260.webp" fancybox="true"/></div></div>
+
+<p>打开报错涉及的文件，取消注释，保存</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/07/31/64c791ad2e565.webp" fancybox="true"/></div></div>
+
+<p>再试下，如果没报错就可以了</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/07/31/64c7b69648695.webp" fancybox="true"/></div></div>
+
+<blockquote>
+<p>新建的mount文件夹在下文没有作用，建议删除~</p>
+<p>使用fusermount -qzu mount 卸载</p>
+</blockquote>
+<h5 id="LNMP"><a href="#LNMP" class="headerlink" title="LNMP"></a>LNMP</h5><p>不用多说</p>
+<h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><h5 id="图床本体"><a href="#图床本体" class="headerlink" title="图床本体"></a>图床本体</h5><p>我这里用的是<a target="_blank" rel="noopener" href="https://docs.lsky.pro/docs/free/v2/quick-start/installation.html">Lsky Pro</a>作为图床程序，其他大同小异</p>
+<p>按照文档安装好后，新建一个<strong>本地</strong>存储策略，访问地址指向“副服务器”，并在后面加上<code>/mount</code>，存储路径根据自己的网站路径来，如<code>/www/wwwroot/pic.hzchu.top/</code>就填<code>/www/wwwroot/pic.hzchu.top/storage/app/mount/</code></p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/07/31/64c7bd10e5167.webp" fancybox="true"/></div></div>
+
+<blockquote>
+<p>记得更改&amp;新建相应目录</p>
+</blockquote>
+<h5 id="Rclone"><a href="#Rclone" class="headerlink" title="Rclone"></a>Rclone</h5><p>rclone需要持久化运行，我这里建议的是Supervisor或系统自带的systemd，windows使用nssm</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rclone mount one:/share/mount/ /www/wwwroot/pic.hzchu.top/storage/app/mount/ --copy-links --no-gzip-encoding --no-check-certificate --allow-other --allow-non-empty --<span class="built_in">umask</span> 000 --vfs-cache-mode full --attr-timeout 15m --vfs-cache-max-age 240h --vfs-cache-max-size 1G --buffer-size 100M</span><br></pre></td></tr></table></figure>
+<div class="tag-plugin tabs" align="center"id="tab_1"><div class="nav-tabs"><div class="tab active"><a href="#tab_1-1">supervisor</a></div><div class="tab"><a href="#tab_1-2">systemd</a></div></div><div class="tab-content"><div class="tab-pane active" id="tab_1-1"><p>以宝塔面板为例</p>
+<p>打开<code>软件商店</code>，搜索并安装<code>进程守护管理器</code>：</p>
+<p>点击<code>添加守护进程</code>，如图所示</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/07/31/64c7c05cc5077.webp" fancybox="true"/></div></div></div><div class="tab-pane" id="tab_1-2"><p>运行：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /etc/systemd/system/rclone-one.service</span><br></pre></td></tr></table></figure>
+
+<p>​	写入：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=rclone-one</span><br><span class="line">After=network.target remote-fs.target nss-lookup.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">User=root</span><br><span class="line">ExecStart=rclone mount one:/share/mount/ /www/wwwroot/pic.hzchu.top/storage/app/mount/ --copy-links --no-gzip-encoding --no-check-certificate --allow-other --allow-non-empty --<span class="built_in">umask</span> 000 --vfs-cache-mode full --attr-timeout 15m --vfs-cache-max-age 240h --vfs-cache-max-size 1G --buffer-size 100M</span><br><span class="line">ExecReload=/bin/kill -s HUP <span class="variable">$MAINPID</span></span><br><span class="line">ExecStop=/bin/kill -s QUIT <span class="variable">$MAINPID</span></span><br><span class="line">Restart=on-abnormal</span><br><span class="line">RestartSec=5s</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure></div></div></div>
+<h3 id="安装（主服务器）"><a href="#安装（主服务器）" class="headerlink" title="安装（主服务器）"></a>安装（主服务器）</h3><p>可以用无服务器函数，这里使用<a target="_blank" rel="noopener" href="https://github.com/spencerwooo/onedrive-vercel-index">onedrive-vercel-index</a>作为OneDrive的直链解析，<a target="_blank" rel="noopener" href="https://ovi.swo.moe/zh/docs/getting-started">这里</a>是它的文档</p>
+<p>将<code>baseDirectory</code>设为<code>/share</code></p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/07/31/64c7c4a67fdad.webp" alt="1690813605718.webp" fancybox="true"/></div><div class="image-meta"><span class="image-caption center">1690813605718.webp</span></div></div>
+
+<p>由于原作者的应用程序已过期，需要自行配置，参考<a target="_blank" rel="noopener" href="https://ovi.swo.moe/zh/docs/advanced#%E4%BD%BF%E7%94%A8%E4%BD%A0%E8%87%AA%E5%B7%B1%E7%9A%84-client-id-%E4%B8%8E-secret">高级 - OneDrive Vercel Index (swo.moe)</a>进行调整</p>
+<blockquote>
+<p>由于<code>vercel.app</code>在国内污染严重，请绑定你的域名</p>
+</blockquote>
+<h3 id="中途-开香槟-测试"><a href="#中途-开香槟-测试" class="headerlink" title="中途 开香槟 测试"></a>中途 <del>开香槟</del> 测试</h3><ol>
+<li>在图床中上传一张图片，查看是否上传成功，若出现错误，则检查图床服务器</li>
+<li>等待5分钟后访问<code>https://yourdomain.top/zh-CN/mount/</code>，查看是否出现<code>pic</code>文件夹，并根据<code>年/月/日</code>进入子文件夹查看能否访问图片</li>
+</ol>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/07/31/64c7c5eaae480.webp" alt="1690813930882.webp" fancybox="true"/></div><div class="image-meta"><span class="image-caption center">1690813930882.webp</span></div></div>
+
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/07/31/64c7c61147819.webp" alt="image-20230731223247351" fancybox="true"/></div><div class="image-meta"><span class="image-caption center">image-20230731223247351</span></div></div>
+
+<h3 id="安装（副服务器）"><a href="#安装（副服务器）" class="headerlink" title="安装（副服务器）"></a>安装（副服务器）</h3><p>需要安装redis，故不推荐使用虚拟主机，但非要用可以使用Vercel的<a target="_blank" rel="noopener" href="https://vercel.com/dashboard/stores">Durable Redis</a></p>
+<blockquote>
+<p><strong>注：</strong></p>
+<p>jumpurl为该节点的对外访问地址</p>
+<p>apiurl 为“副服务器”的对外访问地址</p>
+<p>backupurl 为“图床服务器“的对外访问地址</p>
+<p>mainurl 为“主服务器“的对外访问地址</p>
+</blockquote>
+<div class="tag-plugin tabs" align="center"id="tab_2"><div class="nav-tabs"><div class="tab active"><a href="#tab_2-1">PHP版本</a></div><div class="tab"><a href="#tab_2-2">Python版本</a></div><div class="tab"><a href="#tab_2-3">解析</a></div></div><div class="tab-content"><div class="tab-pane active" id="tab_2-1"><blockquote>
+<p>需要修改redis连接地址，$user_token和$mainurl</p>
+</blockquote>
+<p>Code:</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="comment">// 连接 Redis 服务器</span></span><br><span class="line"><span class="variable">$redis</span> = <span class="keyword">new</span> <span class="title class_">Redis</span>();</span><br><span class="line"><span class="variable">$redis</span>-&gt;<span class="title function_ invoke__">connect</span>(<span class="string">&#x27;127.0.0.1&#x27;</span>, <span class="number">6379</span>);</span><br><span class="line"><span class="variable">$redis</span>-&gt;<span class="title function_ invoke__">select</span>(<span class="number">2</span>);</span><br><span class="line"><span class="comment">//token</span></span><br><span class="line"><span class="variable">$user_token</span> = <span class="string">&quot;yourtoken&quot;</span>;</span><br><span class="line"><span class="comment">//主服务器url</span></span><br><span class="line"><span class="variable">$mainurl</span> = <span class="string">&quot;https://yourdomain.top/api/raw/?path=/&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义限制器类</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Limiter</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="variable">$limits</span>;</span><br><span class="line">    <span class="keyword">private</span> <span class="variable">$key_func</span>;</span><br><span class="line">    <span class="keyword">private</span> <span class="variable">$requests</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">__construct</span>(<span class="params"><span class="variable">$key_func</span>, <span class="variable">$default_limits</span></span>) </span>&#123;</span><br><span class="line">        <span class="variable language_">$this</span>-&gt;limits = <span class="variable">$default_limits</span>;</span><br><span class="line">        <span class="variable language_">$this</span>-&gt;key_func = <span class="variable">$key_func</span>;</span><br><span class="line">        <span class="variable language_">$this</span>-&gt;requests = <span class="keyword">array</span>();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">limit</span>(<span class="params"><span class="variable">$route</span>, <span class="variable">$limit</span></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (!<span class="keyword">isset</span>(<span class="variable language_">$this</span>-&gt;requests[<span class="variable">$route</span>])) &#123;</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;requests[<span class="variable">$route</span>] = <span class="keyword">array</span>();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="variable">$key</span> = <span class="title function_ invoke__">call_user_func</span>(<span class="variable">$this</span>-&gt;key_func);</span><br><span class="line">        <span class="keyword">if</span> (!<span class="keyword">isset</span>(<span class="variable language_">$this</span>-&gt;requests[<span class="variable">$route</span>][<span class="variable">$key</span>])) &#123;</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;requests[<span class="variable">$route</span>][<span class="variable">$key</span>] = <span class="keyword">array</span>();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="title function_ invoke__">array_push</span>(<span class="variable">$this</span>-&gt;requests[<span class="variable">$route</span>][<span class="variable">$key</span>], <span class="title function_ invoke__">time</span>());</span><br><span class="line">        <span class="keyword">while</span> (<span class="title function_ invoke__">count</span>(<span class="variable">$this</span>-&gt;requests[<span class="variable">$route</span>][<span class="variable">$key</span>]) &gt; <span class="number">0</span> &amp;&amp; <span class="title function_ invoke__">time</span>() - <span class="variable language_">$this</span>-&gt;requests[<span class="variable">$route</span>][<span class="variable">$key</span>][<span class="number">0</span>] &gt; <span class="number">1</span>) &#123;</span><br><span class="line">            <span class="title function_ invoke__">array_shift</span>(<span class="variable">$this</span>-&gt;requests[<span class="variable">$route</span>][<span class="variable">$key</span>]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (<span class="title function_ invoke__">count</span>(<span class="variable">$this</span>-&gt;requests[<span class="variable">$route</span>][<span class="variable">$key</span>]) &gt; <span class="variable">$limit</span>) &#123;</span><br><span class="line">            <span class="title function_ invoke__">http_response_code</span>(<span class="number">429</span>);</span><br><span class="line">            <span class="keyword">die</span>(<span class="string">&#x27;Too Many Requests&#x27;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义获取客户端 IP 地址的函数</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">get_remote_address</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="variable">$_SERVER</span>[<span class="string">&#x27;REMOTE_ADDR&#x27;</span>];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 初始化限制器</span></span><br><span class="line"><span class="variable">$limiter</span> = <span class="keyword">new</span> <span class="title class_">Limiter</span>(<span class="string">&#x27;get_remote_address&#x27;</span>, <span class="keyword">array</span>(<span class="string">&#x27;40 per second&#x27;</span>));</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义 update 路由</span></span><br><span class="line"><span class="keyword">if</span> (<span class="variable">$_SERVER</span>[<span class="string">&#x27;REQUEST_METHOD&#x27;</span>] === <span class="string">&#x27;POST&#x27;</span> &amp;&amp; <span class="variable">$_SERVER</span>[<span class="string">&#x27;REQUEST_URI&#x27;</span>] === <span class="string">&#x27;/_api/update&#x27;</span>) &#123;</span><br><span class="line">    <span class="comment">// 检查请求速率</span></span><br><span class="line">    <span class="variable">$limiter</span>-&gt;<span class="title function_ invoke__">limit</span>(<span class="string">&#x27;/_api/update&#x27;</span>, <span class="number">5</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 获取请求参数</span></span><br><span class="line">    <span class="variable">$json</span> = <span class="title function_ invoke__">json_decode</span>(<span class="title function_ invoke__">file_get_contents</span>(<span class="string">&#x27;php://input&#x27;</span>), <span class="literal">true</span>);</span><br><span class="line">    <span class="variable">$token</span> = <span class="keyword">isset</span>(<span class="variable">$json</span>[<span class="string">&#x27;token&#x27;</span>]) ? <span class="variable">$json</span>[<span class="string">&#x27;token&#x27;</span>] : <span class="literal">null</span>;</span><br><span class="line">    <span class="variable">$server_id</span> = <span class="keyword">isset</span>(<span class="variable">$json</span>[<span class="string">&#x27;server_id&#x27;</span>]) ? <span class="variable">$json</span>[<span class="string">&#x27;server_id&#x27;</span>] : <span class="literal">null</span>;</span><br><span class="line">    <span class="variable">$url</span> = <span class="keyword">isset</span>(<span class="variable">$json</span>[<span class="string">&#x27;url&#x27;</span>]) ? <span class="variable">$json</span>[<span class="string">&#x27;url&#x27;</span>] : <span class="literal">null</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 检查参数完整性</span></span><br><span class="line">    <span class="keyword">if</span> (!<span class="variable">$token</span> || !<span class="variable">$server_id</span> || !<span class="variable">$url</span>) &#123;</span><br><span class="line">        <span class="title function_ invoke__">http_response_code</span>(<span class="number">400</span>);</span><br><span class="line">        <span class="keyword">die</span>(<span class="title function_ invoke__">json_encode</span>(<span class="keyword">array</span>(<span class="string">&#x27;code&#x27;</span> =&gt; <span class="number">1002</span>, <span class="string">&#x27;msg&#x27;</span> =&gt; <span class="string">&#x27;Missing required parameters.&#x27;</span>)));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 检查 token 是否有效</span></span><br><span class="line">    <span class="keyword">if</span> (<span class="variable">$token</span> !== <span class="variable">$user_token</span>) &#123;</span><br><span class="line">        <span class="title function_ invoke__">http_response_code</span>(<span class="number">400</span>);</span><br><span class="line">        <span class="keyword">die</span>(<span class="title function_ invoke__">json_encode</span>(<span class="keyword">array</span>(<span class="string">&#x27;code&#x27;</span> =&gt; <span class="number">1002</span>, <span class="string">&#x27;msg&#x27;</span> =&gt; <span class="string">&#x27;Invalid token.&#x27;</span>)));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 更新服务器信息</span></span><br><span class="line">    <span class="variable">$redis</span>-&gt;<span class="title function_ invoke__">setEx</span>(<span class="string">&quot;jump_<span class="subst">$server_id</span>&quot;</span>, <span class="number">1200</span>, <span class="variable">$url</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 返回成功消息</span></span><br><span class="line">    <span class="title function_ invoke__">header</span>(<span class="string">&#x27;Content-Type: application/json&#x27;</span>);</span><br><span class="line">    <span class="keyword">echo</span> <span class="title function_ invoke__">json_encode</span>(<span class="keyword">array</span>(<span class="string">&#x27;code&#x27;</span> =&gt; <span class="number">0</span>, <span class="string">&#x27;msg&#x27;</span> =&gt; <span class="string">&#x27;ok&#x27;</span>));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义 jump 路由</span></span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span> (<span class="variable">$_SERVER</span>[<span class="string">&#x27;REQUEST_METHOD&#x27;</span>] === <span class="string">&#x27;GET&#x27;</span> &amp;&amp; <span class="title function_ invoke__">preg_match</span>(<span class="string">&#x27;/^\/(.+)$/&#x27;</span>, <span class="variable">$_SERVER</span>[<span class="string">&#x27;REQUEST_URI&#x27;</span>], <span class="variable">$matches</span>)) &#123;</span><br><span class="line">    <span class="comment">// 检查请求速率</span></span><br><span class="line">    <span class="variable">$limiter</span>-&gt;<span class="title function_ invoke__">limit</span>(<span class="string">&#x27;/&lt;path:url&gt;&#x27;</span>, <span class="number">40</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 获取客户端请求的 URL</span></span><br><span class="line">    <span class="variable">$url</span> = <span class="variable">$matches</span>[<span class="number">1</span>];</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 从 Redis 中读取数据</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="variable">$i</span> = <span class="number">1</span>; <span class="variable">$i</span> &lt;= <span class="number">5</span>; ++<span class="variable">$i</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="variable">$redis</span>-&gt;<span class="title function_ invoke__">exists</span>(<span class="string">&quot;jump_<span class="subst">$i</span>&quot;</span>)) &#123;</span><br><span class="line">            <span class="variable">$orig_url</span> = <span class="variable">$redis</span>-&gt;<span class="title function_ invoke__">get</span>(<span class="string">&quot;jump_<span class="subst">$i</span>&quot;</span>);</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 如果未找到数据，则使用默认的原始 URL</span></span><br><span class="line">    <span class="keyword">if</span> (!<span class="keyword">isset</span>(<span class="variable">$orig_url</span>)) &#123;</span><br><span class="line">        <span class="variable">$orig_url</span> = <span class="variable">$mainurl</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 拼接 URL 并重定向客户端</span></span><br><span class="line">    <span class="title function_ invoke__">header</span>(<span class="string">&#x27;Location: &#x27;</span> . (<span class="variable">$orig_url</span> . <span class="title function_ invoke__">urlencode</span>(<span class="variable">$url</span>)));</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>伪静态配置:</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">location</span> / &#123;</span><br><span class="line">    <span class="attribute">try_files</span> <span class="variable">$uri</span> <span class="variable">$uri</span>/ /index.php?<span class="variable">$args</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="tab_2-2"><p>Code:</p>
+<blockquote>
+<p>需要修改redis连接地址，user_token和mainurl</p>
+</blockquote>
+<p>安装依赖：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install flask flask_limiter hypercorn</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> Flask, jsonify, request, redirect</span><br><span class="line"><span class="keyword">from</span> flask_limiter <span class="keyword">import</span> Limiter</span><br><span class="line"><span class="keyword">from</span> flask_limiter.util <span class="keyword">import</span> get_remote_address</span><br><span class="line"><span class="keyword">import</span> redis</span><br><span class="line"><span class="keyword">from</span> hypercorn.asyncio <span class="keyword">import</span> serve</span><br><span class="line"><span class="keyword">from</span> hypercorn.config <span class="keyword">import</span> Config</span><br><span class="line"><span class="keyword">import</span> asyncio</span><br><span class="line"></span><br><span class="line">limiter = Limiter(</span><br><span class="line">    key_func=get_remote_address,</span><br><span class="line">    default_limits=[<span class="string">&quot;20 per second&quot;</span>],</span><br><span class="line">    storage_uri=<span class="string">&#x27;redis://localhost:6379&#x27;</span></span><br><span class="line">)</span><br><span class="line">config = Config()</span><br><span class="line"><span class="comment">#配置区</span></span><br><span class="line">redis_client = redis.Redis(host=<span class="string">&#x27;localhost&#x27;</span>, port=<span class="number">6379</span>, db=<span class="number">2</span>)</span><br><span class="line">mainurl = <span class="string">&quot;https://yourdomain.top/api/raw/?path=/&quot;</span></span><br><span class="line">user_token = <span class="string">&quot;user_token&quot;</span> <span class="comment">#双端保持一致</span></span><br><span class="line">config.bind = [<span class="string">&quot;0.0.0.0:56789&quot;</span>] <span class="comment">#可自行修改端口号</span></span><br><span class="line">config.protocol = <span class="string">&quot;h2&quot;</span>  <span class="comment"># 启用HTTP2</span></span><br><span class="line"><span class="comment">#注意需要替换为你的证书路径</span></span><br><span class="line">config.certfile = <span class="string">&quot;./pem.pem&quot;</span></span><br><span class="line">config.keyfile = <span class="string">&quot;./key.key&quot;</span></span><br><span class="line"><span class="comment">#访问日志</span></span><br><span class="line">config.accesslog = <span class="string">&quot;access.log&quot;</span></span><br><span class="line"></span><br><span class="line">app = Flask(__name__)</span><br><span class="line">limiter.init_app(app)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route(<span class="params"><span class="string">&#x27;/_api/update&#x27;</span>, methods=[<span class="string">&#x27;POST&#x27;</span>]</span>)</span></span><br><span class="line"><span class="meta">@limiter.limit(<span class="params"><span class="string">&quot;5 per second&quot;</span></span>)</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">update</span>():</span><br><span class="line">    token = request.json.get(<span class="string">&#x27;token&#x27;</span>)</span><br><span class="line">    server_id = request.json.get(<span class="string">&#x27;server_id&#x27;</span>)</span><br><span class="line">    url = request.json.get(<span class="string">&#x27;url&#x27;</span>)</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> token <span class="keyword">or</span> <span class="keyword">not</span> url <span class="keyword">or</span> <span class="keyword">not</span> server_id:</span><br><span class="line">        <span class="keyword">return</span> jsonify(&#123;<span class="string">&#x27;code&#x27;</span>:<span class="number">1002</span>,<span class="string">&#x27;msg&#x27;</span>: <span class="string">&#x27;Missing required parameters.&#x27;</span>&#125;), <span class="number">400</span></span><br><span class="line">    <span class="keyword">if</span> token != user_token:</span><br><span class="line">        <span class="keyword">return</span> jsonify(&#123;<span class="string">&#x27;code&#x27;</span>:<span class="number">1002</span>,<span class="string">&#x27;msg&#x27;</span>: <span class="string">&#x27;Invalid token.&#x27;</span>&#125;), <span class="number">400</span></span><br><span class="line">    <span class="built_in">print</span>(server_id)</span><br><span class="line">    key = <span class="string">f&#x27;jump_<span class="subst">&#123;server_id&#125;</span>&#x27;</span></span><br><span class="line">    redis_client.setex(key, <span class="number">1200</span>, url)</span><br><span class="line">    <span class="keyword">return</span> jsonify(&#123;<span class="string">&#x27;code&#x27;</span>:<span class="number">0</span>,<span class="string">&#x27;msg&#x27;</span>: <span class="string">&#x27;ok&#x27;</span>&#125;), <span class="number">200</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route(<span class="params"><span class="string">&#x27;/&lt;path:url&gt;&#x27;</span></span>)</span></span><br><span class="line"><span class="meta">@limiter.limit(<span class="params"><span class="string">&quot;30 per second&quot;</span></span>)</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">jump</span>(<span class="params">url</span>):</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, <span class="number">6</span>):</span><br><span class="line">        <span class="comment"># 从Redis中读取数据</span></span><br><span class="line">        orig_url = <span class="literal">None</span></span><br><span class="line">        value = redis_client.get(<span class="string">f&#x27;jump_<span class="subst">&#123;i&#125;</span>&#x27;</span>)</span><br><span class="line">        <span class="keyword">if</span> value:</span><br><span class="line">            orig_url = value.decode(<span class="string">&#x27;utf-8&#x27;</span>)</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> orig_url:</span><br><span class="line">        orig_url = mainurl</span><br><span class="line">    backurl = orig_url + url</span><br><span class="line">    <span class="keyword">return</span> redirect(backurl)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    <span class="comment">#app.run(debug=True)</span></span><br><span class="line">    <span class="comment">#app.run()</span></span><br><span class="line">    asyncio.run(serve(app, config))</span><br><span class="line"></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="tab_2-3"><p>运行逻辑：</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/08/02/64ca059284ed4.webp" alt="image-20230802152803639" fancybox="true"/></div><div class="image-meta"><span class="image-caption center">image-20230802152803639</span></div></div>
+
+<pre class="mermaid">flowchart TD
+id0([访问]) --> id1["判断路径是否为'/_api/update'"]
+id1 --> |是| id2["读取相关数据计入redis"]
+id1 --> |否| id3["设初始值为n(n₀=1,<6)，读取redis中'jump_n'"]
+id3 --> |值不存在| id4["n+1"]
+id4 --> id3
+id3 ---> |值存在| id5["读取相应值，与访问路径拼接后重定向"]
+id3 ---> |值均不存在| id6["将'主服务器'地址与访问路径拼接后重定向"]</pre>
+
+
+<ol>
+<li>接受服务器状态：相比于主动检测，被动式显然更简单。通过向<code>/_api/update</code>发送<code>POST</code>请求(json)，内容包括<code>token,server_id,url</code>，server_id是阿拉伯数字，url是节点的对外访问地址，将存入redis中，20分钟过期</li>
+<li><code>/*</code>の跳转：在请求图片时，会把1-5的数字往挨个请求[如果有更多节点可以更改]，如果有值，则取该值与访问地址拼接后，返回重定向请求。如果无节点在线，则将主服务器地址与访问地址拼接再返回。</li>
+<li>均有访问速率限制，防止被人打到爆炸，可以根据实际情况调节上限。</li>
+</ol></div></div></div>
+
+<p>在搭建完成后，测试访问之前上传的图片，如果能返回图片即ok</p>
+<h4 id="节点"><a href="#节点" class="headerlink" title="节点"></a>节点</h4><p>考虑到php部署起来麻烦，这里用python解决一切</p>
+<div class="tag-plugin tabs" align="center"id="tab_3"><div class="nav-tabs"><div class="tab active"><a href="#tab_3-1">Python</a></div><div class="tab"><a href="#tab_3-2">解析</a></div></div><div class="tab-content"><div class="tab-pane active" id="tab_3-1"><p>下载数据库到程序同目录：<a target="_blank" rel="noopener" href="https://raw.hzchu.top/thun888/MNSLXOD/main/node/data.db">[点击下载]</a></p>
+<p>安装依赖：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install flask flask_limiter hypercorn</span><br></pre></td></tr></table></figure>
+
+<p>Code:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> Flask, jsonify, send_file, request</span><br><span class="line"><span class="keyword">from</span> flask_limiter <span class="keyword">import</span> Limiter</span><br><span class="line"><span class="keyword">from</span> flask_limiter.util <span class="keyword">import</span> get_remote_address</span><br><span class="line"><span class="keyword">import</span> sqlite3</span><br><span class="line"><span class="keyword">import</span> datetime</span><br><span class="line"><span class="keyword">import</span> threading</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">from</span> hypercorn.asyncio <span class="keyword">import</span> serve</span><br><span class="line"><span class="keyword">from</span> hypercorn.config <span class="keyword">import</span> Config</span><br><span class="line"><span class="keyword">import</span> asyncio</span><br><span class="line"></span><br><span class="line">limiter = Limiter(</span><br><span class="line">    key_func=get_remote_address,</span><br><span class="line">    default_limits=[<span class="string">&quot;40 per second&quot;</span>],</span><br><span class="line">    storage_uri=<span class="string">&#x27;redis://localhost:6379&#x27;</span></span><br><span class="line">)</span><br><span class="line">config = Config()</span><br><span class="line"><span class="comment">###配置区###</span></span><br><span class="line">config.bind = [<span class="string">&quot;0.0.0.0:45678&quot;</span>]  <span class="comment"># 自行更改端口</span></span><br><span class="line">config.protocol = <span class="string">&quot;h2&quot;</span>  <span class="comment"># 启用HTTP2</span></span><br><span class="line"><span class="comment">#注意需要替换为你的证书路径，不用就连带下面两行注释掉</span></span><br><span class="line">config.certfile = <span class="string">&quot;./pem.pem&quot;</span></span><br><span class="line">config.keyfile = <span class="string">&quot;./key.key&quot;</span></span><br><span class="line"><span class="comment">#访问日志目录</span></span><br><span class="line">config.accesslog = <span class="string">&quot;access.log&quot;</span></span><br><span class="line">server_id = <span class="number">1</span></span><br><span class="line">mainurl = <span class="string">&quot;https://yuordomain.top/api/raw/?path=/&quot;</span></span><br><span class="line">jumpurl = <span class="string">&quot;https://jumpurl/&quot;</span></span><br><span class="line">apiurl = <span class="string">&quot;http://apiurl/&quot;</span></span><br><span class="line">backupurl = <span class="string">&quot;http://backupurl/&quot;</span></span><br><span class="line">token = <span class="string">&quot;token&quot;</span></span><br><span class="line"></span><br><span class="line">app = Flask(__name__)</span><br><span class="line">limiter.init_app(app)</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">savetodatabase</span>(<span class="params">nowtime,outdata,indata</span>):</span><br><span class="line">    conn = sqlite3.connect(<span class="string">&#x27;data.db&#x27;</span>)</span><br><span class="line">    cursor_daily = conn.cursor()</span><br><span class="line">    cursor_daily.execute(<span class="string">&quot;SELECT COUNT(*) FROM daily WHERE date=?&quot;</span>, (nowtime,))</span><br><span class="line">    <span class="keyword">if</span> cursor_daily.fetchone()[<span class="number">0</span>] == <span class="number">0</span>:</span><br><span class="line">        cursor_daily.execute(<span class="string">&quot;INSERT INTO daily (date, get, traffic_out, traffic_in) VALUES (?, ?, ?, ?)&quot;</span>, (nowtime, <span class="number">1</span>, outdata, indata))</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        cursor_daily.execute(<span class="string">&quot;UPDATE daily SET traffic_out = traffic_out + ?, get = get + ?, traffic_in = traffic_in + ? WHERE date=?&quot;</span>, (outdata, <span class="number">1</span>, indata, nowtime))</span><br><span class="line"></span><br><span class="line">    cursor_total = conn.cursor()</span><br><span class="line">    cursor_total.execute(<span class="string">&quot;UPDATE total SET traffic_out = traffic_out + ?, get = get + ?, traffic_in = traffic_in + ?&quot;</span>, (outdata, <span class="number">1</span>, indata))</span><br><span class="line">    conn.commit()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route(<span class="params"><span class="string">&#x27;/_api/status&#x27;</span></span>)</span></span><br><span class="line"><span class="meta">@limiter.limit(<span class="params"><span class="string">&quot;1 per second&quot;</span></span>)</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">get_status</span>():</span><br><span class="line">    uptime = <span class="built_in">str</span>(datetime.datetime.now() - start_time)</span><br><span class="line">    conn = sqlite3.connect(<span class="string">&#x27;data.db&#x27;</span>)</span><br><span class="line">    cursor = conn.cursor()</span><br><span class="line">    cursor.execute(<span class="string">&quot;SELECT get,traffic_in,traffic_out FROM total&quot;</span>)</span><br><span class="line">    result = cursor.fetchone()</span><br><span class="line">    get = result[<span class="number">0</span>]</span><br><span class="line">    traffic_in = result[<span class="number">1</span>]</span><br><span class="line">    traffic_out = result[<span class="number">2</span>]</span><br><span class="line">    <span class="comment"># 构造状态信息</span></span><br><span class="line">    status = &#123;</span><br><span class="line">        <span class="string">&#x27;server_id&#x27;</span>: server_id,</span><br><span class="line">        <span class="string">&#x27;uptime&#x27;</span>: uptime,</span><br><span class="line">        <span class="string">&#x27;traffic_out&#x27;</span>: traffic_out,</span><br><span class="line">        <span class="string">&#x27;traffic_in&#x27;</span>: traffic_in,</span><br><span class="line">        <span class="string">&#x27;get&#x27;</span>: get</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> jsonify(status)</span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route(<span class="params"><span class="string">&#x27;/_api/traffic&#x27;</span></span>)</span></span><br><span class="line"><span class="meta">@limiter.limit(<span class="params"><span class="string">&quot;1 per second&quot;</span></span>)</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">get_traffic_daily</span>():</span><br><span class="line">    conn = sqlite3.connect(<span class="string">&#x27;data.db&#x27;</span>)</span><br><span class="line">    cursor = conn.cursor()</span><br><span class="line"></span><br><span class="line">    cursor.execute(<span class="string">&#x27;SELECT * FROM &quot;daily&quot; ORDER BY &quot;date&quot; DESC LIMIT 0,14&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    rows = cursor.fetchall()</span><br><span class="line">    cursor.close()</span><br><span class="line">    conn.close()</span><br><span class="line"></span><br><span class="line">    data = []</span><br><span class="line">    <span class="keyword">for</span> row <span class="keyword">in</span> rows:</span><br><span class="line">        data.append(&#123;</span><br><span class="line">            <span class="string">&#x27;date&#x27;</span>: row[<span class="number">0</span>],</span><br><span class="line">            <span class="string">&#x27;traffic_out&#x27;</span>: row[<span class="number">3</span>],</span><br><span class="line">            <span class="string">&#x27;traffic_in&#x27;</span>: row[<span class="number">2</span>]</span><br><span class="line">        &#125;)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> jsonify(data)</span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route(<span class="params"><span class="string">&#x27;/_api/cache_clean&#x27;</span></span>)</span></span><br><span class="line"><span class="meta">@limiter.limit(<span class="params"><span class="string">&quot;1 per second&quot;</span></span>)</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">cache_clean</span>():</span><br><span class="line">    day = <span class="built_in">int</span>(request.args.get(<span class="string">&#x27;day&#x27;</span>, <span class="number">1</span>))</span><br><span class="line">    size = clear_old_files(<span class="number">0</span>)</span><br><span class="line">    status = &#123;</span><br><span class="line">        <span class="string">&#x27;size&#x27;</span>: size,</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> jsonify(status)</span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route(<span class="params"><span class="string">&#x27;/&lt;path:url&gt;&#x27;</span></span>)</span></span><br><span class="line"><span class="meta">@limiter.limit(<span class="params"><span class="string">&quot;40 per second&quot;</span></span>)</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">download_file</span>(<span class="params">url</span>):</span><br><span class="line">    <span class="comment">#print(url)</span></span><br><span class="line">    <span class="keyword">if</span> url == <span class="string">&quot;favicon.ico&quot;</span>:</span><br><span class="line">        url = <span class="string">&quot;mount/pic/favicon.webp&quot;</span></span><br><span class="line">    cache_path = os.path.join(<span class="string">&#x27;tmp&#x27;</span>, url)</span><br><span class="line">    nowtime = datetime.datetime.now().strftime(<span class="string">&quot;%Y-%m-%d&quot;</span>)</span><br><span class="line">    <span class="keyword">if</span> os.path.exists(cache_path):</span><br><span class="line">        file_size = os.path.getsize(cache_path)</span><br><span class="line">        savetodatabase(nowtime,file_size,<span class="number">0</span>)</span><br><span class="line">        <span class="keyword">return</span> send_file(cache_path)</span><br><span class="line"></span><br><span class="line">    primary_url = mainurl + url</span><br><span class="line">    response = requests.get(primary_url, allow_redirects=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> response.status_code == <span class="number">200</span>:</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            os.makedirs(os.path.dirname(cache_path))</span><br><span class="line">        <span class="keyword">except</span> OSError:</span><br><span class="line">            <span class="keyword">pass</span></span><br><span class="line">        <span class="keyword">with</span> <span class="built_in">open</span>(cache_path, <span class="string">&#x27;wb&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">            f.write(response.content)</span><br><span class="line"></span><br><span class="line">        file_size = os.path.getsize(cache_path)</span><br><span class="line">        savetodatabase(nowtime,file_size,file_size)</span><br><span class="line">        <span class="keyword">return</span> send_file(cache_path)</span><br><span class="line"></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;从原站获取&quot;</span>+url)</span><br><span class="line">    secondary_url = backupurl + url</span><br><span class="line">    response = requests.get(secondary_url, allow_redirects=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> response.status_code == <span class="number">200</span>:</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            os.makedirs(os.path.dirname(cache_path))</span><br><span class="line">        <span class="keyword">except</span> OSError:</span><br><span class="line">            <span class="keyword">pass</span></span><br><span class="line">        <span class="keyword">with</span> <span class="built_in">open</span>(cache_path, <span class="string">&#x27;wb&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">            f.write(response.content)</span><br><span class="line"></span><br><span class="line">        file_size = os.path.getsize(cache_path)</span><br><span class="line">        savetodatabase(nowtime,file_size,file_size)</span><br><span class="line">        <span class="keyword">return</span> send_file(cache_path)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        error_msg = <span class="string">&#x27;Failed to download file. URLs: %s&#x27;</span> % (primary_url)</span><br><span class="line">        app.logger.error(error_msg)</span><br><span class="line">        <span class="keyword">return</span> jsonify(&#123;<span class="string">&#x27;error&#x27;</span>: error_msg&#125;), <span class="number">404</span></span><br><span class="line">    </span><br><span class="line"><span class="keyword">def</span> <span class="title function_">get_directory_size</span>(<span class="params">path</span>):</span><br><span class="line">    total_size = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> dirpath, dirnames, filenames <span class="keyword">in</span> os.walk(path):</span><br><span class="line">        <span class="keyword">for</span> filename <span class="keyword">in</span> filenames:</span><br><span class="line">            file_path = os.path.join(dirpath, filename)</span><br><span class="line">            total_size += os.path.getsize(file_path)</span><br><span class="line">    <span class="keyword">return</span> total_size</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">clear_old_files</span>(<span class="params">days</span>):</span><br><span class="line">    total_deleted_size = <span class="number">0</span>  <span class="comment"># 用于记录删除文件的总大小</span></span><br><span class="line">    <span class="comment"># 获取当前时间</span></span><br><span class="line">    current_time = datetime.datetime.now()</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 计算1天前的时间</span></span><br><span class="line">    one_day_ago = current_time - datetime.timedelta(days=days)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 遍历目录中的所有文件</span></span><br><span class="line">    <span class="keyword">for</span> root, dirs, files <span class="keyword">in</span> os.walk(current_directory):</span><br><span class="line">        <span class="keyword">for</span> file <span class="keyword">in</span> files:</span><br><span class="line">            file_path = os.path.join(root, file)</span><br><span class="line"></span><br><span class="line">            modification_time = datetime.datetime.fromtimestamp(os.path.getmtime(file_path))</span><br><span class="line"></span><br><span class="line">            <span class="comment"># 如果文件的修改时间早于1天前的时间，则删除文件</span></span><br><span class="line">            <span class="keyword">if</span> modification_time &lt; one_day_ago:</span><br><span class="line">                file_size = os.path.getsize(file_path)  <span class="comment"># 获取文件大小</span></span><br><span class="line">                total_deleted_size += file_size  <span class="comment"># 累加删除文件的大小</span></span><br><span class="line">                os.remove(file_path)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> total_deleted_size</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">delcache</span>():</span><br><span class="line">    size = get_directory_size(current_directory)</span><br><span class="line">    <span class="keyword">if</span> size &gt; <span class="number">5368709120</span>:</span><br><span class="line">        clear_old_files(<span class="number">10</span>)                       </span><br><span class="line"><span class="keyword">def</span> <span class="title function_">update</span>():</span><br><span class="line">    data = &#123;</span><br><span class="line">        <span class="string">&quot;token&quot;</span>: token,</span><br><span class="line">        <span class="string">&quot;server_id&quot;</span>: server_id, </span><br><span class="line">        <span class="string">&quot;url&quot;</span>: jumpurl </span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 定义目标网址</span></span><br><span class="line">    target_url = apiurl + <span class="string">&quot;_api/update&quot;</span></span><br><span class="line">    <span class="comment"># 发送post请求，并获取响应</span></span><br><span class="line">    response = requests.post(target_url, json=data)       </span><br><span class="line">    <span class="keyword">return</span> response                      </span><br><span class="line"><span class="keyword">def</span> <span class="title function_">run_timer</span>():</span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:                                                                                                                                                                              </span><br><span class="line">        <span class="comment"># 每15分钟执行一次</span></span><br><span class="line">        time.sleep(<span class="number">15</span> * <span class="number">60</span>)</span><br><span class="line">        threading.Thread(target=delcache).start()</span><br><span class="line">        threading.Thread(target=update).start()</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    start_time = datetime.datetime.now()</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> os.path.exists(<span class="string">&#x27;tmp&#x27;</span>):</span><br><span class="line">        os.mkdir(<span class="string">&#x27;tmp&#x27;</span>)</span><br><span class="line">    current_directory = os.path.join(os.getcwd(), <span class="string">&#x27;tmp&#x27;</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;缓存目录为:&quot;</span>,current_directory)</span><br><span class="line">    update()</span><br><span class="line">    <span class="comment">#print(start_time)</span></span><br><span class="line">    timer_thread = threading.Thread(target=run_timer)</span><br><span class="line">    timer_thread.daemon = <span class="literal">True</span></span><br><span class="line">    timer_thread.start()</span><br><span class="line">    <span class="comment"># app.run(debug=True,host=&#x27;0.0.0.0&#x27;)</span></span><br><span class="line">    <span class="comment"># app.run(host=&#x27;0.0.0.0&#x27;)</span></span><br><span class="line">    asyncio.run(serve(app, config))  <span class="comment"># 启动服务器</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>节点附带了两个简易api用于查看该节点运行情况</p>
+<p>实际部署中可能需要自行配置ssl证书以使开启了https的网站可以正常访问</p>
+<p>如果外部不套反向代理建议自定义10000-65535的端口</p>
+<p>进程同样需要持久化，可以参考rclone部分</p>
+</blockquote></div><div class="tab-pane" id="tab_3-2"><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/08/02/64ca3aef2cf43.webp" fancybox="true"/></div></div>
+
+<pre class="mermaid">flowchart TD
+    id0([访问]) --> id1["判断路径是否为'/_api/...'"]
+    id1 --> |是| id2["读取相关数据返回"]
+    id1 --> |否| id3["检查本地有无对应文件缓存"]
+    id3 ---> |文件存在| id4["读取文件返回"]
+    id3 ---> |文件不存在| id5["将'主服务器'地址与访问路径拼接后请求，下载文件后返回"]
+    id6(["定时器（15min）"]) --> id7(["清理缓存"]) --> id8["检查缓存目录大小"] --> |>5GB| id9["清理一天前缓存"]
+    id8 --> |"≦5GB"| id10["不动作"]
+    id6 --> id11(["上报服务器消息"])</pre></div></div></div>
+
+<h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h3><div class="tag-plugin tabs" align="center"id="tab_4"><div class="nav-tabs"><div class="tab active"><a href="#tab_4-1">直接访问OneDrive目录程序</a></div><div class="tab"><a href="#tab_4-2">正常访问效果</a></div><div class="tab"><a href="#tab_4-3">直接访问家宽节点</a></div></div><div class="tab-content"><div class="tab-pane active" id="tab_4-1"><p>低并发</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/08/01/64c85bab42978.webp" alt="1690852265630.webp" fancybox="true"/></div><div class="image-meta"><span class="image-caption center">1690852265630.webp</span></div></div>
+
+<p>高并发</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/08/01/64c85bceda8cc.webp" alt="1690852301797.webp" fancybox="true"/></div><div class="image-meta"><span class="image-caption center">1690852301797.webp</span></div></div></div><div class="tab-pane" id="tab_4-2"><p>低并发</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/08/01/64c85ada80fe5.webp" fancybox="true"/></div></div>
+
+<p>高并发</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/08/02/64ca4417e3b0d.webp" fancybox="true"/></div></div></div><div class="tab-pane" id="tab_4-3"><p>低并发</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/07/31/64c7c747d041a.webp" fancybox="true"/></div></div>
+
+<p>高并发</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/08/02/64ca523d745c7.webp" fancybox="true"/></div></div></div></div></div>
+
+<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>对应这个项目，我感觉就是：<code>易上手，易扩展</code>，同时可以薅到各大厂商的羊毛（怎么薅就看各位的了），既可以把一些不稳定的服务利用起来，又不用担心出问题时全部拉闸。并且背靠微软不用担心无良厂商跑路数据丢失。</p>
+<p>而关于利用国内宽带提供网络服务的问题，我想联通与其抓我这1个月200MB上传的小服务，不如去抓那些狗大户，更重要的是图床时自用的，不用担心因为违法色情的图片被请去喝茶。</p>
+<p>该项目也可以用在别的地方，自行发挥啦<span class="tag-plugin emoji"><img no-lazy="" class="inline lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://jsd.hzchu.top/gh/norevi/waline-blobcatemojis@1.0/blobs/ablobcatattentionreverse.png"/></span></p>
+<p>项目开源地址：</p>
+<div class="tag-plugin ghcard"><a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/thun888/MNSLXOD"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://github-readme-stats.xaoxuu.com/api/pin/?username=thun888&repo=MNSLXOD&theme=dark&show_owner=true"/></a></div>
+
+
+
+<p>ps：</p>
+<p>从4月份到现在为od节省了17倍的数据</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/08/02/64ca32eb1fac5.webp" alt="image-20230802183846133.webp" fancybox="true"/></div><div class="image-meta"><span class="image-caption center">image-20230802183846133.webp</span></div></div>
+
+<p>从4月份到现在的日志</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/07/31/64c72c298f397.webp" fancybox="true"/></div></div>
+<p>共480多条，大多数都是爬虫的贡献</p>
+
+
+
+    <div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div></section><section id="share"><div class="header"><span>分享文章</span></div><div class="body"><div class="link"><input class="copy-area" readonly="true" id="copy-link" value="https://blog.hzchu.top/2023/photoononedrive/" /></div><div class="social-wrap dis-select"><a class="social share-item wechat" onclick="util.toggle(&quot;qrcode-wechat&quot)"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://jsd.hzchu.top/gh/cdn-x/placeholder@1.0.4/social/b32ef3da1162a.svg"/></a><a class="social share-item weibo" target="_blank" rel="external nofollow noopener noreferrer" href="https://service.weibo.com/share/share.php?url=https://blog.hzchu.top/2023/photoononedrive/&title=基于Onedrive的高可用性图床 - Thun888&pics=https://onep.hzchu.top/mount/pic/2023/08/01/64c90aaccffac.webp&summary=前言一直以来，我都在尝试各种图片存储方案，一开始便是经典的Github+jsd，但考虑到违反了tos后面就用了cf+b2，但速度不尽人意。后来用了vercel反代gh和一些杂七杂八的，但换汤不换药嘛，还是不靠谱。"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://jsd.hzchu.top/gh/cdn-x/placeholder@1.0.4/social/80c07e4dbb303.svg"/></a><a class="social share-item email" href="mailto:?subject=基于Onedrive的高可用性图床 - Thun888&amp;body=https://blog.hzchu.top/2023/photoononedrive/"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://jsd.hzchu.top/gh/cdn-x/placeholder@1.0.4/social/a1b00e20f425d.svg"/></a><a class="social share-item link" onclick="util.copy(&quot;copy-link&quot;, &quot;复制成功&quot;)"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://jsd.hzchu.top/gh/cdn-x/placeholder@1.0.4/social/8411ed322ced6.svg"/></a></div><div class="qrcode" id="qrcode-wechat" style="visibility:hidden;height:0"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://api.qrserver.com/v1/create-qr-code/?size=256x256&data=https://blog.hzchu.top/2023/photoononedrive/"/></div></div></section></div>
+<script>
+  //更新时间
+  gtime_days = Math.floor((new Date() - new Date('')) / 1000 / 60 / 60 / 24);
+  if (gtime_days > 60) {
+    document.getElementById('gtime').innerHTML = "<div class='old-message'>提醒：本文最后更新于 "+gtime_days+" 天前，其中某些信息可能已经过时，请谨慎使用！</div>";
+  }
+</script>
+</article>
+
+<div class="related-wrap reveal" id="read-next"><section class="body"><div class="item" id="prev"></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2023/auto-control-power-plan/">Windows下的电源计划自动控制</a></div></section></div>
+
+
+<div class="related-wrap reveal" id="related-posts">
+    <section class='header'>
+      <div class='title cap theme'>您可能感兴趣的文章</div>
+    </section>
+    <section class='body'>
+    <div class="related-posts"><a class="item" href="/2022/2021旧年总结/" title="2021旧年总结"><span class="title">2021旧年总结</span><span class="excerpt">2021 has ended but 2022 begins</span></a></div></section></div>
+
+
+
+  <div class='related-wrap md-text reveal' id="comments">
+    <section class='header cmt-title cap theme'>
+      快来参与讨论吧
+    </section>
+    <section class='body cmt-body artalk'>
+      
+
+<div id="artalk_container"><svg class="loading" style="vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg></div>
+    </section>
+  </div>
+
+
+
+      
+    <div style="text-align: center;color: #808080;"><span style="font-size: 12px;" id="timeDate">载入天数...</span><span style="font-size: 12px;">&</span><span style="font-size: 12px;" id="times">载入时分秒...</span></div>
+    <footer class="page-footer reveal fs12"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs14">博客</span><a href="/big/">大事记</a><a target="_blank" rel="noopener" href="https://notes.hzchu.top/">随记</a><a href="/archives/">归档</a></div><div class="sitemap-group"><span class="fs14">项目</span><a href="/wiki/%E6%9D%82%E7%89%A9%E9%97%B4/">杂物</a><a href="/wiki/fcloud/">峰间云海</a></div><div class="sitemap-group"><span class="fs14">社交</span><a href="/friends/">友链</a><a href="/say/">留言板</a><a target="_blank" rel="noopener" href="https://space.bilibili.com/451090261">BiliBili</a><a href="mailto:thun888@qq.com">邮箱</a></div><div class="sitemap-group"><span class="fs14">更多</span><a href="/about/">关于本站</a><a target="_blank" rel="noopener" href="https://pan.hzchu.top">云盘</a></div></div><div class="text"><p>本站由 <a href="/about/">@thun888</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar">Stellar</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+<script>!function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"JnLm5m7MJcDkpWaM",ck:"JnLm5m7MJcDkpWaM"});</script>
+</div></footer>
+        <script src="/js/notyf.min.js"></script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7834257613551618" crossorigin="anonymous"></script>
+      <div class='float-panel mobile-only blur' style='display:none'>
+  <button type='button' class='sidebar-toggle mobile' onclick='sidebar.toggle()'>
+    <svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15301"><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 2.3 26.8 24.6 47.5 51.6 47.6h416.5v4z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15302"></path><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 1.9 27.7 23.9 49.7 51.6 51.6h416.5z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15303"></path></svg>
+  </button>
+</div>
+
+    </div>
+  </div>
+  <div class='scripts'>
+    <script type="text/javascript">
+    const stellar = {
+      // 懒加载 css https://github.com/filamentgroup/loadCSS
+      loadCSS: (href, before, media, attributes) => {
+        var doc = window.document;
+        var ss = doc.createElement("link");
+        var ref;
+        if (before) {
+          ref = before;
+        } else {
+          var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+          ref = refs[refs.length - 1];
+        }
+        var sheets = doc.styleSheets;
+        if (attributes) {
+          for (var attributeName in attributes) {
+            if (attributes.hasOwnProperty(attributeName)) {
+              ss.setAttribute(attributeName, attributes[attributeName]);
+            }
+          }
+        }
+        ss.rel = "stylesheet";
+        ss.href = href;
+        ss.media = "only x";
+        function ready(cb) {
+          if (doc.body) {
+            return cb();
+          }
+          setTimeout(function () {
+            ready(cb);
+          });
+        }
+        ready(function () {
+          ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+        });
+        var onloadcssdefined = function (cb) {
+          var resolvedHref = ss.href;
+          var i = sheets.length;
+          while (i--) {
+            if (sheets[i].href === resolvedHref) {
+              return cb();
+            }
+          }
+          setTimeout(function () {
+            onloadcssdefined(cb);
+          });
+        };
+        function loadCB() {
+          if (ss.addEventListener) {
+            ss.removeEventListener("load", loadCB);
+          }
+          ss.media = media || "all";
+        }
+        if (ss.addEventListener) {
+          ss.addEventListener("load", loadCB);
+        }
+        ss.onloadcssdefined = onloadcssdefined;
+        onloadcssdefined(loadCB);
+        return ss;
+      },
+  
+      // 从 butterfly 和 volantis 获得灵感
+      loadScript: (src, opt) => new Promise((resolve, reject) => {
+        var script = document.createElement('script');
+        if (src.startsWith('/')){
+          src = stellar.config.root + src.substring(1);
+        }
+        script.src = src;
+        if (opt) {
+          for (let key of Object.keys(opt)) {
+            script[key] = opt[key]
+          }
+        } else {
+          // 默认异步，如果需要同步，第二个参数传入 {} 即可
+          script.async = true
+        }
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(script)
+      }),
+  
+      // https://github.com/jerryc127/hexo-theme-butterfly
+      jQuery: (fn) => {
+        if (typeof jQuery === 'undefined') {
+          stellar.loadScript(stellar.plugins.jQuery).then(fn)
+        } else {
+          fn()
+        }
+      }
+    };
+    stellar.version = '1.19.0';
+    stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/1.19.0';
+    stellar.config = {
+      date_suffix: {
+        just: '刚刚',
+        min: '分钟前',
+        hour: '小时前',
+        day: '天前',
+        month: '个月前',
+      },
+      root : '/',
+    };
+  
+    // required plugins (only load if needs)
+    stellar.plugins = {
+      jQuery: 'https://jsd.hzchu.top/npm/jquery@3.6.2/dist/jquery.min.js'
+    };
+  
+    if ('local_search') {
+      stellar.search = {};
+      stellar.search.service = 'local_search';
+      if (stellar.search.service == 'local_search') {
+        let service_obj = Object.assign({}, {"field":"all","path":"/search.json","content":true,"sort":"-date"});
+        stellar.search[stellar.search.service] = service_obj;
+      }
+    }
+  
+    // stellar js
+    stellar.plugins.stellar = Object.assign({"sites":"/js/plugins/sites.js","friends":"/js/plugins/friends.js","ghinfo":"/js/plugins/ghinfo.js","timeline":"/js/plugins/timeline.js","linkcard":"/js/plugins/linkcard.js","fcircle":"/js/plugins/fcircle.js","weibo":"/js/plugins/weibo.js"});
+  
+    stellar.plugins.marked = Object.assign("https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js");
+    // optional plugins
+    if ('true' == 'true') {
+      stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://jsd.hzchu.top/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js","transition":"blur"});
+    }
+    if ('true' == 'true') {
+      stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.css","js":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.js"});
+    }
+    if ('' == 'true') {
+      stellar.plugins.scrollreveal = Object.assign({"enable":null,"js":"https://jsd.hzchu.top/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
+    }
+    if ('true' == 'true') {
+      stellar.plugins.preload = Object.assign({"enable":true,"service":"flying_pages","instant_page":"https://jsd.hzchu.top/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js","flying_pages":"https://jsd.hzchu.top/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"});
+    }
+    if ('true' == 'true') {
+      stellar.plugins.fancybox = Object.assign({"enable":true,"js":"https://jsd.hzchu.top/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js","css":"https://jsd.hzchu.top/npm/@fancyapps/ui@4.0/dist/fancybox.css","selector":".md-text img"});
+    }
+    if ('false' == 'true') {
+      stellar.plugins.heti = Object.assign({"enable":false,"css":"https://unpkg.com/heti@0.9.2/umd/heti.min.css","js":"https://unpkg.com/heti@0.9.2/umd/heti-addon.min.js"});
+    }
+    if ('true' == 'true') {
+      stellar.plugins.copycode = Object.assign({"enable":true,"js":"/js/plugins/copycode.js","default_text":"Copy","success_text":"Copied"});
+    }
+  </script>
+  
+  <!-- required -->
+  
+    
+<script src="/js/main.js" async></script>
+
+  
+  
+  <!-- optional -->
+  
+  <script>
+  function load_artalk() {
+    if (!document.querySelectorAll("#artalk_container")[0]) return;
+    stellar.loadCSS('https://unpkg.com/artalk@2.5.5/dist/Artalk.css');
+    stellar.loadScript('https://unpkg.com/artalk@2.5.5/dist/Artalk.js', {defer: true}).then(function () {
+      const el = document.getElementById("artalk_container");
+      var path = el.getAttribute('comment_id');
+      if (!path) {
+        path = decodeURI(window.location.pathname);
+      }
+            var artalk = new Artalk({
+                el: '#artalk_container',
+                pageKey: path,
+                pageTitle: '基于Onedrive的高可用性图床',
+                server: 'https://artalk.hzchu.top',
+                placeholder: '此时无声胜有声',
+                site: 'Blog',
+                darkMode: 'auto',
+                emoticons: 'https://raw.hzchu.top/thun888/asstes/master/files/json/artalk/default.json',
+            })
+      });
+  }
+  window.addEventListener('DOMContentLoaded', (event) => {
+    load_artalk();
+  });
+</script>
+
+
+  
+  <!-- inject -->
+  
+  
+  </div>
+<script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
