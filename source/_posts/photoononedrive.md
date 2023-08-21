@@ -364,7 +364,7 @@ Code:
 安装依赖：
 
 ```bash
-pip3 install flask flask_limiter hypercorn
+pip3 install flask flask_limiter hypercorn flask_cors
 ```
 
 ```python
@@ -475,7 +475,7 @@ id3 ---> |值均不存在| id6["将'主服务器'地址与访问路径拼接后�
 安装依赖：
 
 ```bash
-pip3 install flask flask_limiter hypercorn
+pip3 install flask flask_limiter hypercorn flask_cors
 ```
 
 Code:
