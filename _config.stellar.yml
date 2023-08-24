@@ -145,9 +145,9 @@ default:
 
 
 api_host:
-  ghapi: https://api.github.com
+  ghapi: https://cfproxy.hzchu.top/https://api.github.com
   ghraw: https://raw.hzchu.top
-  gist: https://gist.github.com
+  gist: https://cfproxy.hzchu.top/https://gist.github.com
 
 
 sitemap:
