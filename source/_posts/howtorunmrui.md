@@ -2,7 +2,7 @@
 title: Mirouterui简要部署指南
 date: 2023-08-28 15:25:56
 tags: Mirouterui
-cover: https://onep.hzchu.top/mount/pic/2023/08/24/64e705d20ab65.webp
+cover: https://onep.hzchu.top/mount/pic/2023/08/29/64edd53a71011.webp
 description: 基于小米路由器API的展示面板
 updated: 2023-08-28 15:25:56
 ---
