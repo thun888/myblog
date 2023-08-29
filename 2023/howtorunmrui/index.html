@@ -189,7 +189,7 @@
 <p>从<a target="_blank" rel="noopener" href="https://github.com/Mirouterui/static">Mirouterui&#x2F;static: 前端静态文件 (github.com)</a>下载，并解压到<code>static</code>目录</p>
 <div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/08/29/64eda04788f04.webp" fancybox="true"/></div></div></div><div class="tab-pane" id="tab_2-3"><p>命令：</p>
 <blockquote>
-<p>docker run -d –restart&#x3D;always –name&#x3D;mrui -p 6789:6789 -v $(pwd):&#x2F;app&#x2F;data thun888&#x2F;mirouter-ui</p>
+<p>docker run -d -p 6789:6789 -v $(pwd):&#x2F;app&#x2F;data –name mirouter-ui –restart&#x3D;always thun888&#x2F;mirouter-ui</p>
 </blockquote>
 <p>新建一个文件夹，并在该文件夹里运行上述命令，程序会在该文件夹里生成配置文件，修改即可</p>
 <p>修改完成后重启该容器（或等待自动重启）</p></div></div></div>
