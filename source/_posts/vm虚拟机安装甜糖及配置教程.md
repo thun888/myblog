@@ -7,6 +7,8 @@ last: 2021-02-07 10:05:21
 cover: https://blog.hzchu.top/img/post/54gdf56g4f653g.jpg
 ---
 
+#### 文章部分内容不再适用
+
 #### 背景
 
 一开始我是在电脑上挂网心，但这玩意儿写入缓存不仅多（以至于写掉盘了），钱还给的少。而甜糖在恩山论坛上面的都是Linux下操作的，对我这docker小白很不友好，今天就总结一下最简单的方法
@@ -172,10 +174,10 @@ more....
 
 #### 所参考资料
 
-[\[2021-01-27\]让软路由来赚钱ESXi/X86上跑dock甜糖/一键导入简单无脑，小白，懒人专属](https://www.right.com.cn/forum/thread-4063192-1-2.html)
+[\[2021-01-27\]让软路由来赚钱ESXi/X86上跑dock甜糖/一键导入简单无脑，小白，懒人专属](https://d.hzchu.top/f)
 
-[【非op套娃】x86以ubuntu为底层跑docker甜糖服务](https://www.right.com.cn/forum/thread-4052765-1-1.html)
+[【非op套娃】x86以ubuntu为底层跑docker甜糖服务](https://d.hzchu.top/g)
 
-[迄今为止最小的甜糖(ttnode)docker镜像](https://www.right.com.cn/forum/thread-4059329-1-1.html)
+[迄今为止最小的甜糖(ttnode)docker镜像](https://d.hzchu.top/h)
 
-[爱快虚拟机甜糖镜像及pve,esxi等虚拟机安装轻量化Linux详细安装甜糖教程](https://www.right.com.cn/forum/thread-4060057-1-1.html)
+[爱快虚拟机甜糖镜像及pve,esxi等虚拟机安装轻量化Linux详细安装甜糖教程](https://d.hzchu.top/i)

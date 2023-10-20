@@ -68,7 +68,7 @@ updated: 2023-08-28 15:25:56
 
 <!-- tab Openwrt -->
 
-从[Release](https://github.com/thun888/mirouter-ui/releases/)复制对应的架构的发行版的下载链接
+从[Release](https://d.hzchu.top/e)复制对应的架构的发行版的下载链接
 
 > 使用`uname –a`查看架构（如果为`armv7l`，考虑使用`armv5`版本）
 
@@ -98,7 +98,7 @@ updated: 2023-08-28 15:25:56
 
 2. 无法下载配置文件
 
-从[Mirouterui/static: 前端静态文件 (github.com)](https://github.com/Mirouterui/static)下载，并解压到`static`目录
+从[Mirouterui/static: 前端静态文件 (github.com)](https://d.hzchu.top/d)下载，并解压到`static`目录
 
 ![](https://onep.hzchu.top/mount/pic/2023/08/29/64eda04788f04.webp)
 
@@ -120,7 +120,7 @@ updated: 2023-08-28 15:25:56
 
 ### 常见问题
 
-1. 密码正确，但无法登陆：尝试获取自己路由器的key&iv，可参考[视频](https://www.bilibili.com/video/BV1BF411f79J)或使用[自动工具](https://github.com/Mirouterui/MiKVIVator)
+1. 密码正确，但无法登陆：尝试获取自己路由器的key&iv，可参考[视频](https://d.hzchu.top/c)或使用[自动工具](https://d.hzchu.top/b)
 
 2. CPU占用为0： 受api限制，新版路由器无法正常获取，可尝试将其部署在路由器上
 
@@ -153,17 +153,17 @@ updated: 2023-08-28 15:25:56
 
 自行参考：
 
-[Linux命令后台运行_后台运行命令_拉普拉斯妖1228的博客-CSDN博客](https://blog.csdn.net/caesar1228/article/details/118853871)
+[Linux命令后台运行_后台运行命令_拉普拉斯妖1228的博客-CSDN博客](https://d.hzchu.top/9)
 
-[windows守护进程工具--nssm详解 - 与f - 博客园 (cnblogs.com)](https://www.cnblogs.com/fps2tao/p/16433588.html)
+[windows守护进程工具--nssm详解 - 与f - 博客园 (cnblogs.com)](https://d.hzchu.top/a)
 
 ## Stars~
 
-[![Stars~](https://starchart.cc/mirouterui/mirouter-ui.svg)](https://starchart.cc/mirouterui/mirouter-ui)
+[![Stars~](https://starchart.cc/mirouterui/mirouter-ui.svg)](https://d.hzchu.top/7)
 
 ## TODO
 
-[Mirouter-ui (github.com)](https://github.com/orgs/Mirouterui/projects/1)
+[Mirouter-ui (github.com)](https://d.hzchu.top/8)
 
 ## 更新日志
 {% timeline api:https://cfproxy.hzchu.top/https://api.github.com/repos/Mirouterui/mirouter-ui/releases?per_page=3 %}{% endtimeline %}

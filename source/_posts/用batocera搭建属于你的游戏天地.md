@@ -28,7 +28,7 @@ batocera,是一个以linux为基础，运行在电脑上的一个模拟上古游
 
 ![image-20201114175521447](https://raw.hzchu.top/thun888/tuku/master/img/image-20201114175521447.png)
 
-下载好[batocera](https://batocera.org/)（它的服务器对国内挺不友好，可以从[这里](https://pan.miaoent.com/#/s/JOUo)下载）
+下载好[batocera](https://d.hzchu.top/5)
 
 点击flash from file,选择刚刚下载好的镜像
 
@@ -48,7 +48,7 @@ batocera,是一个以linux为基础，运行在电脑上的一个模拟上古游
 
 **声明**：这种方法会**丢失U盘全部数据**，**需要备份**（但相比第一种还可以用来存文件~)
 
-下载[ventoy](https://www.ventoy.net/cn/index.html)解压后点Ventoy2Disk.exe运行
+下载[ventoy](https://d.hzchu.top/6)解压后点Ventoy2Disk.exe运行
 
 ![image-20201114180544409](https://raw.hzchu.top/thun888/tuku/master/img/image-20201114180544409.png)
 

@@ -10,7 +10,7 @@ description: 如今，人们白嫖起了牙膏厂~
 
 #### 获取
 
-打开[Intel® DevCloud](https://software.intel.com/content/www/us/en/develop/tools/devcloud.html)，有账号登录，没账号注册，
+打开[Intel® DevCloud](https://d.hzchu.top/3)，有账号登录，没账号注册，
 
 ![image-20210808145043855](https://k.hzchu.top/2022/08/18/62fddfdb4a480.png)
 

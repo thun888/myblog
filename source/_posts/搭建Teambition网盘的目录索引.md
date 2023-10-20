@@ -6,9 +6,9 @@ updated: 2021-01-01 09:39:47
 last: 2021-01-01 09:39:47
 ---
 
-github链接：[TeambitionShare](https://github.com/FlxSNX/TeambitionShare)
+github链接：[TeambitionShare](https://d.hzchu.top/4)
 
-#### 文章已过期！
+### 文章已过期！
 
 #### 准备
 
