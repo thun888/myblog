@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/Artalk/use/</loc>
-    
-    <lastmod>2023-11-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.hzchu.top/wiki/%E6%9D%82%E7%89%A9%E9%97%B4/old-pages/</loc>
     
     <lastmod>2023-11-18</lastmod>
@@ -20,16 +11,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/about/</loc>
-    
-    <lastmod>2023-11-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/big/</loc>
+    <loc>https://blog.hzchu.top/wiki/Artalk/use/</loc>
     
     <lastmod>2023-11-18</lastmod>
     
@@ -66,6 +48,24 @@
   
   <url>
     <loc>https://blog.hzchu.top/img/dynmap_markers/marker_world.json</loc>
+    
+    <lastmod>2023-11-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/about/</loc>
+    
+    <lastmod>2023-11-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/big/</loc>
     
     <lastmod>2023-11-18</lastmod>
     
@@ -191,15 +191,6 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/%E6%9D%82%E7%89%A9%E9%97%B4/</loc>
-    
-    <lastmod>2022-02-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.hzchu.top/wiki/%E6%9D%82%E7%89%A9%E9%97%B4/camc</loc>
     
     <lastmod>2022-02-12</lastmod>
@@ -209,7 +200,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/Artalk/QandA/</loc>
+    <loc>https://blog.hzchu.top/wiki/%E6%9D%82%E7%89%A9%E9%97%B4/</loc>
     
     <lastmod>2022-02-12</lastmod>
     
@@ -227,6 +218,15 @@
   </url>
   
   <url>
+    <loc>https://blog.hzchu.top/wiki/Artalk/QandA/</loc>
+    
+    <lastmod>2022-02-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.hzchu.top/wiki/Artalk/develop/</loc>
     
     <lastmod>2022-02-12</lastmod>
@@ -236,7 +236,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/Artalk/install/</loc>
+    <loc>https://blog.hzchu.top/wiki/Artalk/install-go/</loc>
     
     <lastmod>2022-02-12</lastmod>
     
@@ -245,7 +245,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/Artalk/install-go/</loc>
+    <loc>https://blog.hzchu.top/wiki/Artalk/install/</loc>
     
     <lastmod>2022-02-12</lastmod>
     

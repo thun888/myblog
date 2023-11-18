@@ -110,9 +110,9 @@
 }
 </style>
 <script>
-  window.onload = function () {
-      document.querySelector(".spinner").style.display = "none";
-  }
+  addEventListener("load",function(){
+    document.getElementById("eloading").style.display = "none";
+  })
 </script>
 
 <link rel="stylesheet" href="https://jsd.hzchu.top/npm/lxgw-wenkai-screen-webfont@1.1.0/lxgwwenkaiscreen.css" media="all">
@@ -121,7 +121,7 @@
 </head>
 
     <body>
-        <div class="spinner"> 
+        <div class="spinner" id="eloading"> 
             <div class="loader"></div>
         </div>
 
