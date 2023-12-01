@@ -36,3 +36,16 @@ fcloud:
   description: 一个纯生存MC服务器(DOC)
   repo: 
   index: true
+
+学习资料:
+  title: 学习资料
+  subtitle: 学习资料
+  tags: 资料
+  cover: true
+  logo:
+    src: https://raw.hzchu.top/thun888/tuku/master/img/%E7%AE%B1%E5%AD%90.svg
+    small: 80px
+    large: 150px
+  description: 学习资料
+  repo: 
+  index: true
