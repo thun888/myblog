@@ -11,11 +11,11 @@ updated: 2023-08-28 15:25:56
 
 该项目是由于我厌倦了管理后台和APP的卡顿而写的，因此项目开发之初就**不考虑集成在管理后台**，做成一个**独立**的页面，并实现跨平台。
 
-并且，调用的都是小米路由器**独有**的api，与Openwrt**完全不兼容**，我手头也没设备，~~还没时间~~，**不会考虑成为Openwrt的插件**。
+并且，调用的都是小米路由器**独有**的api接口，与Openwrt**完全不兼容**。
 
 用于测试的只有r1d和r4a，对于别的型号的支持，还得看大家的反馈才能完善。
 
-感谢`YSC6666，黑衣剑士z，Super丶聪`(@bilibili)的帮助
+感谢`YSC6666，黑衣剑士z，Super丶聪(@bilibili)`的帮助
 
 代码开源在 https://github.com/Mirouterui/ ，欢迎 star&提prヾ(≧▽≦*)o
 
@@ -34,6 +34,10 @@ updated: 2023-08-28 15:25:56
 ![设备详情](https://onep.hzchu.top/mount/pic/2023/08/29/64eda5d396d7e.webp)
 <!-- tab 温度显示（仅支持部分设备） -->
 ![温度显示](https://onep.hzchu.top/mount/pic/2023/08/29/64eda75443b5e.webp)
+
+<!-- tab 历史数据统计 -->
+
+![history_index.webp](https://onep.hzchu.top/mount/pic/2023/12/16/657da564382fb.webp)
 
 {% endtabs %}
 
@@ -120,7 +124,7 @@ updated: 2023-08-28 15:25:56
 
 ### 常见问题
 
-1. 密码正确，但无法登陆：尝试获取自己路由器的key&iv，可参考[视频](https://d.hzchu.top/c)或使用[自动工具](https://d.hzchu.top/b)
+1. 密码正确，但无法登陆：尝试获取自己路由器的key，可参考[视频](https://d.hzchu.top/c)或使用[自动工具](https://d.hzchu.top/b)
 
 2. CPU占用为0： 受api限制，新版路由器无法正常获取，可尝试将其部署在路由器上
 
@@ -138,16 +142,41 @@ updated: 2023-08-28 15:25:56
 
 ### 配置项
 
-| 配置名     | 默认值                           | 解释                                                         |
-| ---------- | -------------------------------- | ------------------------------------------------------------ |
-| password   |                                  | 路由器管理后台密码                                           |
-| key        | a2ffa5c9be07488bbb04a3a47d3c5f6a | 路由器管理后台key                                            |
-| iv         | 64175472480004614961023454661220 | 路由器管理后台iv                                             |
-| ip         | 192.168.31.1                     | 路由器IP                                                     |
-| tiny       | false                            | 启用后，不再下载静态文件，需搭配[在线前端](http://mrui.hzchu.top:8880/)使用 |
-| routerunit | false                            | 启用后，启用部分路由器上运行才能用的功能                     |
-| port       | 6789                             | 网页页面端口号                                               |
-| debug      | true                             | debug模式，建议在测试正常后关闭                              |
+![config](https://onep.hzchu.top/mount/pic/2023/12/16/657da76badee9.webp)
+
+| 配置名         | 默认值 | 解释                                                         |
+| -------------- | ------ | ------------------------------------------------------------ |
+| dev            | []     | 路由器信息，参阅`dev项`                                      |
+| history        |        | 历史记录相关功能，参阅`history项`                            |
+| tiny           | false  | 启用后，不再下载静态文件，需搭配[在线前端](http://mrui.hzchu.top:8880/)使用 |
+| flushTokenTime | 1800   | 刷新token时间间隔(s)                                         |
+| port           | 6789   | 网页页面端口号                                               |
+| debug          | true   | debug模式，建议在测试正常后关闭                              |
+
+**dev**项：
+
+| 配置名     | 默认值                           | 解释                                    |
+| ---------- | -------------------------------- | --------------------------------------- |
+| password   |                                  | 路由器管理后台密码                      |
+| key        | a2ffa5c9be07488bbb04a3a47d3c5f6a | 路由器管理后台key                       |
+| ip         | 192.168.31.1                     | 路由器IP                                |
+| routerunit | false                            | 启用后，程序通过`gopsutil`库获取CPU占用 |
+
+**history**项：
+
+| 配置名     | 默认值 | 解释                 |
+| ---------- | ------ | -------------------- |
+| enable     | false  | 是否启用历史数据统计 |
+| sampletime | 300    | 采样时间间隔(s)      |
+| maxsaved   | 8640   | 最多记录条数         |
+
+命令行参数：
+
+| 参数            | 解释                                |
+| --------------- | ----------------------------------- |
+| --config        | 配置文件路径，默认为“./config.json” |
+| --basedirectory | 基础目录路径，在里面存放静态文件    |
+| --databasepath  | 数据库路径，默认为“./database.db”   |
 
 ### 后台运行
 
@@ -163,7 +192,12 @@ updated: 2023-08-28 15:25:56
 
 ## TODO
 
-[Mirouter-ui (github.com)](https://d.hzchu.top/8)
+- [x] 历史数据统计
+- [x] 深色模式
+- [x] 多路由支持
+- [x] 快捷更新
+- [ ] 设备小工具
+- [ ] netdata，api形式兼容
 
 ## 更新日志
 {% timeline api:https://cfproxy.hzchu.top/https://api.github.com/repos/Mirouterui/mirouter-ui/releases?per_page=3 %}{% endtimeline %}
