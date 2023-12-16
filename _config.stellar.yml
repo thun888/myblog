@@ -152,3 +152,10 @@ api_host:
 
 sitemap:
   path: sitemap.xml
+
+mermaid:
+  enable: true
+  # js: https://unpkg.com/mermaid@9.0.0/dist/mermaid.min.js
+  js: https://jsd.hzchu.top/npm/mermaid@v9/dist/mermaid.min.js
+  # Available themes: default | dark | forest | neutral
+  theme: neutral

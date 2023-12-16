@@ -4,11 +4,12 @@ function layoutDiv() {
     return '';
   }
   var related = [];
-  let proj = theme.wiki.projects[page.wiki];
-  if (proj.related && proj.related.length > 0) {
-    proj.related.forEach((pid, i) => {
-      let p = theme.wiki.projects[pid];
-      if (p && p.title !== proj.title && p.index !== false) {
+  const { shelf, tree } = theme.wiki;
+  let proj = tree[page.wiki];
+  if (proj?.related?.length > 0) {
+    proj.related.filter(pid => shelf.includes(pid)).forEach((pid, i) => {
+      let p = tree[pid];
+      if (p && p.title !== proj?.title && p.homepage) {
         related.push(p);
       }
     });
@@ -24,15 +25,15 @@ function layoutDiv() {
     el += '<span class="name">' + __('meta.more', title) + '</span>';
     el += '</div>';
     el += '<div class="widget-body related-posts">';
-    related.forEach((p, i) => {
+    for (let p of related) {
       // 同一个分组中的其它项目
-      el += '<a class="item wiki" href="' + url_for(p.homepage.path) + '">';
+      el += '<a class="item wiki" href="' + url_for(p.homepage?.path) + '">';
       el += '<span class="title">' + p.title + '</span>';
       if (p.description && p.description.length > 0) {
         el += '<span class="excerpt">' + p.description + '</span>';
       }
       el += '</a>';
-    });
+    }
     el += '</div>';
     el += '</widget>';
   }

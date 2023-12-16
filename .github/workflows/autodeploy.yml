@@ -19,9 +19,13 @@ jobs:
       - name: Install Hexo
         run: |
           export TZ='Asia/Shanghai'
-
           npm install hexo-cli -g npm-check-updates
-          ncu
+
+      - name: Pull theme
+        run: |
+          git submodule init
+          git submodule update
+
       - name: Cache Modules
         uses: actions/cache@v1
         id: cache-modules
@@ -42,7 +46,7 @@ jobs:
           github_token: ${{ secrets.TOKEN }}
           publish_branch: gh-page
           publish_dir: ./public
-      - name: Tgbot
+      - name: Send msg to tgbot
         run: >
           curl -d 'chat_id=1183316935' -d 'text=博客部署完成' -X POST ${{ secrets.POST
           }}

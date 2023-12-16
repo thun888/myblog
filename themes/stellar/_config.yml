@@ -1,6 +1,6 @@
 ######## Stellar info ########
 stellar:
-  version: '1.19.0'
+  version: '1.20.0'
   homepage: 'https://xaoxuu.com/wiki/stellar/'
   repo: 'https://github.com/xaoxuu/hexo-theme-stellar'
   cdn_css: # Use cdn links instead of /css/main.css
@@ -38,7 +38,7 @@ sidebar:
     # 文章内页
     post: search_blog, toc, ghrepo, ghissues # for pages using 'layout:post'
     # 文档内页
-    wiki: search, ghrepo, toc, ghissues, related # for pages using 'layout:wiki'
+    wiki: search, toc, ghissues, related # for pages using 'layout:wiki'
     # 其它 layout:page 的页面
     page: toc, search # for custom pages using 'layout:page'
 
@@ -248,9 +248,31 @@ tag_plugins:
   # {% mark %}
   mark:
     default_color: dark # light, dark, red, orange, yellow, green, cyan, blue, purple, warning, error
-  # {% tag %}
-  tag:
-    default_color: yellow # red, orange, yellow, green, cyan, blue, purple
+  # {% hashtag %}
+  hashtag:
+    default_color: # red, orange, yellow, green, cyan, blue, purple
+  # {% okr o1 percent:0.5 status:normal %}
+  okr:
+    border: true # 是否显示边框
+    status: # 可以自行增加
+      # 进行中状态
+      in_track:
+        color: blue # red, orange, yellow, green, cyan, blue, purple
+        label: 正常
+      at_risk: 
+        color: yellow
+        label: 风险
+      off_track:
+        color: orange
+        label: 延期
+      # 结果状态
+      finished:
+        color: green
+        label: 已完成
+      unfinished:
+        color: red
+        label: 未完成
+      
 
 
 ######## JS Plugins ########
@@ -268,6 +290,7 @@ plugins:
     linkcard: /js/plugins/linkcard.js
     fcircle: /js/plugins/fcircle.js
     weibo: /js/plugins/weibo.js
+    memos: /js/plugins/memos.js
 
   marked: https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js
 
@@ -304,7 +327,7 @@ plugins:
     # 可以处理评论区的图片（不支持 iframe 类评论系统）例如：
     # 使用twikoo评论可以写: .tk-content img:not([class*="emo"])
     # 使用waline评论可以写: #waline_container .vcontent img
-    # selector: .tk-content .img # 多个选择器用英文逗号隔开
+    selector: .swiper-slide img # 多个选择器用英文逗号隔开
 
   # swiper
   swiper:
@@ -347,12 +370,11 @@ plugins:
   #   B -->|option 2| C(Section C)
   # ```
   mermaid:
-    enable: true
-    js: https://unpkg.com/mermaid@10.3.0/dist/mermaid.min.js
-    #js: https://jsd.hzchu.top/npm/mermaid@v9/dist/mermaid.min.js
+    enable: false
+    # js: https://unpkg.com/mermaid@9.0.0/dist/mermaid.min.js
+    js: https://cdn.jsdelivr.net/npm/mermaid@v9/dist/mermaid.min.js
     # Available themes: default | dark | forest | neutral
-    # 推荐使用 dark 主题 在夜间模式下显示效果更好
-    theme: default
+    theme: neutral
 
   # 代码块复制按钮
   copycode:
@@ -366,7 +388,8 @@ plugins:
   tianli_gpt:
     enable: false
     field: post # all, post, wiki
-    api: 5Q5mpqRK5DkwT1X9Gi5e
+    api: 5Q5mpqRK5DkwT1X9Gi5e # tianli_gpt key
+    typingAnimate: true # 打字机动画 
 
 style:
   darkmode: auto # auto / always / false
@@ -377,8 +400,8 @@ style:
     code: 85% # 14px
     codeblock: 0.8125rem # 13px
   font-family:
-    logo: '"LXGW WenKai Screen",system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
-    body: '"LXGW WenKai Screen",system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
+    logo: 'system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
+    body: 'system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
     code: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif'
     codeblock: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif'
   text-align: left
@@ -399,6 +422,8 @@ style:
     link: 'hsl(207 90% 54%)' # 超链接颜色
     button: 'hsl(192 98% 55%)' # 按钮颜色
     hover: 'hsl(14 100% 57%)' # 按钮高亮颜色
+  link:
+    underline: true # true / false
   animated_avatar:
     animate: auto # auto, always
     background: https://jsd.hzchu.top/gh/cdn-x/placeholder@1.0.4/avatar/round/rainbow64@3x.webp

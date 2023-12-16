@@ -8,16 +8,16 @@
       if (!path) {
         path = decodeURI(window.location.pathname);
       }
-            var artalk = new Artalk({
-                el: '#artalk_container',
-                pageKey: path,
-                pageTitle: '<%= page.title || page.seo_title %>',
-                server: '<%= theme.comments.artalk.server %>',
-                placeholder: '<%= theme.comments.artalk.placeholder %>',
-                site: '<%= theme.comments.artalk.site %>',
-                darkMode: '<%= theme.comments.artalk.darkMode %>',
-                emoticons: '<%= theme.comments.artalk.emoticons %>',
-            })
+      var artalk = new Artalk({
+        el: '#artalk_container',
+        pageKey: path,
+        pageTitle: '<%= page.title || page.seo_title %>',
+        server: '<%= theme.comments.artalk.server %>',
+        placeholder: '<%= theme.comments.artalk.placeholder %>',
+        site: '<%= theme.comments.artalk.site %>',
+        darkMode: '<%= theme.comments.artalk.darkMode %>',
+        emoticons: '<%= theme.comments.artalk.emoticons %>',
+        })
       });
   }
   window.addEventListener('DOMContentLoaded', (event) => {
