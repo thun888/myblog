@@ -524,13 +524,6 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/Intel/</loc>
-    <lastmod>2023-12-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.hzchu.top/tags/oneindex/</loc>
     <lastmod>2023-12-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -539,6 +532,13 @@
   
   <url>
     <loc>https://blog.hzchu.top/tags/web/</loc>
+    <lastmod>2023-12-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/tags/Intel/</loc>
     <lastmod>2023-12-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -566,6 +566,13 @@
   </url>
   
   <url>
+    <loc>https://blog.hzchu.top/tags/MIUI/</loc>
+    <lastmod>2023-12-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.hzchu.top/tags/%E7%BD%91%E7%AB%99/</loc>
     <lastmod>2023-12-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -574,13 +581,6 @@
   
   <url>
     <loc>https://blog.hzchu.top/tags/%E8%BD%AC%E6%8D%A2/</loc>
-    <lastmod>2023-12-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/tags/MIUI/</loc>
     <lastmod>2023-12-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
