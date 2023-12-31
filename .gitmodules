@@ -1,3 +1,4 @@
 [submodule "themes/stellar"]
 	path = themes/stellar
 	url = https://github.com/thun888/stellar.git
+	branch = myself
