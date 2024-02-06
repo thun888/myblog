@@ -249,17 +249,17 @@ if __name__ == "__main__":
 
 ### 值得注意的点
 
-1\. 在”模板“的头部中，`WEIGHT`代表着剩余的部件量，如果设置的太小当AD读取完后就不会往下读了，就会导致缺这缺那
+1\. 在“模板”的头部中，`WEIGHT`代表着剩余的部件量，如果设置的太小当AD读取完后就不会往下读了，就会导致缺这缺那
 
 ```javascript
 |HEADER=Protel for Windows - Schematic Capture Ascii File Version 5.0|WEIGHT=38
 ```
 
-2\.同样在”模板“的头部中，第二行中包括了纸张大小等的定义，如果遇到🐞可以适当修改
+2\.同样在“模板”的头部中，第二行中包括了纸张大小等的定义，如果遇到🐞可以适当修改
 
 ![image](https://k.hzchu.top/2022/08/23/63043a9b1224c.webp)3.引脚方向依据`PINCONGLOMERATE`的值，连接方向向右时为56，从此每逆时针旋转90°加一
 
-![Snipaste_2022-07-14_08-55-25](https://k.hzchu.top/2022/08/23/63043af131a4c.webp)4.xy坐标必须为不带小数的整数，不然ad立马扑街给你看{% emoji aru 160 %}
+![Snipaste_2022-07-14_08-55-25](https://k.hzchu.top/20  22/08/23/63043af131a4c.webp)4.xy坐标必须为不带小数的整数，不然ad立马扑街给你看{% emoji aru 160 %}
 
 ### 参考资料
 

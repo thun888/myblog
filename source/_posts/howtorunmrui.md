@@ -21,6 +21,8 @@ updated: 2023-08-28 15:25:56
 
 {% ghcard Mirouterui/mirouter-ui theme:white %}
 
+> 碍于实际需求，拿一台瘦客户机装了个ikuai，这个项目先鸽了
+
 ## 面板展示
 
 {% tabs active:1 align:center %}
@@ -34,9 +36,7 @@ updated: 2023-08-28 15:25:56
 ![设备详情](https://onep.hzchu.top/mount/pic/2023/08/29/64eda5d396d7e.webp)
 <!-- tab 温度显示（仅支持部分设备） -->
 ![温度显示](https://onep.hzchu.top/mount/pic/2023/08/29/64eda75443b5e.webp)
-
 <!-- tab 历史数据统计 -->
-
 ![history_index.webp](https://onep.hzchu.top/mount/pic/2023/12/16/657da564382fb.webp)
 
 {% endtabs %}
@@ -55,7 +55,7 @@ updated: 2023-08-28 15:25:56
 
 > 64位：amd64，32位：i386，arm: arm
 >
-> 可访问[镜像站](https://mrui-api.hzchu.top/down/)以获取更快的速度
+> 可访问[镜像站](https://h5ai.hzchu.top/Mirouter-ui/)以获取更快的速度
 
 然后运行，程序会自动下载配置文件，在其中填上密码即可。配置文件中其它条目在下面
 

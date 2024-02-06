@@ -159,3 +159,8 @@ mermaid:
   js: https://jsd.hzchu.top/npm/mermaid@v9/dist/mermaid.min.js
   # Available themes: default | dark | forest | neutral
   theme: neutral
+
+api_host:
+  ghapi: https://cfproxy.hzchu.top/https://api.github.com
+  ghraw: https://raw.hzchu.top
+  gist: https://cfproxy.hzchu.top/https://gist.github.com

@@ -767,6 +767,13 @@ flowchart TD
 
 ![](https://onep.hzchu.top/mount/pic/2023/08/02/64ca523d745c7.webp)
 
+<!-- tab 搭配Nginx -->
+
+高并发
+
+![](https://onep.hzchu.top/mount/pic/2024/01/31/65b9a7ebb16cc.webp)
+
+
 {% endtabs %}
 
 ### 结语
