@@ -2,7 +2,7 @@
 title: GitHub打不开的临时方法
 date: 2021-04-05 14:03:30
 updated: 2021-04-05 14:03:30
-layout: wiki
+# layout: wiki
 wiki: 杂物间
 order: 11
 ---

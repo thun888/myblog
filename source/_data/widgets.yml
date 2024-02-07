@@ -1,0 +1,12 @@
+timeline:
+  layout: timeline
+  title: 近期动态
+  api: https://notes.hzchu.top/api/v1/memo?creatorId=101&limit=10
+  type: memos
+  hide: user,footer
+
+welcome:
+  layout: markdown
+  title: 欢迎
+  content: | # support markdown
+    <span id="jinrishici-sentence">夏日当空，心如深渊</span><script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>

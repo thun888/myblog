@@ -3,9 +3,18 @@ title: Artalk-doc
 subtitle: '一个Artalk(PHP)的非官方文档'
 tags: 文档
 cover: true
-logo:
-  src: https://raw.hzchu.top/thun888/tuku/master/img/artalk-logo.svg
-  small: 80px
-  large: 150px
+icon: https://raw.hzchu.top/thun888/tuku/master/img/artalk-logo.svg
 description: 一个Artalk(PHP)的非官方文档。
+leftbar:
+  - tree
+  - related
 repo: ArtalkJS/Artalk
+base_dir: /wiki/Artalk-doc/
+toc: 
+  - index
+  - install/index
+  - use/index
+  - QandA/index
+  - API/index
+  - develop/index
+  - more-url/index

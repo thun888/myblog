@@ -2,7 +2,7 @@
 title: hexo更新pages出错应急方法
 date: 2020-12-25 18:53:16
 updated: 2020-12-25 18:53:16
-layout: wiki
+# layout: wiki
 wiki: 杂物间
 order: 10
 ---

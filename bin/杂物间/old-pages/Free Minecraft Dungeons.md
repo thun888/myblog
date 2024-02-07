@@ -2,7 +2,7 @@
 title: Free Minecraft Dungeons
 date: 2020-08-29 22:36:27
 updated: 2020-08-29 22:36:27
-layout: wiki
+# layout: wiki
 wiki: 杂物间
 order: 12
 ---

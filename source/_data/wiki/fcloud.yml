@@ -1,11 +1,19 @@
 name: fcloud
 title: 峰间云海
-subtitle: 一个纯生存MC服务器(DOC)
+subtitle: 一个纯生存MC服务器
 tags: MC
 cover: true
-logo:
-  src: https://onep.hzchu.top/mount/pic/2023/04/21/64429657391bf.webp
-  small: 80px
-  large: 150px
+icon: https://onep.hzchu.top/mount/pic/2023/04/21/64429657391bf.webp
 description: 一个纯生存MC服务器(DOC)
-repo: 
+leftbar:
+  - tree
+  - related
+
+base_dir: /wiki/fcloud/
+toc: 
+  - index
+  - command/index
+  - mods/index
+  - faq/index
+  - datasafe/index
+  - about/index

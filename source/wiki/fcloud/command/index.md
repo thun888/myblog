@@ -1,5 +1,5 @@
 ---
-layout: wiki
+# layout: wiki
 wiki: fcloud
 title: 实用命令
 order: 6

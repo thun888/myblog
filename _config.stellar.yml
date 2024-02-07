@@ -1,38 +1,123 @@
 ######## Sidebar ########
-sidebar:
-  logo:
-    avatar: '[config.avatar](/about/)' # you can set avatar link in _config.yml or '[https://xxx.png](/about/)'
-    title: '[config.title](/)' # you can set html tag like: '[<img no-lazy height="32px" src="xxx"/>](/)'
-  menu:
-     post: '[btn.blog](/)'
-     wiki: '[btn.wiki](/wiki/)'
-     friends: '[友链](/friends/)'
-     about: '[关于](/about/)'
-  # Sidebar widgets
-  widget_layout:
-    index: [welcome, recent] # for home/wiki/categories/tags/archives/404 pages
-    page: [welcome, toc] # for pages using 'layout:page'
-    post: [toc, repo_info] # for pages using 'layout:post'
-    wiki: [toc, repo_info, wiki_more] # for pages using 'layout:wiki'
-  widgets:
-    # Recent update
-    recent:
-      layout: recent
-      rss:  /atom.xml # npm i hexo-generator-feed
-      limit: 5 # Count of posts
-    # TOC (valid only in layout:post/wiki)
-    toc:
-      layout: toc
-      list_number: false
-      min_depth: 2
-      max_depth: 5
-      fallback: recent # Use a backup widget when toc does not exist.
-    # welcome
-    welcome:
-      layout: markdown
-      title: 欢迎
-      content: | # support markdown
-          <span id="jinrishici-sentence">夏日当空，心如深渊</span><script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+
+logo:
+  avatar: '[config.avatar](/about/)' # you can set avatar link in _config.yml or '[https://xxx.png](/about/)'
+  title: '[config.title](/)' # you can set html tag like: '[<img no-lazy height="32px" src="xxx"/>](/)'
+  subtitle: "夏日当空，心如深渊 | Thun888's Blog" # '文字1 | 文字2' (鼠标放上去会切换到文字2)
+
+menubar:
+  columns: 4 # 一行多少个
+  items: # 可按照自己需求增加，符合以下格式即可
+    # id: 页面中高亮的 menu_id 
+    # theme: 高亮时的颜色，仅 svg 中 fill="currentColor" 时有效
+    # icon: 支持 svg/img 标签，可以定义在 icons.yml 文件中，也支持外部图片的 URL
+    # title: 标题
+    # url: 点击跳转到哪，支持相对路径和绝对路径
+     - id: post
+       theme: '#1BCDFC'
+       icon: solar:documents-bold-duotone
+       title: 博客
+       url: /
+     - id: wiki
+       theme: '#3DC550'
+       icon: solar:notebook-bookmark-bold-duotone
+       title: 文档
+       url: /wiki/
+     - id: friends
+       theme: '#F44336'
+       icon: solar:chat-square-like-bold-duotone
+       title: 社交
+       url: /friends/
+     - id: about
+       theme: '#FA6400'
+       icon: solar:planet-bold-duotone
+       title: 关于
+       url: /about/
+######## Main ########
+# 站点主结构树
+site_tree:
+  # -- 列表类页面 -- #
+  # 主页配置
+  home:
+    leftbar: welcome, recent
+    rightbar: timeline
+  # 博客列表页配置
+  index_blog:
+    base_dir: blog # 只影响自动生成的页面路径
+    menu_id: post # 未在 front-matter 中指定 menu_id 时，layout 为 post 的页面默认使用这里配置的 menu_id
+    leftbar: welcome, recent # for categories/tags/archives
+    rightbar: 
+    nav_tabs:  # 近期发布 分类 标签 专栏 归档 and ...
+      # '朋友文章': /friends/rss/
+  # 博客专栏列表页配置
+  index_topic:
+    base_dir: topic # 只影响自动生成的页面路径
+    menu_id: post # 未在 front-matter 中指定 menu_id 时，layout 为 topic 的页面默认使用这里配置的 menu_id
+  # 文档列表页配置
+  index_wiki:
+    base_dir: wiki # 只影响自动生成的页面路径
+    menu_id: wiki # 未在 front-matter 中指定 menu_id 时，layout 为 wiki 的页面默认使用这里配置的 menu_id
+    leftbar: ghissues, related, recent # for wiki
+    rightbar: 
+    nav_tabs:
+      # 'more': https://github.com/xaoxuu
+  # -- 内容类页面 -- #
+  # 博客文章内页配置
+  post:
+    menu_id: post # 未在 front-matter 中指定 menu_id 时，layout 为 post 的页面默认使用这里配置的 menu_id
+    leftbar: related, ghrepo, ghissues, recent # for pages using 'layout:post'
+    rightbar: ghrepo, toc
+  # 博客专栏文章内页配置
+  topic:
+    menu_id: post
+  # 文档内页配置
+  wiki:
+    menu_id: wiki # 未在 front-matter 中指定 menu_id 时，layout 为 wiki 的页面默认使用这里配置的 menu_id
+    leftbar: tree, ghissues, related, recent # for wiki
+    rightbar: ghrepo, toc
+  # 作者信息配置
+  author: 
+    base_dir: author # 只影响自动生成的页面路径
+    menu_id: post
+    leftbar: recent, timeline
+    rightbar: timeline
+  # 错误页配置
+  error_page:
+    menu_id: post
+    '404': '/404.html'
+    leftbar: recent, timeline
+    rightbar: timeline
+  # 其它自定义页面配置 layout: page
+  page:
+    leftbar: recent
+    rightbar: toc
+
+
+  # # Sidebar widgets
+  # widget_layout:
+  #   index: [welcome, recent] # for home/wiki/categories/tags/archives/404 pages
+  #   page: [welcome, toc] # for pages using 'layout:page'
+  #   post: [toc, repo_info] # for pages using 'layout:post'
+  #   wiki: [toc, repo_info, wiki_more] # for pages using 'layout:wiki'
+  # widgets:
+  #   # Recent update
+  #   recent:
+  #     layout: recent
+  #     rss:  /atom.xml # npm i hexo-generator-feed
+  #     limit: 5 # Count of posts
+  #   # TOC (valid only in layout:post/wiki)
+  #   toc:
+  #     layout: toc
+  #     list_number: false
+  #     min_depth: 2
+  #     max_depth: 5
+  #     fallback: recent # Use a backup widget when toc does not exist.
+  #   # welcome
+  #   welcome:
+  #     layout: markdown
+  #     title: 欢迎
+  #     content: | # support markdown
+  #         <span id="jinrishici-sentence">夏日当空，心如深渊</span><script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
 
 
 ######## Article ########
@@ -87,7 +172,6 @@ footer:
       # - '[后台](https://hexo.orzz.ml/hpp/admin/dash/home/)'
        - '[归档](/archives/)'
      '项目':
-       - '[杂物](/wiki/杂物间/)'
        - '[峰间云海](/wiki/fcloud/)'
      '社交':
        - '[友链](/friends/)'
@@ -97,6 +181,8 @@ footer:
      '更多':
        - '[关于本站](/about/)'
        - '[云盘](https://pan.hzchu.top)'
+       - '[图床](https://pic.hzchu.top)'
+
   content: | # 支持 Markdown 格式
     本站由 [@thun888](/about/) 使用 [Stellar](https://github.com/xaoxuu/hexo-theme-stellar) 主题创建。
     本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。
@@ -124,12 +210,10 @@ plugins:
   ## optional plugins ##
   fancybox:
     enable: true
-    js: https://jsd.hzchu.top/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js
-    css: https://jsd.hzchu.top/npm/@fancyapps/ui@4.0/dist/fancybox.css
     # 可以处理评论区的图片（不支持 iframe 类评论系统）例如：
     # 使用twikoo评论可以写: .tk-content img:not([class*="emo"])
     # 使用waline评论可以写: #waline_container .vcontent img
-    selector: .md-text img # 多个选择器用英文逗号隔开
+    selector: article.md-text.content img # 多个选择器用英文逗号隔开
 
 style:
   font-family:
@@ -137,12 +221,8 @@ style:
     body: '"LXGW WenKai Screen",system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
     code: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif'
     codeblock: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif'
-default:
-  avatar: /img/svg/3442075.svg
-  link: /img/svg/8f277b4ee0ecd.svg
-  cover: /img/svg/76b86c0226ffd.svg
-  image: /img/svg/2659360.svg
-
+  # leftbar:
+  #   background: var(--site-bg)
 
 api_host:
   ghapi: https://cfproxy.hzchu.top/https://api.github.com
@@ -160,7 +240,7 @@ mermaid:
   # Available themes: default | dark | forest | neutral
   theme: neutral
 
-api_host:
-  ghapi: https://cfproxy.hzchu.top/https://api.github.com
-  ghraw: https://raw.hzchu.top
-  gist: https://cfproxy.hzchu.top/https://gist.github.com
+# api_host:
+#   ghapi: https://cfproxy.hzchu.top/https://api.github.com
+#   ghraw: https://raw.hzchu.top
+#   gist: https://cfproxy.hzchu.top/https://gist.github.com

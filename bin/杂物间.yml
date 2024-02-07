@@ -3,9 +3,8 @@ title: 杂物间
 subtitle: 一个存放文件的地方 
 tags: 文件
 cover: true
-logo:
-  src: https://raw.hzchu.top/thun888/tuku/master/img/%E7%AE%B1%E5%AD%90.svg
-  small: 80px
-  large: 150px
+icon: https://raw.hzchu.top/thun888/tuku/master/img/%E7%AE%B1%E5%AD%90.svg
 description: 一个存放文件的地方
-repo: 
+leftbar:
+  - tree
+  - related

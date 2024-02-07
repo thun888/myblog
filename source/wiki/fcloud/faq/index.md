@@ -1,5 +1,5 @@
 ---
-layout: wiki
+# layout: wiki
 wiki: fcloud
 title: 疑难解答
 order: 9

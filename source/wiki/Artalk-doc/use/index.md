@@ -1,5 +1,5 @@
 ---
-layout: wiki
+# layout: wiki
 wiki: Artalk-doc # 这是项目名
 title: 使用
 keywords: 使用artalk,Artalk,配置artalk

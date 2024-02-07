@@ -1,5 +1,5 @@
 ---
-layout: wiki
+# layout: wiki
 wiki: Artalk-doc # 这是项目名
 title: 安装（PHP）
 keywords: 安装artalk,Artalk,配置Artalk

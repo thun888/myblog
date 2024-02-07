@@ -1,5 +1,5 @@
 ---
-layout: wiki
+# layout: wiki
 wiki: fcloud
 title: 插件介绍
 order: 7
@@ -11,7 +11,7 @@ updated: 2023-06-21 21:32:32
 >
 > 以图片为主
 
-### 内部插件
+## 内部插件
 
 #### 死亡日志
 
@@ -55,7 +55,7 @@ var player = new DogePlayer({
 
 
 
-### 外部插件（MCDR）
+## 外部插件（MCDR）
 
 #### Beep
 
@@ -83,7 +83,7 @@ var player = new DogePlayer({
 
 
 
-### QBOT
+## QBOT
 
 在Q群中，您可以通过发送关键词来触发机器人
 

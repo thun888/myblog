@@ -1,5 +1,5 @@
 ---
-layout: wiki
+# layout: wiki
 wiki: Artalk-doc # 这是项目名
 title: FAQ
 keywords: Artalk一直转圈

@@ -1,4 +1,3 @@
-'group1':
     - title: 陈YF的博客
       avatar: https://unpkg.com/chenyfan-oss@4.0.0/512.jpg
       url: https://blog.cyfan.top
@@ -64,11 +63,3 @@
       url: https://chenli-l.github.io/
       avatar: https://s3.imnian.com/imgs/2023/08/05/1aa8e736782a0c18.png
       description: 播客、主题仅此而已？
-
-
-'websites':
-    - title: TYZ版官网
-      avatar: https://onep.hzchu.top/mount/pic/2023/01/25/63d121e179d6e.webp
-      url: http://www.tyzpvz.top/
-      screenshot: https://onep.hzchu.top/mount/pic/2023/01/25/63d104772bae2.webp
-      description: 一个垃圾游戏的官网
