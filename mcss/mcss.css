@@ -9,7 +9,7 @@
     overflow: hidden;
 }
 /* 字数统计 */
-.expired-message {
+.wordcount {
   color: #31708f;
   background-color: #d9edf7;
   border-color: #bce8f1;
@@ -18,4 +18,7 @@
   margin-top: 5px;
   border-radius: 0;
   text-align: center;
+}
+#expired-message {
+  padding: 10px 1rem 10px 1rem;
 }

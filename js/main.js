@@ -1,4 +1,3 @@
-console.log('\n' + '%c Stellar v' + stellar.version + ' %c\n' + stellar.github + '\n', 'color:#e8fafe;background:#03c7fa;padding:8px;border-radius:4px', 'margin-top:8px');
 // utils
 const util = {
 
@@ -44,7 +43,7 @@ const util = {
       el.select();
       document.execCommand("Copy");
       if (msg && msg.length > 0) {
-        hud.toast(msg);
+        hud.toast(msg, 2500);
       }
     }
   },
@@ -55,21 +54,23 @@ const util = {
       el.classList.toggle("display");
     }
   },
+
+  scrollTop: () => {
+    window.scrollTo({top: 0, behavior: "smooth"});
+  },
 }
 
 const hud = {
   toast: (msg, duration) => {
-    duration = isNaN(duration) ? 2000 : duration;
+    const d = Number(isNaN(duration) ? 2000 : duration);
     var el = document.createElement('div');
     el.classList.add('toast');
+    el.classList.add('show');
     el.innerHTML = msg;
     document.body.appendChild(el);
-    setTimeout(function () {
-      var d = 0.5;
-      el.style.webkitTransition = '-webkit-transform ' + d + 's ease-in, opacity ' + d + 's ease-in';
-      el.style.opacity = '0';
-      setTimeout(function () { document.body.removeChild(el) }, d * 1000);
-    }, duration);
+
+    setTimeout(function(){ document.body.removeChild(el) }, d);
+    
   },
 
 }
@@ -79,11 +80,26 @@ const hud = {
 const l_body = document.querySelector('.l_body');
 
 const sidebar = {
-  toggle: () => {
+  leftbar: () => {
     if (l_body) {
-      l_body.classList.add('mobile');
-      l_body.classList.toggle("sidebar");
+      l_body.toggleAttribute('leftbar');
+      l_body.removeAttribute('rightbar');
     }
+  },
+  rightbar: () => {
+    if (l_body) {
+      l_body.toggleAttribute('rightbar');
+      l_body.removeAttribute('leftbar');
+    }
+  },
+  dismiss: () => {
+    if (l_body) {
+      l_body.removeAttribute('leftbar');
+      l_body.removeAttribute('rightbar');
+    }
+  },
+  toggleTOC: () => {
+    document.querySelector('#data-toc').classList.toggle('collapse');
   }
 }
 
@@ -93,58 +109,64 @@ const init = {
       const scrollOffset = 32;
       var segs = [];
       $("article.md-text :header").each(function (idx, node) {
-        segs.push(node)
+        segs.push(node);
       });
-      // 定位到激活的目录树（不如pjax体验好）
-      // const widgets = document.querySelector('.widgets')
-      // const e1 = document.querySelector('.doc-tree-link.active')
-      // const offsetTop = e1.getBoundingClientRect().top - widgets.getBoundingClientRect().top - 100
-      // if (offsetTop > 0) {
-      //   widgets.scrollBy({top: offsetTop, behavior: 'smooth'})
-      // }
-      // 滚动
-      $(document, window).scroll(function (e) {
+      function activeTOC() {
         var scrollTop = $(this).scrollTop();
-        var topSeg = null
+        var topSeg = null;
         for (var idx in segs) {
-          var seg = $(segs[idx])
+          var seg = $(segs[idx]);
           if (seg.offset().top > scrollTop + scrollOffset) {
-            continue
+            continue;
           }
           if (!topSeg) {
-            topSeg = seg
+            topSeg = seg;
           } else if (seg.offset().top >= topSeg.offset().top) {
-            topSeg = seg
+            topSeg = seg;
           }
         }
         if (topSeg) {
-          $("#data-toc a.toc-link").removeClass("active")
-          var link = "#" + topSeg.attr("id")
+          $("#data-toc a.toc-link").removeClass("active");
+          var link = "#" + topSeg.attr("id");
           if (link != '#undefined') {
-            const highlightItem = $('#data-toc a.toc-link[href="' + encodeURI(link) + '"]')
+            const highlightItem = $('#data-toc a.toc-link[href="' + encodeURI(link) + '"]');
             if (highlightItem.length > 0) {
-              highlightItem.addClass("active")
-              const e0 = document.querySelector('.widgets')
-              const e1 = document.querySelector('#data-toc a.toc-link[href="' + encodeURI(link) + '"]')
-              const offsetBottom = e1.getBoundingClientRect().bottom - e0.getBoundingClientRect().bottom + 200
-              const offsetTop = e1.getBoundingClientRect().top - e0.getBoundingClientRect().top - 64
-              if (offsetTop < 0) {
-                e0.scrollBy(0, offsetTop)
-              } else if (offsetBottom > 0) {
-                e0.scrollBy(0, offsetBottom)
-              }
+              highlightItem.addClass("active");
             }
           } else {
-            $('#data-toc a.toc-link:first').addClass("active")
+            $('#data-toc a.toc-link:first').addClass("active");
           }
         }
-      })
+      }
+      function scrollTOC() {
+        const e0 = document.querySelector('#data-toc .toc');
+        const e1 = document.querySelector('#data-toc .toc a.toc-link.active');
+        if (e0 == null || e1 == null) {
+          return;
+        }
+        const offsetBottom = e1.getBoundingClientRect().bottom - e0.getBoundingClientRect().bottom + 100;
+        const offsetTop = e1.getBoundingClientRect().top - e0.getBoundingClientRect().top - 64;
+        if (offsetTop < 0) {
+          e0.scrollBy({top: offsetTop, behavior: "smooth"});
+        } else if (offsetBottom > 0) {
+          e0.scrollBy({top: offsetBottom, behavior: "smooth"});
+        }
+      }
+      
+      var timeout = null;
+      window.addEventListener('scroll', function() {
+        activeTOC();
+        if(timeout !== null) clearTimeout(timeout);
+        timeout = setTimeout(function() {
+          scrollTOC();
+        }.bind(this), 300);
+      });      
     })
   },
-  sidebar: () => {
+  leftbar: () => {
     stellar.jQuery(() => {
       $("#data-toc a.toc-link").click(function (e) {
-        l_body.classList.remove("sidebar");
+        l_body.classList.remove("leftbar");
       });
     })
   },
@@ -192,20 +214,23 @@ const init = {
 
 // init
 init.toc()
-init.sidebar()
+init.leftbar()
 init.relativeDate(document.querySelectorAll('#post-meta time'))
 init.registerTabsTag()
 
 // scrollreveal
 if (stellar.plugins.scrollreveal) {
   stellar.loadScript(stellar.plugins.scrollreveal.js).then(function () {
-    ScrollReveal().reveal("body .reveal", {
+    const slideUp = {
       distance: stellar.plugins.scrollreveal.distance,
       duration: stellar.plugins.scrollreveal.duration,
       interval: stellar.plugins.scrollreveal.interval,
       scale: stellar.plugins.scrollreveal.scale,
+      opacity: 0,
       easing: "ease-out"
-    });
+    }
+    ScrollReveal().reveal('.l_left .slide-up', slideUp)
+    ScrollReveal().reveal('.l_main .slide-up', slideUp)
   })
 }
 
@@ -244,7 +269,7 @@ if (stellar.plugins.stellar) {
       const els = document.getElementsByClassName('stellar-' + key + '-api');
       if (els != undefined && els.length > 0) {
         stellar.jQuery(() => {
-          if (key == 'timeline' || 'memos') {
+          if (key == 'timeline' || 'memos' || 'marked') {
             stellar.loadScript(stellar.plugins.marked).then(function () {
               stellar.loadScript(js, { defer: true });
             });
@@ -285,13 +310,7 @@ if (stellar.plugins.swiper) {
 
 // preload
 if (stellar.plugins.preload) {
-  if (stellar.plugins.preload.service == 'instant_page') {
-    stellar.loadScript(stellar.plugins.preload.instant_page, {
-      defer: true,
-      type: 'module',
-      integrity: 'sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1'
-    })
-  } else if (stellar.plugins.preload.service == 'flying_pages') {
+  if (stellar.plugins.preload.service == 'flying_pages') {
     window.FPConfig = {
       delay: 0,
       ignoreKeywords: [],
@@ -302,24 +321,9 @@ if (stellar.plugins.preload) {
   }
 }
 
-function loadFancybox() {
-  stellar.loadCSS(stellar.plugins.fancybox.css);
-  stellar.loadScript(stellar.plugins.fancybox.js, { defer: true }).then(function () {
-    Fancybox.bind(selector, {
-      groupAll: true,
-      hideScrollbar: false,
-      Thumbs: {
-        autoStart: false,
-      },
-      caption: function (fancybox, carousel, slide) {
-        return slide.$trigger.alt || null
-      }
-    });
-  })
-}
 // fancybox
 if (stellar.plugins.fancybox) {
-  let selector = 'img[fancybox]:not(.error)';
+  let selector = '[data-fancybox]:not(.error)';
   if (stellar.plugins.fancybox.selector) {
     selector += `, ${stellar.plugins.fancybox.selector}`
   }
@@ -334,13 +338,12 @@ if (stellar.plugins.fancybox) {
     stellar.loadCSS(stellar.plugins.fancybox.css);
     stellar.loadScript(stellar.plugins.fancybox.js, { defer: true }).then(function () {
       Fancybox.bind(selector, {
-        groupAll: true,
         hideScrollbar: false,
         Thumbs: {
           autoStart: false,
         },
-        caption: function (fancybox, carousel, slide) {
-          return slide.$trigger.alt || null
+        caption: (fancybox, slide) => {
+          return slide.triggerEl.alt || null
         }
       });
     })
@@ -364,7 +367,7 @@ if (stellar.search.service) {
           }
           path = stellar.config.root + path;
           const filter = $inputArea.attr('data-filter') || '';
-          searchFunc(path, filter, 'search-input', 'search-result');
+          searchFunc(path, filter, 'search-wrapper', 'search-input', 'search-result');
         });
         $inputArea.keydown(function(e) {
           if (e.which == 13) {
@@ -421,5 +424,4 @@ POWERMODE.colorful=true;POWERMODE.shake=false;document.body.addEventListener('in
 /* 运行时间 */
 var now=new Date();function createtime(){var grt=new Date("07/8/2021 23:30:00");now.setTime(now.getTime()+250);days=(now-grt)/1000/60/60/24;dnum=Math.floor(days);hours=(now-grt)/1000/60/60-(24*dnum);hnum=Math.floor(hours);if(String(hnum).length==1){hnum="0"+hnum}minutes=(now-grt)/1000/60-(24*60*dnum)-(60*hnum);mnum=Math.floor(minutes);if(String(mnum).length==1){mnum="0"+mnum}seconds=(now-grt)/1000-(24*60*60*dnum)-(60*60*hnum)-(60*mnum);snum=Math.round(seconds);if(String(snum).length==1){snum="0"+snum}document.getElementById("timeDate").innerHTML="本站已运行&nbsp"+dnum+"&nbsp天";document.getElementById("times").innerHTML=hnum+"&nbsp小时&nbsp"+mnum+"&nbsp分&nbsp"+snum+"&nbsp秒"}setInterval("createtime()",250);
 //复制提醒
-document.addEventListener('copy',function(){var notyf=new Notyf({duration:1500,position:{x:'right',y:'top',},});notyf.success('复制成功，转载请注明出处。');
-})
+document.addEventListener('copy',function(){hud.toast(stellar.plugins.copycode.toast, 2500)})
