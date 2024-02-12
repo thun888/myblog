@@ -24,6 +24,12 @@ menu_id: about
 
 爱好挺广，~~就是不咋爱运动~~{% emoji blobcat blobcatyandere %}。
 
+{% quot 目前参与/开发项目 %}
+
+{% hashtag Mirouter-ui https://github.com/Mirouterui/mirouter-ui/ color:red %}
+
+{% hashtag 峰间云海MC服务器 https://blog.hzchu.top/wiki/fcloud/ color:yellow %}
+
 {% quot 捐赠 icon:hashtag %}
 
 |Alipay|Wechat|

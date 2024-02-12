@@ -6,13 +6,20 @@ layout: post
 menu_id: friends
 ---
 
-## 朋友们
+{% banner thun888 avatar:/img/avatar.webp bg:https://onep.hzchu.top/mount/pic/2024/02/06/65c236823dbca.webp %}
+{% navbar active:/about/ [关于](/about/) [友链](/friends/) [留言](/say/) %}
+
+{% endbanner %}
+
+{% quot 朋友们 icon:hashtag %}
+
 {% friends friends %}
 
-## 其他网站
+{% quot 其他网站 icon:hashtag %}
+
 {% sites websites %}
 
-## 我可以交换友链吗？
+{% quot 我可以交换友链吗？ %}
 
 - 内容不能违反中国大陆法律
 
