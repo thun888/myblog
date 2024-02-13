@@ -6,11 +6,6 @@ layout: post
 menu_id: friends
 ---
 
-{% banner thun888 avatar:/img/avatar.webp bg:https://onep.hzchu.top/mount/pic/2024/02/06/65c236823dbca.webp %}
-{% navbar active:/about/ [关于](/about/) [友链](/friends/) [留言](/say/) %}
-
-{% endbanner %}
-
 {% quot 朋友们 icon:hashtag %}
 
 {% friends friends %}
