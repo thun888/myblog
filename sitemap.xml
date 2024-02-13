@@ -20,16 +20,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/big/</loc>
-    
-    <lastmod>2024-02-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/friends/</loc>
+    <loc>https://blog.hzchu.top/img/dynmap_markers/marker_DIM-1.json</loc>
     
     <lastmod>2024-02-13</lastmod>
     
@@ -39,15 +30,6 @@
   
   <url>
     <loc>https://blog.hzchu.top/img/dynmap_markers/marker_DIM1.json</loc>
-    
-    <lastmod>2024-02-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/img/dynmap_markers/marker_DIM-1.json</loc>
     
     <lastmod>2024-02-13</lastmod>
     
@@ -66,6 +48,24 @@
   
   <url>
     <loc>https://blog.hzchu.top/about/</loc>
+    
+    <lastmod>2024-02-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/big/</loc>
+    
+    <lastmod>2024-02-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/friends/</loc>
     
     <lastmod>2024-02-13</lastmod>
     
@@ -444,14 +444,14 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/linux/</loc>
+    <loc>https://blog.hzchu.top/tags/Clouddlare/</loc>
     <lastmod>2024-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/Clouddlare/</loc>
+    <loc>https://blog.hzchu.top/tags/linux/</loc>
     <lastmod>2024-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
