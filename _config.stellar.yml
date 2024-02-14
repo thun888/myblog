@@ -33,6 +33,13 @@ menubar:
        icon: solar:planet-bold-duotone
        title: 关于
        url: /about/
+
+######## head tags ########
+preconnect:
+   - https://jsd.hzchu.top
+   - https://unpkg.com
+   - https://cdn.bootcdn.net
+
 ######## Main ########
 # 站点主结构树
 site_tree:
@@ -225,6 +232,18 @@ plugins:
     js: https://jsd.hzchu.top/npm/mermaid@v9/dist/mermaid.min.js
     # Available themes: default | dark | forest | neutral
     theme: neutral
+
+  
+  # AI 摘要
+  # https://github.com/zhheo/Post-Abstract-AI
+  tianli_gpt:
+    enable: true
+    field: post # all, post, wiki
+    api: 114514 # tianli_gpt key
+    url: /js/tianli_gpt.js
+    limit: 3500 # 设置提交的字数限制，默认为1000字，上限为5000，超过5000字符将被截断，不能为空
+    typingAnimate: true # 打字机动画 
+    
 style:
   font-family:
     logo: '"LXGW WenKai Screen",system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
