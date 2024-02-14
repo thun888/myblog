@@ -8,9 +8,8 @@
   <meta name="generator" content="Hexo 6.3.0">
   <meta name="baidu-site-verification" content="codeva-tIYplL9wDO" />
   <meta http-equiv='x-dns-prefetch-control' content='on' />
-  
+  <link rel="preconnect" href="https://jsd.hzchu.top" crossorigin><link rel="preconnect" href="https://unpkg.com" crossorigin><link rel="preconnect" href="https://cdn.bootcdn.net" crossorigin>
   <link rel='dns-prefetch' href='https://jsd.hzchu.top'>
-  <link rel="preconnect" href="https://jsd.hzchu.top" crossorigin>
   <link rel='dns-prefetch' href='//unpkg.com'>
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
@@ -214,7 +213,7 @@
     document.getElementById('expired-message').innerHTML = "<div class='old-message'>提醒：本文最后更新于 "+gtime_days+" 天前，其中某些信息可能已经过时，请谨慎使用！</div>";
   }
 </script>
-</article><article class="md-text content"><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>​	2023年的暑假，在我百般聊赖之际，网上冲浪时刷到了一个 mc服务器的视频。于是呼，心里萌发了一个想法——建立一个属于自己的服务器。在考虑的各种因素后，我选择了“纯生存”这个主题（之前都是玩命令的，很少沉下心来好好玩玩生存，也算是圆个心愿吧）。然后嘛，路走窄了，因为<code>时机不恰当，稳定性欠佳，玩法单调</code>等致命负面因素，好嘛，<del>它没了</del>（还活着，但在线玩家数量≤3罢了）。毕竟玩家数量跟投入的预算完全不成正比，没啥动力开，让我不禁想起了之前和酷安上一个老哥「<a target="_blank" rel="noopener" href="https://www.coolapk.com/u/1900578">Ifkn_271</a>」合作，结果也是这样消失在互联网茫茫大海之中。<span class="tag-plugin emoji"><img no-lazy="" class="inline lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://jsd.hzchu.top/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatumm.png"/></span></p>
+</article><article class="md-text content "><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>​	2023年的暑假，在我百般聊赖之际，网上冲浪时刷到了一个 mc服务器的视频。于是呼，心里萌发了一个想法——建立一个属于自己的服务器。在考虑的各种因素后，我选择了“纯生存”这个主题（之前都是玩命令的，很少沉下心来好好玩玩生存，也算是圆个心愿吧）。然后嘛，路走窄了，因为<code>时机不恰当，稳定性欠佳，玩法单调</code>等致命负面因素，好嘛，<del>它没了</del>（还活着，但在线玩家数量≤3罢了）。毕竟玩家数量跟投入的预算完全不成正比，没啥动力开，让我不禁想起了之前和酷安上一个老哥「<a target="_blank" rel="noopener" href="https://www.coolapk.com/u/1900578">Ifkn_271</a>」合作，结果也是这样消失在互联网茫茫大海之中。<span class="tag-plugin emoji"><img no-lazy="" class="inline lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://jsd.hzchu.top/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatumm.png"/></span></p>
 <p>​	不过话说回来，还是有投入了很多精力在上面的，时至今日，随着「go-cqhttp」项目寿终正寝，加上自己硬盘爆炸带来的数据库丢失，目前只剩下核心的游戏服务端还能用了，今天写一篇文章来<del>追悼</del>怀念一下吧。<span class="tag-plugin emoji"><img no-lazy="" class="inline lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://jsd.hzchu.top/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatread.png"/></span></p>
 <h2 id="内容索引"><a href="#内容索引" class="headerlink" title="内容索引"></a>内容索引</h2><ol>
 <li><a href="#%E6%B8%B8%E6%88%8F%E6%9C%8D%E5%8A%A1%E7%AB%AF">MCDR插件及部分服务端配置</a></li>
@@ -482,6 +481,15 @@
     </div>
 </article>
 <div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2023/howtorunmrui/">Mirouterui简要部署指南</a></div></section></div>
+
+  <script>
+    let tianliGPT_postSelector = 'article.content';
+    let tianliGPT_key = '114514';
+    let tianliGPT_typingAnimate = 'true';
+    let tianliGPT_wordLimit = 3500;
+  </script>
+<script defer src="/js/tianli_gpt.js"></script>
+
 
 <div class="related-wrap" id="related-posts">
     <section class='header'>
