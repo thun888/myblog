@@ -152,8 +152,8 @@ comments:
   # Artalk
   # https://artalk.js.org/
   artalk:
-    css: https://unpkg.com/artalk@2.5.5/dist/Artalk.css
-    js: https://unpkg.com/artalk@2.5.5/dist/Artalk.js 
+    css: https://unpkg.com/artalk@2.8.2/dist/Artalk.css
+    js: https://unpkg.com/artalk@2.8.2/dist/Artalk.js 
     server: https://artalk.hzchu.top # 后端服务地址
     placeholder: '此时无声胜有声'
     site: Blog
@@ -224,7 +224,7 @@ plugins:
     # 可以处理评论区的图片（不支持 iframe 类评论系统）例如：
     # 使用twikoo评论可以写: .tk-content img:not([class*="emo"])
     # 使用waline评论可以写: #waline_container .vcontent img
-    selector: article.md-text.content img # 多个选择器用英文逗号隔开
+    selector: article.md-text.content img:not([class*='icon']) # 多个选择器用英文逗号隔开
   mermaid:
     enable: # true # 可以在特定文章的 front-matter 中设置 mermaid: true 来开启，也可以在这里设置全局开启
     style_optimization: false # use custom style in stellar
