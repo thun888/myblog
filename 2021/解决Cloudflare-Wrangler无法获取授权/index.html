@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.26.8" theme-name="Stellar" theme-version="1.26.8">
   
-  <meta name="generator" content="Hexo 6.3.0">
+  <meta name="generator" content="Hexo 7.1.1">
   <meta name="baidu-site-verification" content="codeva-tIYplL9wDO" />
   <meta http-equiv='x-dns-prefetch-control' content='on' />
   <link rel="preconnect" href="https://jsd.hzchu.top" crossorigin><link rel="preconnect" href="https://unpkg.com" crossorigin><link rel="preconnect" href="https://cdn.bootcdn.net" crossorigin>
@@ -431,7 +431,7 @@
     stellar.plugins.preload = Object.assign({"enable":true,"service":"flying_pages","flying_pages":"https://cdn.bootcdn.net/ajax/libs/flying-pages/2.1.2/flying-pages.min.js"});
   }
   if ('true' == 'true') {
-    stellar.plugins.fancybox = Object.assign({"enable":true,"js":"https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.22/fancybox/fancybox.umd.min.js","css":"https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.22/fancybox/fancybox.min.css","selector":"article.md-text.content img"});
+    stellar.plugins.fancybox = Object.assign({"enable":true,"js":"https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.22/fancybox/fancybox.umd.min.js","css":"https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.22/fancybox/fancybox.min.css","selector":"article.md-text.content img:not([class*='icon'])"});
   }
   if ('false' == 'true') {
     stellar.plugins.heti = Object.assign({"enable":false,"css":"https://unpkg.com/heti@0.9.2/umd/heti.min.css","js":"https://unpkg.com/heti@0.9.2/umd/heti-addon.min.js"});
@@ -449,8 +449,8 @@
   <script>
   function load_artalk() {
     if (!document.querySelectorAll("#artalk_container")[0]) return;
-    stellar.loadCSS('https://unpkg.com/artalk@2.5.5/dist/Artalk.css');
-    stellar.loadScript('https://unpkg.com/artalk@2.5.5/dist/Artalk.js', {defer: true}).then(function () {
+    stellar.loadCSS('https://unpkg.com/artalk@2.8.2/dist/Artalk.css');
+    stellar.loadScript('https://unpkg.com/artalk@2.8.2/dist/Artalk.js', {defer: true}).then(function () {
       const el = document.getElementById("artalk_container");
       var path = el.getAttribute('comment_id');
       if (!path) {
