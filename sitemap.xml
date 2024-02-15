@@ -20,33 +20,6 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/img/dynmap_markers/marker_DIM-1.json</loc>
-    
-    <lastmod>2024-02-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/img/dynmap_markers/marker_DIM1.json</loc>
-    
-    <lastmod>2024-02-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/img/dynmap_markers/marker_world.json</loc>
-    
-    <lastmod>2024-02-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.hzchu.top/about/</loc>
     
     <lastmod>2024-02-15</lastmod>
@@ -66,6 +39,33 @@
   
   <url>
     <loc>https://blog.hzchu.top/friends/</loc>
+    
+    <lastmod>2024-02-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/img/dynmap_markers/marker_DIM-1.json</loc>
+    
+    <lastmod>2024-02-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/img/dynmap_markers/marker_DIM1.json</loc>
+    
+    <lastmod>2024-02-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/img/dynmap_markers/marker_world.json</loc>
     
     <lastmod>2024-02-15</lastmod>
     
