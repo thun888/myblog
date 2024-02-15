@@ -1,7 +1,47 @@
 
 <!DOCTYPE html><html lang="zh-CN">
 
-<head>
+<head><!-- hexo injector head_begin start -->
+  <script>
+  if (!!navigator.serviceWorker) {
+      navigator.serviceWorker.register('/cw.js?t=' + new Date().getTime()).then(async (registration) => {
+          if (localStorage.getItem('cw_installed') !== 'true') {
+              const conf = () => {
+                  console.log('[CW] Installing Success,Configuring...');
+                  fetch('/cw-cgi/api?type=config')
+                      .then(res => res.text())
+                      .then(text => {
+                          if (text === 'ok') {
+                              console.log('[CW] Installing Success,Configuring Success,Starting...');
+                              localStorage.setItem('cw_installed', 'true');
+                              //如果你不希望重载页面，请移除下面七行
+                              //重载标识 - 开始
+                              fetch(window.location.href).then(res => res.text()).then(text => {
+                                  document.open()
+                                  document.write(text);
+                                  document.close();
+                              });
+                              //重载标识 - 结束
+                          } else {
+                              console.warn('[CW] Installing Success,Configuring Failed,Sleeping 200ms...');
+                              setTimeout(() => {
+                                  conf()
+                              }, 200);
+                          }
+                      }).catch(err => {
+                          console.log('[CW] Installing Success,Configuring Error,Exiting...');
+                      });
+              }
+              setTimeout(() => {
+                  conf()
+              }, 50);
+          }
+      }).catch(err => {
+          console.error('[CW] Installing Failed,Error: ' + err.message);
+      });
+  } else { console.error('[CW] Installing Failed,Error: Browser not support service worker'); }
+  </script>
+    <!-- hexo injector head_begin end -->
   <meta charset="utf-8">
   <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.26.8" theme-name="Stellar" theme-version="1.26.8">
   
@@ -466,4 +506,4 @@
 
 <!-- inject -->
 
-</div><script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
+</div></body></html>

@@ -1,7 +1,47 @@
 
 <!DOCTYPE html><html lang="zh-CN">
 
-<head>
+<head><!-- hexo injector head_begin start -->
+  <script>
+  if (!!navigator.serviceWorker) {
+      navigator.serviceWorker.register('/cw.js?t=' + new Date().getTime()).then(async (registration) => {
+          if (localStorage.getItem('cw_installed') !== 'true') {
+              const conf = () => {
+                  console.log('[CW] Installing Success,Configuring...');
+                  fetch('/cw-cgi/api?type=config')
+                      .then(res => res.text())
+                      .then(text => {
+                          if (text === 'ok') {
+                              console.log('[CW] Installing Success,Configuring Success,Starting...');
+                              localStorage.setItem('cw_installed', 'true');
+                              //如果你不希望重载页面，请移除下面七行
+                              //重载标识 - 开始
+                              fetch(window.location.href).then(res => res.text()).then(text => {
+                                  document.open()
+                                  document.write(text);
+                                  document.close();
+                              });
+                              //重载标识 - 结束
+                          } else {
+                              console.warn('[CW] Installing Success,Configuring Failed,Sleeping 200ms...');
+                              setTimeout(() => {
+                                  conf()
+                              }, 200);
+                          }
+                      }).catch(err => {
+                          console.log('[CW] Installing Success,Configuring Error,Exiting...');
+                      });
+              }
+              setTimeout(() => {
+                  conf()
+              }, 50);
+          }
+      }).catch(err => {
+          console.error('[CW] Installing Failed,Error: ' + err.message);
+      });
+  } else { console.error('[CW] Installing Failed,Error: Browser not support service worker'); }
+  </script>
+    <!-- hexo injector head_begin end -->
   <meta charset="utf-8">
   <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.26.8" theme-name="Stellar" theme-version="1.26.8">
   <meta name="robots" content="noindex,nofollow">
@@ -32,7 +72,7 @@
 <meta property="og:description" content="留言&#x2F;评论须知：禁止发表违法暴乱，黄赌毒（包括但不限于）的言论本站支持邮件发送评论信息（收到回复时），在评论时请务必使用真实可用的邮箱（如果没有收到回复邮件可以把noreplay@hzchu.top加入白名单）拒绝无意义灌水，同ip五次以上封禁网址（包括昵称指向和评论内容）禁止以下类型推广链接（包括引流，拉人头等）含色情，反动（包括但不限于）广告链接（京东淘宝等，不过会看情况处理，合理讨论不会删除">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-07-10T19:06:52.000Z">
-<meta property="article:modified_time" content="2024-02-15T13:03:57.457Z">
+<meta property="article:modified_time" content="2024-02-15T14:26:56.212Z">
 <meta property="article:author" content="thun888">
 <meta property="article:tag" content="喵~|thun888&#39;s Blog">
 <meta name="twitter:card" content="summary">
@@ -154,7 +194,7 @@
   <span class="sep"></span>
   <a class="cap breadcrumb" href="/say/">留言版</a>
   </div>
-<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2021-07-10T19:06:52.000Z">2021-07-10</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-02-15T13:03:57.457Z">2024-02-15</time></span></div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2021-07-10T19:06:52.000Z">2021-07-10</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-02-15T14:26:56.212Z">2024-02-15</time></span></div></div></div>
 
     
     <div class="bottom">
@@ -170,7 +210,7 @@
 
 <script>
   //更新时间
-  gtime_days = Math.floor((new Date() - new Date('Thu Feb 15 2024 13:03:57 GMT+0000')) / 1000 / 60 / 60 / 24);
+  gtime_days = Math.floor((new Date() - new Date('Thu Feb 15 2024 14:26:56 GMT+0000')) / 1000 / 60 / 60 / 24);
   if (gtime_days > 60) {
     document.getElementById('expired-message').innerHTML = "<div class='old-message'>提醒：本文最后更新于 "+gtime_days+" 天前，其中某些信息可能已经过时，请谨慎使用！</div>";
   }
@@ -401,4 +441,4 @@
 
 <!-- inject -->
 
-</div><script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
+</div></body></html>

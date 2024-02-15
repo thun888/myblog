@@ -1,7 +1,47 @@
 
 <!DOCTYPE html><html lang="zh-CN">
 
-<head>
+<head><!-- hexo injector head_begin start -->
+  <script>
+  if (!!navigator.serviceWorker) {
+      navigator.serviceWorker.register('/cw.js?t=' + new Date().getTime()).then(async (registration) => {
+          if (localStorage.getItem('cw_installed') !== 'true') {
+              const conf = () => {
+                  console.log('[CW] Installing Success,Configuring...');
+                  fetch('/cw-cgi/api?type=config')
+                      .then(res => res.text())
+                      .then(text => {
+                          if (text === 'ok') {
+                              console.log('[CW] Installing Success,Configuring Success,Starting...');
+                              localStorage.setItem('cw_installed', 'true');
+                              //如果你不希望重载页面，请移除下面七行
+                              //重载标识 - 开始
+                              fetch(window.location.href).then(res => res.text()).then(text => {
+                                  document.open()
+                                  document.write(text);
+                                  document.close();
+                              });
+                              //重载标识 - 结束
+                          } else {
+                              console.warn('[CW] Installing Success,Configuring Failed,Sleeping 200ms...');
+                              setTimeout(() => {
+                                  conf()
+                              }, 200);
+                          }
+                      }).catch(err => {
+                          console.log('[CW] Installing Success,Configuring Error,Exiting...');
+                      });
+              }
+              setTimeout(() => {
+                  conf()
+              }, 50);
+          }
+      }).catch(err => {
+          console.error('[CW] Installing Failed,Error: ' + err.message);
+      });
+  } else { console.error('[CW] Installing Failed,Error: Browser not support service worker'); }
+  </script>
+    <!-- hexo injector head_begin end -->
   <meta charset="utf-8">
   <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.26.8" theme-name="Stellar" theme-version="1.26.8">
   
@@ -41,7 +81,7 @@
 <meta property="og:image" content="https://onep.hzchu.top/mount/pic/2023/01/25/63d0a914495c1.webp">
 <meta property="og:image" content="https://onep.hzchu.top/mount/pic/2023/01/25/63d0a92955df2.webp">
 <meta property="article:published_time" content="2021-07-29T19:00:02.000Z">
-<meta property="article:modified_time" content="2024-02-15T13:03:57.449Z">
+<meta property="article:modified_time" content="2024-02-15T14:26:56.204Z">
 <meta property="article:author" content="thun888">
 <meta property="article:tag" content="喵~|thun888&#39;s Blog">
 <meta name="twitter:card" content="summary">
@@ -164,7 +204,7 @@
   <span class="sep"></span>
   <a class="cap breadcrumb" href="/about/">关于</a>
   </div>
-<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2021-07-29T19:00:02.000Z">2021-07-29</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-02-15T13:03:57.449Z">2024-02-15</time></span></div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2021-07-29T19:00:02.000Z">2021-07-29</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-02-15T14:26:56.204Z">2024-02-15</time></span></div></div></div>
 
     
     <div class="bottom">
@@ -180,7 +220,7 @@
 
 <script>
   //更新时间
-  gtime_days = Math.floor((new Date() - new Date('Thu Feb 15 2024 13:03:57 GMT+0000')) / 1000 / 60 / 60 / 24);
+  gtime_days = Math.floor((new Date() - new Date('Thu Feb 15 2024 14:26:56 GMT+0000')) / 1000 / 60 / 60 / 24);
   if (gtime_days > 60) {
     document.getElementById('expired-message').innerHTML = "<div class='old-message'>提醒：本文最后更新于 "+gtime_days+" 天前，其中某些信息可能已经过时，请谨慎使用！</div>";
   }
@@ -442,4 +482,4 @@
 
 <!-- inject -->
 
-</div><script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
+</div></body></html>
