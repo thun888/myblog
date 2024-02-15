@@ -6,6 +6,9 @@ layout: post
 ---
 
 {% timeline %}
+<!-- node 2024/2/15 -->
+1.不再使用 `hexo-offline-popup` 插件，尝试使用 `ClientWorker`
+
 <!-- node 2024/2/06 -->
 1.升级主题
 
