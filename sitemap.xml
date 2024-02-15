@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/Artalk-doc/use/</loc>
+    <loc>https://blog.hzchu.top/say/</loc>
     
     <lastmod>2024-02-15</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/say/</loc>
+    <loc>https://blog.hzchu.top/wiki/Artalk-doc/use/</loc>
     
     <lastmod>2024-02-15</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/friends/</loc>
+    <loc>https://blog.hzchu.top/big/</loc>
     
     <lastmod>2024-02-15</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/big/</loc>
+    <loc>https://blog.hzchu.top/friends/</loc>
     
     <lastmod>2024-02-15</lastmod>
     
@@ -218,7 +218,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/Artalk-doc/install/</loc>
+    <loc>https://blog.hzchu.top/wiki/Artalk-doc/develop/</loc>
     
     <lastmod>2022-02-12</lastmod>
     
@@ -227,7 +227,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/Artalk-doc/develop/</loc>
+    <loc>https://blog.hzchu.top/wiki/Artalk-doc/install/</loc>
     
     <lastmod>2022-02-12</lastmod>
     
@@ -367,14 +367,14 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/%E7%AC%94%E8%AE%B0/</loc>
+    <loc>https://blog.hzchu.top/tags/Windows/</loc>
     <lastmod>2024-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/Windows/</loc>
+    <loc>https://blog.hzchu.top/tags/%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2024-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
