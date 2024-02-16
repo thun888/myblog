@@ -1,56 +1,41 @@
+name: Blog
 catch_rules: #转换规则
     - rule: _ #ClientWorker语法糖，匹配当前域，返回一个域名带端口
       transform_rules: #转换规则，最上面的优先最高
+        - search: \#.* #在发送请求时匹配#后内容并移除
+          replace: ''
 
-      - search: artalk\.hzchu\.top
-        action: skip
-        
-      - search: \#.* #在发送请求时匹配#后内容并移除
-        replace: ''
+        - search: _ 
+          replace: 
+            - _ #保留原始请求
+            - blogproxy.hzchu.top:60181
+          fetch:
+            status: 200
+            engine: classic
+            preflight: false
+            timeout: 5000
+            mode: no-cors
+            redirect: follow
+            credentials: include
 
-      - search: _ 
-        replace: 
-          - _ #保留原始请求
-          - blogproxy.hzchu.top:60181
-        fetch:
-          status: 200
-          engine: classic
-          preflight: false
-          timeout: 5000
-          mode: no-cors
-          redirect: follow
-          credentials: include
+        - search: \.(js|css)
+          action: fetch
+          fetch:
+            status: 200
+            engine: classic
+            preflight: false
+            timeout: 5000
+            mode: cors
+            redirect: follow
+            credentials: include
 
-      - search: onep\.hzchu\.top 
-        replace: 
-          - cn-onep.hzchu.top:60181 
-          - aws-onep.hzchu.top 
-
-      - search: \.(js|css)
-        action: fetch
-        fetch:
-          status: 200
-          engine: classic
-          preflight: false
-          timeout: 5000
-          mode: cors
-          redirect: follow
-          credentials: include
-
-      - search: _
-        action: fetch
-        fetch:
-          status: 200
-          engine: parallel
-          preflight: true
-          mode: cors
-          redirect: follow
-          credentials: include
-          timeout: 5000
-          
-      - search: (^4|^5) 
-        searchin: status 
-        action: return
-        return:
-          body: The GateWay is down!This Page is provided by ClientWorker!
-          status: 503
+        - search: _
+          action: fetch
+          fetch:
+            status: 200
+            engine: parallel
+            preflight: true
+            mode: cors
+            redirect: follow
+            credentials: include
+            timeout: 5000

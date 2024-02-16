@@ -4,7 +4,7 @@
   <url>
     <loc>https://blog.hzchu.top/say/</loc>
     
-    <lastmod>2024-02-15</lastmod>
+    <lastmod>2024-02-16</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -13,25 +13,7 @@
   <url>
     <loc>https://blog.hzchu.top/wiki/Artalk-doc/use/</loc>
     
-    <lastmod>2024-02-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/about/</loc>
-    
-    <lastmod>2024-02-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/big/</loc>
-    
-    <lastmod>2024-02-15</lastmod>
+    <lastmod>2024-02-16</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -40,7 +22,7 @@
   <url>
     <loc>https://blog.hzchu.top/friends/</loc>
     
-    <lastmod>2024-02-15</lastmod>
+    <lastmod>2024-02-16</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -49,7 +31,7 @@
   <url>
     <loc>https://blog.hzchu.top/img/dynmap_markers/marker_DIM-1.json</loc>
     
-    <lastmod>2024-02-15</lastmod>
+    <lastmod>2024-02-16</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -58,7 +40,7 @@
   <url>
     <loc>https://blog.hzchu.top/img/dynmap_markers/marker_DIM1.json</loc>
     
-    <lastmod>2024-02-15</lastmod>
+    <lastmod>2024-02-16</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -67,7 +49,25 @@
   <url>
     <loc>https://blog.hzchu.top/img/dynmap_markers/marker_world.json</loc>
     
-    <lastmod>2024-02-15</lastmod>
+    <lastmod>2024-02-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/about/</loc>
+    
+    <lastmod>2024-02-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/big/</loc>
+    
+    <lastmod>2024-02-16</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -346,7 +346,7 @@
 
   <url>
     <loc>https://blog.hzchu.top/</loc>
-    <lastmod>2024-02-15</lastmod>
+    <lastmod>2024-02-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -354,133 +354,133 @@
   
   <url>
     <loc>https://blog.hzchu.top/tags/yearreport/</loc>
-    <lastmod>2024-02-15</lastmod>
+    <lastmod>2024-02-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.hzchu.top/tags/AHK/</loc>
-    <lastmod>2024-02-15</lastmod>
+    <lastmod>2024-02-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.hzchu.top/tags/Windows/</loc>
-    <lastmod>2024-02-15</lastmod>
+    <lastmod>2024-02-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.hzchu.top/tags/%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2024-02-15</lastmod>
+    <lastmod>2024-02-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.hzchu.top/tags/Mirouterui/</loc>
-    <lastmod>2024-02-15</lastmod>
+    <lastmod>2024-02-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.hzchu.top/tags/MNSLXOD/</loc>
-    <lastmod>2024-02-15</lastmod>
+    <lastmod>2024-02-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.hzchu.top/tags/python/</loc>
-    <lastmod>2024-02-15</lastmod>
+    <lastmod>2024-02-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.hzchu.top/tags/%E7%94%9C%E7%B3%96/</loc>
-    <lastmod>2024-02-15</lastmod>
+    <lastmod>2024-02-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.hzchu.top/tags/blog/</loc>
-    <lastmod>2024-02-15</lastmod>
+    <lastmod>2024-02-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.hzchu.top/tags/oneindex/</loc>
-    <lastmod>2024-02-15</lastmod>
+    <lastmod>2024-02-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.hzchu.top/tags/web/</loc>
-    <lastmod>2024-02-15</lastmod>
+    <lastmod>2024-02-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.hzchu.top/tags/MC/</loc>
-    <lastmod>2024-02-15</lastmod>
+    <lastmod>2024-02-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.hzchu.top/tags/Intel/</loc>
-    <lastmod>2024-02-15</lastmod>
+    <lastmod>2024-02-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.hzchu.top/tags/linux/</loc>
-    <lastmod>2024-02-15</lastmod>
+    <lastmod>2024-02-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.hzchu.top/tags/Clouddlare/</loc>
-    <lastmod>2024-02-15</lastmod>
+    <lastmod>2024-02-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.hzchu.top/tags/Go/</loc>
-    <lastmod>2024-02-15</lastmod>
+    <lastmod>2024-02-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.hzchu.top/tags/MIUI/</loc>
-    <lastmod>2024-02-15</lastmod>
+    <lastmod>2024-02-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.hzchu.top/tags/%E7%BD%91%E7%AB%99/</loc>
-    <lastmod>2024-02-15</lastmod>
+    <lastmod>2024-02-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.hzchu.top/tags/%E8%BD%AC%E6%8D%A2/</loc>
-    <lastmod>2024-02-15</lastmod>
+    <lastmod>2024-02-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
