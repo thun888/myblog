@@ -24,6 +24,8 @@ menu_id: about
 
 爱好挺广，~~就是不咋爱运动~~{% emoji blobcat blobcatyandere %}。
 
+平时大部分时间在学校，有事情回家才会处理：<img class="tag-plugin emoji" src="https://onlinedisplay-api.hzchu.top/get/badge" alt="badge">
+
 {% quot 目前参与/开发项目 %}
 
 {% hashtag Mirouter-ui https://github.com/Mirouterui/mirouter-ui/ color:red %}
