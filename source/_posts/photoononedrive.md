@@ -62,6 +62,8 @@ mermaid: true
 pip3 install meson ninja
 ```
 
+{% hashtag 安装pip的三种方法 https://blog.csdn.net/qq_38980655/article/details/86579348 %}
+
 从 https://github.com/libfuse/libfuse/releases 下载libfuse的源码
 
 解压，创建一个（临时）构建目录，然后 运行`meson`
@@ -71,6 +73,8 @@ tar xzf fuse-3.15.1.tar.gz; cd fuse-3.15.1/
 mkdir build; cd build
 meson setup ..
 ```
+
+> 3.15.1 替换为对应的releases版本
 
 运行`ninja`进行安装
 
