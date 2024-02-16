@@ -237,10 +237,15 @@
 <h4 id="前置"><a href="#前置" class="headerlink" title="前置"></a>前置</h4><h5 id="libfuse"><a href="#libfuse" class="headerlink" title="libfuse"></a>libfuse</h5><p>安装<code>meson ninja</code></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install meson ninja</span><br></pre></td></tr></table></figure>
 
+<a class="tag-plugin colorful hashtag" color="red" target="_blank" rel="noopener" href="https://blog.csdn.net/qq_38980655/article/details/86579348"><svg t="1701408144765" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4228" width="200" height="200"><path d="M426.6 64.8c34.8 5.8 58.4 38.8 52.6 73.6l-19.6 117.6h190.2l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6s58.4 38.8 52.6 73.6l-19.4 117.6H896c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-42.6 256H832c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.6-117.4h-190.4l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.4-117.8H128c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l42.6-256H192c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6z m11.6 319.2l-42.6 256h190.2l42.6-256h-190.2z" p-id="4229"></path></svg><span>安装pip的三种方法</span></a>
+
 <p>从 <a target="_blank" rel="noopener" href="https://github.com/libfuse/libfuse/releases">https://github.com/libfuse/libfuse/releases</a> 下载libfuse的源码</p>
 <p>解压，创建一个（临时）构建目录，然后 运行<code>meson</code></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">tar xzf fuse-3.15.1.tar.gz; <span class="built_in">cd</span> fuse-3.15.1/</span><br><span class="line"><span class="built_in">mkdir</span> build; <span class="built_in">cd</span> build</span><br><span class="line">meson setup ..</span><br></pre></td></tr></table></figure>
 
+<blockquote>
+<p>3.15.1 替换为对应的releases版本</p>
+</blockquote>
 <p>运行<code>ninja</code>进行安装</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ninja install</span><br></pre></td></tr></table></figure>
 
