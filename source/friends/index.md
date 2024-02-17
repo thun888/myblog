@@ -4,6 +4,8 @@ description: 友链索引
 date: 2024-02-6 22:33:52
 layout: post
 menu_id: friends
+leftbar: [recent]
+rightbar: [friends_timeline]
 ---
 
 {% quot 朋友们 icon:hashtag %}

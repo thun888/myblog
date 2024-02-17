@@ -5,8 +5,27 @@ timeline:
   type: memos
   hide: user,footer
 
+friends_timeline:
+  layout: timeline
+  title: 看看朋友们
+  api: https://faster-raw-git.hzchu.top/thun888/hexo-circle-of-friends/main/data.json
+  type: fcircle
+  limit: 20
 welcome:
   layout: markdown
   title: 欢迎
   content: | # support markdown
     <span id="jinrishici-sentence">夏日当空，心如深渊</span><script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+
+ghuser:
+  layout: ghuser
+  username: thun888 # your github login username
+  avatar: true # show avatar or not
+  menu: true # show menu or not
+
+travellingslink:
+  layout: markdown
+  title: 前往远方
+  content: | # support markdown
+    <a href="https://www.foreverblog.cn/go.html" class="no-lazy" target="_blank"> <img src="https://img.foreverblog.cn/wormhole_4_tp.gif" alt="" style="width:auto;height:32px;" title="穿梭虫洞-随机访问十年之约友链博客"></a>
+    <a href="https://www.travellings.cn/go.html" class="no-lazy" target="_blank" rel="noopener" title="开往-友链接力"><img no-lazy src="https://www.travellings.cn/assets/logo.gif" data-src="https://www.travellings.cn/assets/logo.gif" alt="开往-友链接力" width="120" data-ll-status="loaded"></a>

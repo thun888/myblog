@@ -94,7 +94,7 @@ function tianliGPT(usePjax) {
         if (typeof tianliGPT_wordLimit !== "undefined") {
           wordLimit = tianliGPT_wordLimit;
         }
-        const truncatedText = combinedText.slice(0, wordLimit);
+        const truncatedText = combinedText.slice(0, wordLimit).replace('本文采用 署名-非商业性使用-相同方式共享 4.0 国际 许可协议，转载请注明出处。', '');
         return truncatedText;
       } catch (e) {
         console.error('DolGPT错误：可能由于一个或多个错误导致没有正常运行，原因出在获取文章容器中的内容失败，或者可能是在文章转换过程中失败。', e);
@@ -123,39 +123,28 @@ function tianliGPT(usePjax) {
         })
         return
       }
-      const title = document.title;
-      const apiUrl = `https://dolgpt.hzchu.top/`;
+      // use get method to avoid CORS check
+      const apiUrl = `https://dolgpt.hzchu.top/?content=${encodeURIComponent(content)}&key=${encodeURIComponent(tianliGPT_key)}&url=${encodeURIComponent(url)}`;
       const timeout = 20000; // 设置超时时间（毫秒）
-    
-      const postData = {
-        content: content,
-        // key: tianliGPT_key,
-        url: url,
-        // title: title
-      };
-    
+
       try {
-          const controller = new AbortController();
-          const timeoutId = setTimeout(() => controller.abort(), timeout);
-          const response = await fetch(apiUrl, { 
-            method: 'POST', 
-            headers: {
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(postData),
-            signal: controller.signal 
-          });
-          if (response.ok) {
-              const data = await response.json();
-              return data.summary;
-          } else {
-              if (response.status === 402) {
-                  document.querySelectorAll('.post-TianliGPT').forEach(el => {
-                      el.style.display = 'none';
-                  });
-              }
-              throw new Error('DolGPT：余额不足，请充值后请求新的文章');
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), timeout);
+        const response = await fetch(apiUrl, { signal: controller.signal });
+        if (response.ok) {
+          const data = await response.json();
+          if (data["summary"].startsWith("当前文章")){
+            tianliGPT_typingAnimate = false;
           }
+          return data.summary;
+        } else {
+          if (response.status === 402) {
+            document.querySelectorAll('.post-TianliGPT').forEach(el => {
+              el.style.display = 'none';
+            });
+          }
+          throw new Error('DolGPT：余额不足，请充值后请求新的文章');
+        }
       } catch (error) {
           if (error.name === 'AbortError') {
               if (window.location.hostname === 'localhost') {

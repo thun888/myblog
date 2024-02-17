@@ -3,6 +3,8 @@ title: 关于
 date: 2021-07-29 19:00:02
 layout: page
 menu_id: about
+leftbar: [recent,travellingslink]
+rightbar: [timeline]
 ---
 {% banner thun888 avatar:/img/avatar.webp bg:https://onep.hzchu.top/mount/pic/2024/02/06/65c236823dbca.webp %}
 {% navbar active:/about/ [关于](/about/) [友链](/friends/) [留言](/say/) %}
