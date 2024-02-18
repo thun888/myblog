@@ -8,8 +8,9 @@
   <meta name="generator" content="Hexo 7.1.1">
   <meta name="baidu-site-verification" content="codeva-tIYplL9wDO" />
   <meta http-equiv='x-dns-prefetch-control' content='on' />
-  <link rel="preconnect" href="https://jsd.hzchu.top" crossorigin><link rel="preconnect" href="https://unpkg.com" crossorigin><link rel="preconnect" href="https://cdn.bootcdn.net" crossorigin>
+  <link rel="preconnect" href="https://jsd.hzchu.top" crossorigin><link rel="preconnect" href="https://jsd.onmicrosoft.cn" crossorigin><link rel="preconnect" href="https://unpkg.com" crossorigin><link rel="preconnect" href="https://cdn.bootcdn.net" crossorigin>
   <link rel='dns-prefetch' href='https://jsd.hzchu.top'>
+  <link rel='dns-prefetch' href='https://jsd.onmicrosoft.cn'>
   <link rel='dns-prefetch' href='//unpkg.com'>
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
@@ -140,12 +141,13 @@
   
 </script>
 
-<link rel="stylesheet" href="https://jsd.hzchu.top/npm/lxgw-wenkai-screen-webfont@1.1.0/lxgwwenkaiscreen.css" media="all">
-<link rel="stylesheet" href="https://jsd.hzchu.top/npm/notyf@3/notyf.min.css">
-<link rel="stylesheet" href="/mcss/mcss.css">
   
   
-</head>
+<!-- hexo injector head_end start -->
+  <link rel="stylesheet" href="https://jsd.onmicrosoft.cn/npm/lxgw-wenkai-screen-webfont@1.1.0/lxgwwenkaiscreen.css" media="all">
+  <link rel="stylesheet" href="https://jsd.onmicrosoft.cn/npm/notyf@3/notyf.min.css">
+  <link rel="stylesheet" href="/mcss/mcss.css">
+  <!-- hexo injector head_end end --></head>
 <body>
     <div class="spinner" id="eloading"> 
       <div class="loader"></div>
@@ -300,7 +302,8 @@
 <li>对与中等大小物品，使用上文提到的二维码标签，</li>
 <li>小物品用一维码标签，</li>
 <li>再小就不贴标签，改用荧光笔加胶布或直接跳过</li>
-<li>从俯视角度，按入库顺序从左往右，从上到下排列（可选）</li>
+<li>整理时从俯视角度，按入库顺序从左往右，从上到下排列（可选）</li>
+<li>对已有唯一标识码（sn码）的物品直接使用</li>
 </ol>
 <p>程序内列了四个类别（感觉除了日后忘了物品名称关键词，用来筛选物品外其实没啥用）：大物件，小物件，收纳盒，电子产品</p>
 <h2 id="实际实施"><a href="#实际实施" class="headerlink" title="实际实施"></a>实际实施</h2><p>  因为一开始没发现自带的<code>标签生成器</code>，所以用了「<a target="_blank" rel="noopener" href="http://www.yi-label.com/">E-Label</a>」来生成一维码，单页85个标签</p>
