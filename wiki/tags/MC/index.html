@@ -55,63 +55,6 @@
 
 
   
-  <style>
-    * {
-        margin: 0;
-        padding: 0;
-    }
-
-    /* From uiverse.io by @satyamchaudharydev */
-    .spinner {
-        width: 100%;
-        min-height: 100vh;
-        background-color: rgb(249, 250, 251);
-    }
-    .loader {
-  display: block;
-  --height-of-loader: 4px;
-  --loader-color: #0071e2;
-  width: 130px;
-  height: var(--height-of-loader);
-  border-radius: 30px;
-  background-color: rgba(0,0,0,0.2);
-  position: absolute;
-  top:50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-
-.loader::before {
-  content: "";
-  position: absolute;
-  background: var(--loader-color);
-  top: 0;
-  left: 0;
-  width: 0%;
-  height: 100%;
-  border-radius: 30px;
-  animation: moving 1s ease-in-out infinite;
-  ;
-}
-
-@keyframes moving {
-  50% {
-    width: 100%;
-  }
-
-  100% {
-    width: 0;
-    right: 0;
-    left: unset;
-  }
-}
-</style>
-<script>
-  addEventListener("load",function(){
-    document.getElementById("eloading").style.display = "none";
-  })
-  
-</script>
 
   
   
@@ -119,6 +62,63 @@
   <link rel="stylesheet" href="https://jsd.onmicrosoft.cn/npm/lxgw-wenkai-screen-webfont@1.1.0/lxgwwenkaiscreen.css" media="all">
   <link rel="stylesheet" href="https://jsd.onmicrosoft.cn/npm/notyf@3/notyf.min.css">
   <link rel="stylesheet" href="/mcss/mcss.css">
+  <style>
+  * {
+      margin: 0;
+      padding: 0;
+  }
+
+  /* From uiverse.io by @satyamchaudharydev */
+  .spinner {
+      width: 100%;
+      min-height: 100vh;
+      background-color: rgb(249, 250, 251);
+  }
+  .loader {
+display: block;
+--height-of-loader: 4px;
+--loader-color: #0071e2;
+width: 130px;
+height: var(--height-of-loader);
+border-radius: 30px;
+background-color: rgba(0,0,0,0.2);
+position: absolute;
+top:50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+
+.loader::before {
+content: "";
+position: absolute;
+background: var(--loader-color);
+top: 0;
+left: 0;
+width: 0%;
+height: 100%;
+border-radius: 30px;
+animation: moving 1s ease-in-out infinite;
+;
+}
+
+@keyframes moving {
+50% {
+  width: 100%;
+}
+
+100% {
+  width: 0;
+  right: 0;
+  left: unset;
+}
+}
+</style>
+<script>
+addEventListener("load",function(){
+  document.getElementById("eloading").style.display = "none";
+})
+
+</script>
   <!-- hexo injector head_end end --></head>
 <body>
     <div class="spinner" id="eloading"> 
@@ -154,7 +154,7 @@
 
 
 
-<div class="navbar top"><nav class="wiki"><a href="/wiki">所有项目</a></a><a href="/wiki/tags/%E6%96%87%E6%A1%A3/">文档</a></a><a class="active" href="/wiki/tags/MC/">MC</a></a></nav></div>
+<div class="navbar top"><nav class="wiki"><a href="/wiki">所有项目</a></a><a class="active" href="/wiki/tags/MC/">MC</a></a><a href="/wiki/tags/%E6%96%87%E6%A1%A3/">文档</a></a></nav></div>
 <div class="post-list wiki filter"><a class="post-card wiki" href="/wiki/fcloud/">
 <article class="md-text"><div class="preview"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/04/21/64429657391bf.webp"/></div><div class="excerpt"><div class="caps"><span class="cap breadcrumb">MC</span></div><h2 class="post-title">峰间云海</h2><p>一个纯生存MC服务器(DOC)</p></div></article>
 </a></div>
