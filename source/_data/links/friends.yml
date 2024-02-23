@@ -1,13 +1,8 @@
     - title: 陈YF的博客
-      avatar: https://unpkg.com/chenyfan-oss@4.0.0/512.jpg
+      avatar: https://onep.hzchu.top/mount/pic/2024/02/23/65d86f7909d4f.webp
       url: https://blog.cyfan.top
       screenshot: https://image.thum.io/get/maxAge/12/width/700/https://blog.cyfan.top
       description: 一个在互联网角落挣扎的小小博客，很小很小
-    - title: 空山柠语
-      avatar: https://www.lemjuice.cn/00000147.png
-      url: https://www.lemjuice.cn
-      screenshot: https://image.thum.io/get/maxAge/12/width/700/https://www.lemjuice.cn
-      description: 歲時艱，行路難。形將破，意且存，勿忘我
     - title: Xunflash的小站
       avatar: https://www.xunflash.top/icon.png
       url: https://www.xunflash.top
@@ -33,7 +28,7 @@
       description: 一个少年的博客
     - title: 字节君
       url: https://blog.lvbyte.top
-      avatar: https://i.im5i.com/2021/06/05/CpGnd.png
+      avatar: https://npm.elemecdn.com/lvbyte-cdn/20230104/%E8%8B%B9%E6%9E%9C.156l7bksen40.jpg
       description: 热爱漫无边际，生活自有分寸
     - title: Xlenco
       url: https://blog.xlenco.top/
@@ -44,8 +39,8 @@
       avatar: https://www.wsjj.top/upload/2022/10/touxiang.png
       description: 一件事情是幸福还是不幸，关键是你怎么去看。
     - title: 柠萌の部落
-      url: https://www.lemonbuluo.eu.org
-      avatar: https://www.lemonbuluo.eu.org/img/lemonsuka.webp
+      url: https://www.skira.top/
+      avatar: https://onep.hzchu.top/mount/pic/2024/02/23/65d870092bcba.webp
       description: 一个闲聊萌新动漫技术交流站
     - title: wyj5211的小站
       url: https://blog.wyj5211.top/
@@ -61,5 +56,9 @@
       description: 願你有一天能與你重要的人重逢
     - title: 二月
       url: https://chenli-l.github.io/
-      avatar: https://s3.imnian.com/imgs/2023/08/05/1aa8e736782a0c18.png
+      avatar: https://bu.dusays.com/2023/09/02/64f2900d6f69a.jpg
       description: 播客、主题仅此而已？
+    - title: 清风
+      url: https://luckqf.cn/
+      avatar: https://cdn1.luckqf.cn/qingfeng.jpg
+      description: 最灿烂的烟火总是先坠落

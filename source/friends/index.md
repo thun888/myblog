@@ -12,6 +12,10 @@ rightbar: [friends_timeline]
 
 {% friends friends %}
 
+{% quot 失联的伙伴 icon:hashtag %}
+
+{% friends d-friends %}
+
 {% quot 其他网站 icon:hashtag %}
 
 {% sites websites %}
