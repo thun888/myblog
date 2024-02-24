@@ -264,3 +264,43 @@ volumes:
 ​	那么，工期呢？要对小到一颗纽扣电池进行统计本身就不是一件快事，整理一个小时才勉强整理完一张桌子，想全部整理完必然是一个大工程，慢慢来。但全部整理一次确实大有益处，比如我就找到了8年前在某购物广场办的会员卡（前一天才因为没有实体会员卡不给兑积分{% emoji blobcat blobcatangry %}，这波雪中送炭），因为中途方案改变，要等这个打印纸，就先搁置下来了，~~才不是因为帕鲁太好玩了~~
 
 ![导弹喵](https://onep.hzchu.top/mount/pic/2024/02/17/65d0cbae30c5d.webp)
+
+## 续
+
+{% grid %}
+
+ <!-- cell -->
+
+自带的标签生成器中页面中仍有大量留白，实用性欠佳，有空想办法搓个更好用的
+
+> 打印机过个回南天病情恶化了，不是不能用（
+
+ <!-- cell -->
+
+![1708779215832.webp](https://onep.hzchu.top/mount/pic/2024/02/24/65d9e74ecd25b.webp)
+
+{% endgrid %}
+
+{% grid %}
+
+ <!-- cell -->
+
+可根据物品大小裁剪，在默认情况下规格约为48x21mm
+
+ <!-- cell -->
+
+![1708779215823.webp](https://onep.hzchu.top/mount/pic/2024/02/24/65d9e756bd973.webp)
+
+{% grid %}
+
+{% endgrid %}
+
+ <!-- cell -->
+
+实际使用
+
+ <!-- cell -->
+
+{% video https://onep.hzchu.top/mount/lfiles/Screenrecorder-2024-02-24-20-49-23-869.mp4  %}
+
+{% endgrid %}
