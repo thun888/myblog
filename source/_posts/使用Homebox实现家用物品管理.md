@@ -7,7 +7,7 @@ cover: https://onep.hzchu.top/mount/pic/2024/02/17/65d0d5665e055.webp
 banner: https://onep.hzchu.top/mount/pic/2024/02/17/65d0d5665e055.webp
 description: 唉，家里太乱了，该整理一下了
 references:
- - '[Home - Homebox (hay-kot.github.io)](https://hay-kot.github.io/homebox/)'
+ - '[Home - Homebox (hay-kot.github.io)](https://d.hzchu.top/molvn)'
 ---
 
 ## 前言
@@ -16,7 +16,7 @@ references:
 
 假期回家，桌面太乱了一直被我妈批斗…… {% emoji blobcat blobcatflip %}
 
-思来想去这样也不行啊，上网找一下，发现了「[Homebox](https://github.com/hay-kot/homebox)」这个程序，开始干活吧。
+思来想去这样也不行啊，上网找一下，发现了「[Homebox](https://d.hzchu.top/9x7up)」这个程序，开始干活吧。
 
 ## 安装
 
@@ -210,7 +210,7 @@ volumes:
 
 ## 实际实施
 
-  因为一开始没发现自带的`标签生成器`，所以用了「[E-Label](http://www.yi-label.com/)」来生成一维码，单页85个标签
+  因为一开始没发现自带的`标签生成器`，所以用了「[E-Label](https://d.hzchu.top/d4a5q)」来生成一维码，单页85个标签
 
 其中，A/B...表示该物品原属房间
 

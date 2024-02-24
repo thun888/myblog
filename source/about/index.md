@@ -1,5 +1,6 @@
 ---
-title: 关于
+seo_title: 关于
+h1: ''
 date: 2021-07-29 19:00:02
 layout: page
 menu_id: about
@@ -39,3 +40,7 @@ rightbar: [timeline]
 |Alipay|Wechat|
 |-|-|
 |<img src="https://onep.hzchu.top/mount/pic/2023/01/25/63d0a914495c1.webp" style="zoom:42.5%;" />|<img src="https://onep.hzchu.top/mount/pic/2023/01/25/63d0a92955df2.webp" style="zoom:50%;" />|
+
+<script>
+  document.querySelector('.banner.top').style.display = 'none'
+</script>
