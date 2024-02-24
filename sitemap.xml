@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.hzchu.top/say/</loc>
+    <loc>https://blog.hzchu.top/wiki/Artalk-doc/use/</loc>
     
     <lastmod>2024-02-24</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/Artalk-doc/use/</loc>
+    <loc>https://blog.hzchu.top/say/</loc>
     
     <lastmod>2024-02-24</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/friends/</loc>
+    <loc>https://blog.hzchu.top/big/</loc>
     
     <lastmod>2024-02-24</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/big/</loc>
+    <loc>https://blog.hzchu.top/friends/</loc>
     
     <lastmod>2024-02-24</lastmod>
     
@@ -453,14 +453,14 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/Intel/</loc>
+    <loc>https://blog.hzchu.top/tags/MC/</loc>
     <lastmod>2024-02-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/MC/</loc>
+    <loc>https://blog.hzchu.top/tags/Intel/</loc>
     <lastmod>2024-02-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
