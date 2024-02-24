@@ -47,12 +47,12 @@ default:
 
 //dom构建完成
 document.addEventListener('DOMContentLoaded', function() {
-console.log("dom构建完成")
+console.log("[Loader]dom构建完成")
 changeProgress ("start");//开启进度条
 })
 
 //页面渲染完成
 addEventListener("load",function(){
-    console.log('页面加载完成');
+    console.log('[Loader]页面加载完成');
     changeProgress ("end");//结束进度条，
   })
