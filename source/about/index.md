@@ -27,7 +27,7 @@ rightbar: [timeline]
 
 爱好挺广，~~就是不咋爱运动~~{% emoji blobcat blobcatyandere %}。
 
-平时大部分时间在学校，有事情回家才会处理：<img class="tag-plugin emoji" src="https://onlinedisplay-api.hzchu.top/get/badge" alt="badge">
+平时大部分时间在学校，有事情回家才会处理：<img style="display: inline-block;" src="https://onlinedisplay-api.hzchu.top/get/badge" alt="badge">
 
 {% quot 目前参与/开发项目 %}
 
@@ -40,6 +40,13 @@ rightbar: [timeline]
 |Alipay|Wechat|
 |-|-|
 |<img src="https://onep.hzchu.top/mount/pic/2023/01/25/63d0a914495c1.webp" style="zoom:42.5%;" />|<img src="https://onep.hzchu.top/mount/pic/2023/01/25/63d0a92955df2.webp" style="zoom:50%;" />|
+
+{% quot 未来可能发布的稿子/Todo %}
+
+{% timeline user:Thun888sDraftArticles api:https://get-tg-channel-api.hzchu.top/ type:memos %}
+
+{% endtimeline %}
+
 
 <script>
   document.querySelector('.banner.top').style.display = 'none'
