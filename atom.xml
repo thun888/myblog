@@ -6,7 +6,7 @@
   <link href="https://blog.hzchu.top/atom.xml" rel="self"/>
   
   <link href="https://blog.hzchu.top/"/>
-  <updated>2024-02-17T09:30:07.000Z</updated>
+  <updated>2024-02-25T14:43:01.000Z</updated>
   <id>https://blog.hzchu.top/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>把Tg Channel接入到Stellar时间线</title>
+    <link href="https://blog.hzchu.top/2024/%E6%8A%8ATg-Channel%E6%8E%A5%E5%85%A5%E5%88%B0Stellar%E6%97%B6%E9%97%B4%E7%BA%BF/"/>
+    <id>https://blog.hzchu.top/2024/%E6%8A%8ATg-Channel%E6%8E%A5%E5%85%A5%E5%88%B0Stellar%E6%97%B6%E9%97%B4%E7%BA%BF/</id>
+    <published>2024-02-25T13:19:01.000Z</published>
+    <updated>2024-02-25T14:43:01.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>之前调CW时发现<a href="https://blog.eurekac.cn/">Cyan</a>加上了TG频道说说，因为已经有<code>Memos</code>了所以没有在意，昨天在<a href="https://xaoxuu.com/wiki/stellar/articles.html">Stellar 探索号</a>看到有<a href="https://blog.lvbyte.top/posts/11214/">stellar主题集成Telegram Channel说说</a>的教程，忽然灵光一闪，这拿来放草稿&#x2F;想法挺合适的嘛</p><h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>首先新建一个频道，并记下频道ID</p><p><img src="https://onep.hzchu.top/mount/pic/2024/02/25/65dad341bacfd.webp" alt="1708839745065.webp"></p><p>新建一个Cloudflare Worker，复制下面的代码粘贴进去</p><blockquote><p>为了兼容Steller的时间线，我在lvbyte的基础上改了点代码</p></blockquote><script src="https://cfproxy.hzchu.top/https://gist.github.com/thun888/67d8cdf1296d8dc252e9fc5607e4daf6.js"></script><p>并修改顶部配置</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title class_">ChannelName</span> = <span class="string">&#x27;Thun888sDraftArticles&#x27;</span>; <span class="comment">//频道ID</span></span><br><span class="line"><span class="keyword">const</span> deniedRegion = [<span class="string">&quot;&quot;</span>]; 屏蔽区域，如<span class="variable constant_">CN</span>,<span class="variable constant_">US</span></span><br><span class="line"><span class="keyword">const</span> baseproxyurl=<span class="string">&quot;https://get-tg-channel-api.hzchu.top/?proxy=&quot;</span> <span class="comment">//将中间域名替换为你为worker绑定的域名</span></span><br></pre></td></tr></table></figure><p>由于开启了标签过滤，带上<code>#DTA</code>标签的才会显示，可在代码里搜索并替换为自己想要的</p><blockquote><p>原版是#SFCN,一开始没想明白是什么意思，现在明白了：Safe For China，可以有别的玩法o(￣▽￣)ｄ</p></blockquote><p>随后按照使用Memos时间线形式使用即可</p><h2 id="样式展示"><a href="#样式展示" class="headerlink" title="样式展示"></a>样式展示</h2><div class="tag-plugin grid"  style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));"><div class="cell" style="">    <div class="tag-plugin timeline stellar-memos-api" api="https://get-tg-channel-api.hzchu.top/?limit=3" user="Thun888sDraftArticles"></div>    </div>    <div class="cell" style="">    <p><strong>代码：</strong></p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% timeline user:Thun888sDraftArticles api:https://get-tg-channel-api.hzchu.top/ type:memos %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% endtimeline %&#125;</span><br></pre></td></tr></table></figure><p>碍于篇幅限制，只展示前3条</p>    </div>    </div><h2 id="Todo"><a href="#Todo" class="headerlink" title="Todo"></a>Todo</h2><ul><li><input disabled="" type="checkbox"> 可在请求时选择过滤哪个tag（没需求先鸽着</li><li><input disabled="" type="checkbox"> 完善Emoji支持</li></ul>]]></content>
+    
+    
+    <summary type="html">使用Cloudflare Worker，将Tg Channel接入到Stellar时间线</summary>
+    
+    
+    
+    
+    <category term="Stellar" scheme="https://blog.hzchu.top/tags/Stellar/"/>
+    
+  </entry>
   
   <entry>
     <title>使用Homebox实现家用物品管理</title>

@@ -34,7 +34,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://onep.hzchu.top/mount/pic/2023/05/01/644fc215cdcc4.webp">
 <meta property="og:image" content="https://onep.hzchu.top/mount/pic/2023/05/01/644fc20042a10.webp">
-<meta property="article:published_time" content="2024-02-25T04:54:01.989Z">
+<meta property="article:published_time" content="2024-02-25T06:49:04.116Z">
 <meta property="article:modified_time" content="2023-06-23T20:05:32.000Z">
 <meta property="article:author" content="thun888">
 <meta property="article:tag" content="喵~|thun888&#39;s Blog">
@@ -67,6 +67,7 @@
   <div class="spinner" id="eloading"> 
     <span class="loader-text">加载中...</span>
     <div class="loader"></div>
+    <span class="loader-text-below" onclick="document.getElementById('eloading').style.display='none'">不想等待可以点我关掉</span>
   </div>
   
   <link rel="stylesheet" href="https://jsd.onmicrosoft.cn/npm/lxgw-wenkai-screen-webfont@1.1.0/lxgwwenkaiscreen.css" media="all">
@@ -103,6 +104,13 @@
   display: block;
   position: absolute;
   top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loader-text-below {
+  display: block;
+  position: absolute;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
