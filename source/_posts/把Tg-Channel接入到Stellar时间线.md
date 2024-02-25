@@ -34,7 +34,7 @@ const deniedRegion = [""]; 屏蔽区域，如CN,US
 const baseproxyurl="https://get-tg-channel-api.hzchu.top/?proxy=" //将中间域名替换为你为worker绑定的域名
 ```
 
-由于开启了标签过滤，带上`#DTA`标签的才会显示，可在代码里搜索并替换为自己想要的
+由于开启了标签过滤，带上`#DTA`标签（Draft Article）的才会显示，可在代码里搜索并替换为自己想要的
 
 > 原版是#SFCN,一开始没想明白是什么意思，现在明白了：Suitable For China，可以有别的玩法o(￣▽￣)ｄ
 
@@ -58,6 +58,8 @@ const baseproxyurl="https://get-tg-channel-api.hzchu.top/?proxy=" //将中间域
 
 {% endtimeline %}
 ```
+
+user为频道ID，api为你为CFW绑定的域名，type填memos
 
 碍于篇幅限制，只展示前3条
 
