@@ -198,7 +198,7 @@
 <p>并修改顶部配置</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title class_">ChannelName</span> = <span class="string">&#x27;Thun888sDraftArticles&#x27;</span>; <span class="comment">//频道ID</span></span><br><span class="line"><span class="keyword">const</span> deniedRegion = [<span class="string">&quot;&quot;</span>]; 屏蔽区域，如<span class="variable constant_">CN</span>,<span class="variable constant_">US</span></span><br><span class="line"><span class="keyword">const</span> baseproxyurl=<span class="string">&quot;https://get-tg-channel-api.hzchu.top/?proxy=&quot;</span> <span class="comment">//将中间域名替换为你为worker绑定的域名</span></span><br></pre></td></tr></table></figure>
 
-<p>由于开启了标签过滤，带上<code>#DTA</code>标签的才会显示，可在代码里搜索并替换为自己想要的</p>
+<p>由于开启了标签过滤，带上<code>#DTA</code>标签（Draft Article）的才会显示，可在代码里搜索并替换为自己想要的</p>
 <blockquote>
 <p>原版是#SFCN,一开始没想明白是什么意思，现在明白了：Suitable For China，可以有别的玩法o(￣▽￣)ｄ</p>
 </blockquote>
@@ -207,7 +207,7 @@
     <div class="tag-plugin timeline stellar-memos-api" api="https://get-tg-channel-api.hzchu.top/?limit=3" user="Thun888sDraftArticles"></div>
     </div>
     <div class="cell" style="">
-    <p><strong>代码：</strong></p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% timeline user:Thun888sDraftArticles api:https://get-tg-channel-api.hzchu.top/ type:memos %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% endtimeline %&#125;</span><br></pre></td></tr></table></figure><p>碍于篇幅限制，只展示前3条</p>
+    <p><strong>代码：</strong></p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% timeline user:Thun888sDraftArticles api:https://get-tg-channel-api.hzchu.top/ type:memos %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% endtimeline %&#125;</span><br></pre></td></tr></table></figure><p>user为频道ID，api为你为CFW绑定的域名，type填memos</p><p>碍于篇幅限制，只展示前3条</p>
     </div>
     </div>
 
