@@ -13,7 +13,7 @@
      //开启进度条
      case "start":
      //获取页面所有资源
-    const resources = document.querySelectorAll('img, script, link');// 获取图片、脚本和链接资源
+    const resources = document.querySelectorAll('script, link');// 获取图片、脚本和链接资源
     window.totalResources = resources.length; // 获取资源总数
     window.loadedResources = 0;//已加载完成的资源数
     window.progress = 0;// 进度值
