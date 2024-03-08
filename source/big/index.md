@@ -1,13 +1,16 @@
 ---
-title: 更新历程
+title: 更新日志
 date: 2021-07-10 19:06:52
 description: 让我看看又更新了什么
 layout: post
 ---
 
+{% timeline user:thun888sthinks api:https://get-tg-channel-api.hzchu.top/?cid=2&tag=blogchanges&showtag=false type:memos %}
+{% endtimeline %}
+
 {% timeline %}
 <!-- node 2024/2/25 -->
-1.完成TG Channel 时间线改进
+1.完成TG Channel 时间线改进，对一部分页面进行动态化改造
 
 <!-- node 2024/2/15 -->
 1.不再使用 `hexo-offline-popup` 插件，~~尝试使用 `ClientWorker`~~

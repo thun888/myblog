@@ -26,7 +26,7 @@ last: 2021-06-10 14:37:59
 第7行
 
 ```html
-<link rel="stylesheet" href="//unpkg.com/mdui@1.0.1/dist/css/mdui.min.css">
+<link rel="stylesheet" href="//npm.elemecdn.com/mdui@1.0.1/dist/css/mdui.min.css">
 ```
 
 第11行

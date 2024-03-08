@@ -169,7 +169,7 @@ service_worker:
     - urlPattern: /*
       handler: cacheFirst
       options:
-        origin: unpkg.com
+        origin: jsd.onmicrosoft.cn
     - urlPattern: /*
       handler: cacheFirst
       options:

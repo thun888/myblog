@@ -12,3 +12,4 @@ base_dir: /wiki/Serve-list/
 toc: 
   - index
   - hashtags
+  - docs

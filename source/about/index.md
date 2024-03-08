@@ -20,6 +20,10 @@ rightbar: [timeline]
 
  不过，碍于博主水平有限，可能质量上会存在不足之处，欢迎指点{% emoji blobcat ablobcatheart %}
 
+本站使用Stellar主题，如果你不懂配置而恰巧本站又有你所需要的东西，可以在下方仓库查看
+
+{% ghcard thun888/myblog theme:dark %}
+
 
 {% quot 关于我 icon:hashtag %}
 
@@ -39,11 +43,11 @@ rightbar: [timeline]
 
 |Alipay|Wechat|
 |-|-|
-|<img src="https://onep.hzchu.top/mount/pic/2023/01/25/63d0a914495c1.webp" style="zoom:42.5%;" />|<img src="https://onep.hzchu.top/mount/pic/2023/01/25/63d0a92955df2.webp" style="zoom:50%;" />|
+|<img src="https://onep.hzchu.top/mount/pic/2023/01/25/63d0a914495c1.webp" style="zoom:60%;" />|<img src="https://onep.hzchu.top/mount/pic/2024/03/08/65eaa4508662b.webp" style="zoom:40%;" />|
 
 {% quot 未来可能发布的稿子/Todo %}
 
-{% timeline user:Thun888sDraftArticles api:https://get-tg-channel-api.hzchu.top/ type:memos %}
+{% timeline user:Thun888sDraftArticles api:https://get-tg-channel-api.hzchu.top/?tag=DTA type:memos %}
 
 {% endtimeline %}
 

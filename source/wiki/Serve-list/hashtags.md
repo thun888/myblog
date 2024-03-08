@@ -8,9 +8,29 @@ updated: 2024-02-24 22:33:00
 
 在列表中，我使用了一些标签来标记服务状态，以下是对应描述/标签列表
 
+#### 所在服务器
+
+> 自有服务对应[Thun888's Server Status (hzchu.top)](https://monitor.hzchu.top/)，托管于其它平台使用[Shields.io | Shields.io](https://shields.io/)生成标签
+
+​	{% hashtag TT-HK color:green %}{% hashtag AZ-HK color:green %}{% hashtag Home-ikuai-kvm color:green %}{% hashtag AWS-SG color:orange %}{% hashtag i6-server color:orange %}
+
+#### 类别
+
+​	{% hashtag Base color:green %}：`hzchu.top`下基础网络设施，出问题时将导致多处故障
+
+​	{% hashtag Edge color:yellow %}：边缘服务
+
+> 若无标签默认`Edge `
+
+**特：**
+
+​	{% hashtag Self-Coding color:green %}：自编写
+
 #### 变动
 
-​	{% hashtag 长期运行 color:green %}{% hashtag 即将废弃 color:orange %}{% hashtag 废弃 color:red %}
+​	{% hashtag 长期运行 color:green %}{% hashtag 废弃 color:orange %}{% hashtag 停止服务 color:red %}
+
+> 若无标签默认`长期运行 `
 
 #### SLA(服务可用性)
 
