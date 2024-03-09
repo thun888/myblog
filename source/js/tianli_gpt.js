@@ -124,7 +124,7 @@ function tianliGPT(usePjax) {
         return
       }
       // use get method to avoid CORS check
-      const apiUrl = `https://Gemini.hzchu.top/?content=${encodeURIComponent(content)}&key=${encodeURIComponent(tianliGPT_key)}&url=${encodeURIComponent(url)}`;
+      const apiUrl = `https://dolgpt.hzchu.top/?content=${encodeURIComponent(content)}&key=${encodeURIComponent(tianliGPT_key)}&url=${encodeURIComponent(url)}`;
       const timeout = 20000; // 设置超时时间（毫秒）
 
       try {
