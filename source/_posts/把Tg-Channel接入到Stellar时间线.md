@@ -25,7 +25,7 @@ description: 使用Cloudflare Worker，获取Tg频道内容，并接入到Stella
 
 > 为了兼容Stellar的时间线，我在lvbyte的基础上改了点代码
 
-<script src="https://faster-gist.hzchu.top/thun888/67d8cdf1296d8dc252e9fc5607e4daf6.js" defer></script>
+<script src="https://faster-gist.hzchu.top/thun888/67d8cdf1296d8dc252e9fc5607e4daf6.js"></script>
 
 并修改顶部配置
 
@@ -136,6 +136,9 @@ timeline:
 {% endtimeline %}
 ```
 
+可以用在很多地方获取某些信息，作为某种接口来使用。在这一基础上，你甚至可以修改代码，改为只返回图片，在某种意义上实现图床的效果，不过滥用可不太好啊{% emoji blobcat blobcatpolice %}
+
+
 {% endgrid %}
 
 <!-- tab 展示访问量 -->
@@ -155,8 +158,6 @@ timeline:
 
 {% endtimeline %}
 ```
-
-可以用在很多地方获取某些信息，作为某种接口来使用。在这一基础上，你甚至可以修改代码，改为只返回图片，在某种意义上实现图床的效果，不过滥用可不太好啊{% emoji blobcat blobcatpolice %}
 
 {% endgrid %}
 
