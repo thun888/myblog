@@ -361,7 +361,25 @@ document.addEventListener('pjax:complete', function () {
 })
 ```
 
-在日后合并到新版本后，我打算再支持下语音朗读，目前计划是用谷歌翻译的接口来实现，用我自己之前留下来的服务的话向`gtts-api.hzchu.top/?text=xxx`发送请求即可（目前无CORS限制）
+修改完后引入到主题
+
+> 以下为针对Stellar主题
+
+```yaml config.yml
+  # AI 摘要
+  # https://github.com/zhheo/Post-Abstract-AI
+  tianli_gpt:
+    enable: true
+    field: post
+    api: 114514 #随便写
+    js: /js/tianli_gpt.js #改为自己的
+    limit: 3500 
+    typingAnimate: true 
+```
+
+> 如果无效可以自己在`\stellar\layout\_partial\plugins\ai\tianli_gpt.ejs`里修改
+
+> 在日后合并到新版本后，我打算再支持下语音朗读，目前计划是用谷歌翻译的接口来实现，用我自己之前留下来的服务的话向`gtts-api.hzchu.top/?text=xxx`发送请求即可（目前无CORS限制）
 
 ## 效果演示
 

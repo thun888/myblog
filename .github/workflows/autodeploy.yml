@@ -48,5 +48,4 @@ jobs:
           publish_dir: ./public
       - name: Send msg to tgbot
         run: >
-          curl -d 'chat_id=1183316935' -d 'text=博客部署完成' -X POST ${{ secrets.POST
-          }}
+          curl -d 'chat_id=1183316935' -d 'text=博客部署完成(${{ github.sha }})' -X POST ${{ secrets.POST}}
