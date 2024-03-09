@@ -38,7 +38,6 @@ menubar:
 preconnect:
    - https://jsd.hzchu.top
    - https://jsd.onmicrosoft.cn
-   - https://cdn.staticfile.net
 
 ######## Main ########
 # 站点主结构树
