@@ -301,6 +301,15 @@ volumes:
 
  <!-- cell -->
 
-{% video https://onep.hzchu.top/mount/lfiles/Screenrecorder-2024-02-24-20-49-23-869.mp4  %}
+<div id="player_6cc3e893806c4850"></div>
+<script type="text/javascript" src="https://player.dogecloud.com/js/loader"></script>
+<script type="text/javascript">
+var player = new DogePlayer({
+    container: document.getElementById('player_6cc3e893806c4850'),
+    userId: 4322,
+    vcode: '6cc3e893806c4850',
+    autoPlay: false
+});
+</script>
 
 {% endgrid %}
