@@ -34,7 +34,7 @@ description: 使用Cloudflare Worker，借助Gemini，平替TianliGPT
 
 {% ghcard thun888/ai-summary %}
 
-新建一个`Cloudflare Worker`，复制[/src/index.js](/src/index.js)的代码粘贴进去
+新建一个`Cloudflare Worker`，复制[/src/index.js](https://github.com/thun888/ai-summary/blob/master/src/index.js)的代码粘贴进去
 
 随后修改环境变量，填入可信来源（即只有这个域名才能调用ai摘要，如不需要可设置为`*`）（`ALLOWED_ORIGINS`）以及你的key（`GEMINI_KEY`）
 
