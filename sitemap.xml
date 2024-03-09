@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/img/dynmap_markers/marker_DIM-1.json</loc>
+    <loc>https://blog.hzchu.top/img/dynmap_markers/marker_DIM1.json</loc>
     
     <lastmod>2024-03-09</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/img/dynmap_markers/marker_DIM1.json</loc>
+    <loc>https://blog.hzchu.top/img/dynmap_markers/marker_DIM-1.json</loc>
     
     <lastmod>2024-03-09</lastmod>
     
@@ -254,7 +254,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/Artalk-doc/QandA/</loc>
+    <loc>https://blog.hzchu.top/wiki/Artalk-doc/API/</loc>
     
     <lastmod>2022-02-12</lastmod>
     
@@ -263,7 +263,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/Artalk-doc/API/</loc>
+    <loc>https://blog.hzchu.top/wiki/Artalk-doc/QandA/</loc>
     
     <lastmod>2022-02-12</lastmod>
     
@@ -414,14 +414,14 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/Windows/</loc>
+    <loc>https://blog.hzchu.top/tags/AHK/</loc>
     <lastmod>2024-03-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/AHK/</loc>
+    <loc>https://blog.hzchu.top/tags/Windows/</loc>
     <lastmod>2024-03-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -526,14 +526,14 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/Go/</loc>
+    <loc>https://blog.hzchu.top/tags/Clouddlare/</loc>
     <lastmod>2024-03-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/Clouddlare/</loc>
+    <loc>https://blog.hzchu.top/tags/Go/</loc>
     <lastmod>2024-03-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
