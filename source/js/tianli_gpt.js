@@ -43,7 +43,7 @@ function tianliGPT(usePjax) {
     const aiTagDiv = document.createElement('div');
     aiTagDiv.className = 'tianliGPT-tag';
     aiTagDiv.id = 'tianliGPT-tag';
-    aiTagDiv.textContent = 'DolGPT';
+    aiTagDiv.textContent = 'Gemini';
     aiTitleDiv.appendChild(aiTagDiv);
   
     const aiExplanationDiv = document.createElement('div');
@@ -72,7 +72,7 @@ function tianliGPT(usePjax) {
         const title = document.title;
         const container = document.querySelector(tianliGPT_postSelector);
         if (!container) {
-          console.warn('[DolGPT]找不到文章容器。请尝试将引入的代码放入到文章容器之后。如果本身没有打算使用摘要功能可以忽略此提示。');
+          console.warn('[Gemini]找不到文章容器。请尝试将引入的代码放入到文章容器之后。如果本身没有打算使用摘要功能可以忽略此提示。');
           return '';
         }
         const paragraphs = container.getElementsByTagName('p');
@@ -97,7 +97,7 @@ function tianliGPT(usePjax) {
         const truncatedText = combinedText.slice(0, wordLimit).replace('本文采用 署名-非商业性使用-相同方式共享 4.0 国际 许可协议，转载请注明出处。', '');
         return truncatedText;
       } catch (e) {
-        console.error('[DolGPT]错误：可能由于一个或多个错误导致没有正常运行，原因出在获取文章容器中的内容失败，或者可能是在文章转换过程中失败。', e);
+        console.error('[Gemini]错误：可能由于一个或多个错误导致没有正常运行，原因出在获取文章容器中的内容失败，或者可能是在文章转换过程中失败。', e);
         return '';
       }
     },
@@ -124,7 +124,7 @@ function tianliGPT(usePjax) {
         return
       }
       // use get method to avoid CORS check
-      const apiUrl = `https://dolgpt.hzchu.top/?content=${encodeURIComponent(content)}&key=${encodeURIComponent(tianliGPT_key)}&url=${encodeURIComponent(url)}`;
+      const apiUrl = `https://Gemini.hzchu.top/?content=${encodeURIComponent(content)}&key=${encodeURIComponent(tianliGPT_key)}&url=${encodeURIComponent(url)}`;
       const timeout = 20000; // 设置超时时间（毫秒）
 
       try {
@@ -143,7 +143,7 @@ function tianliGPT(usePjax) {
               el.style.display = 'none';
             });
           }
-          throw new Error('[DolGPT]余额不足，请充值后请求新的文章');
+          throw new Error('[Gemini]余额不足，请充值后请求新的文章');
         }
       } catch (error) {
           if (error.name === 'AbortError') {
@@ -241,10 +241,10 @@ function tianliGPT(usePjax) {
     insertAIDiv(tianliGPT_postSelector);
     const content = tianliGPT.getTitleAndContent();
     if (content) {
-      console.log('[DolGPT]本次提交的内容为：' + content);
+      console.log('[Gemini]本次提交的内容为：' + content);
       // 获取字数
       wordcount = content.length;
-      console.log('[DolGPT]本次提交的字数为：' + wordcount);
+      console.log('[Gemini]本次提交的字数为：' + wordcount);
     }
     tianliGPT.fetchTianliGPT(content).then(summary => {
       tianliGPT.aiShowAnimation(summary);
@@ -272,10 +272,10 @@ function tianliGPT(usePjax) {
       if (urlPattern.test(currentURL)) {
         runTianliGPT(); // 如果当前 URL 符合用户设置的 URL，则执行 runTianliGPT() 函数
       } else {
-        console.log("DolGPT：因为不符合自定义的链接规则，我决定不执行摘要功能。");
+        console.log("Gemini：因为不符合自定义的链接规则，我决定不执行摘要功能。");
       }
     } catch (error) {
-      console.error("DolGPT：我没有看懂你编写的自定义链接规则，所以我决定不执行摘要功能", error);
+      console.error("Gemini：我没有看懂你编写的自定义链接规则，所以我决定不执行摘要功能", error);
     }
   }
   

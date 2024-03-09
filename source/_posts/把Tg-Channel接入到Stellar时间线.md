@@ -51,6 +51,8 @@ const baseproxyurl="https://get-tg-channel-api.hzchu.top/?proxy=" //将中间域
 
 > 众所周知，`0`是第一个数字，所以cid传入`0`时表示获取第1个频道
 >
+>  tag为空时默认返回#DefaultTag的数据，可在代码中自行更改
+>
 > `tag`原版是`#SFCN`,一开始没想明白是什么意思，现在明白了：Suitable For China，可以有别的玩法o(￣▽￣)ｄ
 
 ## 在Stellar中的使用
