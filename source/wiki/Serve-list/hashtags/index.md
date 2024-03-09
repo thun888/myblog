@@ -10,7 +10,9 @@ updated: 2024-02-24 22:33:00
 
 #### 所在服务器
 
-> 自有服务对应[Thun888's Server Status (hzchu.top)](https://monitor.hzchu.top/)，托管于其它平台使用[Shields.io | Shields.io](https://shields.io/)生成标签
+> 自有服务对应[Thun888's Server Status](https://monitor.hzchu.top/)，托管于其它平台使用[Shields.io](https://shields.io/)生成标签
+>
+> 服务器网络稳定性监测：[Ping-charts](https://pingchart.hzchu.top:60181/)
 
 ​	{% hashtag TT-HK color:green %}{% hashtag AZ-HK color:green %}{% hashtag Home-ikuai-kvm color:green %}{% hashtag AWS-SG color:orange %}{% hashtag i6-server color:orange %}
 

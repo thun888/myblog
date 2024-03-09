@@ -2,7 +2,7 @@
 title: 记一次排查js文件后门
 date: 2024-03-08 20:49:57
 updated: 2024-03-08 20:49:57
-tags: web
+tags: Blog
 cover:
 banner:
 description: 被bootcdn捅了一刀
