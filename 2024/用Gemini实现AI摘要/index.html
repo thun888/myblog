@@ -1,0 +1,497 @@
+
+<!DOCTYPE html><html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.26.8" theme-name="Stellar" theme-version="1.26.8">
+  
+  <meta name="generator" content="Hexo 7.1.1">
+  <meta name="baidu-site-verification" content="codeva-tIYplL9wDO" />
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  <link rel="preconnect" href="https://jsd.hzchu.top" crossorigin><link rel="preconnect" href="https://jsd.onmicrosoft.cn" crossorigin>
+  <link rel='dns-prefetch' href='https://jsd.hzchu.top'>
+  <link rel='dns-prefetch' href='https://jsd.onmicrosoft.cn'>
+  <link rel='dns-prefetch' href='//jsd.onmicrosoft.cn'>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#f8f8f8">
+  
+  <title>用Gemini，实现AI摘要 - Thun888</title>
+
+  
+    <meta name="description" content="使用Cloudflare Worker，借助Gemini，平替TianliGPT">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用Gemini，实现AI摘要">
+<meta property="og:url" content="https://blog.hzchu.top/2024/%E7%94%A8Gemini%E5%AE%9E%E7%8E%B0AI%E6%91%98%E8%A6%81/">
+<meta property="og:site_name" content="Thun888">
+<meta property="og:description" content="使用Cloudflare Worker，借助Gemini，平替TianliGPT">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://jsd.hzchu.top/gh/norevi/waline-blobcatemojis@1.0/blobs/ablobcatrainbow.png">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/2024/03/09/65ec523988ddc.webp">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/2024/03/09/65ec523fecbfa.webp">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/2024/03/09/65ec523933f1c.webp">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/2024/03/09/65ec523a4e8b3.webp">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/2024/03/09/65ec52371bf18.webp">
+<meta property="og:image" content="https://github-readme-stats.xaoxuu.com/api/pin/?username=thun888&repo=ai-summary&&show_owner=true">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/2024/03/09/65ec508eb0684.webp">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/2024/03/09/65ec565254bdb.webp">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/2024/03/09/65ec54a03e7a9.webp">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/2024/03/09/65ec592aba762.webp">
+<meta property="og:image" content="https://jsd.hzchu.top/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatmeltthumb.png">
+<meta property="og:image" content="https://jsd.hzchu.top/gh/norevi/waline-blobcatemojis@1.0/blobs/ablobcatreachrev.png">
+<meta property="article:published_time" content="2024-03-09T19:31:16.000Z">
+<meta property="article:modified_time" content="2024-03-09T19:31:16.000Z">
+<meta property="article:author" content="thun888">
+<meta property="article:tag" content="Blog">
+<meta property="article:tag" content="Stellar">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://jsd.hzchu.top/gh/norevi/waline-blobcatemojis@1.0/blobs/ablobcatrainbow.png">
+  
+  
+  
+  <meta name="keywords" content="Blog,Stellar">
+
+  <!-- feed -->
+  
+    <link rel="alternate" href="/atom.xml" title="Thun888" type="application/atom+xml">
+  
+
+  <link rel="stylesheet" href="/css/main.css?v=1.26.8">
+
+  
+
+  
+
+  
+
+
+  
+
+  
+  
+<!-- hexo injector head_end start -->
+  <div class="spinner" id="eloading"> 
+    <span class="loader-text">加载中...</span>
+    <div class="loader"></div>
+    <span class="loader-text-below" onclick="document.getElementById('eloading').style.display='none'">不想等待可以点我关掉</span>
+  </div>
+  <script defer src="https://seeyou.hzchu.top/justseeyou" data-website-id="9b6818b0-7c75-410b-bde6-40f09d7eca38" defer></script>
+  
+  <link rel="stylesheet" href="https://jsd.onmicrosoft.cn/npm/lxgw-wenkai-screen-webfont@1.1.0/lxgwwenkaiscreen.css" media="all">
+  <link rel="stylesheet" href="/mcss/mcss.css">
+  <style>
+  * {
+  margin: 0;
+  padding: 0;
+}
+
+/* From uiverse.io by @satyamchaudharydev */
+.spinner {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(249, 250, 251);
+  /* transition: 1s ease-in-out; */
+}
+
+.loader {
+  display: block;
+  --height-of-loader: 4px;
+  --loader-color: #0071e2;
+  width: 130px;
+  height: var(--height-of-loader);
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loader-text {
+  display: block;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loader-text-below {
+  display: block;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loader::before {
+  content: "";
+  position: absolute;
+  background: var(--loader-color);
+  top: 0;
+  left: 0;
+  width: var(--width, 0%);
+  height: 100%;
+  border-radius: 30px;
+  transition: width 0.5s ease-in-out;
+}
+</style>
+<script src="/js/load.js"></script>
+
+  <!-- hexo injector head_end end --></head>
+<body>
+
+<div class="l_body content tech" id="start" layout="post" ><aside class="l_left"><div class="leftbar-container">
+
+
+<header class="header"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://jsd.hzchu.top/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="/img/avatar.webp" onerror="javascript:this.classList.add('error');this.src='https://jsd.hzchu.top/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">Thun888</div><div class="sub normal cap">夏日当空，心如深渊</div><div class="sub hover cap" style="opacity:0"> Thun888's Blog</div></a></div></header>
+
+<div class="nav-area">
+<div class="search-wrapper" id="search-wrapper"><form class="search-form"><a class="search-button" onclick="document.getElementById(&quot;search-input&quot;).focus();"><svg t="1705074644177" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1560" width="200" height="200"><path d="M1008.839137 935.96571L792.364903 719.491476a56.783488 56.783488 0 0 0-80.152866 0 358.53545 358.53545 0 1 1 100.857314-335.166073 362.840335 362.840335 0 0 1-3.689902 170.145468 51.248635 51.248635 0 1 0 99.217358 26.444296 462.057693 462.057693 0 1 0-158.255785 242.303546l185.930047 185.725053a51.248635 51.248635 0 0 0 72.568068 0 51.248635 51.248635 0 0 0 0-72.978056z" p-id="1561"></path><path d="M616.479587 615.969233a50.428657 50.428657 0 0 0-61.498362-5.534852 174.655348 174.655348 0 0 1-177.525271 3.484907 49.403684 49.403684 0 0 0-58.833433 6.76482l-3.074918 2.869923a49.403684 49.403684 0 0 0 8.609771 78.10292 277.767601 277.767601 0 0 0 286.992355-5.739847 49.403684 49.403684 0 0 0 8.404776-76.667958z" p-id="1562"></path></svg></a><input type="text" class="search-input" id="search-input" placeholder="站内搜索"></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div>
+
+
+<nav class="menu dis-select"><a class="nav-item active" title="博客" href="/" style="color:#1BCDFC"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M5.879 2.879C5 3.757 5 5.172 5 8v8c0 2.828 0 4.243.879 5.121C6.757 22 8.172 22 11 22h2c2.828 0 4.243 0 5.121-.879C19 20.243 19 18.828 19 16V8c0-2.828 0-4.243-.879-5.121C17.243 2 15.828 2 13 2h-2c-2.828 0-4.243 0-5.121.879M8.25 17a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75M9 12.25a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5zM8.25 9A.75.75 0 0 1 9 8.25h6a.75.75 0 0 1 0 1.5H9A.75.75 0 0 1 8.25 9" clip-rule="evenodd"/><path fill="currentColor" d="M5.235 4.058C5 4.941 5 6.177 5 8v8c0 1.823 0 3.058.235 3.942L5 19.924c-.975-.096-1.631-.313-2.121-.803C2 18.243 2 16.828 2 14v-4c0-2.829 0-4.243.879-5.121c.49-.49 1.146-.707 2.121-.803zm13.53 15.884C19 19.058 19 17.822 19 16V8c0-1.823 0-3.059-.235-3.942l.235.018c.975.096 1.631.313 2.121.803C22 5.757 22 7.17 22 9.999v4c0 2.83 0 4.243-.879 5.122c-.49.49-1.146.707-2.121.803z" opacity=".5"/></svg></a><a class="nav-item" title="文档" href="/wiki/" style="color:#3DC550"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M14.25 4.48v3.057c0 .111 0 .27.02.406a.936.936 0 0 0 .445.683a.96.96 0 0 0 .783.072c.13-.04.272-.108.378-.159L17 8.005l1.124.534c.106.05.248.119.378.16a.958.958 0 0 0 .783-.073a.936.936 0 0 0 .444-.683c.021-.136.021-.295.021-.406V3.031c.113-.005.224-.01.332-.013C21.154 2.98 22 3.86 22 4.933v11.21c0 1.112-.906 2.01-2.015 2.08c-.97.06-2.108.179-2.985.41c-1.082.286-1.99 1.068-3.373 1.436c-.626.167-1.324.257-1.627.323V5.174c.32-.079 1.382-.203 1.674-.371c.184-.107.377-.216.576-.323m5.478 8.338a.75.75 0 0 1-.546.91l-4 1a.75.75 0 0 1-.364-1.456l4-1a.75.75 0 0 1 .91.546" clip-rule="evenodd"/><path fill="currentColor" d="M18.25 3.151c-.62.073-1.23.18-1.75.336a8.2 8.2 0 0 0-.75.27v3.182l.75-.356l.008-.005a1.13 1.13 0 0 1 .492-.13c.047 0 .094.004.138.01c.175.029.315.1.354.12l.009.005l.749.356V3.647z"/><path fill="currentColor" d="M12 5.214c-.334-.064-1.057-.161-1.718-.339C8.938 4.515 8.05 3.765 7 3.487c-.887-.234-2.041-.352-3.018-.412C2.886 3.007 2 3.9 2 4.998v11.146c0 1.11.906 2.01 2.015 2.079c.97.06 2.108.179 2.985.41c.486.129 1.216.431 1.873.726c1.005.451 2.052.797 3.127 1.034z" opacity=".5"/><path fill="currentColor" d="M4.273 12.818a.75.75 0 0 1 .91-.545l4 1a.75.75 0 1 1-.365 1.455l-4-1a.75.75 0 0 1-.545-.91m.909-4.545a.75.75 0 1 0-.364 1.455l4 1a.75.75 0 0 0 .364-1.455z"/></svg></a><a class="nav-item" title="社交" href="/friends/" style="color:#F44336"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m13.629 20.472l-.542.916c-.483.816-1.69.816-2.174 0l-.542-.916c-.42-.71-.63-1.066-.968-1.262c-.338-.197-.763-.204-1.613-.219c-1.256-.021-2.043-.098-2.703-.372a5 5 0 0 1-2.706-2.706C2 14.995 2 13.83 2 11.5v-1c0-3.273 0-4.91.737-6.112a5 5 0 0 1 1.65-1.651C5.59 2 7.228 2 10.5 2h3c3.273 0 4.91 0 6.113.737a5 5 0 0 1 1.65 1.65C22 5.59 22 7.228 22 10.5v1c0 2.33 0 3.495-.38 4.413a5 5 0 0 1-2.707 2.706c-.66.274-1.447.35-2.703.372c-.85.015-1.275.022-1.613.219c-.338.196-.548.551-.968 1.262" opacity=".5"/><path fill="currentColor" d="M10.99 14.308c-1.327-.978-3.49-2.84-3.49-4.593c0-2.677 2.475-3.677 4.5-1.609c2.025-2.068 4.5-1.068 4.5 1.609c0 1.752-2.163 3.615-3.49 4.593c-.454.335-.681.502-1.01.502c-.329 0-.556-.167-1.01-.502"/></svg></a><a class="nav-item" title="关于" href="/about/" style="color:#FA6400"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M20 12a8 8 0 1 1-16 0a8 8 0 0 1 16 0" opacity=".5"/><path fill="currentColor" d="M17.712 5.453c1.047-.193 2.006-.259 2.797-.152c.77.103 1.536.393 1.956 1.064c.446.714.312 1.542-.012 2.258c-.33.728-.918 1.499-1.672 2.268c-1.516 1.547-3.836 3.226-6.597 4.697c-2.763 1.472-5.495 2.484-7.694 2.92c-1.095.217-2.098.299-2.923.201c-.8-.095-1.6-.383-2.032-1.075c-.47-.752-.296-1.63.07-2.379c.375-.768 1.032-1.586 1.872-2.403L4 12.416c0 .219.083.71.168 1.146c.045.23.09.444.123.596c-.652.666-1.098 1.263-1.339 1.756c-.277.567-.208.825-.145.925c.072.116.305.305.937.38c.609.073 1.44.018 2.455-.183c2.02-.4 4.613-1.351 7.28-2.772c2.667-1.42 4.85-3.015 6.23-4.423c.694-.707 1.15-1.334 1.377-1.836c.233-.515.167-.75.107-.844c-.07-.112-.289-.294-.883-.374c-.542-.072-1.272-.041-2.163.112L16.87 5.656c.338-.101.658-.17.842-.203"/></svg></a></nav>
+</div>
+<div class="widgets">
+
+
+
+
+
+
+<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title active" href="/2024/%E7%94%A8Gemini%E5%AE%9E%E7%8E%B0AI%E6%91%98%E8%A6%81/"><span class="title">用Gemini，实现AI摘要</span><svg class="active-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M21 11.098v4.993c0 3.096 0 4.645-.734 5.321c-.35.323-.792.526-1.263.58c-.987.113-2.14-.907-4.445-2.946c-1.02-.901-1.529-1.352-2.118-1.47a2.225 2.225 0 0 0-.88 0c-.59.118-1.099.569-2.118 1.47c-2.305 2.039-3.458 3.059-4.445 2.945a2.238 2.238 0 0 1-1.263-.579C3 20.736 3 19.188 3 16.091v-4.994C3 6.81 3 4.666 4.318 3.333C5.636 2 7.758 2 12 2c4.243 0 6.364 0 7.682 1.332C21 4.665 21 6.81 21 11.098" opacity=".5"/><path fill="currentColor" d="M9 5.25a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5z"/></svg></a><a class="item title" href="/2024/%E8%AE%B0%E4%B8%80%E6%AC%A1%E6%8E%92%E6%9F%A5js%E6%96%87%E4%BB%B6%E5%90%8E%E9%97%A8/"><span class="title">记一次排查js文件后门</span></a><a class="item title" href="/2024/%E6%8A%8ATg-Channel%E6%8E%A5%E5%85%A5%E5%88%B0Stellar%E6%97%B6%E9%97%B4%E7%BA%BF/"><span class="title">把Tg Channel接入到Stellar时间线</span></a><a class="item title" href="/2024/%E4%BD%BF%E7%94%A8Homebox%E5%AE%9E%E7%8E%B0%E5%AE%B6%E7%94%A8%E7%89%A9%E5%93%81%E7%AE%A1%E7%90%86/"><span class="title">使用Homebox实现家用物品管理</span></a><a class="item title" href="/2024/%E5%B3%B0%E9%97%B4%E4%BA%91%E6%B5%B7%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8A%80%E6%9C%AF%E5%88%86%E6%9E%90/"><span class="title">峰间云海服务器技术分析</span></a><a class="item title" href="/2023/howtorunmrui/"><span class="title">Mirouterui简要部署指南</span></a><a class="item title" href="/2023/photoononedrive/"><span class="title">基于Onedrive的高可用性图床</span></a><a class="item title" href="/2023/auto-control-power-plan/"><span class="title">Windows下的电源计划自动控制</span></a><a class="item title" href="/2022/definite-clause-point-review/"><span class="title">定语从句要点复习（笔记）</span></a><a class="item title" href="/2022/Easier-Control-of-Recognition-Conferences-AHK/"><span class="title">更便利地操控表彰大会--AHK</span></a></div></widget>
+
+<widget class="widget-wrapper markdown"><div class="widget-header dis-select"><span class="name">前往远方</span></div><div class="widget-body fs14"><p><a href="https://www.foreverblog.cn/go.html" class="no-lazy" target="_blank"> <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.foreverblog.cn/wormhole_4_tp.gif" alt="" style="width:auto;height:32px;" title="穿梭虫洞-随机访问十年之约友链博客"></a><br><a href="https://www.travellings.cn/go.html" class="no-lazy" target="_blank" rel="noopener" title="开往-友链接力"><img no-lazy src="https://www.travellings.cn/assets/logo.gif" data-src="https://www.travellings.cn/assets/logo.gif" alt="开往-友链接力" width="120" data-ll-status="loaded" onerror="javascript:this.classList.add('error');this.src='https://jsd.hzchu.top/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a></p>
+</div></widget>
+</div>
+<footer class="footer dis-select"><div class="social-wrap"><a class="social" href="/atom.xml" rel="noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/img/icons/25678f144c438.svg"/></a><a class="social" href="https://github.com/thun888" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/img/icons/08a41b181ce68.svg"/></a><a class="social" href="mailto:thun888@qq.com" rel="noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/img/icons/a1b00e20f425d.svg"/></a><a class="social" href="https://share.hzchu.top" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/img/icons/20210610162918.svg"/></a></div></footer>
+</div></aside><div class="l_main" id="main">
+
+
+
+
+
+<div class="article banner top"><img class="bg lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://dolphinsbukets.s3.bitiful.net/article-cover/cover-4.png?fmt=webp&q=50">
+  <div class="content">
+    
+<div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
+<span class="sep"></span><a class="cap breadcrumb" href="/">文章</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-03-09T19:31:16.000Z">2024-03-09</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-03-09T19:31:16.000Z">2024-03-09</time></span></div></div></div>
+
+    
+    <div class="bottom">
+      <div class="text-area">
+        <h1 class="text title"><span>用Gemini，实现AI摘要</span></h1>
+      </div>
+    </div>
+    
+
+  </div>
+  </div>
+<div id="expired-message"></div>
+
+<script>
+  //更新时间
+  gtime_days = Math.floor((new Date() - new Date('Sat Mar 09 2024 19:31:16 GMT+0000')) / 1000 / 60 / 60 / 24);
+  if (gtime_days > 60) {
+    document.getElementById('expired-message').innerHTML = "<div class='old-message'>提醒：本文最后更新于 "+gtime_days+" 天前，其中某些信息可能已经过时，请谨慎使用！</div>";
+  }
+</script>
+</article><article class="md-text content "><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>很久之前，我网上surfing的时候发现好多网站都有「AI摘要」，了解了一下发现是「<a target="_blank" rel="noopener" href="https://docs_s.tianli0.top/">TianliGPT</a>」，好是好，<del>但两位数的价格还是打动不了我当时勉强三位数的存款。</del>所以，我使用了一种笨方法<del>（为了撑场子不考虑太多）</del>，手动向「BingAI」发送摘要文本，获取摘要后存储在kv中，通过cfw返回。可行，但太痛苦了（这也是它叫DolGPT的原因之一），前几天看到Gemini开放了api可以免费调用，这不直接起飞<span class="tag-plugin emoji"><img no-lazy="" class="inline lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://jsd.hzchu.top/gh/norevi/waline-blobcatemojis@1.0/blobs/ablobcatrainbow.png"/></span></p>
+<div class="tag-plugin colorful note" color="yellow"><div class="body"><p>注意：Stellar在新版本（1.27.0或者是#88f16fc）中将AI摘要从Post-Abstract-AI改为了Post-Summary-AI，目前暂无计划同步至新版本，在新版中使用需自行修改主题或前端程序代码。</p></div></div>
+
+<h2 id="获取GEMINI-KEY"><a href="#获取GEMINI-KEY" class="headerlink" title="获取GEMINI_KEY"></a>获取GEMINI_KEY</h2><p>首先登录<a target="_blank" rel="noopener" href="https://ai.google.dev/">ai.google.dev</a>，左上角点击<code>Get API key</code>，再在中间点<code>Create API key</code>，随便选个项目即可</p>
+<details class="tag-plugin colorful folding" color="yellow"><summary><span>没听懂就看图片吧</span></summary><div class="body"><p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/03/09/65ec523988ddc.webp" alt="Snipaste_2024-03-09_10-17-37.webp"><br><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/03/09/65ec523fecbfa.webp" alt="Snipaste_2024-03-09_10-18-14.webp"><br><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/03/09/65ec523933f1c.webp" alt="Snipaste_2024-03-09_10-22-37.webp"><br><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/03/09/65ec523a4e8b3.webp" alt="Snipaste_2024-03-09_10-23-59.webp"><br><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/03/09/65ec52371bf18.webp" alt="Snipaste_2024-03-09_10-22-25.webp"></p></div></details>
+
+<h2 id="后端程序"><a href="#后端程序" class="headerlink" title="后端程序"></a>后端程序</h2><p>因为Stellar已经配置了TianliGPT的css了，所以我也懒得另起炉灶，直接按TianliGPT的格式返回，所以理论上讲和其它的使用TianliGPT的服务也兼容</p>
+<p>仓库：</p>
+<div class="tag-plugin ghcard"><a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/thun888/ai-summary"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://github-readme-stats.xaoxuu.com/api/pin/?username=thun888&repo=ai-summary&&show_owner=true"/></a></div>
+
+<p>新建一个<code>Cloudflare Worker</code>，复制<a href="/src/index.js">&#x2F;src&#x2F;index.js</a>的代码粘贴进去</p>
+<p>随后修改环境变量，填入可信来源（即只有这个域名才能调用ai摘要，如不需要可设置为<code>*</code>）（<code>ALLOWED_ORIGINS</code>）以及你的key（<code>GEMINI_KEY</code>）</p>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/03/09/65ec508eb0684.webp" alt="1709985925369.webp"></p>
+<p>接着新建一个kv，并绑定到程序上</p>
+<blockquote>
+<p>kv的名字随意，但<strong>Variable name</strong> 必须为 <code>KV</code></p>
+</blockquote>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/03/09/65ec565254bdb.webp" alt="1709987402272.webp"></p>
+<p>最后可以尝试访问，有输出且刷新不变即为成功</p>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/03/09/65ec54a03e7a9.webp" alt="1709986972903.webp"></p>
+<div class="tag-plugin colorful note" color="yellow"><div class="body"><p>该程序只实现了ai摘要生成，对于其他网站矩阵之类的功能，其实自己用哪里要得上这么多功能嘛</p></div></div>
+
+<h2 id="前端程序修改"><a href="#前端程序修改" class="headerlink" title="前端程序修改"></a>前端程序修改</h2><div class="tag-plugin colorful note" color="red"><div class="body"><p>警告：因为一开始使用新版本调试时，遇见了程序原有的bug，所以我干脆滚到了0.13版本进行修改，因此在使用新版本时，极大概率出现问题，自行修改吧</p></div></div>
+
+<p>理论上，直接替换summary.tianli0.top为你对应域名即可。</p>
+<p>这是我修改后的程序，可以参考</p>
+<figure class="highlight js"><figcaption><span>/js/tianli_gpt.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br><span class="line">296</span><br><span class="line">297</span><br><span class="line">298</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;\n %c Post-Abstract-AI 开源博客文章摘要AI生成工具 %c https://github.com/zhheo/Post-Abstract-AI \n&quot;</span>, <span class="string">&quot;color: #fadfa3; background: #030307; padding:5px 0;&quot;</span>, <span class="string">&quot;background: #fadfa3; padding:5px 0;&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">tianliGPT</span>(<span class="params">usePjax</span>) &#123;</span><br><span class="line">  <span class="keyword">var</span> tianliGPTIsRunning = <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">function</span> <span class="title function_">insertAIDiv</span>(<span class="params">selector</span>) &#123;</span><br><span class="line">    <span class="comment">// 首先移除现有的 &quot;post-TianliGPT&quot; 类元素（如果有的话）</span></span><br><span class="line">    <span class="title function_">removeExistingAIDiv</span>();</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 获取目标元素</span></span><br><span class="line">    <span class="keyword">const</span> targetElement = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(selector);</span><br><span class="line">  </span><br><span class="line">    <span class="comment">// 如果没有找到目标元素，不执行任何操作</span></span><br><span class="line">    <span class="keyword">if</span> (!targetElement) &#123;</span><br><span class="line">      <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  </span><br><span class="line">    <span class="comment">// 创建要插入的HTML元素</span></span><br><span class="line">    <span class="keyword">const</span> aiDiv = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&#x27;div&#x27;</span>);</span><br><span class="line">    aiDiv.<span class="property">className</span> = <span class="string">&#x27;post-TianliGPT&#x27;</span>;</span><br><span class="line">  </span><br><span class="line">    <span class="keyword">const</span> aiTitleDiv = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&#x27;div&#x27;</span>);</span><br><span class="line">    aiTitleDiv.<span class="property">className</span> = <span class="string">&#x27;tianliGPT-title&#x27;</span>;</span><br><span class="line">    aiDiv.<span class="title function_">appendChild</span>(aiTitleDiv);</span><br><span class="line">  </span><br><span class="line">    <span class="keyword">const</span> aiIcon = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&#x27;i&#x27;</span>);</span><br><span class="line">    aiIcon.<span class="property">className</span> = <span class="string">&#x27;tianliGPT-title-icon&#x27;</span>;</span><br><span class="line">    aiTitleDiv.<span class="title function_">appendChild</span>(aiIcon);</span><br><span class="line">  </span><br><span class="line">    <span class="comment">// 插入 SVG 图标</span></span><br><span class="line">    aiIcon.<span class="property">innerHTML</span> = <span class="string">`&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; width=&quot;48px&quot; height=&quot;48px&quot; viewBox=&quot;0 0 48 48&quot;&gt;</span></span><br><span class="line"><span class="string">    &lt;title&gt;机器人&lt;/title&gt;</span></span><br><span class="line"><span class="string">    &lt;g id=&quot;&amp;#x673A;&amp;#x5668;&amp;#x4EBA;&quot; stroke=&quot;none&quot; stroke-width=&quot;1&quot; fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;&gt;</span></span><br><span class="line"><span class="string">      &lt;path d=&quot;M34.717885,5.03561087 C36.12744,5.27055371 37.079755,6.60373651 36.84481,8.0132786 L35.7944,14.3153359 L38.375,14.3153359 C43.138415,14.3153359 47,18.1768855 47,22.9402569 L47,34.4401516 C47,39.203523 43.138415,43.0650727 38.375,43.0650727 L9.625,43.0650727 C4.861585,43.0650727 1,39.203523 1,34.4401516 L1,22.9402569 C1,18.1768855 4.861585,14.3153359 9.625,14.3153359 L12.2056,14.3153359 L11.15519,8.0132786 C10.920245,6.60373651 11.87256,5.27055371 13.282115,5.03561087 C14.69167,4.80066802 16.024865,5.7529743 16.25981,7.16251639 L17.40981,14.0624532 C17.423955,14.1470924 17.43373,14.2315017 17.43948,14.3153359 L30.56052,14.3153359 C30.56627,14.2313867 30.576045,14.1470924 30.59019,14.0624532 L31.74019,7.16251639 C31.975135,5.7529743 33.30833,4.80066802 34.717885,5.03561087 Z M38.375,19.4902885 L9.625,19.4902885 C7.719565,19.4902885 6.175,21.0348394 6.175,22.9402569 L6.175,34.4401516 C6.175,36.3455692 7.719565,37.89012 9.625,37.89012 L38.375,37.89012 C40.280435,37.89012 41.825,36.3455692 41.825,34.4401516 L41.825,22.9402569 C41.825,21.0348394 40.280435,19.4902885 38.375,19.4902885 Z M14.8575,23.802749 C16.28649,23.802749 17.445,24.9612484 17.445,26.3902253 L17.445,28.6902043 C17.445,30.1191812 16.28649,31.2776806 14.8575,31.2776806 C13.42851,31.2776806 12.27,30.1191812 12.27,28.6902043 L12.27,26.3902253 C12.27,24.9612484 13.42851,23.802749 14.8575,23.802749 Z M33.1425,23.802749 C34.57149,23.802749 35.73,24.9612484 35.73,26.3902253 L35.73,28.6902043 C35.73,30.1191812 34.57149,31.2776806 33.1425,31.2776806 C31.71351,31.2776806 30.555,30.1191812 30.555,28.6902043 L30.555,26.3902253 C30.555,24.9612484 31.71351,23.802749 33.1425,23.802749 Z&quot; id=&quot;&amp;#x5F62;&amp;#x72B6;&amp;#x7ED3;&amp;#x5408;&quot; fill=&quot;#444444&quot; fill-rule=&quot;nonzero&quot;&gt;&lt;/path&gt;</span></span><br><span class="line"><span class="string">    &lt;/g&gt;</span></span><br><span class="line"><span class="string">    &lt;/svg&gt;`</span>;</span><br><span class="line">  </span><br><span class="line">    <span class="keyword">const</span> aiTitleTextDiv = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&#x27;div&#x27;</span>);</span><br><span class="line">    aiTitleTextDiv.<span class="property">className</span> = <span class="string">&#x27;tianliGPT-title-text&#x27;</span>;</span><br><span class="line">    aiTitleTextDiv.<span class="property">textContent</span> = <span class="string">&#x27;AI摘要&#x27;</span>;</span><br><span class="line">    aiTitleDiv.<span class="title function_">appendChild</span>(aiTitleTextDiv);</span><br><span class="line">  </span><br><span class="line">    <span class="keyword">const</span> aiTagDiv = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&#x27;div&#x27;</span>);</span><br><span class="line">    aiTagDiv.<span class="property">className</span> = <span class="string">&#x27;tianliGPT-tag&#x27;</span>;</span><br><span class="line">    aiTagDiv.<span class="property">id</span> = <span class="string">&#x27;tianliGPT-tag&#x27;</span>;</span><br><span class="line">    aiTagDiv.<span class="property">textContent</span> = <span class="string">&#x27;Gemini&#x27;</span>;</span><br><span class="line">    aiTitleDiv.<span class="title function_">appendChild</span>(aiTagDiv);</span><br><span class="line">  </span><br><span class="line">    <span class="keyword">const</span> aiExplanationDiv = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&#x27;div&#x27;</span>);</span><br><span class="line">    aiExplanationDiv.<span class="property">className</span> = <span class="string">&#x27;tianliGPT-explanation&#x27;</span>;</span><br><span class="line">    aiExplanationDiv.<span class="property">innerHTML</span> = <span class="string">&#x27;生成中...&#x27;</span> + <span class="string">&#x27;&lt;span class=&quot;blinking-cursor&quot;&gt;&lt;/span&gt;&#x27;</span>;</span><br><span class="line">    aiDiv.<span class="title function_">appendChild</span>(aiExplanationDiv); <span class="comment">// 将 tianliGPT-explanation 插入到 aiDiv，而不是 aiTitleDiv</span></span><br><span class="line">  </span><br><span class="line">    <span class="comment">// 将创建的元素插入到目标元素的顶部</span></span><br><span class="line">    targetElement.<span class="title function_">insertBefore</span>(aiDiv, targetElement.<span class="property">firstChild</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">function</span> <span class="title function_">removeExistingAIDiv</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="comment">// 查找具有 &quot;post-TianliGPT&quot; 类的元素</span></span><br><span class="line">    <span class="keyword">const</span> existingAIDiv = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;.post-TianliGPT&quot;</span>);</span><br><span class="line">  </span><br><span class="line">    <span class="comment">// 如果找到了这个元素，就从其父元素中删除它</span></span><br><span class="line">    <span class="keyword">if</span> (existingAIDiv) &#123;</span><br><span class="line">      existingAIDiv.<span class="property">parentElement</span>.<span class="title function_">removeChild</span>(existingAIDiv);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">var</span> tianliGPT = &#123;</span><br><span class="line">    <span class="comment">//读取文章中的所有文本</span></span><br><span class="line">    <span class="attr">getTitleAndContent</span>: <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">      <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="keyword">const</span> title = <span class="variable language_">document</span>.<span class="property">title</span>;</span><br><span class="line">        <span class="keyword">const</span> container = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(tianliGPT_postSelector);</span><br><span class="line">        <span class="keyword">if</span> (!container) &#123;</span><br><span class="line">          <span class="variable language_">console</span>.<span class="title function_">warn</span>(<span class="string">&#x27;[Gemini]找不到文章容器。请尝试将引入的代码放入到文章容器之后。如果本身没有打算使用摘要功能可以忽略此提示。&#x27;</span>);</span><br><span class="line">          <span class="keyword">return</span> <span class="string">&#x27;&#x27;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">const</span> paragraphs = container.<span class="title function_">getElementsByTagName</span>(<span class="string">&#x27;p&#x27;</span>);</span><br><span class="line">        <span class="keyword">const</span> headings = container.<span class="title function_">querySelectorAll</span>(<span class="string">&#x27;h1, h2, h3, h4, h5&#x27;</span>);</span><br><span class="line">        <span class="keyword">let</span> content = <span class="string">&#x27;&#x27;</span>;</span><br><span class="line">    </span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">let</span> h <span class="keyword">of</span> headings) &#123;</span><br><span class="line">          content += h.<span class="property">innerText</span> + <span class="string">&#x27; &#x27;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    </span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">let</span> p <span class="keyword">of</span> paragraphs) &#123;</span><br><span class="line">          <span class="comment">// 移除包含&#x27;http&#x27;的链接</span></span><br><span class="line">          <span class="keyword">const</span> filteredText = p.<span class="property">innerText</span>.<span class="title function_">replace</span>(<span class="regexp">/https?:\/\/[^\s]+/g</span>, <span class="string">&#x27;&#x27;</span>);</span><br><span class="line">          content += filteredText;</span><br><span class="line">        &#125;</span><br><span class="line">    </span><br><span class="line">        <span class="keyword">const</span> combinedText = title + <span class="string">&#x27; &#x27;</span> + content;</span><br><span class="line">        <span class="keyword">let</span> wordLimit = <span class="number">1000</span>;</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">typeof</span> tianliGPT_wordLimit !== <span class="string">&quot;undefined&quot;</span>) &#123;</span><br><span class="line">          wordLimit = tianliGPT_wordLimit;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">const</span> truncatedText = combinedText.<span class="title function_">slice</span>(<span class="number">0</span>, wordLimit).<span class="title function_">replace</span>(<span class="string">&#x27;本文采用 署名-非商业性使用-相同方式共享 4.0 国际 许可协议，转载请注明出处。&#x27;</span>, <span class="string">&#x27;&#x27;</span>);</span><br><span class="line">        <span class="keyword">return</span> truncatedText;</span><br><span class="line">      &#125; <span class="keyword">catch</span> (e) &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">error</span>(<span class="string">&#x27;[Gemini]错误：可能由于一个或多个错误导致没有正常运行，原因出在获取文章容器中的内容失败，或者可能是在文章转换过程中失败。&#x27;</span>, e);</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&#x27;&#x27;</span>;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    </span><br><span class="line">    <span class="attr">fetchTianliGPT</span>: <span class="keyword">async</span> <span class="keyword">function</span>(<span class="params">content</span>) &#123;</span><br><span class="line">      <span class="keyword">if</span> (!tianliGPT_key) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;没有获取到key，代码可能没有安装正确。如果你需要在tianli_gpt文件引用前定义tianliGPT_key变量。详细请查看文档。&quot;</span>;</span><br><span class="line">      &#125;</span><br><span class="line">    </span><br><span class="line">      <span class="keyword">if</span> (tianliGPT_key === <span class="string">&quot;5Q5mpqRK5DkwT1X9Gi5e&quot;</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;请购买 key 使用，如果你能看到此条内容，则说明代码安装正确。&quot;</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      </span><br><span class="line">      <span class="keyword">var</span> currentPath = <span class="variable language_">window</span>.<span class="property">location</span>.<span class="property">pathname</span>;</span><br><span class="line">      <span class="keyword">var</span> url = <span class="string">&quot;https://blog.hzchu.top&quot;</span> + currentPath;</span><br><span class="line">      <span class="keyword">if</span> (currentPath === <span class="string">&quot;/friends/&quot;</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;欢迎各位申请友链~&quot;</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="comment">//禁用的路径</span></span><br><span class="line">      disablePaths = [<span class="string">&quot;/big/&quot;</span>];</span><br><span class="line">      <span class="keyword">if</span> (disablePaths.<span class="title function_">includes</span>(currentPath)) &#123;</span><br><span class="line">        <span class="variable language_">document</span>.<span class="title function_">querySelectorAll</span>(<span class="string">&#x27;.post-TianliGPT&#x27;</span>).<span class="title function_">forEach</span>(<span class="function"><span class="params">el</span> =&gt;</span> &#123;</span><br><span class="line">          el.<span class="property">style</span>.<span class="property">display</span> = <span class="string">&#x27;none&#x27;</span>;</span><br><span class="line">        &#125;)</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">      &#125;</span><br><span class="line">      <span class="comment">// use get method to avoid CORS check</span></span><br><span class="line">      <span class="keyword">const</span> apiUrl = <span class="string">`https://dolgpt.hzchu.top/?content=<span class="subst">$&#123;<span class="built_in">encodeURIComponent</span>(content)&#125;</span>&amp;key=<span class="subst">$&#123;<span class="built_in">encodeURIComponent</span>(tianliGPT_key)&#125;</span>&amp;url=<span class="subst">$&#123;<span class="built_in">encodeURIComponent</span>(url)&#125;</span>`</span>;</span><br><span class="line">      <span class="keyword">const</span> timeout = <span class="number">20000</span>; <span class="comment">// 设置超时时间（毫秒）</span></span><br><span class="line"></span><br><span class="line">      <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="keyword">const</span> controller = <span class="keyword">new</span> <span class="title class_">AbortController</span>();</span><br><span class="line">        <span class="keyword">const</span> timeoutId = <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> controller.<span class="title function_">abort</span>(), timeout);</span><br><span class="line">        <span class="keyword">const</span> response = <span class="keyword">await</span> <span class="title function_">fetch</span>(apiUrl, &#123; <span class="attr">signal</span>: controller.<span class="property">signal</span> &#125;);</span><br><span class="line">        <span class="keyword">if</span> (response.<span class="property">ok</span>) &#123;</span><br><span class="line">          <span class="keyword">const</span> data = <span class="keyword">await</span> response.<span class="title function_">json</span>();</span><br><span class="line">          <span class="keyword">if</span> (data[<span class="string">&quot;summary&quot;</span>].<span class="title function_">startsWith</span>(<span class="string">&quot;当前文章&quot;</span>))&#123;</span><br><span class="line">            tianliGPT_typingAnimate = <span class="literal">false</span>;</span><br><span class="line">          &#125;</span><br><span class="line">          <span class="keyword">return</span> data.<span class="property">summary</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">          <span class="keyword">if</span> (response.<span class="property">status</span> === <span class="number">402</span>) &#123;</span><br><span class="line">            <span class="variable language_">document</span>.<span class="title function_">querySelectorAll</span>(<span class="string">&#x27;.post-TianliGPT&#x27;</span>).<span class="title function_">forEach</span>(<span class="function"><span class="params">el</span> =&gt;</span> &#123;</span><br><span class="line">              el.<span class="property">style</span>.<span class="property">display</span> = <span class="string">&#x27;none&#x27;</span>;</span><br><span class="line">            &#125;);</span><br><span class="line">          &#125;</span><br><span class="line">          <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">Error</span>(<span class="string">&#x27;[Gemini]余额不足，请充值后请求新的文章&#x27;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">      &#125; <span class="keyword">catch</span> (error) &#123;</span><br><span class="line">          <span class="keyword">if</span> (error.<span class="property">name</span> === <span class="string">&#x27;AbortError&#x27;</span>) &#123;</span><br><span class="line">              <span class="keyword">if</span> (<span class="variable language_">window</span>.<span class="property">location</span>.<span class="property">hostname</span> === <span class="string">&#x27;localhost&#x27;</span>) &#123;</span><br><span class="line">                  <span class="variable language_">console</span>.<span class="title function_">warn</span>(<span class="string">&#x27;警告：请勿在本地主机上测试 API 密钥。&#x27;</span>);</span><br><span class="line">                  <span class="keyword">return</span> <span class="string">&#x27;获取文章摘要超时。请勿在本地主机上测试 API 密钥。&#x27;</span>;</span><br><span class="line">              &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                  <span class="variable language_">console</span>.<span class="title function_">error</span>(<span class="string">&#x27;请求超时&#x27;</span>);</span><br><span class="line">                  <span class="keyword">return</span> <span class="string">&#x27;获取文章摘要超时。当你出现这个问题时，可能是key或者绑定的域名不正确。也可能是因为文章过长导致的 AI 运算量过大，您可以稍等一下然后刷新页面重试。&#x27;</span>;</span><br><span class="line">              &#125;</span><br><span class="line">          &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">              <span class="variable language_">console</span>.<span class="title function_">error</span>(<span class="string">&#x27;请求失败：&#x27;</span>, error);</span><br><span class="line">              <span class="keyword">return</span> <span class="string">&#x27;获取文章摘要失败，请稍后再试。&#x27;</span>;</span><br><span class="line">          &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    </span><br><span class="line">  </span><br><span class="line">    <span class="attr">aiShowAnimation</span>: <span class="keyword">function</span> (<span class="params">text</span>) &#123;</span><br><span class="line">      <span class="keyword">const</span> element = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;.tianliGPT-explanation&quot;</span>);</span><br><span class="line">      <span class="keyword">if</span> (!element) &#123;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">      &#125;</span><br><span class="line">  </span><br><span class="line">      <span class="keyword">if</span> (tianliGPTIsRunning) &#123;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">      &#125;</span><br><span class="line">  </span><br><span class="line">      <span class="comment">// 检查用户是否已定义tianliGPT_typingAnimate并且其值为false</span></span><br><span class="line">      <span class="keyword">if</span> (<span class="keyword">typeof</span> tianliGPT_typingAnimate !== <span class="string">&quot;undefined&quot;</span> &amp;&amp; !tianliGPT_typingAnimate) &#123;</span><br><span class="line">        <span class="comment">// 如果用户已定义tianliGPT_typingAnimate并且其值为false，则立即显示完整文本</span></span><br><span class="line">        element.<span class="property">innerHTML</span> = text;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">      &#125;</span><br><span class="line">  </span><br><span class="line">      tianliGPTIsRunning = <span class="literal">true</span>;</span><br><span class="line">      <span class="keyword">const</span> typingDelay = <span class="number">25</span>;</span><br><span class="line">      <span class="keyword">const</span> waitingTime = <span class="number">1000</span>;</span><br><span class="line">      <span class="keyword">const</span> punctuationDelayMultiplier = <span class="number">6</span>;</span><br><span class="line">  </span><br><span class="line">      element.<span class="property">style</span>.<span class="property">display</span> = <span class="string">&quot;block&quot;</span>;</span><br><span class="line">      element.<span class="property">innerHTML</span> = <span class="string">&quot;生成中...&quot;</span> + <span class="string">&#x27;&lt;span class=&quot;blinking-cursor&quot;&gt;&lt;/span&gt;&#x27;</span>;</span><br><span class="line">  </span><br><span class="line">      <span class="keyword">let</span> animationRunning = <span class="literal">true</span>;</span><br><span class="line">      <span class="keyword">let</span> currentIndex = <span class="number">0</span>;</span><br><span class="line">      <span class="keyword">let</span> initialAnimation = <span class="literal">true</span>;</span><br><span class="line">      <span class="keyword">let</span> lastUpdateTime = performance.<span class="title function_">now</span>();</span><br><span class="line">  </span><br><span class="line">      <span class="keyword">const</span> <span class="title function_">animate</span> = (<span class="params"></span>) =&gt; &#123;</span><br><span class="line">        <span class="keyword">if</span> (currentIndex &lt; text.<span class="property">length</span> &amp;&amp; animationRunning) &#123;</span><br><span class="line">          <span class="keyword">const</span> currentTime = performance.<span class="title function_">now</span>();</span><br><span class="line">          <span class="keyword">const</span> timeDiff = currentTime - lastUpdateTime;</span><br><span class="line">  </span><br><span class="line">          <span class="keyword">const</span> letter = text.<span class="title function_">slice</span>(currentIndex, currentIndex + <span class="number">1</span>);</span><br><span class="line">          <span class="keyword">const</span> isPunctuation = <span class="regexp">/[，。！、？,.!?]/</span>.<span class="title function_">test</span>(letter);</span><br><span class="line">          <span class="keyword">const</span> delay = isPunctuation ? typingDelay * punctuationDelayMultiplier : typingDelay;</span><br><span class="line">  </span><br><span class="line">          <span class="keyword">if</span> (timeDiff &gt;= delay) &#123;</span><br><span class="line">            element.<span class="property">innerText</span> = text.<span class="title function_">slice</span>(<span class="number">0</span>, currentIndex + <span class="number">1</span>);</span><br><span class="line">            lastUpdateTime = currentTime;</span><br><span class="line">            currentIndex++;</span><br><span class="line">  </span><br><span class="line">            <span class="keyword">if</span> (currentIndex &lt; text.<span class="property">length</span>) &#123;</span><br><span class="line">              element.<span class="property">innerHTML</span> =</span><br><span class="line">                text.<span class="title function_">slice</span>(<span class="number">0</span>, currentIndex) +</span><br><span class="line">                <span class="string">&#x27;&lt;span class=&quot;blinking-cursor&quot;&gt;&lt;/span&gt;&#x27;</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">              element.<span class="property">innerHTML</span> = text;</span><br><span class="line">              element.<span class="property">style</span>.<span class="property">display</span> = <span class="string">&quot;block&quot;</span>;</span><br><span class="line">              tianliGPTIsRunning = <span class="literal">false</span>;</span><br><span class="line">              observer.<span class="title function_">disconnect</span>();<span class="comment">// 暂停监听</span></span><br><span class="line">            &#125;</span><br><span class="line">          &#125;</span><br><span class="line">          <span class="title function_">requestAnimationFrame</span>(animate);</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">  </span><br><span class="line">      <span class="comment">// 使用IntersectionObserver对象优化ai离开视口后暂停的业务逻辑，提高性能</span></span><br><span class="line">      <span class="keyword">const</span> observer = <span class="keyword">new</span> <span class="title class_">IntersectionObserver</span>(<span class="function">(<span class="params">entries</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">let</span> isVisible = entries[<span class="number">0</span>].<span class="property">isIntersecting</span>;</span><br><span class="line">        animationRunning = isVisible; <span class="comment">// 标志变量更新</span></span><br><span class="line">        <span class="keyword">if</span> (animationRunning &amp;&amp; initialAnimation) &#123;</span><br><span class="line">          <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">            <span class="title function_">requestAnimationFrame</span>(animate);</span><br><span class="line">          &#125;, <span class="number">200</span>);</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;, &#123; <span class="attr">threshold</span>: <span class="number">0</span> &#125;);</span><br><span class="line">      <span class="keyword">let</span> post_ai = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;.post-TianliGPT&#x27;</span>);</span><br><span class="line">      observer.<span class="title function_">observe</span>(post_ai);<span class="comment">//启动新监听</span></span><br><span class="line">  </span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">function</span> <span class="title function_">runTianliGPT</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="title function_">insertAIDiv</span>(tianliGPT_postSelector);</span><br><span class="line">    <span class="keyword">const</span> content = tianliGPT.<span class="title function_">getTitleAndContent</span>();</span><br><span class="line">    <span class="keyword">if</span> (content) &#123;</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;[Gemini]本次提交的内容为：&#x27;</span> + content);</span><br><span class="line">      <span class="comment">// 获取字数</span></span><br><span class="line">      wordcount = content.<span class="property">length</span>;</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;[Gemini]本次提交的字数为：&#x27;</span> + wordcount);</span><br><span class="line">    &#125;</span><br><span class="line">    tianliGPT.<span class="title function_">fetchTianliGPT</span>(content).<span class="title function_">then</span>(<span class="function"><span class="params">summary</span> =&gt;</span> &#123;</span><br><span class="line">      tianliGPT.<span class="title function_">aiShowAnimation</span>(summary);</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">function</span> <span class="title function_">checkURLAndRun</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">typeof</span> tianliGPT_postURL === <span class="string">&quot;undefined&quot;</span>) &#123;</span><br><span class="line">      <span class="title function_">runTianliGPT</span>(); <span class="comment">// 如果没有设置自定义 URL，则直接执行 runTianliGPT() 函数</span></span><br><span class="line">      <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  </span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">      <span class="keyword">const</span> <span class="title function_">wildcardToRegExp</span> = (<span class="params">s</span>) =&gt; &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">RegExp</span>(<span class="string">&#x27;^&#x27;</span> + s.<span class="title function_">split</span>(<span class="regexp">/\*+/</span>).<span class="title function_">map</span>(regExpEscape).<span class="title function_">join</span>(<span class="string">&#x27;.*&#x27;</span>) + <span class="string">&#x27;$&#x27;</span>);</span><br><span class="line">      &#125;;</span><br><span class="line">  </span><br><span class="line">      <span class="keyword">const</span> <span class="title function_">regExpEscape</span> = (<span class="params">s</span>) =&gt; &#123;</span><br><span class="line">        <span class="keyword">return</span> s.<span class="title function_">replace</span>(<span class="regexp">/[|\\&#123;&#125;()[\]^$+*?.]/g</span>, <span class="string">&#x27;\\$&amp;&#x27;</span>);</span><br><span class="line">      &#125;;</span><br><span class="line">  </span><br><span class="line">      <span class="keyword">const</span> urlPattern = <span class="title function_">wildcardToRegExp</span>(tianliGPT_postURL);</span><br><span class="line">      <span class="keyword">const</span> currentURL = <span class="variable language_">window</span>.<span class="property">location</span>.<span class="property">href</span>;</span><br><span class="line">  </span><br><span class="line">      <span class="keyword">if</span> (urlPattern.<span class="title function_">test</span>(currentURL)) &#123;</span><br><span class="line">        <span class="title function_">runTianliGPT</span>(); <span class="comment">// 如果当前 URL 符合用户设置的 URL，则执行 runTianliGPT() 函数</span></span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Gemini：因为不符合自定义的链接规则，我决定不执行摘要功能。&quot;</span>);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125; <span class="keyword">catch</span> (error) &#123;</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">error</span>(<span class="string">&quot;Gemini：我没有看懂你编写的自定义链接规则，所以我决定不执行摘要功能&quot;</span>, error);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">if</span> (usePjax) &#123;</span><br><span class="line">    <span class="title function_">checkURLAndRun</span>();</span><br><span class="line">  &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="variable language_">document</span>.<span class="title function_">addEventListener</span>(<span class="string">&quot;DOMContentLoaded&quot;</span>, <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">      <span class="title function_">checkURLAndRun</span>();</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="title function_">tianliGPT</span>(<span class="literal">false</span>);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">addEventListener</span>(<span class="string">&#x27;pjax:complete&#x27;</span>, <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">  <span class="title function_">tianliGPT</span>(<span class="literal">true</span>);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>在日后合并到新版本后，我打算再支持下语音朗读，目前计划是用谷歌翻译的接口来实现，用我自己之前留下来的服务的话向<code>gtts-api.hzchu.top/?text=xxx</code>发送请求即可（目前无CORS限制）</p>
+<h2 id="效果演示"><a href="#效果演示" class="headerlink" title="效果演示"></a>效果演示</h2><p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/03/09/65ec592aba762.webp" alt="1709988135166.webp"></p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>其表现我个人感觉跌宕起伏，有时不如ChatGPT，有时有吊打Bing，反正免费的要什么自行车<span class="tag-plugin emoji"><img no-lazy="" class="inline lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://jsd.hzchu.top/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatmeltthumb.png"/></span></p>
+<p>记得之前看还叫Bard，还不支持中文，没想到现在这么厉害了<span class="tag-plugin emoji"><img no-lazy="" class="inline lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://jsd.hzchu.top/gh/norevi/waline-blobcatemojis@1.0/blobs/ablobcatreachrev.png"/></span></p>
+<p>文章一时兴起写的，截了一堆素材没用上，以后再润色下</p>
+
+<div class="article-footer fs14">
+    <section id="license">
+      <div class="header"><span>许可协议</span></div>
+      <div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div>
+    </section>
+    
+    <section id="share">
+      <div class="header"><span>分享文章</span></div>
+      <div class="body">
+        <div class="link"><input class="copy-area" readonly="true" id="copy-link" value="https://blog.hzchu.top/2024/%E7%94%A8Gemini%E5%AE%9E%E7%8E%B0AI%E6%91%98%E8%A6%81/" /></div>
+        <div class="social-wrap dis-select"><a class="social share-item wechat" onclick="util.toggle(&quot;qrcode-wechat&quot)"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://jsd.hzchu.top/gh/cdn-x/placeholder@1.0.12/social/b32ef3da1162a.svg" /></a><a class="social share-item weibo" target="_blank" rel="external nofollow noopener noreferrer" href="https://service.weibo.com/share/share.php?url=https://blog.hzchu.top/2024/%E7%94%A8Gemini%E5%AE%9E%E7%8E%B0AI%E6%91%98%E8%A6%81/&title=用Gemini，实现AI摘要 - Thun888&pics=https://dolphinsbukets.s3.bitiful.net/article-cover/cover-4.png?fmt=webp&summary=使用Cloudflare Worker，借助Gemini，平替TianliGPT"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://jsd.hzchu.top/gh/cdn-x/placeholder@1.0.12/social/80c07e4dbb303.svg" /></a><a class="social share-item email" href="mailto:?subject=用Gemini，实现AI摘要 - Thun888&amp;body=https://blog.hzchu.top/2024/%E7%94%A8Gemini%E5%AE%9E%E7%8E%B0AI%E6%91%98%E8%A6%81/"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://jsd.hzchu.top/gh/cdn-x/placeholder@1.0.12/social/a1b00e20f425d.svg" /></a><a class="social share-item link" onclick="util.copy(&quot;copy-link&quot;, &quot;复制成功&quot;)"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://jsd.hzchu.top/gh/cdn-x/placeholder@1.0.12/social/8411ed322ced6.svg" /></a></div>
+        
+        <div class="qrcode" id="qrcode-wechat" style="opacity:0;height:0">
+          <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://api.qrserver.com/v1/create-qr-code/?size=256x256&data=https://blog.hzchu.top/2024/%E7%94%A8Gemini%E5%AE%9E%E7%8E%B0AI%E6%91%98%E8%A6%81/"/>
+        </div>
+        
+      </div>
+    </section>
+    </div>
+</article>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2024/%E8%AE%B0%E4%B8%80%E6%AC%A1%E6%8E%92%E6%9F%A5js%E6%96%87%E4%BB%B6%E5%90%8E%E9%97%A8/">记一次排查js文件后门</a></div></section></div>
+
+  <script>
+    let tianliGPT_postSelector = 'article.content';
+    let tianliGPT_key = '114514';
+    let tianliGPT_typingAnimate = 'true';
+    let tianliGPT_wordLimit = 3500;
+  </script>
+<script defer src="/js/tianli_gpt.js"></script>
+
+
+<div class="related-wrap" id="related-posts">
+    <section class='header'>
+      <div class='title cap theme'>您可能感兴趣的文章</div>
+    </section>
+    <section class='body'>
+    <div class="related-posts"><a class="item" href="/2021/为Stellar主题添加HPP说说功能/" title="为Stellar主题添加HPP的"说说"功能"><span class="title">为Stellar主题添加HPP的"说说"功能</span><span class="excerpt">HPP,即`HexoPlusPlus`,其中自带了"说说"功能，但我正在用的Stellar不支持，那就自己加吧</span></a><a class="item" href="/2024/记一次排查js文件后门/" title="记一次排查js文件后门"><span class="title">记一次排查js文件后门</span><span class="excerpt">被bootcdn捅了一刀</span></a><a class="item" href="/2024/把Tg-Channel接入到Stellar时间线/" title="把Tg Channel接入到Stellar时间线"><span class="title">把Tg Channel接入到Stellar时间线</span><span class="excerpt">使用Cloudflare Worker，获取Tg频道内容，并接入到Stellar时间线</span></a><a class="item" href="/2022/2021旧年总结/" title="2021旧年总结"><span class="title">2021旧年总结</span><span class="excerpt">2021 has ended but 2022 begins</span></a></div></section></div>
+
+
+  <div class="related-wrap md-text" id="comments">
+    <section class='header cmt-title cap theme'>
+      快来参与讨论吧
+    </section>
+    <section class='body cmt-body artalk'>
+      
+
+<div id="artalk_container"><svg class="loading" style="vertical-align:middle;fill:currentColor;overflow:hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg></div>
+    </section>
+  </div>
+
+
+
+<div style="text-align: center;color: #808080;"><span style="font-size: 12px;" id="timeDate">载入天数...</span><span style="font-size: 12px;">&</span><span style="font-size: 12px;" id="times">载入时分秒...</span></div>
+<footer class="page-footer footnote"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs15">博客</span><a href="/big/">大事记</a><a target="_blank" rel="noopener" href="https://notes.hzchu.top/">Memos</a><a href="/archives/">归档</a></div><div class="sitemap-group"><span class="fs15">项目</span><a href="/wiki/fcloud/">峰间云海</a><a target="_blank" rel="noopener" href="https://github.com/Mirouterui/mirouter-ui/">Mirouter-ui</a></div><div class="sitemap-group"><span class="fs15">社交</span><a href="/friends/">友链</a><a href="/say/">留言板</a><a target="_blank" rel="noopener" href="https://space.bilibili.com/451090261">BiliBili</a><a href="mailto:thun888@qq.com">邮箱</a></div><div class="sitemap-group"><span class="fs15">更多</span><a href="/about/">关于本站</a><a target="_blank" rel="noopener" href="https://pan.hzchu.top">云盘</a><a target="_blank" rel="noopener" href="https://pic.hzchu.top">图床</a></div></div><div class="text"><p>本站由 <a href="/about/">@thun888</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar">Stellar</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。<br><a target="_blank" rel="noopener" href="http://seeyou.hzchu.top/share/4C7u3VFqbFkS7VBj/blog.hzchu.top">访问数据统计</a></p>
+</div></footer><div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
+<div class="widgets">
+
+
+
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96GEMINI-KEY"><span class="toc-text">获取GEMINI_KEY</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%8E%E7%AB%AF%E7%A8%8B%E5%BA%8F"><span class="toc-text">后端程序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E7%AB%AF%E7%A8%8B%E5%BA%8F%E4%BF%AE%E6%94%B9"><span class="toc-text">前端程序修改</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%88%E6%9E%9C%E6%BC%94%E7%A4%BA"><span class="toc-text">效果演示</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E8%AF%AD"><span class="toc-text">结语</span></a></li></ol></div><div class="widget-footer">
+
+<a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/></g></svg><span>回到顶部</span></a></div></widget>
+</div></aside><div class='float-panel blur'>
+  <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
+  </button>
+  <button type='button' style='display:none' class='mobile-only leftbar-toggle mobile' onclick='sidebar.leftbar()'>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 11c0-3.771 0-5.657 1.172-6.828C4.343 3 6.229 3 10 3h4c3.771 0 5.657 0 6.828 1.172C22 5.343 22 7.229 22 11v2c0 3.771 0 5.657-1.172 6.828C19.657 21 17.771 21 14 21h-4c-3.771 0-5.657 0-6.828-1.172C2 18.657 2 16.771 2 13z"/><path id="sep" stroke-linecap="round" d="M5.5 10h6m-5 4h4m4.5 7V3"/></g></svg>
+  </button>
+</div>
+</div><div class="scripts">
+<script type="text/javascript">
+  const stellar = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    loadCSS: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    // 从 butterfly 和 volantis 获得灵感
+    loadScript: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      if (src.startsWith('/')){
+        src = stellar.config.root + src.substring(1);
+      }
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    // https://github.com/jerryc127/hexo-theme-butterfly
+    jQuery: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        stellar.loadScript(stellar.plugins.jQuery).then(fn)
+      } else {
+        fn()
+      }
+    }
+  };
+  stellar.version = '1.26.8';
+  stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/1.26.8';
+  stellar.config = {
+    date_suffix: {
+      just: '刚刚',
+      min: '分钟前',
+      hour: '小时前',
+      day: '天前',
+      month: '个月前',
+    },
+    root : '/',
+  };
+
+  // required plugins (only load if needs)
+  stellar.plugins = {
+    jQuery: 'https://jsd.onmicrosoft.cn/npm/jquery@3.7.1/dist/jquery.min.js'
+  };
+
+  if ('local_search') {
+    stellar.search = {};
+    stellar.search.service = 'local_search';
+    if (stellar.search.service == 'local_search') {
+      let service_obj = Object.assign({}, {"field":"all","path":"/search.json","content":true,"sort":"-date"});
+      stellar.search[stellar.search.service] = service_obj;
+    }
+  }
+
+  // stellar js
+  stellar.plugins.stellar = Object.assign({"sites":"/js/plugins/sites.js","friends":"/js/plugins/friends.js","ghinfo":"/js/plugins/ghinfo.js","timeline":"/js/plugins/timeline.js","linkcard":"/js/plugins/linkcard.js","fcircle":"/js/plugins/fcircle.js","weibo":"/js/plugins/weibo.js","memos":"/js/plugins/memos.js","marked":"/js/plugins/marked.js"});
+
+  stellar.plugins.marked = Object.assign("https://jsd.onmicrosoft.cn/npm/marked@4.0.18/marked.min.js");
+  // optional plugins
+  if ('true' == 'true') {
+    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://jsd.onmicrosoft.cn/npm/vanilla-lazyload@17.8.4/dist/lazyload.min.js","transition":"fade"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://jsd.onmicrosoft.cn/npm/swiper@10.3/swiper-bundle.min.css","js":"https://jsd.onmicrosoft.cn/npm/swiper@10.3/swiper-bundle.min.js"});
+  }
+  if ('' == 'true') {
+    stellar.plugins.scrollreveal = Object.assign({"enable":null,"js":"https://jsd.onmicrosoft.cn/gh/jlmakes/scrollreveal/dist/scrollreveal.min.js","distance":"16px","duration":800,"interval":100,"scale":1});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.preload = Object.assign({"enable":true,"service":"flying_pages","flying_pages":"https://jsd.onmicrosoft.cn/gh/gijo-varghese/flying-pages/flying-pages.min.js"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.fancybox = Object.assign({"enable":true,"js":"https://cdn.staticfile.net/fancyapps-ui/5.0.22/fancybox/fancybox.umd.min.js","css":"https://cdn.staticfile.net/fancyapps-ui/5.0.22/fancybox/fancybox.min.css","selector":"article.md-text.content img:not([class*='icon'])"});
+  }
+  if ('false' == 'true') {
+    stellar.plugins.heti = Object.assign({"enable":false,"css":"https://jsd.onmicrosoft.cn/npm/heti@0.9.2/umd/heti.min.css","js":"https://jsd.onmicrosoft.cn/npm/heti@0.9.2/umd/heti-addon.min.js"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.copycode = Object.assign({"enable":true,"js":"/js/plugins/copycode.js","default_text":"Copy","success_text":"Copied","toast":"复制成功"});
+  }
+</script>
+
+<!-- required -->
+<script src="/js/main.js?v=1.26.8" async></script>
+
+<!-- optional -->
+
+  <script>
+  function load_artalk() {
+    if (!document.querySelectorAll("#artalk_container")[0]) return;
+    stellar.loadCSS('https://jsd.onmicrosoft.cn/npm/artalk@2.8.2/dist/Artalk.css');
+    stellar.loadScript('https://jsd.onmicrosoft.cn/npm/artalk@2.8.2/dist/Artalk.js', {defer: true}).then(function () {
+      const el = document.getElementById("artalk_container");
+      var path = el.getAttribute('comment_id');
+      if (!path) {
+        path = decodeURI(window.location.pathname);
+      }
+      var artalk = Artalk.init({
+        el: '#artalk_container',
+        pageKey: path,
+        pageTitle: '用Gemini，实现AI摘要',
+        server: 'https://artalk.hzchu.top',
+        placeholder: '此时无声胜有声',
+        site: 'Blog',
+        darkMode: 'auto',
+        emoticons: 'https://raw.hzchu.top/thun888/asstes/master/files/json/artalk/default.json',
+        })
+      });
+  }
+  window.addEventListener('DOMContentLoaded', (event) => {
+    load_artalk();
+  });
+</script>
+
+
+
+
+
+
+<!-- inject -->
+
+</div></body></html>
