@@ -30,7 +30,7 @@ description: 使用Cloudflare Worker，借助Gemini，平替TianliGPT
 
 因为Stellar已经配置了TianliGPT的css了，所以我也懒得另起炉灶，直接按TianliGPT的格式返回，所以理论上讲和其它的使用TianliGPT的服务也兼容
 
-仓库：
+仓库：[thun888/ai-summary](https://github.com/thun888/ai-summary/)
 
 {% ghcard thun888/ai-summary %}
 

@@ -22,6 +22,8 @@ rightbar: [timeline]
 
 本站使用Stellar主题，如果你不懂配置而恰巧本站又有你所需要的东西，可以在下方仓库查看
 
+[thun888/myblog](https://github.com/thun888/myblog/)
+
 {% ghcard thun888/myblog theme:dark %}
 
 
