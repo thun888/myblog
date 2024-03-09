@@ -92,6 +92,15 @@
   </url>
   
   <url>
+    <loc>https://blog.hzchu.top/wiki/Serve-list/status</loc>
+    
+    <lastmod>2024-03-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.hzchu.top/2024/%E6%8A%8ATg-Channel%E6%8E%A5%E5%85%A5%E5%88%B0Stellar%E6%97%B6%E9%97%B4%E7%BA%BF/</loc>
     
     <lastmod>2024-02-25</lastmod>
@@ -281,7 +290,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/Artalk-doc/install/</loc>
+    <loc>https://blog.hzchu.top/wiki/Artalk-doc/more-url/</loc>
     
     <lastmod>2022-02-12</lastmod>
     
@@ -290,7 +299,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/Artalk-doc/more-url/</loc>
+    <loc>https://blog.hzchu.top/wiki/Artalk-doc/install/</loc>
     
     <lastmod>2022-02-12</lastmod>
     
@@ -498,14 +507,14 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/Stellar/</loc>
+    <loc>https://blog.hzchu.top/tags/MC/</loc>
     <lastmod>2024-03-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/MC/</loc>
+    <loc>https://blog.hzchu.top/tags/Stellar/</loc>
     <lastmod>2024-03-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -519,14 +528,14 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/linux/</loc>
+    <loc>https://blog.hzchu.top/tags/Clouddlare/</loc>
     <lastmod>2024-03-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/Clouddlare/</loc>
+    <loc>https://blog.hzchu.top/tags/linux/</loc>
     <lastmod>2024-03-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
