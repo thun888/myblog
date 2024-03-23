@@ -48,7 +48,7 @@
       description: 折腾学习无止境
     - title: NMSL
       url: https://nmsl.cn
-      # avatar: https://nmsl.cn/icon.png
+      avatar: https://nmsl.cn/icon.png
       description: 永远不要理会谣言和中伤
     - title: Dahi Blog
       url: https://dahi.icu/
@@ -66,7 +66,3 @@
       url: https://weirain.com/
       avatar: https://dolphinsbukets.s3.bitiful.net/friends-avatar/weirain-icon.webp?q=20
       description: 夜色难免黑凉，前行必有曙光
-    - title: 杜老师说
-      url: https://dusays.com
-      avatar: https://cdn.dusays.com/avatar.png
-      description: 这是占位符
