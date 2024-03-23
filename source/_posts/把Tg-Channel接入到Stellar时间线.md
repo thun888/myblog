@@ -39,15 +39,16 @@ const baseproxyurl="https://get-tg-channel-api.hzchu.top/?proxy=" //将中间域
 
 ## 可传入参数
 
-| 参数        | 参数名         | 默认值     | 描述                                                         |
-| ----------- | -------------- | ---------- | ------------------------------------------------------------ |
-| cid         | 频道id         | 0          | 指在代码里配置的第n个频道，并不是上文所述频道id              |
-| mid         | 信息id         | /          | 指定后只返回该信息，信息id可在发送后查看                     |
-| **tag**     | 标签名         | DefaultTag | 筛选传入的标签返回                                           |
-| limit       | 获取条数       | /          | /                                                            |
-| startbefore | 获取之前信息   | /          | 如果有一条信息`id`为`80`的信息，那么当传入`80`时将返回这条信息之前的所有信息 |
-| showtag     | 是否展示标签   | true       | /                                                            |
-| showview    | 是否展示访问量 | false      | 启用时会在末尾附上(views:number)                             |
+| 参数        | 参数名           | 默认值     | 描述                                                         |
+| ----------- | ---------------- | ---------- | ------------------------------------------------------------ |
+| cid         | 频道id           | 0          | 指在代码里配置的第n个频道，并不是上文所述频道id              |
+| mid         | 信息id           | /          | 指定后只返回该信息，信息id可在发送后查看                     |
+| **tag**     | 标签名           | DefaultTag | 筛选传入的标签返回                                           |
+| limit       | 获取条数         | /          | /                                                            |
+| startbefore | 获取之前信息     | /          | 如果有一条信息`id`为`80`的信息，那么当传入`80`时将返回这条信息之前的所有信息 |
+| showtag     | 是否展示标签     | true       | /                                                            |
+| showview    | 是否展示访问量   | false      | 启用时会在末尾附上(views:number)                             |
+| usemd       | 是否使用Markdown | true       | 开启后返回未被tg解析过的md语法                               |
 
 > 众所周知，`0`是第一个数字，所以cid传入`0`时表示获取第1个频道
 >
@@ -158,6 +159,28 @@ timeline:
 
 {% endtimeline %}
 ```
+
+{% endgrid %}
+
+<!-- tab 使用Markdown -->
+{% grid %}
+<!-- cell -->
+
+{% timeline user:Thun888sDraftArticles api:https://get-tg-channel-api.hzchu.top/?cid=1&tag=Test&usemd=true type:memos %}
+
+{% endtimeline %}
+
+<!-- cell -->
+
+**代码：**
+
+```markdown
+{% timeline user:Thun888sDraftArticles api:https://get-tg-channel-api.hzchu.top/?cid=1&tag=Test&usemd=true type:memos %}
+
+{% endtimeline %}
+```
+
+在默认情况下，tg会解析md语法，对于不支持的语法会转义，从而导致前端无法正常解析md语法，在使用该参数后程序会将解析后的文本还原为正常md语法并返回。默认开启
 
 {% endgrid %}
 

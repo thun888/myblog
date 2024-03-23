@@ -16,5 +16,8 @@ updated: 2024-03-09 14:36:00
 <!-- tab 服务变更 -->
 {% timeline user:thun888sthinks api:https://get-tg-channel-api.hzchu.top/?cid=2&tag=ServiceChange type:memos %}
 {% endtimeline %}
+<!-- tab 挖坑 -->
+{% timeline user:thun888sthinks api:https://get-tg-channel-api.hzchu.top/?cid=2&tag=ServiceFuture type:memos %}
+{% endtimeline %}
 
 {% endtabs %}
