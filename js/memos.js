@@ -603,7 +603,7 @@ var memosData = {
     let results;
     if(search && search != "" && search != null ){
       results = await Promise.allSettled(memoList.map(u => 
-        withTimeout(2000, fetch(`${u.link}/api/v1/memo?creatorId=${u.creatorId}&content=${search}&rowStatus=NORMAL&limit=${limit}`)
+        withTimeout(2000, fetch(`${u.link}/api/v1/memo?showtag=false&creatorId=${u.creatorId}&content=${search}&rowStatus=NORMAL&limit=${limit}`)
           .then(response => {
             if (!response.ok) {
               throw new Error(res.statusText); 
@@ -613,7 +613,7 @@ var memosData = {
       )));
     }else{
       results = await Promise.allSettled(memoList.map(u => 
-        withTimeout(2000, fetch(`${u.link}/api/v1/memo?creatorId=${u.creatorId}&rowStatus=NORMAL&limit=${limit}`)
+        withTimeout(2000, fetch(`${u.link}/api/v1/memo?showtag=false&creatorId=${u.creatorId}&rowStatus=NORMAL&limit=${limit}`)
           .then(response => {
             if (!response.ok) {
               throw new Error(res.statusText); 
@@ -701,9 +701,9 @@ var memosData = {
       };
       let userMemoUrl;
       if(tag && (random == null || random == "" )){
-        userMemoUrl = `${link}/api/v1/memo?creatorId=${id}&tag=${tag}&rowStatus=NORMAL&limit=50`;
+        userMemoUrl = `${link}/api/v1/memo?showtag=false&creatorId=${id}&tag=${tag}&rowStatus=NORMAL&limit=50`;
       }else if(search){
-        userMemoUrl = `${link}/api/v1/memo?creatorId=${id}&content=${search}&rowStatus=NORMAL&limit=${limit}`;
+        userMemoUrl = `${link}/api/v1/memo?showtag=false&creatorId=${id}&content=${search}&rowStatus=NORMAL&limit=${limit}`;
       }else if(mode == "NOPUBLIC"){
         userMemoUrl = `${link}/api/v1/memo`;
       }else if(random){
@@ -713,7 +713,7 @@ var memosData = {
           userMemoUrl = `${link}/api/v1/memo?&limit=1&offset=${random}`;
         }
       }else{
-        userMemoUrl = `${link}/api/v1/memo?creatorId=${id}&rowStatus=NORMAL&limit=50`;
+        userMemoUrl = `${link}/api/v1/memo?showtag=false&creatorId=${id}&rowStatus=NORMAL&limit=50`;
       }
   
       if (link == memosPath) {

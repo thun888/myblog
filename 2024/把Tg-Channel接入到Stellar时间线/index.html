@@ -251,6 +251,12 @@
 <td>false</td>
 <td>启用时会在末尾附上(views:number)</td>
 </tr>
+<tr>
+<td>usemd</td>
+<td>是否使用Markdown</td>
+<td>true</td>
+<td>开启后返回未被tg解析过的md语法</td>
+</tr>
 </tbody></table>
 <blockquote>
 <p>众所周知，<code>0</code>是第一个数字，所以cid传入<code>0</code>时表示获取第1个频道</p>
@@ -265,7 +271,7 @@
     </div>
     </div></div><div class="tab-pane" id="tab_7-2"><figure class="highlight yaml"><figcaption><span>/source/_data/widgets.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">timeline:</span></span><br><span class="line">  <span class="attr">layout:</span> <span class="string">timeline</span></span><br><span class="line">  <span class="attr">title:</span> <span class="string">近期动态</span></span><br><span class="line">  <span class="attr">api:</span> <span class="string">https://get-tg-channel-api.hzchu.top/?tag=DTA&amp;limit=3</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">memos</span></span><br><span class="line">  <span class="attr">hide:</span> <span class="string">user,footer</span>	</span><br></pre></td></tr></table></figure></div></div></div>
 
-<h2 id="其它用法"><a href="#其它用法" class="headerlink" title="其它用法"></a>其它用法</h2><div class="tag-plugin tabs" align="center"id="tab_8"><div class="nav-tabs"><div class="tab active"><a href="#tab_8-1">获取其它频道</a></div><div class="tab"><a href="#tab_8-2">指定获取某条信息</a></div><div class="tab"><a href="#tab_8-3">展示访问量</a></div></div><div class="tab-content"><div class="tab-pane active" id="tab_8-1"><div class="tag-plugin grid"  style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));"><div class="cell" style="">
+<h2 id="其它用法"><a href="#其它用法" class="headerlink" title="其它用法"></a>其它用法</h2><div class="tag-plugin tabs" align="center"id="tab_8"><div class="nav-tabs"><div class="tab active"><a href="#tab_8-1">获取其它频道</a></div><div class="tab"><a href="#tab_8-2">指定获取某条信息</a></div><div class="tab"><a href="#tab_8-3">展示访问量</a></div><div class="tab"><a href="#tab_8-4">使用Markdown</a></div></div><div class="tab-content"><div class="tab-pane active" id="tab_8-1"><div class="tag-plugin grid"  style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));"><div class="cell" style="">
     <div class="tag-plugin timeline stellar-memos-api" api="https://get-tg-channel-api.hzchu.top/?cid=1&tag=DTA&limit=3" user="Thun888sDraftArticles"></div>
     </div>
     <div class="cell" style="">
@@ -282,6 +288,12 @@
     </div>
     <div class="cell" style="">
     <p><strong>代码：</strong></p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% timeline user:Thun888sDraftArticles api:https://get-tg-channel-api.hzchu.top/?cid=1&amp;tag=Test&amp;showview=true type:memos %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% endtimeline %&#125;</span><br></pre></td></tr></table></figure>
+    </div>
+    </div></div><div class="tab-pane" id="tab_8-4"><div class="tag-plugin grid"  style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));"><div class="cell" style="">
+    <div class="tag-plugin timeline stellar-memos-api" api="https://get-tg-channel-api.hzchu.top/?cid=1&tag=Test&usemd=true" user="Thun888sDraftArticles"></div>
+    </div>
+    <div class="cell" style="">
+    <p><strong>代码：</strong></p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% timeline user:Thun888sDraftArticles api:https://get-tg-channel-api.hzchu.top/?cid=1&amp;tag=Test&amp;usemd=true type:memos %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% endtimeline %&#125;</span><br></pre></td></tr></table></figure><p>在默认情况下，tg会解析md语法，对于不支持的语法会转义，从而导致前端无法正常解析md语法，在使用该参数后程序会将解析后的文本还原为正常md语法并返回。默认开启</p>
     </div>
     </div></div></div></div>
 <p>相关配置：</p>

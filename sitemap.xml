@@ -20,6 +20,42 @@
   </url>
   
   <url>
+    <loc>https://blog.hzchu.top/friends/</loc>
+    
+    <lastmod>2024-03-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/img/dynmap_markers/marker_DIM-1.json</loc>
+    
+    <lastmod>2024-03-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/img/dynmap_markers/marker_world.json</loc>
+    
+    <lastmod>2024-03-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/img/dynmap_markers/marker_DIM1.json</loc>
+    
+    <lastmod>2024-03-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.hzchu.top/about/</loc>
     
     <lastmod>2024-03-23</lastmod>
@@ -39,42 +75,6 @@
   
   <url>
     <loc>https://blog.hzchu.top/big/</loc>
-    
-    <lastmod>2024-03-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/friends/</loc>
-    
-    <lastmod>2024-03-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/img/dynmap_markers/marker_DIM-1.json</loc>
-    
-    <lastmod>2024-03-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/img/dynmap_markers/marker_DIM1.json</loc>
-    
-    <lastmod>2024-03-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/img/dynmap_markers/marker_world.json</loc>
     
     <lastmod>2024-03-23</lastmod>
     
@@ -476,14 +476,14 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/python/</loc>
+    <loc>https://blog.hzchu.top/tags/%E7%94%9C%E7%B3%96/</loc>
     <lastmod>2024-03-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/%E7%94%9C%E7%B3%96/</loc>
+    <loc>https://blog.hzchu.top/tags/python/</loc>
     <lastmod>2024-03-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -525,6 +525,13 @@
   </url>
   
   <url>
+    <loc>https://blog.hzchu.top/tags/MC/</loc>
+    <lastmod>2024-03-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.hzchu.top/tags/Stellar/</loc>
     <lastmod>2024-03-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -539,13 +546,6 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/MC/</loc>
-    <lastmod>2024-03-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.hzchu.top/tags/linux/</loc>
     <lastmod>2024-03-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -553,14 +553,14 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/Clouddlare/</loc>
+    <loc>https://blog.hzchu.top/tags/Go/</loc>
     <lastmod>2024-03-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/Go/</loc>
+    <loc>https://blog.hzchu.top/tags/Clouddlare/</loc>
     <lastmod>2024-03-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
