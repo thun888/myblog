@@ -116,7 +116,7 @@ function tianliGPT(usePjax) {
       if (currentPath === "/friends/") {
         return "欢迎各位申请友链~";
       }
-      disablePaths = ["/big/"];
+      disablePaths = ["/big/", "/bb/"];
       if (disablePaths.includes(currentPath)) {
         document.querySelectorAll('.post-TianliGPT').forEach(el => {
           el.style.display = 'none';

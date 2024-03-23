@@ -66,18 +66,6 @@ docker exec -it ttnode /bin/bash
 
 如果它显示未配置网络的话就继续看吧
 
-<script>
-new Artalk({
-el: '#ArtalkComments', // 元素选择
-placeholder: '来啊，快活啊 ( ゜- ゜)', // 占位符
-noComment: '快来成为第一个评论的人吧\~', // 无评论时显示
-serverUrl: 'https://artalk.hzchu.top/',
-readMore: { // 阅读更多配置
-pageSize: 15, // 每次请求获取评论数
-autoLoad: true // 滚动到底部自动加载
-}
-});
-</script>
 
 输入
 

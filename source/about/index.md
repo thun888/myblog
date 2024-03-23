@@ -31,21 +31,23 @@ rightbar: [timeline]
 
 广东湛江某学校的一名高二学生，成绩还行吧。
 
-爱好挺广，~~就是不咋爱运动~~{% emoji blobcat blobcatyandere %}。
+爱好挺广，~~就是不咋爱运动~~，运动还是要有的，免得突然暴毙{% emoji blobcat blobcatyandere %}。
 
 平时大部分时间在学校，有事情回家才会处理：<img style="display: inline-block;" src="https://onlinedisplay-api.hzchu.top/get/badge" alt="badge">
 
 {% quot 目前参与/开发项目 %}
 
-{% hashtag Mirouter-ui https://github.com/Mirouterui/mirouter-ui/ color:red %}
+{% hashtag Mirouter-ui https://github.com/Mirouterui/mirouter-ui/ color:yellow %}
 
-{% hashtag 峰间云海MC服务器 https://blog.hzchu.top/wiki/fcloud/ color:yellow %}
+{% hashtag 峰间云海MC服务器 https://blog.hzchu.top/wiki/fcloud/ color:red %}
 
 {% quot 捐赠 icon:hashtag %}
 
 |Alipay|Wechat|
 |-|-|
 |<img src="https://onep.hzchu.top/mount/pic/2023/01/25/63d0a914495c1.webp" style="zoom:60%;" />|<img src="https://onep.hzchu.top/mount/pic/2024/03/08/65eaa4508662b.webp" style="zoom:40%;" />|
+
+或者，你可以使用[爱发电](https://afdian.net/a/thun888){% emoji blobcat blobcatmelt %}
 
 {% quot 未来可能发布的稿子/Todo %}
 

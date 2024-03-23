@@ -1,7 +1,7 @@
 timeline:
   layout: timeline
   title: 近期动态
-  api: https://notes.hzchu.top/api/v1/memo?creatorId=101&limit=10
+  api: https://get-tg-channel-api.hzchu.top/?tag=bb&showtag=false&limit=15
   type: memos
   hide: user,footer
 
