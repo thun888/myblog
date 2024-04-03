@@ -274,10 +274,10 @@
 </blockquote>
 <h5 id="Rclone"><a href="#Rclone" class="headerlink" title="Rclone"></a>Rclone</h5><p>rclone需要持久化运行，我这里建议的是Supervisor或系统自带的systemd，windows使用nssm</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rclone mount one:/share/mount/ /www/wwwroot/pic.hzchu.top/storage/app/mount/ --copy-links --no-gzip-encoding --no-check-certificate --allow-other --allow-non-empty --<span class="built_in">umask</span> 000 --vfs-cache-mode full --attr-timeout 15m --vfs-cache-max-age 240h --vfs-cache-max-size 1G --buffer-size 100M</span><br></pre></td></tr></table></figure>
-<div class="tag-plugin tabs" align="center"id="tab_1"><div class="nav-tabs"><div class="tab active"><a href="#tab_1-1">supervisor</a></div><div class="tab"><a href="#tab_1-2">systemd</a></div></div><div class="tab-content"><div class="tab-pane active" id="tab_1-1"><p>以宝塔面板为例</p>
+<div class="tag-plugin tabs" align="center"id="tab_3"><div class="nav-tabs"><div class="tab active"><a href="#tab_3-1">supervisor</a></div><div class="tab"><a href="#tab_3-2">systemd</a></div></div><div class="tab-content"><div class="tab-pane active" id="tab_3-1"><p>以宝塔面板为例</p>
 <p>打开<code>软件商店</code>，搜索并安装<code>进程守护管理器</code>：</p>
 <p>点击<code>添加守护进程</code>，如图所示</p>
-<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/07/31/64c7c05cc5077.webp"></p></div><div class="tab-pane" id="tab_1-2"><p>运行：</p>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/07/31/64c7c05cc5077.webp"></p></div><div class="tab-pane" id="tab_3-2"><p>运行：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /etc/systemd/system/rclone-one.service</span><br></pre></td></tr></table></figure>
 
 <p>​	写入：</p>
@@ -303,21 +303,21 @@
 <p>backupurl 为“图床服务器“的对外访问地址</p>
 <p>mainurl 为“主服务器“的对外访问地址</p>
 </blockquote>
-<div class="tag-plugin tabs" align="center"id="tab_2"><div class="nav-tabs"><div class="tab active"><a href="#tab_2-1">PHP版本</a></div><div class="tab"><a href="#tab_2-2">Python版本</a></div><div class="tab"><a href="#tab_2-3">解析</a></div></div><div class="tab-content"><div class="tab-pane active" id="tab_2-1"><blockquote>
+<div class="tag-plugin tabs" align="center"id="tab_4"><div class="nav-tabs"><div class="tab active"><a href="#tab_4-1">PHP版本</a></div><div class="tab"><a href="#tab_4-2">Python版本</a></div><div class="tab"><a href="#tab_4-3">解析</a></div></div><div class="tab-content"><div class="tab-pane active" id="tab_4-1"><blockquote>
 <p>需要修改redis连接地址，$user_token和$mainurl</p>
 </blockquote>
 <p>Code:</p>
 <script src="https://hightlight-code-api.hzchu.top/api/v1/generate?url=https://raw.githubusercontent.com/thun888/MNSLXOD/main/jump/php/index.php&lang=php"></script>
 
 <p>伪静态配置:</p>
-<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">location</span> / &#123;</span><br><span class="line">    <span class="attribute">try_files</span> <span class="variable">$uri</span> <span class="variable">$uri</span>/ /index.php?<span class="variable">$args</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="tab_2-2"><p>Code:</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">location</span> / &#123;</span><br><span class="line">    <span class="attribute">try_files</span> <span class="variable">$uri</span> <span class="variable">$uri</span>/ /index.php?<span class="variable">$args</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="tab_4-2"><p>Code:</p>
 <blockquote>
 <p>需要修改redis连接地址，user_token和mainurl</p>
 </blockquote>
 <p>安装依赖：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install flask flask_limiter hypercorn flask_cors</span><br></pre></td></tr></table></figure>
 
-<script src="https://hightlight-code-api.hzchu.top/api/v1/generate?url=https://raw.githubusercontent.com/thun888/MNSLXOD/main/jump/py/main.py&lang=python"></script></div><div class="tab-pane" id="tab_2-3"><p>运行逻辑：</p>
+<script src="https://hightlight-code-api.hzchu.top/api/v1/generate?url=https://raw.githubusercontent.com/thun888/MNSLXOD/main/jump/py/main.py&lang=python"></script></div><div class="tab-pane" id="tab_4-3"><p>运行逻辑：</p>
 <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/08/02/64ca059284ed4.webp" alt="image-20230802152803639"></p>
 <pre class="mermaid">flowchart TD
 id0([访问]) --> id1["判断路径是否为'/_api/update'"]
@@ -339,7 +339,7 @@ id3 ---> |值均不存在| id6["将'主服务器'地址与访问路径拼接后�
 <h3 id="节点"><a href="#节点" class="headerlink" title="节点"></a>节点</h3><p>考虑到php部署起来麻烦，这里用python解决一切</p>
 <div class="tag-plugin colorful note" child="tabs"><div class="title"><strong>后期吐槽</strong></div><div class="body"><p>在arm设备上配环境配半天，一气之下用go重写了主要逻辑，编译成二进制文件到处丢太爽了</p></div></div>
 
-<div class="tag-plugin tabs" align="center"id="tab_3"><div class="nav-tabs"><div class="tab active"><a href="#tab_3-1">Python</a></div><div class="tab"><a href="#tab_3-2">解析</a></div></div><div class="tab-content"><div class="tab-pane active" id="tab_3-1"><p>下载数据库到程序同目录：<a target="_blank" rel="noopener" href="https://raw.hzchu.top/thun888/MNSLXOD/main/node/data.db">[点击下载]</a></p>
+<div class="tag-plugin tabs" align="center"id="tab_5"><div class="nav-tabs"><div class="tab active"><a href="#tab_5-1">Python</a></div><div class="tab"><a href="#tab_5-2">解析</a></div></div><div class="tab-content"><div class="tab-pane active" id="tab_5-1"><p>下载数据库到程序同目录：<a target="_blank" rel="noopener" href="https://raw.hzchu.top/thun888/MNSLXOD/main/node/data.db">[点击下载]</a></p>
 <p>安装依赖：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install flask flask_limiter hypercorn flask_cors</span><br></pre></td></tr></table></figure>
 
@@ -351,7 +351,7 @@ id3 ---> |值均不存在| id6["将'主服务器'地址与访问路径拼接后�
 <p>实际部署中可能需要自行配置ssl证书以使开启了https的网站可以正常访问</p>
 <p>如果外部不套反向代理建议自定义10000-65535的端口</p>
 <p>进程同样需要持久化，可以参考rclone部分</p>
-</blockquote></div><div class="tab-pane" id="tab_3-2"><p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/08/02/64ca3aef2cf43.webp"></p>
+</blockquote></div><div class="tab-pane" id="tab_5-2"><p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/08/02/64ca3aef2cf43.webp"></p>
 <pre class="mermaid">flowchart TD
     id0([访问]) --> id1["判断路径是否为'/_api/...'"]
     id1 --> |是| id2["读取相关数据返回"]
@@ -362,16 +362,16 @@ id3 ---> |值均不存在| id6["将'主服务器'地址与访问路径拼接后�
     id8 --> |"≦5GB"| id10["不动作"]
     id6 --> id11(["上报服务器消息"])</pre></div></div></div>
 
-<h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h3><div class="tag-plugin tabs" align="center"id="tab_4"><div class="nav-tabs"><div class="tab active"><a href="#tab_4-1">直接访问OneDrive目录程序</a></div><div class="tab"><a href="#tab_4-2">正常访问效果</a></div><div class="tab"><a href="#tab_4-3">直接访问家宽节点</a></div><div class="tab"><a href="#tab_4-4">搭配Nginx缓存</a></div></div><div class="tab-content"><div class="tab-pane active" id="tab_4-1"><p>低并发</p>
+<h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h3><div class="tag-plugin tabs" align="center"id="tab_6"><div class="nav-tabs"><div class="tab active"><a href="#tab_6-1">直接访问OneDrive目录程序</a></div><div class="tab"><a href="#tab_6-2">正常访问效果</a></div><div class="tab"><a href="#tab_6-3">直接访问家宽节点</a></div><div class="tab"><a href="#tab_6-4">搭配Nginx缓存</a></div></div><div class="tab-content"><div class="tab-pane active" id="tab_6-1"><p>低并发</p>
 <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/08/01/64c85bab42978.webp" alt="1690852265630.webp"></p>
 <p>高并发</p>
-<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/08/01/64c85bceda8cc.webp" alt="1690852301797.webp"></p></div><div class="tab-pane" id="tab_4-2"><p>低并发</p>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/08/01/64c85bceda8cc.webp" alt="1690852301797.webp"></p></div><div class="tab-pane" id="tab_6-2"><p>低并发</p>
 <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/08/01/64c85ada80fe5.webp"></p>
 <p>高并发</p>
-<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/08/02/64ca4417e3b0d.webp"></p></div><div class="tab-pane" id="tab_4-3"><p>低并发</p>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/08/02/64ca4417e3b0d.webp"></p></div><div class="tab-pane" id="tab_6-3"><p>低并发</p>
 <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/07/31/64c7c747d041a.webp"></p>
 <p>高并发</p>
-<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/08/02/64ca523d745c7.webp"></p></div><div class="tab-pane" id="tab_4-4"><p>高并发</p>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/08/02/64ca523d745c7.webp"></p></div><div class="tab-pane" id="tab_6-4"><p>高并发</p>
 <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/01/31/65b9a7ebb16cc.webp"></p></div></div></div>
 
 <h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>对应这个项目，我感觉就是：<code>易上手，易扩展</code>同时可以薅到各大厂商的羊毛（怎么薅就看各位的了），既可以把一些不稳定的服务利用起来，又不用担心出问题时全部拉闸，并且背靠微软不用担心无良厂商跑路数据丢失，当然，在目前只能算的上是一个高可用性的小型cdn，比起pcdn还有不少不足，但个人使用足以。</p>
@@ -705,7 +705,7 @@ id3 ---> |值均不存在| id6["将'主服务器'地址与访问路径拼接后�
 
 <script defer>
   window.addEventListener('DOMContentLoaded', (event) => {
-    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":null},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"}}`));
+    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":null},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"},"artalk":{"js":"/js/services/artalk.js"}}`));
     for (let id of Object.keys(ctx.services)) {
       const js = ctx.services[id].js;
       if (id == 'siteinfo') {

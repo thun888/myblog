@@ -211,8 +211,8 @@
 <td>&#x2F;</td>
 </tr>
 <tr>
-<td>startbefore</td>
-<td>获取之前信息</td>
+<td>offset</td>
+<td>获取信息偏移量</td>
 <td>&#x2F;</td>
 <td>如果有一条信息<code>id</code>为<code>80</code>的信息，那么当传入<code>80</code>时将返回这条信息之前的所有信息</td>
 </tr>
@@ -236,7 +236,7 @@
 </tr>
 </tbody></table>
 <blockquote>
-<p>众所周知，<code>0</code>是第一个数字，所以cid传入<code>0</code>时表示获取第1个频道</p>
+<p>众所周知，<code>0</code>是第一个自然数，所以cid传入<code>0</code>时表示获取第1个频道</p>
 <p> tag为空时默认返回#DefaultTag的数据，可在代码中自行更改</p>
 <p><code>tag</code>原版是<code>#SFCN</code>,一开始没想明白是什么意思，现在明白了：Suitable For China，可以有别的玩法o(￣▽￣)ｄ</p>
 </blockquote>
@@ -603,7 +603,7 @@
 
 <script defer>
   window.addEventListener('DOMContentLoaded', (event) => {
-    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":null},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"}}`));
+    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":null},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"},"artalk":{"js":"/js/services/artalk.js"}}`));
     for (let id of Object.keys(ctx.services)) {
       const js = ctx.services[id].js;
       if (id == 'siteinfo') {
