@@ -6,7 +6,7 @@ tags: Stellar
 cover: https://onep.hzchu.top/mount/pic/2024/02/25/65dadc3ca6e74.webp
 banner: https://onep.hzchu.top/mount/pic/2024/02/25/65dadc3ca6e74.webp
 description: 使用Cloudflare Worker，获取Tg频道内容，并接入到Stellar时间线
-
+categories: 技术分享
 ---
 
 ## 前言

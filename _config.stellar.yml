@@ -133,7 +133,8 @@ article:
   auto_excerpt: 150
   # 分类颜色
   category_color:
-    '新闻稿': '#DA0F47'
+    '日常生活': '#bf9936'
+    '技术分享': '#2196f3'
   # 文章许可协议
   license: '本文采用 [署名-非商业性使用-相同方式共享 4.0 国际](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。'
   # 分享

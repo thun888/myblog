@@ -3,7 +3,7 @@ title: 哔哔
 date: 2021-07-10 19:06:52
 description: 闲来无事，哔哔两句
 layout: post
-
+comments: false
 ---
 
 <div id="memos" style="display: none;"></div>

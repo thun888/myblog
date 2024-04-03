@@ -2,10 +2,11 @@
 title: 用Gemini，实现AI摘要
 date: 2024-03-09 19:31:16
 updated: 2024-03-09 19:31:16
-tags: [Blog,Stellar]
+tags: [Blog,Stellar,CFW]
 cover: https://dolphinsbukets.s3.bitiful.net/article-cover/cover-4.png?fmt=webp
 banner: https://dolphinsbukets.s3.bitiful.net/article-cover/cover-4.png?fmt=webp&q=50
 description: 使用Cloudflare Worker，借助Gemini，平替TianliGPT
+categories: 技术分享
 ---
 
 ## 前言
