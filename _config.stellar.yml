@@ -45,7 +45,7 @@ site_tree:
   # 主页配置
   home:
     leftbar: welcome, recent, travellingslink
-    rightbar: 
+    rightbar: new_comment
   # 博客列表页配置
   index_blog:
     base_dir: blog # 只影响自动生成的页面路径
@@ -326,3 +326,34 @@ mermaid:
 #   ghapi: https://cfproxy.hzchu.top/https://api.github.com
 #   ghraw: https://raw.hzchu.top
 #   gist: https://cfproxy.hzchu.top/https://gist.github.com
+
+
+# 内置服务，按需加载（页面内用到了就会加载，没有用到就不会加载）
+data_services:
+  # 外部 md 渲染
+  mdrender:
+    js: /js/services/mdrender.js
+  # 数据填充类
+  siteinfo:
+    js: /js/services/siteinfo.js
+    # 设置 api 可以自动提取网页标题、图标，服务部署方法：https://github.com/xaoxuu/site-info-api/
+    # 接口测试通过后，把按钮的 href 部分替换成 {href} 之后填写到下方，例如：https://api.vlts.cc/site_info/v1?url={href}
+    api: 
+  ghinfo:
+    js: /js/services/ghinfo.js
+  # 网格布局类
+  sites:
+    js: /js/services/sites.js
+  friends:
+    js: /js/services/friends.js
+  # 列表布局类
+  timeline:
+    js: /js/services/timeline.js
+  fcircle:
+    js: /js/services/fcircle.js
+  weibo:
+    js: /js/services/weibo.js
+  memos:
+    js: /js/services/memos.js
+  artalk:
+    js: /js/services/artalk.js

@@ -45,12 +45,12 @@ const baseproxyurl="https://get-tg-channel-api.hzchu.top/?proxy=" //将中间域
 | mid         | 信息id           | /          | 指定后只返回该信息，信息id可在发送后查看                     |
 | **tag**     | 标签名           | DefaultTag | 筛选传入的标签返回                                           |
 | limit       | 获取条数         | /          | /                                                            |
-| startbefore | 获取之前信息     | /          | 如果有一条信息`id`为`80`的信息，那么当传入`80`时将返回这条信息之前的所有信息 |
+| offset | 获取信息偏移量     | /          | 如果有一条信息`id`为`80`的信息，那么当传入`80`时将返回这条信息之前的所有信息 |
 | showtag     | 是否展示标签     | true       | /                                                            |
 | showview    | 是否展示访问量   | false      | 启用时会在末尾附上(views:number)                             |
 | usemd       | 是否使用Markdown | true       | 开启后返回未被tg解析过的md语法                               |
 
-> 众所周知，`0`是第一个数字，所以cid传入`0`时表示获取第1个频道
+> 众所周知，`0`是第一个自然数，所以cid传入`0`时表示获取第1个频道
 >
 >  tag为空时默认返回#DefaultTag的数据，可在代码中自行更改
 >
