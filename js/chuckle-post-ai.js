@@ -17,7 +17,8 @@ function ChucklePostAI(AI_option) {
     if (box) {
       box.parentElement.removeChild(box);
     }
-    const currentURL = window.location.href;
+    const currentPath = window.location.pathname;
+    const currentURL = "https://blog.hzchu.top" + currentPath;
     // 排除页面
     if(AI_option.eliminate && AI_option.eliminate.length && AI_option.eliminate.some(item => currentURL.includes(item))){
       console.log("Post-Summary-AI 已排除当前页面(黑名单)");
@@ -90,7 +91,6 @@ function ChucklePostAI(AI_option) {
     let completeGenerate = false;
     let controller = new AbortController();//控制fetch
     let signal = controller.signal;
-    let visitorId = ""; // 标识访客ID
     let summaryId = ""; // 记录当前摘要ID
     const summary_toggle = AI_option.summary_toggle ?? true;
     const summary_speech = AI_option.summary_speech ?? true;
@@ -283,7 +283,7 @@ function ChucklePostAI(AI_option) {
         data = JSON.parse(sessionStorage.getItem('recommendList'));
       }else{
         try {
-          response = await fetch(`https://summary.tianli0.top/recommends?url=${encodeURIComponent(window.location.href)}&author=${AI_option.rec_method ? AI_option.rec_method : 'all'}`, options);
+          response = await fetch(`https://dolgpt.hzchu.top/recommends?url=${encodeURIComponent(window.location.href)}&author=${AI_option.rec_method ? AI_option.rec_method : 'all'}`, options);
           completeGenerate = true;
           if (response.status === 429) {
             startAI('请求过于频繁，请稍后再请求AI。');
@@ -335,7 +335,7 @@ function ChucklePostAI(AI_option) {
         data = JSON.parse(sessionStorage.getItem('matrixShuttle'));
       }else{
         try {
-          response = await fetch('https://summary.tianli0.top/websites_used', options);
+          response = await fetch('https://dolgpt.hzchu.top/websites_used', options);
           completeGenerate = true;
           if (response.status === 429) {
             startAI('请求过于频繁，请稍后再请求AI。');
@@ -416,7 +416,7 @@ function ChucklePostAI(AI_option) {
         try {
           ai_speech.style.pointerEvents = "none";
           ai_speech.style.opacity = "0.4";
-          response = await fetch(`https://summary.tianli0.top/audio?${requestParams}`, options);
+          response = await fetch(`https://dolgpt.hzchu.top/audio?${requestParams}`, options);
           if (response.status === 403) {
             console.error("403 refer与key不匹配。");
           } else if (response.status === 500) {
@@ -516,21 +516,7 @@ function ChucklePostAI(AI_option) {
       }else{
         aiIntroduce();
       }
-      // 获取或生成访客ID
-      visitorId = localStorage.getItem('visitorId') || await generateVisitorID();
-    }
-    async function generateVisitorID() {
-      try {
-        const FingerprintJS = await import('https://openfpcdn.io/fingerprintjs/v4');
-        const fp = await FingerprintJS.default.load();
-        const result = await fp.get();
-        const visitorId = result.visitorId;
-        localStorage.setItem('visitorId', visitorId);
-        return visitorId;
-      } catch (error) {
-        console.error("生成ID失败");
-        return null;
-      }
+
     }
     //获取某个元素内的所有纯文本，并按顺序拼接返回
     function getText(element) {
@@ -597,7 +583,7 @@ function ChucklePostAI(AI_option) {
       if (i) {
         const totalLength = AI_option.total_length || 1000;
         const ratioString = AI_option.ratio_string || "5:3:2";
-        content = `文章的各级标题：${extractHeadings(element)}。文章内容的截取：${extractString(getText(element), totalLength, ratioString)}`;
+        content = `文章标题：${post_title}。文章的各级标题：${extractHeadings(element)}。文章内容的截取：${extractString(getText(element), totalLength, ratioString)}`;
       } else {
         content = `${getText(element)}`;
       }
@@ -620,7 +606,7 @@ function ChucklePostAI(AI_option) {
       }
       if (i) {
         try {
-          response = await fetch('https://summary.tianli0.top/', {
+          response = await fetch('https://dolgpt.hzchu.top/', {
             signal: signal,
             method: "POST",
             headers: {
@@ -631,8 +617,7 @@ function ChucklePostAI(AI_option) {
               content: content,
               key: tlKey,
               title: post_title,
-              url: window.location.href,
-              user_openid: visitorId
+              url: currentURL,
             })
           });
           completeGenerate = true;
@@ -784,27 +769,6 @@ function ChucklePostAI(AI_option) {
       document.head.appendChild(styleElement);
     }
 
-    // 请求个性化推荐
-    async function personalizedRecommend(){
-      completeGenerate = false;
-      controller = new AbortController();
-      signal = controller.signal;
-      const options = {
-        signal,
-        method: 'GET',
-        headers: {'content-type': 'application/x-www-form-urlencoded'},
-      };
-      try{
-        const response = await fetch(`https://summary.tianli0.top/personalized_recommends?openid=${visitorId}`, options);
-        completeGenerate = true;
-        const data = await response.json();
-        return data;
-      }catch{
-        startAI(`${interface.name}获取个性化推荐出错了，请稍后再试。`);
-        completeGenerate = true;
-        return null;
-      }
-    }
 
     ai_init();
   }

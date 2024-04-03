@@ -605,7 +605,17 @@
       })
     }
   });
-</script><script>
+</script>
+  <script defer src="/js/chuckle-post-ai.js"></script>
+  <script defer>
+    window.addEventListener('DOMContentLoaded', (event) => {
+      new ChucklePostAI(Object.assign({
+        el: 'article.content',
+        css: `/css/_plugins/tianli_gpt`
+      }, JSON.parse(`{"enable":true,"js":"/js/chuckle-post-ai.js","field":"post","key":"5Q5mpqRK5DkwT1X9Gi5e","total_length":3500,"typewriter":true,"summary_directly":true,"rec_method":"all","hide_shuttle":true,"summary_toggle":false,"interface":{"name":"AI摘要","introduce":"我是文章辅助AI: Gemini，点击下方的按钮，让我生成本文简介、推荐相关文章等。","version":"Gemini","button":["介绍自己","推荐文章","生成摘要","矩阵穿梭"]}}`)))
+    });
+  </script>
+<script>
   document.addEventListener('DOMContentLoaded', function () {
     window.codeElements = document.querySelectorAll('.code');
     if (window.codeElements.length > 0) {
