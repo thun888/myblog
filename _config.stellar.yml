@@ -1,9 +1,8 @@
 ######## Sidebar ########
-
 logo:
-  avatar: '[config.avatar](/about/)' # you can set avatar link in _config.yml or '[https://xxx.png](/about/)'
-  title: '[config.title](/)' # you can set html tag like: '[<img no-lazy height="32px" src="xxx"/>](/)'
-  subtitle: "夏日当空，心如深渊 | Thun888's Blog" # '文字1 | 文字2' (鼠标放上去会切换到文字2)
+  avatar: '[{config.avatar}](/about/)' # you can set avatar link in _config.yml or '[https://xxx.png](/about/)'
+  title: '[{config.title}](/)' # you can set html tag like: '[<img no-lazy height="32px" src="xxx"/>](/)'
+  subtitle: '{config.subtitle}' # '文字1 | 文字2' (鼠标放上去会切换到文字2)
 
 menubar:
   columns: 4 # 一行多少个
@@ -190,7 +189,7 @@ footer:
        - '[图床](https://pic.hzchu.top)'
 
   content: | # 支持 Markdown 格式
-    本站由 [@thun888](/about/) 使用 [Stellar](https://github.com/xaoxuu/hexo-theme-stellar) 主题创建。
+    本站由 [{author.name}](/) 使用 [{theme.name} {theme.version}]({theme.tree}) 主题创建。
     本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。
     <span id="timeDate">载入天数...</span><span>&</span><span id="times">载入时分秒...</span>
     [访问数据统计](http://seeyou.hzchu.top/share/4C7u3VFqbFkS7VBj/blog.hzchu.top)
@@ -214,35 +213,85 @@ tag_plugins:
     layout: flow # grid / flow
     size: mix # s / m / l / xl / mix
     ratio: square # origin / square
+  # {% emoji %}
+  emoji:
+    default: https://jsd.hzchu.top/gh/cdn-x/emoji/qq/{name}.gif
+    twemoji: https://jsd.hzchu.top/gh/twitter/twemoji/assets/svg/{name}.svg
+    qq: https://jsd.hzchu.top/gh/cdn-x/emoji/qq/{name}.gif
+    aru: https://jsd.hzchu.top/gh/cdn-x/emoji/aru-l/{name}.gif
+    tieba: https://jsd.hzchu.top/gh/cdn-x/emoji/tieba/{name}.png
+    blobcat: https://jsd.hzchu.top/gh/norevi/waline-blobcatemojis@1.0/blobs/{name}.png
 
 ######## JS Plugins ########
 plugins:
-  ## optional plugins ##
+
+  # preload
+  preload:
+    enable: true
+    service: flying_pages # flying_pages
+    flying_pages: https://jsd.onmicrosoft.cn/gh/gijo-varghese/flying-pages/flying-pages.min.js
+
+  # lazyload
+  # https://www.npmjs.com/package/vanilla-lazyload
+  lazyload:
+    enable: true # [hexo clean && hexo s] is required after changing this value.
+    js: https://jsd.onmicrosoft.cn/npm/vanilla-lazyload@17.8.4/dist/lazyload.min.js
+    transition: fade # blur, fade
+
+  # https://fancyapps.com/docs/ui/fancybox/
+  # available for {% image xxx %}
   fancybox:
     enable: true
+    loader: /js/plugins/fancybox-loader.js
+    js: https://cdn.staticfile.net/fancyapps-ui/5.0.22/fancybox/fancybox.umd.min.js
+    css: https://cdn.staticfile.net/fancyapps-ui/5.0.22/fancybox/fancybox.min.css
+    # 让 md 语法图片支持放大可以这样写: .md-text img:not([class]), .md-text .image img
     # 可以处理评论区的图片（不支持 iframe 类评论系统）例如：
-    # 使用twikoo评论可以写: .tk-content img:not([class*="emo"])
-    # 使用waline评论可以写: #waline_container .vcontent img
+    # 使用 twikoo 评论可以写: .tk-content img:not([class*="emo"])
+    # 使用 waline 评论可以写: #waline_container .vcontent img
     selector: article.md-text.content img:not([class*='icon']) # 多个选择器用英文逗号隔开
-  mermaid:
-    enable: # true # 可以在特定文章的 front-matter 中设置 mermaid: true 来开启，也可以在这里设置全局开启
-    style_optimization: false # use custom style in stellar
-    # js: https://jsd.onmicrosoft.cn/npm/mermaid@9.0.0/dist/mermaid.min.js
-    js: https://jsd.onmicrosoft.cn/npm/mermaid@v9/dist/mermaid.min.js
-    # Available themes: default | dark | forest | neutral
-    theme: neutral
 
+  # swiper
+  swiper:
+    enable: true
+    css: https://jsd.onmicrosoft.cn/npm/swiper@10.3/swiper-bundle.min.css
+    js: https://jsd.onmicrosoft.cn/npm/swiper@10.3/swiper-bundle.min.js
+
+  # https://scrollrevealjs.org/api/reveal.html
+  scrollreveal:
+    enable: #true
+    js: https://jsd.onmicrosoft.cn/gh/jlmakes/scrollreveal/dist/scrollreveal.min.js
+    distance: 16px
+    duration: 800 # ms
+    interval: 100 # ms
+    scale: 1 # 0.1~1
   
   # AI 摘要
-  # https://github.com/zhheo/Post-Abstract-AI
-  tianli_gpt:
-    enable: true
+  # https://github.com/qxchuckle/Post-Summary-AI
+  tianli_gpt: 
+    enable: #true
+    js: /js/chuckle-post-ai.js
     field: post # all, post, wiki
-    api: 114514 # tianli_gpt key
-    url: /js/tianli_gpt.js
-    limit: 3500 # 设置提交的字数限制，默认为1000字，上限为5000，超过5000字符将被截断，不能为空
-    typingAnimate: true # 打字机动画 
-    
+    key: 5Q5mpqRK5DkwT1X9Gi5e # tianli_gpt key
+    total_length: 3500 # 设置提交的字数限制，默认为1000字，上限为5000，超过5000字符将被截断
+    typewriter: true # 打字机动画 
+    summary_directly: true # 是否直接显示摘要，否则显示 AI 简介
+    rec_method: all # all, web # 文章推荐方式，all：匹配数据库内所有文章进行推荐，web：仅当前站内的文章，默认all
+    hide_shuttle: true # 是否隐藏矩阵穿梭
+    summary_toggle: false
+    interface:
+      name: Gemini
+      introduce: '我是文章辅助AI: Gemini，点击下方的按钮，让我生成本文简介、推荐相关文章等。'
+      version: TianliGPT
+      button: ["介绍自己", "生成摘要"]
+
+  mermaid:
+    enable: # true # 可以在特定文章的 front-matter 中设置 mermaid: true 来开启，也可以在这里设置全局开启
+    style_optimization: true # use custom style in stellar
+    # js: https://unpkg.com/mermaid@9.0.0/dist/mermaid.min.js
+    js: https://jsd.hzchu.top/npm/mermaid@v9/dist/mermaid.min.js
+    # Available themes: default | dark | forest | neutral
+    theme: neutral
 style:
   font-family:
     logo: '"LXGW WenKai Screen",system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
