@@ -269,7 +269,7 @@ plugins:
   # AI 摘要
   # https://github.com/qxchuckle/Post-Summary-AI
   tianli_gpt: 
-    enable: #true
+    enable: true
     js: /js/chuckle-post-ai.js
     field: post # all, post, wiki
     key: 5Q5mpqRK5DkwT1X9Gi5e # tianli_gpt key
@@ -280,10 +280,10 @@ plugins:
     hide_shuttle: true # 是否隐藏矩阵穿梭
     summary_toggle: false
     interface:
-      name: Gemini
+      name: AI摘要
       introduce: '我是文章辅助AI: Gemini，点击下方的按钮，让我生成本文简介、推荐相关文章等。'
-      version: TianliGPT
-      button: ["介绍自己", "生成摘要"]
+      version: Gemini
+      button: ["介绍自己", "推荐文章", "生成摘要", "矩阵穿梭"]
 
   mermaid:
     enable: # true # 可以在特定文章的 front-matter 中设置 mermaid: true 来开启，也可以在这里设置全局开启
@@ -298,8 +298,12 @@ style:
     body: '"LXGW WenKai Screen",system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
     code: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif'
     codeblock: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif'
-  # leftbar:
-  #   background: var(--site-bg)
+  leftbar:
+    # 可以设置：纯色/渐变色/图片作为背景
+    background: var(--leftbar-bg)
+    # background-image: url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.13/image/sidebar-bg1@small.jpg)
+    blur-px: 100px
+    blur-bg: var(--alpha60)
 
 api_host:
   ghapi: https://cfproxy.hzchu.top/https://api.github.com
