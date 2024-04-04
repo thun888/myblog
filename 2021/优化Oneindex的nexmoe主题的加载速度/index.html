@@ -477,8 +477,8 @@
   <script>
   function load_artalk() {
     if (!document.querySelectorAll("#artalk_container")[0]) return;
-    utils.css('https://jsd.onmicrosoft.cn/npm/artalk@2.8.2/dist/Artalk.css');
-    utils.js('https://jsd.onmicrosoft.cn/npm/artalk@2.8.2/dist/Artalk.js', {defer: true}).then(function () {
+    utils.css('https://jsd.hzchu.top/npm/artalk@2.8.2/dist/Artalk.css');
+    utils.js('https://jsd.hzchu.top/npm/artalk@2.8.2/dist/Artalk.js', {defer: true}).then(function () {
       const el = document.getElementById("artalk_container");
       var path = el.getAttribute('comment_id');
       if (!path) {
