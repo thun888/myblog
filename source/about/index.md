@@ -49,12 +49,22 @@ rightbar: [timeline]
 
 或者，你可以使用[爱发电](https://afdian.net/a/thun888){% emoji blobcat blobcatmelt %}
 
-{% quot 未来可能发布的稿子/Todo %}
+{% quot Todo %}
 
+{% tabs active:1 align:center %}
+
+<!-- tab 未来可能发布的稿子 -->
 {% timeline user:Thun888sDraftArticles api:https://get-tg-channel-api.hzchu.top/?tag=DTA type:memos %}
 
 {% endtimeline %}
+<!-- tab 挖坑 -->
 
+碍于各种因素，先挖个坑，说不定以后会填{% emoji blobcat blobcatgooglytrash %}
+{% timeline user:Thun888sDraftArticles api:https://get-tg-channel-api.hzchu.top/?tag=HOLE type:memos %}
+
+{% endtimeline %}
+
+{% endtabs %}
 
 <script>
   document.querySelector('.banner.top').style.display = 'none'
