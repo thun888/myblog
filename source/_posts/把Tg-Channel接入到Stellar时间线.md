@@ -215,3 +215,4 @@ const ChannelNameList = ['thun888sthinks','Thun888sDraftArticles'];
 它可以使静态博客进一步动态化，加强可玩性，也可在很多地方使用。
 
 如果你有一些像`多频道融合`，`多标签获取`的功能建议，那就大可不必了，毕竟它一开始只是一个说说程序啊{% emoji blobcat ablobcatrainbow %}
+
