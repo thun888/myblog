@@ -1,5 +1,6 @@
-# Thun888のBlog
+# Thun888 's Blog
 
+  [![HitCount](https://hits.dwyl.com/thun888/myblog.svg?style=flat)](http://hits.dwyl.com/thun888/myblog)
 <p align="center">
   <a href="https://github.com/thun888">
     <img src="https://ghchart.rshah.org/thun888" alt="thun888's Github chart" />
@@ -13,5 +14,5 @@
 
 
 
-*22/8/08*
+*2022/08/08*
 
