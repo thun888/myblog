@@ -4,7 +4,7 @@
     font-size: 15px;
     border: 1px solid #e2e2e2;
     background-color: #eee;
-    border-left: 5px solid #00d1bf;
+    border-left: 5px solid #ed8e13;
     color: #333;
     overflow: hidden;
 }
@@ -21,4 +21,9 @@
 }
 #expired-message {
   padding: 10px 1rem 10px 1rem;
+}
+
+.tag-plugin.timeline .body img[atk-emoticon] {
+  max-height: 40px;
+  display: initial;
 }

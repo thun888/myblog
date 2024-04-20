@@ -6,4 +6,5 @@ tags:
 cover: 
 description: 
 banner: 
+categories: 
 ---
