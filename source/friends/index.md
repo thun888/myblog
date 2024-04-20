@@ -1,5 +1,5 @@
 ---
-title: 友链
+title: 友人
 description: 友链索引
 date: 2024-02-6 22:33:52
 layout: post
