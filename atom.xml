@@ -6,7 +6,7 @@
   <link href="https://blog.hzchu.top/atom.xml" rel="self"/>
   
   <link href="https://blog.hzchu.top/"/>
-  <updated>2024-04-20T08:05:29.000Z</updated>
+  <updated>2024-04-20T15:11:40.000Z</updated>
   <id>https://blog.hzchu.top/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>为小米路由器加上屏幕</title>
+    <link href="https://blog.hzchu.top/2024/%E4%B8%BA%E5%B0%8F%E7%B1%B3%E8%B7%AF%E7%94%B1%E5%99%A8%E5%8A%A0%E4%B8%8A%E5%B1%8F%E5%B9%95-%E7%94%A8%E5%B0%8F%E7%94%B5%E8%A7%86-SD2-%E7%9B%91%E6%8E%A7%E5%B0%8F%E7%B1%B3%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
+    <id>https://blog.hzchu.top/2024/%E4%B8%BA%E5%B0%8F%E7%B1%B3%E8%B7%AF%E7%94%B1%E5%99%A8%E5%8A%A0%E4%B8%8A%E5%B1%8F%E5%B9%95-%E7%94%A8%E5%B0%8F%E7%94%B5%E8%A7%86-SD2-%E7%9B%91%E6%8E%A7%E5%B0%8F%E7%B1%B3%E8%B7%AF%E7%94%B1%E5%99%A8/</id>
+    <published>2024-04-20T15:11:40.000Z</published>
+    <updated>2024-04-20T15:11:40.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>之前在<code>bbs.hzchu.top</code>写过，不过没多少人看，迁回博客里</p><h2 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h2><h3 id="搭建MRUI"><a href="#搭建MRUI" class="headerlink" title="搭建MRUI"></a>搭建MRUI</h3><p>顺手集成到自己项目里了，自己用起来也方便<span class="tag-plugin emoji"><img no-lazy="" class="inline" src="https://jsd.hzchu.top/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatcoffee.png"/></span></p><p>搭建参阅<a href="/2023/howtorunmrui/">Mirouterui简要部署指南</a></p><h3 id="修改部分程序代码"><a href="#修改部分程序代码" class="headerlink" title="修改部分程序代码"></a>修改部分程序代码</h3><p>由于默认获取一次信息间隔太短，会对路由器造成不小的负担，最好改为5s获取一次<br><img src="https://onep.hzchu.top/mount/pic/2024/01/12/65a10d998d683.webp" alt="1705053582589.webp"><br>同时程序不支持http0.1,要把发送请求处代码修改为http1.1<br><img src="https://onep.hzchu.top/mount/pic/2023/12/31/6590caaa36915.webp" alt="1703987881404.webp"></p><h2 id="展示"><a href="#展示" class="headerlink" title="展示"></a>展示</h2><div class="tag-plugin swiper fancybox" id="swiper-api" effect="cards"><div class="swiper-wrapper"><div class="swiper-slide"><img no-lazy src="https://onep.hzchu.top/mount/pic/2023/12/31/6590c9dc1e6f1.webp" alt="IMG_20231230_103045.webp"></div><div class="swiper-slide"><img no-lazy src="https://onep.hzchu.top/mount/pic/2023/12/31/6590cbaed9f8a.webp" alt="IMG_20231230_103045.webp"></div><div class="swiper-slide"><img no-lazy src="https://onep.hzchu.top/mount/pic/2023/12/31/6590cb5e87c0b.webp" alt="1703988060977.webp"></div></div><div class="swiper-pagination"></div><div class="swiper-button-prev blur"></div><div class="swiper-button-next blur"></div></div><h2 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h2><h3 id="自定义显示"><a href="#自定义显示" class="headerlink" title="自定义显示"></a>自定义显示</h3><p>你可以参照下面的图片中的“传感器”名称，对代码中获取传感器数据的地方进行修改。如我就将温度改为了在线设备数</p><h3 id="HA"><a href="#HA" class="headerlink" title="HA"></a>HA</h3><p>同时兼容HA的netdata集成<br><img src="https://onep.hzchu.top/mount/pic/2024/01/01/659222d20746e.webp" alt="1704075984628.webp"><br><img src="https://onep.hzchu.top/mount/pic/2024/01/01/659223056c85c.webp" alt="1704076036821.webp"><br>示例配置：<br><img src="https://onep.hzchu.top/mount/pic/2024/01/01/6592231bdd188.webp" alt="1704076059450.webp"></p><h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>感觉他程序有点不如人意，特别是我照着readme写完时发现用的api已经弃用了，重写完发现每秒发送5个请求直接把路由器的cpu占用干到80%+的时候<span class="tag-plugin emoji"><img no-lazy="" class="inline" src="https://jsd.hzchu.top/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatneutral.png"/></span></p><p>当然也有我的锅，现在调用netdata的api默认会有两秒的缓存</p>]]></content>
+    
+    
+    <summary type="html">通过MRUI构造网络请求来用小电视(SD2)监控小米路由器</summary>
+    
+    
+    
+    <category term="技术分享" scheme="https://blog.hzchu.top/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
+    
+    
+    <category term="Mirouterui" scheme="https://blog.hzchu.top/tags/Mirouterui/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>为小米MIX2s更换音量排线及电池的最优方法</title>
+    <link href="https://blog.hzchu.top/2024/%E4%B8%BA%E5%B0%8F%E7%B1%B3MIX2s%E6%9B%B4%E6%8D%A2%E9%9F%B3%E9%87%8F%E6%8E%92%E7%BA%BF%E5%8F%8A%E7%94%B5%E6%B1%A0%E7%9A%84%E6%9C%80%E4%BC%98%E6%96%B9%E6%B3%95/"/>
+    <id>https://blog.hzchu.top/2024/%E4%B8%BA%E5%B0%8F%E7%B1%B3MIX2s%E6%9B%B4%E6%8D%A2%E9%9F%B3%E9%87%8F%E6%8E%92%E7%BA%BF%E5%8F%8A%E7%94%B5%E6%B1%A0%E7%9A%84%E6%9C%80%E4%BC%98%E6%96%B9%E6%B3%95/</id>
+    <published>2024-04-20T09:57:40.000Z</published>
+    <updated>2024-04-20T09:57:40.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>两三个月前吧，我发现音量下键和开关键时灵时不灵的，特别是开关键软趴趴的，时不时卡住就循环重启。直到半个月前，它终于圆满的离开了—彻底按不动了，锁屏都得下滑通知栏，点按钮才关得上。然后一寻思，反正都要拆开了，顺便换个电池吧（软件统计剩余容量2000多毫安时，待机一晚上都挺不过去<span class="tag-plugin emoji"><img no-lazy="" class="inline" src="https://jsd.hzchu.top/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatfacepalm.png"/></span>）</p><h2 id="买零件"><a href="#买零件" class="headerlink" title="买零件"></a>买零件</h2><div class="tag-plugin grid"  style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));"><div class="cell" style="">    <p>我这里买的是中电的扩容电池，因为电池配着工具包所以音量排线买一个三块钱左右的也够了（虽然我忘了这茬<span class="tag-plugin emoji"><img no-lazy="" class="inline" src="https://jsd.hzchu.top/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatt.png"/></span></p>    </div>    <div class="cell" style="">    <p><img src="https://onep.hzchu.top/mount/pic/myself/2024/04/66236c3bdeec7.webp" alt="IMG_20240420_101135.webp"></p>    </div>    </div><h2 id="准备材料"><a href="#准备材料" class="headerlink" title="准备材料"></a>准备材料</h2><ol><li>热风枪</li><li>耐热垫板</li><li>镊子</li></ol><blockquote><p>若没有热风枪，可使用电吹风</p></blockquote><p>零件全家福：</p><p><img src="https://onep.hzchu.top/mount/pic/myself/2024/04/6623725117296.webp" alt="IMG_20240419_171503.webp"></p><p><img src="https://onep.hzchu.top/mount/pic/myself/2024/04/662378a301bac.webp" alt="IMG_20240419_171523.webp"></p><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ol><li>将手机电量用尽</li><li>关机</li></ol><h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><ol><li>取出卡托</li></ol><div class="tag-plugin grid"  style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));"><div class="cell" style="">    <ol start="2"><li>将手机背面朝上放置在隔热垫板上，使用热风枪来回加热尾部边缘地区</li></ol><p>我比较暴力啊直接500°C吹了40多秒，一开始用电吹风折腾了十几分钟没搞开<span class="tag-plugin emoji"><img no-lazy="" class="inline" src="https://jsd.hzchu.top/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatdead.png"/></span></p>    </div>    <div class="cell" style="">    <p><img src="https://onep.hzchu.top/mount/pic/myself/2024/04/662379e57f7ba.webp" alt="1713600995917.webp"></p>    </div>    </div><div class="tag-plugin grid"  style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));"><div class="cell" style="">    <ol start="3"><li>放好热风枪，迅速将吸盘吸在尾部（确认吸盘完全吸附，尽量不要探到手机外部），右手食指和拇指按住手机两侧尾部（中框处），往外拉吸盘</li><li>拉开缝后就容易了，用附赠的卡片卡住即可（如果来不及可以先用指甲顶上<span class="tag-plugin emoji"><img no-lazy="" class="inline" src="https://jsd.hzchu.top/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatmeltthumb.png"/></span>）</li></ol>    </div>    <div class="cell" style="">    <p><img src="https://onep.hzchu.top/mount/pic/myself/2024/04/66237c258bed3.webp" alt="IMG_20240419_174028.webp"></p>    </div>    </div><div class="tag-plugin grid"  style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));"><div class="cell" style="">    <ol start="5"><li>在这基础上，可以尝试直接使用划开，如果不行就用拨片。如果划不动不妨翘一翘</li></ol><div class="tag-plugin colorful note" color="red"><div class="title">注意</div><div class="body"><p>最好逆时针刮，毕竟指纹排线在音量键旁边</p></div></div>    </div>    <div class="cell" style="">    <p><img src="https://onep.hzchu.top/mount/pic/myself/2024/04/66237e34a5c81.webp" alt="跑焦了"></p>    </div>    </div><div class="tag-plugin colorful note" color="yellow"><div class="title">注意</div><div class="body"><p>为防止摄像头进灰，最好拿胶布贴一下</p></div></div><p><strong>打开后</strong></p><p><img src="https://onep.hzchu.top/mount/pic/myself/2024/04/66237f27423c3.webp" alt="IMG_20240419_174441.webp"></p><div class="tag-plugin grid"  style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));"><div class="cell" style="">    <blockquote><p>顺便提一嘴，无线充电是放在电池上的，没有下胶水，感动~</p></blockquote>    </div>    <div class="cell" style="">    <p><img src="https://onep.hzchu.top/mount/pic/myself/2024/04/66237fcc8d7d8.webp" alt="IMG_20240419_174550.webp"></p>    </div>    </div><div class="tag-plugin grid"  style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));"><div class="cell" style="">    <ol start="6"><li>拆下标记处螺丝，取下无线充&amp;NFC线圈</li></ol>    </div>    <div class="cell" style="">    <p><img src="https://onep.hzchu.top/mount/pic/myself/2024/04/6623803f65b52.webp" alt="IMG_20240419_174614.webp"></p>    </div>    <div class="cell" style="">    <p><img src="https://onep.hzchu.top/mount/pic/myself/2024/04/662380f394c47.webp" alt="IMG_20240419_174801.webp"></p>    </div>    <div class="cell" style="">    <p><img src="https://onep.hzchu.top/mount/pic/myself/2024/04/662382eb16441.webp" alt="IMG_20240419_174810.webp"></p>    </div>    </div><h3 id="拆音量排线🪡"><a href="#拆音量排线🪡" class="headerlink" title="拆音量排线🪡"></a>拆音量排线🪡</h3><div class="tag-plugin grid"  style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));"><div class="cell" style="">    <ol start="7"><li>因为换音量排线要拆主板，先拆下所有排线&amp;螺丝，取出主板</li></ol><blockquote><p>中间铜箔注意取下</p><p>对于细微操作建议使用镊子</p></blockquote><div class="tag-plugin colorful note" color="yellow"><div class="title">要不你试试：</div><div class="body"><p>事后复盘时看图片好像也不用拆主板，可以试试看</p></div></div>    </div>    <div class="cell" style="">    <p><img src="https://onep.hzchu.top/mount/pic/myself/2024/04/6623883f1d521.webp" alt="1713604675750.webp"></p>    </div>    </div><div class="tag-plugin grid"  style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));"><div class="cell" style="">    <ol start="8"><li>由内向外顶出音量排线底板，取出来后将替换件的底板上的胶撕开放进去，再用螺丝刀从外向内顶一下，使底板的胶与手机充分接触</li><li>将主板装回即可</li></ol>    </div>    <div class="cell" style="">    <p><img src="https://onep.hzchu.top/mount/pic/myself/2024/04/66238c7e4e319.webp" alt="IMG_20240419_182603.webp"></p>    </div>    </div><h3 id="拆电池🪄"><a href="#拆电池🪄" class="headerlink" title="拆电池🪄"></a>拆电池🪄</h3><p>我看中电官方的视频教程里电池胶一抽就出来了，我的可能比较腼腆啊一抽就断<span class="tag-plugin emoji"><img no-lazy="" class="inline" src="https://jsd.hzchu.top/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcat0_0.png"/></span></p><p>那没办法了，只能上螺丝刀了</p><div class="tag-plugin colorful note" color="red"><div class="title">警告</div><div class="body"><p>还记得准备工作中的放电吗，该操作100%破坏电池，若电量充足可能会造成不堪设想的后果</p></div></div><div class="tag-plugin grid"  style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));"><div class="cell" style="">    <p>因为下面有排线，建议在图中圈圈处入刀，然后沿着上部分滑动，“挤开”电池</p>    </div>    <div class="cell" style="">    <p><img src="https://onep.hzchu.top/mount/pic/myself/2024/04/662393045e7b1.webp" alt="1713607423583.webp"></p>    </div>    </div><div class="tag-plugin grid"  style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));"><div class="cell" style="">    <p>拆下来的电池</p>    </div>    <div class="cell" style="">    <p><img src="https://onep.hzchu.top/mount/pic/myself/2024/04/662394407ef95.webp" alt="IMG_20240419_180328.webp"></p>    </div>    </div><p>随后安装新电池，因为是扩容电池的原因，排线有亿点难走，最好先大致掰一掰形状，再接上排线，最后装到电池槽内</p><div class="tag-plugin grid"  style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));"><div class="cell" style="">    <p><img src="https://onep.hzchu.top/mount/pic/myself/2024/04/66239559f35fe.webp" alt="IMG_20240419_180423.webp"></p>    </div>    <div class="cell" style="">    <p><img src="https://onep.hzchu.top/mount/pic/myself/2024/04/662394ac4c87f.webp" alt="IMG_20240419_180512.webp"></p>    </div>    </div><p>到这一步了可以试下能不能开机了，测试完成后复原所有排线，螺丝及无线充电模块</p><h3 id="打胶🧪"><a href="#打胶🧪" class="headerlink" title="打胶🧪"></a>打胶🧪</h3><p>先用镊子清理残胶，随后用附赠的b7000涂一圈，把后壳扣好。家里没有橡皮筋我干脆就拿手肘压了十几分钟，反正都是带手机套用的也不在意那点缝隙。</p><h2 id="主观体验"><a href="#主观体验" class="headerlink" title="主观体验"></a>主观体验</h2><p>一个字——沉。不带手机套净重219g，差不多半斤了，<del>虽然按照百度百科的数据才重了30g</del></p><p>续航方面大大提升，原本要一直插着电用（防止要带着走时没电），现在电力自由了<span class="tag-plugin emoji"><img no-lazy="" class="inline" src="https://jsd.hzchu.top/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatphoto.png"/></span></p><div class="tag-plugin grid"  style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));"><div class="cell" style="">    <p><img src="https://onep.hzchu.top/mount/pic/myself/2024/04/662399124e3c2.webp" alt="IMG_1.webp"></p>    </div>    <div class="cell" style="">    <p><img src="https://onep.hzchu.top/mount/pic/myself/2024/04/6623990c31570.webp" alt="IMG_2.webp"></p>    </div>    </div><h2 id="不足"><a href="#不足" class="headerlink" title="不足"></a>不足</h2><ol><li>用吸盘吸时没抓好，受力点集中在屏幕上，直接让我屏幕又碎了几条小裂纹</li><li>看到有一个教程一个劲的从里面推音量排线的底板，害得我直接把电源键上的塑料垫整掉了，费了半天劲才给他塞回去，还搞得现在还是软趴趴的手感</li><li>撬电池的时候没看见下面有排线，直接创到屏幕排线上了，幸好没有坏</li></ol>]]></content>
+    
+    
+    <summary type="html">被网上的视频坑了好几回，总结下过程</summary>
+    
+    
+    
+    <category term="瞎折腾" scheme="https://blog.hzchu.top/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
+    
+    
+    <category term="DIY" scheme="https://blog.hzchu.top/tags/DIY/"/>
+    
+  </entry>
   
   <entry>
     <title>主题改动小记</title>
@@ -387,46 +429,6 @@
     <category term="oneindex" scheme="https://blog.hzchu.top/tags/oneindex/"/>
     
     <category term="web" scheme="https://blog.hzchu.top/tags/web/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>高质量地从ico转为svg</title>
-    <link href="https://blog.hzchu.top/2021/%E9%AB%98%E8%B4%A8%E9%87%8F%E5%9C%B0%E4%BB%8Eico%E8%BD%AC%E4%B8%BAsvg/"/>
-    <id>https://blog.hzchu.top/2021/%E9%AB%98%E8%B4%A8%E9%87%8F%E5%9C%B0%E4%BB%8Eico%E8%BD%AC%E4%B8%BAsvg/</id>
-    <published>2021-05-03T19:19:00.000Z</published>
-    <updated>2021-05-03T19:19:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h5 id="How"><a href="#How" class="headerlink" title="How"></a>How</h5><p>先下载&amp;安装<a href="https://share.hzchu.top/api?path=/%E8%BD%AF%E4%BB%B6/CorelDRAW_X4_SP2_%E7%B2%BE%E7%AE%80%E5%A2%9E%E5%BC%BA%E7%89%88.exe&raw=true">CorelDRAW</a></p><p>打开ps将ico转为png</p><p><img src="https://raw.hzchu.top/thun888/tuku/master/img/14dsf352gf.gif" alt="14dsf352gf"></p><p>导出后像这样</p><p><img src="https://raw.hzchu.top/thun888/tuku/master/img/icon.png" alt="icon"></p><p>选择 文件—导入—（选择刚刚的图）</p><p><img src="https://raw.hzchu.top/thun888/tuku/master/img/20210504155534.png"></p><p>放置在画纸后</p><p>右键—轮廓描慕—高质量图像（也可以选其他的,根据实际情况~）</p><p><img src="https://raw.hzchu.top/thun888/tuku/master/img/20210504155749.png"></p><p>在这里你可以改变三个参数实现不同的效果</p><p><img src="https://raw.hzchu.top/thun888/tuku/master/img/dg4df56hde4568.png"></p><p>点击确定后就能得到2个图像（原来的位图和生成的矢量图）</p><p><img src="https://raw.hzchu.top/thun888/tuku/master/img/20210504160151.png"></p><p>把原图删掉后将画布调整为生成图大小（例如我这就是210*210）</p><p><img src="https://raw.hzchu.top/thun888/tuku/master/img/da21desf4s568gre46g.png"></p><p>选择 文件—导出（保存为.svg)</p><img src="https://raw.hzchu.top/thun888/tuku/master/img/20210504161231.png" style="zoom:80%;" /><h5 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h5><p>要真想更好一点可以用这个为底，重绘一遍</p>]]></content>
-    
-    
-    <summary type="html">使用CorelDRAW将图片转为矢量图</summary>
-    
-    
-    
-    
-    <category term="网站" scheme="https://blog.hzchu.top/tags/%E7%BD%91%E7%AB%99/"/>
-    
-    <category term="转换" scheme="https://blog.hzchu.top/tags/%E8%BD%AC%E6%8D%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>解决小米手机升级MIUI12.5后无法进入谷歌商店</title>
-    <link href="https://blog.hzchu.top/2021/%E8%A7%A3%E5%86%B3%E5%B0%8F%E7%B1%B3%E6%89%8B%E6%9C%BA%E5%8D%87%E7%BA%A7MIUI12-5%E5%90%8E%E6%97%A0%E6%B3%95%E8%BF%9B%E5%85%A5%E8%B0%B7%E6%AD%8C%E5%95%86%E5%BA%97/"/>
-    <id>https://blog.hzchu.top/2021/%E8%A7%A3%E5%86%B3%E5%B0%8F%E7%B1%B3%E6%89%8B%E6%9C%BA%E5%8D%87%E7%BA%A7MIUI12-5%E5%90%8E%E6%97%A0%E6%B3%95%E8%BF%9B%E5%85%A5%E8%B0%B7%E6%AD%8C%E5%95%86%E5%BA%97/</id>
-    <published>2021-04-30T23:02:58.000Z</published>
-    <updated>2021-04-30T23:02:58.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>之前，用着被抛弃的mi6，升级了12后并无异样，但用第三方包升到12.5后，欸，用不了了</p><span id="more"></span><div class="tag-plugin swiper fancybox" id="swiper-api" width="25"><div class="swiper-wrapper"><div class="swiper-slide"><img no-lazy src="https://raw.hzchu.top/thun888/tuku/master/img/IMG_20210424_212057.jpg"></div><div class="swiper-slide"><img no-lazy src="https://raw.hzchu.top/thun888/tuku/master/img/Screenshot_2021-04-24-21-19-58-835_com.android.ve.jpg"></div><div class="swiper-slide"><img no-lazy src="https://raw.hzchu.top/thun888/tuku/master/img/Screenshot_2021-04-24-21-20-21-301_com.android.ve.jpg"></div></div><div class="swiper-pagination"></div><div class="swiper-button-prev blur"></div><div class="swiper-button-next blur"></div></div><p>（如图）</p><p>显然，是新版的“照明弹”引起的</p><p><img src="https://raw.hzchu.top/thun888/tuku/master/img/dsfdsvdzsggdf.jpg"></p><p>搜索一下可以看到有好几个</p><p>把里面每一个权限选择了“空白通行证”的改为“始终允许”</p><img src="https://raw.hzchu.top/thun888/tuku/master/img/Screenshot_2021-04-30-23-12-52-256_com.miui.secur.jpg" style="zoom: 80%;" />]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;之前，用着被抛弃的mi6，升级了12后并无异样，但用第三方包升到12.5后，欸，用不了了&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="MIUI" scheme="https://blog.hzchu.top/tags/MIUI/"/>
     
   </entry>
   
