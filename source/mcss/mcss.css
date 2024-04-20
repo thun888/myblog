@@ -23,4 +23,8 @@
 .tag-plugin.timeline .body img[atk-emoticon] {
   max-height: 40px;
   display: initial;
+  margin: 0;
+}
+.tag-plugin.timeline .body img {
+  max-height: 200px;
 }
