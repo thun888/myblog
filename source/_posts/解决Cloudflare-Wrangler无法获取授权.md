@@ -1,7 +1,7 @@
 ---
 title: 解决Cloudflare Wrangler无法获取授权
 date: 2021-07-29 18:18:05
-tags: Clouddlare
+tags: Cloudflare
 updated: 2021-07-29 18:18:05
 last: 2021-07-29 18:18:05
 ---

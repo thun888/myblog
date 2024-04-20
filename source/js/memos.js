@@ -501,7 +501,7 @@ var memosData = {
               imgLink = `${memo.link}/o/r/${fileId}`;
           }
           if (restype == 'image') {
-            imgUrl += `<div class="memo-resource w-100"><img class="lozad" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="${imgLink}"/></div>`;
+            imgUrl += `<div class="memo-resource w-100"><img class="lozad" data-fancybox="group_` + memosId + `" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="${imgLink}"/></div>`;
             resImgLength = resImgLength + 1
           }
           if (restype == 'video') {
