@@ -22,7 +22,7 @@ hexo.extend.injector.register("head_end", function () {
 .loader {
   display: block;
   --height-of-loader: 4px;
-  --loader-color: #0071e2;
+  --loader-color: #6bb418;
   width: 130px;
   height: var(--height-of-loader);
   border-radius: 30px;

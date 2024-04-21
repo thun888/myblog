@@ -40,9 +40,13 @@ Ztale,网盘
 
 fclouds地图，带端口60181访问
 
-​	{% hashtag Home-ikuai-kvm color:green %}{% hashtag 废弃 color:orange %}
+​	{% hashtag Home-ikuai-kvm color:green %}{% hashtag 停止服务 color:red %}
 
 {% quot el:h3 私有 %}
+
+#### hightlight-code-api.hzchu.top
+
+语法高亮接口，详情参阅「[使用pygments对代码进行高亮，并插入任意网页](/2024/使用pygments对代码进行高亮，并插入任意网页/)」
 
 #### raw.hzchu.top
 

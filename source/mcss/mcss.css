@@ -28,3 +28,13 @@
 .tag-plugin.timeline .body img {
   max-height: 200px;
 }
+
+.bread-nav div#page-words span.sep:before {
+  content: '|';
+}
+.bread-nav div#page-words span.updated {
+  visibility: hidden;
+}
+.bread-nav:hover div#page-words span.updated {
+  visibility: visible;
+}
