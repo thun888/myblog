@@ -3,8 +3,8 @@ title: 使用pygments对代码进行高亮，并嵌入任意网页
 date: 2024-04-21 14:20:02
 updated: 2024-04-21 14:20:02
 tags: [Vercel,python]
-cover: https://dolphinsbukets.s3.bitiful.net/article-cover/cover-4.png?fmt=webp
-banner: https://dolphinsbukets.s3.bitiful.net/article-cover/cover-4.png?fmt=webp&q=50
+cover: https://dolphinsbukets.s3.bitiful.net/article-cover/cover-7.png?fmt=webp
+banner: https://dolphinsbukets.s3.bitiful.net/article-cover/cover-7.png?fmt=webp&q=50
 description: 将长段代码Embed到你的博客里吧
 categories: 技术分享
 ---
