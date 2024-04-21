@@ -6,8 +6,8 @@ cover: https://onep.hzchu.top/mount/pic/2023/02/05/63df2d8b52d38.webp
 updated: 2022-07-14 12:29:32
 description: 直接一套组合拳
 references:
- - '[Python删除小数点后多余的0_XerCis的博客](https://blog.csdn.net/lly1122334/article/details/108770141)'
- - '[Altium schematic file formatn88](https://github.com/vadmium/python-altium/blob/master/format.md)'
+ - '[Python删除小数点后多余的0_XerCis的博客](https://d.hzchu.top/d128r)'
+ - '[Altium schematic file formatn88](https://d.hzchu.top/ivr6l)'
 ---
 
 ### 前言
