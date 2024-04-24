@@ -36,13 +36,15 @@ categories: 技术分享
 
 因为我是直接用Vercel的cli进行部署的，所以这一步需要先安装一下
 
+> 也可以试一下fork仓库然后在vercel的面板里直接部署
+
 {% copy npm install -g vercel prefix:$ %}
 
 然后登录
 
 {% copy vercel login prefix:$ %}
 
-再pull下仓库，你可以打开`api\main.py`来修改一下提供者信息
+再ckone下仓库到本地，你可以打开`api\main.py`来修改一下提供者信息
 
 {% copy git clone https://github.com/thun888/hightlight-code-api %}
 
