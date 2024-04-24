@@ -46,7 +46,7 @@ categories: 技术分享
 
 再ckone下仓库到本地，你可以打开`api\main.py`来修改一下提供者信息
 
-{% copy git clone https://github.com/thun888/hightlight-code-api %}
+{% copy git clone https://github.com/thun888/hightlight-code-api prefix:$ %}
 
 {% image https://onep.hzchu.top/mount/pic/myself/2024/04/66249b3e5bb80.webp %}
 
