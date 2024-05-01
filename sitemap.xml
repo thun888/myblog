@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/Artalk-doc/use/</loc>
-    
-    <lastmod>2024-05-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.hzchu.top/vercel.json</loc>
     
     <lastmod>2024-05-01</lastmod>
@@ -21,6 +12,15 @@
   
   <url>
     <loc>https://blog.hzchu.top/say/</loc>
+    
+    <lastmod>2024-05-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/wiki/Artalk-doc/use/</loc>
     
     <lastmod>2024-05-01</lastmod>
     
@@ -501,14 +501,14 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/Blog/</loc>
+    <loc>https://blog.hzchu.top/tags/%E7%94%9C%E7%B3%96/</loc>
     <lastmod>2024-05-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/%E7%94%9C%E7%B3%96/</loc>
+    <loc>https://blog.hzchu.top/tags/Blog/</loc>
     <lastmod>2024-05-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -557,14 +557,14 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/Stellar/</loc>
+    <loc>https://blog.hzchu.top/tags/MC/</loc>
     <lastmod>2024-05-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/MC/</loc>
+    <loc>https://blog.hzchu.top/tags/Stellar/</loc>
     <lastmod>2024-05-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -592,14 +592,14 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/Go/</loc>
+    <loc>https://blog.hzchu.top/tags/Cloudflare/</loc>
     <lastmod>2024-05-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/Cloudflare/</loc>
+    <loc>https://blog.hzchu.top/tags/Go/</loc>
     <lastmod>2024-05-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
