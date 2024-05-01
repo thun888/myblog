@@ -60,6 +60,8 @@ categories: 技术分享
 
 {% copy vercel --prod prefix:$ %}
 
+> 若出现Vercel报错`Error: Unable to find any supported Python versions.`记得把项目的node版本改成 `18.x`
+
 随后引用即可
 
 ```html
@@ -96,7 +98,7 @@ dynamic_codeblock:
   css: https://jsd.hzchu.top/gh/thun888/asstes@master/files/pygments-css/default.css
 ```
 
-> **loading只针对Stellar主题**。同时，为使copycode正常工作，你需要将/js/plugins/copycode.js修改为[这样](https://blog.hzchu.top/js/plugins/copycode.js)
+> **loading只针对Stellar主题**。同时，为使copycode正常工作，你需要将/js/plugins/copycode.js修改为[这样](/js/plugins/copycode.js)
 
 使用：
 
