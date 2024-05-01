@@ -324,6 +324,9 @@ style:
   codeblock:
     scrollbar: 4px
     highlightjs_theme: https://jsd.hzchu.top/gh/highlightjs/cdn-release@11.9.0/build/styles/atom-one-dark.min.css
+  loading:
+    loading: 不要急ヾ(•ω•`)o
+    error: 加载失败，请稍后重试。＞︿＜
 
 api_host:
   ghapi: https://cfproxy.hzchu.top/https://api.github.com
