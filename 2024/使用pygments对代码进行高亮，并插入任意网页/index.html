@@ -272,16 +272,16 @@
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://hightlight-code-api.hzchu.top/api/v1/generate?url=https://raw.githubusercontent.com/thun888/hightlight-code-api/main/api/main.py&amp;lang=python&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 
-    <div class="tag-plugin ds-coding" id="coding-anpzx4xln"></div>
+    <div class="tag-plugin ds-coding" id="coding-pki9ubd08"></div>
     <script>
     addEventListener("load",function(){
-      console.log('[hexo-dynamic-codeblock]start load：coding-anpzx4xln' );
+      console.log('[hexo-dynamic-codeblock]start load：coding-pki9ubd08' );
       utils.jq(() => {
         $(function () {
-          const el = document.getElementById('coding-anpzx4xln');
+          const el = document.getElementById('coding-pki9ubd08');
             utils.request(el, "https://hightlight-code-api.hzchu.top/api/v1/generate?&url=https%3A%2F%2Fraw.githubusercontent.com%2Fthun888%2Fhightlight-code-api%2Fmain%2Fapi%2Fmain.py&lang=python&usejson=true", function (data) {
               $(el).append(data.result);
-              addCopyButtons('coding-anpzx4xln');
+              addCopyButtons('coding-pki9ubd08');
             });
           });
       });
@@ -811,5 +811,14 @@
 
 </div><!-- hexo injector body_end start -->
   <script src="/js/extra.js"></script>
-  <script defer src="https://analytics.us.umami.is/script.js" data-website-id="27c6212d-8d91-47a5-ae93-a0fd1bfb0e80"></script>
+  <script>
+  host = window.location.host;
+  if (!host.startsWith("localhost")) {
+    script = document.createElement('script');
+    script.defer = true;
+    script.setAttribute('data-website-id', '27c6212d-8d91-47a5-ae93-a0fd1bfb0e80');
+    script.src = 'https://analytics.us.umami.is/script.js';
+    document.head.appendChild(script);
+  }
+  </script>
   <!-- hexo injector body_end end --></body></html>

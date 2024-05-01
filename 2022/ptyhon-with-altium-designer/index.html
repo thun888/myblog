@@ -193,16 +193,16 @@
 <p>还有像xy坐标，NAME，COLOR等不必多说</p>
 <p>接着就是写个python脚本把它们拼起来辣</p>
 
-    <div class="tag-plugin ds-coding" id="coding-crr8v8pxy"></div>
+    <div class="tag-plugin ds-coding" id="coding-urz1x0rcw"></div>
     <script>
     addEventListener("load",function(){
-      console.log('[hexo-dynamic-codeblock]start load：coding-crr8v8pxy' );
+      console.log('[hexo-dynamic-codeblock]start load：coding-urz1x0rcw' );
       utils.jq(() => {
         $(function () {
-          const el = document.getElementById('coding-crr8v8pxy');
+          const el = document.getElementById('coding-urz1x0rcw');
             utils.request(el, "https://hightlight-code-api.hzchu.top/api/v1/generate?&url=https%3A%2F%2Fraw.githubusercontent.com%2Fthun888%2Faltium-helper%2Fmaster%2Fpackager.py&lang=python&usejson=true", function (data) {
               $(el).append(data.result);
-              addCopyButtons('coding-crr8v8pxy');
+              addCopyButtons('coding-urz1x0rcw');
             });
           });
       });
@@ -777,5 +777,14 @@
 
 </div><!-- hexo injector body_end start -->
   <script src="/js/extra.js"></script>
-  <script defer src="https://analytics.us.umami.is/script.js" data-website-id="27c6212d-8d91-47a5-ae93-a0fd1bfb0e80"></script>
+  <script>
+  host = window.location.host;
+  if (!host.startsWith("localhost")) {
+    script = document.createElement('script');
+    script.defer = true;
+    script.setAttribute('data-website-id', '27c6212d-8d91-47a5-ae93-a0fd1bfb0e80');
+    script.src = 'https://analytics.us.umami.is/script.js';
+    document.head.appendChild(script);
+  }
+  </script>
   <!-- hexo injector body_end end --></body></html>
