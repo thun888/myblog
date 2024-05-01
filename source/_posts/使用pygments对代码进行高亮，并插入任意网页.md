@@ -104,7 +104,7 @@ dynamic_codeblock:
 {% coding [url] [lang] %}
 ```
 
-在其它主题中的使用状况
+在其它主题中的表现
 
 ![landscape](https://onep.hzchu.top/mount/pic/myself/2024/05/6632074ebf0a9.webp)
 
