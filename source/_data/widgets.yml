@@ -29,7 +29,7 @@ travellingslink:
   content: | # support markdown
     <a href="https://www.foreverblog.cn/go.html" class="no-lazy" target="_blank"> <img src="https://img.foreverblog.cn/wormhole_4_tp.gif" alt="" style="width:auto;height:32px;" title="穿梭虫洞-随机访问十年之约友链博客"></a>
     <a href="https://www.travellings.cn/go.html" class="no-lazy" target="_blank" rel="noopener" title="开往-友链接力"><img no-lazy src="https://www.travellings.cn/assets/logo.gif" data-src="https://www.travellings.cn/assets/logo.gif" alt="开往-友链接力" width="120" data-ll-status="loaded"></a>
-    <a style="text-decoration:none;border-bottom:none;" href="https://travel.moe/go.html" rel="external nofollow noreferrer" title="异次元之旅-跃迁-我们一起去萌站成员的星球旅行吧！" target="_blank"><img no-lazy src="/img/icon64.png" style="width:auto;height:32px;">异次元之旅</a>
+    <a style="text-decoration:none;border-bottom:none;" href="https://travel.moe/go.html" rel="external nofollow noreferrer" title="异次元之旅-跃迁-我们一起去萌站成员的星球旅行吧！" target="_blank"><img no-lazy src="https://travel.moe/images/icon/icon64pink.png" style="width:auto;height:32px;">异次元之旅</a>
 
 new_comment:
   layout: timeline
