@@ -96,7 +96,7 @@ dynamic_codeblock:
   css: https://jsd.hzchu.top/gh/thun888/asstes@master/files/pygments-css/default.css
 ```
 
-> **loading只针对Stellar主题**,同时，为使copycode正常工作，你需要将/js/plugins/copycode.js修改为[这样](https://blog.hzchu.top/js/plugins/copycode.js)
+> **loading只针对Stellar主题**。同时，为使copycode正常工作，你需要将/js/plugins/copycode.js修改为[这样](https://blog.hzchu.top/js/plugins/copycode.js)
 
 使用：
 
@@ -104,7 +104,7 @@ dynamic_codeblock:
 {% coding [url] [lang] %}
 ```
 
-在其它主题中的表现
+在其它主题中的表现：
 
 ![landscape](https://onep.hzchu.top/mount/pic/myself/2024/05/6632074ebf0a9.webp)
 
