@@ -1,11 +1,11 @@
 ---
-title: 使用pygments对代码进行高亮，并嵌入任意网页
+title: 这是...动态代码框？
 date: 2024-04-21 14:20:02
 updated: 2024-04-21 14:20:02
 tags: [Vercel,python]
 cover: https://dolphinsbukets.s3.bitiful.net/article-cover/cover-7.png?fmt=webp
 banner: https://dolphinsbukets.s3.bitiful.net/article-cover/cover-7.png?fmt=webp&q=50
-description: 将长段代码Embed到你的博客里吧
+description: 使用pygments对代码进行高亮，将长段代码Embed到你的博客里吧
 categories: 技术分享
 ---
 
@@ -32,11 +32,15 @@ categories: 技术分享
 
 然后从网上搜了一下，能进行代码高亮的库，发现了`highlight(js)`以及`pygments(py)`。 对于纯静态博客而言，肯定是使用`highlight`直接在前端处理好，但是这可能产生跨域问题以及因为网络问题无法获取到文件内容。况且现在无服务器函数遍地走了，那就直接pass掉吧。翻了下`pygments`的文档，嗯，懂了，开整。{% emoji blobcat blobcatbox %}
 
+## 写code
+
+这简单，跳过了{% emoji blobcat blobcatsnapped %}
+
 ## 部署🎇
 
 因为我是直接用Vercel的cli进行部署的，所以这一步需要先安装一下
 
-> 也可以试一下fork仓库然后在vercel的面板里直接部署
+> 也可以直接部署: [Develop To Vercel](https://vercel.com/import/project?template=https://github.com/thun888/hightlight-code-api)
 
 {% copy npm install -g vercel prefix:$ %}
 
@@ -44,15 +48,15 @@ categories: 技术分享
 
 {% copy vercel login prefix:$ %}
 
-再ckone下仓库到本地，你可以打开`api\main.py`来修改一下提供者信息
+再clone下仓库到本地，你可以打开`api\main.py`来修改一下/删除提供者信息
 
 {% copy git clone https://github.com/thun888/hightlight-code-api.git prefix:$ %}
 
 {% image https://onep.hzchu.top/mount/pic/myself/2024/04/66249b3e5bb80.webp %}
 
-如有需要，可在`verlcel.json`里配置可信来源，防止滥用
+如有需要，可在`vercel.json`里配置可信来源，防止滥用
 
-上传
+部署到生产环境
 
 {% copy vercel --prod prefix:$ %}
 
@@ -66,12 +70,51 @@ categories: 技术分享
 
 可传入参数：
 
-| 参数名    | 默认值 | 解释                   |
-| --------- | ------ | ---------------------- |
-| *code*    | \      | 需要的高亮的代码       |
-| *url*     | \      | 需要的高亮的代码的链接 |
-| *lang*    | python | 语言                   |
-| *withcss* | true   | 是否附带css            |
+| 参数名    | 默认值                 | 解释                                  |
+| --------- | ---------------------- | ------------------------------------- |
+| *code*    | \                      | 需要的高亮的代码                      |
+| *url*     | \                      | 需要的高亮的代码的链接                |
+| *lang*    | [为空时根据后缀名判断] | 语言                                  |
+| *withcss* | true                   | 是否附带css                           |
+| json      | false                  | 是否以json形式返回({"result": "..."}) |
+
+## 扩展
+
+### 更便捷的使用
+
+受[@星日语](https://weekdaycare.cn/)的启发，我做了个插件：`hexo-dynamic-codeblock`
+
+安装：{% copy npm install hexo-dynamic-codeblock prefix:$ %}
+
+配置：
+
+```yaml _config.yml
+dynamic_codeblock:
+  loading: true
+  showsupporter: true
+  api: https://{yourdomain}/api/v1/generate
+  css: https://jsd.hzchu.top/gh/thun888/asstes@master/files/pygments-css/default.css
+```
+
+> **loading只针对Stellar主题**,同时，为使copycode正常工作，你需要将/js/plugins/copycode.js修改为[这样](https://blog.hzchu.top/js/plugins/copycode.js)
+
+使用：
+
+```markdown
+{% coding [url] [lang] %}
+```
+
+在其它主题中的使用状况
+
+![landscape](https://onep.hzchu.top/mount/pic/myself/2024/05/6632074ebf0a9.webp)
+
+从传统方式迁移：
+
+​	使用正则表达式，将`<script src="https://hightlight-code-api\.hzchu\.top/api/v1/generate\?url=(.*)&lang=(.*)"></script>`替换为`{% coding $1 $2 %}`
+
+## Todo
+
+- [ ] 添加 `/preview`
 
 ## 效果
 
@@ -81,4 +124,4 @@ categories: 技术分享
 <script src="https://hightlight-code-api.hzchu.top/api/v1/generate?url=https://raw.githubusercontent.com/thun888/hightlight-code-api/main/api/main.py&lang=python"></script>
 ```
 
-<script src="https://hightlight-code-api.hzchu.top/api/v1/generate?url=https://raw.githubusercontent.com/thun888/hightlight-code-api/main/api/main.py&lang=python"></script>
+{% coding https://raw.githubusercontent.com/thun888/hightlight-code-api/main/api/main.py python %}

@@ -246,7 +246,7 @@ WantedBy=multi-user.target
 
 Code:
 
-<script src="https://hightlight-code-api.hzchu.top/api/v1/generate?url=https://raw.githubusercontent.com/thun888/MNSLXOD/main/jump/php/index.php&lang=php"></script>
+{% coding https://raw.githubusercontent.com/thun888/MNSLXOD/main/jump/php/index.php php %}
 
 伪静态配置:
 
@@ -266,7 +266,7 @@ Code:
 pip3 install flask flask_limiter hypercorn flask_cors
 ```
 
-<script src="https://hightlight-code-api.hzchu.top/api/v1/generate?url=https://raw.githubusercontent.com/thun888/MNSLXOD/main/jump/py/main.py&lang=python"></script>
+{% coding https://raw.githubusercontent.com/thun888/MNSLXOD/main/jump/py/main.py python %}
 
 <!-- tab 解析 -->
 
@@ -317,7 +317,7 @@ pip3 install flask flask_limiter hypercorn flask_cors
 
 Code:
 
-<script src="https://hightlight-code-api.hzchu.top/api/v1/generate?url=https://raw.githubusercontent.com/thun888/MNSLXOD/main/node/main.py&lang=python"></script>
+{% coding https://raw.githubusercontent.com/thun888/MNSLXOD/main/node/main.py python %}
 
 > 节点附带了两个简易api用于查看该节点运行情况
 >

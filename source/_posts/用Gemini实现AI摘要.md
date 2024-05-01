@@ -11,7 +11,7 @@ categories: 技术分享
 
 ## 前言
 
-很久之前，我网上surfing的时候发现好多网站都有「AI摘要」，了解了一下发现是「[TianliGPT](https://docs_s.tianli0.top/)」，好是好，~~但两位数的价格还是打动不了我当时勉强三位数的存款。~~所以，我使用了一种笨方法~~（为了撑场子没考虑太多）~~，手动向「BingAI」发送摘要文本，获取摘要后存储在kv中，通过cfw返回。可行，但太痛苦了（这也是它叫DolGPT的原因之一），前几天看到Gemini开放了api可以免费调用，这不直接起飞{% emoji blobcat ablobcatrainbow %}
+很久之前，我网上surfing的时候发现好多网站都有「AI摘要」，了解了一下发现是「[TianliGPT](https://docs_s.tianli0.top/)」，好是好，~~但两位数的价格还是打动不了我当时勉强三位数的存款。~~本着能省就省的原则，我使用了一种笨方法~~（为了撑场子没考虑太多）~~，手动向「BingAI」发送摘要文本，获取摘要后存储在kv中，通过cfw返回。可行，但太痛苦了（这也是它叫DolGPT的原因之一），前几天看到Gemini开放了api可以免费调用，这不直接起飞{% emoji blobcat ablobcatrainbow %}
 
 ## 获取GEMINI_KEY
 
@@ -58,7 +58,7 @@ categories: 技术分享
 
 这是我修改后的程序，可以参考
 
-<script src="https://hightlight-code-api.hzchu.top/api/v1/generate?url=https://raw.githubusercontent.com/thun888/myblog/main/source/js/chuckle-post-ai.js&lang=js"></script>
+{% coding https://raw.githubusercontent.com/thun888/myblog/main/source/js/chuckle-post-ai.js js %}
 
 修改完后引入到主题
 

@@ -95,7 +95,7 @@ DESIGNATOR：管脚标号
 
 接着就是写个python脚本把它们拼起来辣
 
-<script src="https://hightlight-code-api.hzchu.top/api/v1/generate?url=https://raw.githubusercontent.com/thun888/altium-helper/master/packager.py&lang=python"></script>
+{% coding https://raw.githubusercontent.com/thun888/altium-helper/master/packager.py python %}
 
 {% ghcard thun888/altium-helper theme:dark %}
 
