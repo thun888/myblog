@@ -197,6 +197,16 @@ timeline:
 const ChannelNameList = ['thun888sthinks','Thun888sDraftArticles'];
 ```
 
+## 变体
+
+### 反向筛选
+
+将`if (MessageTextMatch && (!denied && MessageTextMatch[0].includes('#' + tagname))) {`修改为`if (MessageTextMatch && (!denied || MessageTextMatch[0].includes('#' + tagname))) {`
+
+### 文本筛选
+
+将`MessageTextMatch[0].includes('#' + tagname)`修改为`MessageTextMatch[0].includes('yourtext')`
+
 ## Todo
 
 - [x] 可在请求时选择过滤哪个tag
