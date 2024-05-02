@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/Artalk-doc/use/</loc>
+    <loc>https://blog.hzchu.top/2024/%E4%BD%BF%E7%94%A8Typora-plugin%E5%A2%9E%E5%BC%BAStellar%E5%86%99%E4%BD%9C%E4%BD%93%E9%AA%8C/</loc>
     
     <lastmod>2024-05-02</lastmod>
     
@@ -21,6 +21,24 @@
   
   <url>
     <loc>https://blog.hzchu.top/say/</loc>
+    
+    <lastmod>2024-05-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/wiki/Artalk-doc/use/</loc>
+    
+    <lastmod>2024-05-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/friends/</loc>
     
     <lastmod>2024-05-02</lastmod>
     
@@ -48,15 +66,6 @@
   
   <url>
     <loc>https://blog.hzchu.top/big/</loc>
-    
-    <lastmod>2024-05-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/friends/</loc>
     
     <lastmod>2024-05-02</lastmod>
     
@@ -550,6 +559,13 @@
   </url>
   
   <url>
+    <loc>https://blog.hzchu.top/tags/Stellar/</loc>
+    <lastmod>2024-05-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.hzchu.top/tags/Vercel/</loc>
     <lastmod>2024-05-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -558,13 +574,6 @@
   
   <url>
     <loc>https://blog.hzchu.top/tags/MC/</loc>
-    <lastmod>2024-05-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/tags/Stellar/</loc>
     <lastmod>2024-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
