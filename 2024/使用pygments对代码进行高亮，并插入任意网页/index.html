@@ -64,6 +64,46 @@
     <span class="loader-text-below" onclick="document.getElementById('eloading').style.display='none'">不想等待可以点我关掉</span>
   </div>
   
+  <script>
+  if (!!navigator.serviceWorker) {
+      navigator.serviceWorker.register('/cw.js?t=' + new Date().getTime()).then(async (registration) => {
+          if (localStorage.getItem('cw_installed') !== 'true') {
+              const conf = () => {
+                  console.log('[CW] Installing Success,Configuring...');
+                  fetch('/cw-cgi/api?type=config')
+                      .then(res => res.text())
+                      .then(text => {
+                          if (text === 'ok') {
+                              console.log('[CW] Installing Success,Configuring Success,Starting...');
+                              localStorage.setItem('cw_installed', 'true');
+                              //如果你不希望重载页面，请移除下面七行
+                              //重载标识 - 开始
+                              fetch(window.location.href).then(res => res.text()).then(text => {
+                                  document.open()
+                                  document.write(text);
+                                  document.close();
+                              });
+                              //重载标识 - 结束
+                          } else {
+                              console.warn('[CW] Installing Success,Configuring Failed,Sleeping 200ms...');
+                              setTimeout(() => {
+                                  conf()
+                              }, 200);
+                          }
+                      }).catch(err => {
+                          console.log('[CW] Installing Success,Configuring Error,Exiting...');
+                      });
+              }
+              setTimeout(() => {
+                  conf()
+              }, 50);
+          }
+      }).catch(err => {
+          console.error('[CW] Installing Failed,Error: ' + err.message);
+      });
+  } else { console.error('[CW] Installing Failed,Error: Browser not support service worker'); }
+  </script>
+
   <link rel="stylesheet" href="https://jsd.hzchu.top/npm/lxgw-wenkai-screen-webfont@1.1.0/lxgwwenkaiscreen.css" media="all">
   <link rel="stylesheet" href="/mcss/mcss.css">
   <style>
@@ -272,16 +312,16 @@
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://hightlight-code-api.hzchu.top/api/v1/generate?url=https://raw.githubusercontent.com/thun888/hightlight-code-api/main/api/main.py&amp;lang=python&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 
-    <div class="tag-plugin ds-coding" id="coding-vsrlhmsm3"></div>
+    <div class="tag-plugin ds-coding" id="coding-ti25u6nmh"></div>
     <script>
     addEventListener("load",function(){
-      console.log('[hexo-dynamic-codeblock]start load：coding-vsrlhmsm3' );
+      console.log('[hexo-dynamic-codeblock]start load：coding-ti25u6nmh' );
       utils.jq(() => {
         $(function () {
-          const el = document.getElementById('coding-vsrlhmsm3');
+          const el = document.getElementById('coding-ti25u6nmh');
             utils.request(el, "https://hightlight-code-api.hzchu.top/api/v1/generate?&url=https%3A%2F%2Fraw.githubusercontent.com%2Fthun888%2Fhightlight-code-api%2Fmain%2Fapi%2Fmain.py&lang=python&usejson=true", function (data) {
               $(el).append(data.result);
-              addCopyButtons('coding-vsrlhmsm3');
+              addCopyButtons('coding-ti25u6nmh');
             });
           });
       });
