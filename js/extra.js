@@ -12,5 +12,5 @@ document.getElementById("all-posts-count").innerHTML = allpostscount;
 document.getElementById("all-post-words").innerHTML = allpostswords;
 // 过期提醒
 if (gtime_days > 60) {
-    document.getElementById('gtime').innerHTML = `<div class="tag-plugin colorful note" color="orange"><div class="title"><strong>提醒</strong></div><div class="body"><p>本文最后更新于 ${gtime_days} 天前，其中某些信息可能已经过时，请谨慎使用！</p></div></div>`;
+    document.getElementById('gtime').innerHTML = `<div class="tag-plugin colorful note" color="orange"><div class="title"><strong>提醒</strong></div><div class="body"><p>本文最后更新于 ${gtime_days} 天前，其中某些信息可能已经过时，请谨慎使用！<br>如果发现内容有误，请在评论区告知。</p></div></div>`;
 }

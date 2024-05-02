@@ -66,12 +66,6 @@
 
   
 <!-- hexo injector head_end start -->
-  <div class="spinner" id="eloading"> 
-    <span class="loader-text">加载中...</span>
-    <div class="loader"></div>
-    <span class="loader-text-below" onclick="document.getElementById('eloading').style.display='none'">不想等待可以点我关掉</span>
-  </div>
-  
 
   <link rel="stylesheet" href="https://jsd.hzchu.top/npm/lxgw-wenkai-screen-webfont@1.1.0/lxgwwenkaiscreen.css" media="all">
   <link rel="stylesheet" href="/mcss/mcss.css">
@@ -130,6 +124,12 @@
 </style>
 <script src="/js/load.js"></script>
 
+  
+  <div class="spinner" id="eloading"> 
+    <span class="loader-text">加载中...</span>
+    <div class="loader"></div>
+    <span class="loader-text-below" onclick="document.getElementById('eloading').style.display='none'">不想等待可以点我关掉</span>
+  </div>
   <!-- hexo injector head_end end --></head>
 <body>
 
@@ -201,16 +201,16 @@
 <h2 id="前端程序修改"><a href="#前端程序修改" class="headerlink" title="前端程序修改"></a>前端程序修改</h2><p>理论上，直接替换summary.tianli0.top为你对应域名即可，但在很多情况下，你还需要额外删减一些无关api调用，如openid生成</p>
 <p>这是我修改后的程序，可以参考</p>
 
-    <div class="tag-plugin ds-coding" id="coding-v2yx0k9x4"></div>
+    <div class="tag-plugin ds-coding" id="coding-fqg5qbhzm"></div>
     <script>
     addEventListener("load",function(){
-      console.log('[hexo-dynamic-codeblock]start load：coding-v2yx0k9x4' );
+      console.log('[hexo-dynamic-codeblock]start load：coding-fqg5qbhzm' );
       utils.jq(() => {
         $(function () {
-          const el = document.getElementById('coding-v2yx0k9x4');
+          const el = document.getElementById('coding-fqg5qbhzm');
             utils.request(el, "https://hightlight-code-api.hzchu.top/api/v1/generate?&url=https%3A%2F%2Fraw.githubusercontent.com%2Fthun888%2Fmyblog%2Fmain%2Fsource%2Fjs%2Fchuckle-post-ai.js&lang=js&usejson=true", function (data) {
               $(el).append(data.result);
-              addCopyButtons('coding-v2yx0k9x4');
+              addCopyButtons('coding-fqg5qbhzm');
             });
           });
       });
