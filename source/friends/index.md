@@ -27,14 +27,45 @@ rightbar: [friends_timeline]
 - 如果友链信息有变更可以在下方留言
 
 {% quot 吾之链 icon:hashtag %}
+
+{% tabs active: align:center %}
+
+<!-- tab Stellar -->
+
 {% codeblock lang:yaml %}
-title: Thun888's Blog
-avatar: https://blog.hzchu.top/img/avatar.webp
-url: https://blog.hzchu.top
-screenshot: https://onep.hzchu.top/mount/pic/blog-hzchu-top.png
-background: https://onep.hzchu.top/mount/pic/2024/02/06/65c236823dbca.webp
-description: 夏日当空,心如深渊
+- title: Thun888's Blog
+  url: https://www.flyalready.cn/
+  avatar: https://blog.hzchu.top/img/avatar.webp
+  screenshot: https://onep.hzchu.top/mount/pic/blog-hzchu-top.png
+  description: 夏日当空,心如深渊
 {% endcodeblock %}
+
+<!-- tab 通用 -->
+
+{% grid bg:card %}
+
+{% copy Thun888's Blog prefix:title %}
+
+{% copy https://blog.hzchu.top/img/avatar.webp prefix:avatar %}
+
+{% copy https://blog.hzchu.top prefix:url %}
+
+<!-- cell -->
+
+{% copy https://onep.hzchu.top/mount/pic/blog-hzchu-top.png prefix:screenshot %}
+
+{% copy https://onep.hzchu.top/mount/pic/2024/02/06/65c236823dbca.webp prefix:background %}
+
+{% copy 夏日当空,心如深渊 prefix:description %}
+
+{% endgrid %}
+
+
+
+
+
+
+{% endtabs %}
 
 > 目前已取消自助友链申请，如果你想与我交换友链的话请在下方留言哦！
 
