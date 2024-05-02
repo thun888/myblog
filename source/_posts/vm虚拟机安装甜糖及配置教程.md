@@ -128,7 +128,7 @@ wget https://dachui.co/ttnode/node2.sh && sh node2.sh
 
 3\.网速监控
 
-虽然FinalShell自带网速监控，<img src="C:\\Users\\22383\\AppData\\Roaming\\Typora\\typora-user-images\\image-20210207130000887.png" alt="image-20210207130000887" style="zoom: 67%;" />但也不总是每天都在电脑旁
+虽然FinalShell自带网速监控，但也不总是每天都在电脑旁
 
 输入
 
