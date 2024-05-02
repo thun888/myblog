@@ -54,13 +54,13 @@ rightbar: [timeline]
 {% tabs active:1 align:center %}
 
 <!-- tab 未来可能发布的稿子 -->
-{% timeline user:Thun888sDraftArticles api:https://get-tg-channel-api.hzchu.top/?tag=DTA type:memos %}
+{% timeline user:Thun888sDraftArticles api:https://get-tg-channel-api.hzchu.top/?tag=DTA&usetgclassification=true type:memos %}
 
 {% endtimeline %}
 <!-- tab 挖坑 -->
 
 碍于各种因素，先挖个坑，说不定以后会填{% emoji blobcat blobcatgooglytrash %}
-{% timeline user:Thun888sDraftArticles api:https://get-tg-channel-api.hzchu.top/?tag=HOLE type:memos %}
+{% timeline user:Thun888sDraftArticles api:https://get-tg-channel-api.hzchu.top/?tag=HOLE&usetgclassification=true type:memos %}
 
 {% endtimeline %}
 

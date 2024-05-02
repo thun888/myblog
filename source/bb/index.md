@@ -14,6 +14,10 @@ comments: false
 <link rel="stylesheet" href="https://memobbs.app/memos.css">
 <script src="https://cdn.staticfile.org/marked/7.0.5/marked.min.js"></script>
 <script src="https://cdn.staticfile.org/lozad.js/1.16.0/lozad.min.js"></script>
+
+<link href="http://artalk.hzchu.top/dist/Artalk.css" rel="stylesheet" />
+<script src="http://artalk.hzchu.top/dist/Artalk.js"></script>
+
 <script src="/js/memos.js"></script>
 
 <script type="text/javascript">
@@ -25,7 +29,7 @@ comments: false
       "creatorId" : "101",
       "avatar" : "/img/avatar.webp",
       "artalk" : "https://artalk.hzchu.top",
-      "artSite" : "Blog"
+      "artSite" : "Thun888"
     }
   ]
 </script>

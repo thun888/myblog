@@ -152,11 +152,11 @@ comments:
   # Artalk
   # https://artalk.js.org/
   artalk:
-    css: https://jsd.hzchu.top/npm/artalk@2.8.2/dist/Artalk.css
-    js: https://jsd.hzchu.top/npm/artalk@2.8.2/dist/Artalk.js 
+    css: http://artalk.hzchu.top/dist/Artalk.css
+    js: http://artalk.hzchu.top/dist/Artalk.js
     server: https://artalk.hzchu.top # 后端服务地址
     placeholder: '此时无声胜有声'
-    site: Blog
+    site: Thun888
     emoticons: https://raw.hzchu.top/thun888/asstes/master/files/json/artalk/default.json
     darkMode: auto
 

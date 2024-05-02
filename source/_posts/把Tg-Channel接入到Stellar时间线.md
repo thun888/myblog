@@ -47,8 +47,9 @@ const baseproxyurl="https://get-tg-channel-api.hzchu.top/?proxy=" //将中间域
 | limit       | 获取条数         | /          | /                                                            |
 | offset | 获取信息偏移量     | /          | 如果有一条信息`id`为`80`的信息，那么当传入`80`时将返回这条信息之前的所有信息 |
 | showtag     | 是否展示标签     | true       | /                                                            |
-| showview    | 是否展示访问量   | false      | 启用时会在末尾附上(views:number)                             |
+| showview    | 是否展示访问量   | false | 启用时会在末尾附上(views:number)                             |
 | usemd       | 是否使用Markdown | true       | 开启后返回未被tg解析过的md语法                               |
+| usetgclassification | 是否使用tg自带的分类 | false | 开启后使用tg自带的分类来进行标签筛选，防止过久导致无法显示。但注意会有缓存 |
 
 > 众所周知，`0`是第一个自然数，所以cid传入`0`时表示获取第1个频道
 >
@@ -218,7 +219,7 @@ const ChannelNameList = ['thun888sthinks','Thun888sDraftArticles'];
 - [ ] 表情包标签解析
 - [ ] 自定义是否显示引用
 - [ ] 可传入需要返回的名称
-- [ ] 可选使用tg自带分类
+- [x] 可选使用tg自带分类
 
 ## 结语
 
