@@ -63,6 +63,12 @@
 
   
 <!-- hexo injector head_end start -->
+  <div class="spinner" id="eloading"> 
+    <span class="loader-text">加载中...</span>
+    <div class="loader"></div>
+    <span class="loader-text-below" onclick="document.getElementById('eloading').style.display='none'">不想等待可以点我关掉</span>
+  </div>
+  
 
   <link rel="stylesheet" href="https://jsd.hzchu.top/npm/lxgw-wenkai-screen-webfont@1.1.0/lxgwwenkaiscreen.css" media="all">
   <link rel="stylesheet" href="/mcss/mcss.css">
@@ -121,12 +127,6 @@
 </style>
 <script src="/js/load.js"></script>
 
-  
-  <div class="spinner" id="eloading"> 
-    <span class="loader-text">加载中...</span>
-    <div class="loader"></div>
-    <span class="loader-text-below" onclick="document.getElementById('eloading').style.display='none'">不想等待可以点我关掉</span>
-  </div>
   <!-- hexo injector head_end end --></head>
 <body>
 
@@ -194,16 +194,16 @@
 <p>还有像xy坐标，NAME，COLOR等不必多说</p>
 <p>接着就是写个python脚本把它们拼起来辣</p>
 
-    <div class="tag-plugin ds-coding" id="coding-4gew1c9dh"></div>
+    <div class="tag-plugin ds-coding" id="coding-h8f7zz3u6"></div>
     <script>
     addEventListener("load",function(){
-      console.log('[hexo-dynamic-codeblock]start load：coding-4gew1c9dh' );
+      console.log('[hexo-dynamic-codeblock]start load：coding-h8f7zz3u6' );
       utils.jq(() => {
         $(function () {
-          const el = document.getElementById('coding-4gew1c9dh');
+          const el = document.getElementById('coding-h8f7zz3u6');
             utils.request(el, "https://hightlight-code-api.hzchu.top/api/v1/generate?&url=https%3A%2F%2Fraw.githubusercontent.com%2Fthun888%2Faltium-helper%2Fmaster%2Fpackager.py&lang=python&usejson=true", function (data) {
               $(el).append(data.result);
-              addCopyButtons('coding-4gew1c9dh');
+              addCopyButtons('coding-h8f7zz3u6');
             });
           });
       });
