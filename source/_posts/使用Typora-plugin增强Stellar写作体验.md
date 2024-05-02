@@ -68,7 +68,7 @@ COMMANDS = [
     { enable = true, type = "snippet", icon = "🖼️", hint = "插入banner横幅容器标签", keyword = "banner", callback = "{% banner [name] bg: %}\n{% endbanner %}" },
     { enable = true, type = "snippet", icon = "📸", hint = "插入swiper轮播容器标签", keyword = "swiper", callback = "{% swiper effect:cards %}\n\n{% endswiper %}" },
     { enable = true, type = "snippet", icon = "👤", hint = "插入ghcard标签", keyword = "ghcard", callback = "{% ghcard [name] %}" },
-    { enable = true, type = "snippet", icon = "🌙", hint = "插入ghcard标签（暗黑主题）", keyword = "ghcard-dark", callback = "{% ghcard [name] theme:dark %}" }
+    { enable = true, type = "snippet", icon = "🌙", hint = "插入ghcard标签（暗黑主题）", keyword = "ghcard-dark", callback = "{% ghcard [name] theme:dark %}" },
     { enable = true, type = "snippet", icon = "🔐", hint = "插入psw密码标签", keyword = "psw", callback = "{% psw 密码 %}" },
     { enable = true, type = "snippet", icon = "🔽", hint = "插入u下划线标签", keyword = "u", callback = "{% u 下划线 %}" },
     { enable = true, type = "snippet", icon = "🔆", hint = "插入emp着重号标签", keyword = "emp", callback = "{% emp 着重号 %}" },
