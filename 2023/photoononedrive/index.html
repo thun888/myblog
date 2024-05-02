@@ -87,45 +87,6 @@
     <span class="loader-text-below" onclick="document.getElementById('eloading').style.display='none'">不想等待可以点我关掉</span>
   </div>
   
-  <script>
-  if (!!navigator.serviceWorker) {
-      navigator.serviceWorker.register('/cw.js?t=' + new Date().getTime()).then(async (registration) => {
-          if (localStorage.getItem('cw_installed') !== 'true') {
-              const conf = () => {
-                  console.log('[CW] Installing Success,Configuring...');
-                  fetch('/cw-cgi/api?type=config')
-                      .then(res => res.text())
-                      .then(text => {
-                          if (text === 'ok') {
-                              console.log('[CW] Installing Success,Configuring Success,Starting...');
-                              localStorage.setItem('cw_installed', 'true');
-                              //如果你不希望重载页面，请移除下面七行
-                              //重载标识 - 开始
-                              fetch(window.location.href).then(res => res.text()).then(text => {
-                                  document.open()
-                                  document.write(text);
-                                  document.close();
-                              });
-                              //重载标识 - 结束
-                          } else {
-                              console.warn('[CW] Installing Success,Configuring Failed,Sleeping 200ms...');
-                              setTimeout(() => {
-                                  conf()
-                              }, 200);
-                          }
-                      }).catch(err => {
-                          console.log('[CW] Installing Success,Configuring Error,Exiting...');
-                      });
-              }
-              setTimeout(() => {
-                  conf()
-              }, 50);
-          }
-      }).catch(err => {
-          console.error('[CW] Installing Failed,Error: ' + err.message);
-      });
-  } else { console.error('[CW] Installing Failed,Error: Browser not support service worker'); }
-  </script>
 
   <link rel="stylesheet" href="https://jsd.hzchu.top/npm/lxgw-wenkai-screen-webfont@1.1.0/lxgwwenkaiscreen.css" media="all">
   <link rel="stylesheet" href="/mcss/mcss.css">
@@ -348,16 +309,16 @@
 <p>需要修改redis连接地址，$user_token和$mainurl</p>
 </blockquote>
 <p>Code:</p>
-<pre><code>&lt;div class=&quot;tag-plugin ds-coding&quot; id=&quot;coding-pyena3w83&quot;&gt;&lt;/div&gt;
+<pre><code>&lt;div class=&quot;tag-plugin ds-coding&quot; id=&quot;coding-eunnolwye&quot;&gt;&lt;/div&gt;
 &lt;script&gt;
 addEventListener(&quot;load&quot;,function(){
-  console.log(&#39;[hexo-dynamic-codeblock]start load：coding-pyena3w83&#39; );
+  console.log(&#39;[hexo-dynamic-codeblock]start load：coding-eunnolwye&#39; );
   utils.jq(() =&gt; {
     $(function () {
-      const el = document.getElementById(&#39;coding-pyena3w83&#39;);
+      const el = document.getElementById(&#39;coding-eunnolwye&#39;);
         utils.request(el, &quot;https://hightlight-code-api.hzchu.top/api/v1/generate?&amp;url=https%3A%2F%2Fraw.githubusercontent.com%2Fthun888%2FMNSLXOD%2Fmain%2Fjump%2Fphp%2Findex.php&amp;lang=php&amp;usejson=true&quot;, function (data) {
           $(el).append(data.result);
-          addCopyButtons(&#39;coding-pyena3w83&#39;);
+          addCopyButtons(&#39;coding-eunnolwye&#39;);
         });
       });
   });
@@ -375,16 +336,16 @@ addEventListener(&quot;load&quot;,function(){
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install flask flask_limiter hypercorn flask_cors</span><br></pre></td></tr></table></figure>
 
 
-<pre><code>&lt;div class=&quot;tag-plugin ds-coding&quot; id=&quot;coding-uyko18n4f&quot;&gt;&lt;/div&gt;
+<pre><code>&lt;div class=&quot;tag-plugin ds-coding&quot; id=&quot;coding-k23tnw6r5&quot;&gt;&lt;/div&gt;
 &lt;script&gt;
 addEventListener(&quot;load&quot;,function(){
-  console.log(&#39;[hexo-dynamic-codeblock]start load：coding-uyko18n4f&#39; );
+  console.log(&#39;[hexo-dynamic-codeblock]start load：coding-k23tnw6r5&#39; );
   utils.jq(() =&gt; {
     $(function () {
-      const el = document.getElementById(&#39;coding-uyko18n4f&#39;);
+      const el = document.getElementById(&#39;coding-k23tnw6r5&#39;);
         utils.request(el, &quot;https://hightlight-code-api.hzchu.top/api/v1/generate?&amp;url=https%3A%2F%2Fraw.githubusercontent.com%2Fthun888%2FMNSLXOD%2Fmain%2Fjump%2Fpy%2Fmain.py&amp;lang=python&amp;usejson=true&quot;, function (data) {
           $(el).append(data.result);
-          addCopyButtons(&#39;coding-uyko18n4f&#39;);
+          addCopyButtons(&#39;coding-k23tnw6r5&#39;);
         });
       });
   });
@@ -419,16 +380,16 @@ id3 ---> |值均不存在| id6["将'主服务器'地址与访问路径拼接后�
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install flask flask_limiter hypercorn flask_cors</span><br></pre></td></tr></table></figure>
 
 <p>Code:</p>
-<pre><code>&lt;div class=&quot;tag-plugin ds-coding&quot; id=&quot;coding-frlrp79gt&quot;&gt;&lt;/div&gt;
+<pre><code>&lt;div class=&quot;tag-plugin ds-coding&quot; id=&quot;coding-1zqo1pq16&quot;&gt;&lt;/div&gt;
 &lt;script&gt;
 addEventListener(&quot;load&quot;,function(){
-  console.log(&#39;[hexo-dynamic-codeblock]start load：coding-frlrp79gt&#39; );
+  console.log(&#39;[hexo-dynamic-codeblock]start load：coding-1zqo1pq16&#39; );
   utils.jq(() =&gt; {
     $(function () {
-      const el = document.getElementById(&#39;coding-frlrp79gt&#39;);
+      const el = document.getElementById(&#39;coding-1zqo1pq16&#39;);
         utils.request(el, &quot;https://hightlight-code-api.hzchu.top/api/v1/generate?&amp;url=https%3A%2F%2Fraw.githubusercontent.com%2Fthun888%2FMNSLXOD%2Fmain%2Fnode%2Fmain.py&amp;lang=python&amp;usejson=true&quot;, function (data) {
           $(el).append(data.result);
-          addCopyButtons(&#39;coding-frlrp79gt&#39;);
+          addCopyButtons(&#39;coding-1zqo1pq16&#39;);
         });
       });
   });
