@@ -94,5 +94,16 @@ COMMANDS = [
 
 `Typora Plugin`远不止于此，~~但我不会了~~，研究下先，试试看能否实现以下功能{% emoji blobcat blobcatcoffee %}：
 
-- [ ] 实时渲染`Stellar`自有标签
-- [ ] 标签支持直接从列表里选择输入
+{% checkbox 实时渲染Stellar自有标签 %}
+
+{% checkbox symbol:plus color:green checked:true 表情标签支持直接从列表里选择输入 %}
+
+进度：
+
+{% timeline %}
+
+<!-- node 完成表情面板 -->
+
+![](https://pic.hzchu.top/i/myself/2024/05/6634968c639b6.gif)
+
+{% endtimeline %}
