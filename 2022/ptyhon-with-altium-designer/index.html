@@ -194,16 +194,16 @@
 <p>还有像xy坐标，NAME，COLOR等不必多说</p>
 <p>接着就是写个python脚本把它们拼起来辣</p>
 
-    <div class="tag-plugin ds-coding" id="coding-eux8dikes"></div>
+    <div class="tag-plugin ds-coding" id="coding-peigci4kw"></div>
     <script>
     addEventListener("load",function(){
-      console.log('[hexo-dynamic-codeblock]start load：coding-eux8dikes' );
+      console.log('[hexo-dynamic-codeblock]start load：coding-peigci4kw' );
       utils.jq(() => {
         $(function () {
-          const el = document.getElementById('coding-eux8dikes');
+          const el = document.getElementById('coding-peigci4kw');
             utils.request(el, "https://hightlight-code-api.hzchu.top/api/v1/generate?&url=https%3A%2F%2Fraw.githubusercontent.com%2Fthun888%2Faltium-helper%2Fmaster%2Fpackager.py&lang=python&usejson=true", function (data) {
               $(el).append(data.result);
-              addCopyButtons('coding-eux8dikes');
+              addCopyButtons('coding-peigci4kw');
             });
           });
       });
@@ -610,8 +610,8 @@
   <script>
   function load_artalk() {
     if (!document.querySelectorAll("#artalk_container")[0]) return;
-    utils.css('http://artalk.hzchu.top/dist/Artalk.css');
-    utils.js('http://artalk.hzchu.top/dist/Artalk.js', {defer: true}).then(function () {
+    utils.css('https://artalk.hzchu.top/dist/Artalk.css');
+    utils.js('https://artalk.hzchu.top/dist/Artalk.js', {defer: true}).then(function () {
       const el = document.getElementById("artalk_container");
       var path = el.getAttribute('comment_id');
       if (!path) {

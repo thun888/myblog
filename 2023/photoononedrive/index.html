@@ -309,16 +309,16 @@
 <p>需要修改redis连接地址，$user_token和$mainurl</p>
 </blockquote>
 <p>Code:</p>
-<pre><code>&lt;div class=&quot;tag-plugin ds-coding&quot; id=&quot;coding-7e5jxntc5&quot;&gt;&lt;/div&gt;
+<pre><code>&lt;div class=&quot;tag-plugin ds-coding&quot; id=&quot;coding-o8rxnpwlo&quot;&gt;&lt;/div&gt;
 &lt;script&gt;
 addEventListener(&quot;load&quot;,function(){
-  console.log(&#39;[hexo-dynamic-codeblock]start load：coding-7e5jxntc5&#39; );
+  console.log(&#39;[hexo-dynamic-codeblock]start load：coding-o8rxnpwlo&#39; );
   utils.jq(() =&gt; {
     $(function () {
-      const el = document.getElementById(&#39;coding-7e5jxntc5&#39;);
+      const el = document.getElementById(&#39;coding-o8rxnpwlo&#39;);
         utils.request(el, &quot;https://hightlight-code-api.hzchu.top/api/v1/generate?&amp;url=https%3A%2F%2Fraw.githubusercontent.com%2Fthun888%2FMNSLXOD%2Fmain%2Fjump%2Fphp%2Findex.php&amp;lang=php&amp;usejson=true&quot;, function (data) {
           $(el).append(data.result);
-          addCopyButtons(&#39;coding-7e5jxntc5&#39;);
+          addCopyButtons(&#39;coding-o8rxnpwlo&#39;);
         });
       });
   });
@@ -336,16 +336,16 @@ addEventListener(&quot;load&quot;,function(){
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install flask flask_limiter hypercorn flask_cors</span><br></pre></td></tr></table></figure>
 
 
-<pre><code>&lt;div class=&quot;tag-plugin ds-coding&quot; id=&quot;coding-nxs7cx8ib&quot;&gt;&lt;/div&gt;
+<pre><code>&lt;div class=&quot;tag-plugin ds-coding&quot; id=&quot;coding-kjuifty2w&quot;&gt;&lt;/div&gt;
 &lt;script&gt;
 addEventListener(&quot;load&quot;,function(){
-  console.log(&#39;[hexo-dynamic-codeblock]start load：coding-nxs7cx8ib&#39; );
+  console.log(&#39;[hexo-dynamic-codeblock]start load：coding-kjuifty2w&#39; );
   utils.jq(() =&gt; {
     $(function () {
-      const el = document.getElementById(&#39;coding-nxs7cx8ib&#39;);
+      const el = document.getElementById(&#39;coding-kjuifty2w&#39;);
         utils.request(el, &quot;https://hightlight-code-api.hzchu.top/api/v1/generate?&amp;url=https%3A%2F%2Fraw.githubusercontent.com%2Fthun888%2FMNSLXOD%2Fmain%2Fjump%2Fpy%2Fmain.py&amp;lang=python&amp;usejson=true&quot;, function (data) {
           $(el).append(data.result);
-          addCopyButtons(&#39;coding-nxs7cx8ib&#39;);
+          addCopyButtons(&#39;coding-kjuifty2w&#39;);
         });
       });
   });
@@ -380,16 +380,16 @@ id3 ---> |值均不存在| id6["将'主服务器'地址与访问路径拼接后�
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install flask flask_limiter hypercorn flask_cors</span><br></pre></td></tr></table></figure>
 
 <p>Code:</p>
-<pre><code>&lt;div class=&quot;tag-plugin ds-coding&quot; id=&quot;coding-kpzv96e0u&quot;&gt;&lt;/div&gt;
+<pre><code>&lt;div class=&quot;tag-plugin ds-coding&quot; id=&quot;coding-rdk4m838q&quot;&gt;&lt;/div&gt;
 &lt;script&gt;
 addEventListener(&quot;load&quot;,function(){
-  console.log(&#39;[hexo-dynamic-codeblock]start load：coding-kpzv96e0u&#39; );
+  console.log(&#39;[hexo-dynamic-codeblock]start load：coding-rdk4m838q&#39; );
   utils.jq(() =&gt; {
     $(function () {
-      const el = document.getElementById(&#39;coding-kpzv96e0u&#39;);
+      const el = document.getElementById(&#39;coding-rdk4m838q&#39;);
         utils.request(el, &quot;https://hightlight-code-api.hzchu.top/api/v1/generate?&amp;url=https%3A%2F%2Fraw.githubusercontent.com%2Fthun888%2FMNSLXOD%2Fmain%2Fnode%2Fmain.py&amp;lang=python&amp;usejson=true&quot;, function (data) {
           $(el).append(data.result);
-          addCopyButtons(&#39;coding-kpzv96e0u&#39;);
+          addCopyButtons(&#39;coding-rdk4m838q&#39;);
         });
       });
   });
@@ -794,8 +794,8 @@ addEventListener(&quot;load&quot;,function(){
   <script>
   function load_artalk() {
     if (!document.querySelectorAll("#artalk_container")[0]) return;
-    utils.css('http://artalk.hzchu.top/dist/Artalk.css');
-    utils.js('http://artalk.hzchu.top/dist/Artalk.js', {defer: true}).then(function () {
+    utils.css('https://artalk.hzchu.top/dist/Artalk.css');
+    utils.js('https://artalk.hzchu.top/dist/Artalk.js', {defer: true}).then(function () {
       const el = document.getElementById("artalk_container");
       var path = el.getAttribute('comment_id');
       if (!path) {

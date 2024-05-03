@@ -273,16 +273,16 @@
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://hightlight-code-api.hzchu.top/api/v1/generate?url=https://raw.githubusercontent.com/thun888/hightlight-code-api/main/api/main.py&amp;lang=python&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 
-    <div class="tag-plugin ds-coding" id="coding-970binkgf"></div>
+    <div class="tag-plugin ds-coding" id="coding-suvbogapx"></div>
     <script>
     addEventListener("load",function(){
-      console.log('[hexo-dynamic-codeblock]start load：coding-970binkgf' );
+      console.log('[hexo-dynamic-codeblock]start load：coding-suvbogapx' );
       utils.jq(() => {
         $(function () {
-          const el = document.getElementById('coding-970binkgf');
+          const el = document.getElementById('coding-suvbogapx');
             utils.request(el, "https://hightlight-code-api.hzchu.top/api/v1/generate?&url=https%3A%2F%2Fraw.githubusercontent.com%2Fthun888%2Fhightlight-code-api%2Fmain%2Fapi%2Fmain.py&lang=python&usejson=true", function (data) {
               $(el).append(data.result);
-              addCopyButtons('coding-970binkgf');
+              addCopyButtons('coding-suvbogapx');
             });
           });
       });
@@ -644,8 +644,8 @@
   <script>
   function load_artalk() {
     if (!document.querySelectorAll("#artalk_container")[0]) return;
-    utils.css('http://artalk.hzchu.top/dist/Artalk.css');
-    utils.js('http://artalk.hzchu.top/dist/Artalk.js', {defer: true}).then(function () {
+    utils.css('https://artalk.hzchu.top/dist/Artalk.css');
+    utils.js('https://artalk.hzchu.top/dist/Artalk.js', {defer: true}).then(function () {
       const el = document.getElementById("artalk_container");
       var path = el.getAttribute('comment_id');
       if (!path) {

@@ -655,8 +655,8 @@
   <script>
   function load_artalk() {
     if (!document.querySelectorAll("#artalk_container")[0]) return;
-    utils.css('http://artalk.hzchu.top/dist/Artalk.css');
-    utils.js('http://artalk.hzchu.top/dist/Artalk.js', {defer: true}).then(function () {
+    utils.css('https://artalk.hzchu.top/dist/Artalk.css');
+    utils.js('https://artalk.hzchu.top/dist/Artalk.js', {defer: true}).then(function () {
       const el = document.getElementById("artalk_container");
       var path = el.getAttribute('comment_id');
       if (!path) {
