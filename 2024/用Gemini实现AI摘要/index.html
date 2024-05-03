@@ -167,7 +167,7 @@
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
 <span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/">技术分享</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-03-09T19:31:16.000Z">2024-03-09</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-03-09T19:31:16.000Z">2024-03-09</time></span></div><div class="flex-row" id="page-words"><span style="padding: 4px;">本文字数：7460字</span><span class="sep updated" style="padding: 4px;"></span><span class="text updated" style="padding: 4px;">阅读时长：29分</span></div><div class="flex-row" id="tag"> <span>&nbsp标签：</span><a class="cap breadcrumb-link" href="/tags/Blog/">Blog</a>&nbsp; <a class="cap breadcrumb-link" href="/tags/CFW/">CFW</a>&nbsp; <a class="cap breadcrumb-link" href="/tags/Stellar/">Stellar</a>&nbsp</div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-03-09T19:31:16.000Z">2024-03-09</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-03-09T19:31:16.000Z">2024-03-09</time></span></div><div class="flex-row" id="page-words"><span style="padding: 4px;">本文字数：733字</span><span class="sep updated" style="padding: 4px;"></span><span class="text updated" style="padding: 4px;">阅读时长：2分</span></div><div class="flex-row" id="tag"> <span>&nbsp标签：</span><a class="cap breadcrumb-link" href="/tags/Blog/">Blog</a>&nbsp; <a class="cap breadcrumb-link" href="/tags/CFW/">CFW</a>&nbsp; <a class="cap breadcrumb-link" href="/tags/Stellar/">Stellar</a>&nbsp</div></div></div>
     
     <div class="bottom only-title">
       
@@ -201,16 +201,16 @@
 <h2 id="前端程序修改"><a href="#前端程序修改" class="headerlink" title="前端程序修改"></a>前端程序修改</h2><p>理论上，直接替换summary.tianli0.top为你对应域名即可，但在很多情况下，你还需要额外删减一些无关api调用，如openid生成</p>
 <p>这是我修改后的程序，可以参考</p>
 
-    <div class="tag-plugin ds-coding" id="coding-dcn1cryv8"></div>
+    <div class="tag-plugin ds-coding" id="coding-ku09tou06"></div>
     <script>
     addEventListener("load",function(){
-      console.log('[hexo-dynamic-codeblock]start load：coding-dcn1cryv8' );
+      console.log('[hexo-dynamic-codeblock]start load：coding-ku09tou06' );
       utils.jq(() => {
         $(function () {
-          const el = document.getElementById('coding-dcn1cryv8');
+          const el = document.getElementById('coding-ku09tou06');
             utils.request(el, "https://hightlight-code-api.hzchu.top/api/v1/generate?&url=https%3A%2F%2Fraw.githubusercontent.com%2Fthun888%2Fmyblog%2Fmain%2Fsource%2Fjs%2Fchuckle-post-ai.js&lang=js&usejson=true", function (data) {
               $(el).append(data.result);
-              addCopyButtons('coding-dcn1cryv8');
+              addCopyButtons('coding-ku09tou06');
             });
           });
       });
@@ -612,7 +612,7 @@
 
 <script defer>
   window.addEventListener('DOMContentLoaded', (event) => {
-    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":null},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"},"artalk":{"js":"/js/services/artalk.js"}}`));
+    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":"https://siteinfo-api.hzchu.top/api/v1?url={href}"},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"},"artalk":{"js":"/js/services/artalk.js"}}`));
     for (let id of Object.keys(ctx.services)) {
       const js = ctx.services[id].js;
       if (id == 'siteinfo') {

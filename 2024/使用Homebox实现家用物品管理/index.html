@@ -179,7 +179,7 @@
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
 <span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/">日常生活</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-02-12T22:41:07.000Z">2024-02-12</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-02-17T09:30:07.000Z">2024-02-17</time></span></div><div class="flex-row" id="page-words"><span style="padding: 4px;">本文字数：14046字</span><span class="sep updated" style="padding: 4px;"></span><span class="text updated" style="padding: 4px;">阅读时长：56分</span></div><div class="flex-row" id="tag"> <span>&nbsp标签：</span><a class="cap breadcrumb-link" href="/tags/Homebox/">Homebox</a>&nbsp; <a class="cap breadcrumb-link" href="/tags/%E5%AE%B6%E7%94%A8/">家用</a>&nbsp</div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-02-12T22:41:07.000Z">2024-02-12</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-02-17T09:30:07.000Z">2024-02-17</time></span></div><div class="flex-row" id="page-words"><span style="padding: 4px;">本文字数：1.4k字</span><span class="sep updated" style="padding: 4px;"></span><span class="text updated" style="padding: 4px;">阅读时长：5分</span></div><div class="flex-row" id="tag"> <span>&nbsp标签：</span><a class="cap breadcrumb-link" href="/tags/Homebox/">Homebox</a>&nbsp; <a class="cap breadcrumb-link" href="/tags/%E5%AE%B6%E7%94%A8/">家用</a>&nbsp</div></div></div>
     
     <div class="bottom only-title">
       
@@ -290,7 +290,7 @@
 <h2 id="实际实施"><a href="#实际实施" class="headerlink" title="实际实施"></a>实际实施</h2><p>  因为一开始没发现自带的<code>标签生成器</code>，所以用了「<a target="_blank" rel="noopener" href="https://d.hzchu.top/d4a5q">E-Label</a>」来生成一维码，单页85个标签</p>
 <p>其中，A&#x2F;B…表示该物品原属房间</p>
 <p>标签内容填入物品描述中</p>
-<div class="tag-plugin link dis-select"><a class="link-card rich" title="相关文件" href="https://pan.hzchu.top/s/q8SJ" target="_blank" rel="external nofollow noopener noreferrer" cardlink autofill="icon,desc"><div class="top"><div class="lazy img" data-bg="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/link/8f277b4ee0ecd.svg"></div><span class="cap link footnote">https://pan.hzchu.top/s/q8SJ</span></div><div class="bottom"><span class="title">相关文件</span><span class="cap desc footnote"></span></div></a></div>
+<div class="tag-plugin link dis-select"><a class="link-card rich" title="相关文件" href="https://pan.hzchu.top/s/q8SJ" target="_blank" rel="external nofollow noopener noreferrer" cardlink api="https://siteinfo-api.hzchu.top/api/v1?url=https://pan.hzchu.top/s/q8SJ" autofill="icon,desc"><div class="top"><div class="lazy img" data-bg="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/link/8f277b4ee0ecd.svg"></div><span class="cap link footnote">https://pan.hzchu.top/s/q8SJ</span></div><div class="bottom"><span class="title">相关文件</span><span class="cap desc footnote"></span></div></a></div>
 
 <blockquote>
 <p>还可以把文字缩掉，但考虑到一维码水平方向易被损坏还是留着吧</p>
@@ -731,7 +731,7 @@
 
 <script defer>
   window.addEventListener('DOMContentLoaded', (event) => {
-    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":null},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"},"artalk":{"js":"/js/services/artalk.js"}}`));
+    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":"https://siteinfo-api.hzchu.top/api/v1?url={href}"},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"},"artalk":{"js":"/js/services/artalk.js"}}`));
     for (let id of Object.keys(ctx.services)) {
       const js = ctx.services[id].js;
       if (id == 'siteinfo') {
