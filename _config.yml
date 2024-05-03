@@ -146,8 +146,10 @@ neat_js:
 # Dependencies: https://github.com/willin/hexo-wordcount
 post_wordcount:
   item_text: true
-  wordcount: true
-  min2read: true
+  wordcount: true         # 单篇 字数统计
+  min2read: true          # 单篇 阅读时长
+  totalcount: true       # 网站 字数统计
+  separated_meta: true
   
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

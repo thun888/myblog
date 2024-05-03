@@ -199,11 +199,6 @@ footer:
 tag_plugins:
   image:
     fancybox: true # true, false
-  # {% link %}
-  linkcard:
-    # 设置 api 可以自动提取网页标题、图标，服务部署方法：https://github.com/xaoxuu/site-info-api/
-    # 接口测试通过后，把按钮的 href 部分替换成 ${href} 之后填写到下方，例如：https://api.vlts.cc/site_info/v1?url=${href}
-    api: https://siteinfo-api.hzchu.top/api/v1?url=${href}
   # 代码块复制按钮
   copycode:
     enable: true
@@ -360,7 +355,7 @@ data_services:
     js: /js/services/siteinfo.js
     # 设置 api 可以自动提取网页标题、图标，服务部署方法：https://github.com/xaoxuu/site-info-api/
     # 接口测试通过后，把按钮的 href 部分替换成 {href} 之后填写到下方，例如：https://api.vlts.cc/site_info/v1?url={href}
-    api: 
+    api: https://siteinfo-api.hzchu.top/api/v1?url={href}
   ghinfo:
     js: /js/services/ghinfo.js
   # 网格布局类
