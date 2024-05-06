@@ -2,7 +2,7 @@
 title: 使用Typora_plugin增强Stellar写作体验
 date: 2024-05-02 12:47:19
 updated: 2024-05-02 12:47:19
-tags: Stellar
+tags: [Stellar,Typora]
 cover:
 banner:
 description: 打标签打累了？试试自动补齐
@@ -11,7 +11,7 @@ categories: 瞎折腾
 
 ## 前言
 
-我觉得`Stellar`有一个极强的优势——丰富的标签组件，{% mark 但 color:red %}有个{% wavy 小问题 %}——所有标签加起来30多个，而且重复手打`{%  %}`多多少少有点难受。{% emoji blobcat  blobcatcry %}
+我觉得`Stellar`有一个极强的优势——丰富的标签组件，{% mark 但 color:red %}有个{% wavy 小问题 %}——所有标签加起来30多个，而且重复手打`{% ... %}`多多少少有点难受。{% emoji blobcat  blobcatcry %}
 
 早上翻issue突然发现`Typora Plugin`这个好东西，这不直接用起来{% emoji blobcat blobcatnomblobcat %}
 
