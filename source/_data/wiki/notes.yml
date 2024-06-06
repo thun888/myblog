@@ -1,0 +1,13 @@
+name: 问题笔记
+title: 问题笔记
+subtitle: '问题？解决，纪录。'
+tags: notes
+cover: true
+icon: https://onep.hzchu.top/mount/pic/myself/2024/06/6661a0293114e.webp
+description: 问题？解决，纪录。
+leftbar:
+  - tree
+  - related
+base_dir: /wiki/notes/
+toc: 
+  - index

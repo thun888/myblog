@@ -34,7 +34,7 @@ rightbar: [friends_timeline]
 
 {% codeblock lang:yaml %}
 - title: Thun888's Blog
-  url: https://www.flyalready.cn/
+  url: https://blog.hzchu.top/
   avatar: https://blog.hzchu.top/img/avatar.webp
   screenshot: https://onep.hzchu.top/mount/pic/blog-hzchu-top.png
   description: 夏日当空,心如深渊
