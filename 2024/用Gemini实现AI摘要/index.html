@@ -208,16 +208,16 @@
 <p>理论上，直接替换summary.tianli0.top为你对应域名即可，但在很多情况下，你还需要额外删减一些无关api调用，如openid生成</p>
 <p>这是我修改后的程序，可以参考</p>
 
-    <div class="tag-plugin ds-coding" id="coding-vy5q8sgas"></div>
+    <div class="tag-plugin ds-coding" id="coding-k4y1cq0ig"></div>
     <script>
     addEventListener("load",function(){
-      console.log('[hexo-dynamic-codeblock]start load：coding-vy5q8sgas' );
+      console.log('[hexo-dynamic-codeblock]start load：coding-k4y1cq0ig' );
       utils.jq(() => {
         $(function () {
-          const el = document.getElementById('coding-vy5q8sgas');
+          const el = document.getElementById('coding-k4y1cq0ig');
             utils.request(el, "https://hightlight-code-api.hzchu.top/api/v1/generate?&url=https%3A%2F%2Fraw.githubusercontent.com%2Fthun888%2Fmyblog%2Fmain%2Fsource%2Fjs%2Fchuckle-post-ai.js&lang=js&usejson=true", function (data) {
               $(el).append(data.result);
-              addCopyButtons('coding-vy5q8sgas');
+              addCopyButtons('coding-k4y1cq0ig');
             });
           });
       });
@@ -767,6 +767,16 @@
     }
   });
 </script>
+
+  <script defer src="/js/chuckle-post-ai.js"></script>
+  <script defer>
+    window.addEventListener('DOMContentLoaded', (event) => {
+      new ChucklePostAI(Object.assign({
+        el: 'article.content',
+        css: `/css/_plugins/tianli_gpt`
+      }, JSON.parse(`{"enable":true,"js":"/js/chuckle-post-ai.js","field":"post","key":"5Q5mpqRK5DkwT1X9Gi5e","total_length":3500,"typewriter":true,"summary_directly":true,"rec_method":"web","hide_shuttle":true,"summary_toggle":false,"interface":{"name":"AI摘要","introduce":"我是文章辅助AI: Gemini，点击下方的按钮，让我生成本文简介、推荐相关文章等。","version":"Gemini","button":["介绍自己","推荐文章","生成摘要","矩阵穿梭"]}}`)))
+    });
+  </script>
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {

@@ -200,16 +200,16 @@
 <p>还有像xy坐标，NAME，COLOR等不必多说</p>
 <p>接着就是写个python脚本把它们拼起来辣</p>
 
-    <div class="tag-plugin ds-coding" id="coding-5vdzjzkba"></div>
+    <div class="tag-plugin ds-coding" id="coding-l0s1vwzqe"></div>
     <script>
     addEventListener("load",function(){
-      console.log('[hexo-dynamic-codeblock]start load：coding-5vdzjzkba' );
+      console.log('[hexo-dynamic-codeblock]start load：coding-l0s1vwzqe' );
       utils.jq(() => {
         $(function () {
-          const el = document.getElementById('coding-5vdzjzkba');
+          const el = document.getElementById('coding-l0s1vwzqe');
             utils.request(el, "https://hightlight-code-api.hzchu.top/api/v1/generate?&url=https%3A%2F%2Fraw.githubusercontent.com%2Fthun888%2Faltium-helper%2Fmaster%2Fpackager.py&lang=python&usejson=true", function (data) {
               $(el).append(data.result);
-              addCopyButtons('coding-5vdzjzkba');
+              addCopyButtons('coding-l0s1vwzqe');
             });
           });
       });
@@ -294,7 +294,7 @@
       <div class='title cap theme'>这些怎么样（￣︶￣）↗　</div>
     </section>
     <section class='body'>
-    <div class="related-posts"><a class="item" href="/2024/使用pygments对代码进行高亮，并插入任意网页/" title="这是...动态代码框？"><span class="title">这是...动态代码框？</span><span class="excerpt">使用pygments对代码进行高亮，将长段代码Embed到你的博客里吧</span></a><a class="item" href="/2024/峰间云海服务器技术分析/" title="峰间云海服务器技术分析"><span class="title">峰间云海服务器技术分析</span><span class="excerpt">纪念一下~</span></a><a class="item" href="/2022/2021旧年总结/" title="2021旧年总结"><span class="title">2021旧年总结</span><span class="excerpt">2021 has ended but 2022 begins</span></a></div></section></div>
+    <div class="related-posts"><a class="item" href="/2024/使用pygments对代码进行高亮，并插入任意网页/" title="这是...动态代码框？"><span class="title">这是...动态代码框？</span><span class="excerpt">使用pygments对代码进行高亮，将长段代码Embed到你的博客里吧</span></a><a class="item" href="/2024/峰间云海服务器技术分析/" title="峰间云海服务器技术分析"><span class="title">峰间云海服务器技术分析</span><span class="excerpt">纪念一下~</span></a><a class="item" href="/2022/Easier-Control-of-Recognition-Conferences-AHK/" title="更便利地操控表彰大会--AHK"><span class="title">更便利地操控表彰大会--AHK</span><span class="excerpt">在尴尬了3个小时后，为了应对期中后表彰大会同样的情况，还是要想个对策</span></a></div></section></div>
 
 
   <div class="related-wrap md-text" id="comments">
@@ -794,6 +794,16 @@
     }
   });
 </script>
+
+  <script defer src="/js/chuckle-post-ai.js"></script>
+  <script defer>
+    window.addEventListener('DOMContentLoaded', (event) => {
+      new ChucklePostAI(Object.assign({
+        el: 'article.content',
+        css: `/css/_plugins/tianli_gpt`
+      }, JSON.parse(`{"enable":true,"js":"/js/chuckle-post-ai.js","field":"post","key":"5Q5mpqRK5DkwT1X9Gi5e","total_length":3500,"typewriter":true,"summary_directly":true,"rec_method":"web","hide_shuttle":true,"summary_toggle":false,"interface":{"name":"AI摘要","introduce":"我是文章辅助AI: Gemini，点击下方的按钮，让我生成本文简介、推荐相关文章等。","version":"Gemini","button":["介绍自己","推荐文章","生成摘要","矩阵穿梭"]}}`)))
+    });
+  </script>
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
