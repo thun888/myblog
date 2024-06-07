@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/study-notes/english/irregular-verbs</loc>
+    <loc>https://blog.hzchu.top/wiki/study-notes/english/irregular-verbs/</loc>
     
     <lastmod>2024-06-07</lastmod>
     
@@ -83,7 +83,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/study-notes/chemistry/reactions</loc>
+    <loc>https://blog.hzchu.top/wiki/study-notes/chemistry/reactions/</loc>
     
     <lastmod>2024-06-07</lastmod>
     
@@ -92,7 +92,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/study-notes/english/big-composition</loc>
+    <loc>https://blog.hzchu.top/wiki/study-notes/english/big-composition/</loc>
     
     <lastmod>2024-06-07</lastmod>
     
@@ -101,7 +101,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/study-notes/english/small-composition</loc>
+    <loc>https://blog.hzchu.top/wiki/study-notes/english/small-composition/</loc>
     
     <lastmod>2024-06-07</lastmod>
     
@@ -110,7 +110,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/study-notes/references</loc>
+    <loc>https://blog.hzchu.top/wiki/study-notes/references/</loc>
     
     <lastmod>2024-06-07</lastmod>
     
@@ -119,7 +119,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/study-notes/maths/conceptions</loc>
+    <loc>https://blog.hzchu.top/wiki/study-notes/maths/conceptions/</loc>
     
     <lastmod>2024-06-07</lastmod>
     
@@ -696,14 +696,14 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/MIUI/</loc>
+    <loc>https://blog.hzchu.top/tags/Go/</loc>
     <lastmod>2024-06-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/Go/</loc>
+    <loc>https://blog.hzchu.top/tags/MIUI/</loc>
     <lastmod>2024-06-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
