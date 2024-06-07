@@ -11,12 +11,12 @@ base_dir: /wiki/study-notes/
 tree: 
   '关于本笔记':
     - index
-    - references 
+    - /references/index 
   '数学': 
-    - maths/conceptions  
+    - maths/conceptions/index
   '英语':
-    - english/small-composition
-    - english/big-composition
-    - english/irregular-verbs
+    - english/small-composition/index
+    - english/big-composition/index
+    - english/irregular-verbs/index
   '化学': 
-    - chemistry/reactions  
+    - chemistry/reactions/index
