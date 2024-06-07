@@ -11,7 +11,7 @@ base_dir: /wiki/study-notes/
 tree: 
   '关于本笔记':
     - index
-    - /references/index 
+    - references/index 
   '数学': 
     - maths/conceptions/index
   '英语':
