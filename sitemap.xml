@@ -47,15 +47,6 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/friends/</loc>
-    
-    <lastmod>2024-06-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.hzchu.top/about/</loc>
     
     <lastmod>2024-06-07</lastmod>
@@ -75,6 +66,15 @@
   
   <url>
     <loc>https://blog.hzchu.top/big/</loc>
+    
+    <lastmod>2024-06-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/friends/</loc>
     
     <lastmod>2024-06-07</lastmod>
     
@@ -577,14 +577,14 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/python/</loc>
+    <loc>https://blog.hzchu.top/tags/MNSLXOD/</loc>
     <lastmod>2024-06-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/MNSLXOD/</loc>
+    <loc>https://blog.hzchu.top/tags/python/</loc>
     <lastmod>2024-06-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -626,20 +626,6 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/Stellar/</loc>
-    <lastmod>2024-06-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/tags/Typora/</loc>
-    <lastmod>2024-06-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.hzchu.top/tags/Homebox/</loc>
     <lastmod>2024-06-07</lastmod>
     <changefreq>weekly</changefreq>
@@ -648,6 +634,20 @@
   
   <url>
     <loc>https://blog.hzchu.top/tags/%E5%AE%B6%E7%94%A8/</loc>
+    <lastmod>2024-06-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/tags/Stellar/</loc>
+    <lastmod>2024-06-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/tags/Typora/</loc>
     <lastmod>2024-06-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

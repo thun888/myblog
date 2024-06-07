@@ -41,7 +41,7 @@
 <meta property="og:image" content="https://jsd.hzchu.top/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatmelt.png">
 <meta property="og:image" content="https://jsd.hzchu.top/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatgooglytrash.png">
 <meta property="article:published_time" content="2021-07-29T19:00:02.000Z">
-<meta property="article:modified_time" content="2024-06-07T13:48:49.874Z">
+<meta property="article:modified_time" content="2024-06-07T14:25:43.798Z">
 <meta property="article:author" content="thun888">
 <meta property="article:tag" content="喵~|thun888&#39;s Blog">
 <meta name="twitter:card" content="summary">
@@ -168,7 +168,7 @@
   <span class="sep"></span>
   <a class="cap breadcrumb" href="/about/"></a>
   </div>
-<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2021-07-29T19:00:02.000Z">2021-07-29</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-06-07T13:48:49.874Z">2024-06-07</time></span></div><div class="flex-row" id="page-words"><span style="padding: 4px;">本文字数：249字</span><span class="sep updated" style="padding: 4px;"></span><span class="text updated" style="padding: 4px;">阅读时长：1分</span></div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2021-07-29T19:00:02.000Z">2021-07-29</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-06-07T14:25:43.798Z">2024-06-07</time></span></div><div class="flex-row" id="page-words"><span style="padding: 4px;">本文字数：249字</span><span class="sep updated" style="padding: 4px;"></span><span class="text updated" style="padding: 4px;">阅读时长：1分</span></div></div></div>
     
   </div>
   </div><article class="md-text content"><div id="gtime"></div><div class="tag-plugin banner"><img class="bg lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/02/06/65c236823dbca.webp"><div class="content"><div class="top">
@@ -231,7 +231,7 @@
 本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。<br />
 <span id="timeDate">载入天数…</span><span>&amp;</span><span id="times">载入时分秒…</span>，共发表了<span id="all-posts-count">load</span>篇文章，总计<span id="all-post-words">load</span>字<br />
 <a target="_blank" rel="noopener" href="https://us.umami.is/share/omaEiuxFtoScQNui/blog.hzchu.top">访问数据统计</a></p>
-<script> var allpostscount = "27" ;var allpostswords = "26.8k";gtime_days = Math.floor((new Date() - new Date(1717768129874)) / 1000 / 60 / 60 / 24);</script></div></footer>
+<script> var allpostscount = "27" ;var allpostswords = "26.8k";gtime_days = Math.floor((new Date() - new Date(1717770343798)) / 1000 / 60 / 60 / 24);</script></div></footer>
 <div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
 <div class="widgets">
 <widget class="widget-wrapper timeline"><div class="widget-header dis-select"><span class="name">近期动态</span></div><div class="widget-body fs14"><div class="tag-plugin timeline ds-memos" api="https://get-tg-channel-api.hzchu.top/?tag=bb&showtag=false&limit=15" hide="user,footer"></div></div></widget>
@@ -490,7 +490,7 @@
 
 
 <!-- required -->
-<script src="/js/main.js?v=1.28.1" async></script>
+<script src="/js/main.js?v=1.28.1" defer></script>
 
 <script type="text/javascript">
   const applyTheme = (theme) => {
@@ -566,10 +566,7 @@
     if (!el) return;
     utils.css('https://artalk.hzchu.top/dist/Artalk.css');
     utils.js('https://artalk.hzchu.top/dist/Artalk.js', {defer: true}).then(function () {
-      var path = el.getAttribute('comment_id');
-      if (!path) {
-        path = decodeURI(window.location.pathname);
-      }
+      const path = el.getAttribute('comment_id') ?? decodeURI(window.location.pathname);
       const artalk = Artalk.init({
         el: '#artalk_container',
         pageKey: path,

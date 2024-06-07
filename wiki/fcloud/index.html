@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://onep.hzchu.top/mount/pic/2023/05/01/644fc215cdcc4.webp">
 <meta property="og:image" content="https://onep.hzchu.top/mount/pic/2023/05/01/644fc20042a10.webp">
-<meta property="article:published_time" content="2024-06-07T13:48:49.882Z">
+<meta property="article:published_time" content="2024-06-07T14:25:43.806Z">
 <meta property="article:modified_time" content="2023-06-23T20:05:32.000Z">
 <meta property="article:author" content="thun888">
 <meta property="article:tag" content="喵~|thun888&#39;s Blog">
@@ -697,7 +697,7 @@
 
 
 <!-- required -->
-<script src="/js/main.js?v=1.28.1" async></script>
+<script src="/js/main.js?v=1.28.1" defer></script>
 
 <script type="text/javascript">
   const applyTheme = (theme) => {
@@ -773,10 +773,7 @@
     if (!el) return;
     utils.css('https://artalk.hzchu.top/dist/Artalk.css');
     utils.js('https://artalk.hzchu.top/dist/Artalk.js', {defer: true}).then(function () {
-      var path = el.getAttribute('comment_id');
-      if (!path) {
-        path = decodeURI(window.location.pathname);
-      }
+      const path = el.getAttribute('comment_id') ?? decodeURI(window.location.pathname);
       const artalk = Artalk.init({
         el: '#artalk_container',
         pageKey: path,

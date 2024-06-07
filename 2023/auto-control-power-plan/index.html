@@ -505,7 +505,7 @@
 
 
 <!-- required -->
-<script src="/js/main.js?v=1.28.1" async></script>
+<script src="/js/main.js?v=1.28.1" defer></script>
 
 <script type="text/javascript">
   const applyTheme = (theme) => {
@@ -581,10 +581,7 @@
     if (!el) return;
     utils.css('https://artalk.hzchu.top/dist/Artalk.css');
     utils.js('https://artalk.hzchu.top/dist/Artalk.js', {defer: true}).then(function () {
-      var path = el.getAttribute('comment_id');
-      if (!path) {
-        path = decodeURI(window.location.pathname);
-      }
+      const path = el.getAttribute('comment_id') ?? decodeURI(window.location.pathname);
       const artalk = Artalk.init({
         el: '#artalk_container',
         pageKey: path,
