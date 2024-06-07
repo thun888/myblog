@@ -1,0 +1,22 @@
+name: 学习笔记
+title: 学习笔记
+subtitle: '总结一些内容'
+tags: 笔记
+cover: false
+icon: https://onep.hzchu.top/mount/pic/myself/avif/study-notes-icon.avif
+description: 总结一些内容
+leftbar:
+  - tree
+base_dir: /wiki/study-notes/
+tree: 
+  '关于本笔记':
+    - index
+    - references 
+  '数学': 
+    - maths/conceptions  
+  '英语':
+    - english/small-composition
+    - english/big-composition
+    - english/irregular-verbs
+  '化学': 
+    - chemistry/reactions  

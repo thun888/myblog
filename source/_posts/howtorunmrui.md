@@ -217,9 +217,6 @@ sudo systemctl enable mrui
 
 [windows守护进程工具--nssm详解  - 博客园 (cnblogs.com)](https://www.cnblogs.com/fps2tao/p/16433588.html)
 
-## Stars~
-
-[![Stars~](https://starchart.cc/mirouterui/mirouter-ui.svg)](https://d.hzchu.top/7)
 
 ## TODO
 
@@ -236,3 +233,13 @@ sudo systemctl enable mrui
 
 ## 更新日志
 {% timeline api:https://cfproxy.hzchu.top/https://api.github.com/repos/Mirouterui/mirouter-ui/releases?per_page=3 %}{% endtimeline %}
+
+## Stars~
+
+![Stars~](https://starchart.cc/mirouterui/mirouter-ui.svg)
+
+感谢各位😘
+
+{% quot 1-100 icon:hashtag %}
+
+{% friends api:https://cfproxy.hzchu.top/https://api.github.com/repos/Mirouterui/mirouter-ui/stargazers?per_page=100&page=1 %}
