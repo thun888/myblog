@@ -14,8 +14,8 @@
   <meta name="HandheldFriendly" content="True" >
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f9fafb">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
+  <meta name="theme-color" content="#f9fafb">
   
   <title>使用Homebox实现家用物品管理 - Thun888</title>
 
@@ -78,6 +78,10 @@
 
   
 <!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+
   <div class="spinner" id="eloading"> 
     <span class="loader-text">加载中...</span>
     <div class="loader"></div>
@@ -165,7 +169,9 @@
 
 <widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2024/%E4%BD%BF%E7%94%A8Typora-plugin%E5%A2%9E%E5%BC%BAStellar%E5%86%99%E4%BD%9C%E4%BD%93%E9%AA%8C/"><span class="title">使用Typora_plugin增强Stellar写作体验</span></a><a class="item title" href="/2024/%E4%BD%BF%E7%94%A8pygments%E5%AF%B9%E4%BB%A3%E7%A0%81%E8%BF%9B%E8%A1%8C%E9%AB%98%E4%BA%AE%EF%BC%8C%E5%B9%B6%E6%8F%92%E5%85%A5%E4%BB%BB%E6%84%8F%E7%BD%91%E9%A1%B5/"><span class="title">这是...动态代码框？</span></a><a class="item title" href="/2024/%E4%B8%BA%E5%B0%8F%E7%B1%B3%E8%B7%AF%E7%94%B1%E5%99%A8%E5%8A%A0%E4%B8%8A%E5%B1%8F%E5%B9%95-%E7%94%A8%E5%B0%8F%E7%94%B5%E8%A7%86-SD2-%E7%9B%91%E6%8E%A7%E5%B0%8F%E7%B1%B3%E8%B7%AF%E7%94%B1%E5%99%A8/"><span class="title">为小米路由器加上屏幕</span></a><a class="item title" href="/2024/%E4%B8%BA%E5%B0%8F%E7%B1%B3MIX2s%E6%9B%B4%E6%8D%A2%E9%9F%B3%E9%87%8F%E6%8E%92%E7%BA%BF%E5%8F%8A%E7%94%B5%E6%B1%A0%E7%9A%84%E6%9C%80%E4%BC%98%E6%96%B9%E6%B3%95/"><span class="title">为小米MIX2s更换音量排线及电池的最优方法</span></a><a class="item title" href="/2024/%E4%B8%BB%E9%A2%98%E6%94%B9%E5%8A%A8%E5%B0%8F%E8%AE%B0/"><span class="title">主题改动小记</span></a><a class="item title" href="/2024/%E7%94%A8Gemini%E5%AE%9E%E7%8E%B0AI%E6%91%98%E8%A6%81/"><span class="title">用Gemini，实现AI摘要</span></a><a class="item title" href="/2024/%E8%AE%B0%E4%B8%80%E6%AC%A1%E6%8E%92%E6%9F%A5js%E6%96%87%E4%BB%B6%E5%90%8E%E9%97%A8/"><span class="title">记一次排查js文件后门</span></a><a class="item title" href="/2024/%E6%8A%8ATg-Channel%E6%8E%A5%E5%85%A5%E5%88%B0Stellar%E6%97%B6%E9%97%B4%E7%BA%BF/"><span class="title">把Tg Channel接入到Stellar时间线</span></a><a class="item title" href="/2024/%E4%BD%BF%E7%94%A8Homebox%E5%AE%9E%E7%8E%B0%E5%AE%B6%E7%94%A8%E7%89%A9%E5%93%81%E7%AE%A1%E7%90%86/"><span class="title">使用Homebox实现家用物品管理</span></a><a class="item title" href="/2024/%E5%B3%B0%E9%97%B4%E4%BA%91%E6%B5%B7%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8A%80%E6%9C%AF%E5%88%86%E6%9E%90/"><span class="title">峰间云海服务器技术分析</span></a></div></widget>
 
-<widget class="widget-wrapper markdown"><div class="widget-header dis-select"><span class="name">前往远方</span></div><div class="widget-body fs14"><p><a href="https://www.foreverblog.cn/go.html" class="no-lazy" target="_blank"> <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.foreverblog.cn/wormhole_4_tp.gif" alt="" style="width:auto;height:32px;" title="穿梭虫洞-随机访问十年之约友链博客"></a><br><a href="https://www.travellings.cn/go.html" class="no-lazy" target="_blank" rel="noopener" title="开往-友链接力"><img no-lazy src="https://www.travellings.cn/assets/logo.gif" data-src="https://www.travellings.cn/assets/logo.gif" alt="开往-友链接力" width="120" data-ll-status="loaded" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><br><a style="text-decoration:none;border-bottom:none;color:#e77c8e" href="https://travel.moe/go.html" rel="external nofollow noreferrer" title="异次元之旅-跃迁-我们一起去萌站成员的星球旅行吧！" target="_blank"><img no-lazy src="https://travel.moe/images/icon/icon64pink.png" style="width:auto;height:32px;" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';">异次元之旅</a></p>
+<widget class="widget-wrapper markdown"><div class="widget-header dis-select"><span class="name">前往远方</span></div><div class="widget-body fs14"><p><a href="https://www.foreverblog.cn/go.html" class="no-lazy" target="_blank"> <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.foreverblog.cn/wormhole_4_tp.gif" alt="" style="width:auto;height:32px;" title="穿梭虫洞-随机访问十年之约友链博客"></a><br />
+<a href="https://www.travellings.cn/go.html" class="no-lazy" target="_blank" rel="noopener" title="开往-友链接力"><img no-lazy src="https://www.travellings.cn/assets/logo.gif" data-src="https://www.travellings.cn/assets/logo.gif" alt="开往-友链接力" width="120" data-ll-status="loaded" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><br />
+<a style="text-decoration:none;border-bottom:none;color:#e77c8e" href="https://travel.moe/go.html" rel="external nofollow noreferrer" title="异次元之旅-跃迁-我们一起去萌站成员的星球旅行吧！" target="_blank"><img no-lazy src="https://travel.moe/images/icon/icon64pink.png" style="width:auto;height:32px;" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';">异次元之旅</a></p>
 </div></widget>
 </div>
 <footer class="footer dis-select"><div class="social-wrap"><a class="social" href="/atom.xml" rel="noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/img/icons/25678f144c438.svg"/></a><a class="social" href="https://github.com/thun888" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/img/icons/08a41b181ce68.svg"/></a><a class="social" href="mailto:thun888@qq.com" rel="noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/img/icons/a1b00e20f425d.svg"/></a><a class="social" href="https://share.hzchu.top" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/img/icons/20210610162918.svg"/></a></div></footer>
@@ -179,7 +185,7 @@
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
 <span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/">日常生活</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-02-12T22:41:07.000Z">2024-02-12</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-02-17T09:30:07.000Z">2024-02-17</time></span></div><div class="flex-row" id="page-words"><span style="padding: 4px;">本文字数：1.4k字</span><span class="sep updated" style="padding: 4px;"></span><span class="text updated" style="padding: 4px;">阅读时长：5分</span></div><div class="flex-row" id="tag"> <span>&nbsp标签：</span><a class="cap breadcrumb-link" href="/tags/Homebox/">Homebox</a>&nbsp; <a class="cap breadcrumb-link" href="/tags/%E5%AE%B6%E7%94%A8/">家用</a>&nbsp</div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-02-12T22:41:07.000Z">2024-02-12</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-02-17T09:30:07.000Z">2024-02-17</time></span></div><div class="flex-row" id="page-words"><span style="padding: 4px;">本文字数：1.4k字</span><span class="sep updated" style="padding: 4px;"></span><span class="text updated" style="padding: 4px;">阅读时长：4分</span></div><div class="flex-row" id="tag"> <span>&nbsp标签：</span><a class="cap breadcrumb-link" href="/tags/Homebox/">Homebox</a>&nbsp; <a class="cap breadcrumb-link" href="/tags/%E5%AE%B6%E7%94%A8/">家用</a>&nbsp</div></div></div>
     
     <div class="bottom only-title">
       
@@ -190,90 +196,91 @@
     </div>
     
   </div>
-  </div><article class="md-text content"><div id="gtime"></div><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>很久之前，家里面有三把电动螺丝刀，然而前些阵子我想找一把来用都得找半天……  <span class="tag-plugin emoji"><img no-lazy="" class="inline lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://jsd.hzchu.top/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatcaged.png"/></span></p>
+  </div><article class="md-text content"><div id="gtime"></div><h2 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h2>
+<p>很久之前，家里面有三把电动螺丝刀，然而前些阵子我想找一把来用都得找半天……  <span class="tag-plugin emoji"><img no-lazy="" class="inline lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://jsd.hzchu.top/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatcaged.png"/></span></p>
 <p>假期回家，桌面太乱了一直被我妈批斗…… <span class="tag-plugin emoji"><img no-lazy="" class="inline lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://jsd.hzchu.top/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatflip.png"/></span></p>
 <p>思来想去这样也不行啊，上网找一下，发现了「<a target="_blank" rel="noopener" href="https://d.hzchu.top/9x7up">Homebox</a>」这个程序，开始干活吧。</p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>仓库中也有二进制文件，我这里直接用Docker部署</p>
+<h2 id="安装"><a class="markdownIt-Anchor" href="#安装"></a> 安装</h2>
+<p>仓库中也有二进制文件，我这里直接用Docker部署</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Run the image</span></span><br><span class="line">$ docker run -d \</span><br><span class="line">  --name homebox \</span><br><span class="line">  --restart unless-stopped \</span><br><span class="line">  --publish 3100:7745 \</span><br><span class="line">  --<span class="built_in">env</span> TZ=Europe/Bucharest \</span><br><span class="line">  --volume /path/to/data/folder/:/data \</span><br><span class="line">  ghcr.io/hay-kot/homebox:latest</span><br></pre></td></tr></table></figure>
-
-<p>或用<code>Docker-Compose</code>	</p>
+<p>或用<code>Docker-Compose</code></p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">version:</span> <span class="string">&quot;3.4&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="attr">services:</span></span><br><span class="line">  <span class="attr">homebox:</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">ghcr.io/hay-kot/homebox:latest</span></span><br><span class="line"><span class="comment">#   image: ghcr.io/hay-kot/homebox:latest-rootless</span></span><br><span class="line">    <span class="attr">container_name:</span> <span class="string">homebox</span></span><br><span class="line">    <span class="attr">restart:</span> <span class="string">always</span></span><br><span class="line">    <span class="attr">environment:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">HBOX_LOG_LEVEL=info</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">HBOX_LOG_FORMAT=text</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">HBOX_WEB_MAX_UPLOAD_SIZE=10</span></span><br><span class="line">    <span class="attr">volumes:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">homebox-data:/data/</span></span><br><span class="line">    <span class="attr">ports:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="number">3100</span><span class="string">:7745</span></span><br><span class="line"></span><br><span class="line"><span class="attr">volumes:</span></span><br><span class="line">   <span class="attr">homebox-data:</span></span><br><span class="line">     <span class="attr">driver:</span> <span class="string">local</span></span><br></pre></td></tr></table></figure>
-
 <p>因为还有可能给家里人用，干脆就nginx一条龙服务安排上，搭配家里面ADG上dns重写，家里人直接访问<code>wms.hzchu.top</code>就ok了</p>
 <div class="tag-plugin grid"  style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));"><div class="cell" style="">
-    <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/02/17/65d0304ed4e06.webp" alt="1708142670501.webp"></p>
+    <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/02/17/65d0304ed4e06.webp" alt="1708142670501.webp" /></p>
     </div>
     <div class="cell" style="">
-    <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/02/17/65d039c6a395f.webp" alt="1708145094118.webp"></p>
+    <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/02/17/65d039c6a395f.webp" alt="1708145094118.webp" /></p>
     </div>
     </div>
-
 <blockquote>
 <p>部署完成进去后注册一个账号登录即可</p>
 </blockquote>
-<h2 id="HomeBox简单介绍"><a href="#HomeBox简单介绍" class="headerlink" title="HomeBox简单介绍"></a>HomeBox简单介绍</h2><p>知道它的功能才好干活嘛</p>
+<h2 id="homebox简单介绍"><a class="markdownIt-Anchor" href="#homebox简单介绍"></a> HomeBox简单介绍</h2>
+<p>知道它的功能才好干活嘛</p>
 <p>相比于「GreaterWMS」，「ModernWMS」等专门用于仓库管理的软件，「<a target="_blank" rel="noopener" href="https://github.com/hay-kot/homebox">Homebox</a>」主打一个家用，因此它的操作也简单不少，在进去后可以看到这样的页面</p>
-<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/02/17/65d0714ba9aca.webp" alt="1708159306854.webp"></p>
-<h3 id="Create–创建"><a href="#Create–创建" class="headerlink" title="Create–创建"></a>Create–创建</h3><p>在点开那个<mark class="tag-plugin colorful mark" color="green">抹茶绿</mark>的按钮后，可以看到里面包括 <code>Item/Asset</code>,<code>Location</code>,<code>Label</code> 三个选项</p>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/02/17/65d0714ba9aca.webp" alt="1708159306854.webp" /></p>
+<h3 id="create创建"><a class="markdownIt-Anchor" href="#create创建"></a> Create–创建</h3>
+<p>在点开那个<mark class="tag-plugin colorful mark" color="green">抹茶绿</mark>的按钮后，可以看到里面包括 <code>Item/Asset</code>,<code>Location</code>,<code>Label</code> 三个选项</p>
 <div class="tag-plugin grid"  style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));"><div class="cell" style="">
-    <p><strong>Item&#x2F;Asset：</strong><code>新建物品</code>，即存入物品相关信息到程序里，里面包括以下填充项</p><blockquote><p>在填写完成后，若只新建单个物品，则会跳转至对应物品详情，可以做详细修改</p></blockquote>
+    <p><strong>Item/Asset：</strong><code>新建物品</code>，即存入物品相关信息到程序里，里面包括以下填充项</p><blockquote><p>在填写完成后，若只新建单个物品，则会跳转至对应物品详情，可以做详细修改</p></blockquote>
     </div>
     <div class="cell" style="">
-    <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/02/17/65d079ec36954.webp" alt="1708161509640.webp"></p>
+    <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/02/17/65d079ec36954.webp" alt="1708161509640.webp" /></p>
     </div>
     </div>
-
 <div class="tag-plugin grid"  style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));"><div class="cell" style="">
-    <p><strong>Location：</strong> <code>新建位置</code>，即存入某个物品存放处（如书桌）的相关信息到程序里，里面包括以下填充项</p><p>在“父位置”中，可以设置其它已新建的”位置“，表示该位置属于某位置，比如这样<br><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/02/17/65d07cd0526a0.webp" alt="1708162255778.webp"></p>
+    <p><strong>Location：</strong> <code>新建位置</code>，即存入某个物品存放处（如书桌）的相关信息到程序里，里面包括以下填充项</p><p>在“父位置”中，可以设置其它已新建的”位置“，表示该位置属于某位置，比如这样<br /><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/02/17/65d07cd0526a0.webp" alt="1708162255778.webp" /></p>
     </div>
     <div class="cell" style="">
-    <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/02/17/65d07c7458c53.webp" alt="1708162163736.webp"></p>
+    <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/02/17/65d07c7458c53.webp" alt="1708162163736.webp" /></p>
     </div>
     </div>
-
 <div class="tag-plugin grid"  style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));"><div class="cell" style="">
     <p><strong>Label：</strong><code>新建类别</code>，即存入某个物品类别（如电子产品）的相关信息到程序里，里面包括以下填充项</p>
     </div>
     <div class="cell" style="">
-    <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/02/17/65d07d6a352db.webp" alt="1708162409464.webp"></p>
+    <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/02/17/65d07d6a352db.webp" alt="1708162409464.webp" /></p>
     </div>
     </div>
-
-<h3 id="Home–主页"><a href="#Home–主页" class="headerlink" title="Home–主页"></a>Home–主页</h3><p>在加载完成时便是主页了，图片上面有，主要显示了<code>物品总金额</code>，<code>物品、位置、类别总数</code>，<code>近期添加的5个物品</code>，<code>位置、类别列表</code></p>
-<h3 id="Locations–位置（树）"><a href="#Locations–位置（树）" class="headerlink" title="Locations–位置（树）"></a>Locations–位置（树）</h3><div class="tag-plugin grid"  style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));"><div class="cell" style="">
-    <p>根据创建物品&#x2F;位置时的父位置，程序会构建出一个层级树，简明地展现出它们之间的从属关系</p>
+<h3 id="home主页"><a class="markdownIt-Anchor" href="#home主页"></a> Home–主页</h3>
+<p>在加载完成时便是主页了，图片上面有，主要显示了<code>物品总金额</code>，<code>物品、位置、类别总数</code>，<code>近期添加的5个物品</code>，<code>位置、类别列表</code></p>
+<h3 id="locations位置树"><a class="markdownIt-Anchor" href="#locations位置树"></a> Locations–位置（树）</h3>
+<div class="tag-plugin grid"  style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));"><div class="cell" style="">
+    <p>根据创建物品/位置时的父位置，程序会构建出一个层级树，简明地展现出它们之间的从属关系</p>
     </div>
     <div class="cell" style="">
-    <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/02/17/65d0897a5f3d3.webp" alt="1708165497793.webp"></p>
+    <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/02/17/65d0897a5f3d3.webp" alt="1708165497793.webp" /></p>
     </div>
     </div>
-
-<h3 id="Search–搜索"><a href="#Search–搜索" class="headerlink" title="Search–搜索"></a>Search–搜索</h3><p>顾名思义</p>
-<h3 id="Profile–用户设置"><a href="#Profile–用户设置" class="headerlink" title="Profile–用户设置"></a>Profile–用户设置</h3><p>直接上图片</p>
-<div class="tag-plugin swiper fancybox" id="swiper-api" ><div class="swiper-wrapper"><div class="swiper-slide"><img no-lazy src="https://onep.hzchu.top/mount/pic/2024/02/17/65d0910f6ac67.webp" alt="1708167438646.webp" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></div><div class="swiper-slide"><img no-lazy src="https://onep.hzchu.top/mount/pic/2024/02/17/65d092acdc522.webp" alt="1708167851852.webp" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></div></div><div class="swiper-pagination"></div><div class="swiper-button-prev blur"></div><div class="swiper-button-next blur"></div></div>
-
-<h3 id="Tools–工具"><a href="#Tools–工具" class="headerlink" title="Tools–工具"></a>Tools–工具</h3><p>包括<code>标签生成器</code>，<code>生成BOM表</code>，导<code>入导出CSV</code>及一些<code>修复工具</code></p>
+<h3 id="search搜索"><a class="markdownIt-Anchor" href="#search搜索"></a> Search–搜索</h3>
+<p>顾名思义</p>
+<h3 id="profile用户设置"><a class="markdownIt-Anchor" href="#profile用户设置"></a> Profile–用户设置</h3>
+<p>直接上图片</p>
+<div class="tag-plugin swiper fancybox" id="swiper-api" ><div class="swiper-wrapper"><div class="swiper-slide"><img no-lazy src="https://onep.hzchu.top/mount/pic/2024/02/17/65d0910f6ac67.webp" alt="1708167438646.webp" / onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></div><div class="swiper-slide"><img no-lazy src="https://onep.hzchu.top/mount/pic/2024/02/17/65d092acdc522.webp" alt="1708167851852.webp" / onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></div></div><div class="swiper-pagination"></div><div class="swiper-button-prev blur"></div><div class="swiper-button-next blur"></div></div>
+<h3 id="tools工具"><a class="markdownIt-Anchor" href="#tools工具"></a> Tools–工具</h3>
+<p>包括<code>标签生成器</code>，<code>生成BOM表</code>，导<code>入导出CSV</code>及一些<code>修复工具</code></p>
 <p>我主要用的是<code>标签生成器</code>，可以直接生成二维码贴在物品表面</p>
 <div class="tag-plugin grid"  style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));"><div class="cell" style="">
-    <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/02/17/65d0cc5ba2019.webp" alt="1708182617875.webp"></p>
+    <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/02/17/65d0cc5ba2019.webp" alt="1708182617875.webp" /></p>
     </div>
     <div class="cell" style="">
-    <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/02/17/65d094a2d831a.webp" alt="1708168353440.webp"></p>
+    <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/02/17/65d094a2d831a.webp" alt="1708168353440.webp" /></p>
     </div>
     </div>
-
 <blockquote>
 <p>调好参数右键打印即可</p>
 </blockquote>
-<h3 id="物品详情"><a href="#物品详情" class="headerlink" title="物品详情"></a>物品详情</h3><p>很详细，但我除了数量和描述都用不上</p>
-<div class="tag-plugin swiper fancybox" id="swiper-api" ><div class="swiper-wrapper"><div class="swiper-slide"><img no-lazy src="https://onep.hzchu.top/mount/pic/2024/02/17/65d0d75c667cc.webp" alt="1708185435353.webp" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></div><div class="swiper-slide"><img no-lazy src="https://onep.hzchu.top/mount/pic/2024/02/17/65d0d762bef44.webp" alt="1708185441662.webp" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></div><div class="swiper-slide"><img no-lazy src="https://onep.hzchu.top/mount/pic/2024/02/17/65d0d76b8cc90.webp" alt="1708185450333.webp" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></div></div><div class="swiper-pagination"></div><div class="swiper-button-prev blur"></div><div class="swiper-button-next blur"></div></div>
-
+<h3 id="物品详情"><a class="markdownIt-Anchor" href="#物品详情"></a> 物品详情</h3>
+<p>很详细，但我除了数量和描述都用不上</p>
+<div class="tag-plugin swiper fancybox" id="swiper-api" ><div class="swiper-wrapper"><div class="swiper-slide"><img no-lazy src="https://onep.hzchu.top/mount/pic/2024/02/17/65d0d75c667cc.webp" alt="1708185435353.webp" / onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></div><div class="swiper-slide"><img no-lazy src="https://onep.hzchu.top/mount/pic/2024/02/17/65d0d762bef44.webp" alt="1708185441662.webp" / onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></div><div class="swiper-slide"><img no-lazy src="https://onep.hzchu.top/mount/pic/2024/02/17/65d0d76b8cc90.webp" alt="1708185450333.webp" / onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></div></div><div class="swiper-pagination"></div><div class="swiper-button-prev blur"></div><div class="swiper-button-next blur"></div></div>
 <blockquote>
 <p>存在页面切换bug，刷新即可解决</p>
 </blockquote>
-<h2 id="基本逻辑"><a href="#基本逻辑" class="headerlink" title="基本逻辑"></a>基本逻辑</h2><p> 为了能准确快速地找到对应存放处，我定了一套基本原则：</p>
+<h2 id="基本逻辑"><a class="markdownIt-Anchor" href="#基本逻辑"></a> 基本逻辑</h2>
+<p>为了能准确快速地找到对应存放处，我定了一套基本原则：</p>
 <ol>
-<li>将几个房间用A&#x2F;B…大写英文字母命名</li>
+<li>将几个房间用A/B…大写英文字母命名</li>
 <li>存放处使用所属房间加数字命名</li>
 <li>以房间门为起点，向右统计入库</li>
 <li>对应垂直堆叠的存放处，从上往下（优先）</li>
@@ -287,57 +294,54 @@
 <li>对已有唯一标识码（sn码）的物品直接使用</li>
 </ol>
 <p>程序内列了四个类别（感觉除了日后忘了物品名称关键词，用来筛选物品外其实没啥用）：大物件，小物件，收纳盒，电子产品</p>
-<h2 id="实际实施"><a href="#实际实施" class="headerlink" title="实际实施"></a>实际实施</h2><p>  因为一开始没发现自带的<code>标签生成器</code>，所以用了「<a target="_blank" rel="noopener" href="https://d.hzchu.top/d4a5q">E-Label</a>」来生成一维码，单页85个标签</p>
-<p>其中，A&#x2F;B…表示该物品原属房间</p>
+<h2 id="实际实施"><a class="markdownIt-Anchor" href="#实际实施"></a> 实际实施</h2>
+<p>因为一开始没发现自带的<code>标签生成器</code>，所以用了「<a target="_blank" rel="noopener" href="https://d.hzchu.top/d4a5q">E-Label</a>」来生成一维码，单页85个标签</p>
+<p>其中，A/B…表示该物品原属房间</p>
 <p>标签内容填入物品描述中</p>
 <div class="tag-plugin link dis-select"><a class="link-card rich" title="相关文件" href="https://pan.hzchu.top/s/q8SJ" target="_blank" rel="external nofollow noopener noreferrer" cardlink api="https://siteinfo-api.hzchu.top/api/v1?url=https://pan.hzchu.top/s/q8SJ" autofill="icon,desc"><div class="top"><div class="lazy img" data-bg="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/link/8f277b4ee0ecd.svg"></div><span class="cap link footnote">https://pan.hzchu.top/s/q8SJ</span></div><div class="bottom"><span class="title">相关文件</span><span class="cap desc footnote"></span></div></a></div>
-
 <blockquote>
 <p>还可以把文字缩掉，但考虑到一维码水平方向易被损坏还是留着吧</p>
 </blockquote>
 <div class="tag-plugin grid"  style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));"><div class="cell" style="">
-    <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/02/17/65d0bf9185724.webp" alt="1708179344734.webp"></p>
+    <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/02/17/65d0bf9185724.webp" alt="1708179344734.webp" /></p>
     </div>
     <div class="cell" style="">
-    <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/02/17/65d0c4802d0ff.webp" alt="1708180607272.webp"></p>
+    <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/02/17/65d0c4802d0ff.webp" alt="1708180607272.webp" /></p>
     </div>
     </div>
-
 <div class="tag-plugin grid"  style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));"><div class="cell" style="">
     <p>打印完标签贴到物品上，我这里先用胶布凑合以下，注意要同时覆盖字符及一部分条形码（如图片荧光标准所示）</p><blockquote><p>注：图示条形码为第一版</p></blockquote>
     </div>
     <div class="cell" style="">
-    <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/02/17/65d0c2b702e65.webp" alt="1708179885315.webp"></p>
+    <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/02/17/65d0c2b702e65.webp" alt="1708179885315.webp" /></p>
     </div>
     </div>
-
 <div class="tag-plugin grid"  style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));"><div class="cell" style="">
     <p>不过还是太麻烦，所以我打算用这种带有不干胶的纸替代，不过因为春节还没到货<span class="tag-plugin emoji"><img no-lazy="" class="inline lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://jsd.hzchu.top/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatcry.png"/></span></p>
     </div>
     <div class="cell" style="">
-    <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/02/17/65d0c6028e723.webp" alt="1708180983135.webp"></p>
+    <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/02/17/65d0c6028e723.webp" alt="1708180983135.webp" /></p>
     </div>
     </div>
-
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>​	那么，工期呢？要对小到一颗纽扣电池进行统计本身就不是一件快事，整理一个小时才勉强整理完一张桌子，想全部整理完必然是一个大工程，慢慢来。但全部整理一次确实大有益处，比如我就找到了8年前在某购物广场办的会员卡（前一天才因为没有实体会员卡不给兑积分<span class="tag-plugin emoji"><img no-lazy="" class="inline lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://jsd.hzchu.top/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatangry.png"/></span>，这波雪中送炭），因为中途方案改变，要等这个打印纸，就先搁置下来了，<del>才不是因为帕鲁太好玩了</del></p>
-<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/02/17/65d0cbae30c5d.webp" alt="导弹喵"></p>
-<h2 id="续"><a href="#续" class="headerlink" title="续"></a>续</h2><div class="tag-plugin grid"  style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));"><div class="cell" style="">
+<h2 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h2>
+<p>​	那么，工期呢？要对小到一颗纽扣电池进行统计本身就不是一件快事，整理一个小时才勉强整理完一张桌子，想全部整理完必然是一个大工程，慢慢来。但全部整理一次确实大有益处，比如我就找到了8年前在某购物广场办的会员卡（前一天才因为没有实体会员卡不给兑积分<span class="tag-plugin emoji"><img no-lazy="" class="inline lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://jsd.hzchu.top/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatangry.png"/></span>，这波雪中送炭），因为中途方案改变，要等这个打印纸，就先搁置下来了，<s>才不是因为帕鲁太好玩了</s></p>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/02/17/65d0cbae30c5d.webp" alt="导弹喵" /></p>
+<h2 id="续"><a class="markdownIt-Anchor" href="#续"></a> 续</h2>
+<div class="tag-plugin grid"  style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));"><div class="cell" style="">
     <p>自带的标签生成器中页面中仍有大量留白，实用性欠佳，有空想办法搓个更好用的</p><blockquote><p>打印机过个回南天病情恶化了，不是不能用（</p></blockquote>
     </div>
     <div class="cell" style="">
-    <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/02/24/65d9e74ecd25b.webp" alt="1708779215832.webp"></p>
+    <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/02/24/65d9e74ecd25b.webp" alt="1708779215832.webp" /></p>
     </div>
     </div>
-
 <div class="tag-plugin grid"  style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));"><div class="cell" style="">
     <p>可根据物品大小裁剪，在默认情况下规格约为48x21mm</p>
     </div>
     <div class="cell" style="">
-    <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/02/24/65d9e756bd973.webp" alt="1708779215823.webp"></p><div class="tag-plugin grid"  style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));"></div>
+    <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/02/24/65d9e756bd973.webp" alt="1708779215823.webp" /></p><div class="tag-plugin grid"  style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));"></div>
     </div>
     <div class="cell" style="">
-    <p>实际使用</p> 
+    <p>实际使用</p>
     </div>
     <div class="cell" style="">
     <div id="player_6cc3e893806c4850"></div><script type="text/javascript" src="https://player.dogecloud.com/js/loader"></script><script type="text/javascript">var player = new DogePlayer({    container: document.getElementById('player_6cc3e893806c4850'),    userId: 4322,    vcode: '6cc3e893806c4850',    autoPlay: false});</script>
@@ -367,7 +371,7 @@
       <div class="header"><span>分享文章</span></div>
       <div class="body">
         <div class="link"><input class="copy-area" readonly="true" id="copy-link" value="https://blog.hzchu.top/2024/%E4%BD%BF%E7%94%A8Homebox%E5%AE%9E%E7%8E%B0%E5%AE%B6%E7%94%A8%E7%89%A9%E5%93%81%E7%AE%A1%E7%90%86/" /></div>
-        <div class="social-wrap dis-select"><a class="social share-item wechat" onclick="util.toggle(&quot;qrcode-wechat&quot)"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/b32ef3da1162a.svg" /></a><a class="social share-item weibo" target="_blank" rel="external nofollow noopener noreferrer" href="https://service.weibo.com/share/share.php?url=https://blog.hzchu.top/2024/%E4%BD%BF%E7%94%A8Homebox%E5%AE%9E%E7%8E%B0%E5%AE%B6%E7%94%A8%E7%89%A9%E5%93%81%E7%AE%A1%E7%90%86/&title=使用Homebox实现家用物品管理 - Thun888&pics=https://onep.hzchu.top/mount/pic/2024/02/17/65d0d5665e055.webp&summary=唉，家里太乱了，该整理一下了"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/80c07e4dbb303.svg" /></a><a class="social share-item email" href="mailto:?subject=使用Homebox实现家用物品管理 - Thun888&amp;body=https://blog.hzchu.top/2024/%E4%BD%BF%E7%94%A8Homebox%E5%AE%9E%E7%8E%B0%E5%AE%B6%E7%94%A8%E7%89%A9%E5%93%81%E7%AE%A1%E7%90%86/"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/a1b00e20f425d.svg" /></a><a class="social share-item link" onclick="util.copy(&quot;copy-link&quot;, &quot;复制成功&quot;)"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/8411ed322ced6.svg" /></a></div>
+        <div class="social-wrap dis-select"><a class="social share-item wechat" onclick="util.toggle(&quot;qrcode-wechat&quot;)"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/b32ef3da1162a.svg" /></a><a class="social share-item weibo" target="_blank" rel="external nofollow noopener noreferrer" href="https://service.weibo.com/share/share.php?url=https://blog.hzchu.top/2024/%E4%BD%BF%E7%94%A8Homebox%E5%AE%9E%E7%8E%B0%E5%AE%B6%E7%94%A8%E7%89%A9%E5%93%81%E7%AE%A1%E7%90%86/&title=使用Homebox实现家用物品管理 - Thun888&pics=https://onep.hzchu.top/mount/pic/2024/02/17/65d0d5665e055.webp&summary=唉，家里太乱了，该整理一下了"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/80c07e4dbb303.svg" /></a><a class="social share-item email" href="mailto:?subject=使用Homebox实现家用物品管理 - Thun888&amp;body=https://blog.hzchu.top/2024/%E4%BD%BF%E7%94%A8Homebox%E5%AE%9E%E7%8E%B0%E5%AE%B6%E7%94%A8%E7%89%A9%E5%93%81%E7%AE%A1%E7%90%86/"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/a1b00e20f425d.svg" /></a><a class="social share-item link" onclick="util.copy(&quot;copy-link&quot;, &quot;复制成功&quot;)"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/8411ed322ced6.svg" /></a></div>
         
         <div class="qrcode" id="qrcode-wechat" style="opacity:0;height:0">
           <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://api.qrserver.com/v1/create-qr-code/?size=256x256&data=https://blog.hzchu.top/2024/%E4%BD%BF%E7%94%A8Homebox%E5%AE%9E%E7%8E%B0%E5%AE%B6%E7%94%A8%E7%89%A9%E5%93%81%E7%AE%A1%E7%90%86/"/>
@@ -396,14 +400,17 @@
 
 
 
-  <footer class="page-footer footnote"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs15">博客</span><a href="/big/">大事记</a><a href="/bb/">哔哔</a><a href="/archives/">归档</a></div><div class="sitemap-group"><span class="fs15">项目</span><a href="/wiki/fcloud/">峰间云海</a><a target="_blank" rel="noopener" href="https://github.com/Mirouterui/mirouter-ui/">Mirouter-ui</a></div><div class="sitemap-group"><span class="fs15">社交</span><a href="/friends/">友链</a><a href="/say/">留言板</a><a target="_blank" rel="noopener" href="https://space.bilibili.com/451090261">BiliBili</a><a href="mailto:thun888@qq.com">邮箱</a></div><div class="sitemap-group"><span class="fs15">更多</span><a href="/about/">关于本站</a><a target="_blank" rel="noopener" href="https://pan.hzchu.top">云盘</a><a target="_blank" rel="noopener" href="https://pic.hzchu.top">图床</a></div></div><div class="text"><p>本站由 <a href="/">thun888</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.28.1">Stellar 1.28.1</a> 主题创建。<a href="https://icp.gov.moe/?keyword=20210043" target="_blank">萌ICP备20210043号</a><br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。<br><span id="timeDate">载入天数…</span><span>&amp;</span><span id="times">载入时分秒…</span>，共发表了<span id="all-posts-count">load</span>篇文章，总计<span id="all-post-words">load</span>字<br><a target="_blank" rel="noopener" href="https://us.umami.is/share/omaEiuxFtoScQNui/blog.hzchu.top">访问数据统计</a></p>
-<script> var allpostscount = "27" ;var allpostswords = "26.9k";gtime_days = Math.floor((new Date() - new Date(1708162207000)) / 1000 / 60 / 60 / 24);</script></div></footer>
+  <footer class="page-footer footnote"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs15">博客</span><a href="/big/">大事记</a><a href="/bb/">哔哔</a><a href="/archives/">归档</a></div><div class="sitemap-group"><span class="fs15">项目</span><a href="/wiki/fcloud/">峰间云海</a><a target="_blank" rel="noopener" href="https://github.com/Mirouterui/mirouter-ui/">Mirouter-ui</a></div><div class="sitemap-group"><span class="fs15">社交</span><a href="/friends/">友链</a><a href="/say/">留言板</a><a target="_blank" rel="noopener" href="https://space.bilibili.com/451090261">BiliBili</a><a href="mailto:thun888@qq.com">邮箱</a></div><div class="sitemap-group"><span class="fs15">更多</span><a href="/about/">关于本站</a><a target="_blank" rel="noopener" href="https://pan.hzchu.top">云盘</a><a target="_blank" rel="noopener" href="https://pic.hzchu.top">图床</a></div></div><div class="text"><p>本站由 <a href="/">thun888</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.28.1">Stellar 1.28.1</a> 主题创建。<a href="https://icp.gov.moe/?keyword=20210043" target="_blank">萌ICP备20210043号</a><br />
+本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。<br />
+<span id="timeDate">载入天数…</span><span>&amp;</span><span id="times">载入时分秒…</span>，共发表了<span id="all-posts-count">load</span>篇文章，总计<span id="all-post-words">load</span>字<br />
+<a target="_blank" rel="noopener" href="https://us.umami.is/share/omaEiuxFtoScQNui/blog.hzchu.top">访问数据统计</a></p>
+<script> var allpostscount = "27" ;var allpostswords = "26.8k";gtime_days = Math.floor((new Date() - new Date(1708162207000)) / 1000 / 60 / 60 / 24);</script></div></footer>
 <div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
 <div class="widgets">
 
 
 
-<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HomeBox%E7%AE%80%E5%8D%95%E4%BB%8B%E7%BB%8D"><span class="toc-text">HomeBox简单介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create%E2%80%93%E5%88%9B%E5%BB%BA"><span class="toc-text">Create–创建</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Home%E2%80%93%E4%B8%BB%E9%A1%B5"><span class="toc-text">Home–主页</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Locations%E2%80%93%E4%BD%8D%E7%BD%AE%EF%BC%88%E6%A0%91%EF%BC%89"><span class="toc-text">Locations–位置（树）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Search%E2%80%93%E6%90%9C%E7%B4%A2"><span class="toc-text">Search–搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Profile%E2%80%93%E7%94%A8%E6%88%B7%E8%AE%BE%E7%BD%AE"><span class="toc-text">Profile–用户设置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Tools%E2%80%93%E5%B7%A5%E5%85%B7"><span class="toc-text">Tools–工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%A9%E5%93%81%E8%AF%A6%E6%83%85"><span class="toc-text">物品详情</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E9%80%BB%E8%BE%91"><span class="toc-text">基本逻辑</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E9%99%85%E5%AE%9E%E6%96%BD"><span class="toc-text">实际实施</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-text">总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%AD"><span class="toc-text">续</span></a></li></ol></div><div class="widget-footer">
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text"> 前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-text"> 安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#homebox%E7%AE%80%E5%8D%95%E4%BB%8B%E7%BB%8D"><span class="toc-text"> HomeBox简单介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#create%E5%88%9B%E5%BB%BA"><span class="toc-text"> Create–创建</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#home%E4%B8%BB%E9%A1%B5"><span class="toc-text"> Home–主页</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#locations%E4%BD%8D%E7%BD%AE%E6%A0%91"><span class="toc-text"> Locations–位置（树）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#search%E6%90%9C%E7%B4%A2"><span class="toc-text"> Search–搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#profile%E7%94%A8%E6%88%B7%E8%AE%BE%E7%BD%AE"><span class="toc-text"> Profile–用户设置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tools%E5%B7%A5%E5%85%B7"><span class="toc-text"> Tools–工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%A9%E5%93%81%E8%AF%A6%E6%83%85"><span class="toc-text"> 物品详情</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E9%80%BB%E8%BE%91"><span class="toc-text"> 基本逻辑</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E9%99%85%E5%AE%9E%E6%96%BD"><span class="toc-text"> 实际实施</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-text"> 总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%AD"><span class="toc-text"> 续</span></a></li></ol></div><div class="widget-footer">
 
 <a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/></g></svg><span>回到顶部</span></a><a class="buttom" onclick="util.scrollComment()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M10.46 1.25h3.08c1.603 0 2.86 0 3.864.095c1.023.098 1.861.3 2.6.752a5.75 5.75 0 0 1 1.899 1.899c.452.738.654 1.577.752 2.6c.095 1.004.095 2.261.095 3.865v1.067c0 1.141 0 2.036-.05 2.759c-.05.735-.153 1.347-.388 1.913a5.75 5.75 0 0 1-3.112 3.112c-.805.334-1.721.408-2.977.43a10.81 10.81 0 0 0-.929.036c-.198.022-.275.054-.32.08c-.047.028-.112.078-.224.232c-.121.166-.258.396-.476.764l-.542.916c-.773 1.307-2.69 1.307-3.464 0l-.542-.916a10.605 10.605 0 0 0-.476-.764c-.112-.154-.177-.204-.224-.232c-.045-.026-.122-.058-.32-.08c-.212-.023-.49-.03-.93-.037c-1.255-.021-2.171-.095-2.976-.429A5.75 5.75 0 0 1 1.688 16.2c-.235-.566-.338-1.178-.389-1.913c-.049-.723-.049-1.618-.049-2.76v-1.066c0-1.604 0-2.86.095-3.865c.098-1.023.3-1.862.752-2.6a5.75 5.75 0 0 1 1.899-1.899c.738-.452 1.577-.654 2.6-.752C7.6 1.25 8.857 1.25 10.461 1.25M6.739 2.839c-.914.087-1.495.253-1.959.537A4.25 4.25 0 0 0 3.376 4.78c-.284.464-.45 1.045-.537 1.96c-.088.924-.089 2.11-.089 3.761v1c0 1.175 0 2.019.046 2.685c.045.659.131 1.089.278 1.441a4.25 4.25 0 0 0 2.3 2.3c.515.214 1.173.294 2.429.316h.031c.398.007.747.013 1.037.045c.311.035.616.104.909.274c.29.17.5.395.682.645c.169.232.342.525.538.856l.559.944a.52.52 0 0 0 .882 0l.559-.944c.196-.331.37-.624.538-.856c.182-.25.392-.476.682-.645c.293-.17.598-.24.909-.274c.29-.032.639-.038 1.037-.045h.032c1.255-.022 1.913-.102 2.428-.316a4.25 4.25 0 0 0 2.3-2.3c.147-.352.233-.782.278-1.441c.046-.666.046-1.51.046-2.685v-1c0-1.651 0-2.837-.089-3.762c-.087-.914-.253-1.495-.537-1.959a4.25 4.25 0 0 0-1.403-1.403c-.464-.284-1.045-.45-1.96-.537c-.924-.088-2.11-.089-3.761-.089h-3c-1.651 0-2.837 0-3.762.089" clip-rule="evenodd"/><path fill="currentColor" d="M9 11a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><span>参与讨论</span></a></div></widget>
 </div></aside><div class='float-panel blur'>
@@ -631,6 +638,34 @@
     }
   }
 </script>
+<script type="text/javascript">
+  (() => {
+    const tagSwitchers = document.querySelectorAll('.tag-subtree.parent-tag > a > .tag-switcher-wrapper')
+    for (const tagSwitcher of tagSwitchers) {
+      tagSwitcher.addEventListener('click', (e) => {
+        const parent = e.target.closest('.tag-subtree.parent-tag')
+        parent.classList.toggle('expanded')
+        e.preventDefault()
+      })
+    }
+
+    // Get active tag from query string, then activate it.
+    const urlParams = new URLSearchParams(window.location.search)
+    const activeTag = urlParams.get('tag')
+    if (activeTag) {
+      let tag = document.querySelector(`.tag-subtree[data-tag="${activeTag}"]`)
+      if (tag) {
+        tag.querySelector('a').classList.add('active')
+        
+        while (tag) {
+          tag.classList.add('expanded')
+          tag = tag.parentElement.closest('.tag-subtree.parent-tag')
+        }
+      }
+    }
+  })()
+</script>
+
 
 <!-- required -->
 <script src="/js/main.js?v=1.28.1" async></script>
@@ -701,30 +736,29 @@
 
 <!-- optional -->
 
-  <script>
+  <script type="module">
+  const el = document.getElementById('artalk_container');
+  util.viewportLazyload(el, load_artalk, false);
+
   function load_artalk() {
-    if (!document.querySelectorAll("#artalk_container")[0]) return;
+    if (!el) return;
     utils.css('https://artalk.hzchu.top/dist/Artalk.css');
     utils.js('https://artalk.hzchu.top/dist/Artalk.js', {defer: true}).then(function () {
-      const el = document.getElementById("artalk_container");
-      var path = el.getAttribute('comment_id');
+      const path = el.getAttribute('comment_id');
       if (!path) {
         path = decodeURI(window.location.pathname);
       }
-      var artalk = Artalk.init({
+      const artalk = Artalk.init({
         el: '#artalk_container',
         pageKey: path,
         pageTitle: '使用Homebox实现家用物品管理',
         server: 'https://artalk.hzchu.top',
         placeholder: '此时无声胜有声',
-        site: 'Thun888',
+        site: "Thun888",
         darkMode: 'auto'
-        })
       });
+    });
   }
-  window.addEventListener('DOMContentLoaded', (event) => {
-    load_artalk();
-  });
 </script>
 
 
@@ -796,7 +830,7 @@
   });
 </script><script>
   ctx.fancybox = {
-    selector: `article.md-text.content img:not([class*='icon'])`,
+    selector: `.md-text img:not([class]), .md-text .image img`,
     css: `https://cdn.staticfile.net/fancyapps-ui/5.0.22/fancybox/fancybox.min.css`,
     js: `https://cdn.staticfile.net/fancyapps-ui/5.0.22/fancybox/fancybox.umd.min.js`
   };
