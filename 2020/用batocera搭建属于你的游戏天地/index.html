@@ -612,7 +612,7 @@ balenaEtcher（选用）（安装方法一）
     if (!el) return;
     utils.css('https://artalk.hzchu.top/dist/Artalk.css');
     utils.js('https://artalk.hzchu.top/dist/Artalk.js', {defer: true}).then(function () {
-      const path = el.getAttribute('comment_id');
+      var path = el.getAttribute('comment_id');
       if (!path) {
         path = decodeURI(window.location.pathname);
       }
