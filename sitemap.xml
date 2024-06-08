@@ -38,6 +38,15 @@
   </url>
   
   <url>
+    <loc>https://blog.hzchu.top/friends/</loc>
+    
+    <lastmod>2024-06-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.hzchu.top/about/</loc>
     
     <lastmod>2024-06-08</lastmod>
@@ -65,7 +74,16 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/friends/</loc>
+    <loc>https://blog.hzchu.top/2024/Go%E4%B8%AD%E4%BD%BF%E7%94%A8ImageMagick%E8%87%AA%E5%8A%A8%E8%BD%AC%E6%8D%A2%E5%9B%BE%E7%89%87%E6%A0%BC%E5%BC%8F%EF%BC%8C%E5%AE%9E%E7%8E%B0%E5%85%A8%E7%AB%99%E5%9B%BE%E7%89%87Avif/</loc>
+    
+    <lastmod>2024-06-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/wiki/notes/collect/</loc>
     
     <lastmod>2024-06-08</lastmod>
     
@@ -556,6 +574,20 @@
   </url>
   
   <url>
+    <loc>https://blog.hzchu.top/tags/Go/</loc>
+    <lastmod>2024-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/tags/%E7%BD%91%E7%AB%99/</loc>
+    <lastmod>2024-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.hzchu.top/tags/Windows/</loc>
     <lastmod>2024-06-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -668,13 +700,6 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/Intel/</loc>
-    <lastmod>2024-06-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.hzchu.top/tags/CFW/</loc>
     <lastmod>2024-06-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -682,7 +707,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/linux/</loc>
+    <loc>https://blog.hzchu.top/tags/Intel/</loc>
     <lastmod>2024-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -696,7 +721,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/Go/</loc>
+    <loc>https://blog.hzchu.top/tags/linux/</loc>
     <lastmod>2024-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -704,13 +729,6 @@
   
   <url>
     <loc>https://blog.hzchu.top/tags/MIUI/</loc>
-    <lastmod>2024-06-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/tags/%E7%BD%91%E7%AB%99/</loc>
     <lastmod>2024-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -726,14 +744,14 @@
 
   
   <url>
-    <loc>https://blog.hzchu.top/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/</loc>
+    <loc>https://blog.hzchu.top/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/</loc>
     <lastmod>2024-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/</loc>
+    <loc>https://blog.hzchu.top/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/</loc>
     <lastmod>2024-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

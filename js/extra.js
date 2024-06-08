@@ -4,7 +4,7 @@ POWERMODE.colorful=true;POWERMODE.shake=false;document.body.addEventListener('in
 /* 运行时间 */
 var now=new Date();function createtime(){var grt=new Date("07/8/2021 23:30:00");now.setTime(now.getTime()+250);days=(now-grt)/1000/60/60/24;dnum=Math.floor(days);hours=(now-grt)/1000/60/60-(24*dnum);hnum=Math.floor(hours);if(String(hnum).length==1){hnum="0"+hnum}minutes=(now-grt)/1000/60-(24*60*dnum)-(60*hnum);mnum=Math.floor(minutes);if(String(mnum).length==1){mnum="0"+mnum}seconds=(now-grt)/1000-(24*60*60*dnum)-(60*60*hnum)-(60*mnum);snum=Math.round(seconds);if(String(snum).length==1){snum="0"+snum}document.getElementById("timeDate").innerHTML="本站已运行&nbsp"+dnum+"&nbsp天";document.getElementById("times").innerHTML=hnum+"&nbsp小时&nbsp"+mnum+"&nbsp分&nbsp"+snum+"&nbsp秒"}setInterval("createtime()",250);
 //复制提醒
-document.addEventListener('copy',function(){hud.toast(stellar.plugins.copycode.toast, 2500)})
+document.addEventListener('copy',function(){hud.toast("复制成功，转载请注明出处", 2500);})
 // link-icon
 document.addEventListener('DOMContentLoaded',function(){const links=document.querySelectorAll('article.md-text.content a, footer.page-footer.footnote a');links.forEach(function(link){const parentClasses=['tag-plugin.users-wrap','tag-plugin.sites-wrap','tag-plugin.ghcard','tag-plugin.link.dis-select','tag-plugin.colorful.note','social-wrap.dis-select'];let skip=false;parentClasses.forEach(pc=>{if(link.closest(`div.${pc}`)){skip=true}});if(!skip){const href=link.getAttribute('href');if(href&&(href.startsWith('http')||href.startsWith('/'))){link.innerHTML+=`<span style="white-space: nowrap;"><svg width=".7em"height=".7em"viewBox="0 0 21 21"xmlns="http://www.w3.org/2000/svg"><path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z"fill="currentColor"/><path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"fill="currentColor"></svg></span>`}}})});
 // 插入字数统计
@@ -14,3 +14,74 @@ document.getElementById("all-post-words").innerHTML = allpostswords;
 if (gtime_days > 180) {
     document.getElementById('gtime').innerHTML = `<div class="tag-plugin colorful note" color="orange"><div class="title"><strong>提醒</strong></div><div class="body"><p>本文最后更新于 ${gtime_days} 天前，其中某些信息可能已经过时，请谨慎使用！<br>如果发现内容有误，请在评论区告知。</p></div></div>`;
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    // 从页面中提取第一个AVIF图片链接
+    function getFirstPictureUrl(type) {
+      const images = document.querySelectorAll('img');
+      for (let img of images) {
+        if (img.getAttribute("data-src") && img.getAttribute("data-src").includes('fmt=',type)) {
+          return img.getAttribute("data-src");
+        }
+      }
+      return null;
+    }
+  
+    // 检测浏览器是否支持AVIF格式
+    function supportCheck(type,url) {
+      return new Promise(resolve => {
+        const avif = new Image();
+        avif.src = url;
+        avif.onload = () => {
+          console.log(type," supported");
+          resolve(true);
+        };
+        avif.onerror = () => {
+          console.log(type," not supported");
+          resolve(false);
+        };
+      });
+    }
+  
+    // 替换图片URL中的avif为webp
+    function replacepicture(from,to) {
+      const images = document.querySelectorAll('img');
+      images.forEach(img => {
+        if (img.getAttribute("data-src") && img.getAttribute("data-src").includes('fmt=',from)) {
+          if (to ==""){
+            console.log("Replacing ",from," with origin ext for image:", img.getAttribute("data-src"));
+            img.setAttribute("src",img.getAttribute("data-src").replace('fmt='+from, ''))
+            return
+          }
+          console.log("Replacing ",from," with ",to," for image:", img.getAttribute("data-src"));
+          img.setAttribute("data-src",img.getAttribute("data-src").replace('fmt='+from, 'fmt='+to))
+        }
+      });
+    }
+  
+    const firstAvifUrl = getFirstPictureUrl('avif'); // 获取第一个AVIF图片链接
+    if (firstAvifUrl) {
+      // 使用第一个AVIF图片链接进行检测
+      supportCheck("AVIF",firstAvifUrl).then(supported => {
+        if (!supported) {
+            hud.toast("当前浏览器不支持使用avif，已降级为webp", 2500);
+            replacepicture("avif","webp");
+            const firstWebpUrl = getFirstPictureUrl('webp'); // 获取第一个WEBP图片链接
+            supportCheck("WEBP",firstWebpUrl).then(supported => {
+                if (!supported) {
+                    // hud.toast("当前浏览器不支持使用webp，已降级为使用原始图片", 2500);
+                    // replacepicture("webp","");
+                    hud.toast("当前浏览器不支持使用webp，已降级为使用png", 2500);
+                    replacepicture("webp","png");
+                }else{
+                    console.log("Webp images will be used.");
+                }
+            });
+        } else {
+          console.log("AVIF images will be used.");
+        }
+      });
+    } else {
+      console.log("No AVIF images found on the page.");
+    }
+  });
