@@ -37,3 +37,13 @@ config redirect 'wan10081rdr1'
 将自身80端口映射到10081端口上
 
 来自[急需小米AX1800路由器设置端口转发远程登陆WEB管理页-恩山无线论坛 (right.com.cn)](https://www.right.com.cn/forum/thread-4043354-1-1.html)
+
+### nginx反代使用内容替换无法替换js内容
+
+```nginx
+sub_filter_types *;
+```
+
+sub_filter_types指令：sub_filter_types * 用于指定需要被替换的MIME类型,默认为“text/html”，如果制定为*，那么所有的都处理；
+
+来自[nginx替换响应内容 - kenwar - 博客园 (cnblogs.com)](https://www.cnblogs.com/kenwar/p/8296508.html)
