@@ -10,7 +10,7 @@ rightbar: [friends_timeline]
 
 {% quot 朋友们 icon:hashtag %}
 
-{% friends friends %}
+{% sites friends %}
 
 {% quot 大佬 icon:hashtag %}
 
@@ -38,7 +38,7 @@ rightbar: [friends_timeline]
   avatar: https://blog.hzchu.top/img/avatar.webp
   screenshot: https://onep.hzchu.top/mount/pic/blog-hzchu-top.png
   description: 夏日当空,心如深渊
-{% endcodeblock %}
+  {% endcodeblock %}
 
 <!-- tab 通用 -->
 

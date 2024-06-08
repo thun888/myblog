@@ -2,7 +2,7 @@
 title: 更新日志
 date: 2021-07-10 19:06:52
 description: 让我看看又更新了什么
-layout: post
+layout: page
 ---
 
 {% timeline user:thun888sthinks api:https://get-tg-channel-api.hzchu.top/?cid=2&tag=blogchanges type:memos %}
