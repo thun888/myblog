@@ -11,3 +11,4 @@ leftbar:
 base_dir: /wiki/notes/
 toc: 
   - index
+  - collect/index

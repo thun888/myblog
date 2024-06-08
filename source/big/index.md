@@ -5,7 +5,7 @@ description: 让我看看又更新了什么
 layout: page
 ---
 
-{% timeline user:thun888sthinks api:https://get-tg-channel-api.hzchu.top/?cid=2&tag=blogchanges type:memos %}
+{% timeline user:thun888sthinks api:https://get-tg-channel-api.hzchu.top/?cid=2&tag=blogchanges&usetgclassification=ture type:memos %}
 {% endtimeline %}
 
 {% timeline %}
