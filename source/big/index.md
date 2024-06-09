@@ -37,7 +37,7 @@ layout: page
 1\.更新评论系统前端，后端（PHP -> Go）<br>2.对一部分“文章”进行归档处理
 
 <!-- node 9/11 -->
-1\.调整页面宽度<br>![image-20210911105945989](https://onep.hzchu.top/mount/pic/2021/09/d4c4fe0a9738db2849de1090af4d8b06.png)
+1\.调整页面宽度<br>![image-20210911105945989](https://onep.hzchu.top/mount/pic/2021/09/d4c4fe0a9738db2849de1090af4d8b06.png?fmt=avif)
 
 <!-- node 9/10 -->
 1\.合并仓库&开源

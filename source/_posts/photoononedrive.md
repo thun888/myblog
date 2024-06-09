@@ -2,7 +2,7 @@
 title: 基于Onedrive的高可用性图床
 date: 2023-07-31 11:53:17
 tags: MNSLXOD
-cover: https://onep.hzchu.top/mount/pic/2023/08/01/64c90aaccffac.webp
+cover: https://onep.hzchu.top/mount/pic/2023/08/01/64c90aaccffac.webp?fmt=avif
 updated: 2023-07-31 11:53:17
 mermaid: true
 ---
@@ -17,13 +17,13 @@ mermaid: true
 
 在差不多一年前，我在捣鼓网心云时想到个主意：何不用家里电脑作为图片存储，通过非标准端口访问绕过备案要求。于是在[随记](https://notes.hzchu.top/)上提出个简易pcdn的想法
 
-![](https://onep.hzchu.top/mount/pic/cf1/2022/08/29/630c0d1c1087e.webp)
+![](https://onep.hzchu.top/mount/pic/cf1/2022/08/29/630c0d1c1087e.webp?fmt=avif)
 
 不过像我这种小站没必要搞那么重量级了，于是改进了下
 
 ### 思路
 
-![](https://onep.hzchu.top/mount/pic/2023/08/01/64c90aaccffac.webp)
+![](https://onep.hzchu.top/mount/pic/2023/08/01/64c90aaccffac.webp?fmt=avif)
 
 首先，本质上是个缓存服务，存储在OneDrive（下文简称od），通过各个节点分发图片，~~就是给od套了个CDN嘛~~。
 
@@ -96,25 +96,25 @@ curl https://rclone.org/install.sh | sudo bash
 
 在本地运行rclone config进行配置
 
-![](https://onep.hzchu.top/mount/pic/2023/07/31/64c78ef1d6bdd.webp)
+![](https://onep.hzchu.top/mount/pic/2023/07/31/64c78ef1d6bdd.webp?fmt=avif)
 
 把token复制出来备用（token包括两端的{}）
 
-![](https://onep.hzchu.top/mount/pic/2023/07/31/64c78ee02488b.webp)
+![](https://onep.hzchu.top/mount/pic/2023/07/31/64c78ee02488b.webp?fmt=avif)
 
 在服务端进行同样的操作，但在`Edit advanced config`中填`y`
 
-![image-20230731182953894](https://onep.hzchu.top/mount/pic/2023/07/31/64c78d2be701c.webp)
+![image-20230731182953894](https://onep.hzchu.top/mount/pic/2023/07/31/64c78d2be701c.webp?fmt=avif)
 
 
 
-![image-20230731183101473](https://onep.hzchu.top/mount/pic/2023/07/31/64c78d6802369.webp)
+![image-20230731183101473](https://onep.hzchu.top/mount/pic/2023/07/31/64c78d6802369.webp?fmt=avif)
 
 然后一路回车，在`Already have a token - refresh?`填`n`
 
 然后按要求填写
 
-![](https://onep.hzchu.top/mount/pic/2023/07/31/64c790cd11e2f.webp)
+![](https://onep.hzchu.top/mount/pic/2023/07/31/64c790cd11e2f.webp?fmt=avif)
 
 > 会自动获取drive_id,drive_type，不要回车太快按过了
 
@@ -127,15 +127,15 @@ rclone mount one:/share/mount/ ./mount/
 
 不出意外你能看见这个报错{% emoji blobcat blobcatbox%}
 
-![](https://onep.hzchu.top/mount/pic/2023/07/31/64c791e12d260.webp)
+![](https://onep.hzchu.top/mount/pic/2023/07/31/64c791e12d260.webp?fmt=avif)
 
 打开报错涉及的文件，取消注释，保存
 
-![](https://onep.hzchu.top/mount/pic/2023/07/31/64c791ad2e565.webp)
+![](https://onep.hzchu.top/mount/pic/2023/07/31/64c791ad2e565.webp?fmt=avif)
 
 再试下，如果没报错就可以了
 
-![](https://onep.hzchu.top/mount/pic/2023/07/31/64c7b69648695.webp)
+![](https://onep.hzchu.top/mount/pic/2023/07/31/64c7b69648695.webp?fmt=avif)
 
 > 新建的mount文件夹在下文没有作用，建议删除~
 >
@@ -153,7 +153,7 @@ rclone mount one:/share/mount/ ./mount/
 
 按照文档安装好后，新建一个**本地**存储策略，访问地址指向“副服务器”，并在后面加上`/mount`，存储路径根据自己的网站路径来，如`/www/wwwroot/pic.hzchu.top/`就填`/www/wwwroot/pic.hzchu.top/storage/app/mount/`
 
-![](https://onep.hzchu.top/mount/pic/2023/07/31/64c7bd10e5167.webp)
+![](https://onep.hzchu.top/mount/pic/2023/07/31/64c7bd10e5167.webp?fmt=avif)
 
 > 记得更改&新建相应目录
 
@@ -173,7 +173,7 @@ rclone mount one:/share/mount/ /www/wwwroot/pic.hzchu.top/storage/app/mount/ --c
 
 点击`添加守护进程`，如图所示
 
-![](https://onep.hzchu.top/mount/pic/2023/07/31/64c7c05cc5077.webp)
+![](https://onep.hzchu.top/mount/pic/2023/07/31/64c7c05cc5077.webp?fmt=avif)
 <!-- tab systemd -->
 
 运行：
@@ -207,7 +207,7 @@ WantedBy=multi-user.target
 
 将`baseDirectory`设为`/share`
 
-![1690813605718.webp](https://onep.hzchu.top/mount/pic/2023/07/31/64c7c4a67fdad.webp)
+![1690813605718.webp](https://onep.hzchu.top/mount/pic/2023/07/31/64c7c4a67fdad.webp?fmt=avif)
 
 由于原作者的应用程序已过期，需要自行配置，参考[高级 - OneDrive Vercel Index (swo.moe)](https://ovi.swo.moe/zh/docs/advanced#使用你自己的-client-id-与-secret)进行调整
 
@@ -218,9 +218,9 @@ WantedBy=multi-user.target
 1. 在图床中上传一张图片，查看是否上传成功，若出现错误，则检查图床服务器
 2. 等待5分钟后访问`https://yourdomain.top/zh-CN/mount/`，查看是否出现`pic`文件夹，并根据`年/月/日`进入子文件夹查看能否访问图片
 
-![1690813930882.webp](https://onep.hzchu.top/mount/pic/2023/07/31/64c7c5eaae480.webp)
+![1690813930882.webp](https://onep.hzchu.top/mount/pic/2023/07/31/64c7c5eaae480.webp?fmt=avif)
 
-![image-20230731223247351](https://onep.hzchu.top/mount/pic/2023/07/31/64c7c61147819.webp)
+![image-20230731223247351](https://onep.hzchu.top/mount/pic/2023/07/31/64c7c61147819.webp?fmt=avif)
 
 ### 安装（副服务器）
 
@@ -272,7 +272,7 @@ pip3 install flask flask_limiter hypercorn flask_cors
 
 运行逻辑：
 
-![image-20230802152803639](https://onep.hzchu.top/mount/pic/2023/08/02/64ca059284ed4.webp)
+![image-20230802152803639](https://onep.hzchu.top/mount/pic/2023/08/02/64ca059284ed4.webp?fmt=avif)
 
 ```mermaid
 flowchart TD
@@ -329,7 +329,7 @@ Code:
 
 <!-- tab 解析 -->
 
-![](https://onep.hzchu.top/mount/pic/2023/08/02/64ca3aef2cf43.webp)
+![](https://onep.hzchu.top/mount/pic/2023/08/02/64ca3aef2cf43.webp?fmt=avif)
 
 ```mermaid
 flowchart TD
@@ -352,37 +352,37 @@ flowchart TD
 
 低并发
 
-![1690852265630.webp](https://onep.hzchu.top/mount/pic/2023/08/01/64c85bab42978.webp)
+![1690852265630.webp](https://onep.hzchu.top/mount/pic/2023/08/01/64c85bab42978.webp?fmt=avif)
 
 高并发
 
-![1690852301797.webp](https://onep.hzchu.top/mount/pic/2023/08/01/64c85bceda8cc.webp)
+![1690852301797.webp](https://onep.hzchu.top/mount/pic/2023/08/01/64c85bceda8cc.webp?fmt=avif)
 
 <!-- tab 正常访问效果 -->
 
 低并发
 
-![](https://onep.hzchu.top/mount/pic/2023/08/01/64c85ada80fe5.webp)
+![](https://onep.hzchu.top/mount/pic/2023/08/01/64c85ada80fe5.webp?fmt=avif)
 
 高并发
 
-![](https://onep.hzchu.top/mount/pic/2023/08/02/64ca4417e3b0d.webp)
+![](https://onep.hzchu.top/mount/pic/2023/08/02/64ca4417e3b0d.webp?fmt=avif)
 
 <!-- tab 直接访问家宽节点 -->
 
 低并发
 
-![](https://onep.hzchu.top/mount/pic/2023/07/31/64c7c747d041a.webp)
+![](https://onep.hzchu.top/mount/pic/2023/07/31/64c7c747d041a.webp?fmt=avif)
 
 高并发
 
-![](https://onep.hzchu.top/mount/pic/2023/08/02/64ca523d745c7.webp)
+![](https://onep.hzchu.top/mount/pic/2023/08/02/64ca523d745c7.webp?fmt=avif)
 
 <!-- tab 搭配Nginx缓存 -->
 
 高并发
 
-![](https://onep.hzchu.top/mount/pic/2024/01/31/65b9a7ebb16cc.webp)
+![](https://onep.hzchu.top/mount/pic/2024/01/31/65b9a7ebb16cc.webp?fmt=avif)
 
 
 {% endtabs %}
@@ -405,8 +405,8 @@ ps：
 
 从4月份到现在为od节省了17倍的数据
 
-![image-20230802183846133.webp](https://onep.hzchu.top/mount/pic/2023/08/02/64ca32eb1fac5.webp)
+![image-20230802183846133.webp](https://onep.hzchu.top/mount/pic/2023/08/02/64ca32eb1fac5.webp?fmt=avif)
 
 从4月份到现在的日志
-![](https://onep.hzchu.top/mount/pic/2023/07/31/64c72c298f397.webp)
+![](https://onep.hzchu.top/mount/pic/2023/07/31/64c72c298f397.webp?fmt=avif)
 共480多条，大多数都是爬虫的贡献

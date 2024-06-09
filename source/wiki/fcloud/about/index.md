@@ -86,7 +86,7 @@ ps：外挂视频还在群文档里👻
 
 |Alipay|Wechat|
 |-|-|
-|<img src="https://onep.hzchu.top/mount/pic/2023/01/25/63d0a914495c1.webp" style="zoom:42.5%;" />|<img src="https://onep.hzchu.top/mount/pic/2023/01/25/63d0a92955df2.webp" style="zoom:50%;" />|
+|<img src="https://onep.hzchu.top/mount/pic/2023/01/25/63d0a914495c1.webp" style="zoom:42.5%;" />|<img src="https://onep.hzchu.top/mount/pic/2023/01/25/63d0a92955df2.webp?fmt=avif" style="zoom:50%;" />|
 
 ### 鸣谢
 

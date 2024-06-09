@@ -2,7 +2,7 @@
 title: Mirouterui简要部署指南
 date: 2023-08-28 15:25:56
 tags: Mirouterui
-cover: https://onep.hzchu.top/mount/pic/2023/08/29/64edd53a71011.webp
+cover: https://onep.hzchu.top/mount/pic/2023/08/29/64edd53a71011.webp?fmt=avif
 description: 基于小米路由器API的展示面板
 updated: 2023-08-28 15:25:56
 ---
@@ -27,17 +27,17 @@ updated: 2023-08-28 15:25:56
 
 {% tabs active:1 align:center %}
 <!-- tab 首页 -->
-![首页](https://onep.hzchu.top/mount/pic/2023/08/29/64eda7065545f.webp)
+![首页](https://onep.hzchu.top/mount/pic/2023/08/29/64eda7065545f.webp?fmt=avif)
 <!-- tab 路由器详情 -->
-![路由器详情](https://onep.hzchu.top/mount/pic/2023/08/29/64eda5d44eefa.webp)
+![路由器详情](https://onep.hzchu.top/mount/pic/2023/08/29/64eda5d44eefa.webp?fmt=avif)
 <!-- tab 设备列表 -->
-![设备列表](https://onep.hzchu.top/mount/pic/2023/08/29/64eda5d0ed93e.webp)
+![设备列表](https://onep.hzchu.top/mount/pic/2023/08/29/64eda5d0ed93e.webp?fmt=avif)
 <!-- tab 设备详情 -->
-![设备详情](https://onep.hzchu.top/mount/pic/2023/08/29/64eda5d396d7e.webp)
+![设备详情](https://onep.hzchu.top/mount/pic/2023/08/29/64eda5d396d7e.webp?fmt=avif)
 <!-- tab 温度显示（仅支持部分设备） -->
-![温度显示](https://onep.hzchu.top/mount/pic/2023/08/29/64eda75443b5e.webp)
+![温度显示](https://onep.hzchu.top/mount/pic/2023/08/29/64eda75443b5e.webp?fmt=avif)
 <!-- tab 历史数据统计 -->
-![history_index.webp](https://onep.hzchu.top/mount/pic/2023/12/16/657da564382fb.webp)
+![history_index.webp](https://onep.hzchu.top/mount/pic/2023/12/16/657da564382fb.webp?fmt=avif)
 
 {% endtabs %}
 
@@ -45,7 +45,7 @@ updated: 2023-08-28 15:25:56
 
 > 小米路由器是基于Openwrt的，故下文Openwrt仅指小米路由器
 > 附：
-> ​![](https://onep.hzchu.top/mount/pic/2023/08/28/64ec662280acf.webp)
+> ​![](https://onep.hzchu.top/mount/pic/2023/08/28/64ec662280acf.webp?fmt=avif)
 
 {% tabs active:1 align:center %}
 <!-- tab Windows -->
@@ -76,7 +76,7 @@ updated: 2023-08-28 15:25:56
 
 > 使用`uname –a`查看架构（如果为`armv7l`，考虑使用`armv5`版本）
 
-![R1D](https://onep.hzchu.top/mount/pic/2023/08/29/64ed9b78dbe91.webp)
+![R1D](https://onep.hzchu.top/mount/pic/2023/08/29/64ed9b78dbe91.webp?fmt=avif)
 
 运行：
 
@@ -96,7 +96,7 @@ updated: 2023-08-28 15:25:56
 
 1. 无法下载配置文件，~~路由器太老了~~
 
-![](https://onep.hzchu.top/mount/pic/2023/08/29/64ed9e59288c3.webp)
+![](https://onep.hzchu.top/mount/pic/2023/08/29/64ed9e59288c3.webp?fmt=avif)
 
 > 使用 `curl https://mruiapi.hzchu.top/downloadconfig -o config.json` 手动下载
 
@@ -104,7 +104,7 @@ updated: 2023-08-28 15:25:56
 
 从[Mirouterui/static: 前端静态文件 (github.com)](https://d.hzchu.top/d)下载，并解压到`static`目录
 
-![](https://onep.hzchu.top/mount/pic/2023/08/29/64eda04788f04.webp)
+![](https://onep.hzchu.top/mount/pic/2023/08/29/64eda04788f04.webp?fmt=avif)
 
 <!-- tab Docker -->
 
@@ -134,15 +134,15 @@ updated: 2023-08-28 15:25:56
 
 5. 在线前端无法使用： 受浏览器安全限制，需关闭访问私有ip限制
 
-![Chrome](https://onep.hzchu.top/mount/pic/2023/08/29/64eda267463b1.webp)
+![Chrome](https://onep.hzchu.top/mount/pic/2023/08/29/64eda267463b1.webp?fmt=avif)
 
-![Edge](https://onep.hzchu.top/mount/pic/2023/08/29/64eda26a747a5.webp)
+![Edge](https://onep.hzchu.top/mount/pic/2023/08/29/64eda26a747a5.webp?fmt=avif)
 
 
 
 ### 配置项
 
-![config](https://onep.hzchu.top/mount/pic/2023/12/16/657da76badee9.webp)
+![config](https://onep.hzchu.top/mount/pic/2023/12/16/657da76badee9.webp?fmt=avif)
 
 | 配置名 | 默认值 | 解释                                                         |
 | ------ | ------ | ------------------------------------------------------------ |

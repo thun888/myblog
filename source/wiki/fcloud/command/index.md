@@ -90,7 +90,7 @@ updated: 2023-05-01 14:01:32
 - `/dmarker delete <labelname>`：删除标记
 - `/dmarker listsets`：列出所有标记
 
-![1711180191392.webp](https://onep.hzchu.top/mount/pic/2024/03/23/65fe89a1aaffe.webp)
+![1711180191392.webp](https://onep.hzchu.top/mount/pic/2024/03/23/65fe89a1aaffe.webp?fmt=avif)
 
 ### Carpet
 
@@ -104,7 +104,7 @@ updated: 2023-05-01 14:01:32
 
 该命令将检测`<pos>`所指定的坐标是否能够生成生物，并在聊天栏中输出结果。每一行将显示生物类别、名称、刷怪权重、刷怪尝试次数、能否刷怪、空间是否足够、以及刷怪概率。
 
-![1682926112618.webp](https://onep.hzchu.top/img/2023/05/01/644f6a22a95a6.webp)
+![1682926112618.webp](https://onep.hzchu.top/img/2023/05/01/644f6a22a95a6.webp?fmt=avif)
 
 2.检查总生物量
 
@@ -120,7 +120,7 @@ updated: 2023-05-01 14:01:32
 
 `<type>`可以是ambient（环境生物，即蝙蝠）、axolotls（美西螈）、creature（动物）、misc（其他不占生物上限的生物）、monster（怪物）、underground_water_creature（洞穴水生生物）、water_ambient（水生环境生物，即鱼）、water_creature（水生动物，即海豚和鱿鱼）。
 
-![1682926630428.webp](https://onep.hzchu.top/img/2023/05/01/644f6c26e2651.webp)
+![1682926630428.webp](https://onep.hzchu.top/img/2023/05/01/644f6c26e2651.webp?fmt=avif)
 
 ```
 /spawn mobcaps <dimension>
@@ -128,7 +128,7 @@ updated: 2023-05-01 14:01:32
 
 作用与/spawn entities类似，但可以通过参数`<dimension>`指定要检查的维度。
 
-![1682926663964.webp](https://onep.hzchu.top/img/2023/05/01/644f6c47e1300.webp)
+![1682926663964.webp](https://onep.hzchu.top/img/2023/05/01/644f6c47e1300.webp?fmt=avif)
 
 **速度控制**
 

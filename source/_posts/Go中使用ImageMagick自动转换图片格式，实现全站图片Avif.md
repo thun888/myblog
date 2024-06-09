@@ -190,19 +190,19 @@ func nodeReturnFile(c *gin.Context) {
 
 **原图（WEBP,334KB,q=100%）**
 
-{% image https://onep.hzchu.top/mount/pic/2023/07/16/64b3d29485703.webp 压缩比：100%(～￣▽￣)～ download:https://onep.hzchu.top/mount/pic/2023/07/16/64b3d29485703.webp %}
+{% image https://onep.hzchu.top/mount/pic/2023/07/16/64b3d29485703.webp 压缩比：100%(～￣▽￣)～ download:https://onep.hzchu.top/mount/pic/2023/07/16/64b3d29485703.webp?fmt=avif %}
 
 <!-- cell -->
 
 **AVIF（120KB,avif时质量参数无效）**
 
-{% image https://onep.hzchu.top/mount/pic/2023/07/16/64b3d29485703.webp?fmt=avif 压缩比：36.90% download:https://onep.hzchu.top/mount/pic/2023/07/16/64b3d29485703.webp?fmt=avif %}
+{% image https://onep.hzchu.top/mount/pic/2023/07/16/64b3d29485703.webp?fmt=avif 压缩比：36.90% download:https://onep.hzchu.top/mount/pic/2023/07/16/64b3d29485703.webp?fmt=avif?fmt=avif %}
 
 <!-- cell -->
 
 **WEBP（130KB,q=50%）**
 
-{% image https://onep.hzchu.top/mount/pic/2023/07/16/64b3d29485703.webp?fmt=webp&q=50 压缩比：39.28% download:https://onep.hzchu.top/mount/pic/2023/07/16/64b3d29485703.webp?fmt=webp&q=50 %}
+{% image https://onep.hzchu.top/mount/pic/2023/07/16/64b3d29485703.webp?fmt=webp&q=50 压缩比：39.28% download:https://onep.hzchu.top/mount/pic/2023/07/16/64b3d29485703.webp?fmt=avif?fmt=webp&q=50 %}
 
 {% endgrid %}
 
@@ -300,6 +300,12 @@ document.addEventListener('DOMContentLoaded', function() {
 ```
 
 基于[@Heo](https://blog.zhheo.com/p/6a933575.html)修改，支持了懒加载及stellar的toast，facybox还有点问题{% emoji blobcat blobcatfacepalm %}
+
+## 迁移工作
+
+使用vscode进行正则替换：`(https://onep\.hzchu\.top/.*\.webp)`，`$1?fmt=avif`
+
+{% image https://onep.hzchu.top/mount/pic/myself/2024/06/66652b99e69be.png?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/06/66652b99e69be.png %}
 
 ## 优缺
 

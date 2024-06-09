@@ -103,6 +103,6 @@ MCDR list:
 
 - 在线地图需要注册，打开网页后按照流程即可
 
-![Snipaste_2023-05-01_21-41-34.webp](https://onep.hzchu.top/mount/pic/2023/05/01/644fc215cdcc4.webp)
+![Snipaste_2023-05-01_21-41-34.webp](https://onep.hzchu.top/mount/pic/2023/05/01/644fc215cdcc4.webp?fmt=avif)
 
-![1682948607925.webp](https://onep.hzchu.top/mount/pic/2023/05/01/644fc20042a10.webp)
+![1682948607925.webp](https://onep.hzchu.top/mount/pic/2023/05/01/644fc20042a10.webp?fmt=avif)

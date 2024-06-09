@@ -12,9 +12,9 @@ description: 被bootcdn捅了一刀
 
 今天调试博客时猛地发现电脑卡的不像样，排除后发现是控制台的问题，再一看控制台里全是网络请求，这可不是好事啊
 
-![](https://onep.hzchu.top/mount/pic/2024/03/08/65eb0a705f003.webp)
+![](https://onep.hzchu.top/mount/pic/2024/03/08/65eb0a705f003.webp?fmt=avif)
 
-![Snipaste_2024-03-08_20-40-38.webp](https://onep.hzchu.top/mount/pic/2024/03/08/65eb0a8cca150.webp)
+![Snipaste_2024-03-08_20-40-38.webp](https://onep.hzchu.top/mount/pic/2024/03/08/65eb0a8cca150.webp?fmt=avif)
 
 ## 过程
 
@@ -22,11 +22,11 @@ description: 被bootcdn捅了一刀
 
 然后，我查看了异常js引入的时间点，并往上挨个检查
 
-![Snipaste_2024-03-08_20-37-33.webp](https://onep.hzchu.top/mount/pic/2024/03/08/65eb0b8bee889.webp)
+![Snipaste_2024-03-08_20-37-33.webp](https://onep.hzchu.top/mount/pic/2024/03/08/65eb0b8bee889.webp?fmt=avif)
 
 最初的异常引入在`sdk.html`，随后在js文件里依次搜索，最后定位到`lazyload.min.js`
 
-![Snipaste_2024-03-08_20-37-04.webp](https://onep.hzchu.top/mount/pic/2024/03/08/65eb0c1adbc32.webp)
+![Snipaste_2024-03-08_20-37-04.webp](https://onep.hzchu.top/mount/pic/2024/03/08/65eb0c1adbc32.webp?fmt=avif)
 
 但是嘛，当我`在新标签页里打开`时，显示的又是正常的js，对比发现请求ip不同，在改hosts后成功获取到带后门的js文件
 
@@ -34,14 +34,14 @@ description: 被bootcdn捅了一刀
 <!-- cell -->
 **不正常的**
 
-![Snipaste_2024-03-08_20-39-35.webp](https://onep.hzchu.top/mount/pic/2024/03/08/65eb0c872af1b.webp)
+![Snipaste_2024-03-08_20-39-35.webp](https://onep.hzchu.top/mount/pic/2024/03/08/65eb0c872af1b.webp?fmt=avif)
 <!-- cell -->
 **正常的**
 
-![Snipaste_2024-03-08_20-39-25.webp](https://onep.hzchu.top/mount/pic/2024/03/08/65eb0c89ba6b9.webp)
+![Snipaste_2024-03-08_20-39-25.webp](https://onep.hzchu.top/mount/pic/2024/03/08/65eb0c89ba6b9.webp?fmt=avif)
 {% endgrid %}
 
-![Snipaste_2024-03-08_20-42-50.webp](https://onep.hzchu.top/mount/pic/2024/03/08/65eb0c88232e2.webp)
+![Snipaste_2024-03-08_20-42-50.webp](https://onep.hzchu.top/mount/pic/2024/03/08/65eb0c88232e2.webp?fmt=avif)
 
 ## 解决方法
 
@@ -52,6 +52,6 @@ description: 被bootcdn捅了一刀
 
 <!-- cell -->
 
-![Snipaste_2024-03-08_20-48-17.webp](https://onep.hzchu.top/mount/pic/2024/03/08/65eb0d141a263.webp)
+![Snipaste_2024-03-08_20-48-17.webp](https://onep.hzchu.top/mount/pic/2024/03/08/65eb0d141a263.webp?fmt=avif)
 
 {% endgrid %}

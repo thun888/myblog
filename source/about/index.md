@@ -7,7 +7,7 @@ menu_id: about
 leftbar: [recent,travellingslink]
 rightbar: [timeline]
 ---
-{% banner thun888 avatar:/img/avatar.webp bg:https://onep.hzchu.top/mount/pic/2024/02/06/65c236823dbca.webp %}
+{% banner thun888 avatar:/img/avatar.webp bg:https://onep.hzchu.top/mount/pic/2024/02/06/65c236823dbca.webp?fmt=avif %}
 {% navbar active:/about/ [关于](/about/) [友链](/friends/) [留言](/say/) %}
 
 {% endbanner %}
@@ -45,7 +45,7 @@ rightbar: [timeline]
 
 |Alipay|Wechat|
 |-|-|
-|<img src="https://onep.hzchu.top/mount/pic/2023/01/25/63d0a914495c1.webp" style="zoom:60%;" />|<img src="https://onep.hzchu.top/mount/pic/2024/03/08/65eaa4508662b.webp" style="zoom:40%;" />|
+|<img src="https://onep.hzchu.top/mount/pic/2023/01/25/63d0a914495c1.webp" style="zoom:60%;" />|<img src="https://onep.hzchu.top/mount/pic/2024/03/08/65eaa4508662b.webp?fmt=avif" style="zoom:40%;" />|
 
 或者，你可以使用[爱发电](https://afdian.net/a/thun888){% emoji blobcat blobcatmelt %}
 

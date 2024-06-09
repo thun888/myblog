@@ -3,8 +3,8 @@ title: 使用Homebox实现家用物品管理
 date: 2024-02-12 22:41:07
 updated: 2024-02-17 9:30:07
 tags: [Homebox,家用]
-cover: https://onep.hzchu.top/mount/pic/2024/02/17/65d0d5665e055.webp
-banner: https://onep.hzchu.top/mount/pic/2024/02/17/65d0d5665e055.webp
+cover: https://onep.hzchu.top/mount/pic/2024/02/17/65d0d5665e055.webp?fmt=avif
+banner: https://onep.hzchu.top/mount/pic/2024/02/17/65d0d5665e055.webp?fmt=avif
 description: 唉，家里太乱了，该整理一下了
 categories: 日常生活
 references:
@@ -65,11 +65,11 @@ volumes:
 
  <!-- cell -->
 
-![1708142670501.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d0304ed4e06.webp)
+![1708142670501.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d0304ed4e06.webp?fmt=avif)
 
  <!-- cell -->
 
-![1708145094118.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d039c6a395f.webp)
+![1708145094118.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d039c6a395f.webp?fmt=avif)
 
 {% endgrid %}
 
@@ -81,7 +81,7 @@ volumes:
 
 相比于「GreaterWMS」，「ModernWMS」等专门用于仓库管理的软件，「[Homebox](https://github.com/hay-kot/homebox)」主打一个家用，因此它的操作也简单不少，在进去后可以看到这样的页面
 
-![1708159306854.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d0714ba9aca.webp)
+![1708159306854.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d0714ba9aca.webp?fmt=avif)
 
 ### Create--创建
 
@@ -96,7 +96,7 @@ volumes:
 
 <!-- cell -->
 
-![1708161509640.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d079ec36954.webp)
+![1708161509640.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d079ec36954.webp?fmt=avif)
 
 {% endgrid %}
 
@@ -106,11 +106,11 @@ volumes:
 **Location：** `新建位置`，即存入某个物品存放处（如书桌）的相关信息到程序里，里面包括以下填充项
 
 在“父位置”中，可以设置其它已新建的”位置“，表示该位置属于某位置，比如这样
-![1708162255778.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d07cd0526a0.webp)
+![1708162255778.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d07cd0526a0.webp?fmt=avif)
 
 <!-- cell -->
 
-![1708162163736.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d07c7458c53.webp)
+![1708162163736.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d07c7458c53.webp?fmt=avif)
 
 {% endgrid %}
 
@@ -121,7 +121,7 @@ volumes:
 
 <!-- cell -->
 
-![1708162409464.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d07d6a352db.webp)
+![1708162409464.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d07d6a352db.webp?fmt=avif)
 
 {% endgrid %}
 
@@ -138,7 +138,7 @@ volumes:
 
 <!-- cell -->
 
-![1708165497793.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d0897a5f3d3.webp)
+![1708165497793.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d0897a5f3d3.webp?fmt=avif)
 
 {% endgrid %}
 
@@ -152,9 +152,9 @@ volumes:
 
 {% swiper %}
 
-![1708167438646.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d0910f6ac67.webp)
+![1708167438646.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d0910f6ac67.webp?fmt=avif)
 
-![1708167851852.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d092acdc522.webp)
+![1708167851852.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d092acdc522.webp?fmt=avif)
 
 {% endswiper %}
 
@@ -168,11 +168,11 @@ volumes:
 
  <!-- cell -->
 
-![1708182617875.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d0cc5ba2019.webp)
+![1708182617875.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d0cc5ba2019.webp?fmt=avif)
 
  <!-- cell -->
 
-![1708168353440.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d094a2d831a.webp)
+![1708168353440.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d094a2d831a.webp?fmt=avif)
 
 {% endgrid %}
 
@@ -183,9 +183,9 @@ volumes:
 很详细，但我除了数量和描述都用不上
 
 {% swiper %}
-![1708185435353.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d0d75c667cc.webp)
-![1708185441662.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d0d762bef44.webp)
-![1708185450333.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d0d76b8cc90.webp)
+![1708185435353.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d0d75c667cc.webp?fmt=avif)
+![1708185441662.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d0d762bef44.webp?fmt=avif)
+![1708185450333.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d0d76b8cc90.webp?fmt=avif)
 {% endswiper %}
 
 > 存在页面切换bug，刷新即可解决
@@ -225,11 +225,11 @@ volumes:
 
  <!-- cell -->
 
-![1708179344734.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d0bf9185724.webp)
+![1708179344734.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d0bf9185724.webp?fmt=avif)
 
  <!-- cell -->
 
-![1708180607272.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d0c4802d0ff.webp)
+![1708180607272.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d0c4802d0ff.webp?fmt=avif)
 
 {% endgrid %}
 
@@ -243,7 +243,7 @@ volumes:
 
  <!-- cell -->
 
-![1708179885315.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d0c2b702e65.webp)
+![1708179885315.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d0c2b702e65.webp?fmt=avif)
 
 {% endgrid %}
 
@@ -255,7 +255,7 @@ volumes:
 
  <!-- cell -->
 
-![1708180983135.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d0c6028e723.webp)
+![1708180983135.webp](https://onep.hzchu.top/mount/pic/2024/02/17/65d0c6028e723.webp?fmt=avif)
 
 {% endgrid %}
 
@@ -264,7 +264,7 @@ volumes:
 
 ​	那么，工期呢？要对小到一颗纽扣电池进行统计本身就不是一件快事，整理一个小时才勉强整理完一张桌子，想全部整理完必然是一个大工程，慢慢来。但全部整理一次确实大有益处，比如我就找到了8年前在某购物广场办的会员卡（前一天才因为没有实体会员卡不给兑积分{% emoji blobcat blobcatangry %}，这波雪中送炭），因为中途方案改变，要等这个打印纸，就先搁置下来了，~~才不是因为帕鲁太好玩了~~
 
-![导弹喵](https://onep.hzchu.top/mount/pic/2024/02/17/65d0cbae30c5d.webp)
+![导弹喵](https://onep.hzchu.top/mount/pic/2024/02/17/65d0cbae30c5d.webp?fmt=avif)
 
 ## 续
 
@@ -278,7 +278,7 @@ volumes:
 
  <!-- cell -->
 
-![1708779215832.webp](https://onep.hzchu.top/mount/pic/2024/02/24/65d9e74ecd25b.webp)
+![1708779215832.webp](https://onep.hzchu.top/mount/pic/2024/02/24/65d9e74ecd25b.webp?fmt=avif)
 
 {% endgrid %}
 
@@ -290,7 +290,7 @@ volumes:
 
  <!-- cell -->
 
-![1708779215823.webp](https://onep.hzchu.top/mount/pic/2024/02/24/65d9e756bd973.webp)
+![1708779215823.webp](https://onep.hzchu.top/mount/pic/2024/02/24/65d9e756bd973.webp?fmt=avif)
 
 {% grid %}
 

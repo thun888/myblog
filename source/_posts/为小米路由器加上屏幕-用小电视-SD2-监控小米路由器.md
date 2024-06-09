@@ -24,16 +24,16 @@ categories: 技术分享
 ### 修改部分程序代码
 
 由于默认获取一次信息间隔太短，会对路由器造成不小的负担，最好改为5s获取一次
-![1705053582589.webp](https://onep.hzchu.top/mount/pic/2024/01/12/65a10d998d683.webp)
+![1705053582589.webp](https://onep.hzchu.top/mount/pic/2024/01/12/65a10d998d683.webp?fmt=avif)
 同时程序不支持http0.1,要把发送请求处代码修改为http1.1
-![1703987881404.webp](https://onep.hzchu.top/mount/pic/2023/12/31/6590caaa36915.webp)
+![1703987881404.webp](https://onep.hzchu.top/mount/pic/2023/12/31/6590caaa36915.webp?fmt=avif)
 
 ## 展示
 
 {% swiper effect:cards %}
 
-![IMG_20231230_103045.webp](https://onep.hzchu.top/mount/pic/2023/12/31/6590c9dc1e6f1.webp)
-![IMG_20231230_103045.webp](https://onep.hzchu.top/mount/pic/2023/12/31/6590cbaed9f8a.webp)![1703988060977.webp](https://onep.hzchu.top/mount/pic/2023/12/31/6590cb5e87c0b.webp)
+![IMG_20231230_103045.webp](https://onep.hzchu.top/mount/pic/2023/12/31/6590c9dc1e6f1.webp?fmt=avif)
+![IMG_20231230_103045.webp](https://onep.hzchu.top/mount/pic/2023/12/31/6590cbaed9f8a.webp)![1703988060977.webp](https://onep.hzchu.top/mount/pic/2023/12/31/6590cb5e87c0b.webp?fmt=avif)
 
 {% endswiper %}
 
@@ -46,10 +46,10 @@ categories: 技术分享
 ### HA
 
 同时兼容HA的netdata集成
-![1704075984628.webp](https://onep.hzchu.top/mount/pic/2024/01/01/659222d20746e.webp)
-![1704076036821.webp](https://onep.hzchu.top/mount/pic/2024/01/01/659223056c85c.webp)
+![1704075984628.webp](https://onep.hzchu.top/mount/pic/2024/01/01/659222d20746e.webp?fmt=avif)
+![1704076036821.webp](https://onep.hzchu.top/mount/pic/2024/01/01/659223056c85c.webp?fmt=avif)
 示例配置：
-![1704076059450.webp](https://onep.hzchu.top/mount/pic/2024/01/01/6592231bdd188.webp)
+![1704076059450.webp](https://onep.hzchu.top/mount/pic/2024/01/01/6592231bdd188.webp?fmt=avif)
 
 ## 后记
 

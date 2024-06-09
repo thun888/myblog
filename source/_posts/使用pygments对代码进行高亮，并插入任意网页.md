@@ -52,7 +52,7 @@ categories: 技术分享
 
 {% copy git clone https://github.com/thun888/hightlight-code-api.git prefix:$ %}
 
-{% image https://onep.hzchu.top/mount/pic/myself/2024/04/66249b3e5bb80.webp %}
+{% image https://onep.hzchu.top/mount/pic/myself/2024/04/66249b3e5bb80.webp?fmt=avif %}
 
 如有需要，可在`vercel.json`里配置可信来源，防止滥用
 
@@ -108,7 +108,7 @@ dynamic_codeblock:
 
 在其它主题中的表现：
 
-![landscape](https://onep.hzchu.top/mount/pic/myself/2024/05/6632074ebf0a9.webp)
+![landscape](https://onep.hzchu.top/mount/pic/myself/2024/05/6632074ebf0a9.webp?fmt=avif)
 
 从传统方式迁移：
 

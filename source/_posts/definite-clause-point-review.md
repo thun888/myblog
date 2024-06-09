@@ -2,7 +2,7 @@
 title: 定语从句要点复习（笔记）
 date: 2022-12-31 17:16:23
 tags: 笔记
-cover: https://onep.hzchu.top/mount/pic/2023/02/05/63df2d36bb51a.webp
+cover: https://onep.hzchu.top/mount/pic/2023/02/05/63df2d36bb51a.webp?fmt=avif
 updated: 2022-12-31 17:16:23
 description: 网课内容：定语从句要点复习
 ---
@@ -36,8 +36,8 @@ description: 网课内容：定语从句要点复习
 
 
 有关习题
-![0d3ac79c-d33e-45b6-a1d8-4a3a4756b270.webp](https://onep.hzchu.top/mount/pic/2022/12/31/63afff94ebba3.webp)
-![dfc44830-58e2-4fd5-b0db-4e31a063f594.webp](https://onep.hzchu.top/mount/pic/2022/12/31/63affe4269583.webp)
+![0d3ac79c-d33e-45b6-a1d8-4a3a4756b270.webp](https://onep.hzchu.top/mount/pic/2022/12/31/63afff94ebba3.webp?fmt=avif)
+![dfc44830-58e2-4fd5-b0db-4e31a063f594.webp](https://onep.hzchu.top/mount/pic/2022/12/31/63affe4269583.webp?fmt=avif)
 
 ### 要点三：that v.s which
 

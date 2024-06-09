@@ -3,8 +3,8 @@ title: 把Tg Channel接入到Stellar时间线
 date: 2024-02-25 13:19:01
 updated: 2024-02-25 14:43:01
 tags: Stellar
-cover: https://onep.hzchu.top/mount/pic/2024/02/25/65dadc3ca6e74.webp
-banner: https://onep.hzchu.top/mount/pic/2024/02/25/65dadc3ca6e74.webp
+cover: https://onep.hzchu.top/mount/pic/2024/02/25/65dadc3ca6e74.webp?fmt=avif
+banner: https://onep.hzchu.top/mount/pic/2024/02/25/65dadc3ca6e74.webp?fmt=avif
 description: 使用Cloudflare Worker，获取Tg频道内容，并接入到Stellar时间线
 categories: 技术分享
 ---
@@ -19,7 +19,7 @@ categories: 技术分享
 
 首先新建一个频道，并记下频道ID
 
-![1708839745065.webp](https://onep.hzchu.top/mount/pic/2024/02/25/65dad341bacfd.webp)
+![1708839745065.webp](https://onep.hzchu.top/mount/pic/2024/02/25/65dad341bacfd.webp?fmt=avif)
 
 新建一个`Cloudflare Worker`，复制下面的代码粘贴进去
 
