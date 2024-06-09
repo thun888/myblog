@@ -308,7 +308,7 @@ document.addEventListener('DOMContentLoaded', function() {
 1. 契合先前架构，对以往图片可以直接迁移
 2. 提升了使用旧设备访客的体验
 3. 配合stellar支持直接查看原图
-4. by the way，因为缤纷云也使用`fmt=*`的格式，故该前端代码也可以作用于缤纷云上的图片
+4. {% del by the way，因为缤纷云也使用`fmt=*`的格式，故该前端代码也可以作用于缤纷云上的图片 %}大意了，它自己支持自动降级导致程序出错{% emoji blobcat blobcatfacepalm %}
 
 ### 缺点
 
