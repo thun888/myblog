@@ -213,61 +213,77 @@ func nodeReturnFile(c *gin.Context) {
 ```javascript 不太漂亮，大佬轻喷
 document.addEventListener('DOMContentLoaded', function() {
     // 从页面中提取第一个AVIF图片链接
-    function getFirstPictureUrl(type) {
-      const images = document.querySelectorAll('img');
-      for (let img of images) {
-        if (img.getAttribute("data-src") && img.getAttribute("data-src").includes('fmt=',type)) {
-          return img.getAttribute("data-src");
-        }
-      }
-      return null;
-    }
+    // function getFirstPictureUrl(type) {
+    //   const images = document.querySelectorAll('img');
+    //   for (let img of images) {
+    //     if (img.getAttribute("data-src") && img.getAttribute("data-src").includes('fmt=',type)) {
+    //       return img.getAttribute("data-src");
+    //     }
+    //   }
+    //   return null;
+    // }
   
     // 检测浏览器是否支持AVIF格式
-    function supportCheck(type,url) {
+    function supportCheck(type, url) {
       return new Promise(resolve => {
-        const avif = new Image();
-        avif.src = url;
-        avif.onload = () => {
-          console.log(type," supported");
-          resolve(true);
-        };
-        avif.onerror = () => {
-          console.log(type," not supported");
-          resolve(false);
-        };
-      });
-    }
-  
-    // 替换图片URL中的avif为webp
-    function replacepicture(from,to) {
-      const images = document.querySelectorAll('img');
-      images.forEach(img => {
-        if (img.getAttribute("data-src") && img.getAttribute("data-src").includes('fmt=',from)) {
-          if (to ==""){
-            console.log("Replacing ",from," with origin ext for image:", img.getAttribute("data-src"));
-            img.setAttribute("src",img.getAttribute("data-src").replace('fmt='+from, ''))
-            return
-          }
-          console.log("Replacing ",from," with ",to," for image:", img.getAttribute("data-src"));
-          img.setAttribute("data-src",img.getAttribute("data-src").replace('fmt='+from, 'fmt='+to))
+        // 先从localStorage中获取结果
+        const result = localStorage.getItem("support_" + type);
+        if (result !== null) {
+          // 如果结果存在，就直接返回
+          console.log(type, "support status loaded from localStorage:", result === "true");
+          resolve(result === "true");
+        } else {
+          // 如果结果不存在，就进行检测
+          const image = new Image();
+          image.src = url;
+          image.onload = () => {
+            console.log(type, "supported");
+            // 将结果保存到localStorage
+            localStorage.setItem("support_" + type, "true");
+            resolve(true);
+          };
+          image.onerror = () => {
+            console.log(type, "not supported");
+            // 将结果保存到localStorage
+            localStorage.setItem("support_" + type, "false");
+            // 显示提示消息
+            hud.toast(`当前浏览器不支持使用${type}，已降级为使用其他格式`, 2500);
+            resolve(false);
+          };
         }
       });
     }
+    
   
-    const firstAvifUrl = getFirstPictureUrl('avif'); // 获取第一个AVIF图片链接
+    // 替换图片URL中的avif为webp
+    function replacepicture(from, to) {
+      const images = document.querySelectorAll('img');
+      images.forEach(img => {
+        let attr = img.src.startsWith('data') ? 'data-src' : 'src';
+        if (img.getAttribute(attr) && img.getAttribute(attr).includes('fmt=' + from)) {
+          if (to == "") {
+            console.log("Replacing ", from, " with origin ext for image:", img.getAttribute(attr));
+            img.setAttribute(attr, img.getAttribute(attr).replace('fmt=' + from, ''));
+          } else {
+            console.log("Replacing ", from, " with ", to, " for image:", img.getAttribute(attr));
+            img.setAttribute(attr, img.getAttribute(attr).replace('fmt=' + from, 'fmt=' + to));
+          }
+        }
+      });
+    }
+    
+  
+    const firstAvifUrl = "/img/check/status.avif"; // 第一个AVIF图片链接
     if (firstAvifUrl) {
       // 使用第一个AVIF图片链接进行检测
       supportCheck("AVIF",firstAvifUrl).then(supported => {
         if (!supported) {
-            hud.toast("当前浏览器不支持使用avif，已降级为webp", 2500);
             replacepicture("avif","webp");
-            const firstWebpUrl = getFirstPictureUrl('webp'); // 获取第一个WEBP图片链接
+            const firstWebpUrl = "/img/check/status.webp"; // 第一个WEBP图片链接
             supportCheck("WEBP",firstWebpUrl).then(supported => {
                 if (!supported) {
                     // hud.toast("当前浏览器不支持使用webp，已降级为使用原始图片", 2500);
                     // replacepicture("webp","");
-                    hud.toast("当前浏览器不支持使用webp，已降级为使用png", 2500);
                     replacepicture("webp","png");
                 }else{
                     console.log("Webp images will be used.");
@@ -300,7 +316,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 2. 需要外部安装ImageMagick组件，程序不再轻量
 
-3. 在转换为avif过程中，部分图片可观测明显的色彩丢失。不过也可以使用webp替代
+3. 在转换为avif过程中，部分图片可观测到部分色彩丢失。不过也可以使用webp替代
 
    {% image https://onep.hzchu.top/mount/pic/myself/2024/06/66646dd4657ab.png?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/06/66646dd4657ab.png %}
 
