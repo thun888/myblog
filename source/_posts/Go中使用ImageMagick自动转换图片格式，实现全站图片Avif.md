@@ -322,3 +322,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 4. 缓存命名不具备可复用性。但目前不计划添加任何参数，加上数据量小倒也没影响{% emoji blobcat blobcatt %}
 
+
+
+## 实际测试
+
+{% image https://onep.hzchu.top/mount/pic/myself/2024/06/66650d94031f6.png?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/06/66650d94031f6.png Safari15.5(thx appetize.io) %}
+
+{% image https://onep.hzchu.top/mount/pic/myself/2024/06/66651159c2473.png?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/06/66651159c2473.png Chrome69 %}
+
+在旧版本中，程序均能正常运行，但在chrome的旧版本中因stellar的原因无法加载{% emoji blobcat blobcatsadreach %}
