@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://raw.hzchu.top/thun888/tuku/master/img/image-20210101095911579.png">
 <meta property="og:image" content="https://raw.hzchu.top/thun888/tuku/master/img/image-20210101100249006.png">
-<meta property="og:image" content="https://onep.hzchu.top/mount/pic/2021/09/5f5c8175d7b846cfe33f818b4b7e0791.webp">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/2021/09/5f5c8175d7b846cfe33f818b4b7e0791.webp?fmt=avif">
 <meta property="og:image" content="https://raw.hzchu.top/thun888/tuku/master/img/image-20210101101126292.png">
 <meta property="og:image" content="https://raw.hzchu.top/thun888/tuku/master/img/image-20210101101410967.png">
 <meta property="og:image" content="https://raw.hzchu.top/thun888/tuku/master/img/20210101101526.gif">
@@ -197,7 +197,7 @@
 <p>从github把源码下载后上传然后解压</p>
 <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://raw.hzchu.top/thun888/tuku/master/img/image-20210101100249006.png" alt="image-20210101100249006" /></p>
 <p>进到/TeambitionShare-master里把源码拉出来</p>
-<p>gif:<img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2021/09/5f5c8175d7b846cfe33f818b4b7e0791.webp" alt="20210101100433" /></p>
+<p>gif:<img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2021/09/5f5c8175d7b846cfe33f818b4b7e0791.webp?fmt=avif" alt="20210101100433" /></p>
 <p>然后配置伪静态（不设置会404）</p>
 <p>Nginx</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">#根目录伪静态</span><br><span class="line">location / &#123;</span><br><span class="line">  if (!-e $request_filename)&#123;</span><br><span class="line">    rewrite ^(.*)$ /index.php/?s=$1;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">#二级目录伪静态，自行修改pan为你的二级目录名字</span><br><span class="line">location /pan &#123;</span><br><span class="line">  if (!-e $request_filename)&#123;</span><br><span class="line">    rewrite ^/pan/(.*)$ /pan/index.php/?s=$1;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -284,7 +284,7 @@ Teambition账号
 本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。<br />
 <span id="timeDate">载入天数…</span><span>&amp;</span><span id="times">载入时分秒…</span>，共发表了<span id="all-posts-count">load</span>篇文章，总计<span id="all-post-words">load</span>字<br />
 <a target="_blank" rel="noopener" href="https://seeyou.hzchu.top/share/ogbqAPd0BGm5J2KS/blog.hzchu.top">访问数据统计</a></p>
-<script> var allpostscount = "28" ;var allpostswords = "28.5k";gtime_days = Math.floor((new Date() - new Date(1609493987000)) / 1000 / 60 / 60 / 24);</script></div></footer>
+<script> var allpostscount = "28" ;var allpostswords = "28.6k";gtime_days = Math.floor((new Date() - new Date(1609493987000)) / 1000 / 60 / 60 / 24);</script></div></footer>
 <div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
 <div class="widgets">
 
