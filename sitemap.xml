@@ -567,13 +567,6 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/AHK/</loc>
-    <lastmod>2024-06-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.hzchu.top/tags/Go/</loc>
     <lastmod>2024-06-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -582,6 +575,13 @@
   
   <url>
     <loc>https://blog.hzchu.top/tags/%E7%BD%91%E7%AB%99/</loc>
+    <lastmod>2024-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/tags/AHK/</loc>
     <lastmod>2024-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -672,6 +672,13 @@
   </url>
   
   <url>
+    <loc>https://blog.hzchu.top/tags/Vercel/</loc>
+    <lastmod>2024-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.hzchu.top/tags/Stellar/</loc>
     <lastmod>2024-06-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -680,13 +687,6 @@
   
   <url>
     <loc>https://blog.hzchu.top/tags/Typora/</loc>
-    <lastmod>2024-06-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/tags/Vercel/</loc>
     <lastmod>2024-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
