@@ -165,14 +165,16 @@ comments:
 footer:
   social:
      - title: RSS
-     - icon: '<img src="/img/icons/25678f144c438.svg"/>'
+     - icon: default:rss-new
        url: /atom.xml
-     - icon: '<img src="/img/icons/08a41b181ce68.svg"/>'
+     - icon: default:github
        url: https://github.com/thun888
-     - icon: '<img src="/img/icons/a1b00e20f425d.svg"/>'
+     - icon: default:mail
        url: mailto:thun888@qq.com
-     - icon: '<img src="/img/icons/20210610162918.svg"/>'
+     - icon: default:cloud
        url: https://share.hzchu.top
+     - icon: default:light-dark
+       url: javascript:switchTheme();
   sitemap:
      '博客':
        - '[大事记](/big/)'
