@@ -52,11 +52,11 @@ config:
 
 {% image https://onep.hzchu.top/mount/pic/myself/2024/06/666532128d166.png?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/06/666532128d166.png %}
 
-好好好，一个没有{% emoji aru 0171 %}
+好好好，一个没有{% emoji aru-l 0171 %}
 
 ## 不足
 
 1. 部分mod不规范，可能出现误判
 2. Curseforge无法获取支持的所有版本，只能获取最近的版本，可能出现误判
-3. 不支持下载，{% psw 我k我当时写完一运行直接沉默了 %}
+3. 不支持下载，{% psw 我k我当时写完一运行直接沉默了，直接摆了 %}
 4. 对于某个mod不支持时无法定位。可以添加输入期望版本然后输出不支持的mod

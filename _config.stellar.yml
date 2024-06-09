@@ -215,12 +215,13 @@ tag_plugins:
     ratio: square # origin / square
   # {% emoji %}
   emoji:
-    default: https://jsd.hzchu.top/gh/cdn-x/emoji/qq/{name}.gif
-    twemoji: https://jsd.hzchu.top/gh/twitter/twemoji/assets/svg/{name}.svg
-    qq: https://jsd.hzchu.top/gh/cdn-x/emoji/qq/{name}.gif
-    aru: https://jsd.hzchu.top/gh/cdn-x/emoji/aru-l/{name}.gif
-    tieba: https://jsd.hzchu.top/gh/cdn-x/emoji/tieba/{name}.png
-    blobcat: https://jsd.hzchu.top/gh/norevi/waline-blobcatemojis@1.0/blobs/{name}.png
+    default: https://gcore.jsdelivr.net/gh/cdn-x/emoji/qq/{name}.gif
+    twemoji: https://gcore.jsdelivr.net/gh/twitter/twemoji/assets/svg/{name}.svg
+    qq: https://gcore.jsdelivr.net/gh/cdn-x/emoji/qq/{name}.gif
+    aru: https://gcore.jsdelivr.net/gh/cdn-x/emoji/aru/{name}.png
+    aru-l: https://gcore.jsdelivr.net/gh/cdn-x/emoji/aru-l/{name}.gif
+    tieba: https://gcore.jsdelivr.net/gh/cdn-x/emoji/tieba/{name}.png
+    blobcat: https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs/{name}.png
 
 ######## JS Plugins ########
 plugins:

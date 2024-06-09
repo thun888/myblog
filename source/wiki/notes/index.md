@@ -47,3 +47,15 @@ sub_filter_types *;
 sub_filter_types指令：sub_filter_types * 用于指定需要被替换的MIME类型,默认为“text/html”，如果制定为*，那么所有的都处理；
 
 来自[nginx替换响应内容 - kenwar - 博客园 (cnblogs.com)](https://www.cnblogs.com/kenwar/p/8296508.html)
+
+## mysql
+
+将MySQL8.0生成的sql文件，导入MySQL5.7版本时`Unknown collation: 'utf8mb4_0900_ai_ci'`
+
+使用Navicat进行数据传输，并在选项中设置不包含字符集
+
+{% image https://onep.hzchu.top/mount/pic/myself/2024/06/66656d63620c6.png?fmt=avif %}
+
+{% image https://onep.hzchu.top/mount/pic/myself/2024/06/66656d955266f.png?fmt=avif %}
+
+[Unknown collation: ‘utf8mb4_0900_ai_ci‘ 的解决方案-CSDN博客](https://blog.csdn.net/weixin_45953673/article/details/124873321)
