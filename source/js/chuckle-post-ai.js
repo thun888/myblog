@@ -67,7 +67,7 @@ function ChucklePostAI(AI_option) {
       <div class="ai-explanation">${interface.name}初始化中...</div>
       <div class="ai-btn-box">
         <div class="ai-btn-item">${interface.button[0]}</div>
-        <div class="ai-btn-item">${interface.button[1]}</div>
+        <div class="ai-btn-item" style="display: none;">${interface.button[1]}</div>
         <div class="ai-btn-item">${interface.button[2]}</div>
         <div class="ai-btn-item">${interface.button[3]}</div>
       </div>`;
