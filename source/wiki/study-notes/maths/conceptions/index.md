@@ -31,5 +31,5 @@ $$
 
 ### 各种百分位数
 
-{% image https://onep.hzchu.top/mount/pic/myself/avif/20240607080828.avif %}
+{% image https://onep.hzchu.top/mount/pic/myself/avif/20240607080828.avif?fmt=avif %}
 
