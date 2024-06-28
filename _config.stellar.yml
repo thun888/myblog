@@ -159,7 +159,7 @@ comments:
     placeholder: '此时无声胜有声'
     site: Thun888
     emoticons: https://raw.hzchu.top/thun888/asstes/master/files/json/artalk/default.json
-    darkMode: auto
+    darkMode: 'auto'
 
 ######## Footer ########
 footer:

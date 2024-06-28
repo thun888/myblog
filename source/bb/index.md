@@ -4,6 +4,7 @@ date: 2021-07-10 19:06:52
 description: 闲来无事，哔哔两句
 layout: post
 comments: false
+useai: false
 ---
 
 <div id="memos" style="display: none;"></div>
@@ -15,8 +16,8 @@ comments: false
 <script src="https://cdn.staticfile.org/marked/7.0.5/marked.min.js"></script>
 <script src="https://cdn.staticfile.org/lozad.js/1.16.0/lozad.min.js"></script>
 
-<link href="http://artalk.hzchu.top/dist/Artalk.css" rel="stylesheet" />
-<script src="http://artalk.hzchu.top/dist/Artalk.js"></script>
+<link href="https://artalk.hzchu.top/dist/Artalk.css" rel="stylesheet" />
+<script src="https://artalk.hzchu.top/dist/Artalk.js"></script>
 
 <script src="/js/memos.js"></script>
 
