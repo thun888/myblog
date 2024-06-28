@@ -12,6 +12,10 @@ utils.jq(() => {
         utils.request(el, api, function (data) {
           data = data.data || [];
           data.forEach((item, i) => {
+            content = item.content_marked.replace(/<a href=\"(.*?)\">(.*?)<\/a>/g, (match, $1, $2) => {
+                return $2;
+          });
+          // console.log(content)
             var cell = '<div class="timenode" index="' + i + '">';
             cell += '<div class="header">';
             cell += '<div class="user-info">';
@@ -21,7 +25,7 @@ utils.jq(() => {
             cell += '<span>' + new Date(item.date).toLocaleString() + '</span>';
             cell += '</div>';
             cell += '<a class="body" href="' + item.page_url + '#atk-comment-' + item.id + '" target="_blank" rel="external nofollow noopener noreferrer">';
-            cell += item.content_marked;
+            cell += content;
             cell += '</a>';
             cell += '</div>';
             $(el).append(cell);
