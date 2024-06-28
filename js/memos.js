@@ -839,7 +839,7 @@ var memosData = {
           artalkDom.classList.remove('d-none');
           Artalk.init({
             el: '#artalk',
-            pageKey: '/bb/?id=' + artalkId,
+            pageKey: '/bb/' + artalkId,
             pageTitle: '',
             site: artalkPath,
             server: artalkEnv,
