@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.28.1" theme-name="Stellar" theme-version="1.28.1">
+  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.29.0" theme-name="Stellar" theme-version="1.29.0">
   
   <meta name="generator" content="Hexo 7.2.0">
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -73,7 +73,7 @@
     <link rel="alternate" href="/atom.xml" title="Thun888" type="application/atom+xml">
   
 
-  <link rel="stylesheet" href="/css/main.css?v=1.28.1">
+  <link rel="stylesheet" href="/css/main.css?v=1.29.0">
 
   
 
@@ -85,6 +85,12 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
 
+  <div class="spinner" id="eloading"> 
+    <span class="loader-text">加载中...</span>
+    <div class="loader"></div>
+    <span class="loader-text-below" onclick="document.getElementById('eloading').style.display='none'">不想等待可以点我关掉</span>
+  </div>
+  
 
   <link rel="stylesheet" href="https://jsd.hzchu.top/npm/lxgw-wenkai-screen-webfont@1.1.0/lxgwwenkaiscreen.css" media="all">
   <link rel="stylesheet" href="/mcss/mcss.css">
@@ -143,12 +149,6 @@
 </style>
 <script src="/js/load.js"></script>
 
-  
-  <div class="spinner" id="eloading"> 
-    <span class="loader-text">加载中...</span>
-    <div class="loader"></div>
-    <span class="loader-text-below" onclick="document.getElementById('eloading').style.display='none'">不想等待可以点我关掉</span>
-  </div>
   <!-- hexo injector head_end end --></head>
 <body>
 
@@ -285,10 +285,10 @@
 <h5 id="rclone-2"><a class="markdownIt-Anchor" href="#rclone-2"></a> Rclone</h5>
 <p>rclone需要持久化运行，我这里建议的是Supervisor或系统自带的systemd，windows使用nssm</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rclone mount one:/share/mount/ /www/wwwroot/pic.hzchu.top/storage/app/mount/ --copy-links --no-gzip-encoding --no-check-certificate --allow-other --allow-non-empty --<span class="built_in">umask</span> 000 --vfs-cache-mode full --attr-timeout 15m --vfs-cache-max-age 240h --vfs-cache-max-size 1G --buffer-size 100M</span><br></pre></td></tr></table></figure>
-<div class="tag-plugin tabs" align="center"id="tab_3"><div class="nav-tabs"><div class="tab active"><a href="#tab_3-1">supervisor</a></div><div class="tab"><a href="#tab_3-2">systemd</a></div></div><div class="tab-content"><div class="tab-pane active" id="tab_3-1"><p>以宝塔面板为例</p>
+<div class="tag-plugin tabs" align="center"id="tab_1"><div class="nav-tabs"><div class="tab active"><a href="#tab_1-1">supervisor</a></div><div class="tab"><a href="#tab_1-2">systemd</a></div></div><div class="tab-content"><div class="tab-pane active" id="tab_1-1"><p>以宝塔面板为例</p>
 <p>打开<code>软件商店</code>，搜索并安装<code>进程守护管理器</code>：</p>
 <p>点击<code>添加守护进程</code>，如图所示</p>
-<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/07/31/64c7c05cc5077.webp?fmt=avif" alt="" /></p></div><div class="tab-pane" id="tab_3-2"><p>运行：</p>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/07/31/64c7c05cc5077.webp?fmt=avif" alt="" /></p></div><div class="tab-pane" id="tab_1-2"><p>运行：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /etc/systemd/system/rclone-one.service</span><br></pre></td></tr></table></figure>
 <p>​	写入：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=rclone-one</span><br><span class="line">After=network.target remote-fs.target nss-lookup.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">User=root</span><br><span class="line">ExecStart=rclone mount one:/share/mount/ /www/wwwroot/pic.hzchu.top/storage/app/mount/ --copy-links --no-gzip-encoding --no-check-certificate --allow-other --allow-non-empty --<span class="built_in">umask</span> 000 --vfs-cache-mode full --attr-timeout 15m --vfs-cache-max-age 240h --vfs-cache-max-size 1G --buffer-size 100M</span><br><span class="line">ExecReload=/bin/kill -s HUP <span class="variable">$MAINPID</span></span><br><span class="line">ExecStop=/bin/kill -s QUIT <span class="variable">$MAINPID</span></span><br><span class="line">Restart=on-abnormal</span><br><span class="line">RestartSec=5s</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure></div></div></div>
@@ -316,20 +316,20 @@
 <p>backupurl 为“图床服务器“的对外访问地址</p>
 <p>mainurl 为“主服务器“的对外访问地址</p>
 </blockquote>
-<div class="tag-plugin tabs" align="center"id="tab_4"><div class="nav-tabs"><div class="tab active"><a href="#tab_4-1">PHP版本</a></div><div class="tab"><a href="#tab_4-2">Python版本</a></div><div class="tab"><a href="#tab_4-3">解析</a></div></div><div class="tab-content"><div class="tab-pane active" id="tab_4-1"><blockquote>
+<div class="tag-plugin tabs" align="center"id="tab_2"><div class="nav-tabs"><div class="tab active"><a href="#tab_2-1">PHP版本</a></div><div class="tab"><a href="#tab_2-2">Python版本</a></div><div class="tab"><a href="#tab_2-3">解析</a></div></div><div class="tab-content"><div class="tab-pane active" id="tab_2-1"><blockquote>
 <p>需要修改redis连接地址，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mi>s</mi><mi>e</mi><msub><mi>r</mi><mi>t</mi></msub><mi>o</mi><mi>k</mi><mi>e</mi><mi>n</mi><mtext>和</mtext></mrow><annotation encoding="application/x-tex">user_token和</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord mathnormal">u</span><span class="mord mathnormal">s</span><span class="mord mathnormal">e</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2805559999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.02778em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mord mathnormal">e</span><span class="mord mathnormal">n</span><span class="mord cjk_fallback">和</span></span></span></span>mainurl</p>
 </blockquote>
 <p>Code:</p>
-<pre><code>&lt;div class=&quot;tag-plugin ds-coding&quot; id=&quot;coding-cg1plbrdi&quot;&gt;&lt;/div&gt;
+<pre><code>&lt;div class=&quot;tag-plugin ds-coding&quot; id=&quot;coding-f0eo5avy2&quot;&gt;&lt;/div&gt;
 &lt;script&gt;
 addEventListener(&quot;load&quot;,function(){
-  console.log('[hexo-dynamic-codeblock]start load：coding-cg1plbrdi' );
+  console.log('[hexo-dynamic-codeblock]start load：coding-f0eo5avy2' );
   utils.jq(() =&gt; {
     $(function () {
-      const el = document.getElementById('coding-cg1plbrdi');
+      const el = document.getElementById('coding-f0eo5avy2');
         utils.request(el, &quot;https://hightlight-code-api.hzchu.top/api/v1/generate?&amp;url=https%3A%2F%2Fraw.githubusercontent.com%2Fthun888%2FMNSLXOD%2Fmain%2Fjump%2Fphp%2Findex.php&amp;lang=php&amp;usejson=true&quot;, function (data) {
           $(el).append(data.result);
-          addCopyButtons('coding-cg1plbrdi');
+          addCopyButtons('coding-f0eo5avy2');
         });
       });
   });
@@ -338,29 +338,29 @@ addEventListener(&quot;load&quot;,function(){
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://jsd.hzchu.top/gh/thun888/asstes@master/files/pygments-css/default.css&quot;&gt;
 </code></pre>
 <p>伪静态配置:</p>
-<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">location</span> / &#123;</span><br><span class="line">    <span class="attribute">try_files</span> <span class="variable">$uri</span> <span class="variable">$uri</span>/ /index.php?<span class="variable">$args</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="tab_4-2"><p>Code:</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">location</span> / &#123;</span><br><span class="line">    <span class="attribute">try_files</span> <span class="variable">$uri</span> <span class="variable">$uri</span>/ /index.php?<span class="variable">$args</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="tab_2-2"><p>Code:</p>
 <blockquote>
 <p>需要修改redis连接地址，user_token和mainurl</p>
 </blockquote>
 <p>安装依赖：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install flask flask_limiter hypercorn flask_cors</span><br></pre></td></tr></table></figure>
-<pre><code>&lt;div class=&quot;tag-plugin ds-coding&quot; id=&quot;coding-ozr9g8a3d&quot;&gt;&lt;/div&gt;
+<pre><code>&lt;div class=&quot;tag-plugin ds-coding&quot; id=&quot;coding-79o545llz&quot;&gt;&lt;/div&gt;
 &lt;script&gt;
 addEventListener(&quot;load&quot;,function(){
-  console.log('[hexo-dynamic-codeblock]start load：coding-ozr9g8a3d' );
+  console.log('[hexo-dynamic-codeblock]start load：coding-79o545llz' );
   utils.jq(() =&gt; {
     $(function () {
-      const el = document.getElementById('coding-ozr9g8a3d');
+      const el = document.getElementById('coding-79o545llz');
         utils.request(el, &quot;https://hightlight-code-api.hzchu.top/api/v1/generate?&amp;url=https%3A%2F%2Fraw.githubusercontent.com%2Fthun888%2FMNSLXOD%2Fmain%2Fjump%2Fpy%2Fmain.py&amp;lang=python&amp;usejson=true&quot;, function (data) {
           $(el).append(data.result);
-          addCopyButtons('coding-ozr9g8a3d');
+          addCopyButtons('coding-79o545llz');
         });
       });
   });
 });
 &lt;/script&gt;
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://jsd.hzchu.top/gh/thun888/asstes@master/files/pygments-css/default.css&quot;&gt;
-</code></pre></div><div class="tab-pane" id="tab_4-3"><p>运行逻辑：</p>
+</code></pre></div><div class="tab-pane" id="tab_2-3"><p>运行逻辑：</p>
 <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/08/02/64ca059284ed4.webp?fmt=avif" alt="image-20230802152803639" /></p>
 <pre class="mermaid">flowchart TD
 id0([访问]) --> id1["判断路径是否为'/_api/update'"]
@@ -379,20 +379,20 @@ id3 ---> |值均不存在| id6["将'主服务器'地址与访问路径拼接后�
 <h3 id="节点"><a class="markdownIt-Anchor" href="#节点"></a> 节点</h3>
 <p>考虑到php部署起来麻烦，这里用python解决一切</p>
 <div class="tag-plugin colorful note" child="tabs"><div class="title"><strong>后期吐槽</strong></div><div class="body"><p>在arm设备上配环境配半天，一气之下用go重写了主要逻辑，编译成二进制文件到处丢太爽了</p></div></div>
-<div class="tag-plugin tabs" align="center"id="tab_5"><div class="nav-tabs"><div class="tab active"><a href="#tab_5-1">Python</a></div><div class="tab"><a href="#tab_5-2">解析</a></div></div><div class="tab-content"><div class="tab-pane active" id="tab_5-1"><p>下载数据库到程序同目录：<a target="_blank" rel="noopener" href="https://raw.hzchu.top/thun888/MNSLXOD/main/node/data.db">[点击下载]</a></p>
+<div class="tag-plugin tabs" align="center"id="tab_3"><div class="nav-tabs"><div class="tab active"><a href="#tab_3-1">Python</a></div><div class="tab"><a href="#tab_3-2">解析</a></div></div><div class="tab-content"><div class="tab-pane active" id="tab_3-1"><p>下载数据库到程序同目录：<a target="_blank" rel="noopener" href="https://raw.hzchu.top/thun888/MNSLXOD/main/node/data.db">[点击下载]</a></p>
 <p>安装依赖：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install flask flask_limiter hypercorn flask_cors</span><br></pre></td></tr></table></figure>
 <p>Code:</p>
-<pre><code>&lt;div class=&quot;tag-plugin ds-coding&quot; id=&quot;coding-jegku2fb1&quot;&gt;&lt;/div&gt;
+<pre><code>&lt;div class=&quot;tag-plugin ds-coding&quot; id=&quot;coding-nby0yw87w&quot;&gt;&lt;/div&gt;
 &lt;script&gt;
 addEventListener(&quot;load&quot;,function(){
-  console.log('[hexo-dynamic-codeblock]start load：coding-jegku2fb1' );
+  console.log('[hexo-dynamic-codeblock]start load：coding-nby0yw87w' );
   utils.jq(() =&gt; {
     $(function () {
-      const el = document.getElementById('coding-jegku2fb1');
+      const el = document.getElementById('coding-nby0yw87w');
         utils.request(el, &quot;https://hightlight-code-api.hzchu.top/api/v1/generate?&amp;url=https%3A%2F%2Fraw.githubusercontent.com%2Fthun888%2FMNSLXOD%2Fmain%2Fnode%2Fmain.py&amp;lang=python&amp;usejson=true&quot;, function (data) {
           $(el).append(data.result);
-          addCopyButtons('coding-jegku2fb1');
+          addCopyButtons('coding-nby0yw87w');
         });
       });
   });
@@ -405,7 +405,7 @@ addEventListener(&quot;load&quot;,function(){
 <p>实际部署中可能需要自行配置ssl证书以使开启了https的网站可以正常访问</p>
 <p>如果外部不套反向代理建议自定义10000-65535的端口</p>
 <p>进程同样需要持久化，可以参考rclone部分</p>
-</blockquote></div><div class="tab-pane" id="tab_5-2"><p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/08/02/64ca3aef2cf43.webp?fmt=avif" alt="" /></p>
+</blockquote></div><div class="tab-pane" id="tab_3-2"><p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/08/02/64ca3aef2cf43.webp?fmt=avif" alt="" /></p>
 <pre class="mermaid">flowchart TD
     id0([访问]) --> id1["判断路径是否为'/_api/...'"]
     id1 --> |是| id2["读取相关数据返回"]
@@ -416,16 +416,16 @@ addEventListener(&quot;load&quot;,function(){
     id8 --> |"≦5GB"| id10["不动作"]
     id6 --> id11(["上报服务器消息"])</pre></div></div></div>
 <h3 id="效果"><a class="markdownIt-Anchor" href="#效果"></a> 效果</h3>
-<div class="tag-plugin tabs" align="center"id="tab_6"><div class="nav-tabs"><div class="tab active"><a href="#tab_6-1">直接访问OneDrive目录程序</a></div><div class="tab"><a href="#tab_6-2">正常访问效果</a></div><div class="tab"><a href="#tab_6-3">直接访问家宽节点</a></div><div class="tab"><a href="#tab_6-4">搭配Nginx缓存</a></div></div><div class="tab-content"><div class="tab-pane active" id="tab_6-1"><p>低并发</p>
+<div class="tag-plugin tabs" align="center"id="tab_4"><div class="nav-tabs"><div class="tab active"><a href="#tab_4-1">直接访问OneDrive目录程序</a></div><div class="tab"><a href="#tab_4-2">正常访问效果</a></div><div class="tab"><a href="#tab_4-3">直接访问家宽节点</a></div><div class="tab"><a href="#tab_4-4">搭配Nginx缓存</a></div></div><div class="tab-content"><div class="tab-pane active" id="tab_4-1"><p>低并发</p>
 <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/08/01/64c85bab42978.webp?fmt=avif" alt="1690852265630.webp" /></p>
 <p>高并发</p>
-<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/08/01/64c85bceda8cc.webp?fmt=avif" alt="1690852301797.webp" /></p></div><div class="tab-pane" id="tab_6-2"><p>低并发</p>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/08/01/64c85bceda8cc.webp?fmt=avif" alt="1690852301797.webp" /></p></div><div class="tab-pane" id="tab_4-2"><p>低并发</p>
 <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/08/01/64c85ada80fe5.webp?fmt=avif" alt="" /></p>
 <p>高并发</p>
-<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/08/02/64ca4417e3b0d.webp?fmt=avif" alt="" /></p></div><div class="tab-pane" id="tab_6-3"><p>低并发</p>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/08/02/64ca4417e3b0d.webp?fmt=avif" alt="" /></p></div><div class="tab-pane" id="tab_4-3"><p>低并发</p>
 <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/07/31/64c7c747d041a.webp?fmt=avif" alt="" /></p>
 <p>高并发</p>
-<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/08/02/64ca523d745c7.webp?fmt=avif" alt="" /></p></div><div class="tab-pane" id="tab_6-4"><p>高并发</p>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2023/08/02/64ca523d745c7.webp?fmt=avif" alt="" /></p></div><div class="tab-pane" id="tab_4-4"><p>高并发</p>
 <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/01/31/65b9a7ebb16cc.webp?fmt=avif" alt="" /></p></div></div></div>
 <h3 id="结语"><a class="markdownIt-Anchor" href="#结语"></a> 结语</h3>
 <p>对应这个项目，我感觉就是：<code>易上手，易扩展</code>同时可以薅到各大厂商的羊毛（怎么薅就看各位的了），既可以把一些不稳定的服务利用起来，又不用担心出问题时全部拉闸，并且背靠微软不用担心无良厂商跑路数据丢失，当然，在目前只能算的上是一个高可用性的小型cdn，比起pcdn还有不少不足，但个人使用足以。</p>
@@ -487,7 +487,7 @@ addEventListener(&quot;load&quot;,function(){
 
 
 
-  <footer class="page-footer footnote"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs15">博客</span><a href="/big/">大事记</a><a href="/bb/">哔哔</a><a href="/archives/">归档</a></div><div class="sitemap-group"><span class="fs15">项目</span><a href="/wiki/fcloud/">峰间云海</a><a target="_blank" rel="noopener" href="https://github.com/Mirouterui/mirouter-ui/">Mirouter-ui</a></div><div class="sitemap-group"><span class="fs15">社交</span><a href="/friends/">友链</a><a href="/say/">留言板</a><a target="_blank" rel="noopener" href="https://space.bilibili.com/451090261">BiliBili</a><a href="mailto:thun888@qq.com">邮箱</a></div><div class="sitemap-group"><span class="fs15">更多</span><a href="/about/">关于本站</a><a target="_blank" rel="noopener" href="https://pan.hzchu.top">云盘</a><a target="_blank" rel="noopener" href="https://pic.hzchu.top">图床</a></div></div><div class="text"><p>本站由 <a href="/">thun888</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.28.1">Stellar 1.28.1</a> 主题创建。<a href="https://icp.gov.moe/?keyword=20210043" target="_blank">萌ICP备20210043号</a><br />
+  <footer class="page-footer footnote"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs15">博客</span><a href="/big/">大事记</a><a href="/bb/">哔哔</a><a href="/archives/">归档</a></div><div class="sitemap-group"><span class="fs15">项目</span><a href="/wiki/fcloud/">峰间云海</a><a target="_blank" rel="noopener" href="https://github.com/Mirouterui/mirouter-ui/">Mirouter-ui</a></div><div class="sitemap-group"><span class="fs15">社交</span><a href="/friends/">友链</a><a href="/say/">留言板</a><a target="_blank" rel="noopener" href="https://space.bilibili.com/451090261">BiliBili</a><a href="mailto:thun888@qq.com">邮箱</a></div><div class="sitemap-group"><span class="fs15">更多</span><a href="/about/">关于本站</a><a target="_blank" rel="noopener" href="https://pan.hzchu.top">云盘</a><a target="_blank" rel="noopener" href="https://pic.hzchu.top">图床</a></div></div><div class="text"><p>本站由 <a href="/">thun888</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.29.0">Stellar 1.29.0</a> 主题创建。<a href="https://icp.gov.moe/?keyword=20210043" target="_blank">萌ICP备20210043号</a><br />
 本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。<br />
 <span id="timeDate">载入天数…</span><span>&amp;</span><span id="times">载入时分秒…</span>，共发表了<span id="all-posts-count">load</span>篇文章，总计<span id="all-post-words">load</span>字<br />
 <a target="_blank" rel="noopener" href="https://seeyou.hzchu.top/share/ogbqAPd0BGm5J2KS/blog.hzchu.top">访问数据统计</a></p>
@@ -755,7 +755,7 @@ addEventListener(&quot;load&quot;,function(){
 
 
 <!-- required -->
-<script src="/js/main.js?v=1.28.1" defer></script>
+<script src="/js/main.js?v=1.29.0" defer></script>
 
 <script type="text/javascript">
   const applyTheme = (theme) => {

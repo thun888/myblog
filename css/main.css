@@ -3732,7 +3732,7 @@ p>strong>span.tag-plugin.icon {
 }
 .tag-plugin.video {
   line-height: 0;
-  text-align: center;
+  margin: auto;
 }
 .tag-plugin.video video,
 .tag-plugin.video iframe {

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.28.1" theme-name="Stellar" theme-version="1.28.1">
+  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.29.0" theme-name="Stellar" theme-version="1.29.0">
   
   <meta name="generator" content="Hexo 7.2.0">
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -34,10 +34,11 @@
 <meta property="og:image" content="https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatt.png">
 <meta property="og:image" content="https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatflip.png">
 <meta property="og:image" content="https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatflower.png">
-<meta property="og:image" content="https://cn-onep.hzchu.top:60181/mount/lfiles/IMG_20240609_0001.png?fmt=avif">
-<meta property="og:image" content="https://cn-onep.hzchu.top:60181/mount/lfiles/IMG_20240609_0002.png?fmt=avif">
+<meta property="og:image" content="https://onep.hzchu.top/mount/lfiles/IMG_20240609_0001.png?fmt=avif">
+<meta property="og:image" content="https://onep.hzchu.top/mount/lfiles/IMG_20240609_0002.png?fmt=avif">
 <meta property="og:image" content="https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatfacepalm.png">
 <meta property="og:image" content="https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatbox.png">
+<meta property="og:image" content="https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatsaitama.png">
 <meta property="og:image" content="https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatpeekaboo.png">
 <meta property="og:image" content="https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatnotlikethis.png">
 <meta property="og:image" content="https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatsadreach.png">
@@ -58,7 +59,7 @@
     <link rel="alternate" href="/atom.xml" title="Thun888" type="application/atom+xml">
   
 
-  <link rel="stylesheet" href="/css/main.css?v=1.28.1">
+  <link rel="stylesheet" href="/css/main.css?v=1.29.0">
 
   
 
@@ -70,6 +71,12 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
 
+  <div class="spinner" id="eloading"> 
+    <span class="loader-text">加载中...</span>
+    <div class="loader"></div>
+    <span class="loader-text-below" onclick="document.getElementById('eloading').style.display='none'">不想等待可以点我关掉</span>
+  </div>
+  
 
   <link rel="stylesheet" href="https://jsd.hzchu.top/npm/lxgw-wenkai-screen-webfont@1.1.0/lxgwwenkaiscreen.css" media="all">
   <link rel="stylesheet" href="/mcss/mcss.css">
@@ -128,12 +135,6 @@
 </style>
 <script src="/js/load.js"></script>
 
-  
-  <div class="spinner" id="eloading"> 
-    <span class="loader-text">加载中...</span>
-    <div class="loader"></div>
-    <span class="loader-text-below" onclick="document.getElementById('eloading').style.display='none'">不想等待可以点我关掉</span>
-  </div>
   <!-- hexo injector head_end end --></head>
 <body>
 
@@ -173,7 +174,7 @@
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
 <span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/">日常生活</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-06-09T21:03:23.000Z">2024-06-09</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-06-09T21:03:23.000Z">2024-06-09</time></span></div><div class="flex-row" id="page-words"><span style="padding: 4px;">本文字数：835字</span><span class="sep updated" style="padding: 4px;"></span><span class="text updated" style="padding: 4px;">阅读时长：2分</span></div><div class="flex-row" id="tag"> <span>&nbsp标签：</span><a class="cap breadcrumb-link" href="/tags/yearreport/">yearreport</a>&nbsp</div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-06-09T21:03:23.000Z">2024-06-09</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-06-09T21:03:23.000Z">2024-06-09</time></span></div><div class="flex-row" id="page-words"><span style="padding: 4px;">本文字数：863字</span><span class="sep updated" style="padding: 4px;"></span><span class="text updated" style="padding: 4px;">阅读时长：2分</span></div><div class="flex-row" id="tag"> <span>&nbsp标签：</span><a class="cap breadcrumb-link" href="/tags/yearreport/">yearreport</a>&nbsp</div></div></div>
     
     <div class="bottom only-title">
       
@@ -189,14 +190,14 @@
 <p>回望过去，22年，我参加的应该是广东省上史上数学最简单的中考，好像语文也有新题型，<del>着实为难我这个语文拉胯的数学一哥了。</del><span class="tag-plugin emoji"><img no-lazy="" class="inline lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatflip.png"/></span>不过因为和学校签了就读高中部的合约，干脆直接开摆，考试那几天晚上各种玩，终于三分之差错失一中线。现在想想还有点后悔，不过也无所谓了。<span class="tag-plugin emoji"><img no-lazy="" class="inline lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatcomfy.png"/></span></p>
 <p>上了高中，高一倒也没什么，因为实行月休，每个星期也就是在北大楼看着初/小学部放假回家，加上新来的校长们个个带着湖北特产，<strong>抓教育教学，提升办学质量</strong>，这破生活实在是够无聊的。带了部小相机，开始了我的摆烂生活，然后嘛，因为摆的太狠，被分到了第二层次的班。<span class="tag-plugin emoji"><img no-lazy="" class="inline lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatsadreach.png"/></span><del>唉，这小事小事继续摆。</del><span class="tag-plugin emoji"><img no-lazy="" class="inline lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatt.png"/></span>总而言之，高一还是蛮充实的嘛。</p>
 <p>高二倒也没什么，上学期组建了「峰间云海」，写了「MRUI」。下学期写了点小东西，算是为社区做点贡献，然后还考了个「云学考」，帮了半个班的人考过体育（15米折返跑）和信息技术，好像倒也没什么了。不对，怎么越写越压抑啊？<span class="tag-plugin emoji"><img no-lazy="" class="inline lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatflip.png"/></span>情感有正有负，正向的更多是父母，老师同学之间的，不过生活琐事也展开不了，学校也没什么活动，只能在文中留空了。<span class="tag-plugin emoji"><img no-lazy="" class="inline lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatflower.png"/></span></p>
-<details class="tag-plugin colorful folding" ><summary><span>云学考</span></summary><div class="body"><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cn-onep.hzchu.top:60181/mount/lfiles/IMG_20240609_0001.png?fmt=avif" data-fancybox="true"/><a class="image-download blur" style="opacity:0" target="_blank" href="https://cn-onep.hzchu.top:60181/mount/lfiles/IMG_20240609_0001.png"><svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3734"><path d="M561.00682908 685.55838913a111.03077546 111.03077546 0 0 1-106.8895062 0L256.23182837 487.72885783a55.96309219 55.96309219 0 0 1 79.13181253-79.18777574L450.70357448 523.88101491V181.55477937a55.96309219 55.96309219 0 0 1 111.92618438 0v344.06109173l117.07478902-117.07478901a55.96309219 55.96309219 0 0 1 79.13181252 79.18777574zM282.81429711 797.1487951h447.70473912a55.96309219 55.96309219 0 0 1 0 111.92618438H282.81429711a55.96309219 55.96309219 0 0 1 0-111.92618438z" p-id="3735"></path></svg></a></div></div><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cn-onep.hzchu.top:60181/mount/lfiles/IMG_20240609_0002.png?fmt=avif" data-fancybox="true"/><a class="image-download blur" style="opacity:0" target="_blank" href="https://cn-onep.hzchu.top:60181/mount/lfiles/IMG_20240609_0002.png"><svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3734"><path d="M561.00682908 685.55838913a111.03077546 111.03077546 0 0 1-106.8895062 0L256.23182837 487.72885783a55.96309219 55.96309219 0 0 1 79.13181253-79.18777574L450.70357448 523.88101491V181.55477937a55.96309219 55.96309219 0 0 1 111.92618438 0v344.06109173l117.07478902-117.07478901a55.96309219 55.96309219 0 0 1 79.13181252 79.18777574zM282.81429711 797.1487951h447.70473912a55.96309219 55.96309219 0 0 1 0 111.92618438H282.81429711a55.96309219 55.96309219 0 0 1 0-111.92618438z" p-id="3735"></path></svg></a></div></div></div></details>
+<details class="tag-plugin colorful folding" ><summary><span>云学考</span></summary><div class="body"><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/lfiles/IMG_20240609_0001.png?fmt=avif" data-fancybox="true"/><a class="image-download blur" style="opacity:0" target="_blank" href="https://onep.hzchu.top/mount/lfiles/IMG_20240609_0001.png"><svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3734"><path d="M561.00682908 685.55838913a111.03077546 111.03077546 0 0 1-106.8895062 0L256.23182837 487.72885783a55.96309219 55.96309219 0 0 1 79.13181253-79.18777574L450.70357448 523.88101491V181.55477937a55.96309219 55.96309219 0 0 1 111.92618438 0v344.06109173l117.07478902-117.07478901a55.96309219 55.96309219 0 0 1 79.13181252 79.18777574zM282.81429711 797.1487951h447.70473912a55.96309219 55.96309219 0 0 1 0 111.92618438H282.81429711a55.96309219 55.96309219 0 0 1 0-111.92618438z" p-id="3735"></path></svg></a></div></div><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/lfiles/IMG_20240609_0002.png?fmt=avif" data-fancybox="true"/><a class="image-download blur" style="opacity:0" target="_blank" href="https://onep.hzchu.top/mount/lfiles/IMG_20240609_0002.png"><svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3734"><path d="M561.00682908 685.55838913a111.03077546 111.03077546 0 0 1-106.8895062 0L256.23182837 487.72885783a55.96309219 55.96309219 0 0 1 79.13181253-79.18777574L450.70357448 523.88101491V181.55477937a55.96309219 55.96309219 0 0 1 111.92618438 0v344.06109173l117.07478902-117.07478901a55.96309219 55.96309219 0 0 1 79.13181252 79.18777574zM282.81429711 797.1487951h447.70473912a55.96309219 55.96309219 0 0 1 0 111.92618438H282.81429711a55.96309219 55.96309219 0 0 1 0-111.92618438z" p-id="3735"></path></svg></a></div></div></div></details>
 <p><strong>立足当下</strong>，前不久，我们结束了5月月考，年级有个20名吧，这几次考试考的还行，一方面同学的翻译笔充电的时候被收了，没法嫖笔看小说了。另一方面下学期要分班，总不能考太差吧<span class="tag-plugin emoji"><img no-lazy="" class="inline lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatfacepalm.png"/></span>，按目前的情况在第一层次班应该没什么问题。<span class="tag-plugin emoji"><img no-lazy="" class="inline lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatbox.png"/></span></p>
 <p><strong>放眼未来</strong>，上一届的学长们已然跃过了龙门，明年的我能跌过哪条杠仍是一个未知数，抛开试卷难度不谈，现在上个915，211还是ok的，不过好不好这是另外一回事了，广东省内有不少名校，像哈工大，华工，中大，浅浅定个目标：<psw>AjoLBwo/ADICAzY7CwYKAwE0BBw+Aw8iAyoAAg8sDyw3DRMyAxYcCSA2AwYyAAgJAzE6Dx0/DwUkDA4gAQUJDB4K2Yq0CSgyARQtARIaAwENATcCDA4Z04+jASgsAAAAAx4UAhYnAxYAAxc+ XOR</psw></p>
 <h2 id="行"><a class="markdownIt-Anchor" href="#行"></a> 行</h2>
 <p><strong>一些调整</strong>：</p>
 <ol>
 <li>暂停所有的开发活动</li>
-<li>暂停对所有服务的维护</li>
+<li>非特殊情况，暂停对所有服务的维护(难绷，刚说完服务器nginx配置被篡改了，好像是宝塔的漏洞<span class="tag-plugin emoji"><img no-lazy="" class="inline lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatsaitama.png"/></span>)</li>
 <li>对于一些评论/issues中的技术性问题，如果短时间内无法解决那只能委屈一下了<span class="tag-plugin emoji"><img no-lazy="" class="inline lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatpeekaboo.png"/></span></li>
 <li>以后可能会写点生活类文章吧</li>
 </ol>
@@ -256,7 +257,7 @@
 
 
 
-  <footer class="page-footer footnote"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs15">博客</span><a href="/big/">大事记</a><a href="/bb/">哔哔</a><a href="/archives/">归档</a></div><div class="sitemap-group"><span class="fs15">项目</span><a href="/wiki/fcloud/">峰间云海</a><a target="_blank" rel="noopener" href="https://github.com/Mirouterui/mirouter-ui/">Mirouter-ui</a></div><div class="sitemap-group"><span class="fs15">社交</span><a href="/friends/">友链</a><a href="/say/">留言板</a><a target="_blank" rel="noopener" href="https://space.bilibili.com/451090261">BiliBili</a><a href="mailto:thun888@qq.com">邮箱</a></div><div class="sitemap-group"><span class="fs15">更多</span><a href="/about/">关于本站</a><a target="_blank" rel="noopener" href="https://pan.hzchu.top">云盘</a><a target="_blank" rel="noopener" href="https://pic.hzchu.top">图床</a></div></div><div class="text"><p>本站由 <a href="/">thun888</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.28.1">Stellar 1.28.1</a> 主题创建。<a href="https://icp.gov.moe/?keyword=20210043" target="_blank">萌ICP备20210043号</a><br />
+  <footer class="page-footer footnote"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs15">博客</span><a href="/big/">大事记</a><a href="/bb/">哔哔</a><a href="/archives/">归档</a></div><div class="sitemap-group"><span class="fs15">项目</span><a href="/wiki/fcloud/">峰间云海</a><a target="_blank" rel="noopener" href="https://github.com/Mirouterui/mirouter-ui/">Mirouter-ui</a></div><div class="sitemap-group"><span class="fs15">社交</span><a href="/friends/">友链</a><a href="/say/">留言板</a><a target="_blank" rel="noopener" href="https://space.bilibili.com/451090261">BiliBili</a><a href="mailto:thun888@qq.com">邮箱</a></div><div class="sitemap-group"><span class="fs15">更多</span><a href="/about/">关于本站</a><a target="_blank" rel="noopener" href="https://pan.hzchu.top">云盘</a><a target="_blank" rel="noopener" href="https://pic.hzchu.top">图床</a></div></div><div class="text"><p>本站由 <a href="/">thun888</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.29.0">Stellar 1.29.0</a> 主题创建。<a href="https://icp.gov.moe/?keyword=20210043" target="_blank">萌ICP备20210043号</a><br />
 本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。<br />
 <span id="timeDate">载入天数…</span><span>&amp;</span><span id="times">载入时分秒…</span>，共发表了<span id="all-posts-count">load</span>篇文章，总计<span id="all-post-words">load</span>字<br />
 <a target="_blank" rel="noopener" href="https://seeyou.hzchu.top/share/ogbqAPd0BGm5J2KS/blog.hzchu.top">访问数据统计</a></p>
@@ -524,7 +525,7 @@
 
 
 <!-- required -->
-<script src="/js/main.js?v=1.28.1" defer></script>
+<script src="/js/main.js?v=1.29.0" defer></script>
 
 <script type="text/javascript">
   const applyTheme = (theme) => {
@@ -739,16 +740,6 @@
     }
   });
 </script>
-
-  <script defer src="/js/chuckle-post-ai.js"></script>
-  <script defer>
-    window.addEventListener('DOMContentLoaded', (event) => {
-      new ChucklePostAI(Object.assign({
-        el: 'article.content',
-        css: `/css/_plugins/tianli_gpt`
-      }, JSON.parse(`{"enable":true,"js":"/js/chuckle-post-ai.js","field":"post","key":"5Q5mpqRK5DkwT1X9Gi5e","total_length":3500,"typewriter":true,"summary_directly":true,"rec_method":"web","hide_shuttle":true,"summary_toggle":false,"interface":{"name":"AI摘要","introduce":"我是文章辅助AI: Gemini，点击下方的按钮，让我生成本文简介、推荐相关文章等。","version":"Gemini","button":["介绍自己","推荐文章","生成摘要","矩阵穿梭"]}}`)))
-    });
-  </script>
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {

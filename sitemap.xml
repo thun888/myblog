@@ -38,15 +38,6 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/friends/</loc>
-    
-    <lastmod>2024-06-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.hzchu.top/about/</loc>
     
     <lastmod>2024-06-28</lastmod>
@@ -66,6 +57,15 @@
   
   <url>
     <loc>https://blog.hzchu.top/big/</loc>
+    
+    <lastmod>2024-06-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/friends/</loc>
     
     <lastmod>2024-06-28</lastmod>
     
@@ -629,13 +629,6 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/Mirouterui/</loc>
-    <lastmod>2024-06-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.hzchu.top/tags/MNSLXOD/</loc>
     <lastmod>2024-06-28</lastmod>
     <changefreq>weekly</changefreq>
@@ -644,6 +637,13 @@
   
   <url>
     <loc>https://blog.hzchu.top/tags/python/</loc>
+    <lastmod>2024-06-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/tags/Mirouterui/</loc>
     <lastmod>2024-06-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -713,6 +713,13 @@
   </url>
   
   <url>
+    <loc>https://blog.hzchu.top/tags/%E5%85%AC%E5%91%8A/</loc>
+    <lastmod>2024-06-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.hzchu.top/tags/Stellar/</loc>
     <lastmod>2024-06-28</lastmod>
     <changefreq>weekly</changefreq>
@@ -721,13 +728,6 @@
   
   <url>
     <loc>https://blog.hzchu.top/tags/Typora/</loc>
-    <lastmod>2024-06-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/tags/%E5%85%AC%E5%91%8A/</loc>
     <lastmod>2024-06-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
