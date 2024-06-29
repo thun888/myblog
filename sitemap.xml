@@ -65,7 +65,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/friends/</loc>
+    <loc>https://blog.hzchu.top/bb/</loc>
     
     <lastmod>2024-06-29</lastmod>
     
@@ -83,7 +83,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/bb/</loc>
+    <loc>https://blog.hzchu.top/big/</loc>
     
     <lastmod>2024-06-29</lastmod>
     
@@ -92,7 +92,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/big/</loc>
+    <loc>https://blog.hzchu.top/friends/</loc>
     
     <lastmod>2024-06-29</lastmod>
     
@@ -407,7 +407,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/fcloud/faq/</loc>
+    <loc>https://blog.hzchu.top/wiki/fcloud/datasafe/</loc>
     
     <lastmod>2023-05-01</lastmod>
     
@@ -416,7 +416,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/fcloud/datasafe/</loc>
+    <loc>https://blog.hzchu.top/wiki/fcloud/faq/</loc>
     
     <lastmod>2023-05-01</lastmod>
     
@@ -784,14 +784,14 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/linux/</loc>
+    <loc>https://blog.hzchu.top/tags/Cloudflare/</loc>
     <lastmod>2024-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/Cloudflare/</loc>
+    <loc>https://blog.hzchu.top/tags/linux/</loc>
     <lastmod>2024-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
