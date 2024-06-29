@@ -2,6 +2,7 @@
 wiki: study-notes
 title: 常见实验室制备方程
 updated: 2024-06-07 12:00:32
+type: story	
 ---
 
 ## 常见实验室制备方程

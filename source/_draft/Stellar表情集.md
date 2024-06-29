@@ -6,7 +6,7 @@ tags:
 cover:
 banner:
 description:
-categories: 技术分享
+categories: 技术类
 ---
 
 d

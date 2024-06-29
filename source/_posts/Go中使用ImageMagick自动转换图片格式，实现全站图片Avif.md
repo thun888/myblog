@@ -6,7 +6,7 @@ tags: [Go,网站]
 cover: https://dolphinsbukets.s3.bitiful.net/article-cover/cover-8.png?fmt=avif
 banner: https://dolphinsbukets.s3.bitiful.net/article-cover/cover-8.png?fmt=avif&q=50
 description: 改进了下之前写的“CDN”程序，使其支持在边缘转换图片格式
-categories: 技术分享
+categories: 技术类
 ---
 
 ## 前言
@@ -190,19 +190,19 @@ func nodeReturnFile(c *gin.Context) {
 
 **原图（WEBP,334KB,q=100%）**
 
-{% image https://onep.hzchu.top/mount/pic/2023/07/16/64b3d29485703.webp 压缩比：100%(～￣▽￣)～ download:https://onep.hzchu.top/mount/pic/2023/07/16/64b3d29485703.webp?fmt=avif %}
+{% image https://onep.hzchu.top/mount/pic/2023/07/16/64b3d29485703.webp 压缩比：100%(～￣▽￣)～ download:https://onep.hzchu.top/mount/pic/2023/07/16/64b3d29485703.webp %}
 
 <!-- cell -->
 
 **AVIF（120KB,avif时质量参数无效）**
 
-{% image https://onep.hzchu.top/mount/pic/2023/07/16/64b3d29485703.webp?fmt=avif 压缩比：36.90% download:https://onep.hzchu.top/mount/pic/2023/07/16/64b3d29485703.webp?fmt=avif?fmt=avif %}
+{% image https://onep.hzchu.top/mount/pic/2023/07/16/64b3d29485703.webp?fmt=avif 压缩比：36.90% download:https://onep.hzchu.top/mount/pic/2023/07/16/64b3d29485703.webp?fmt=avif %}
 
 <!-- cell -->
 
 **WEBP（130KB,q=50%）**
 
-{% image https://onep.hzchu.top/mount/pic/2023/07/16/64b3d29485703.webp?fmt=webp&q=50 压缩比：39.28% download:https://onep.hzchu.top/mount/pic/2023/07/16/64b3d29485703.webp?fmt=avif?fmt=webp&q=50 %}
+{% image https://onep.hzchu.top/mount/pic/2023/07/16/64b3d29485703.webp?fmt=webp&q=50 压缩比：39.28% download:https://onep.hzchu.top/mount/pic/2023/07/16/64b3d29485703.webp?fmt=webp&q=50 %}
 
 {% endgrid %}
 

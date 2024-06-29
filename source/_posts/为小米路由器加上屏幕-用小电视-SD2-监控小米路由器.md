@@ -6,7 +6,7 @@ tags: Mirouterui
 cover: https://dolphinsbukets.s3.bitiful.net/article-cover/cover-6.png?fmt=avif&q=50
 description: 通过MRUI构造网络请求来用小电视(SD2)监控小米路由器
 banner: https://dolphinsbukets.s3.bitiful.net/article-cover/cover-6.png?fmt=avif&q=50
-categories: 技术分享
+categories: 技术类
 ---
 
 ## 前言

@@ -6,7 +6,7 @@ tags: [Homebox,家用]
 cover: https://onep.hzchu.top/mount/pic/2024/02/17/65d0d5665e055.webp?fmt=avif
 banner: https://onep.hzchu.top/mount/pic/2024/02/17/65d0d5665e055.webp?fmt=avif
 description: 唉，家里太乱了，该整理一下了
-categories: 日常生活
+categories: 生活小事
 references:
  - '[Home - Homebox (hay-kot.github.io)](https://d.hzchu.top/molvn)'
 ---

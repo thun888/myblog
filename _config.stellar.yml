@@ -132,8 +132,8 @@ article:
   auto_excerpt: 150
   # 分类颜色
   category_color:
-    '日常生活': '#bf9936'
-    '技术分享': '#2196f3'
+    '生活小事': '#bf9936'
+    '技术类': '#2196f3'
     '瞎折腾': '#ef613f'
   # 文章许可协议
   license: '本文采用 [署名-非商业性使用-相同方式共享 4.0 国际](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。'

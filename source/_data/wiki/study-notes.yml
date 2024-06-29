@@ -22,3 +22,6 @@ tree:
     - physics/formulas/index
   '化学': 
     - chemistry/reactions/index
+    - chemistry/text/index
+  '生物': 
+    - biology/thingsandcolors/index

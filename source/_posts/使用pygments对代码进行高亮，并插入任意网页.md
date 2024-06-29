@@ -6,7 +6,7 @@ tags: [Vercel,python]
 cover: https://dolphinsbukets.s3.bitiful.net/article-cover/cover-7.png?fmt=avif
 banner: https://dolphinsbukets.s3.bitiful.net/article-cover/cover-7.png?fmt=avif&q=50
 description: 使用pygments对代码进行高亮，将长段代码Embed到你的博客里吧
-categories: 技术分享
+categories: 技术类
 ---
 
 ## 前言
