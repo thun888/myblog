@@ -38,3 +38,61 @@
 .bread-nav:hover div#page-words span.updated {
   visibility: visible;
 }
+
+@media print {
+  /* 隐藏元素 */
+  .l_left,
+  .l_right,
+  .top.bread-nav.footnote,
+  div#read-next,
+  div#post-ai,
+  div#related-posts,
+  div#comments,
+  section#license,
+  section#share,
+  footer {
+    display: none;
+  }
+  .md-text psw {
+    color: unset;
+    background: unset;
+    border: 3px dashed #ccc;
+  }
+  /* 隐藏锚点 */
+  .markdownIt-Anchor {
+    display: none; /* 隐藏原始链接内容 */
+  }
+  /* 修改背景和边框 */
+  .article.banner {
+    background: none;
+    border-bottom: 1px dashed #ccc;
+  }
+
+  /* 调整边框圆角和内边距 */
+  .banner,
+  .banner.top {
+    border-radius: 0;
+  }
+
+  .banner .bottom {
+    padding: 0rem;
+  }
+
+  /* 取消grid布局 */
+  #start {
+    display: unset;
+  }
+  /* 调整字的上下边距 */
+  p {
+    margin: 0 !important;
+  }
+  /* 调整标题的上外边距 */
+  h1,h2,h3,h4,h5, h6 {
+    margin: 0 !important;
+  }
+
+  /* 限制图片高度 */
+  img {
+    max-height: 100vh;
+  }
+}
