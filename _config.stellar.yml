@@ -165,16 +165,18 @@ comments:
 footer:
   social:
      - title: RSS
-     - icon: default:rss-new
+     - icon: myself:rss-new
        url: /atom.xml
-     - icon: default:github
+     - icon: myself:github
        url: https://github.com/thun888
-     - icon: default:mail
+     - icon: myself:mail
        url: mailto:thun888@qq.com
-     - icon: default:cloud
+     - icon: myself:cloud
        url: https://share.hzchu.top
-     - icon: default:light-dark
+     - icon: myself:light-dark
        url: javascript:switchTheme();
+     - icon: myself:list-3-twotone
+       url: /settings/
   sitemap:
      '博客':
        - '[大事记](/big/)'

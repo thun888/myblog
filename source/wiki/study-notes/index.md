@@ -30,3 +30,7 @@ updated: 2024-06-06 22:00:32
 **物理**：重要知识点，好题
 **化学**：易忘知识点，好题
 **生物**：易忘知识点，资料，好题，部分口诀，一些重要概念的解释{% emoji blobcat blobcatnomblobcat %}
+
+## 其它
+
+试卷库及电子化笔记：[Albums - Immich](https://photo.hzchu.top/)

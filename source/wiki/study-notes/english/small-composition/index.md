@@ -33,3 +33,7 @@ updated: 2024-06-07 12:00:32
 ![](https://onep.hzchu.top/mount/pic/myself/materials/英语应用文写作-活动报道/IMG_20240405_0001.avif?fmt=avif)
 ![](https://onep.hzchu.top/mount/pic/myself/materials/英语应用文写作-活动报道/IMG_20240405_0002.avif?fmt=avif)
 {% endgallery %}
+
+## 好句
+
+1. It can't be more normal for us students to occasionally perform badly/poorly in our studies. 我们学生偶尔学习成绩不佳是再正常不过的事。
