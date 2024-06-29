@@ -25,3 +25,4 @@ tree:
     - chemistry/text/index
   '生物': 
     - biology/thingsandcolors/index
+    - biology/conceptions/index
