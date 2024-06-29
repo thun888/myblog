@@ -11,15 +11,6 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/Artalk-doc/use/</loc>
-    
-    <lastmod>2024-06-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.hzchu.top/vercel.json</loc>
     
     <lastmod>2024-06-29</lastmod>
@@ -47,6 +38,24 @@
   </url>
   
   <url>
+    <loc>https://blog.hzchu.top/wiki/Artalk-doc/use/</loc>
+    
+    <lastmod>2024-06-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/friends/</loc>
+    
+    <lastmod>2024-06-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.hzchu.top/about/</loc>
     
     <lastmod>2024-06-29</lastmod>
@@ -66,15 +75,6 @@
   
   <url>
     <loc>https://blog.hzchu.top/big/</loc>
-    
-    <lastmod>2024-06-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/friends/</loc>
     
     <lastmod>2024-06-29</lastmod>
     
@@ -645,14 +645,14 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/python/</loc>
+    <loc>https://blog.hzchu.top/tags/MNSLXOD/</loc>
     <lastmod>2024-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/MNSLXOD/</loc>
+    <loc>https://blog.hzchu.top/tags/python/</loc>
     <lastmod>2024-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
