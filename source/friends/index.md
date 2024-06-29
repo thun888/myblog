@@ -67,5 +67,5 @@ rightbar: [friends_timeline]
 
 {% endtabs %}
 
-> 目前已取消自助友链申请，如果你想与我交换友链的话请在下方留言哦！
+> 目前已取消自助友链申请，如果你想与我交换友链的话请在下方留言或留言告知后自行[提交pr](https://github.com/thun888/myblog/blob/main/source/_data/links/friends.yml)哦！
 

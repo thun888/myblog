@@ -41,7 +41,9 @@ rightbar: [timeline]
 
 {% hashtag 峰间云海MC服务器 https://blog.hzchu.top/wiki/fcloud/ color:red %}
 
-{% quot 捐赠 icon:hashtag %}
+{% quot 饿饿，饭饭 icon:hashtag %}
+
+（建议备注昵称哦）
 
 |Alipay|Wechat|
 |-|-|
