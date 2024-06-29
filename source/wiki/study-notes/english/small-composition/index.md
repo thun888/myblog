@@ -31,7 +31,7 @@ updated: 2024-06-07 12:00:32
 
 {% gallery %}
 ![](https://onep.hzchu.top/mount/pic/myself/materials/英语应用文写作-活动报道/IMG_20240405_0001.avif?fmt=avif)
-![](https://onep.hzchu.top/mount/pic/myself/materials/英语应用文写作-活动报道/IMG_20240405_0002.avif?fmt=avif)
+![](https://onep.hzchu.top/mount/pic/myself/materials/英语应用文写作-活动报道/IMG_20240405_0002.avif?fmt=webp)
 {% endgallery %}
 
 ## 好句
