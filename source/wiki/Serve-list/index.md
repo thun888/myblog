@@ -22,7 +22,7 @@ updated: 2024-02-24 22:33:00
 
 [数据统计 (757678.xyz)](https://gt-stats.757678.xyz/)
 
-​	{% hashtag AZ-HK color:green %}{% hashtag Self-Coding color:green %}{% hashtag L-SLA color:red %}
+​	{% hashtag TT-HK color:green %}{% hashtag Self-Coding color:green %}{% hashtag L-SLA color:red %}
 
 #### pan.hzchu.top
 

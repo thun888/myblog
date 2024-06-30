@@ -13,7 +13,7 @@ updated: 2024-02-24 22:33:00
 > 自有服务对应[Thun888's Server Status](https://monitor.hzchu.top/)，托管于其它平台使用[Shields.io](https://shields.io/)生成标签
 >
 
-​	{% hashtag TT-HK color:green %}{% hashtag AZ-HK color:green %}{% hashtag Home-ikuai-kvm color:green %}{% hashtag AWS-SG color:orange %}{% hashtag i6-server color:orange %}
+​	{% hashtag TT-HK color:green %}{% hashtag Home-ikuai-kvm color:green %}{% hashtag Pas-fl color:orange %}
 
 #### 类别
 
