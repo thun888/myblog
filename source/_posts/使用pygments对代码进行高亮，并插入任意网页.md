@@ -40,6 +40,8 @@ categories: 技术类
 
 因为我是直接用Vercel的cli进行部署的，所以这一步需要先安装一下
 
+> 也可以直接部署: [Develop To Vercel](https://vercel.com/import/project?template=https://github.com/thun888/hightlight-code-api)
+
 {% copy npm install -g vercel prefix:$ %}
 
 然后登录
