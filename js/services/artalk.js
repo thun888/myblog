@@ -12,9 +12,13 @@ utils.jq(() => {
         utils.request(el, api, function (data) {
           data = data.data || [];
           data.forEach((item, i) => {
+            // 去掉<a>标签
             content = item.content_marked.replace(/<a href=\"(.*?)\">(.*?)<\/a>/g, (match, $1, $2) => {
                 return $2;
-          });
+            });
+          // 去掉<pre>标签及其内部内容
+            content = content.replace(/<pre[\s\S]*?<\/pre>/gi, '「代码框」');
+
           // console.log(content)
             var cell = '<div class="timenode" index="' + i + '">';
             cell += '<div class="header">';
