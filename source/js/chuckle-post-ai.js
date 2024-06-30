@@ -3,6 +3,17 @@ if(!window.hasOwnProperty("aiExecuted")){
   window.aiExecuted = "chuckle";
 }
 function ChucklePostAI(AI_option) {
+
+  // 是否启用ai
+  const aisummaryStatus = localStorage.getItem('config.aisummary.status');
+
+  if (!aisummaryStatus || aisummaryStatus === '0') {
+    console.log("AI摘要已禁用");
+    return;
+  }
+
+
+
   MAIN(AI_option);
   if(AI_option.pjax){
     document.addEventListener('pjax:complete', ()=>{

@@ -50,13 +50,14 @@
   div#comments,
   section#license,
   section#share,
+  #link-icon,
   footer {
     display: none;
   }
   .md-text psw {
     color: unset;
     background: unset;
-    border: 3px dashed #ccc;
+    border: 3px dashed var(--block-border);
   }
   /* 隐藏锚点 */
   .markdownIt-Anchor {
@@ -65,7 +66,7 @@
   /* 修改背景和边框 */
   .article.banner {
     background: none;
-    border-bottom: 1px dashed #ccc;
+    border-bottom: 1px dashed var(--block-border);
   }
 
   /* 调整边框圆角和内边距 */
@@ -74,7 +75,8 @@
     border-radius: 0;
   }
 
-  .banner .bottom {
+  .banner .bottom,
+  table {
     padding: 0rem;
   }
 

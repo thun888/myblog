@@ -9,14 +9,20 @@ useai: false
 
 ## Umami统计
 
+默认启用
+
 {% button 禁用/启用 javascript:stitchumami() %}
 
 ## 黑夜模式
 
+默认跟随系统
+
 {% button 切换 javascript:switchTheme(); %}
 
+## Ai摘要
 
+默认禁用
 
-
+{% button 禁用/启用 javascript:switchaisummary(); %}
 
 <script src="/js/settings.js"></script>
