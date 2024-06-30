@@ -5,7 +5,7 @@ updated: 2024-06-07 7:39:32
 
 ---
 
-## 语文
+> 这里记载了本笔记所有使用或引用到的在线内容，感谢原作者们的付出😘
 
 ## 数学
 
@@ -20,10 +20,19 @@ updated: 2024-06-07 7:39:32
 1. [英语作文“首先，然后，其次，最后”的高级用法是什么？_百度知道 (baidu.com)](https://zhidao.baidu.com/question/1772435708337346780.html)
 1. [英语作文_邀请信英语作文模板万能句子_沪江英语 (hjenglish.com)](https://www.hjenglish.com/englishwriting/p1412017/)
 
+## 物理
+
+1. [【高中物理】物理学史最全总结！ 物理学历史都来了 - 哔哩哔哩 (bilibili.com)](https://www.bilibili.com/read/cv8291065/)
+
 ## 化学
 
 1. [常见实验室制备方程 - 百度文库 (baidu.com)](https://wenku.baidu.com/view/a0aa33d4b9f3f90f76c61bae)
 1. [普通高中教科书·化学选择性必修3 有机化学基础 (smartedu.cn)](https://basic.smartedu.cn/tchMaterial/detail?contentType=assets_document&contentId=c561d8ee-7c06-4cb1-9a4d-e34036f02d53&catalogType=tchMaterial&subCatalog=tchMaterial)
+
+## 生物
+
+1. [高考生物学史整理 - 百度文库 (baidu.com)](https://wenku.baidu.com/view/1b7f9b41dc88d0d233d4b14e852458fb760b383b?aggId=40ad866500d8ce2f0066f5335a8102d276a261dd&fr=catalogMain_text_ernie_recall_backup_new%3Awk_recommend_main2&vst2nd=1&_wkts_=1719752929940)
+2. [生物学史(高中教材) - 百度文库 (baidu.com)](https://wenku.baidu.com/view/acbc7d2ba66e58fafab069dc5022aaea998f4128?aggId=40ad866500d8ce2f0066f5335a8102d276a261dd&fr=catalogMain_text_ernie_recall_backup_new%3Awk_recommend_main2&vst2nd=1&_wkts_=1719752934596)
 
 ## 编写过程
 
@@ -32,8 +41,12 @@ updated: 2024-06-07 7:39:32
 
 ## 好文
 
-### 生物类
+### 生物
 
 1. [等位基因 - 医学百科 (yixue.com)](https://www.yixue.com/等位基因)
 2. [染色单体 - 医学百科 (yixue.com)](https://www.yixue.com/染色单体)
 3. [什么是三系杂交水稻？----中国科学院 (cas.cn)](https://www.cas.cn/kxcb/kpwz/201102/t20110223_3075063.shtml)
+
+## 好人
+
+1. [努力的小豆子呀的个人空间-哔哩哔哩视频 (bilibili.com)](https://space.bilibili.com/604495712)

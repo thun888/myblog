@@ -18,11 +18,14 @@ tree:
     - english/small-composition/index
     - english/big-composition/index
     - english/irregular-verbs/index
+    - english/vocabulary/index
   '物理': 
     - physics/formulas/index
+    - physics/history/index
   '化学': 
     - chemistry/reactions/index
     - chemistry/text/index
   '生物': 
     - biology/thingsandcolors/index
     - biology/conceptions/index
+    - biology/history/index
