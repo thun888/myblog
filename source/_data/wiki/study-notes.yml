@@ -24,6 +24,8 @@ tree:
     - physics/history/index
   '化学': 
     - chemistry/reactions/index
+    - chemistry/make-reactions/index
+
     - chemistry/text/index
   '生物': 
     - biology/thingsandcolors/index

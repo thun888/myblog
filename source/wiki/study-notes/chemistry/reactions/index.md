@@ -1,172 +1,184 @@
 ---
 wiki: study-notes
-title: 常见实验室制备方程
-updated: 2024-06-07 12:00:32
+title: 常见实验&方程
+updated: 2024-07-01 12:00:32
 type: story	
 ---
 
-## 常见实验室制备方程
+## 有机
 
-**常见气体实验室制备化学方程式**
+### 乙炔
 
-### 氧气🌟
+俗称{% u 电石气 %}是最简单的炔烃
+
+实验室制取：使用{% u 电石 %}（$CaC_2$）和水反应制取
+
+{% image https://onep.hzchu.top/mount/pic/myself/2024/07/668243ed7e090.png?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/668243ed7e090.png %}
+
+后续实验装置：
+
+{% grid bg:box %}
+
+{% image https://onep.hzchu.top/mount/pic/myself/2024/07/6682454c4294e.png?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/6682454c4294e.png image-20240701135730657 %}
+
+<!-- cell -->
+
+{% image https://onep.hzchu.top/mount/pic/myself/2024/07/6682453d47ab2.png?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/6682453d47ab2.png image-20240701135715745 %}
+
+{% endgrid %}
+
+{% u 注}： %
+
+1. 电石与水反应非常剧烈，为了减小其反应速率，可用{% u 饱和氯化钠溶液 %}代替水作反应试剂。
+
+2. 乙炔中通常会含有$H_2S$，$PH_3$，$NH_3$等杂质气体，可用$CuSO_4$溶液吸收（有黑色沉淀生成）。点燃或检验前需除杂（$H_2S$具有还原性）
+
+   {% image https://onep.hzchu.top/mount/pic/myself/2024/07/668244af3626c.png?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/668244af3626c.png %}
+
+3. 类比得制取丙炔
+
+   {% image https://onep.hzchu.top/mount/pic/myself/2024/07/668245c975812.png?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/668245c975812.png image-20240701135936117 %}
+
+4. {% u 不可使用启普发生器 %}：①碳化钙吸水性强，与水反应剧烈，不能随用随停;②反应放出大量热，易使启普发生器炸裂；③生成的氢氧化钙呈糊状容易堵塞球形漏斗。
+
+5. 烧瓶内导气管处可塞棉花，防止$CaC_2$与水反应时生成的泡沫涌入导气管
+
+6. 需控制水慢慢滴下：控制反应速率，使产生的气流平稳，避免产生的泡沫进入导管
+
+{% image https://onep.hzchu.top/mount/pic/myself/2024/07/66824863b6de8.png?fmt=webp download:https://onep.hzchu.top/mount/pic/myself/2024/07/66824863b6de8.png image-20240701141042629 %}
+
+### 苯
+
+{% image https://onep.hzchu.top/mount/pic/myself/2024/07/668247dc99793.jpg?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/668247dc99793.jpg IMG_20240701_0010 %}
+
+{% image https://onep.hzchu.top/mount/pic/myself/2024/07/668248109c177.jpg?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/668248109c177.jpg IMG_20240701_0011 %}
+
+{% image https://onep.hzchu.top/mount/pic/myself/2024/07/668248ae02869.png?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/668248ae02869.png image-20240701141156998 %}
+
+### 烃
+
+#### 卤代烃
+
+1. 取代反应（水解反应）
+
+   {% image https://onep.hzchu.top/mount/pic/myself/2024/07/668249132011a.png?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/668249132011a.png image-20240701141337858 %}
+
+2. 消去反应
+
+{% image https://onep.hzchu.top/mount/pic/myself/2024/07/6682493c9205b.png?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/6682493c9205b.png image-20240701141419543 %}
+
+> 条件：1.邻位碳原子上必须有{% u 氢原子 %} 2.氢氧化钠的乙醇溶液加热
+
+像这样，有机化合物在一定条件下，从一个分子中脱去一个或几个小分子（如$H_2O$、$HX$等），而生成含不饱和键的化合物的反应叫做{% u 消去反应 %}（消除反应）。
+
+#### 醇
 
 
-$2H_2O_2 \stackrel{MnO_2}{=\!=\!=} 2H_2O + O_2↑$ 
 
-$2KClO_3 \stackrel{MnO_2}{\underset{\text{Δ}}{=\!=\!=}} 2KCl + 3O_2↑$
+1. 取代反应
 
-$2KMnO_4 \stackrel{\Delta}{=\!=\!=} K_2MnO_4 + MnO_2 + O_2↑$
+   {% image https://onep.hzchu.top/mount/pic/myself/2024/07/66824a18e5651.png?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/66824a18e5651.png image-20240701141759875 %}
 
+2. 消去反应
 
+   {% image https://onep.hzchu.top/mount/pic/myself/2024/07/66824a42b3f7a.png?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/66824a42b3f7a.png 分子内脱水 170 %}
 
-### 氢气🌟
+   {% image https://onep.hzchu.top/mount/pic/myself/2024/07/66824a5f8418d.png?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/66824a5f8418d.png 分子间脱水（分子间的取代反应） 140 %}
 
-$Zn+2HCl{=\!=\!=} ZnCl + H_2↑$
+   > 注：当指明反应物是乙醇时则写温度，否则写加热即可
 
-$Zn+2HCl{=\!=\!=} ZnSO4+ H_2↑$
+3. 置换反应
 
-### 二氧化碳
+   $2C_2H_5OH+2Na{\longrightarrow}2C_2H_5ONa+H_2↑$
 
-$CaCO_3+2HCl{=\!=\!=} CaCl_2 + CO_2↑$  (不能用$H_2SO_4$)
+   用于测量有机物(醇分子)内的羟基个数
 
-### HCl
-
-$2NaCl+H_2SO_4(浓)\stackrel{\Delta}{=\!=\!=} Na_2SO_4 + 2HCl↑$
-
-### 氨
-
-$2NH_4Cl+Ca(OH)_2\stackrel{\Delta}{=\!=\!=} 2NH_3↑ + CaCl_2 + 2H_2O$
-
-### 一氧化碳
-
-$H_2SO_4+HCOOH\stackrel{\Delta}{=\!=\!=} H2O + CO↑$
-
-### 一氧化氮
-
-$3Cu+8HNO3(稀)\stackrel{\Delta}{=\!=\!=}3Cu(NO_3)_2+2NO↑+4H_2O$
-
-### 二氧化氮
-
-$Cu+4HNO_3(浓)\stackrel{\Delta}{=\!=\!=}Cu(NO_3)_2+2NO_2↑+2H_2O$
-
-### 二氧化硫
+   > 钠与氢气为2:1的关系!!
 
 
-$Na_2SO_3+H_2SO_4(浓){=\!=\!=}Na_2SO_4+H_2O+SO_2↑$
 
-### 三氧化硫
+#### 酚
 
-$P_2O_5+3H_2SO_4(浓)\stackrel{\Delta}{=\!=\!=}2H_3PO_4 + 3SO_3↑$
+1. 酸性
 
-### 制硫化氢
+   {% image https://onep.hzchu.top/mount/pic/myself/2024/07/66824c19b081a.jpg?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/66824c19b081a.jpg 酸性强弱对照表（在左上方的能和其反应，即强酸制弱酸） %}
 
-$FeS + 2HCl(稀){=\!=\!=}FeCl_2 + H_2S↑$
+2. 取代反应
 
-$Na_2S+H_2SO_4{=\!=\!=}Na_2SO_4+H_2S↑$
+   {% image https://onep.hzchu.top/mount/pic/myself/2024/07/66824c90c6aca.png?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/66824c90c6aca.png image-20240701142831628 %}
 
-### 制甲烷
+3. 显色反应
 
-$CHCl_3+3Zn+3H_20{\longrightarrow}CH_4↑+3Zn(OH)Cl$
+   苯酚与$FeCl_3$溶液作用{% u 显紫色 %}
 
-### 其他
+   > 主要是与$Fe^{3+}$反应，$Fe^{3+}$可以与苯酚和硫氰酸（$HSCN$）（呈血红色）发生显色反应
 
-$NaBr+H_3PO_4(浓){=\!=\!=}NaH_2PO_4+HB↑$
+#### 乙醛
 
-$NaI+H_3PO_4{=\!=\!=}NaH_2PO_4+HI↑$
+{% image https://onep.hzchu.top/mount/pic/myself/2024/07/668250612d582.png?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/668250612d582.png  %}
 
-$CaF_2+H_2SO_4(浓){=\!=\!=}CaSO_4+2HF↑$
 
-> 附:氮气的制法
+
+{% image https://onep.hzchu.top/mount/pic/myself/2024/07/66825014beaf6.jpg?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/66825014beaf6.jpg IMG_20240701_0014 %}
+
+#### 羧酸
+
+比较酸性强弱：
+
+{% image https://onep.hzchu.top/mount/pic/myself/2024/07/668251a17516d.png?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/668251a17516d.png image-20240701145008174 %}
+
+酯化反应:
+
+{% image https://onep.hzchu.top/mount/pic/myself/2024/07/668250f2dba13.jpg?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/668250f2dba13.jpg IMG_20240701_0015 %}
+
+{% image https://onep.hzchu.top/mount/pic/myself/2024/07/6682510d62084.png?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/6682510d62084.png 酸脱羟基醇脱氢 %}
+
+在实验中碳酸钠的作用为：{% u 除去乙酸，溶解乙醇，降低乙酸乙酯溶解度 %}
+
+酯类写同分异构用命名法
+
+> 酯类的水解：在{% u 酸或碱 %}存在的条件下，酯可以发生水解反应生成相应的羧酸和醇，酯的水解反应是酯化反应的逆反应。酸性下可逆，碱性下不可逆。
 >
-> 工业制法：分离液态空气。
+> 油脂在碱性溶液中的水解反应又称为皂化反应
+
+------
+
+
+
+> 酰胺的水解
 >
-> 实验室制法：
->
-> 1.吸收空气中的O2、CO2、水蒸气等杂质，余下N2（混有稀有气体等惰性杂质，但一般影响不大）。一般用灼热的Cu网的方法使O2被吸收：$2Cu+O_2\stackrel{\Delta}{=\!=\!=}2CuO$。之前或之后依次使气体通过盛饱和碱液和浓硫酸的洗气瓶以吸收CO2和H2O。
+> {% image https://onep.hzchu.top/mount/pic/myself/2024/07/66825264e43e0.png?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/66825264e43e0.png image-20240701145323730 %}
 
-## 常见气体的制取和检验
+### 有机合成
 
-### 氧气
+{% image https://onep.hzchu.top/mount/pic/myself/2024/07/668252d415773.jpg?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/668252d415773.jpg IMG_20240701_0016 %}
 
-制取原理——含氧化合物自身分解
+### 蛋白质
 
-制取方程式——$2KClO_3 \stackrel{MnO_2}{\underset{\text{Δ}}{=\!=\!=}} 2KCl + 3O_2↑$
+1. 成肽反应
 
-装置——略微向下倾斜的大试管,加热
+   {% image https://onep.hzchu.top/mount/pic/myself/2024/07/6682531ee06bc.jpg?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/6682531ee06bc.jpg IMG_20240701_0017 %}
 
-检验——带火星木条,复燃
+2. 向蛋白质溶液加入浓硝酸会有白色沉淀产生，加热后沉淀变黄色。含有苯环的蛋白质均能发生这 个反应。皮肤、指甲不慎沾上浓硝酸会出现黄色就是由此 造成的。
 
-收集——排水法或向上排气法
+### 合成高分子
 
-### 氢气
+1. 加聚反应
 
-制取原理——活泼金属与弱氧化性酸的置换
+   {% image https://onep.hzchu.top/mount/pic/myself/2024/07/668253af61508.png?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/668253af61508.png image-20240701145853938 %}
 
-制取方程式——$Zn+H_2SO_4{=\!=\!=}ZnSO_4+H_2↑$
+2. 缩聚反应
 
-装置——启普发生器
+{% image https://onep.hzchu.top/mount/pic/myself/2024/07/668253da85df3.png?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/668253da85df3.png image-20240701145937052 %}
 
-检验——点燃,淡蓝色火焰,在容器壁上有水珠
+{% image https://onep.hzchu.top/mount/pic/myself/2024/07/668253e2c5b04.png?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/668253e2c5b04.png image-20240701145945422 %}
 
-收集——排水法或向下排气法
+### 合成酚醛树脂或脲醛树脂
 
-### 氯气🌟
+{% image https://onep.hzchu.top/mount/pic/myself/2024/07/66825438edf57.png?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/66825438edf57.png 酚醛树脂 %}
 
-制取原理——强氧化剂氧化含氧化合物
+![脲醛树脂](https://onep.hzchu.top/mount/pic/myself/2024/07/6682549c361d9.jpg?fmt=avif)
 
-制取方程式——$MnO_2+4HCl(浓)\stackrel{\Delta}{=\!=\!=}MnCl_2+Cl_2↑+2H_2O$
+### 天然橡胶
 
-装置——分液漏斗,圆底烧瓶,加热
-
-检验——能使湿润的蓝色石蕊试纸先变红后褪色;
-
-除杂质——先通入饱和食盐水(除$HCl$),再通入浓$H_2SO_4$(除水蒸气)
-
-收集——排饱和食盐水法或向上排气法
-
-> $Cl_2(HCl)$溶于水以后生成$HClO$，$H^+$和$Cl^-$。饱和食盐水通过引入大量$Cl^-$抑制反应进程，同理使用$H_2SO_4$引入大量$H^+$也可以实现
-
-尾气回收——$Cl_2+2NaOH{=\!=\!=}NaCl+NaClO+H_2O$
-
-### 硫化氢
-
-①制取原理——强酸与强碱的复分解反应
-
-②制取方程式——$FeS+2HCl{=\!=\!=}FeCl_2+H_2S↑$
-
-③装置——启普发生器
-
-④检验——能使湿润的醋酸铅试纸变黑
-
-⑤除杂质——先通入饱和$NaHS$溶液(除$HCl$),再通入固体$CaCl_2$(或$P_2O_5$)(除水蒸气)
-
-⑥收集——向上排气法
-
-⑦尾气回收——$H_2S+2NaOH{=\!=\!=}Na_2S+H_2O$或$H_2S+NaOH{=\!=\!=}NaHS+H_2O$
-
-### 二氧化硫
-
-①制取原理——稳定性强酸与不稳定性弱酸盐的复分解
-
-②制取方程式——$Na_2SO_3+H_2SO_4{=\!=\!=}Na_2SO_4+SO_2↑+H2O$
-
-③装置——分液漏斗,圆底烧瓶
-
-④检验——先通入品红试液,褪色,后加热又恢复原红色;
-
-⑤除杂质——通入浓$H_2SO_4$(除水蒸气)
-
-⑥收集——向上排气法
-
-⑦尾气回收——$SO_2+2NaOH{=\!=\!=}Na_2SO_3+H_2O$
-
-### 二氧化碳
-
-①制取原理——稳定性强酸与不稳定性弱酸盐的复分解
-
-②制取方程式——$CaCO_3+2HCl{=\!=\!=}CaCl_2+CO_2↑+H_2O$
-
-③装置——启普发生器（可以及时控制反应的发生或停止）
-
-④检验——通入澄清石灰水,变浑浊
+> 顺式聚异戊二烯
