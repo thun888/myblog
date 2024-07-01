@@ -12,7 +12,7 @@ description: 在尴尬了3个小时后，为了应对期中后表彰大会同样
 
 然鹅，放歌的重任着实有点难为我手上的翻页笔，导致我只能反反复复地从后台门旁跑到电脑旁，毕竟不能挡着队伍的道（谢天谢地，那台笔记本的键盘还有多媒体键{% emoji blobcat blobcatbox %}）
 
-![img](https://onep.hzchu.top/mount/pic/2022/12/25/63a7f3c180d9b.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/2022/12/25/63a7f3c180d9b.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/2022/12/25/63a7f3c180d9b.webp img %}
 
 那么，在尴尬了3个小时后，为了应对期中后表彰大会同样的情况，还是要想个对策
 
@@ -20,7 +20,7 @@ description: 在尴尬了3个小时后，为了应对期中后表彰大会同样
 
 翻页笔，说白了就是个小键盘（宏），上下翻页自然是上下键，“黑屏”即为B键，再高级的就不是单纯的键盘了。当然，我手上这支来自于我勤俭持家的英语老师，只有下图这几个键
 
-![img](https://onep.hzchu.top/mount/pic/2022/12/25/63a7f3afa43d8.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/2022/12/25/63a7f3afa43d8.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/2022/12/25/63a7f3afa43d8.webp img %}
 
 > 图片在某宝找了个同款
 
@@ -38,6 +38,6 @@ Enter::Media_Play_Pause
 
 我这里为了方便将其导出为一个独立程序
 
-![img](https://onep.hzchu.top/mount/pic/2022/12/25/63a7f3994f0f5.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/2022/12/25/63a7f3994f0f5.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/2022/12/25/63a7f3994f0f5.webp img %}
 
 事实证明，效果不错，让我还能在里面摸鱼{% emoji blobcat ablobcatrainbow %}

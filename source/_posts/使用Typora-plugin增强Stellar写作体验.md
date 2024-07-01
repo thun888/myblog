@@ -104,6 +104,6 @@ COMMANDS = [
 
 <!-- node 完成表情面板 -->
 
-![](https://onep.hzchu.top/mount/pic/myself/2024/05/66358cab33787.gif)
+{% image https://onep.hzchu.top/mount/pic/myself/2024/05/66358cab33787.gif download:https://onep.hzchu.top/mount/pic/myself/2024/05/66358cab33787.gif  %}
 
 {% endtimeline %}

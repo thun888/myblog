@@ -33,6 +33,7 @@ updated: 2024-06-07 7:39:32
 
 1. [高考生物学史整理 - 百度文库 (baidu.com)](https://wenku.baidu.com/view/1b7f9b41dc88d0d233d4b14e852458fb760b383b?aggId=40ad866500d8ce2f0066f5335a8102d276a261dd&fr=catalogMain_text_ernie_recall_backup_new%3Awk_recommend_main2&vst2nd=1&_wkts_=1719752929940)
 2. [生物学史(高中教材) - 百度文库 (baidu.com)](https://wenku.baidu.com/view/acbc7d2ba66e58fafab069dc5022aaea998f4128?aggId=40ad866500d8ce2f0066f5335a8102d276a261dd&fr=catalogMain_text_ernie_recall_backup_new%3Awk_recommend_main2&vst2nd=1&_wkts_=1719752934596)
+3. [生态工程四个主要基本原理的辨析-怀化市湖天中学 (hhshtzx.com)](https://www.hhshtzx.com/news/21229.cshtml)
 
 ## 编写过程
 

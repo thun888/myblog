@@ -108,7 +108,7 @@ dynamic_codeblock:
 
 在其它主题中的表现：
 
-![landscape](https://onep.hzchu.top/mount/pic/myself/2024/05/6632074ebf0a9.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/myself/2024/05/6632074ebf0a9.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/05/6632074ebf0a9.webp landscape %}
 
 从传统方式迁移：
 

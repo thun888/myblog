@@ -22,7 +22,7 @@ categories: 瞎折腾
 
 <!-- cell -->
 
-![IMG_20240420_101135.webp](https://onep.hzchu.top/mount/pic/myself/2024/04/66236c3bdeec7.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/myself/2024/04/66236c3bdeec7.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/04/66236c3bdeec7.webp IMG_20240420_101135.webp %}
 
 {% endgrid %}
 
@@ -36,9 +36,9 @@ categories: 瞎折腾
 
 零件全家福：
 
-![IMG_20240419_171503.webp](https://onep.hzchu.top/mount/pic/myself/2024/04/6623725117296.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/myself/2024/04/6623725117296.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/04/6623725117296.webp IMG_20240419_171503.webp %}
 
-![IMG_20240419_171523.webp](https://onep.hzchu.top/mount/pic/myself/2024/04/662378a301bac.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/myself/2024/04/662378a301bac.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/04/662378a301bac.webp IMG_20240419_171523.webp %}
 
 ## 准备工作
 
@@ -59,7 +59,7 @@ categories: 瞎折腾
 
 <!-- cell -->
 
-![1713600995917.webp](https://onep.hzchu.top/mount/pic/myself/2024/04/662379e57f7ba.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/myself/2024/04/662379e57f7ba.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/04/662379e57f7ba.webp 1713600995917.webp %}
 
 {% endgrid %}
 
@@ -72,7 +72,7 @@ categories: 瞎折腾
 
 <!-- cell -->
 
-![IMG_20240419_174028.webp](https://onep.hzchu.top/mount/pic/myself/2024/04/66237c258bed3.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/myself/2024/04/66237c258bed3.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/04/66237c258bed3.webp IMG_20240419_174028.webp %}
 
 {% endgrid %}
 
@@ -86,7 +86,7 @@ categories: 瞎折腾
 
 <!-- cell -->
 
-![跑焦了](https://onep.hzchu.top/mount/pic/myself/2024/04/66237e34a5c81.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/myself/2024/04/66237e34a5c81.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/04/66237e34a5c81.webp 跑焦了 %}
 
 {% endgrid %}
 
@@ -94,7 +94,7 @@ categories: 瞎折腾
 
 **打开后**
 
-![IMG_20240419_174441.webp](https://onep.hzchu.top/mount/pic/myself/2024/04/66237f27423c3.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/myself/2024/04/66237f27423c3.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/04/66237f27423c3.webp IMG_20240419_174441.webp %}
 
 {% grid %}
 
@@ -104,7 +104,7 @@ categories: 瞎折腾
 
 <!-- cell -->
 
-![IMG_20240419_174550.webp](https://onep.hzchu.top/mount/pic/myself/2024/04/66237fcc8d7d8.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/myself/2024/04/66237fcc8d7d8.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/04/66237fcc8d7d8.webp IMG_20240419_174550.webp %}
 
 {% endgrid %}
 
@@ -116,15 +116,15 @@ categories: 瞎折腾
 
 <!-- cell -->
 
-![IMG_20240419_174614.webp](https://onep.hzchu.top/mount/pic/myself/2024/04/6623803f65b52.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/myself/2024/04/6623803f65b52.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/04/6623803f65b52.webp IMG_20240419_174614.webp %}
 
 <!-- cell -->
 
-![IMG_20240419_174801.webp](https://onep.hzchu.top/mount/pic/myself/2024/04/662380f394c47.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/myself/2024/04/662380f394c47.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/04/662380f394c47.webp IMG_20240419_174801.webp %}
 
 <!-- cell -->
 
-![IMG_20240419_174810.webp](https://onep.hzchu.top/mount/pic/myself/2024/04/662382eb16441.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/myself/2024/04/662382eb16441.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/04/662382eb16441.webp IMG_20240419_174810.webp %}
 
 {% endgrid %}
 
@@ -144,7 +144,7 @@ categories: 瞎折腾
 
 <!-- cell -->
 
-![1713604675750.webp](https://onep.hzchu.top/mount/pic/myself/2024/04/6623883f1d521.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/myself/2024/04/6623883f1d521.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/04/6623883f1d521.webp 1713604675750.webp %}
 
 {% endgrid %}
 
@@ -157,7 +157,7 @@ categories: 瞎折腾
 
 <!-- cell -->
 
-![IMG_20240419_182603.webp](https://onep.hzchu.top/mount/pic/myself/2024/04/66238c7e4e319.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/myself/2024/04/66238c7e4e319.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/04/66238c7e4e319.webp IMG_20240419_182603.webp %}
 
 {% endgrid %}
 
@@ -177,7 +177,7 @@ categories: 瞎折腾
 
 <!-- cell -->
 
-![1713607423583.webp](https://onep.hzchu.top/mount/pic/myself/2024/04/662393045e7b1.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/myself/2024/04/662393045e7b1.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/04/662393045e7b1.webp 1713607423583.webp %}
 
 {% endgrid %}
 
@@ -189,7 +189,7 @@ categories: 瞎折腾
 
 <!-- cell -->
 
-![IMG_20240419_180328.webp](https://onep.hzchu.top/mount/pic/myself/2024/04/662394407ef95.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/myself/2024/04/662394407ef95.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/04/662394407ef95.webp IMG_20240419_180328.webp %}
 
 {% endgrid %}
 
@@ -199,11 +199,11 @@ categories: 瞎折腾
 
 <!-- cell -->
 
-![IMG_20240419_180423.webp](https://onep.hzchu.top/mount/pic/myself/2024/04/66239559f35fe.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/myself/2024/04/66239559f35fe.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/04/66239559f35fe.webp IMG_20240419_180423.webp %}
 
 <!-- cell -->
 
-![IMG_20240419_180512.webp](https://onep.hzchu.top/mount/pic/myself/2024/04/662394ac4c87f.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/myself/2024/04/662394ac4c87f.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/04/662394ac4c87f.webp IMG_20240419_180512.webp %}
 
 {% endgrid %}
 
@@ -223,11 +223,11 @@ categories: 瞎折腾
 
 <!-- cell -->
 
-![IMG_1.webp](https://onep.hzchu.top/mount/pic/myself/2024/04/662399124e3c2.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/myself/2024/04/662399124e3c2.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/04/662399124e3c2.webp IMG_1.webp %}
 
 <!-- cell -->
 
-![IMG_2.webp](https://onep.hzchu.top/mount/pic/myself/2024/04/6623990c31570.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/myself/2024/04/6623990c31570.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/04/6623990c31570.webp IMG_2.webp %}
 
 {% endgrid %}
 

@@ -31,6 +31,17 @@ updated: 2024-06-06 22:00:32
 **化学**：易忘知识点，好题
 **生物**：易忘知识点，资料，好题，部分口诀，一些重要概念的解释{% emoji blobcat blobcatnomblobcat %}
 
+## 题目分级
+
+| Level | Mean                                  |
+| ----- | ------------------------------------- |
+| A     | 没思路或思路与正确思路不符            |
+| B     | 能算，但有点复杂                      |
+| C     | 能秒，但有点意思/坑                   |
+| D     | 坑人题{% emoji blobcat blobcatflip %} |
+
+
+
 ## 其它
 
 试卷库及电子化笔记：[Albums - Immich](https://photo.hzchu.top/)

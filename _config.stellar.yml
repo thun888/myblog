@@ -142,7 +142,7 @@ article:
   # 相关文章，需要安装插件 (for layout: post)
   # npm i hexo-related-popular-posts
   related_posts:
-    enable: true
+    enable: false
     max_count: 5
 
 ######## Comments ########

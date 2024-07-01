@@ -57,7 +57,7 @@ ENERGY_SAVER='a1841308-3541-4fab-bc81-f71556f20b4a'
 
 使用`powercfg /GETACTIVESCHEME`获取电源计划GUID并填入
 
-![image-20230117191532293](https://onep.hzchu.top/mount/pic/2023/01/17/63c685e3ca534.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/2023/01/17/63c685e3ca534.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/2023/01/17/63c685e3ca534.webp image-20230117191532293 %}
 
 当时间晚于11点或早于6点时，设置为节能
 
@@ -69,12 +69,12 @@ ENERGY_SAVER='a1841308-3541-4fab-bc81-f71556f20b4a'
 
 为了演示，这里将时间间隔调整为1s
 
-![1113.gif](https://onep.hzchu.top/mount/pic/2023/01/17/63c6873160cb1.gif)
+{% image https://onep.hzchu.top/mount/pic/2023/01/17/63c6873160cb1.gif download:https://onep.hzchu.top/mount/pic/2023/01/17/63c6873160cb1.gif 1113.gif %}
 
 有负载时
 
-![1114.gif](https://onep.hzchu.top/mount/pic/2023/01/17/63c6873d0f2cb.gif)
+{% image https://onep.hzchu.top/mount/pic/2023/01/17/63c6873d0f2cb.gif download:https://onep.hzchu.top/mount/pic/2023/01/17/63c6873d0f2cb.gif 1114.gif %}
 
 PS：电源计划中限制频率的方法
 
-![1673955297733.webp](https://onep.hzchu.top/mount/pic/2023/01/17/63c687e21db58.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/2023/01/17/63c687e21db58.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/2023/01/17/63c687e21db58.webp 1673955297733.webp %}

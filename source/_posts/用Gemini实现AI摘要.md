@@ -18,11 +18,11 @@ categories: 技术类
 首先登录[ai.google.dev](https://ai.google.dev/)，左上角点击`Get API key`，再在中间点`Create API key`，随便选个项目即可
 
 {% folding 没听懂就看图片吧 color:yellow %}
-![Snipaste_2024-03-09_10-17-37.webp](https://onep.hzchu.top/mount/pic/2024/03/09/65ec523988ddc.webp?fmt=avif)
-![Snipaste_2024-03-09_10-18-14.webp](https://onep.hzchu.top/mount/pic/2024/03/09/65ec523fecbfa.webp?fmt=avif)
-![Snipaste_2024-03-09_10-22-37.webp](https://onep.hzchu.top/mount/pic/2024/03/09/65ec523933f1c.webp?fmt=avif)
-![Snipaste_2024-03-09_10-23-59.webp](https://onep.hzchu.top/mount/pic/2024/03/09/65ec523a4e8b3.webp?fmt=avif)
-![Snipaste_2024-03-09_10-22-25.webp](https://onep.hzchu.top/mount/pic/2024/03/09/65ec52371bf18.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/2024/03/09/65ec523988ddc.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/2024/03/09/65ec523988ddc.webp Snipaste_2024-03-09_10-17-37.webp %}
+{% image https://onep.hzchu.top/mount/pic/2024/03/09/65ec523fecbfa.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/2024/03/09/65ec523fecbfa.webp Snipaste_2024-03-09_10-18-14.webp %}
+{% image https://onep.hzchu.top/mount/pic/2024/03/09/65ec523933f1c.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/2024/03/09/65ec523933f1c.webp Snipaste_2024-03-09_10-22-37.webp %}
+{% image https://onep.hzchu.top/mount/pic/2024/03/09/65ec523a4e8b3.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/2024/03/09/65ec523a4e8b3.webp Snipaste_2024-03-09_10-23-59.webp %}
+{% image https://onep.hzchu.top/mount/pic/2024/03/09/65ec52371bf18.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/2024/03/09/65ec52371bf18.webp Snipaste_2024-03-09_10-22-25.webp %}
 {% endfolding %}
 
 ## 后端程序
@@ -37,17 +37,17 @@ categories: 技术类
 
 随后修改环境变量，填入可信来源（即只有这个域名才能调用ai摘要，如不需要可设置为`*`）（`ALLOWED_ORIGINS`）以及你的key（`GEMINI_KEY`）
 
-![1709985925369.webp](https://onep.hzchu.top/mount/pic/2024/03/09/65ec508eb0684.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/2024/03/09/65ec508eb0684.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/2024/03/09/65ec508eb0684.webp 1709985925369.webp %}
 
 接着新建一个kv，并绑定到程序上
 
 > kv的名字随意，但**Variable name** 必须为 `KV`
 
-![1709987402272.webp](https://onep.hzchu.top/mount/pic/2024/03/09/65ec565254bdb.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/2024/03/09/65ec565254bdb.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/2024/03/09/65ec565254bdb.webp 1709987402272.webp %}
 
 最后可以尝试访问，有输出且刷新不变即为成功
 
-![1709986972903.webp](https://onep.hzchu.top/mount/pic/2024/03/09/65ec54a03e7a9.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/2024/03/09/65ec54a03e7a9.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/2024/03/09/65ec54a03e7a9.webp 1709986972903.webp %}
 
 {% note color:yellow 该程序只实现了ai摘要生成，对于其他网站矩阵之类的功能，其实自己用哪里要得上这么多功能嘛 %}
 
@@ -89,7 +89,7 @@ categories: 技术类
 
 ## 效果演示
 
-![1712297627948.webp](https://onep.hzchu.top/mount/pic/2024/04/05/660f969dca9d3.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/2024/04/05/660f969dca9d3.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/2024/04/05/660f969dca9d3.webp 1712297627948.webp %}
 
 ## 结语
 

@@ -7,12 +7,12 @@ updated: 2024-06-07 12:00:32
 ## 好句
 
 {% swiper effect:coverflow %}
-![](https://onep.hzchu.top/mount/pic/myself/materials/英语大作文/IMG_20240405_0001.avif?fmt=avif)
-![](https://onep.hzchu.top/mount/pic/myself/materials/英语大作文/IMG_20240405_0002.avif?fmt=avif)
-![](https://onep.hzchu.top/mount/pic/myself/materials/英语大作文/IMG_20240405_0003.avif?fmt=avif)
-![](https://onep.hzchu.top/mount/pic/myself/materials/英语大作文/IMG_20240405_0004.avif?fmt=avif)
-![](https://onep.hzchu.top/mount/pic/myself/materials/英语大作文/IMG_20240405_0005.avif?fmt=avif)
-![](https://onep.hzchu.top/mount/pic/myself/materials/英语大作文/IMG_20240405_0006.avif?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/myself/materials/英语大作文/IMG_20240405_0001.avif?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/materials/英语大作文/IMG_20240405_0001.avif  %}
+{% image https://onep.hzchu.top/mount/pic/myself/materials/英语大作文/IMG_20240405_0002.avif?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/materials/英语大作文/IMG_20240405_0002.avif  %}
+{% image https://onep.hzchu.top/mount/pic/myself/materials/英语大作文/IMG_20240405_0003.avif?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/materials/英语大作文/IMG_20240405_0003.avif  %}
+{% image https://onep.hzchu.top/mount/pic/myself/materials/英语大作文/IMG_20240405_0004.avif?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/materials/英语大作文/IMG_20240405_0004.avif  %}
+{% image https://onep.hzchu.top/mount/pic/myself/materials/英语大作文/IMG_20240405_0005.avif?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/materials/英语大作文/IMG_20240405_0005.avif  %}
+{% image https://onep.hzchu.top/mount/pic/myself/materials/英语大作文/IMG_20240405_0006.avif?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/materials/英语大作文/IMG_20240405_0006.avif  %}
 
 {% endswiper %}
 

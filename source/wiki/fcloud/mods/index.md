@@ -15,7 +15,7 @@ updated: 2023-06-21 21:32:32
 
 #### 死亡日志
 
-![](https://onep.hzchu.top/mount/pic/2023/06/21/6492fdec314aa.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/2023/06/21/6492fdec314aa.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/2023/06/21/6492fdec314aa.webp  %}
 
 > 需搭配客户端mod
 
@@ -43,9 +43,9 @@ var player = new DogePlayer({
 
 #### ShowMeWhatYouGot
 
-![1687356500644.webp](https://onep.hzchu.top/mount/pic/2023/06/21/6493045e428fc.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/2023/06/21/6493045e428fc.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/2023/06/21/6493045e428fc.webp 1687356500644.webp %}
 
-![1683974941053.webp](https://onep.hzchu.top/mount/pic/2023/05/13/645f6b1e055bc.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/2023/05/13/645f6b1e055bc.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/2023/05/13/645f6b1e055bc.webp 1683974941053.webp %}
 
 > 显示详情需搭配客户端mod
 
@@ -65,7 +65,7 @@ var player = new DogePlayer({
 
 假人管理
 
-![1687358035344.webp](https://onep.hzchu.top/mount/pic/2023/06/21/64930a5c73996.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/2023/06/21/64930a5c73996.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/2023/06/21/64930a5c73996.webp 1687358035344.webp %}
 
 #### QBM
 
@@ -73,11 +73,11 @@ var player = new DogePlayer({
 
 > 管理员可使用
 
-![1687357994298.webp](https://onep.hzchu.top/mount/pic/2023/06/21/64930a3403607.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/2023/06/21/64930a3403607.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/2023/06/21/64930a3403607.webp 1687357994298.webp %}
 
 #### DayCountNBT
 
-![1683974777405.webp](https://onep.hzchu.top/mount/pic/2023/05/13/645f6a7aa15a2.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/2023/05/13/645f6a7aa15a2.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/2023/05/13/645f6a7aa15a2.webp 1683974777405.webp %}
 
 
 
@@ -93,7 +93,7 @@ var player = new DogePlayer({
 
 语法：`绑定 <playername>`
 
-![1687358341046.webp](https://onep.hzchu.top/mount/pic/2023/06/21/64930b98ad3ac.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/2023/06/21/64930b98ad3ac.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/2023/06/21/64930b98ad3ac.webp 1687358341046.webp %}
 
 #### 解绑
 
@@ -111,7 +111,7 @@ var player = new DogePlayer({
 
 并不需要关键词，只需要@Bot并带上图片即可，将上传到[峰间云海|相册](https://mcweb.hzchu.top/photo/)
 
-![1689348584454.webp](https://onep.hzchu.top/mount/pic/2023/07/14/64b169ea5fc2e.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/2023/07/14/64b169ea5fc2e.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/2023/07/14/64b169ea5fc2e.webp 1689348584454.webp %}
 
 #### be绑定
 

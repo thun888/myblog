@@ -19,7 +19,7 @@ categories: 技术类
 
 首先新建一个频道，并记下频道ID
 
-![1708839745065.webp](https://onep.hzchu.top/mount/pic/2024/02/25/65dad341bacfd.webp?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/2024/02/25/65dad341bacfd.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/2024/02/25/65dad341bacfd.webp 1708839745065.webp %}
 
 新建一个`Cloudflare Worker`，复制下面的代码粘贴进去
 

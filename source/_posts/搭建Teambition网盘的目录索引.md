@@ -30,7 +30,7 @@ github链接：[TeambitionShare](https://d.hzchu.top/4)
 
 进到/TeambitionShare-master里把源码拉出来
 
-gif:![20210101100433](https://onep.hzchu.top/mount/pic/2021/09/5f5c8175d7b846cfe33f818b4b7e0791.webp?fmt=avif)
+gif:{% image https://onep.hzchu.top/mount/pic/2021/09/5f5c8175d7b846cfe33f818b4b7e0791.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/2021/09/5f5c8175d7b846cfe33f818b4b7e0791.webp 20210101100433 %}
 
 然后配置伪静态（不设置会404）
 

@@ -59,3 +59,13 @@ sub_filter_types指令：sub_filter_types * 用于指定需要被替换的MIME�
 {% image https://onep.hzchu.top/mount/pic/myself/2024/06/66656d955266f.png?fmt=avif %}
 
 [Unknown collation: ‘utf8mb4_0900_ai_ci‘ 的解决方案-CSDN博客](https://blog.csdn.net/weixin_45953673/article/details/124873321)
+
+## Blog
+
+### 批量替换图片链接为Stellar格式
+
+正则表达式：`!\[(.*?)\]\((https:\/\/onep\.hzchu\.top[^\?\)]+)(\?fmt=avif)?\)`
+
+替换内容：`{% image $2$3 download:$2 $1 %}`
+
+> 注意：gallery内部只能填写 md 格式的图片
