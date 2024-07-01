@@ -76,28 +76,87 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
     
-  
-    const firstAvifUrl = "/img/check/status.avif"; // 获取第一个AVIF图片链接
-    if (firstAvifUrl) {
-      // 使用第一个AVIF图片链接进行检测
-      supportCheck("AVIF",firstAvifUrl).then(supported => {
+
+  const firstAvifUrl = "/img/check/status.avif"; // 获取第一个AVIF图片链接
+  // 使用第一个AVIF图片链接进行检测
+  supportCheck("AVIF", firstAvifUrl).then(supported => {
+    if (!supported) {
+      replacepicture("avif", "webp");
+      const firstWebpUrl = "/img/check/status.webp"; // 获取第一个WEBP图片链接
+      supportCheck("WEBP", firstWebpUrl).then(supported => {
         if (!supported) {
-            replacepicture("avif","webp");
-            const firstWebpUrl = "/img/check/status.webp"; // 获取第一个WEBP图片链接
-            supportCheck("WEBP",firstWebpUrl).then(supported => {
-                if (!supported) {
-                    // hud.toast("当前浏览器不支持使用webp，已降级为使用原始图片", 2500);
-                    // replacepicture("webp","");
-                    replacepicture("webp","png");
-                }else{
-                    console.log("Webp images will be used.");
-                }
-            });
+          // hud.toast("当前浏览器不支持使用webp，已降级为使用原始图片", 2500);
+          // replacepicture("webp","");
+          replacepicture("webp", "png");
         } else {
-          console.log("AVIF images will be used.");
+          console.log("Webp images will be used.");
         }
       });
     } else {
-      console.log("No AVIF images found on the page.");
+      console.log("AVIF images will be used.");
     }
   });
+
+  selectFastNode();
+  });
+
+  function selectFastNode() {
+    const selectdisabled = localStorage.getItem('onep.cdn.select.disabled');
+    if (selectdisabled) {
+      console.log('[ONEP,selectFastNode] Skipping due to select disabled.');
+      return;
+    }
+    const storedData = localStorage.getItem('onep.cdn.nodelist');
+    if (storedData) {
+      const data = JSON.parse(storedData);
+      const now = new Date();
+      if (data.link === null && now.getTime() - data.time < 5 * 60 * 1000) {
+        console.log('Skipping due to recent failure to fetch nodes.');
+        return;
+      } else if (now.getTime() - data.time < 5 * 60 * 1000) {
+        replaceImageSource(data.link);
+        return;
+      }
+    }
+  
+    const formData = new FormData();
+    formData.append('token', 'hzchu.top');
+  
+    fetch('https://onep.hzchu.top/_api/nodeslist', {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+      let link = null;
+      if (data.nodes && Object.keys(data.nodes).length > 0) {
+        link = data.nodes[Object.keys(data.nodes)[0]];
+        replaceImageSource(link);
+      } else {
+        console.log('[ONEP,selectFastNode] Failed to fetch nodes, will skip checks for the next 5 minutes.');
+      }
+      localStorage.setItem('onep.cdn.nodelist', JSON.stringify({
+        link: link,
+        time: new Date().getTime()
+      }));
+    })
+    .catch(error => {
+      console.error('[ONEP,selectFastNode] Error:', error);
+      localStorage.setItem('onep.cdn.nodelist', JSON.stringify({
+        link: null,
+        time: new Date().getTime()
+      }));
+    });
+  }
+  
+  function replaceImageSource(newLink) {
+    const images = document.querySelectorAll('img');
+    images.forEach(img => {
+      let attr = img.src.startsWith('data') ? 'data-src' : 'src';
+      if (img.getAttribute(attr) && img.getAttribute(attr).startsWith('https://onep.hzchu.top')) {
+        console.log("[ONEP,selectFastNode] Replacing ", img.getAttribute(attr), " with ", newLink);
+        img.setAttribute(attr, img.getAttribute(attr).replace('https://onep.hzchu.top', newLink));
+      }
+    });
+  }
+  
