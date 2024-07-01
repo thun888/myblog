@@ -27,6 +27,7 @@ updated: 2024-06-07 7:39:32
 
 1. [常见实验室制备方程 - 百度文库 (baidu.com)](https://wenku.baidu.com/view/a0aa33d4b9f3f90f76c61bae)
 1. [普通高中教科书·化学选择性必修3 有机化学基础 (smartedu.cn)](https://basic.smartedu.cn/tchMaterial/detail?contentType=assets_document&contentId=c561d8ee-7c06-4cb1-9a4d-e34036f02d53&catalogType=tchMaterial&subCatalog=tchMaterial)
+1. [常用的化学仪器及名称图(整理) - 百度文库 (baidu.com)](https://wenku.baidu.com/view/405691b4cd22bcd126fff705cc17552707225ea6.html?_wkts_=1719818515046)
 
 ## 生物
 
@@ -40,6 +41,14 @@ updated: 2024-06-07 7:39:32
 1. [markdown化学方程式_markdown输入化学方程式-CSDN博客](https://blog.csdn.net/tanjunming2020/article/details/128051488)
 
 ## 好文
+
+### 物理
+
+1. [全网最齐：一文搞定物理实验仪器读数 - 哔哩哔哩 (bilibili.com)](https://www.bilibili.com/read/cv20517503/)
+
+### 化学
+
+1. [高中有机化学 加成反应、取代反应的反应条件是什么？_百度知道 (baidu.com)](https://zhidao.baidu.com/question/1373330683098245659.html)
 
 ### 生物
 

@@ -25,7 +25,7 @@ tree:
   '化学': 
     - chemistry/reactions/index
     - chemistry/make-reactions/index
-
+    - chemistry/equipments/index
     - chemistry/text/index
   '生物': 
     - biology/thingsandcolors/index
