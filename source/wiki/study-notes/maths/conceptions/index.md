@@ -33,3 +33,11 @@ $$
 
 {% image https://onep.hzchu.top/mount/pic/myself/avif/20240607080828.avif?fmt=avif %}
 
+## 均值不等式
+
+$$
+\frac{2}{\frac{1}{a} + \frac{1}{b}} \leq \sqrt{ab} \leq \frac{a + b}{2} \leq \sqrt{\frac{a^2 + b^2}{2}}
+$$
+分别为：调和平均数，几何平均数，算术平均数，平方平均数
+
+> 当前仅当a等于b时取等号

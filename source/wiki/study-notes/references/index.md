@@ -28,6 +28,7 @@ updated: 2024-06-07 7:39:32
 1. [常见实验室制备方程 - 百度文库 (baidu.com)](https://wenku.baidu.com/view/a0aa33d4b9f3f90f76c61bae)
 1. [普通高中教科书·化学选择性必修3 有机化学基础 (smartedu.cn)](https://basic.smartedu.cn/tchMaterial/detail?contentType=assets_document&contentId=c561d8ee-7c06-4cb1-9a4d-e34036f02d53&catalogType=tchMaterial&subCatalog=tchMaterial)
 1. [常用的化学仪器及名称图(整理) - 百度文库 (baidu.com)](https://wenku.baidu.com/view/405691b4cd22bcd126fff705cc17552707225ea6.html?_wkts_=1719818515046)
+1. [259 如何用电子式表示离子化合物的形成过程_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1wb4y1U7JN/?vd_source=d5309c7e8f524ae22c2ebc2db5da1ab7)
 
 ## 生物
 

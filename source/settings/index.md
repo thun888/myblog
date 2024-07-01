@@ -19,10 +19,17 @@ useai: false
 
 {% button 切换 javascript:switchTheme(); %}
 
+## 图片节点优选
+
+默认启用
+
+{% button 禁用/启用 javascript:switchselectFastNode(); %}
+
 ## Ai摘要
 
 默认禁用
 
 {% button 禁用/启用 javascript:switchaisummary(); %}
+
 
 <script src="/js/settings.js"></script>

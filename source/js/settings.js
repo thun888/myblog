@@ -11,6 +11,19 @@ function stitchumami() {
     }
 }
 
+function switchselectFastNode() {
+    const key = 'onep.cdn.select.disabled';
+    const status = localStorage.getItem(key);
+
+    if (!status || status === '0') {
+        localStorage.setItem(key, '1');
+        hud.toast('已禁用图片节点优选');
+    } else if (status === '1') {
+        localStorage.removeItem(key);
+        hud.toast('已启用图片节点优选');
+    }
+}
+
 
 function switchaisummary() {
     const aisummaryKey = 'config.aisummary.status';
