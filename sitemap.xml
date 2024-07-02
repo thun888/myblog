@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/about/</loc>
+    <loc>https://blog.hzchu.top/friends/</loc>
     
     <lastmod>2024-07-02</lastmod>
     
@@ -47,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/bb/</loc>
+    <loc>https://blog.hzchu.top/about/</loc>
     
     <lastmod>2024-07-02</lastmod>
     
@@ -65,7 +65,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/friends/</loc>
+    <loc>https://blog.hzchu.top/bb/</loc>
     
     <lastmod>2024-07-02</lastmod>
     
@@ -137,7 +137,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/study-notes/biology/test/</loc>
+    <loc>https://blog.hzchu.top/wiki/study-notes/biology/history/</loc>
     
     <lastmod>2024-06-29</lastmod>
     
@@ -146,7 +146,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/study-notes/biology/history/</loc>
+    <loc>https://blog.hzchu.top/wiki/study-notes/biology/test/</loc>
     
     <lastmod>2024-06-29</lastmod>
     
@@ -245,7 +245,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/study-notes/english/vocabulary/</loc>
+    <loc>https://blog.hzchu.top/wiki/study-notes/english/small-composition/</loc>
     
     <lastmod>2024-06-07</lastmod>
     
@@ -254,7 +254,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/study-notes/english/small-composition/</loc>
+    <loc>https://blog.hzchu.top/wiki/study-notes/english/vocabulary/</loc>
     
     <lastmod>2024-06-07</lastmod>
     
@@ -709,6 +709,13 @@
   </url>
   
   <url>
+    <loc>https://blog.hzchu.top/tags/Windows/</loc>
+    <lastmod>2024-07-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.hzchu.top/tags/Go/</loc>
     <lastmod>2024-07-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -717,13 +724,6 @@
   
   <url>
     <loc>https://blog.hzchu.top/tags/%E7%BD%91%E7%AB%99/</loc>
-    <lastmod>2024-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/tags/Windows/</loc>
     <lastmod>2024-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -751,13 +751,6 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/python/</loc>
-    <lastmod>2024-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.hzchu.top/tags/%E7%94%9C%E7%B3%96/</loc>
     <lastmod>2024-07-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -766,6 +759,13 @@
   
   <url>
     <loc>https://blog.hzchu.top/tags/MC/</loc>
+    <lastmod>2024-07-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/tags/python/</loc>
     <lastmod>2024-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -814,6 +814,13 @@
   </url>
   
   <url>
+    <loc>https://blog.hzchu.top/tags/Vercel/</loc>
+    <lastmod>2024-07-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.hzchu.top/tags/Stellar/</loc>
     <lastmod>2024-07-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -822,13 +829,6 @@
   
   <url>
     <loc>https://blog.hzchu.top/tags/Typora/</loc>
-    <lastmod>2024-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/tags/Vercel/</loc>
     <lastmod>2024-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -856,14 +856,14 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/linux/</loc>
+    <loc>https://blog.hzchu.top/tags/Cloudflare/</loc>
     <lastmod>2024-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/Cloudflare/</loc>
+    <loc>https://blog.hzchu.top/tags/linux/</loc>
     <lastmod>2024-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
