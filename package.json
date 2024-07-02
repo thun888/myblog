@@ -12,7 +12,7 @@
     "version": "7.2.0"
   },
   "dependencies": {
-    "hexo": "^7.2.0",
+    "hexo": "^7.3.0",
     "hexo-dynamic-codeblock": "^1.0.2",
     "hexo-filter-mermaid-diagrams": "^1.0.5",
     "hexo-generator-archive": "^2.0.0",
