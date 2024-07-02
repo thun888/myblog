@@ -208,16 +208,16 @@
 <p>理论上，直接替换summary.tianli0.top为你对应域名即可，但在很多情况下，你还需要额外删减一些无关api调用，如openid生成</p>
 <p>这是我修改后的程序，可以参考</p>
 
-    <div class="tag-plugin ds-coding" id="coding-q1ojghlf1"></div>
+    <div class="tag-plugin ds-coding" id="coding-48hpvrfao"></div>
     <script>
     addEventListener("load",function(){
-      console.log('[hexo-dynamic-codeblock]start load：coding-q1ojghlf1' );
+      console.log('[hexo-dynamic-codeblock]start load：coding-48hpvrfao' );
       utils.jq(() => {
         $(function () {
-          const el = document.getElementById('coding-q1ojghlf1');
+          const el = document.getElementById('coding-48hpvrfao');
             utils.request(el, "https://hightlight-code-api.hzchu.top/api/v1/generate?&url=https%3A%2F%2Fraw.githubusercontent.com%2Fthun888%2Fmyblog%2Fmain%2Fsource%2Fjs%2Fchuckle-post-ai.js&lang=js&usejson=true", function (data) {
               $(el).append(data.result);
-              addCopyButtons('coding-q1ojghlf1');
+              addCopyButtons('coding-48hpvrfao');
             });
           });
       });
@@ -326,8 +326,8 @@
     cover: `https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/cover/76b86c0226ffd.svg`,
   };
   const deps = {
-    jquery: `https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js`,
-    marked: `https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js`
+    jquery: `/js/jquery.min.js`,
+    marked: `/js/marked.min.js`
   }
   
 

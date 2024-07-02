@@ -200,16 +200,16 @@
 <p>还有像xy坐标，NAME，COLOR等不必多说</p>
 <p>接着就是写个python脚本把它们拼起来辣</p>
 
-    <div class="tag-plugin ds-coding" id="coding-vakttfsns"></div>
+    <div class="tag-plugin ds-coding" id="coding-jd4r13pid"></div>
     <script>
     addEventListener("load",function(){
-      console.log('[hexo-dynamic-codeblock]start load：coding-vakttfsns' );
+      console.log('[hexo-dynamic-codeblock]start load：coding-jd4r13pid' );
       utils.jq(() => {
         $(function () {
-          const el = document.getElementById('coding-vakttfsns');
+          const el = document.getElementById('coding-jd4r13pid');
             utils.request(el, "https://hightlight-code-api.hzchu.top/api/v1/generate?&url=https%3A%2F%2Fraw.githubusercontent.com%2Fthun888%2Faltium-helper%2Fmaster%2Fpackager.py&lang=python&usejson=true", function (data) {
               $(el).append(data.result);
-              addCopyButtons('coding-vakttfsns');
+              addCopyButtons('coding-jd4r13pid');
             });
           });
       });
@@ -353,8 +353,8 @@
     cover: `https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/cover/76b86c0226ffd.svg`,
   };
   const deps = {
-    jquery: `https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js`,
-    marked: `https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js`
+    jquery: `/js/jquery.min.js`,
+    marked: `/js/marked.min.js`
   }
   
 
