@@ -351,7 +351,11 @@ mermaid:
 #   ghraw: https://raw.hzchu.top
 #   gist: https://cfproxy.hzchu.top/https://gist.github.com
 
-
+# 基础依赖
+dependencies:
+  jquery: /js/jquery.min.js
+  marked: /js/marked.min.js
+  
 # 内置服务，按需加载（页面内用到了就会加载，没有用到就不会加载）
 data_services:
   # 外部 md 渲染
