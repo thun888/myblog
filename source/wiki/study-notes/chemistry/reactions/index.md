@@ -157,7 +157,7 @@ type: story
 
 1. 成肽反应
 
-   {% image https://onep.hzchu.top/mount/pic/myself/2024/07/6682531ee06bc.jpg?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/6682531ee06bc.jpg IMG_20240701_0017 %}
+   {% image https://onep.hzchu.top/mount/pic/myself/2024/07/6682531ee06bc.jpg?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/6682531ee06bc.jpg %}
 
 2. 向蛋白质溶液加入浓硝酸会有白色沉淀产生，加热后沉淀变黄色。含有苯环的蛋白质均能发生这 个反应。皮肤、指甲不慎沾上浓硝酸会出现黄色就是由此 造成的。
 
@@ -177,7 +177,9 @@ type: story
 
 {% image https://onep.hzchu.top/mount/pic/myself/2024/07/66825438edf57.png?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/66825438edf57.png 酚醛树脂 %}
 
-![脲醛树脂](https://onep.hzchu.top/mount/pic/myself/2024/07/6682549c361d9.jpg?fmt=avif)
+{% image https://onep.hzchu.top/mount/pic/myself/2024/07/6682549c361d9.jpg?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/6682549c361d9.jpg 脲醛树脂 %}
+
+
 
 ### 天然橡胶
 

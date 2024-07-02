@@ -83,20 +83,10 @@ type: story
 
 ### 方程式
 
-醋酸菌在糖原充足的环境下：
-$$
-\text{C}_6\text{H}_{12}\text{O}_6 + \text{O}_2 \xrightarrow{\text{酶}} 2\text{CH}_3\text{COOH}(乳酸) + 2\text{CO}_2 + 2\text{H}_2\text{O} + \text{能量}
-$$
-糖原不足的情况下使用酒精：
-$$
-\text{C}_2\text{H}_5\text{OH} + \text{O}_2 \xrightarrow{\text{酶}} \text{CH}_3\text{COOH}(乳酸) + \text{H}_2\text{O} + \text{能量}
-$$
-酵母菌产生酒精：
-$$
-\text{C}_6\text{H}_{12}\text{O}_6 \xrightarrow{\text{酶}} 2\text{C}_2\text{H}_5\text{OH}(酒精) + 2\text{CO}_2 + \text{能量}
-$$
+醋酸菌在糖原充足的环境下：$\text{C}_6\text{H}_{12}\text{O}_6 + \text{O}_2 \xrightarrow{\text{酶}} 2\text{CH}_3\text{COOH}(乳酸) + 2\text{CO}_2 + 2\text{H}_2\text{O} + \text{能量}$
 
-乳酸菌产生乳酸：
-$$
-\text{C}_6\text{H}_{12}\text{O}_6 \xrightarrow{\text{酶}} 2\text{C}_3\text{H}_6\text{O}_3(乳酸) + \text{能量}
-$$
+糖原不足的情况下使用酒精：$\text{C}_2\text{H}_5\text{OH} + \text{O}_2 \xrightarrow{\text{酶}} \text{CH}_3\text{COOH}(乳酸) + \text{H}_2\text{O} + \text{能量}$
+
+酵母菌产生酒精：$\text{C}_6\text{H}_{12}\text{O}_6 \xrightarrow{\text{酶}} 2\text{C}_2\text{H}_5\text{OH}(酒精) + 2\text{CO}_2 + \text{能量}$
+
+乳酸菌产生乳酸：$\text{C}_6\text{H}_{12}\text{O}_6 \xrightarrow{\text{酶}} 2\text{C}_3\text{H}_6\text{O}_3(乳酸) + \text{能量}$
