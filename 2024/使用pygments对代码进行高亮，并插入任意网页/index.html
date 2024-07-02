@@ -62,12 +62,6 @@
 
 <link rel="stylesheet" href="https://jsd.hzchu.top/npm/hexo-math@4.0.0/dist/style.css">
 
-  <div class="spinner" id="eloading"> 
-    <span class="loader-text">加载中...</span>
-    <div class="loader"></div>
-    <span class="loader-text-below" onclick="document.getElementById('eloading').style.display='none'">不想等待可以点我关掉</span>
-  </div>
-  
 
   <link rel="stylesheet" href="https://jsd.hzchu.top/npm/lxgw-wenkai-screen-webfont@1.1.0/lxgwwenkaiscreen.css" media="all">
   <link rel="stylesheet" href="/mcss/mcss.css">
@@ -126,6 +120,12 @@
 </style>
 <script src="/js/load.js"></script>
 
+  
+  <div class="spinner" id="eloading"> 
+    <span class="loader-text">加载中...</span>
+    <div class="loader"></div>
+    <span class="loader-text-below" onclick="document.getElementById('eloading').style.display='none'">不想等待可以点我关掉</span>
+  </div>
   <!-- hexo injector head_end end --></head>
 <body>
 
@@ -284,16 +284,16 @@
 <p>该处引用本程序代码</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://hightlight-code-api.hzchu.top/api/v1/generate?url=https://raw.githubusercontent.com/thun888/hightlight-code-api/main/api/main.py&amp;lang=python&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-    <div class="tag-plugin ds-coding" id="coding-hifgvquqp"></div>
+    <div class="tag-plugin ds-coding" id="coding-zdpllckoj"></div>
     <script>
     addEventListener("load",function(){
-      console.log('[hexo-dynamic-codeblock]start load：coding-hifgvquqp' );
+      console.log('[hexo-dynamic-codeblock]start load：coding-zdpllckoj' );
       utils.jq(() => {
         $(function () {
-          const el = document.getElementById('coding-hifgvquqp');
+          const el = document.getElementById('coding-zdpllckoj');
             utils.request(el, "https://hightlight-code-api.hzchu.top/api/v1/generate?url=https%3A%2F%2Fraw.githubusercontent.com%2Fthun888%2Fhightlight-code-api%2Fmain%2Fapi%2Fmain.py&lang=python&usejson=true", function (data) {
               $(el).append(data.result);
-              addCopyButtons('coding-hifgvquqp');
+              addCopyButtons('coding-zdpllckoj');
             });
           });
       });
