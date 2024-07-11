@@ -224,7 +224,7 @@ tag_plugins:
     aru: https://static.hzchu.top/cdn-x/emoji/aru/{name}.png
     aru-l: https://static.hzchu.top/cdn-x/emoji/aru-l/{name}.gif
     tieba: https://static.hzchu.top/cdn-x/emoji/tieba/{name}.png
-    blobcat: https://static.hzchu.top/norevi/waline-blobcatemojis@1.0/blobs/{name}.png
+    blobcat: https://jsd.hzchu.top/gh/norevi/waline-blobcatemojis@1.0/blobs/{name}.png
 
 ######## JS Plugins ########
 plugins:
