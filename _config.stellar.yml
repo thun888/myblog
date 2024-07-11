@@ -218,13 +218,13 @@ tag_plugins:
     ratio: square # origin / square
   # {% emoji %}
   emoji:
-    default: https://gcore.jsdelivr.net/gh/cdn-x/emoji/qq/{name}.gif
-    twemoji: https://gcore.jsdelivr.net/gh/twitter/twemoji/assets/svg/{name}.svg
-    qq: https://gcore.jsdelivr.net/gh/cdn-x/emoji/qq/{name}.gif
-    aru: https://gcore.jsdelivr.net/gh/cdn-x/emoji/aru/{name}.png
-    aru-l: https://gcore.jsdelivr.net/gh/cdn-x/emoji/aru-l/{name}.gif
-    tieba: https://gcore.jsdelivr.net/gh/cdn-x/emoji/tieba/{name}.png
-    blobcat: https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs/{name}.png
+    default: https://static.hzchu.top/cdn-x/emoji/qq/{name}.gif
+    twemoji: https://static.hzchu.top/twitter/twemoji/assets/svg/{name}.svg
+    qq: https://static.hzchu.top/cdn-x/emoji/qq/{name}.gif
+    aru: https://static.hzchu.top/cdn-x/emoji/aru/{name}.png
+    aru-l: https://static.hzchu.top/cdn-x/emoji/aru-l/{name}.gif
+    tieba: https://static.hzchu.top/cdn-x/emoji/tieba/{name}.png
+    blobcat: https://static.hzchu.top/norevi/waline-blobcatemojis@1.0/blobs/{name}.png
 
 ######## JS Plugins ########
 plugins:
@@ -239,7 +239,7 @@ plugins:
   # https://www.npmjs.com/package/vanilla-lazyload
   lazyload:
     enable: true # [hexo clean && hexo s] is required after changing this value.
-    js: https://jsd.hzchu.top/npm/vanilla-lazyload@17.8.4/dist/lazyload.min.js
+    js: https://static.hzchu.top/vanilla-lazyload@17.8.4/dist/lazyload.min.js
     transition: fade # blur, fade
 
   # https://fancyapps.com/docs/ui/fancybox/
@@ -258,8 +258,8 @@ plugins:
   # swiper
   swiper:
     enable: true
-    css: https://jsd.hzchu.top/npm/swiper@10.3/swiper-bundle.min.css
-    js: https://jsd.hzchu.top/npm/swiper@10.3/swiper-bundle.min.js
+    css: https://static.hzchu.top/swiper@10.3/swiper-bundle.min.css
+    js: https://static.hzchu.top/swiper@10.3/swiper-bundle.min.js
 
   # https://scrollrevealjs.org/api/reveal.html
   scrollreveal:
@@ -293,7 +293,7 @@ plugins:
     enable: # true # 可以在特定文章的 front-matter 中设置 mermaid: true 来开启，也可以在这里设置全局开启
     style_optimization: true # use custom style in stellar
     # js: https://unpkg.com/mermaid@9.0.0/dist/mermaid.min.js
-    js: https://jsd.hzchu.top/npm/mermaid@v9/dist/mermaid.min.js
+    js: https://static.hzchu.top/mermaid@v9/dist/mermaid.min.js
     # Available themes: default | dark | forest | neutral
     theme: neutral
 style:
@@ -322,10 +322,10 @@ style:
     hover: 'hsl(14 100% 57%)' # 按钮高亮颜色
   animated_avatar:
     animate: auto # auto, always
-    background: https://jsd.hzchu.top/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp
+    background: https://static.hzchu.top/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp
   codeblock:
     scrollbar: 4px
-    highlightjs_theme: https://jsd.hzchu.top/gh/highlightjs/cdn-release@11.9.0/build/styles/atom-one-dark.min.css
+    highlightjs_theme: https://static.hzchu.top/highlightjs/cdn-release@11.9.0/build/styles/atom-one-dark.min.css
   loading:
     loading: 不要急ヾ(•ω•`)o
     error: 加载失败，请稍后重试。＞︿＜
@@ -342,7 +342,7 @@ sitemap:
 mermaid:
   enable: true
   # js: https://jsd.hzchu.top/npm/mermaid@9.0.0/dist/mermaid.min.js
-  js: https://jsd.hzchu.top/npm/mermaid@v9/dist/mermaid.min.js
+  js: https://static.hzchu.top/mermaid@v9/dist/mermaid.min.js
   # Available themes: default | dark | forest | neutral
   theme: neutral
 

@@ -3,7 +3,7 @@ wiki: Serve-list # 这是项目名
 title: 标签简介
 seo_title: 对于自有公开及私有服务的统计列表
 order: -1
-updated: 2024-02-24 22:33:00
+updated: 2024-07-11 22:33:00
 ---
 
 在列表中，我使用了一些标签来标记服务状态，以下是对应描述/标签列表
@@ -13,7 +13,7 @@ updated: 2024-02-24 22:33:00
 > 自有服务对应[Thun888's Server Status](https://monitor.hzchu.top/)，托管于其它平台使用[Shields.io](https://shields.io/)生成标签
 >
 
-​	{% hashtag TT-HK color:green %}{% hashtag Home-ikuai-kvm color:green %}{% hashtag Pas-fl color:orange %}
+​	{% hashtag TT-hk color:green %}{% hashtag Home-ikuai color:green %}{% hashtag Home-PVE color:green %}{% hashtag Pas-fl color:orange %}
 
 #### 类别
 

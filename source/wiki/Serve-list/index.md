@@ -3,7 +3,7 @@ wiki: Serve-list # 这是项目名
 title: 列表
 seo_title: 对于自有公开及私有服务的统计列表
 order: -1
-updated: 2024-02-24 22:33:00
+updated: 2024-07-11 22:33:00
 ---
 
 {% note color:yellow 数据未统计完毕 %}
@@ -14,7 +14,7 @@ updated: 2024-02-24 22:33:00
 
 短链接服务
 
-{% hashtag TT-HK color:green %}{% hashtag Base color:green %}{% hashtag H-SLA color:green %}
+{% hashtag TT-hk color:green %}{% hashtag Base color:green %}{% hashtag H-SLA color:green %}
 
 #### gt.hzchu.top
 
@@ -22,13 +22,13 @@ updated: 2024-02-24 22:33:00
 
 [数据统计 (757678.xyz)](https://gt-stats.757678.xyz/)
 
-​	{% hashtag TT-HK color:green %}{% hashtag Self-Coding color:green %}{% hashtag L-SLA color:red %}
+​	{% hashtag TT-hk color:green %}{% hashtag Self-Coding color:green %}{% hashtag 停止服务 color:red %}
 
 #### pan.hzchu.top
 
 Ztale,网盘
 
-{% hashtag TT-HK color:green %}{% hashtag H-SLA color:green %}
+{% hashtag TT-hk color:green %}{% hashtag H-SLA color:green %}
 
 #### upload.hzchu.top
 
@@ -48,6 +48,8 @@ fclouds地图，带端口60181访问
 
 语法高亮接口，详情参阅「[使用pygments对代码进行高亮，并插入任意网页](/2024/使用pygments对代码进行高亮，并插入任意网页/)」
 
+{% note Hey 以下两个反代并不长久受到支持，在未来会统一迁移，请勿在正式环境中使用 color:warning %}
+
 #### raw.hzchu.top
 
 反代`raw.githubusercontent.com`
@@ -60,6 +62,18 @@ fclouds地图，带端口60181访问
 
 <img style="display: inline-block;" src="https://img.shields.io/badge/Vercel-Vercel?logo=Vercel&color=000000" alt="badge">{% hashtag Base color:green %}{% hashtag H-SLA color:green %}
 
+#### static.hzchu.top
+
+镜像部分资源
+
+[asstes/static at master · thun888/asstes (github.com)](https://github.com/thun888/asstes/tree/master/static)
+
+<img style="display: inline-block;" src="https://img.shields.io/badge/Vercel-Vercel?logo=Vercel&color=000000" alt="badge">{% hashtag Base color:green %}{% hashtag H-SLA color:green %}
+
+
+
+
+
 #### cfproxy.hzchu.top
 
 自由反代服务
@@ -70,18 +84,32 @@ fclouds地图，带端口60181访问
 
 反代`gist.github.com/thun888`
 
-{% hashtag TT-HK color:green %}{% hashtag H-SLA color:green %}
+{% hashtag TT-hk color:green %}{% hashtag H-SLA color:green %}
 
 #### faster-raw-git.hzchu.top
 
 反代`raw.githubusercontent.com`
 
-{% hashtag TT-HK color:green %}{% hashtag H-SLA color:green %}
+{% hashtag TT-hk color:green %}{% hashtag H-SLA color:green %}
 
 #### onlinedisplay-api.hzchu.top
 
 用于展示博主状态
 
-{% hashtag TT-HK color:green %}{% hashtag H-SLA color:green %}
+{% hashtag TT-hk color:green %}{% hashtag H-SLA color:green %}
+
+#### pic.hzchu.top
+
+图床
+
+{% note 如果你想使用可以发邮件申请配额哦 %}
+
+{% hashtag Home-ikuai color:green %}{% hashtag TT-hk(frp) color:green %}{% hashtag Base color:green %}{% hashtag H-SLA color:green %}
+
+#### *onep.hzchu.top
+
+图床节点
+
+{% hashtag Home-ikuai(node) color:green %}{% hashtag TT-hk(main) color:green %}{% hashtag Base color:green %}{% hashtag H-SLA color:green %}
 
 {% quot el:h3 其它 %}
