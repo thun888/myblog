@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.hzchu.top/wiki/Serve-list/</loc>
+    
+    <lastmod>2024-07-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/wiki/Serve-list/hashtags/</loc>
+    
+    <lastmod>2024-07-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.hzchu.top/2024/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8F%AF%E8%AE%B0%E5%BD%95%E4%BD%BF%E7%94%A8%E9%87%8F%E7%9A%84%E8%B0%B7%E6%AD%8C%E7%BF%BB%E8%AF%91%E5%8F%8D%E4%BB%A3%E7%BD%91%E7%AB%99/</loc>
     
     <lastmod>2024-07-11</lastmod>
@@ -65,7 +83,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/friends/</loc>
+    <loc>https://blog.hzchu.top/big/</loc>
     
     <lastmod>2024-07-11</lastmod>
     
@@ -74,7 +92,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/big/</loc>
+    <loc>https://blog.hzchu.top/friends/</loc>
     
     <lastmod>2024-07-11</lastmod>
     
@@ -398,24 +416,6 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/Serve-list/</loc>
-    
-    <lastmod>2024-02-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/wiki/Serve-list/hashtags/</loc>
-    
-    <lastmod>2024-02-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.hzchu.top/2024/%E4%BD%BF%E7%94%A8Homebox%E5%AE%9E%E7%8E%B0%E5%AE%B6%E7%94%A8%E7%89%A9%E5%93%81%E7%AE%A1%E7%90%86/</loc>
     
     <lastmod>2024-02-17</lastmod>
@@ -732,14 +732,14 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/Windows/</loc>
+    <loc>https://blog.hzchu.top/tags/%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2024-07-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/%E7%AC%94%E8%AE%B0/</loc>
+    <loc>https://blog.hzchu.top/tags/Windows/</loc>
     <lastmod>2024-07-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
