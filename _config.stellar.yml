@@ -35,7 +35,7 @@ menubar:
 
 ######## head tags ########
 preconnect:
-   - https://jsd.hzchu.top
+   - https://static.hzchu.top
 
 ######## Main ########
 # 站点主结构树
@@ -43,13 +43,13 @@ site_tree:
   # -- 列表类页面 -- #
   # 主页配置
   home:
-    leftbar: welcome, recent, travellingslink
+    leftbar: welcome, recent
     rightbar: new_comment
   # 博客列表页配置
   index_blog:
     base_dir: blog # 只影响自动生成的页面路径
     menu_id: post # 未在 front-matter 中指定 menu_id 时，layout 为 post 的页面默认使用这里配置的 menu_id
-    leftbar: welcome, recent, travellingslink # for categories/tags/archives
+    leftbar: welcome, recent # for categories/tags/archives
     rightbar: 
     nav_tabs:  # 近期发布 分类 标签 专栏 归档 and ...
       # '朋友文章': /friends/rss/
@@ -61,7 +61,7 @@ site_tree:
   index_wiki:
     base_dir: wiki # 只影响自动生成的页面路径
     menu_id: wiki # 未在 front-matter 中指定 menu_id 时，layout 为 wiki 的页面默认使用这里配置的 menu_id
-    leftbar: ghissues, related, recent, travellingslink # for wiki
+    leftbar: ghissues, related, recent # for wiki
     rightbar: 
     nav_tabs:
       # 'more': https://github.com/xaoxuu
@@ -69,7 +69,7 @@ site_tree:
   # 博客文章内页配置
   post:
     menu_id: post # 未在 front-matter 中指定 menu_id 时，layout 为 post 的页面默认使用这里配置的 menu_id
-    leftbar: related, ghrepo, ghissues, recent, travellingslink # for pages using 'layout:post'
+    leftbar: related, ghrepo, ghissues, recent # for pages using 'layout:post'
     rightbar: ghrepo, toc
   # 博客专栏文章内页配置
   topic:
@@ -77,23 +77,23 @@ site_tree:
   # 文档内页配置
   wiki:
     menu_id: wiki # 未在 front-matter 中指定 menu_id 时，layout 为 wiki 的页面默认使用这里配置的 menu_id
-    leftbar: tree, ghissues, related, recent, travellingslink # for wiki
+    leftbar: tree, ghissues, related, recent # for wiki
     rightbar: ghrepo, toc
   # 作者信息配置
   author: 
     base_dir: author # 只影响自动生成的页面路径
     menu_id: post
-    leftbar: recent, timeline, travellingslink
+    leftbar: recent, timeline
     rightbar: timeline
   # 错误页配置
   error_page:
     menu_id: post
     '404': '/404.html'
-    leftbar: recent, travellingslink
+    leftbar: recent
     rightbar: timeline
   # 其它自定义页面配置 layout: page
   page:
-    leftbar: recent, travellingslink
+    leftbar: recent
     rightbar: toc
 
 
@@ -149,7 +149,7 @@ article:
 comments:
   service: artalk
   lazyload: true # true / false
-  comment_title: 留下你的足迹吧~ <img no-lazy style="margin-left:10px; height:50px; display:initial;" src="https://jsd.hzchu.top/gh/norevi/waline-blobcatemojis@1.0/blobs/blobcatpeekaboo.png">
+  comment_title: 留下你的足迹吧~ <img no-lazy style="margin-left:10px; height:50px; display:initial;" src="https://static.hzchu.top/waline-blobcatemojis@1.0/blobs/blobcatpeekaboo.png">
   # Artalk
   # https://artalk.js.org/
   artalk:
@@ -179,28 +179,26 @@ footer:
        url: /settings/
   sitemap:
      '博客':
-       - '[大事记](/big/)'
+       - '[更新日志](/big/)'
        - '[哔哔](/bb/)'
        - '[归档](/archives/)'
      '项目':
-       - '[学习笔记](/wiki/study-notes/)'
-       - '[峰间云海](/wiki/fcloud/)'
        - '[Mirouter-ui](https://github.com/Mirouterui/mirouter-ui/)'
+       - '[笔记](/wiki/study-notes/)'
+       - '[更多](https://github.com/thun888?tab=repositories)'
      '社交':
        - '[友链](/friends/)'
-       - '[留言板](/say/)'
-       - '[BiliBili](https://space.bilibili.com/451090261)'
-       - '[邮箱](mailto:thun888@qq.com)'
-     '更多':
-       - '[关于本站](/about/)'
-       - '[云盘](https://pan.hzchu.top)'
-       - '[图床](https://pic.hzchu.top)'
+       - '[B站](https://space.bilibili.com/451090261)'
+       - '[邮箱](mailto:thun888@hzchu.top)'
+     '远方':
+       - '[开往](https://www.travellings.cn/go.html)'
+       - '[穿梭虫洞](https://www.foreverblog.cn/go.html)'
+       - '[异次元之旅](https://travel.moe/go.html)'
 
   content: | # 支持 Markdown 格式
     本站由 [{author.name}](/) 使用 [{theme.name} {theme.version}]({theme.tree}) 主题创建。<a href="https://icp.gov.moe/?keyword=20210043" target="_blank">萌ICP备20210043号</a>
-    本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。
+    本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请<u>注明出处</u>。
     <span id="timeDate">载入天数...</span><span>&</span><span id="times">载入时分秒...</span>，共发表了<span id="all-posts-count">load</span>篇文章，总计<span id="all-post-words">load</span>字
-    [访问数据统计](https://seeyou.hzchu.top/share/ogbqAPd0BGm5J2KS/blog.hzchu.top)
 ######## Tag Plugins ########
 tag_plugins:
   image:
@@ -224,7 +222,7 @@ tag_plugins:
     aru: https://static.hzchu.top/cdn-x/emoji/aru/{name}.png
     aru-l: https://static.hzchu.top/cdn-x/emoji/aru-l/{name}.gif
     tieba: https://static.hzchu.top/cdn-x/emoji/tieba/{name}.png
-    blobcat: https://static.hzchu.top/norevi/waline-blobcatemojis@1.0/blobs/{name}.png
+    blobcat: https://static.hzchu.top/waline-blobcatemojis@1.0/blobs/{name}.png
 
 ######## JS Plugins ########
 plugins:
@@ -233,7 +231,7 @@ plugins:
   preload:
     enable: true
     service: flying_pages # flying_pages
-    flying_pages: https://jsd.hzchu.top/gh/gijo-varghese/flying-pages/flying-pages.min.js
+    flying_pages: https://static.hzchu.top/gijo-varghese/flying-pages/flying-pages.min.js
 
   # lazyload
   # https://www.npmjs.com/package/vanilla-lazyload

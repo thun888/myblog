@@ -69,3 +69,15 @@ sub_filter_types指令：sub_filter_types * 用于指定需要被替换的MIME�
 替换内容：`{% image $2$3 download:$2 $1 %}`
 
 > 注意：gallery内部只能填写 md 格式的图片
+
+## MCSM
+
+### 节点无法找到主机java环境
+
+```bash
+nano /etc/systemd/system/mcsm-daemon.service
+修改Environment字段，添加主机java路径（eg:/opt/jdk/bin）
+systemctl daemon-reload
+systemctl restart mcsm-daemon
+```
+

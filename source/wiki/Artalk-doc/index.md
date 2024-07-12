@@ -13,7 +13,7 @@ updated: 2022-02-12 22:33:00
 
 > 一款简洁有趣的自托管评论系统
 
-{% note color:red 官方文档：[Artalk (v2)](https://artalk.js.org/)，本文档做存档处理，不再更新 %}
+{% note color:red 官方文档：[Artalk (v2)](https://artalk.js.org/)，本文档做存档处理，不再更新。历史悠久，已从项目页面下架 %}
 
 
 

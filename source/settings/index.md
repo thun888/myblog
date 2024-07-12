@@ -11,6 +11,8 @@ useai: false
 
 默认启用
 
+[访问数据统计](https://seeyou.hzchu.top/share/ogbqAPd0BGm5J2KS/blog.hzchu.top)
+
 {% button 禁用/启用 javascript:stitchumami() %}
 
 ## 黑夜模式
