@@ -26,7 +26,19 @@ function switchselectFastNode() {
     initstatus()
 }
 
+function switchloader() {
+    const key = 'loader.disabled';
+    const status = localStorage.getItem(key);
 
+    if (!status || status === '0') {
+        localStorage.setItem(key, '1');
+        hud.toast('已禁用加载动画');
+    } else if (status === '1') {
+        localStorage.removeItem(key);
+        hud.toast('已启用加载动画');
+    }
+    initstatus()
+}
 function switchaisummary() {
     const aisummaryKey = 'config.aisummary.status';
     const aisummaryStatus = localStorage.getItem(aisummaryKey);
@@ -39,6 +51,14 @@ function switchaisummary() {
         hud.toast('已禁用AI摘要');
     }
     initstatus()
+}
+
+function freshONEP() {
+    selectFastNode(true);
+    // 似乎localstorage有延迟
+    setTimeout(function(){
+        initstatus();
+    },100);
 }
 
 
@@ -54,9 +74,11 @@ function initstatus(){
         var data = JSON.parse(selectFastNodeNodeInfoData);
         var now = new Date();
         if (data.link === null && now.getTime() - data.time < 5 * 60 * 1000) {
-            selectFastNodeNodeInfo = data.link + '（已过期）';
+            selectFastNodeNodeInfo =  '近期获取节点错误';
         } else if (now.getTime() - data.time < 5 * 60 * 1000) {
             selectFastNodeNodeInfo = data.link;
+        }else {
+            selectFastNodeNodeInfo = data.link + ' (已过期)';
         }
     }
     $('#selectFastNode-nodeinfo').text(selectFastNodeNodeInfo);
@@ -70,6 +92,10 @@ function initstatus(){
     var aisummaryStatus = localStorage.getItem('config.aisummary.status');
     text = (!aisummaryStatus || aisummaryStatus === '0') ? '已禁用' : '已启用';
     $('#aisummary-status').text(text);
+    // 初始化加载动画状态
+    var loaderStatus = localStorage.getItem('loader.disabled');
+    text = (!loaderStatus || loaderStatus === '0') ? '已启用' : '已禁用';
+    $('#loader-status').text(text);
 }
 
 //页面渲染完成

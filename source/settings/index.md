@@ -33,7 +33,7 @@ useai: false
 
 {% button 禁用/启用 javascript:switchselectFastNode(); %}
 
-{% button 更新节点信息 javascript:selectFastNode(true); %}
+{% button 更新节点信息 javascript:freshONEP(); %}
 
 ## Ai摘要
 
@@ -44,5 +44,13 @@ useai: false
 
 {% button 禁用/启用 javascript:switchaisummary(); %}
 
+## 加载动画
+
+默认启用
+
+当前状态：<span id="loader-status">loading</span>
+
+
+{% button 禁用/启用 javascript:switchloader(); %}
 
 <script src="/js/settings.js"></script>
