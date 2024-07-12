@@ -81,3 +81,8 @@ systemctl daemon-reload
 systemctl restart mcsm-daemon
 ```
 
+## Git
+
+# 报错:error: You have not concluded your merge (MERGE_HEAD exists).
+
+{% copy git commit prefix:$ %}
