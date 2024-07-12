@@ -45,6 +45,11 @@ default:
 }
 }
 
+// 是否启用加载动画
+loaderdisabled = localStorage.getItem("loader.disabled");
+if (loaderdisabled) {
+    document.getElementById("eloading").style.display = "none";
+}
 //dom构建完成
 document.addEventListener('DOMContentLoaded', function() {
 console.log("[Loader]dom构建完成")

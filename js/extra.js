@@ -149,6 +149,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }));
     });
     console.log('[ONEP,selectFastNode] Done.');
+    return true;
   }
   
   function replaceImageSource(newLink) {
@@ -161,4 +162,14 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
+
+  navigator.serviceWorker.register('/sw.js', { updateViaCache: 'none' })
+  .then(function(registration) {
+      // 注册成功
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+  })
+  .catch(function(err) {
+      // 注册失败
+      console.log('ServiceWorker registration failed: ', err);
+  });
   

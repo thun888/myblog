@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/Artalk-doc/use/</loc>
+    <loc>https://blog.hzchu.top/vercel.json</loc>
     
     <lastmod>2024-07-12</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/vercel.json</loc>
+    <loc>https://blog.hzchu.top/wiki/Artalk-doc/use/</loc>
     
     <lastmod>2024-07-12</lastmod>
     
@@ -30,6 +30,15 @@
   
   <url>
     <loc>https://blog.hzchu.top/settings/</loc>
+    
+    <lastmod>2024-07-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/about/</loc>
     
     <lastmod>2024-07-12</lastmod>
     
@@ -57,15 +66,6 @@
   
   <url>
     <loc>https://blog.hzchu.top/friends/</loc>
-    
-    <lastmod>2024-07-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/about/</loc>
     
     <lastmod>2024-07-12</lastmod>
     
@@ -739,14 +739,14 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/Mirouterui/</loc>
+    <loc>https://blog.hzchu.top/tags/%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2024-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/%E7%AC%94%E8%AE%B0/</loc>
+    <loc>https://blog.hzchu.top/tags/Mirouterui/</loc>
     <lastmod>2024-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -760,14 +760,14 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/python/</loc>
+    <loc>https://blog.hzchu.top/tags/%E7%94%9C%E7%B3%96/</loc>
     <lastmod>2024-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/%E7%94%9C%E7%B3%96/</loc>
+    <loc>https://blog.hzchu.top/tags/python/</loc>
     <lastmod>2024-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
