@@ -9,6 +9,7 @@ function stitchumami() {
         localStorage.removeItem(umamiKey);
         hud.toast('已启用Umami统计');
     }
+    initstatus()
 }
 
 function switchselectFastNode() {
@@ -22,6 +23,7 @@ function switchselectFastNode() {
         localStorage.removeItem(key);
         hud.toast('已启用图片节点优选');
     }
+    initstatus()
 }
 
 
@@ -36,4 +38,41 @@ function switchaisummary() {
         localStorage.removeItem(aisummaryKey);
         hud.toast('已禁用AI摘要');
     }
+    initstatus()
 }
+
+
+function initstatus(){
+    // 初始化图片节点优选状态
+    var selectFastNodeStatus = localStorage.getItem('onep.cdn.select.disabled');
+    var text = (!selectFastNodeStatus || selectFastNodeStatus === '0') ? '已启用' : '已禁用';
+    $('#selectFastNode-status').text(text);
+
+    var selectFastNodeNodeInfoData = localStorage.getItem('onep.cdn.nodelist');
+    var selectFastNodeNodeInfo = '本地无节点信息';
+    if (selectFastNodeNodeInfoData) {
+        var data = JSON.parse(selectFastNodeNodeInfoData);
+        var now = new Date();
+        if (data.link === null && now.getTime() - data.time < 5 * 60 * 1000) {
+            selectFastNodeNodeInfo = data.link + '（已过期）';
+        } else if (now.getTime() - data.time < 5 * 60 * 1000) {
+            selectFastNodeNodeInfo = data.link;
+        }
+    }
+    $('#selectFastNode-nodeinfo').text(selectFastNodeNodeInfo);
+
+    // 初始化umami状态
+    var umamiStatus = localStorage.getItem('umami.disabled');
+    text = (!umamiStatus || umamiStatus === '0') ? '已启用' : '已禁用';
+    $('#umami-status').text(text);
+
+    // 初始化AI摘要状态
+    var aisummaryStatus = localStorage.getItem('config.aisummary.status');
+    text = (!aisummaryStatus || aisummaryStatus === '0') ? '已禁用' : '已启用';
+    $('#aisummary-status').text(text);
+}
+
+//页面渲染完成
+addEventListener("load",function(){
+    initstatus()
+  })

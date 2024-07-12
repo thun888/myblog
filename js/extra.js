@@ -100,7 +100,8 @@ document.addEventListener('DOMContentLoaded', function() {
   selectFastNode();
   });
 
-  function selectFastNode() {
+  function selectFastNode(force) {
+    console.log('[ONEP,selectFastNode] Running...');
     const selectdisabled = localStorage.getItem('onep.cdn.select.disabled');
     if (selectdisabled) {
       console.log('[ONEP,selectFastNode] Skipping due to select disabled.');
@@ -110,10 +111,10 @@ document.addEventListener('DOMContentLoaded', function() {
     if (storedData) {
       const data = JSON.parse(storedData);
       const now = new Date();
-      if (data.link === null && now.getTime() - data.time < 5 * 60 * 1000) {
+      if (data.link === null && now.getTime() - data.time < 5 * 60 * 1000 && !force) {
         console.log('Skipping due to recent failure to fetch nodes.');
         return;
-      } else if (now.getTime() - data.time < 5 * 60 * 1000) {
+      } else if (now.getTime() - data.time < 5 * 60 * 1000 && !force) {
         replaceImageSource(data.link);
         return;
       }
@@ -147,6 +148,7 @@ document.addEventListener('DOMContentLoaded', function() {
         time: new Date().getTime()
       }));
     });
+    console.log('[ONEP,selectFastNode] Done.');
   }
   
   function replaceImageSource(newLink) {
