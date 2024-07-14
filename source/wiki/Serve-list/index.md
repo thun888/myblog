@@ -8,6 +8,8 @@ updated: 2024-07-11 22:33:00
 
 {% note color:yellow 数据未统计完毕 %}
 
+状态监控：[Thun888's Service Status](https://status.hzchu.top/status/web)
+
 {% quot el:h3 公开 %}
 
 #### d.hzchu.top
