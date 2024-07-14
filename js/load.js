@@ -45,19 +45,21 @@ default:
 }
 }
 
-// 是否启用加载动画
-loaderdisabled = localStorage.getItem("loader.disabled");
-if (loaderdisabled) {
-    document.getElementById("eloading").style.display = "none";
-}
-//dom构建完成
-document.addEventListener('DOMContentLoaded', function() {
-console.log("[Loader]dom构建完成")
-changeProgress ("start");//开启进度条
-})
 
-//页面渲染完成
-addEventListener("load",function(){
-    console.log('[Loader]页面加载完成');
-    changeProgress ("end");//结束进度条，
-  })
+//dom构建完成
+document.addEventListener('DOMContentLoaded', function () {
+    console.log("[Loader]dom构建完成")
+    // 是否启用加载动画
+    loaderdisabled = localStorage.getItem("loader.disabled");
+    if (loaderdisabled) {
+        document.getElementById("eloading").style.display = "none";
+        return
+    } else {
+        //页面渲染完成
+        addEventListener("load", function () {
+            console.log('[Loader]页面加载完成');
+            changeProgress("end");//结束进度条，
+        })
+    }
+    changeProgress("start");//开启进度条
+})
