@@ -324,3 +324,17 @@ if __name__ == "__main__":
 
 
 原文链接：https://blog.csdn.net/qq_47527477/article/details/122904551
+
+## PY
+
+## hashlib
+
+安装报错：
+
+```bash
+ERROR: Ignored the following yanked versions: 20081119
+ERROR: Could not find a version that satisfies the requirement hashlib (from versions: none)
+ERROR: No matching distribution found for hashlib
+```
+
+根本不用装
