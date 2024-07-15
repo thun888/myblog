@@ -95,7 +95,7 @@ dynamic_codeblock:
   loading: true
   showsupporter: true
   api: https://{yourdomain}/api/v1/generate
-  css: https://jsd.hzchu.top/gh/thun888/asstes@master/files/pygments-css/default.css
+  css: https://jsd.hzchu.top/gh/thun888/assets@master/files/pygments-css/default.css
 ```
 
 > **loading只针对Stellar主题**。同时，为使copycode正常工作，你需要将/js/plugins/copycode.js修改为[这样](/js/plugins/copycode.js)

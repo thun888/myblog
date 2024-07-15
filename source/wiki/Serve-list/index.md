@@ -68,7 +68,7 @@ fclouds地图，带端口60181访问
 
 镜像部分资源
 
-[asstes/static at master · thun888/asstes (github.com)](https://github.com/thun888/asstes/tree/master/static)
+[assets/static at master · thun888/assets (github.com)](https://github.com/thun888/assets/tree/master/static)
 
 <img style="display: inline-block;" src="https://img.shields.io/badge/Vercel-Vercel?logo=Vercel&color=000000" alt="badge">{% hashtag Base color:green %}{% hashtag H-SLA color:green %}
 

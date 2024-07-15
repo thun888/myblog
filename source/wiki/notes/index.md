@@ -303,3 +303,24 @@ firewall=true
 autoProxy=true
 ```
 
+## Flask
+
+### 设置的定时任务会重复执行两次函数
+
+**原因**：在调试模式下（debug），Flask的重新加载器将加载应用程序两次。因此flask总共有两个进程，重新加载器监视文件系统的更改并在不同的进程中启动真实应用程序。
+**解决办法**：禁用重新加载器。在启动flask程序的run语句中，将添加use_reloader=False参数即可禁用重新加载器
+关闭调试模式。同样地，在启动flask程序的run语句中，将debug=True改为debug=False即可关闭debug模式，在部署后真实的运行场景中都会关闭调试模式。
+
+```python
+if __name__ == "__main__":
+启动flask程序
+    # 直接启动，use_reloader=False禁用重新加载器
+    app.run(host="127.0.0.1", port=5000, debug=True, use_reloader=False)  # 只能本机访问
+    # app.run(host="0.0.0.0", port=5000, debug=True, use_reloader=False)    # 外网可以访问
+    # 以命令行方式启动
+    # manager.run()
+```
+
+
+
+原文链接：https://blog.csdn.net/qq_47527477/article/details/122904551

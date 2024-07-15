@@ -158,7 +158,7 @@ comments:
     server: https://artalk.hzchu.top # 后端服务地址
     placeholder: '此时无声胜有声'
     site: Thun888
-    emoticons: https://raw.hzchu.top/thun888/asstes/master/files/json/artalk/default.json
+    emoticons: https://raw.hzchu.top/thun888/assets/master/files/json/artalk/default.json
     darkMode: 'auto'
 
 ######## Footer ########

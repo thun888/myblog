@@ -197,4 +197,4 @@ dynamic_codeblock:
   loading: true
   showsupporter: true
   api: https://hightlight-code-api.hzchu.top/api/v1/generate
-  css: https://jsd.hzchu.top/gh/thun888/asstes@master/files/pygments-css/default.css
+  css: https://jsd.hzchu.top/gh/thun888/assets@master/files/pygments-css/default.css
