@@ -261,7 +261,7 @@
 <p>受<a target="_blank" rel="noopener" href="https://weekdaycare.cn/">@星日语</a>的启发，我做了个插件：<code>hexo-dynamic-codeblock</code></p>
 <p>安装：<div class="tag-plugin copy"><span>$</span><input class="copy-area" id="copy_5" value="npm install hexo-dynamic-codeblock"><button class="copy-btn" onclick="util.copy(&quot;copy_5&quot;,&quot;复制成功&quot;)"><svg class="icon copy-btn" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M5.75 1a.75.75 0 00-.75.75v3c0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75v-3a.75.75 0 00-.75-.75h-4.5zm.75 3V2.5h3V4h-3zm-2.874-.467a.75.75 0 00-.752-1.298A1.75 1.75 0 002 3.75v9.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0014 13.25v-9.5a1.75 1.75 0 00-.874-1.515.75.75 0 10-.752 1.298.25.25 0 01.126.217v9.5a.25.25 0 01-.25.25h-8.5a.25.25 0 01-.25-.25v-9.5a.25.25 0 01.126-.217z"></path></svg></button></div></p>
 <p>配置：</p>
-<figure class="highlight yaml"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">dynamic_codeblock:</span></span><br><span class="line">  <span class="attr">loading:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">showsupporter:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">api:</span> <span class="string">https://&#123;yourdomain&#125;/api/v1/generate</span></span><br><span class="line">  <span class="attr">css:</span> <span class="string">https://jsd.hzchu.top/gh/thun888/asstes@master/files/pygments-css/default.css</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight yaml"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">dynamic_codeblock:</span></span><br><span class="line">  <span class="attr">loading:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">showsupporter:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">api:</span> <span class="string">https://&#123;yourdomain&#125;/api/v1/generate</span></span><br><span class="line">  <span class="attr">css:</span> <span class="string">https://jsd.hzchu.top/gh/thun888/assets@master/files/pygments-css/default.css</span></span><br></pre></td></tr></table></figure>
 <blockquote>
 <p><strong>loading只针对Stellar主题</strong>。同时，为使copycode正常工作，你需要将/js/plugins/copycode.js修改为<a href="/js/plugins/copycode.js">这样</a></p>
 </blockquote>
@@ -279,22 +279,22 @@
 <p>该处引用本程序代码</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://hightlight-code-api.hzchu.top/api/v1/generate?url=https://raw.githubusercontent.com/thun888/hightlight-code-api/main/api/main.py&amp;lang=python&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-    <div class="tag-plugin ds-coding" id="coding-yhcvlkj5d"></div>
+    <div class="tag-plugin ds-coding" id="coding-ywn0xz63p"></div>
     <script>
     addEventListener("load",function(){
-      console.log('[hexo-dynamic-codeblock]start load：coding-yhcvlkj5d' );
+      console.log('[hexo-dynamic-codeblock]start load：coding-ywn0xz63p' );
       utils.jq(() => {
         $(function () {
-          const el = document.getElementById('coding-yhcvlkj5d');
+          const el = document.getElementById('coding-ywn0xz63p');
             utils.request(el, "https://hightlight-code-api.hzchu.top/api/v1/generate?url=https%3A%2F%2Fraw.githubusercontent.com%2Fthun888%2Fhightlight-code-api%2Fmain%2Fapi%2Fmain.py&lang=python&usejson=true", function (data) {
               $(el).append(data.result);
-              addCopyButtons('coding-yhcvlkj5d');
+              addCopyButtons('coding-ywn0xz63p');
             });
           });
       });
     });
     </script>
-    <link rel="stylesheet" href="https://jsd.hzchu.top/gh/thun888/asstes@master/files/pygments-css/default.css">
+    <link rel="stylesheet" href="https://jsd.hzchu.top/gh/thun888/assets@master/files/pygments-css/default.css">
         
 
 <div class="article-footer fs14">

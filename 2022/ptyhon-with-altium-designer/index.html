@@ -195,22 +195,22 @@
 <p>还有像xy坐标，NAME，COLOR等不必多说</p>
 <p>接着就是写个python脚本把它们拼起来辣</p>
 
-    <div class="tag-plugin ds-coding" id="coding-mmy072z8n"></div>
+    <div class="tag-plugin ds-coding" id="coding-jflu0r379"></div>
     <script>
     addEventListener("load",function(){
-      console.log('[hexo-dynamic-codeblock]start load：coding-mmy072z8n' );
+      console.log('[hexo-dynamic-codeblock]start load：coding-jflu0r379' );
       utils.jq(() => {
         $(function () {
-          const el = document.getElementById('coding-mmy072z8n');
+          const el = document.getElementById('coding-jflu0r379');
             utils.request(el, "https://hightlight-code-api.hzchu.top/api/v1/generate?url=https%3A%2F%2Fraw.githubusercontent.com%2Fthun888%2Faltium-helper%2Fmaster%2Fpackager.py&lang=python&usejson=true", function (data) {
               $(el).append(data.result);
-              addCopyButtons('coding-mmy072z8n');
+              addCopyButtons('coding-jflu0r379');
             });
           });
       });
     });
     </script>
-    <link rel="stylesheet" href="https://jsd.hzchu.top/gh/thun888/asstes@master/files/pygments-css/default.css">
+    <link rel="stylesheet" href="https://jsd.hzchu.top/gh/thun888/assets@master/files/pygments-css/default.css">
         
 <div class="tag-plugin ghcard"><a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/thun888/altium-helper"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://github-readme-stats.xaoxuu.com/api/pin/?username=thun888&repo=altium-helper&theme=dark&show_owner=true"/></a></div>
 <p>再生成原理图库复制到自己的库就行了</p>
