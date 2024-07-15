@@ -16,7 +16,8 @@ updated: 2024-06-08 12:05:32
 
 [Nginx 跨域设置(CORS)_nginx配置跨域-CSDN博客](https://blog.csdn.net/yujia_666/article/details/108490178)
 
+[在Cloudflare Workers里使用markdown-it渲染markdown，并插入HTML中 - MakkaPakka Page](https://hi.makkapakka.date/blog/detail?id=14)
+
 ## 工具
 
 [百度文库下载](https://www.mmhtml.com/)
-

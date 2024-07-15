@@ -57,6 +57,6 @@ updated: 2024-06-07 7:39:32
 2. [染色单体 - 医学百科 (yixue.com)](https://www.yixue.com/染色单体)
 3. [什么是三系杂交水稻？----中国科学院 (cas.cn)](https://www.cas.cn/kxcb/kpwz/201102/t20110223_3075063.shtml)
 
-## 好人
+## 有用的
 
-1. 
+1. [ZHI-BLOG (zhwei.tech)](https://blog.zhwei.tech/)
