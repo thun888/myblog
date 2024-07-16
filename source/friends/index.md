@@ -38,7 +38,7 @@ rightbar: [friends_timeline]
   avatar: https://blog.hzchu.top/img/avatar.webp
   screenshot: https://onep.hzchu.top/mount/pic/blog-hzchu-top.png
   description: 夏日当空,心如深渊
-  {% endcodeblock %}
+{% endcodeblock %}
 
 <!-- tab 通用 -->
 
@@ -54,14 +54,14 @@ rightbar: [friends_timeline]
 
 {% copy https://onep.hzchu.top/mount/pic/blog-hzchu-top.png prefix:screenshot %}
 
-{% copy https://onep.hzchu.top/mount/pic/2024/02/06/65c236823dbca.webp?fmt=avif prefix:background %}
+{% copy https://onep.hzchu.top/mount/pic/2024/02/06/65c236823dbca.webp prefix:background %}
 
 {% copy 夏日当空,心如深渊 prefix:description %}
 
 {% endgrid %}
 
 
-
+> [友链状态监测(每10分钟更新)](https://status.hzchu.top/status/friends)
 
 
 

@@ -18,6 +18,8 @@ updated: 2024-06-08 12:05:32
 
 [在Cloudflare Workers里使用markdown-it渲染markdown，并插入HTML中 - MakkaPakka Page](https://hi.makkapakka.date/blog/detail?id=14)
 
+[DDNS TELEGRAM BOT搭建教程 · wukibaka/ddns-telegram-bot Wiki (github.com)](https://github.com/wukibaka/ddns-telegram-bot/wiki/DDNS-TELEGRAM-BOT搭建教程)
+
 ## 工具
 
 [百度文库下载](https://www.mmhtml.com/)
