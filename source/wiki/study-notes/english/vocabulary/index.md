@@ -56,3 +56,6 @@ take - took - taken
 ### 变现在分词
 
 1. lie,die,tie,将ie改成y，再加ing
+
+### 同义单词
+1. 得到，获得：gain，get，obtain，还有一个attain~
