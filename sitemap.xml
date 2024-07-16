@@ -11,6 +11,15 @@
   </url>
   
   <url>
+    <loc>https://blog.hzchu.top/wiki/Artalk-doc/use/</loc>
+    
+    <lastmod>2024-07-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.hzchu.top/vercel.json</loc>
     
     <lastmod>2024-07-16</lastmod>
@@ -38,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/Artalk-doc/use/</loc>
+    <loc>https://blog.hzchu.top/friends/</loc>
     
     <lastmod>2024-07-16</lastmod>
     
@@ -66,15 +75,6 @@
   
   <url>
     <loc>https://blog.hzchu.top/big/</loc>
-    
-    <lastmod>2024-07-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/friends/</loc>
     
     <lastmod>2024-07-16</lastmod>
     
