@@ -195,16 +195,16 @@
 <p>还有像xy坐标，NAME，COLOR等不必多说</p>
 <p>接着就是写个python脚本把它们拼起来辣</p>
 
-    <div class="tag-plugin ds-coding" id="coding-8eklon6ll"></div>
+    <div class="tag-plugin ds-coding" id="coding-mjxv1ebcc"></div>
     <script>
     addEventListener("load",function(){
-      console.log('[hexo-dynamic-codeblock]start load：coding-8eklon6ll' );
+      console.log('[hexo-dynamic-codeblock]start load：coding-mjxv1ebcc' );
       utils.jq(() => {
         $(function () {
-          const el = document.getElementById('coding-8eklon6ll');
+          const el = document.getElementById('coding-mjxv1ebcc');
             utils.request(el, "https://hightlight-code-api.hzchu.top/api/v1/generate?url=https%3A%2F%2Fraw.githubusercontent.com%2Fthun888%2Faltium-helper%2Fmaster%2Fpackager.py&lang=python&usejson=true", function (data) {
               $(el).append(data.result);
-              addCopyButtons('coding-8eklon6ll');
+              addCopyButtons('coding-mjxv1ebcc');
             });
           });
       });
