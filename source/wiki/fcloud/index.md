@@ -113,7 +113,7 @@ MCDR list:
 
 1. 进入[FClouds Skins](https://mcskin.hzchu.top/)注册账户并登录（邮箱请使用您的qq号加上@qq.com，邀请码从群内获取）
 
-   ![image-20240718214053637](C:\Users\22383\AppData\Roaming\Typora\typora-user-images\image-20240718214053637.png?fmt=avif)
+   {% image https://onep.hzchu.top/mount/pic/myself/2024/07/66991b6af202e.png?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/66991b6af202e.png image-20240718214053637 %}
 
 2. 调整本地启动器。为启动器添加外置登录，对于支持的启动器，你可以直接将此按钮拖动至启动器。如启动器不支持，可以自行搜索，接入点为`https://mcskin.hzchu.top/api/yggdrasil`
 
