@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.hzchu.top/2024/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%A4%96%E7%BD%AE%E7%99%BB%E9%99%86%E4%B8%94%E4%BA%92%E9%80%9A%E7%9A%84fabric%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    <loc>https://blog.hzchu.top/wiki/Artalk-doc/use/</loc>
     
     <lastmod>2024-07-18</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/Artalk-doc/use/</loc>
+    <loc>https://blog.hzchu.top/friends/</loc>
     
     <lastmod>2024-07-18</lastmod>
     
@@ -66,15 +66,6 @@
   
   <url>
     <loc>https://blog.hzchu.top/big/</loc>
-    
-    <lastmod>2024-07-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/friends/</loc>
     
     <lastmod>2024-07-18</lastmod>
     
