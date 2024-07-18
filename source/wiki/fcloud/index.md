@@ -99,12 +99,37 @@ MCDR list:
 
 4. 在群公告里获取IP并连接
 
-**附录**
 
-- 加入了互通（Geyser）支持，可以绑定be端游戏名后游玩
 
-- 在线地图需要注册，打开网页后按照流程即可
 
-{% image https://onep.hzchu.top/mount/pic/2023/05/01/644fc215cdcc4.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/2023/05/01/644fc215cdcc4.webp Snipaste_2023-05-01_21-41-34.webp %}
 
-{% image https://onep.hzchu.top/mount/pic/2023/05/01/644fc20042a10.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/2023/05/01/644fc20042a10.webp 1682948607925.webp %}
+## 外置登录使用
+
+为方便玩家使用皮肤，我服以正式启用外置登录作为新的登录方式
+
+**由于Geyser与外置登录不兼容，以下操作仅针对Java版玩家，BE玩家可跳转至最后**
+
+### Java
+
+1. 进入[FClouds Skins](https://mcskin.hzchu.top/)注册账户并登录（邮箱请使用您的qq号加上@qq.com，邀请码从群内获取）
+
+   ![image-20240718214053637](C:\Users\22383\AppData\Roaming\Typora\typora-user-images\image-20240718214053637.png)
+
+2. 调整本地启动器。为启动器添加外置登录，对于支持的启动器，你可以直接将此按钮拖动至启动器。如启动器不支持，可以自行搜索，接入点为`https://mcskin.hzchu.top/api/yggdrasil`
+
+   ![image-20240718214245350](https://onep.hzchu.top/mount/pic/myself/2024/07/66991bda925c0.png)
+
+3. 在账户列表里选择刚刚添加的皮肤站点，登录后选中
+
+   ![image-20240718214502311](https://onep.hzchu.top/mount/pic/myself/2024/07/66991c638e222.png)
+
+4. 向管理员发送您的游戏名称以添加至白名单
+
+5. enjoy it!
+
+### BE
+
+向管理员发送您的游戏名称以添加至白名单即可
+
+
+
