@@ -115,7 +115,7 @@ MCDR list:
 
    {% image https://onep.hzchu.top/mount/pic/myself/2024/07/66991b6af202e.png?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/66991b6af202e.png image-20240718214053637 %}
 
-2. 调整本地启动器。为启动器添加外置登录，对于支持的启动器，你可以直接将此按钮拖动至启动器。如启动器不支持，可以自行搜索，接入点为`https://mcskin.hzchu.top/api/yggdrasil`
+2. 调整本地启动器。为启动器添加外置登录，对于支持的启动器，你可以直接将此按钮拖动至启动器。如启动器不支持，可以自行百度，接入点为`https://mcskin.hzchu.top/api/yggdrasil`
 
    {% image https://onep.hzchu.top/mount/pic/myself/2024/07/66991bda925c0.png?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/66991bda925c0.png image-20240718214245350 %}
 
@@ -131,5 +131,5 @@ MCDR list:
 
 向管理员发送您的游戏名称以添加至白名单即可
 
-
+> 在使用floodgate后，原有玩家名称会在前面加上`_`以区分，因此可能导致玩家数据“对不上”，请在在线时联系管理员迁移
 
