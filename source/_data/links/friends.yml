@@ -60,7 +60,7 @@
       screenshot: https://image.thum.io/get/maxAge/12/width/700/https://dahi.icu/
     - title: 二月
       url: https://chenli-l.github.io/
-      avatar: https://bu.dusays.com/2023/09/02/64f2900d6f69a.jpg
+      avatar: https://dolphinsbukets.s3.bitiful.net/friends-avatar/chenli-l.jpg?fmt=avif&q=20
       description: 播客、主题仅此而已？
       screenshot: https://image.thum.io/get/maxAge/12/width/700/https://chenli-l.github.io/
     - title: 清风
@@ -84,7 +84,12 @@
       description: 星语日点灯
       screenshot: https://onep.hzchu.top/mount/pic/myself/avif/20240608100236.avif?fmt=avif
     - title: 泠泫凝的异次元空间
-      avatar: https://lxnchan.cn/assets/logo-v2.webp
+      avatar: https://dolphinsbukets.s3.bitiful.net/friends-avatar/lxnchan.webp?fmt=avif&q=20
       url: https://lxnchan.cn
       description: 先空着2333
       screenshot: https://onep.hzchu.top/mount/pic/myself/2024/07/669526f9072f6.png?fmt=avif
+    - title: Wang's blog
+      avatar: https://dolphinsbukets.s3.bitiful.net/friends-avatar/wang-blog.webp?fmt=avif&q=20
+      url: https://blog.661212.xyz/
+      description: 愿你出走半生，归来仍是少年
+      screenshot: https://onep.hzchu.top/mount/pic/myself/2024/07/6698b93881943.png?fmt=avif
