@@ -9,12 +9,11 @@ useai: false
 
 <div id="memos" style="display: none;"></div>
 <div id="memo-list"></div>
-<link rel="stylesheet" href="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css">
-<link rel="stylesheet" href="https://cdn.staticfile.org/animate.css/4.1.1/animate.min.css">
+<!-- <link rel="stylesheet" href="https://cdn.staticfile.org/animate.css/4.1.1/animate.min.css"> -->
 <link rel="stylesheet" href="https://memobbs.app/grid.css">
 <link rel="stylesheet" href="https://memobbs.app/memos.css">
-<script src="https://cdn.staticfile.org/marked/7.0.5/marked.min.js"></script>
-<script src="https://cdn.staticfile.org/lozad.js/1.16.0/lozad.min.js"></script>
+<script src="https://static.hzchu.top/marked/7.0.5/marked.min.js"></script>
+<script src="https://static.hzchu.top/lozad.js/1.16.0/lozad.min.js"></script>
 
 <link href="https://artalk.hzchu.top/dist/Artalk.css" rel="stylesheet" />
 <script src="https://artalk.hzchu.top/dist/Artalk.js"></script>
@@ -34,3 +33,4 @@ useai: false
     }
   ]
 </script>
+{% image https://asstes.hzchu.top/file/pic-bed/2021/07/5b73a4a33f9bb3df5e1236b4021492fe.gif fancybox:true %}
