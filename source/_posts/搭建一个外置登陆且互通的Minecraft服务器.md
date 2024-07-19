@@ -1,10 +1,10 @@
 ---
-title: 搭建一个外置登陆且互通的fabric服务器
+title: 搭建一个外置登陆且互通的MC服务器
 date: 2024-07-18 20:22:42
 updated: 2024-07-18 20:22:42
-tags:
-cover:
-banner:
+tags: MC
+cover: https://dolphinsbukets.s3.bitiful.net/article-cover/cover-9.png?fmt=avif
+banner: https://dolphinsbukets.s3.bitiful.net/article-cover/cover-9.png?fmt=avif&q=50
 description: 我服务器是离线登录的，一直以来都是本地打mod来实现显示皮肤。昨天有人折腾了半天，仔细想想要不整个外置登录吧，然后一步一个坑，记录一下。
 categories: 技术类
 references:
