@@ -38,15 +38,6 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/friends/</loc>
-    
-    <lastmod>2024-07-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.hzchu.top/about/</loc>
     
     <lastmod>2024-07-19</lastmod>
@@ -74,7 +65,16 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/2024/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%A4%96%E7%BD%AE%E7%99%BB%E9%99%86%E4%B8%94%E4%BA%92%E9%80%9A%E7%9A%84fabric%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    <loc>https://blog.hzchu.top/friends/</loc>
+    
+    <lastmod>2024-07-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/2024/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%A4%96%E7%BD%AE%E7%99%BB%E9%99%86%E4%B8%94%E4%BA%92%E9%80%9A%E7%9A%84Minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
     
     <lastmod>2024-07-18</lastmod>
     
@@ -578,15 +578,6 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/Artalk-doc/develop/</loc>
-    
-    <lastmod>2022-02-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.hzchu.top/wiki/Artalk-doc/QandA/</loc>
     
     <lastmod>2022-02-12</lastmod>
@@ -596,7 +587,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/Artalk-doc/more-url/</loc>
+    <loc>https://blog.hzchu.top/wiki/Artalk-doc/develop/</loc>
     
     <lastmod>2022-02-12</lastmod>
     
@@ -606,6 +597,15 @@
   
   <url>
     <loc>https://blog.hzchu.top/wiki/Artalk-doc/install/</loc>
+    
+    <lastmod>2022-02-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/wiki/Artalk-doc/more-url/</loc>
     
     <lastmod>2022-02-12</lastmod>
     
@@ -757,14 +757,14 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/Mirouterui/</loc>
+    <loc>https://blog.hzchu.top/tags/%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2024-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/%E7%AC%94%E8%AE%B0/</loc>
+    <loc>https://blog.hzchu.top/tags/Mirouterui/</loc>
     <lastmod>2024-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -792,14 +792,14 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/Blog/</loc>
+    <loc>https://blog.hzchu.top/tags/MC/</loc>
     <lastmod>2024-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/MC/</loc>
+    <loc>https://blog.hzchu.top/tags/Blog/</loc>
     <lastmod>2024-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
