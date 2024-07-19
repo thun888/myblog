@@ -17,29 +17,39 @@
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
   <meta name="theme-color" content="#f9fafb">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-  <title>把Tg Channel接入到Stellar时间线 - Thun888</title>
+  <title>搭建一个外置登陆且互通的fabric服务器 - Thun888</title>
 
   
-    <meta name="description" content="使用Cloudflare Worker，获取Tg频道内容，并接入到Stellar时间线">
+    <meta name="description" content="我服务器是离线登录的，一直以来都是本地打mod来实现显示皮肤。昨天有人折腾了半天，仔细想想要不整个外置登录吧，然后一步一个坑，记录一下。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="把Tg Channel接入到Stellar时间线">
-<meta property="og:url" content="https://blog.hzchu.top/2024/%E6%8A%8ATg-Channel%E6%8E%A5%E5%85%A5%E5%88%B0Stellar%E6%97%B6%E9%97%B4%E7%BA%BF/">
+<meta property="og:title" content="搭建一个外置登陆且互通的fabric服务器">
+<meta property="og:url" content="https://blog.hzchu.top/2024/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%A4%96%E7%BD%AE%E7%99%BB%E9%99%86%E4%B8%94%E4%BA%92%E9%80%9A%E7%9A%84fabric%E6%9C%8D%E5%8A%A1%E5%99%A8/">
 <meta property="og:site_name" content="Thun888">
-<meta property="og:description" content="使用Cloudflare Worker，获取Tg频道内容，并接入到Stellar时间线">
+<meta property="og:description" content="我服务器是离线登录的，一直以来都是本地打mod来实现显示皮肤。昨天有人折腾了半天，仔细想想要不整个外置登录吧，然后一步一个坑，记录一下。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://onep.hzchu.top/mount/pic/2024/02/25/65dad341bacfd.webp?fmt=avif">
-<meta property="og:image" content="https://static.hzchu.top/waline-blobcatemojis@1.0/blobs/blobcatpolice.png">
-<meta property="og:image" content="https://static.hzchu.top/waline-blobcatemojis@1.0/blobs/ablobcatrainbow.png">
-<meta property="article:published_time" content="2024-02-25T13:19:01.000Z">
-<meta property="article:modified_time" content="2024-02-25T14:43:01.000Z">
+<meta property="og:image" content="https://static.hzchu.top/waline-blobcatemojis@1.0/blobs/blobcatsaitama.png">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/myself/2024/07/669a07c0d161d.png?fmt=avif">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/myself/2024/07/669a07d69727e.png?fmt=avif">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/myself/2024/07/669a085710b06.png?fmt=avif">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/myself/2024/07/669a0b070bc7f.png?fmt=avif">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/myself/2024/07/669a0c508209b.png?fmt=avif">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/myself/2024/07/669a0e8284223.png?fmt=avif">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/myself/2024/07/669a15cc38e84.png?fmt=avif">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/myself/2024/07/669a15eddee91.png?fmt=avif">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/myself/2024/07/669a174387943.png?fmt=avif">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/myself/2024/07/669a198d353ed.png?fmt=avif">
+<meta property="og:image" content="https://onep.hzchu.top/mount/pic/myself/2024/07/669a29db14036.png?fmt=avif">
+<meta property="og:image" content="https://static.hzchu.top/waline-blobcatemojis@1.0/blobs/blobcatsadreach.png">
+<meta property="article:published_time" content="2024-07-18T20:22:42.000Z">
+<meta property="article:modified_time" content="2024-07-18T20:22:42.000Z">
 <meta property="article:author" content="thun888">
-<meta property="article:tag" content="Stellar">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://onep.hzchu.top/mount/pic/2024/02/25/65dad341bacfd.webp?fmt=avif">
+<meta property="article:tag" content="喵~|thun888&#39;s Blog">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://static.hzchu.top/waline-blobcatemojis@1.0/blobs/blobcatsaitama.png">
   
   
   
-  <meta name="keywords" content="Stellar">
+  <meta name="keywords" content="喵~|thun888's Blog">
 
   <!-- feed -->
   
@@ -152,166 +162,160 @@
 
 
 
-<div class="article banner top"><img class="bg lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/02/25/65dadc3ca6e74.webp?fmt=avif">
+<div class="article banner top">
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
 <span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB/">技术类</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-02-25T13:19:01.000Z">2024-02-25</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-02-25T14:43:01.000Z">2024-02-25</time></span></div><div class="flex-row" id="page-words"><span style="padding: 4px;">本文字数：1.2k字</span><span class="sep updated" style="padding: 4px;"></span><span class="text updated" style="padding: 4px;">阅读时长：4分</span></div><div class="flex-row" id="tag"> <span>&nbsp标签：</span><a class="cap breadcrumb-link" href="/tags/Stellar/">Stellar</a>&nbsp</div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-07-18T20:22:42.000Z">2024-07-18</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-07-18T20:22:42.000Z">2024-07-18</time></span></div><div class="flex-row" id="page-words"><span style="padding: 4px;">本文字数：1.1k字</span><span class="sep updated" style="padding: 4px;"></span><span class="text updated" style="padding: 4px;">阅读时长：4分</span></div></div></div>
     
     <div class="bottom only-title">
       
       <div class="text-area">
-        <h1 class="text title"><span>把Tg Channel接入到Stellar时间线</span></h1>
+        <h1 class="text title"><span>搭建一个外置登陆且互通的fabric服务器</span></h1>
         
       </div>
     </div>
     
   </div>
   </div><article class="md-text content"><div id="gtime"></div><h2 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h2>
-<p>之前调CW时发现<a target="_blank" rel="noopener" href="https://blog.eurekac.cn/">Cyan</a>加上了TG频道说说，因为已经有<code>Memos</code>了所以没有在意，昨天在<a target="_blank" rel="noopener" href="https://xaoxuu.com/wiki/stellar/articles.html">Stellar 探索号</a>看到有<a target="_blank" rel="noopener" href="https://blog.lvbyte.top/posts/11214/">stellar主题集成Telegram Channel说说</a>的教程，忽然灵光一闪，这拿来放草稿/想法挺合适的嘛</p>
-<h2 id="正文"><a class="markdownIt-Anchor" href="#正文"></a> 正文</h2>
-<p>首先新建一个频道，并记下频道ID</p>
-<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/2024/02/25/65dad341bacfd.webp?fmt=avif" alt="1708839745065.webp" data-fancybox="true"/><a class="image-download blur" style="opacity:0" target="_blank" download="1708839745065.webp" href="https://onep.hzchu.top/mount/pic/2024/02/25/65dad341bacfd.webp"><svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3734"><path d="M561.00682908 685.55838913a111.03077546 111.03077546 0 0 1-106.8895062 0L256.23182837 487.72885783a55.96309219 55.96309219 0 0 1 79.13181253-79.18777574L450.70357448 523.88101491V181.55477937a55.96309219 55.96309219 0 0 1 111.92618438 0v344.06109173l117.07478902-117.07478901a55.96309219 55.96309219 0 0 1 79.13181252 79.18777574zM282.81429711 797.1487951h447.70473912a55.96309219 55.96309219 0 0 1 0 111.92618438H282.81429711a55.96309219 55.96309219 0 0 1 0-111.92618438z" p-id="3735"></path></svg></a></div><div class="image-meta"><span class="image-caption center">1708839745065.webp</span></div></div>
-<p>新建一个<code>Cloudflare Worker</code>，复制下面的代码粘贴进去</p>
-<blockquote>
-<p>为了兼容Stellar的时间线，我在lvbyte的基础上改了点代码</p>
-</blockquote>
-<script src="https://faster-gist.hzchu.top/thun888/67d8cdf1296d8dc252e9fc5607e4daf6.js"></script>
-<p>并修改顶部配置</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title class_">ChannelNameList</span> = [<span class="string">&#x27;thun888sthinks&#x27;</span>]; <span class="comment">//频道ID，可添加多个</span></span><br><span class="line"><span class="keyword">const</span> deniedRegion = [<span class="string">&quot;&quot;</span>]; 屏蔽区域，如<span class="variable constant_">CN</span>,<span class="variable constant_">US</span></span><br><span class="line"><span class="keyword">const</span> baseproxyurl=<span class="string">&quot;https://get-tg-channel-api.hzchu.top/?proxy=&quot;</span> <span class="comment">//将中间域名替换为你为worker绑定的域名</span></span><br></pre></td></tr></table></figure>
-<p>随后按照使用Memos时间线形式使用即可</p>
-<h2 id="可传入参数"><a class="markdownIt-Anchor" href="#可传入参数"></a> 可传入参数</h2>
-<table>
-<thead>
-<tr>
-<th>参数</th>
-<th>参数名</th>
-<th>默认值</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>cid</td>
-<td>频道id</td>
-<td>0</td>
-<td>指在代码里配置的第n个频道，并不是上文所述频道id</td>
-</tr>
-<tr>
-<td>mid</td>
-<td>信息id</td>
-<td>/</td>
-<td>指定后只返回该信息，信息id可在发送后查看</td>
-</tr>
-<tr>
-<td><strong>tag</strong></td>
-<td>标签名</td>
-<td>DefaultTag</td>
-<td>筛选传入的标签返回</td>
-</tr>
-<tr>
-<td>limit</td>
-<td>获取条数</td>
-<td>/</td>
-<td>/</td>
-</tr>
-<tr>
-<td>offset</td>
-<td>获取信息偏移量</td>
-<td>/</td>
-<td>如果有一条信息<code>id</code>为<code>80</code>的信息，那么当传入<code>80</code>时将返回这条信息之前的所有信息</td>
-</tr>
-<tr>
-<td>showtag</td>
-<td>是否展示标签</td>
-<td>true</td>
-<td>/</td>
-</tr>
-<tr>
-<td>showview</td>
-<td>是否展示访问量</td>
-<td>false</td>
-<td>启用时会在末尾附上(views:number)</td>
-</tr>
-<tr>
-<td>usemd</td>
-<td>是否使用Markdown</td>
-<td>true</td>
-<td>开启后返回未被tg解析过的md语法</td>
-</tr>
-<tr>
-<td>usetgclassification</td>
-<td>是否使用tg自带的分类</td>
-<td>false</td>
-<td>开启后使用tg自带的分类来进行标签筛选，防止过久导致无法显示。但注意会有缓存</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>众所周知，<code>0</code>是第一个自然数，所以cid传入<code>0</code>时表示获取第1个频道</p>
-<p>tag为空时默认返回#DefaultTag的数据，可在代码中自行更改</p>
-<p><code>tag</code>原版是<code>#SFCN</code>,一开始没想明白是什么意思，现在明白了：Suitable For China，可以有别的玩法o(￣▽￣)ｄ</p>
-</blockquote>
-<h2 id="在stellar中的使用"><a class="markdownIt-Anchor" href="#在stellar中的使用"></a> 在Stellar中的使用</h2>
-<div class="tag-plugin tabs" align="center"id="tab_7"><div class="nav-tabs"><div class="tab active"><a href="#tab_7-1">在独立页面内使用</a></div><div class="tab"><a href="#tab_7-2">添加为小部件</a></div><div class="tab"><a href="#tab_7-3">进阶（使用数据服务插件）</a></div></div><div class="tab-content"><div class="tab-pane active" id="tab_7-1"><div class="tag-plugin grid"  style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));"><div class="cell" style="">
-    <div class="tag-plugin timeline ds-memos" api="https://get-tg-channel-api.hzchu.top/?tag=DTA&limit=3" user="thun888sthinks"></div>
-    </div>
-    <div class="cell" style="">
-    <p><strong>代码：</strong></p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% timeline user:thun888sthinks api:https://get-tg-channel-api.hzchu.top/?tag=DTA&amp;limit=3 type:memos %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% endtimeline %&#125;</span><br></pre></td></tr></table></figure><p>user为频道ID，api为你为CFW绑定的域名，type填memos</p><p>碍于篇幅限制，只展示前3条</p>
-    </div>
-    </div></div><div class="tab-pane" id="tab_7-2"><figure class="highlight yaml"><figcaption><span>/source/_data/widgets.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">timeline:</span></span><br><span class="line">  <span class="attr">layout:</span> <span class="string">timeline</span></span><br><span class="line">  <span class="attr">title:</span> <span class="string">近期动态</span></span><br><span class="line">  <span class="attr">api:</span> <span class="string">https://get-tg-channel-api.hzchu.top/?tag=DTA&amp;limit=3</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">memos</span></span><br><span class="line">  <span class="attr">hide:</span> <span class="string">user,footer</span>	</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="tab_7-3"><p>有一些功能在默认的设计下不能很好的实现，但是通过数据插件就可以实现了，比如动态加载更多内容，回应显示，访问量显示等</p>
-<p>有空再写（挖坑.webp</p></div></div></div>
-<h2 id="其它用法"><a class="markdownIt-Anchor" href="#其它用法"></a> 其它用法</h2>
-<div class="tag-plugin tabs" align="center"id="tab_8"><div class="nav-tabs"><div class="tab active"><a href="#tab_8-1">获取其它频道</a></div><div class="tab"><a href="#tab_8-2">指定获取某条信息</a></div><div class="tab"><a href="#tab_8-3">展示访问量</a></div><div class="tab"><a href="#tab_8-4">使用Markdown</a></div></div><div class="tab-content"><div class="tab-pane active" id="tab_8-1"><div class="tag-plugin grid"  style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));"><div class="cell" style="">
-    <div class="tag-plugin timeline ds-memos" api="https://get-tg-channel-api.hzchu.top/?cid=1&tag=DTA&limit=3" user="Thun888sDraftArticles"></div>
-    </div>
-    <div class="cell" style="">
-    <p><strong>代码：</strong></p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% timeline user:Thun888sDraftArticles api:https://get-tg-channel-api.hzchu.top/?cid=1&amp;tag=DTA&amp;limit=3 type:memos %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% endtimeline %&#125;</span><br></pre></td></tr></table></figure>
-    </div>
-    </div></div><div class="tab-pane" id="tab_8-2"><div class="tag-plugin grid"  style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));"><div class="cell" style="">
-    <div class="tag-plugin timeline ds-memos" api="https://get-tg-channel-api.hzchu.top/?cid=1&tag=Test&mid=52&showtag=false" user="Thun888sDraftArticles"></div>
-    </div>
-    <div class="cell" style="">
-    <p><strong>代码：</strong></p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% timeline user:Thun888sDraftArticles api:https://get-tg-channel-api.hzchu.top/?cid=1&amp;tag=Test&amp;mid=52&amp;showtag=false type:memos %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% endtimeline %&#125;</span><br></pre></td></tr></table></figure><p>可以用在很多地方获取某些信息，作为某种接口来使用。在这一基础上，你甚至可以修改代码，改为只返回图片，在某种意义上实现图床的效果，不过滥用可不太好啊<span class="tag-plugin emoji"><img no-lazy="" class="inline lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://static.hzchu.top/waline-blobcatemojis@1.0/blobs/blobcatpolice.png"/></span></p>
-    </div>
-    </div></div><div class="tab-pane" id="tab_8-3"><div class="tag-plugin grid"  style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));"><div class="cell" style="">
-    <div class="tag-plugin timeline ds-memos" api="https://get-tg-channel-api.hzchu.top/?cid=1&tag=Test&showview=true" user="Thun888sDraftArticles"></div>
-    </div>
-    <div class="cell" style="">
-    <p><strong>代码：</strong></p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% timeline user:Thun888sDraftArticles api:https://get-tg-channel-api.hzchu.top/?cid=1&amp;tag=Test&amp;showview=true type:memos %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% endtimeline %&#125;</span><br></pre></td></tr></table></figure>
-    </div>
-    </div></div><div class="tab-pane" id="tab_8-4"><div class="tag-plugin grid"  style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));"><div class="cell" style="">
-    <div class="tag-plugin timeline ds-memos" api="https://get-tg-channel-api.hzchu.top/?cid=1&tag=Test&usemd=true" user="Thun888sDraftArticles"></div>
-    </div>
-    <div class="cell" style="">
-    <p><strong>代码：</strong></p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% timeline user:Thun888sDraftArticles api:https://get-tg-channel-api.hzchu.top/?cid=1&amp;tag=Test&amp;usemd=true type:memos %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% endtimeline %&#125;</span><br></pre></td></tr></table></figure><p>在默认情况下，tg会解析md语法，对于不支持的语法会转义，从而导致前端无法正常解析md语法，在使用该参数后程序会将解析后的文本还原为正常md语法并返回。默认开启</p>
-    </div>
-    </div></div></div></div>
-<p>相关配置：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title class_">ChannelNameList</span> = [<span class="string">&#x27;thun888sthinks&#x27;</span>,<span class="string">&#x27;Thun888sDraftArticles&#x27;</span>];</span><br></pre></td></tr></table></figure>
-<h2 id="变体"><a class="markdownIt-Anchor" href="#变体"></a> 变体</h2>
-<h3 id="反向筛选"><a class="markdownIt-Anchor" href="#反向筛选"></a> 反向筛选</h3>
-<p>将<code>if (MessageTextMatch &amp;&amp; (!denied &amp;&amp; MessageTextMatch[0].includes('#' + tagname))) &#123;</code>修改为<code>if (MessageTextMatch &amp;&amp; (!denied || MessageTextMatch[0].includes('#' + tagname))) &#123;</code></p>
-<h3 id="文本筛选"><a class="markdownIt-Anchor" href="#文本筛选"></a> 文本筛选</h3>
-<p>将<code>MessageTextMatch[0].includes('#' + tagname)</code>修改为<code>MessageTextMatch[0].includes('yourtext')</code></p>
-<h2 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> Todo</h2>
+<p>我服务器是离线登录的，一直以来都是本地打mod来实现显示皮肤。昨天有人折腾了半天，仔细想想要不整个外置登录吧，然后一步一个坑<span class="tag-plugin emoji"><img no-lazy="" class="inline lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://static.hzchu.top/waline-blobcatemojis@1.0/blobs/blobcatsaitama.png"/></span>，记录一下</p>
+<h2 id="搭建"><a class="markdownIt-Anchor" href="#搭建"></a> 搭建</h2>
+<h3 id="blessing-skin"><a class="markdownIt-Anchor" href="#blessing-skin"></a> Blessing Skin</h3>
+<h4 id="修改环境配置"><a class="markdownIt-Anchor" href="#修改环境配置"></a> 修改环境配置</h4>
+<p>官方不建议用面板类程序部署，因为会禁用某些php函数，启用就好。在<code>禁用函数</code>或在<code>php.ini</code>里面的<code>disable_functions</code>里去掉以下函数</p>
 <ul>
-<li>[x] 可在请求时选择过滤哪个tag</li>
-<li>[x] 完善Emoji支持</li>
-<li>[x] 前端传入标签名</li>
-<li>[x] 可选显示标签名及访问量</li>
-<li>[x] 获取指定信息</li>
-<li>[x] 多频道支持</li>
-<li>[ ] 表情包标签解析</li>
-<li>[ ] 自定义是否显示引用</li>
-<li>[ ] 可传入需要返回的名称</li>
-<li>[x] 可选使用tg自带分类</li>
+<li><code>symlink</code></li>
+<li><code>readlink</code></li>
+<li><code>putenv</code></li>
+<li><code>realpath</code></li>
 </ul>
-<h2 id="结语"><a class="markdownIt-Anchor" href="#结语"></a> 结语</h2>
-<p>它可以使静态博客进一步动态化，加强可玩性，也可在很多地方使用。</p>
-<p>如果你有一些像<code>多频道融合</code>，<code>多标签获取</code>的功能建议，那就大可不必了，毕竟它一开始只是一个说说程序啊<span class="tag-plugin emoji"><img no-lazy="" class="inline lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://static.hzchu.top/waline-blobcatemojis@1.0/blobs/ablobcatrainbow.png"/></span></p>
+<p>同时，安装必需的 PHP （&lt;8.2）扩展：</p>
+<div class="tag-plugin colorful folders" ><details class="folder" index="0"><summary><span>折叠啦</span></summary><div class="body"><ul><li>OpenSSL &gt;= 1.1.1 (TLS 1.3)</li><li>PDO</li><li>Mbstring</li><li>Tokenizer</li><li>GD</li><li>XML</li><li>Ctype</li><li>JSON</li><li>fileinfo</li><li>zip</li></ul></div></details></div>
+<h4 id="本体"><a class="markdownIt-Anchor" href="#本体"></a> 本体</h4>
+<p>从<a target="_blank" rel="noopener" href="https://github.com/bs-community/blessing-skin-server/releases">Releases</a>下载程序包并解压，设置<code>运行目录</code>为<code>/public</code>，或在配置文件里设置<code>root /&#123;yourwebsitespath&#125;/public;</code></p>
+<p>设置伪静态：</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">location</span> / &#123;</span><br><span class="line">      <span class="attribute">try_files</span> <span class="variable">$uri</span> <span class="variable">$uri</span>/ /index.php?<span class="variable">$query_string</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>若开启了防跨站安全设置需关闭</p>
+<h4 id="安装"><a class="markdownIt-Anchor" href="#安装"></a> 安装</h4>
+<p>配置完伪静态后，直接访问对应的域名就能跳转到安装页面了，在完成基本的安装后，在插件市场里安装<code>Yggdrasil API</code>并启用</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/myself/2024/07/669a07c0d161d.png?fmt=avif" alt="image-20240719142918745" data-fancybox="true"/><a class="image-download blur" style="opacity:0" target="_blank" download="image-20240719142918745" href="https://onep.hzchu.top/mount/pic/myself/2024/07/669a07c0d161d.png"><svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3734"><path d="M561.00682908 685.55838913a111.03077546 111.03077546 0 0 1-106.8895062 0L256.23182837 487.72885783a55.96309219 55.96309219 0 0 1 79.13181253-79.18777574L450.70357448 523.88101491V181.55477937a55.96309219 55.96309219 0 0 1 111.92618438 0v344.06109173l117.07478902-117.07478901a55.96309219 55.96309219 0 0 1 79.13181252 79.18777574zM282.81429711 797.1487951h447.70473912a55.96309219 55.96309219 0 0 1 0 111.92618438H282.81429711a55.96309219 55.96309219 0 0 1 0-111.92618438z" p-id="3735"></path></svg></a></div><div class="image-meta"><span class="image-caption center">image-20240719142918745</span></div></div>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/myself/2024/07/669a07d69727e.png?fmt=avif" alt="image-20240719142941137" data-fancybox="true"/><a class="image-download blur" style="opacity:0" target="_blank" download="image-20240719142941137" href="https://onep.hzchu.top/mount/pic/myself/2024/07/669a07d69727e.png"><svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3734"><path d="M561.00682908 685.55838913a111.03077546 111.03077546 0 0 1-106.8895062 0L256.23182837 487.72885783a55.96309219 55.96309219 0 0 1 79.13181253-79.18777574L450.70357448 523.88101491V181.55477937a55.96309219 55.96309219 0 0 1 111.92618438 0v344.06109173l117.07478902-117.07478901a55.96309219 55.96309219 0 0 1 79.13181252 79.18777574zM282.81429711 797.1487951h447.70473912a55.96309219 55.96309219 0 0 1 0 111.92618438H282.81429711a55.96309219 55.96309219 0 0 1 0-111.92618438z" p-id="3735"></path></svg></a></div><div class="image-meta"><span class="image-caption center">image-20240719142941137</span></div></div>
+<p>最后可以尝试访问<code>//&#123;yourwebsites&#125;/api/yggdrasil</code>看看有无类似以下输出</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/myself/2024/07/669a085710b06.png?fmt=avif" alt="image-20240719143149605" data-fancybox="true"/><a class="image-download blur" style="opacity:0" target="_blank" download="image-20240719143149605" href="https://onep.hzchu.top/mount/pic/myself/2024/07/669a085710b06.png"><svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3734"><path d="M561.00682908 685.55838913a111.03077546 111.03077546 0 0 1-106.8895062 0L256.23182837 487.72885783a55.96309219 55.96309219 0 0 1 79.13181253-79.18777574L450.70357448 523.88101491V181.55477937a55.96309219 55.96309219 0 0 1 111.92618438 0v344.06109173l117.07478902-117.07478901a55.96309219 55.96309219 0 0 1 79.13181252 79.18777574zM282.81429711 797.1487951h447.70473912a55.96309219 55.96309219 0 0 1 0 111.92618438H282.81429711a55.96309219 55.96309219 0 0 1 0-111.92618438z" p-id="3735"></path></svg></a></div><div class="image-meta"><span class="image-caption center">image-20240719143149605</span></div></div>
+<h4 id="扩展"><a class="markdownIt-Anchor" href="#扩展"></a> 扩展</h4>
+<p>为更方便的管理玩家，可以在安装邀请码插件来避免多次/外部人员注册</p>
+<h4 id="常见问题"><a class="markdownIt-Anchor" href="#常见问题"></a> 常见问题</h4>
+<ol>
+<li>
+<p>图片无法显示/页面混乱</p>
+<p>请检查你的 Nginx 规则配置中是否有这类控制浏览器缓存的规则，删除即可：</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">location</span> <span class="regexp">~ .*\.(gif|jpg|jpeg|png|bmp|swf|flv|ico)$</span> &#123;</span><br><span class="line">    <span class="attribute">expires</span> <span class="number">30d</span>;</span><br><span class="line">    <span class="attribute">access_log</span> <span class="literal">off</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>插件市场无法使用</p>
+<p>在<code>.env</code>里添加<code>PLUGINS_REGISTRY=https://d2jw1l0ullrzt6.cloudfront.net/registry_&#123;lang&#125;.json</code></p>
+</li>
+<li>
+<p>验证邮箱地址报403 Forbidden，无效的链接：参阅<a target="_blank" rel="noopener" href="https://github.com/bs-community/blessing-skin-server/issues/636">验证邮箱地址报403 Forbidden，无效的链接</a></p>
+</li>
+<li>
+<p>报错：<code>Lcobucci\JWT\Signer\Key\InMemory::plainText(): Argument #1 ($contents) must #21 10.08 be of type string, null given</code>：</p>
+<p>在<code>.env</code>里添加<code>JWT_SECRET=...</code>值与<code>APP_KEY</code>一致</p>
+</li>
+</ol>
+<h3 id="游戏服务端"><a class="markdownIt-Anchor" href="#游戏服务端"></a> 游戏服务端</h3>
+<p>这是原本的游玩路径</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/myself/2024/07/669a0b070bc7f.png?fmt=avif" alt="image-20240719144316520" data-fancybox="true"/><a class="image-download blur" style="opacity:0" target="_blank" download="image-20240719144316520" href="https://onep.hzchu.top/mount/pic/myself/2024/07/669a0b070bc7f.png"><svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3734"><path d="M561.00682908 685.55838913a111.03077546 111.03077546 0 0 1-106.8895062 0L256.23182837 487.72885783a55.96309219 55.96309219 0 0 1 79.13181253-79.18777574L450.70357448 523.88101491V181.55477937a55.96309219 55.96309219 0 0 1 111.92618438 0v344.06109173l117.07478902-117.07478901a55.96309219 55.96309219 0 0 1 79.13181252 79.18777574zM282.81429711 797.1487951h447.70473912a55.96309219 55.96309219 0 0 1 0 111.92618438H282.81429711a55.96309219 55.96309219 0 0 1 0-111.92618438z" p-id="3735"></path></svg></a></div><div class="image-meta"><span class="image-caption center">image-20240719144316520</span></div></div>
+<p>可见有一些不足：玩家每一次登录都要敲密码，新玩家还要手动加白名单，但使用了外置登陆后这些都可以丢掉了。<code>authlib-injector</code>通过“劫持”官方的正版验证接口，实现了一种特殊的认证，与正版无异。只需要一个账户就可以畅玩服务器。</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/myself/2024/07/669a0c508209b.png?fmt=avif" alt="image-20240719144846911" data-fancybox="true"/><a class="image-download blur" style="opacity:0" target="_blank" download="image-20240719144846911" href="https://onep.hzchu.top/mount/pic/myself/2024/07/669a0c508209b.png"><svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3734"><path d="M561.00682908 685.55838913a111.03077546 111.03077546 0 0 1-106.8895062 0L256.23182837 487.72885783a55.96309219 55.96309219 0 0 1 79.13181253-79.18777574L450.70357448 523.88101491V181.55477937a55.96309219 55.96309219 0 0 1 111.92618438 0v344.06109173l117.07478902-117.07478901a55.96309219 55.96309219 0 0 1 79.13181252 79.18777574zM282.81429711 797.1487951h447.70473912a55.96309219 55.96309219 0 0 1 0 111.92618438H282.81429711a55.96309219 55.96309219 0 0 1 0-111.92618438z" p-id="3735"></path></svg></a></div><div class="image-meta"><span class="image-caption center">image-20240719144846911</span></div></div>
+<h4 id="游戏服务端-2"><a class="markdownIt-Anchor" href="#游戏服务端-2"></a> 游戏服务端</h4>
+<p>下载<a target="_blank" rel="noopener" href="https://authlib-injector.yushi.moe/">authlib-injector</a>到服务端同级目录</p>
+<p>在启动命令的<code>-jar</code>参数前加上<code>-javaagent:authlib-injector-1.xx.xx.jar=https://&#123;yourwebsites&#125;/api/yggdrasil</code>，注意更改版本号和网站为对应的</p>
+<p>由于是“劫持”官方的正版验证接口，还需要开启正版验证（<code>online-mode</code>设置为<code>true</code>）</p>
+<p>尝试启动看看日志输出类似文本即可</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/myself/2024/07/669a0e8284223.png?fmt=avif" alt="image-20240719145808855" data-fancybox="true"/><a class="image-download blur" style="opacity:0" target="_blank" download="image-20240719145808855" href="https://onep.hzchu.top/mount/pic/myself/2024/07/669a0e8284223.png"><svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3734"><path d="M561.00682908 685.55838913a111.03077546 111.03077546 0 0 1-106.8895062 0L256.23182837 487.72885783a55.96309219 55.96309219 0 0 1 79.13181253-79.18777574L450.70357448 523.88101491V181.55477937a55.96309219 55.96309219 0 0 1 111.92618438 0v344.06109173l117.07478902-117.07478901a55.96309219 55.96309219 0 0 1 79.13181252 79.18777574zM282.81429711 797.1487951h447.70473912a55.96309219 55.96309219 0 0 1 0 111.92618438H282.81429711a55.96309219 55.96309219 0 0 1 0-111.92618438z" p-id="3735"></path></svg></a></div><div class="image-meta"><span class="image-caption center">image-20240719145808855</span></div></div>
+<p>尝试连接吧~</p>
+<h4 id="常见问题-2"><a class="markdownIt-Anchor" href="#常见问题-2"></a> 常见问题</h4>
+<ol>
+<li>无效对话：设置<code>prevent-proxy-connections = false</code></li>
+<li>无法使用游戏内聊天，由于个人信息公钥丢失，聊天已被禁用。请尝试重新连接：设置<code>enforce-secure-profile=false</code></li>
+<li>无法验证玩家用户名：检查皮肤站是否正常运行，在<code>.env</code>中打开调试模式（APP_DEBUG），检查<code>./storage/logs</code>中的日志内容</li>
+</ol>
+<h4 id="geyser"><a class="markdownIt-Anchor" href="#geyser"></a> Geyser</h4>
+<p>由于是“劫持”官方的正版验证接口（梅花三弄），对于独立版同样需要外挂<code>authlib-injector</code>，</p>
+<p>只需要找到对应的下载下来，参考游戏服务端的运行方式就可以了…吗？</p>
+<p>在高版本的Geyser中，已经<a target="_blank" rel="noopener" href="https://github.com/GeyserMC/Geyser/commit/7983448ce637656db1fca95eb65344a8c6d90de3">移除了Mojang账户的登录接口</a>，很不巧的是这里就要用到它，所以你还要把它加回来。</p>
+<blockquote>
+<p>如果只需要最新版看这里就好：<a target="_blank" rel="noopener" href="https://github.com/Shanwer/Geyser">Shanwer/Geyser</a></p>
+</blockquote>
+<ol>
+<li>
+<p>fork <a target="_blank" rel="noopener" href="https://github.com/GeyserMC/Geyser">Geyser</a> 到自己账号，再clone到本地</p>
+</li>
+<li>
+<p>因为我的服务器版本不是最新的，还要找到适合的版本，可以在<a target="_blank" rel="noopener" href="https://github.com/GeyserMC/Geyser/commits/master/core/src/main/java/org/geysermc/geyser/network/GameProtocol.java">GameProtocol.java</a>里面找，如我要编译适合1.20.1的版本，先找到drop掉的前一个commit，复制commit id</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/myself/2024/07/669a15cc38e84.png?fmt=avif" alt="image-20240719152914544" data-fancybox="true"/><a class="image-download blur" style="opacity:0" target="_blank" download="image-20240719152914544" href="https://onep.hzchu.top/mount/pic/myself/2024/07/669a15cc38e84.png"><svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3734"><path d="M561.00682908 685.55838913a111.03077546 111.03077546 0 0 1-106.8895062 0L256.23182837 487.72885783a55.96309219 55.96309219 0 0 1 79.13181253-79.18777574L450.70357448 523.88101491V181.55477937a55.96309219 55.96309219 0 0 1 111.92618438 0v344.06109173l117.07478902-117.07478901a55.96309219 55.96309219 0 0 1 79.13181252 79.18777574zM282.81429711 797.1487951h447.70473912a55.96309219 55.96309219 0 0 1 0 111.92618438H282.81429711a55.96309219 55.96309219 0 0 1 0-111.92618438z" p-id="3735"></path></svg></a></div><div class="image-meta"><span class="image-caption center">image-20240719152914544</span></div></div>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/myself/2024/07/669a15eddee91.png?fmt=avif" alt="image-20240719152948254" data-fancybox="true"/><a class="image-download blur" style="opacity:0" target="_blank" download="image-20240719152948254" href="https://onep.hzchu.top/mount/pic/myself/2024/07/669a15eddee91.png"><svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3734"><path d="M561.00682908 685.55838913a111.03077546 111.03077546 0 0 1-106.8895062 0L256.23182837 487.72885783a55.96309219 55.96309219 0 0 1 79.13181253-79.18777574L450.70357448 523.88101491V181.55477937a55.96309219 55.96309219 0 0 1 111.92618438 0v344.06109173l117.07478902-117.07478901a55.96309219 55.96309219 0 0 1 79.13181252 79.18777574zM282.81429711 797.1487951h447.70473912a55.96309219 55.96309219 0 0 1 0 111.92618438H282.81429711a55.96309219 55.96309219 0 0 1 0-111.92618438z" p-id="3735"></path></svg></a></div><div class="image-meta"><span class="image-caption center">image-20240719152948254</span></div></div>
+</li>
+<li>
+<p>执行 <div class="tag-plugin copy"><span>$</span><input class="copy-area" id="copy_8" value="git checkout {CommitId}"><button class="copy-btn" onclick="util.copy(&quot;copy_8&quot;,&quot;复制成功&quot;)"><svg class="icon copy-btn" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M5.75 1a.75.75 0 00-.75.75v3c0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75v-3a.75.75 0 00-.75-.75h-4.5zm.75 3V2.5h3V4h-3zm-2.874-.467a.75.75 0 00-.752-1.298A1.75 1.75 0 002 3.75v9.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0014 13.25v-9.5a1.75 1.75 0 00-.874-1.515.75.75 0 10-.752 1.298.25.25 0 01.126.217v9.5a.25.25 0 01-.25.25h-8.5a.25.25 0 01-.25-.25v-9.5a.25.25 0 01.126-.217z"></path></svg></button></div>切换到对应版本，新建一个分支，如<code>build</code></p>
+<div class="tag-plugin copy"><span>$</span><input class="copy-area" id="copy_9" value="git checkout -b build"><button class="copy-btn" onclick="util.copy(&quot;copy_9&quot;,&quot;复制成功&quot;)"><svg class="icon copy-btn" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M5.75 1a.75.75 0 00-.75.75v3c0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75v-3a.75.75 0 00-.75-.75h-4.5zm.75 3V2.5h3V4h-3zm-2.874-.467a.75.75 0 00-.752-1.298A1.75 1.75 0 002 3.75v9.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0014 13.25v-9.5a1.75 1.75 0 00-.874-1.515.75.75 0 10-.752 1.298.25.25 0 01.126.217v9.5a.25.25 0 01-.25.25h-8.5a.25.25 0 01-.25-.25v-9.5a.25.25 0 01.126-.217z"></path></svg></button></div>
+</li>
+<li>
+<p>参考<a target="_blank" rel="noopener" href="https://github.com/thun888/Geyser/pull/1/files">这里</a>来进行修改代码，修改完毕后推送到新分支</p>
+<div class="tag-plugin copy"><span>$</span><input class="copy-area" id="copy_10" value="git push --set-upstream origin build"><button class="copy-btn" onclick="util.copy(&quot;copy_10&quot;,&quot;复制成功&quot;)"><svg class="icon copy-btn" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M5.75 1a.75.75 0 00-.75.75v3c0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75v-3a.75.75 0 00-.75-.75h-4.5zm.75 3V2.5h3V4h-3zm-2.874-.467a.75.75 0 00-.752-1.298A1.75 1.75 0 002 3.75v9.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0014 13.25v-9.5a1.75 1.75 0 00-.874-1.515.75.75 0 10-.752 1.298.25.25 0 01.126.217v9.5a.25.25 0 01-.25.25h-8.5a.25.25 0 01-.25-.25v-9.5a.25.25 0 01.126-.217z"></path></svg></button></div>
+</li>
+<li>
+<p>随后启用action并在action选择对应的分支构建</p>
+</li>
+</ol>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/myself/2024/07/669a174387943.png?fmt=avif" alt="image-20240719153529593" data-fancybox="true"/><a class="image-download blur" style="opacity:0" target="_blank" download="image-20240719153529593" href="https://onep.hzchu.top/mount/pic/myself/2024/07/669a174387943.png"><svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3734"><path d="M561.00682908 685.55838913a111.03077546 111.03077546 0 0 1-106.8895062 0L256.23182837 487.72885783a55.96309219 55.96309219 0 0 1 79.13181253-79.18777574L450.70357448 523.88101491V181.55477937a55.96309219 55.96309219 0 0 1 111.92618438 0v344.06109173l117.07478902-117.07478901a55.96309219 55.96309219 0 0 1 79.13181252 79.18777574zM282.81429711 797.1487951h447.70473912a55.96309219 55.96309219 0 0 1 0 111.92618438H282.81429711a55.96309219 55.96309219 0 0 1 0-111.92618438z" p-id="3735"></path></svg></a></div><div class="image-meta"><span class="image-caption center">image-20240719153529593</span></div></div>
+<ol start="6">
+<li>
+<p>在构建完成后下载（我这里是独立版，插件版操作类似</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/myself/2024/07/669a198d353ed.png?fmt=avif" alt="image-20240719154515578" data-fancybox="true"/><a class="image-download blur" style="opacity:0" target="_blank" download="image-20240719154515578" href="https://onep.hzchu.top/mount/pic/myself/2024/07/669a198d353ed.png"><svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3734"><path d="M561.00682908 685.55838913a111.03077546 111.03077546 0 0 1-106.8895062 0L256.23182837 487.72885783a55.96309219 55.96309219 0 0 1 79.13181253-79.18777574L450.70357448 523.88101491V181.55477937a55.96309219 55.96309219 0 0 1 111.92618438 0v344.06109173l117.07478902-117.07478901a55.96309219 55.96309219 0 0 1 79.13181252 79.18777574zM282.81429711 797.1487951h447.70473912a55.96309219 55.96309219 0 0 1 0 111.92618438H282.81429711a55.96309219 55.96309219 0 0 1 0-111.92618438z" p-id="3735"></path></svg></a></div><div class="image-meta"><span class="image-caption center">image-20240719154515578</span></div></div>
+</li>
+<li>
+<p>运行并调整配置即可</p>
+</li>
+</ol>
+<h4 id="常见问题-3"><a class="markdownIt-Anchor" href="#常见问题-3"></a> 常见问题</h4>
+<ol>
+<li>此服务器需要一个付费的Java账号：因为 Geyser 本身的问题，无法使用有多角色的外置登录解决方案，也就是说皮肤站内有多个角色时无法登录</li>
+</ol>
+<h2 id="效果"><a class="markdownIt-Anchor" href="#效果"></a> 效果</h2>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://onep.hzchu.top/mount/pic/myself/2024/07/669a29db14036.png?fmt=avif" alt="皮肤共通" data-fancybox="true"/><a class="image-download blur" style="opacity:0" target="_blank" download="皮肤共通" href="https://onep.hzchu.top/mount/pic/myself/2024/07/669a29db14036.png"><svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3734"><path d="M561.00682908 685.55838913a111.03077546 111.03077546 0 0 1-106.8895062 0L256.23182837 487.72885783a55.96309219 55.96309219 0 0 1 79.13181253-79.18777574L450.70357448 523.88101491V181.55477937a55.96309219 55.96309219 0 0 1 111.92618438 0v344.06109173l117.07478902-117.07478901a55.96309219 55.96309219 0 0 1 79.13181252 79.18777574zM282.81429711 797.1487951h447.70473912a55.96309219 55.96309219 0 0 1 0 111.92618438H282.81429711a55.96309219 55.96309219 0 0 1 0-111.92618438z" p-id="3735"></path></svg></a></div><div class="image-meta"><span class="image-caption center">皮肤共通</span></div></div>
+<h2 id="后"><a class="markdownIt-Anchor" href="#后"></a> 后</h2>
+<p>一天啊，总算整好了~<span class="tag-plugin emoji"><img no-lazy="" class="inline lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://static.hzchu.top/waline-blobcatemojis@1.0/blobs/blobcatsadreach.png"/></span></p>
 
 <div class="article-footer fs14">
+    <section id="references">
+      <div class="header"><span>参考资料</span></div>
+      <div class="body">
+        <ul>
+        <li class="post-title">
+          <p><a target="_blank" rel="noopener" href="https://blessing.netlify.app/setup.html">安装指南 | Blessing Skin 用户手册</a></p>
+
+        </li>
+        
+        <li class="post-title">
+          <p><a target="_blank" rel="noopener" href="https://minestarofficial.github.io/guide/authlib-injector/">外置登录 | MineStar Studio 文档 (minestarofficial.github.io)</a></p>
+
+        </li>
+        
+        <li class="post-title">
+          <p><a target="_blank" rel="noopener" href="https://github.com/yushijinhun/authlib-injector/issues/230">最新的 Minecraft Bedrock 不支持使用 Mojang 账号登录，故无法借助 Geyser 和本项目实现基岩版用户外置登录 · Issue #230 · yushijinhun/authlib-injector (github.com)</a></p>
+
+        </li>
+        
+        <li class="post-title">
+          <p><a target="_blank" rel="noopener" href="https://blog.hope-now.top:8443/posts/20230902142755">让 Geyser 用上外置登录（使用 Authlib-Injector） | SharwOrange の Blog 小屋 (hope-now.top)</a></p>
+
+        </li>
+        </ul>
+      </div>
+    </section>
+    
     <section id="license">
       <div class="header"><span>许可协议</span></div>
       <div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
@@ -321,18 +325,18 @@
     <section id="share">
       <div class="header"><span>分享文章</span></div>
       <div class="body">
-        <div class="link"><input class="copy-area" readonly="true" id="copy-link" value="https://blog.hzchu.top/2024/%E6%8A%8ATg-Channel%E6%8E%A5%E5%85%A5%E5%88%B0Stellar%E6%97%B6%E9%97%B4%E7%BA%BF/" /></div>
-        <div class="social-wrap dis-select"><a class="social share-item wechat" onclick="util.toggle(&quot;qrcode-wechat&quot;)"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://static.hzchu.top/cdn-x/placeholder@1.0.12/social/b32ef3da1162a.svg" /></a><a class="social share-item weibo" target="_blank" rel="external nofollow noopener noreferrer" href="https://service.weibo.com/share/share.php?url=https://blog.hzchu.top/2024/%E6%8A%8ATg-Channel%E6%8E%A5%E5%85%A5%E5%88%B0Stellar%E6%97%B6%E9%97%B4%E7%BA%BF/&title=把Tg Channel接入到Stellar时间线 - Thun888&pics=https://onep.hzchu.top/mount/pic/2024/02/25/65dadc3ca6e74.webp?fmt=avif&summary=使用Cloudflare Worker，获取Tg频道内容，并接入到Stellar时间线"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://static.hzchu.top/cdn-x/placeholder@1.0.12/social/80c07e4dbb303.svg" /></a><a class="social share-item email" href="mailto:?subject=把Tg Channel接入到Stellar时间线 - Thun888&amp;body=https://blog.hzchu.top/2024/%E6%8A%8ATg-Channel%E6%8E%A5%E5%85%A5%E5%88%B0Stellar%E6%97%B6%E9%97%B4%E7%BA%BF/"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://static.hzchu.top/cdn-x/placeholder@1.0.12/social/a1b00e20f425d.svg" /></a><a class="social share-item link" onclick="util.copy(&quot;copy-link&quot;, &quot;复制成功&quot;)"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://static.hzchu.top/cdn-x/placeholder@1.0.12/social/8411ed322ced6.svg" /></a></div>
+        <div class="link"><input class="copy-area" readonly="true" id="copy-link" value="https://blog.hzchu.top/2024/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%A4%96%E7%BD%AE%E7%99%BB%E9%99%86%E4%B8%94%E4%BA%92%E9%80%9A%E7%9A%84fabric%E6%9C%8D%E5%8A%A1%E5%99%A8/" /></div>
+        <div class="social-wrap dis-select"><a class="social share-item wechat" onclick="util.toggle(&quot;qrcode-wechat&quot;)"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://static.hzchu.top/cdn-x/placeholder@1.0.12/social/b32ef3da1162a.svg" /></a><a class="social share-item weibo" target="_blank" rel="external nofollow noopener noreferrer" href="https://service.weibo.com/share/share.php?url=https://blog.hzchu.top/2024/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%A4%96%E7%BD%AE%E7%99%BB%E9%99%86%E4%B8%94%E4%BA%92%E9%80%9A%E7%9A%84fabric%E6%9C%8D%E5%8A%A1%E5%99%A8/&title=搭建一个外置登陆且互通的fabric服务器 - Thun888&summary=我服务器是离线登录的，一直以来都是本地打mod来实现显示皮肤。昨天有人折腾了半天，仔细想想要不整个外置登录吧，然后一步一个坑，记录一下。"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://static.hzchu.top/cdn-x/placeholder@1.0.12/social/80c07e4dbb303.svg" /></a><a class="social share-item email" href="mailto:?subject=搭建一个外置登陆且互通的fabric服务器 - Thun888&amp;body=https://blog.hzchu.top/2024/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%A4%96%E7%BD%AE%E7%99%BB%E9%99%86%E4%B8%94%E4%BA%92%E9%80%9A%E7%9A%84fabric%E6%9C%8D%E5%8A%A1%E5%99%A8/"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://static.hzchu.top/cdn-x/placeholder@1.0.12/social/a1b00e20f425d.svg" /></a><a class="social share-item link" onclick="util.copy(&quot;copy-link&quot;, &quot;复制成功&quot;)"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://static.hzchu.top/cdn-x/placeholder@1.0.12/social/8411ed322ced6.svg" /></a></div>
         
         <div class="qrcode" id="qrcode-wechat" style="opacity:0;height:0">
-          <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://api.qrserver.com/v1/create-qr-code/?size=256x256&data=https://blog.hzchu.top/2024/%E6%8A%8ATg-Channel%E6%8E%A5%E5%85%A5%E5%88%B0Stellar%E6%97%B6%E9%97%B4%E7%BA%BF/"/>
+          <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://api.qrserver.com/v1/create-qr-code/?size=256x256&data=https://blog.hzchu.top/2024/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%A4%96%E7%BD%AE%E7%99%BB%E9%99%86%E4%B8%94%E4%BA%92%E9%80%9A%E7%9A%84fabric%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
         </div>
         
       </div>
     </section>
     </div>
 </article>
-<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/2024/%E8%AE%B0%E4%B8%80%E6%AC%A1%E6%8E%92%E6%9F%A5js%E6%96%87%E4%BB%B6%E5%90%8E%E9%97%A8/">记一次排查js文件后门</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2024/%E4%BD%BF%E7%94%A8Homebox%E5%AE%9E%E7%8E%B0%E5%AE%B6%E7%94%A8%E7%89%A9%E5%93%81%E7%AE%A1%E7%90%86/">使用Homebox实现家用物品管理</a></div></section></div>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2024/%E7%81%AB%E7%BB%926-0%E4%BC%BC%E4%B9%8E%E6%9C%89%E4%B8%80%E5%AE%9A%E6%80%A7%E8%83%BD%E9%97%AE%E9%A2%98/">火绒6.0似乎不太适合开发人员使用——记一次离奇的git错误</a></div></section></div>
 
 
 
@@ -354,13 +358,13 @@
   <footer class="page-footer footnote"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs15">博客</span><a href="/big/">更新日志</a><a href="/bb/">哔哔</a><a href="/archives/">归档</a></div><div class="sitemap-group"><span class="fs15">项目</span><a target="_blank" rel="noopener" href="https://github.com/Mirouterui/mirouter-ui/">Mirouter-ui</a><a href="/wiki/study-notes/">笔记</a><a target="_blank" rel="noopener" href="https://github.com/thun888?tab=repositories">更多</a></div><div class="sitemap-group"><span class="fs15">社交</span><a href="/friends/">友链</a><a target="_blank" rel="noopener" href="https://space.bilibili.com/451090261">B站</a><a href="mailto:thun888@hzchu.top">邮箱</a></div><div class="sitemap-group"><span class="fs15">远方</span><a target="_blank" rel="noopener" href="https://www.travellings.cn/go.html">开往</a><a target="_blank" rel="noopener" href="https://www.foreverblog.cn/go.html">穿梭虫洞</a><a target="_blank" rel="noopener" href="https://travel.moe/go.html">异次元之旅</a></div></div><div class="text"><p>本站由 <a href="/">thun888</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.29.0">Stellar 1.29.0</a> 主题创建。<a href="https://icp.gov.moe/?keyword=20210043" target="_blank">萌ICP备20210043号</a><br />
 本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请<u>注明出处</u>。<br />
 <span id="timeDate">载入天数…</span><span>&amp;</span><span id="times">载入时分秒…</span>，共发表了<span id="all-posts-count">load</span>篇文章，总计<span id="all-post-words">load</span>字</p>
-<script> var allpostscount = "35" ;var allpostswords = "32.5k";gtime_days = Math.floor((new Date() - new Date(1708872181000)) / 1000 / 60 / 60 / 24);</script></div></footer>
+<script> var allpostscount = "35" ;var allpostswords = "32.5k";gtime_days = Math.floor((new Date() - new Date(1721334162000)) / 1000 / 60 / 60 / 24);</script></div></footer>
 <div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
 <div class="widgets">
 
 
 
-<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text"> 前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AD%A3%E6%96%87"><span class="toc-text"> 正文</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%AF%E4%BC%A0%E5%85%A5%E5%8F%82%E6%95%B0"><span class="toc-text"> 可传入参数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9C%A8stellar%E4%B8%AD%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-text"> 在Stellar中的使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B6%E5%AE%83%E7%94%A8%E6%B3%95"><span class="toc-text"> 其它用法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%98%E4%BD%93"><span class="toc-text"> 变体</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%8D%E5%90%91%E7%AD%9B%E9%80%89"><span class="toc-text"> 反向筛选</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E6%9C%AC%E7%AD%9B%E9%80%89"><span class="toc-text"> 文本筛选</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#todo"><span class="toc-text"> Todo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E8%AF%AD"><span class="toc-text"> 结语</span></a></li></ol></div><div class="widget-footer">
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text"> 前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%90%AD%E5%BB%BA"><span class="toc-text"> 搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#blessing-skin"><span class="toc-text"> Blessing Skin</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE"><span class="toc-text"> 修改环境配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%AC%E4%BD%93"><span class="toc-text"> 本体</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-text"> 安装</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%89%A9%E5%B1%95"><span class="toc-text"> 扩展</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98"><span class="toc-text"> 常见问题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B8%B8%E6%88%8F%E6%9C%8D%E5%8A%A1%E7%AB%AF"><span class="toc-text"> 游戏服务端</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B8%B8%E6%88%8F%E6%9C%8D%E5%8A%A1%E7%AB%AF-2"><span class="toc-text"> 游戏服务端</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98-2"><span class="toc-text"> 常见问题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#geyser"><span class="toc-text"> Geyser</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98-3"><span class="toc-text"> 常见问题</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%88%E6%9E%9C"><span class="toc-text"> 效果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%8E"><span class="toc-text"> 后</span></a></li></ol></div><div class="widget-footer">
 
 <a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/></g></svg><span>回到顶部</span></a><a class="buttom" onclick="util.scrollComment()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M10.46 1.25h3.08c1.603 0 2.86 0 3.864.095c1.023.098 1.861.3 2.6.752a5.75 5.75 0 0 1 1.899 1.899c.452.738.654 1.577.752 2.6c.095 1.004.095 2.261.095 3.865v1.067c0 1.141 0 2.036-.05 2.759c-.05.735-.153 1.347-.388 1.913a5.75 5.75 0 0 1-3.112 3.112c-.805.334-1.721.408-2.977.43a10.81 10.81 0 0 0-.929.036c-.198.022-.275.054-.32.08c-.047.028-.112.078-.224.232c-.121.166-.258.396-.476.764l-.542.916c-.773 1.307-2.69 1.307-3.464 0l-.542-.916a10.605 10.605 0 0 0-.476-.764c-.112-.154-.177-.204-.224-.232c-.045-.026-.122-.058-.32-.08c-.212-.023-.49-.03-.93-.037c-1.255-.021-2.171-.095-2.976-.429A5.75 5.75 0 0 1 1.688 16.2c-.235-.566-.338-1.178-.389-1.913c-.049-.723-.049-1.618-.049-2.76v-1.066c0-1.604 0-2.86.095-3.865c.098-1.023.3-1.862.752-2.6a5.75 5.75 0 0 1 1.899-1.899c.738-.452 1.577-.654 2.6-.752C7.6 1.25 8.857 1.25 10.461 1.25M6.739 2.839c-.914.087-1.495.253-1.959.537A4.25 4.25 0 0 0 3.376 4.78c-.284.464-.45 1.045-.537 1.96c-.088.924-.089 2.11-.089 3.761v1c0 1.175 0 2.019.046 2.685c.045.659.131 1.089.278 1.441a4.25 4.25 0 0 0 2.3 2.3c.515.214 1.173.294 2.429.316h.031c.398.007.747.013 1.037.045c.311.035.616.104.909.274c.29.17.5.395.682.645c.169.232.342.525.538.856l.559.944a.52.52 0 0 0 .882 0l.559-.944c.196-.331.37-.624.538-.856c.182-.25.392-.476.682-.645c.293-.17.598-.24.909-.274c.29-.032.639-.038 1.037-.045h.032c1.255-.022 1.913-.102 2.428-.316a4.25 4.25 0 0 0 2.3-2.3c.147-.352.233-.782.278-1.441c.046-.666.046-1.51.046-2.685v-1c0-1.651 0-2.837-.089-3.762c-.087-.914-.253-1.495-.537-1.959a4.25 4.25 0 0 0-1.403-1.403c-.464-.284-1.045-.45-1.96-.537c-.924-.088-2.11-.089-3.761-.089h-3c-1.651 0-2.837 0-3.762.089" clip-rule="evenodd"/><path fill="currentColor" d="M9 11a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><span>参与讨论</span></a></div></widget>
 </div></aside><div class='float-panel blur'>
@@ -698,7 +702,7 @@
       const artalk = Artalk.init({
         el: '#artalk_container',
         pageKey: path,
-        pageTitle: '把Tg Channel接入到Stellar时间线',
+        pageTitle: '搭建一个外置登陆且互通的fabric服务器',
         server: 'https://artalk.hzchu.top',
         placeholder: '此时无声胜有声',
         site: "Thun888",
