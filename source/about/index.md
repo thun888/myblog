@@ -6,6 +6,7 @@ layout: page
 menu_id: about
 leftbar: [recent,travellingslink]
 rightbar: [timeline]
+breadcrumb: false
 ---
 {% banner thun888 avatar:/img/avatar.webp bg:https://onep.hzchu.top/mount/pic/2024/02/06/65c236823dbca.webp?fmt=avif %}
 {% navbar active:/about/ [关于](/about/) [友链](/friends/) [留言](/say/) %}
@@ -67,7 +68,3 @@ rightbar: [timeline]
 {% endtimeline %}
 
 {% endtabs %}
-
-<script>
-  document.querySelector('.banner.top').style.display = 'none'
-</script>
