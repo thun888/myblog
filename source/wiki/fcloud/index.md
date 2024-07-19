@@ -133,8 +133,8 @@ MCDR list:
 
 在注册完成并新建角色后，连接服务器，可见如下画面
 
-![1721376828893](https://onep.hzchu.top/mount/pic/myself/2024/07/669a20490f432.jpg)
+{% image https://onep.hzchu.top/mount/pic/myself/2024/07/669a784e7a782.jpg?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/669a784e7a782.jpg Screenshot_2024-07-19-22-28-20-596_com.mojang.minecraftpe.jpg %}
 
-点击使用Mojang账户登录后填写皮肤站的账号（或角色名称）和密码即可
+点击使用Fclouds Skins账户登录后填写角色名称（或皮肤站的账号）和密码即可
 
-![1721376828892](https://onep.hzchu.top/mount/pic/myself/2024/07/669a207a8b0d7.jpg)
+{% image https://onep.hzchu.top/mount/pic/myself/2024/07/669a78507e85a.jpg?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/669a78507e85a.jpg Screenshot_2024-07-19-22-28-00-763_com.mojang.minecraftpe.jpg %}

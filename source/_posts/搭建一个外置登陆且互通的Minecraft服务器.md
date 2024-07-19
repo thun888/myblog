@@ -158,6 +158,17 @@ location / {
 
 4. 参考[这里](https://github.com/thun888/Geyser/pull/1/files)来进行修改代码，修改完毕后推送到新分支
 
+   > 本地化处理：
+   >
+   > 原仓库对于外置登录做了些文本上的调整，运行以下命令切换
+   >
+   > ```bash
+   > git rm --cached "core/src/main/resources/languages"
+   > git submodule add https://github.com/Silverteal/geyser-languages-for-custom-yggdrasil.git core/src/main/resources/languages
+   > ```
+   >
+   > 
+
    {% copy git push --set-upstream origin build prefix:$ %}
 
 5. 随后启用action并在action选择对应的分支构建
