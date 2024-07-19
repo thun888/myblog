@@ -4,7 +4,7 @@ h1: ''
 date: 2021-07-29 19:00:02
 layout: page
 menu_id: about
-leftbar: [recent,travellingslink]
+leftbar: [recent]
 rightbar: [timeline]
 breadcrumb: false
 ---
@@ -49,8 +49,6 @@ breadcrumb: false
 |Alipay|Wechat|
 |-|-|
 |<img src="https://onep.hzchu.top/mount/pic/2023/01/25/63d0a914495c1.webp" style="zoom:60%;" />|<img src="https://onep.hzchu.top/mount/pic/2024/03/08/65eaa4508662b.webp?fmt=avif" style="zoom:40%;" />|
-
-或者，你可以使用[爱发电](https://afdian.net/a/thun888){% emoji blobcat blobcatmelt %}
 
 {% quot Todo %}
 
