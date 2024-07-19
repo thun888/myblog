@@ -14,7 +14,7 @@ rightbar: [friends_timeline]
 
 {% quot 大佬 icon:hashtag %}
 
-{% friends mogul %}
+{% sites mogul %}
 
 {% quot 我可以交换友链吗？ %}
 
