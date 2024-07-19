@@ -107,13 +107,13 @@ MCDR list:
 
 为方便玩家使用皮肤，我服以正式启用外置登录作为新的登录方式
 
-**由于Geyser与外置登录不兼容，以下操作仅针对Java版玩家，BE玩家可跳转至最后**
-
-### Java
+### JE
 
 1. 进入[FClouds Skins](https://mcskin.hzchu.top/)注册账户并登录（邮箱请使用您的qq号加上@qq.com，邀请码从群内获取）
 
    {% image https://onep.hzchu.top/mount/pic/myself/2024/07/66991b6af202e.png?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/66991b6af202e.png image-20240718214053637 %}
+
+   > 对于BE玩家请跳过以下部分
 
 2. 调整本地启动器。为启动器添加外置登录，对于支持的启动器，你可以直接将此按钮拖动至启动器。如启动器不支持，可以自行百度，接入点为`https://mcskin.hzchu.top/api/yggdrasil`
 
@@ -129,7 +129,12 @@ MCDR list:
 
 ### BE
 
-向管理员发送您的游戏名称以添加至白名单即可
+> 只可新建一个角色！
 
-> 在使用floodgate后，原有玩家名称会在前面加上`_`以区分，因此可能导致玩家数据“对不上”，请在在线时联系管理员迁移
+在注册完成并新建角色后，连接服务器，可见如下画面
 
+![1721376828893](https://onep.hzchu.top/mount/pic/myself/2024/07/669a20490f432.jpg)
+
+点击使用Mojang账户登录后填写皮肤站的账号（或角色名称）和密码即可
+
+![1721376828892](https://onep.hzchu.top/mount/pic/myself/2024/07/669a207a8b0d7.jpg)
