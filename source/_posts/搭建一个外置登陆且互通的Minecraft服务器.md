@@ -177,7 +177,9 @@ location / {
 
 6. 在构建完成后下载（我这里是独立版，插件版操作类似
 
-   {% image https://onep.hzchu.top/mount/pic/myself/2024/07/669a198d353ed.png?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/669a198d353ed.png image-20240719154515578 %}
+   {% image https://onep.hzchu.top/mount/pic/myself/2024/07/669b1140da0bb.png?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/669b1140da0bb.png 在action页面里找到刚刚完成的构建 %}
+
+   {% image https://onep.hzchu.top/mount/pic/myself/2024/07/669a198d353ed.png?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/669a198d353ed.png 下载到本地 %}
 
 7. 运行并调整配置即可
 
