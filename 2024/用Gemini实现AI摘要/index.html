@@ -203,16 +203,16 @@
 <p>理论上，直接替换summary.tianli0.top为你对应域名即可，但在很多情况下，你还需要额外删减一些无关api调用，如openid生成</p>
 <p>这是我修改后的程序，可以参考</p>
 
-    <div class="tag-plugin ds-coding" id="coding-7spp8x806"></div>
+    <div class="tag-plugin ds-coding" id="coding-a41v37en9"></div>
     <script>
     addEventListener("load",function(){
-      console.log('[hexo-dynamic-codeblock]start load：coding-7spp8x806' );
+      console.log('[hexo-dynamic-codeblock]start load：coding-a41v37en9' );
       utils.jq(() => {
         $(function () {
-          const el = document.getElementById('coding-7spp8x806');
+          const el = document.getElementById('coding-a41v37en9');
             utils.request(el, "https://hightlight-code-api.hzchu.top/api/v1/generate?url=https%3A%2F%2Fraw.githubusercontent.com%2Fthun888%2Fmyblog%2Fmain%2Fsource%2Fjs%2Fchuckle-post-ai.js&lang=js&usejson=true", function (data) {
               $(el).append(data.result);
-              addCopyButtons('coding-7spp8x806');
+              addCopyButtons('coding-a41v37en9');
             });
           });
       });
@@ -611,7 +611,7 @@
 
   <script type="module">
   const el = document.getElementById('artalk_container');
-  util.viewportLazyload(el, load_artalk, true);
+  util.viewportLazyload(el, load_artalk, false);
 
   function load_artalk() {
     if (!el) return;
