@@ -20,6 +20,8 @@ updated: 2024-06-08 12:05:32
 
 [DDNS TELEGRAM BOT搭建教程 · wukibaka/ddns-telegram-bot Wiki (github.com)](https://github.com/wukibaka/ddns-telegram-bot/wiki/DDNS-TELEGRAM-BOT搭建教程)
 
+[在fstab文件中配置UUID方式自动挂载数据盘_云服务器 ECS(ECS)-阿里云帮助中心 (aliyun.com)](https://help.aliyun.com/zh/ecs/use-cases/configure-uuids-in-the-fstab-file-to-automatically-attach-data-disks)
+
 ## 工具
 
 [百度文库下载](https://www.mmhtml.com/)

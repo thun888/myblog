@@ -148,7 +148,7 @@ article:
 ######## Comments ########
 comments:
   service: artalk
-  lazyload: true # true / false
+  lazyload: false # true / false
   comment_title: 留下你的足迹吧~ <img no-lazy style="margin-left:10px; height:50px; display:initial;" src="https://static.hzchu.top/waline-blobcatemojis@1.0/blobs/blobcatpeekaboo.png">
   # Artalk
   # https://artalk.js.org/
