@@ -29,7 +29,7 @@ mermaid: true
 
 因为我这网站也没多少流量，并发不高，我更倾向葫芦娃救爷爷式的单节点当主力，挂了再切换到其它节点的方式。
 
-最后就是轻量，总不能把od下放到每个节点吧。{% emoji blobcat blobcatneutral%}
+最后就是轻量，加上安全性问题总不能把od下放到每个节点吧。{% emoji blobcat blobcatneutral%}
 
 故：
 

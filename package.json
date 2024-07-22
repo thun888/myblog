@@ -12,6 +12,7 @@
     "version": "7.3.0"
   },
   "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
     "hexo": "^7.3.0",
     "hexo-dynamic-codeblock": "^1.0.3",
     "hexo-filter-mermaid-diagrams": "^1.0.5",
@@ -21,10 +22,12 @@
     "hexo-generator-index": "^4.0.0",
     "hexo-generator-sitemap": "^3.0.1",
     "hexo-generator-tag": "^2.0.0",
+    "hexo-helper-structured-data": "github:gazf/hexo-helper-structured-data",
     "hexo-math-fastcdn": "^5.0.1",
     "hexo-renderer-ejs": "^2.0.0",
     "hexo-renderer-markdown-it-plus": "^1.0.6",
     "hexo-renderer-stylus": "^3.0.1",
+    "hexo-safego": "^2.0.0",
     "hexo-server": "^3.0.0",
     "hexo-theme-landscape": "^1.0.0",
     "hexo-wordcount": "^6.0.1",

@@ -100,7 +100,7 @@ updated: 2023-08-28 15:25:56
 
 > 使用 `curl https://mruiapi.hzchu.top/downloadconfig -o config.json` 手动下载
 
-2. 无法下载配置文件
+2. 无法下载静态文件
 
 从[Mirouterui/static: 前端静态文件 (github.com)](https://d.hzchu.top/d)下载，并解压到`static`目录
 
