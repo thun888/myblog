@@ -121,7 +121,7 @@ search:
 
 # hexo-neat
 # 博文压缩
-neat_enable: false
+neat_enable: true
 # 压缩html
 neat_html:
   enable: true
@@ -134,13 +134,8 @@ neat_css:
 # 压缩js
 neat_js:
   enable: true
-  mangle: true
-  output:
-  compress:
   exclude:
     - '**/*.min.js'
-    - '**/jquery.fancybox.pack.js'
-    - '**/index.js'  
 
 # Post wordcount display settings
 # Dependencies: https://github.com/willin/hexo-wordcount
