@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/notes/linux/</loc>
-    
-    <lastmod>2024-07-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.hzchu.top/vercel.json</loc>
     
     <lastmod>2024-07-22</lastmod>
@@ -47,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/go</loc>
+    <loc>https://blog.hzchu.top/wiki/notes/linux/</loc>
     
     <lastmod>2024-07-22</lastmod>
     
@@ -56,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/friends/</loc>
+    <loc>https://blog.hzchu.top/go</loc>
     
     <lastmod>2024-07-22</lastmod>
     
@@ -84,6 +75,15 @@
   
   <url>
     <loc>https://blog.hzchu.top/big/</loc>
+    
+    <lastmod>2024-07-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/friends/</loc>
     
     <lastmod>2024-07-22</lastmod>
     
@@ -317,7 +317,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/study-notes/english/small-composition/</loc>
+    <loc>https://blog.hzchu.top/wiki/study-notes/english/vocabulary/</loc>
     
     <lastmod>2024-06-07</lastmod>
     
@@ -326,7 +326,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/study-notes/english/vocabulary/</loc>
+    <loc>https://blog.hzchu.top/wiki/study-notes/english/small-composition/</loc>
     
     <lastmod>2024-06-07</lastmod>
     
@@ -768,14 +768,14 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/Windows/</loc>
+    <loc>https://blog.hzchu.top/tags/%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2024-07-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/%E7%AC%94%E8%AE%B0/</loc>
+    <loc>https://blog.hzchu.top/tags/Windows/</loc>
     <lastmod>2024-07-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -894,14 +894,14 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/%E7%81%AB%E7%BB%92/</loc>
+    <loc>https://blog.hzchu.top/tags/CFW/</loc>
     <lastmod>2024-07-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/CFW/</loc>
+    <loc>https://blog.hzchu.top/tags/%E7%81%AB%E7%BB%92/</loc>
     <lastmod>2024-07-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
