@@ -337,3 +337,7 @@ document.addEventListener('DOMContentLoaded', function() {
 {% image https://onep.hzchu.top/mount/pic/myself/2024/06/66651159c2473.png?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/06/66651159c2473.png Chrome69 %}
 
 在旧版本中，程序均能正常运行，但在chrome的旧版本中因stellar的原因无法加载{% emoji blobcat blobcatsadreach %}
+
+
+
+{% note 注 小心[内存泄漏](https://github.com/gographics/imagick/issues/136) color:red %}
