@@ -15,14 +15,14 @@ updated: 2024-07-19 20:05:32
 
 ## 简要介绍
 
-这是一个纯生存¹的公益服（1.20.1），为了更多玩家游玩，我们关闭了正版验证²。
-采用fabric服务端，偏生电。
+这是一个纯生存¹的公益服（1.20.1），为了更多玩家游玩，我们关闭了正版验证，并使用外置登录²。
+采用Fabric服务端，对生电友好。
 同时，我们加入了一些实用类插件³，在不破坏原版体验下提高玩家体验。
 
 **注**：
 
 1. 内测期间玩家流失严重，开启了死亡不掉落降低难度
-2. 为规范玩家行为，维护游戏内秩序，我们实行`一QQ一游戏名`绑定制度（白名单）。若无QQ，亦可通过有效联系方式向我们发送申请
+2. 参阅下文
 3. 以下为插件列表：
 
 | MOD名                                                        | 简析                                                         |
@@ -70,23 +70,15 @@ MCDR list:
 | AdvancedCalculator | 计算器           |
 | Beep               | @对方            |
 | DayCountNBT        | 显示开服天数     |
-| Bot                | 记录假人         |
-| QuickBackupM       | 备份             |
+| Bot                | 假人管理         |
+| PrimeBackup        | 备份             |
 | talk               | 记录玩家聊天信息 |
 
 ## 游玩流程
 
 1. 添加[Q群](https://jq.qq.com/?_wv=1027&k=erVXhRym)
 
-   > ~~如果没有QQ，可[在此填写问卷](https://wj.qq.com/s2/12627429/8ace/)。（2个星期审核一次）~~
-   >
-   > 考虑到一些因素，已废弃
-
-2. {% del 发送“`绑定` `<playername>`”以添加白名单（若仍无法进入参考"疑难解答"）（解绑可发送“`解绑`”） %}
-
-   > 机器人账户经常被腾讯踢下线&验证，这是我们没法预防的
-
-   请联系管理员，提供你的游戏名称以添加
+2. 在皮肤站注册（参阅下文）
 
 3. 下载客户端（集成相应mod，亦可自行使用1.20.1原版）
 
@@ -102,11 +94,13 @@ MCDR list:
 
 
 
+> BE玩家使用[该版本](https://pan.hzchu.top/s/wbCv)游玩
+
 
 
 ## 外置登录使用
 
-为方便玩家使用皮肤，我服以正式启用外置登录作为新的登录方式
+为方便玩家使用皮肤，简化操作难度，我服已正式启用外置登录作为新的登录方式
 
 ### JE
 
@@ -124,9 +118,7 @@ MCDR list:
 
    {% image https://onep.hzchu.top/mount/pic/myself/2024/07/66991c638e222.png?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/66991c638e222.png image-20240718214502311 %}
 
-4. 向管理员发送您的游戏名称以添加至白名单
-
-5. enjoy it!
+4. enjoy it!
 
 ### BE
 
@@ -139,3 +131,5 @@ MCDR list:
 点击使用Fclouds Skins账户登录后填写角色名称（或皮肤站的账号）和密码即可
 
 {% image https://onep.hzchu.top/mount/pic/myself/2024/07/669a78507e85a.jpg?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/669a78507e85a.jpg Screenshot_2024-07-19-22-28-00-763_com.mojang.minecraftpe.jpg %}
+
+{% image https://onep.hzchu.top/mount/pic/myself/2024/07/669fbd2150b20.gif download:https://onep.hzchu.top/mount/pic/myself/2024/07/669fbd2150b20.gif 全程录制 %}

@@ -4,7 +4,6 @@ wiki: fcloud
 title: 插件介绍
 order: 7
 updated: 2023-06-21 21:32:32
-
 ---
 
 > 本篇为[实用命令](/wiki/fcloud/command/)的扩展
@@ -13,13 +12,13 @@ updated: 2023-06-21 21:32:32
 
 ## 内部插件
 
-#### 死亡日志
+### 死亡日志
 
 {% image https://onep.hzchu.top/mount/pic/2023/06/21/6492fdec314aa.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/2023/06/21/6492fdec314aa.webp  %}
 
 > 需搭配客户端mod
 
-#### Image2map
+### Image2map
 
 视频：
 
@@ -41,7 +40,7 @@ var player = new DogePlayer({
 >
 > 请勿使用该服务传播违法消息！
 
-#### ShowMeWhatYouGot
+### ShowMeWhatYouGot
 
 {% image https://onep.hzchu.top/mount/pic/2023/06/21/6493045e428fc.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/2023/06/21/6493045e428fc.webp 1687356500644.webp %}
 
@@ -49,7 +48,7 @@ var player = new DogePlayer({
 
 > 显示详情需搭配客户端mod
 
-#### 语音交流
+### 语音交流
 
 参阅[[SVC\]简单的语音聊天 (Simple Voice Chat) - MC百科|最大的Minecraft中文MOD百科 (mcmod.cn)](https://www.mcmod.cn/class/3693.html)
 
@@ -57,17 +56,19 @@ var player = new DogePlayer({
 
 ## 外部插件（MCDR）
 
-#### Beep
+### Beep
 
 格式：`@ playername`
 
-#### Bot
+### Bot
 
 假人管理
 
 {% image https://onep.hzchu.top/mount/pic/2023/06/21/64930a5c73996.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/2023/06/21/64930a5c73996.webp 1687358035344.webp %}
 
-#### QBM
+### QBM
+
+{% note 废弃 color:warning %}
 
 备份
 
@@ -75,7 +76,7 @@ var player = new DogePlayer({
 
 {% image https://onep.hzchu.top/mount/pic/2023/06/21/64930a3403607.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/2023/06/21/64930a3403607.webp 1687357994298.webp %}
 
-#### DayCountNBT
+### DayCountNBT
 
 {% image https://onep.hzchu.top/mount/pic/2023/05/13/645f6a7aa15a2.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/2023/05/13/645f6a7aa15a2.webp 1683974777405.webp %}
 
@@ -85,9 +86,11 @@ var player = new DogePlayer({
 
 ## QBOT
 
+{% note 注意 由于腾讯对机器人类项目围堵，且官方机器人接入麻烦，已暂停机器人使用 color:warning %}
+
 在Q群中，您可以通过发送关键词来触发机器人
 
-#### 绑定
+### 绑定
 
 用于添加白名单
 
@@ -95,25 +98,25 @@ var player = new DogePlayer({
 
 {% image https://onep.hzchu.top/mount/pic/2023/06/21/64930b98ad3ac.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/2023/06/21/64930b98ad3ac.webp 1687358341046.webp %}
 
-#### 解绑
+### 解绑
 
 用于取消白名单
 
-#### ~~离线账号修复~~
+### ~~离线账号修复~~
 
 ~~顾名思义，用于修复无白名单错误~~
 
-#### 正常流程绑定
+### 正常流程绑定
 
 用**离线账号修复**的逻辑替代了**绑定**，如果出现问题可以试试原版的
 
-#### ！！上传图片
+### ！！上传图片
 
 并不需要关键词，只需要@Bot并带上图片即可，将上传到[峰间云海|相册](https://mcweb.hzchu.top/photo/)
 
 {% image https://onep.hzchu.top/mount/pic/2023/07/14/64b169ea5fc2e.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/2023/07/14/64b169ea5fc2e.webp 1689348584454.webp %}
 
-#### be绑定
+### be绑定
 
 > 同**绑定**
 >
@@ -121,6 +124,6 @@ var player = new DogePlayer({
 >
 > 需在**绑定**前进行
 
-#### be解绑
+### be解绑
 
 > 同**解绑**

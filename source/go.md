@@ -16,7 +16,7 @@ breadcrumb: false
 
 
 
-### 将在 <span id="countdown">5</span> 秒后跳转，请自行确认链接安全性
+### 将在 <span id="countdown">10</span> 秒后跳转，请自行确认链接安全性
 
 {% button 取消跳转 javascript:closeWindow() %}
 
