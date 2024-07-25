@@ -37,8 +37,8 @@ rightbar: [friends_timeline]
   url: https://blog.hzchu.top/
   avatar: https://blog.hzchu.top/img/avatar.webp
   screenshot: https://onep.hzchu.top/mount/pic/blog-hzchu-top.png
-  description: 夏日当空,心如深渊
-{% endcodeblock %}
+  description: 夏日当空，心如深渊
+  {% endcodeblock %}
 
 <!-- tab 通用 -->
 
@@ -56,7 +56,7 @@ rightbar: [friends_timeline]
 
 {% copy https://onep.hzchu.top/mount/pic/2024/02/06/65c236823dbca.webp prefix:background %}
 
-{% copy 夏日当空,心如深渊 prefix:description %}
+{% copy 夏日当空，心如深渊 prefix:description %}
 
 {% endgrid %}
 
