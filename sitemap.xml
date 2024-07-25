@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/say/</loc>
+    <loc>https://blog.hzchu.top/settings/</loc>
     
     <lastmod>2024-07-25</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/settings/</loc>
+    <loc>https://blog.hzchu.top/say/</loc>
     
     <lastmod>2024-07-25</lastmod>
     
@@ -308,6 +308,15 @@
   </url>
   
   <url>
+    <loc>https://blog.hzchu.top/wiki/study-notes/chemistry/make-reactions/</loc>
+    
+    <lastmod>2024-06-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.hzchu.top/wiki/study-notes/english/big-composition/</loc>
     
     <lastmod>2024-06-07</lastmod>
@@ -327,15 +336,6 @@
   
   <url>
     <loc>https://blog.hzchu.top/wiki/study-notes/english/vocabulary/</loc>
-    
-    <lastmod>2024-06-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/wiki/study-notes/chemistry/make-reactions/</loc>
     
     <lastmod>2024-06-07</lastmod>
     
