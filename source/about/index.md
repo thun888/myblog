@@ -36,6 +36,14 @@ breadcrumb: false
 
 平时大部分时间在学校，有事情回家才会处理：<img style="display: inline-block;" src="https://onlinedisplay-api.hzchu.top/get/badge" alt="badge">
 
+{% quot 联系方式 icon:hashtag %}
+
+- 邮箱: thun888#hzchu.top
+- TG: thun888
+- 本站: [留言区](/say)
+
+当然，你也可以在其它地方联系我，不过可能回复较慢{% emoji blobcat blobcatnomblobcat %}
+
 {% quot 目前参与/开发项目 %}
 
 {% hashtag Mirouter-ui https://github.com/Mirouterui/mirouter-ui/ color:yellow %}
