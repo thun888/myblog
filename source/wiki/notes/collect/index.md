@@ -46,5 +46,5 @@ updated: 2024-06-08 12:05:32
 
 [百度文库下载](https://www.mmhtml.com/)
 
-
+1. 数据库管理：[DBeaver](https://dbeaver.io/)
 
