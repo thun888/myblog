@@ -33,7 +33,7 @@ useai: false
 
 {% button 禁用/启用 javascript:switchselectFastNode(); %}
 
-{% button 更新节点信息 javascript:freshONEP(); %}
+{% button 更新节点信息 javascript:refreshONEP(); %}
 
 ## Ai摘要
 
