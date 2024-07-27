@@ -53,7 +53,7 @@ function switchaisummary() {
     initstatus()
 }
 
-function freshONEP() {
+function refreshONEP() {
     selectFastNode(true);
     // 似乎localstorage有延迟
     setTimeout(function(){
