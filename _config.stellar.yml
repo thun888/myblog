@@ -36,6 +36,11 @@ menubar:
 ######## head tags ########
 preconnect:
    - https://static.hzchu.top
+   - https://raw.hzchu.top
+   - https://seeyou.hzchu.top
+   - https://artalk.hzchu.top
+   - https://onep.hzchu.top
+   - https://dolphinsbukets.s3.bitiful.net
 
 ######## Main ########
 # 站点主结构树
