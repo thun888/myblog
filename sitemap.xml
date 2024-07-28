@@ -11,6 +11,15 @@
   </url>
   
   <url>
+    <loc>https://blog.hzchu.top/wiki/Artalk-doc/use/</loc>
+    
+    <lastmod>2024-07-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.hzchu.top/wiki/notes/linux/</loc>
     
     <lastmod>2024-07-28</lastmod>
@@ -47,15 +56,6 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/Artalk-doc/use/</loc>
-    
-    <lastmod>2024-07-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.hzchu.top/config.json</loc>
     
     <lastmod>2024-07-28</lastmod>
@@ -74,7 +74,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/about/</loc>
+    <loc>https://blog.hzchu.top/bb/</loc>
     
     <lastmod>2024-07-28</lastmod>
     
@@ -92,7 +92,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/bb/</loc>
+    <loc>https://blog.hzchu.top/friends/</loc>
     
     <lastmod>2024-07-28</lastmod>
     
@@ -101,7 +101,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/friends/</loc>
+    <loc>https://blog.hzchu.top/about/</loc>
     
     <lastmod>2024-07-28</lastmod>
     
@@ -765,13 +765,6 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/AHK/</loc>
-    <lastmod>2024-07-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.hzchu.top/tags/Go/</loc>
     <lastmod>2024-07-28</lastmod>
     <changefreq>weekly</changefreq>
@@ -780,6 +773,13 @@
   
   <url>
     <loc>https://blog.hzchu.top/tags/%E7%BD%91%E7%AB%99/</loc>
+    <lastmod>2024-07-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/tags/AHK/</loc>
     <lastmod>2024-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
