@@ -11,24 +11,6 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/Artalk-doc/use/</loc>
-    
-    <lastmod>2024-07-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/wiki/notes/linux/</loc>
-    
-    <lastmod>2024-07-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.hzchu.top/vercel.json</loc>
     
     <lastmod>2024-07-28</lastmod>
@@ -56,6 +38,24 @@
   </url>
   
   <url>
+    <loc>https://blog.hzchu.top/wiki/Artalk-doc/use/</loc>
+    
+    <lastmod>2024-07-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/wiki/notes/linux/</loc>
+    
+    <lastmod>2024-07-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.hzchu.top/config.json</loc>
     
     <lastmod>2024-07-28</lastmod>
@@ -66,6 +66,15 @@
   
   <url>
     <loc>https://blog.hzchu.top/go</loc>
+    
+    <lastmod>2024-07-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/about/</loc>
     
     <lastmod>2024-07-28</lastmod>
     
@@ -93,15 +102,6 @@
   
   <url>
     <loc>https://blog.hzchu.top/friends/</loc>
-    
-    <lastmod>2024-07-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/about/</loc>
     
     <lastmod>2024-07-28</lastmod>
     
@@ -245,7 +245,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/study-notes/biology/history/</loc>
+    <loc>https://blog.hzchu.top/wiki/study-notes/biology/test/</loc>
     
     <lastmod>2024-06-29</lastmod>
     
@@ -254,7 +254,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/study-notes/biology/test/</loc>
+    <loc>https://blog.hzchu.top/wiki/study-notes/biology/history/</loc>
     
     <lastmod>2024-06-29</lastmod>
     
@@ -614,7 +614,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/Artalk-doc/QandA/</loc>
+    <loc>https://blog.hzchu.top/wiki/Artalk-doc/develop/</loc>
     
     <lastmod>2022-02-12</lastmod>
     
@@ -623,7 +623,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/Artalk-doc/develop/</loc>
+    <loc>https://blog.hzchu.top/wiki/Artalk-doc/QandA/</loc>
     
     <lastmod>2022-02-12</lastmod>
     
@@ -765,20 +765,6 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/Go/</loc>
-    <lastmod>2024-07-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/tags/%E7%BD%91%E7%AB%99/</loc>
-    <lastmod>2024-07-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.hzchu.top/tags/AHK/</loc>
     <lastmod>2024-07-28</lastmod>
     <changefreq>weekly</changefreq>
@@ -787,6 +773,20 @@
   
   <url>
     <loc>https://blog.hzchu.top/tags/Windows/</loc>
+    <lastmod>2024-07-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/tags/Go/</loc>
+    <lastmod>2024-07-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/tags/%E7%BD%91%E7%AB%99/</loc>
     <lastmod>2024-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -828,14 +828,14 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/Blog/</loc>
+    <loc>https://blog.hzchu.top/tags/MC/</loc>
     <lastmod>2024-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/MC/</loc>
+    <loc>https://blog.hzchu.top/tags/Blog/</loc>
     <lastmod>2024-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -891,14 +891,14 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/Vercel/</loc>
+    <loc>https://blog.hzchu.top/tags/%E5%85%AC%E5%91%8A/</loc>
     <lastmod>2024-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/%E5%85%AC%E5%91%8A/</loc>
+    <loc>https://blog.hzchu.top/tags/Vercel/</loc>
     <lastmod>2024-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -926,14 +926,14 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/linux/</loc>
+    <loc>https://blog.hzchu.top/tags/Cloudflare/</loc>
     <lastmod>2024-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/Cloudflare/</loc>
+    <loc>https://blog.hzchu.top/tags/linux/</loc>
     <lastmod>2024-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
