@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const data = JSON.parse(storedData);
       const now = new Date();
       if (data.link === null && now.getTime() - data.time < 5 * 60 * 1000 && !force) {
-        console.log('Skipping due to recent failure to fetch nodes.');
+        console.log('[ONEP,selectFastNode] Skipping due to recent failure to fetch nodes.');
         return;
       } else if (now.getTime() - data.time < 5 * 60 * 1000 && !force) {
         replaceImageSource(data.link);
