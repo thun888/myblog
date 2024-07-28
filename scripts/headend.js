@@ -3,7 +3,6 @@
 // code block copy
 hexo.extend.injector.register("head_end", function () {
   return `
-  <meta name="yandex-verification" content="26edef25b1a67b8a" />
   <link rel="stylesheet" href="https://static.hzchu.top/lxgw-wenkai-screen-webfont@1.1.0/lxgwwenkaiscreen.css" media="all">
   <link rel="stylesheet" href="/mcss/mcss.css">
   <style>
