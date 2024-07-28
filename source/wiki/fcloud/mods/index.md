@@ -2,7 +2,6 @@
 # layout: wiki
 wiki: fcloud
 title: 插件介绍
-order: 7
 updated: 2023-06-21 21:32:32
 ---
 
@@ -41,6 +40,8 @@ var player = new DogePlayer({
 > 请勿使用该服务传播违法消息！
 
 ### ShowMeWhatYouGot
+
+> 弃用
 
 {% image https://onep.hzchu.top/mount/pic/2023/06/21/6493045e428fc.webp?fmt=avif download:https://onep.hzchu.top/mount/pic/2023/06/21/6493045e428fc.webp 1687356500644.webp %}
 

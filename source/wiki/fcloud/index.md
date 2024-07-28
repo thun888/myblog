@@ -15,7 +15,7 @@ updated: 2024-07-19 20:05:32
 
 ## 简要介绍
 
-这是一个纯生存¹的公益服（1.20.1），为了更多玩家游玩，我们关闭了正版验证，并使用外置登录²。
+这是一个纯生存¹的公益服（1.21），为了更多玩家游玩，我们关闭了正版验证，并使用外置登录²。
 采用Fabric服务端，对生电友好。
 同时，我们加入了一些实用类插件³，在不破坏原版体验下提高玩家体验。
 
@@ -30,22 +30,17 @@ updated: 2024-07-19 20:05:32
 | [Carpet](https://github.com/gnembon/fabric-carpet)           | 地毯端，提供一些实用的功能                                   |
 | [Carpet-tis](https://github.com/TISUnion/Carpet-TIS-Addition) | 一个 [Carpet](https://github.com/gnembon/fabric-carpet) (fabric-carpet) 的扩展 mod |
 | gugle-carpet-addition                                        | 一个 [Carpet](https://github.com/gnembon/fabric-carpet) (fabric-carpet) 的扩展 mod |
-| CarpetTCTCAddition                                           | 一个 [Carpet](https://github.com/gnembon/fabric-carpet) (fabric-carpet) 的扩展 mod |
 | essentialaddons                                              | 一个 [Carpet](https://github.com/gnembon/fabric-carpet) (fabric-carpet) 的扩展 mod |
 | minitweaks                                                   | 一个 [Carpet](https://github.com/gnembon/fabric-carpet) (fabric-carpet) 的扩展 mod |
 | Voicechat                                                    | 语音聊天，需搭配对应客户端mod                                |
-| ShowMeWhatYouGot                                             | 在聊天框中展现物品                                           |
 | Dynmap                                                       | 在线地图                                                     |
 | Essential_commands                                           | 提供一些实用的命令                                           |
 | [Image2map](https://www.mcmod.cn/class/3006.html)            | 将图片转化为地图                                             |
 | [HTM](https://www.mcmod.cn/class/5172.html)                  | *用于保护您的箱子、潜影盒、木桶、熔炉、高炉、烟熏炉等容器并设置信任人们打开它们。* |
 | [Letmedespawn](https://www.mcmod.cn/class/7415.html)         | *即便一个生物拿起过武器、盔甲或者别的东西，它也会自然消失。当它们消失时，拿起的东西都会重新掉到地上* |
-| syncmatica                                                   | 共享原理图                                                   |
 | [Deathlog](https://www.mcmod.cn/class/4113.html)             | 死亡日志，记录死亡地点和背包物品                             |
 | servux                                                       | MiniHUD服务端                                                |
 | Debugify                                                     | 修bug                                                        |
-| [Starlight](https://www.mcmod.cn/class/3303.html)            | 优化光照渲染                                                 |
-| quickshulker                                                 | 空中开盒                                                     |
 | NoChatReports                                                | 禁止聊天举报                                                 |
 | Jade                                                         | 玉支持                                                       |
 | [LuckPerms](https://luckperms.net/)                          | 权限管理                                                     |
@@ -56,11 +51,9 @@ updated: 2024-07-19 20:05:32
 | Clumps                                                       | 优化                                                         |
 | Chunky                                                       | 区块预加载                                                   |
 | chunksending                                                 | 优化                                                         |
-| nounusedchunks                                               | 优化                                                         |
 | smoothchunk                                                  | 优化                                                         |
 | servercore                                                   | 优化                                                         |
 | MCMOD                                                        | 优化                                                         |
-| memoryleakfix                                                | 优化                                                         |
 | vmp                                                          | 优化                                                         |
 
 MCDR list:
@@ -80,21 +73,11 @@ MCDR list:
 
 2. 在皮肤站注册（参阅下文）
 
-3. 下载客户端（集成相应mod，亦可自行使用1.20.1原版）
-
-   -  下载HMCL[[点击下载]](https://share.hzchu.top/api/raw/?path=/MC/fcmodpack/HMCL3.2%E5%90%AF%E5%8A%A8%E5%99%A8.exe)
-
-   -  安装`1.20.1` + `fabric` 
-
-   - 下载[模组包](https://thun888.lanzoum.com/itLw210fm8kh)
-
-   -  解压到游戏目录中mod文件夹
+3. 下载`1.21`客户端
 
 4. 在群公告里获取IP并连接
 
-
-
-> BE玩家使用[该版本](https://pan.hzchu.top/s/wbCv)游玩
+> BE玩家从[这里](https://bbk.endyun.ltd/main)下载1.21版本游玩
 
 
 
@@ -128,8 +111,6 @@ MCDR list:
 
 {% image https://onep.hzchu.top/mount/pic/myself/2024/07/669a784e7a782.jpg?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/669a784e7a782.jpg Screenshot_2024-07-19-22-28-20-596_com.mojang.minecraftpe.jpg %}
 
-点击使用Fclouds Skins账户登录后填写角色名称（或皮肤站的账号）和密码即可
+点击使用`Mojang`账户登录后填写角色名称（或皮肤站的账号）和密码即可
 
 {% image https://onep.hzchu.top/mount/pic/myself/2024/07/669a78507e85a.jpg?fmt=avif download:https://onep.hzchu.top/mount/pic/myself/2024/07/669a78507e85a.jpg Screenshot_2024-07-19-22-28-00-763_com.mojang.minecraftpe.jpg %}
-
-{% image https://onep.hzchu.top/mount/pic/myself/2024/07/669fbd2150b20.gif download:https://onep.hzchu.top/mount/pic/myself/2024/07/669fbd2150b20.gif 全程录制 %}

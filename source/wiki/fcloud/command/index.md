@@ -2,7 +2,6 @@
 # layout: wiki
 wiki: fcloud
 title: 实用命令
-order: 6
 updated: 2023-05-01 14:01:32
 ---
 
@@ -43,6 +42,8 @@ updated: 2023-05-01 14:01:32
 - `/wastebin` 打开垃圾桶
 
 ### HTM（箱子锁）
+
+> 弃用
 
 1. 检查：
 
