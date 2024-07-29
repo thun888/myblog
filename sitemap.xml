@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/settings/</loc>
+    <loc>https://blog.hzchu.top/say/</loc>
     
     <lastmod>2024-07-29</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/say/</loc>
+    <loc>https://blog.hzchu.top/settings/</loc>
     
     <lastmod>2024-07-29</lastmod>
     
@@ -101,7 +101,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/documents/privacy-policy</loc>
+    <loc>https://blog.hzchu.top/documents/disclaimer</loc>
     
     <lastmod>2024-07-29</lastmod>
     
@@ -110,7 +110,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/documents/disclaimer</loc>
+    <loc>https://blog.hzchu.top/documents/privacy-policy</loc>
     
     <lastmod>2024-07-29</lastmod>
     
@@ -632,7 +632,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/Artalk-doc/QandA/</loc>
+    <loc>https://blog.hzchu.top/wiki/Artalk-doc/develop/</loc>
     
     <lastmod>2022-02-12</lastmod>
     
@@ -641,7 +641,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/Artalk-doc/develop/</loc>
+    <loc>https://blog.hzchu.top/wiki/Artalk-doc/QandA/</loc>
     
     <lastmod>2022-02-12</lastmod>
     
@@ -839,14 +839,14 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/MC/</loc>
+    <loc>https://blog.hzchu.top/tags/%E7%94%9C%E7%B3%96/</loc>
     <lastmod>2024-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/%E7%94%9C%E7%B3%96/</loc>
+    <loc>https://blog.hzchu.top/tags/MC/</loc>
     <lastmod>2024-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -881,20 +881,6 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/Stellar/</loc>
-    <lastmod>2024-07-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/tags/Typora/</loc>
-    <lastmod>2024-07-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.hzchu.top/tags/Homebox/</loc>
     <lastmod>2024-07-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -903,6 +889,20 @@
   
   <url>
     <loc>https://blog.hzchu.top/tags/%E5%AE%B6%E7%94%A8/</loc>
+    <lastmod>2024-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/tags/Stellar/</loc>
+    <lastmod>2024-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/tags/Typora/</loc>
     <lastmod>2024-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
