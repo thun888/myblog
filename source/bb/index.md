@@ -33,4 +33,4 @@ useai: false
     }
   ]
 </script>
-{% image https://asstes.hzchu.top/file/pic-bed/2021/07/5b73a4a33f9bb3df5e1236b4021492fe.gif fancybox:true %}
+{% image https://assets.hzchu.top/file/pic-bed/2021/07/5b73a4a33f9bb3df5e1236b4021492fe.gif fancybox:true %}
