@@ -2,6 +2,15 @@
  * memos.js 24.3.10
  * https://immmmm.com/
  */
+
+let currentUrl = window.location.href;
+let hashIndex = currentUrl.indexOf('#');
+if (hashIndex !== -1) {
+    let newUrl = currentUrl.substring(0, hashIndex);
+    history.replaceState(null, null, newUrl);
+}
+
+
 var memosData = {
     dom:"#memos",
     listDom:"#memo-list",
