@@ -36,4 +36,5 @@ new_comment:
   title: 最新评论
   api: https://artalk.hzchu.top/api/v2/stats/latest_comments?site_name=Thun888 # 此处为 Artalk API 地址，末尾为站点名称
   type: artalk
-  limit: 5 # 限制获取数量，默认为 10
+  limit: 10 # 限制获取数量，默认为 10
+  hide: thun888
