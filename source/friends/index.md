@@ -8,21 +8,23 @@ leftbar: [recent]
 rightbar: [friends_timeline]
 ---
 
-{% quot 朋友们 icon:hashtag %}
-
-{% sites friends %}
-
 {% quot 大佬 icon:hashtag %}
 
 {% sites mogul %}
 
+{% quot 朋友们 icon:hashtag %}
+
+{% sites friends %}
+
 {% quot 我可以交换友链吗？ %}
+
+- 与博主完成至少3次有效互动
 
 - 内容不能违反中国大陆法律
 
   如果存在大量`违法色情`信息（包括但不限于）经举报/检查发现后永久移除
 
-- 如果您的网站超过90天无方式访问将会移除
+- 如果您的网站超过90天无法访问将会移除
 
 - 如果友链信息有变更可以在下方留言
 

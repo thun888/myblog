@@ -242,7 +242,7 @@ WantedBy=multi-user.target
 
 <!-- tab PHP版本 -->
 
-> 需要修改redis连接地址，$user_token和$mainurl
+> 需要修改redis连接地址，`$user_token`和`$mainurl`
 
 Code:
 
@@ -258,7 +258,7 @@ location / {
 <!-- tab Python版本 -->
 Code:
 
-> 需要修改redis连接地址，user_token和mainurl
+> 需要修改redis连接地址，`user_token` 和` mainurl`
 
 安装依赖：
 

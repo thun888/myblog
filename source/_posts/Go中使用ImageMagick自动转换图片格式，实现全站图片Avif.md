@@ -3,8 +3,8 @@ title: Go中使用ImageMagick转换图片格式，实现全站图片“Avif”
 date: 2024-06-08 13:58:16
 updated: 2024-06-08 13:58:16
 tags: [Go,网站]
-cover: https://dolphinsbukets.s3.bitiful.net/article-cover/cover-8.png?fmt=avif
-banner: https://dolphinsbukets.s3.bitiful.net/article-cover/cover-8.png?fmt=avif&q=50
+cover: https://onep.hzchu.top/mount/pic/myself/2024/08/article-cover_cover-8.png?fmt=avif
+banner: https://onep.hzchu.top/mount/pic/myself/2024/08/article-cover_cover-8.png?fmt=avif
 description: 改进了下之前写的“CDN”程序，使其支持在边缘转换图片格式
 categories: 技术类
 ---

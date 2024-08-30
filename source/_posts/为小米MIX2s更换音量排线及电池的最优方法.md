@@ -3,9 +3,9 @@ title: 为小米MIX2s更换音量排线及电池的最优方法
 date: 2024-04-20 09:57:40
 updated: 2024-04-20 09:57:40
 tags: DIY
-cover: https://dolphinsbukets.s3.bitiful.net/article-cover/cover-5.png?fmt=avif
 description: 被网上的视频坑了好几回，总结下过程
-banner: https://dolphinsbukets.s3.bitiful.net/article-cover/cover-5.png?fmt=avif&q=50
+cover: https://onep.hzchu.top/mount/pic/myself/2024/08/article-cover_cover-5.png?fmt=avif
+banner: https://onep.hzchu.top/mount/pic/myself/2024/08/article-cover_cover-5.png?fmt=avif
 categories: 瞎折腾
 ---
 

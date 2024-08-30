@@ -3,9 +3,8 @@ title: 为小米路由器加上屏幕
 date: 2024-04-20 15:11:40
 updated: 2024-04-20 15:11:40
 tags: Mirouterui
-cover: https://dolphinsbukets.s3.bitiful.net/article-cover/cover-6.png?fmt=avif&q=50
-description: 通过MRUI构造网络请求来用小电视(SD2)监控小米路由器
-banner: https://dolphinsbukets.s3.bitiful.net/article-cover/cover-6.png?fmt=avif&q=50
+cover: https://onep.hzchu.top/mount/pic/myself/2024/08/article-cover_cover-6.png?fmt=avif
+banner: https://onep.hzchu.top/mount/pic/myself/2024/08/article-cover_cover-6.png?fmt=avif
 categories: 技术类
 ---
 

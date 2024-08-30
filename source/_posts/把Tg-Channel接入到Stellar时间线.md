@@ -74,7 +74,7 @@ const baseproxyurl="https://get-tg-channel-api.hzchu.top/?proxy=" //将中间域
 **代码：**
 
 ```markdown
-{% timeline user:thun888sthinks api:https://get-tg-channel-api.hzchu.top/?tag=DTA&limit=3 type:memos %}
+{% timeline user:thun888sthinks api:https://get-tg-channel-api.hzchu.top/?cid=1&tag=DTA&limit=3 type:memos %}
 
 {% endtimeline %}
 ```
