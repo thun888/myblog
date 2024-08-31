@@ -30,7 +30,7 @@ breadcrumb: false
 
 {% quot 关于我 icon:hashtag %}
 
-广东湛江某学校的一名高二学生，成绩还行吧。
+广东湛江某学校的一名高三学生，成绩还行吧。
 
 爱好挺广，~~就是不咋爱运动~~，运动还是要有的，免得突然暴毙{% emoji blobcat blobcatyandere %}。
 
