@@ -59,6 +59,8 @@ deb https://mirrors.tuna.tsinghua.edu.cn/debian-security bookworm-security main 
 
 #安装部分系统工具
 apt install wget curl unzip sudo -y
+#给予sudo权限
+nano /etc/sudoers
 
 #安装管理面板
 HAOZI_DL_URL="https://dl.cdn.haozi.net/panel"; curl -sSL -O ${HAOZI_DL_URL}/install_panel.sh && curl -sSL -O ${HAOZI_DL_URL}/install_panel.sh.checksum.txt && sha256sum -c install_panel.sh.checksum.txt && bash install_panel.sh || echo "Checksum 验证失败，文件可能被篡改，已终止操作"
@@ -72,6 +74,7 @@ HAOZI_DL_URL="https://dl.cdn.haozi.net/panel"; curl -sSL -O ${HAOZI_DL_URL}/inst
 安装插件 OpenResty
 安装插件 phpMyAdmin（需等待前者完毕）
 安装插件 Pure-FTPd
+
 #安装DDNS—GO
 wget https://cfproxy.hzchu.top/https://github.com/jeessy2/ddns-go/releases/download/v6.7.0/ddns-go_6.7.0_linux_x86_64.tar.gz
 tar xzvf ddns-go_6.7.0_linux_x86_64.tar.gz 
@@ -86,8 +89,20 @@ cd /opt/onep
 wget http://192.168.1.52:51515/main
 wget http://192.168.1.52:51515/config.yaml
 
+#安装探针
+
 #配置转发Cloudreve
 
 #安装Cloudflare tunnel
+
+#安装tailscale
+curl -fsSL https://tailscale.com/install.sh | sh
+tailscale up --exit-node=
+#安装docker
+curl -fsSL https://get.docker.com | bash -s docker
+#安装CloudflareSpeedtest
+docker run -d --restart=always --name CloudflareSpeedtest-Slave \
+-e MAX_MBPS=600 \
+dp.rtc.ovh/genshinminecraft/cloudflarespeedtest-slave:v0.0.6
 ```
 
