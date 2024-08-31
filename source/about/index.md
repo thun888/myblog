@@ -34,7 +34,7 @@ breadcrumb: false
 
 爱好挺广，~~就是不咋爱运动~~，运动还是要有的，免得突然暴毙{% emoji blobcat blobcatyandere %}。
 
-平时大部分时间在学校，有事情回家才会处理：<img style="display: inline-block;" src="https://onlinedisplay-api.hzchu.top/get/badge" alt="badge">
+平时大部分时间在学校，有事情回家才会处理
 
 {% quot 联系方式 icon:hashtag %}
 

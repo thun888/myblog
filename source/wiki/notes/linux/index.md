@@ -104,5 +104,7 @@ curl -fsSL https://get.docker.com | bash -s docker
 docker run -d --restart=always --name CloudflareSpeedtest-Slave \
 -e MAX_MBPS=600 \
 dp.rtc.ovh/genshinminecraft/cloudflarespeedtest-slave:v0.0.6
+
+#安全性调优 https://dusays.com/737/
 ```
 
