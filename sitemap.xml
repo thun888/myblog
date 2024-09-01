@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.hzchu.top/wiki/notes/linux/</loc>
+    
+    <lastmod>2024-09-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.hzchu.top/vercel.json</loc>
     
     <lastmod>2024-09-01</lastmod>
@@ -38,7 +47,16 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/notes/linux/</loc>
+    <loc>https://blog.hzchu.top/go</loc>
+    
+    <lastmod>2024-09-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/friends/</loc>
     
     <lastmod>2024-09-01</lastmod>
     
@@ -48,15 +66,6 @@
   
   <url>
     <loc>https://blog.hzchu.top/config.json</loc>
-    
-    <lastmod>2024-09-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/go</loc>
     
     <lastmod>2024-09-01</lastmod>
     
@@ -84,15 +93,6 @@
   
   <url>
     <loc>https://blog.hzchu.top/big/</loc>
-    
-    <lastmod>2024-09-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/friends/</loc>
     
     <lastmod>2024-09-01</lastmod>
     
@@ -641,7 +641,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/Artalk-doc/QandA/</loc>
+    <loc>https://blog.hzchu.top/wiki/Artalk-doc/API/</loc>
     
     <lastmod>2022-02-12</lastmod>
     
@@ -650,7 +650,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/Artalk-doc/API/</loc>
+    <loc>https://blog.hzchu.top/wiki/Artalk-doc/QandA/</loc>
     
     <lastmod>2022-02-12</lastmod>
     
