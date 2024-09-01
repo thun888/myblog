@@ -18,15 +18,21 @@ rightbar: [friends_timeline]
 
 {% quot 我可以交换友链吗？ %}
 
-- 与博主完成至少3次有效互动
+1. 与博主完成至少3次有效互动
 
-- 内容不能违反中国大陆法律
+2. 内容不能违反中国大陆法律，如果存在大量违法色情信息（包括但不限于）经举报/检查发现后永久移除
 
-  如果存在大量`违法色情`信息（包括但不限于）经举报/检查发现后永久移除
+3. 如果您的网站超过90天无法访问将会移除
 
-- 如果您的网站超过90天无法访问将会移除
+4. 如果友链信息有变更可以在下方留言
 
-- 如果友链信息有变更可以在下方留言
+{% folders %}
+
+<!-- folder 满足要求啦，告诉我需提供什么信息 -->
+
+本站所需友链信息可参考我提供的本站`Stellar格式`友链信息，其中`screenshot`请提供分辨率为1050×700（保持纵横比在1.5即可）的图片，直接在评论区粘贴上传即可
+
+{% endfolders %}
 
 {% quot 吾之链 icon:hashtag %}
 
@@ -34,13 +40,13 @@ rightbar: [friends_timeline]
 
 <!-- tab Stellar -->
 
-{% codeblock lang:yaml %}
+```yaml
 - title: Thun888's Blog
   url: https://blog.hzchu.top/
   avatar: https://blog.hzchu.top/img/avatar.webp
   screenshot: https://onep.hzchu.top/mount/pic/blog-hzchu-top.png
   description: 夏日当空，心如深渊
-{% endcodeblock %}
+```
 
 <!-- tab 通用 -->
 
