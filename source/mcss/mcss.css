@@ -97,6 +97,10 @@
   img {
     max-height: 100vh;
   }
+  .md-text {
+    max-width: 100%;
+    line-height:unset;
+  }
 }
 /* 文章内链接：为链接使用荧光笔下划线效果 */
 li:not([class]) a:not([class]),

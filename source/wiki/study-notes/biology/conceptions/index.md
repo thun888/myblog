@@ -56,9 +56,7 @@ type: story
 
 #### 乳酸菌
 
-包括乳酸杆菌和乳酸链球菌
-
-厌氧细菌（原核生物，无线粒体等结构）
+> 包括乳酸杆菌和乳酸链球菌，厌氧细菌（原核生物，无线粒体等结构）
 
 1. 类型：异养厌氧型
 2. 繁殖方式：二分裂
@@ -67,8 +65,8 @@ type: story
 
 #### 酵母菌
 
-1. 类型：异养兼性厌氧型，单细胞真菌（真核生物），只丁质/壳多糖壁
-2. 繁殖方式：使用出芽生殖或孢子生殖
+1. 类型：异养兼性厌氧型，单细胞真菌（真核生物），几丁质/壳多糖壁
+2. 繁殖方式：使用出芽生殖（属于{% u 有丝分裂 %}）或孢子生殖
 3. 适宜温度：18℃~30℃（有多种菌）
 4. 发酵时间：10~12天
 5. 用途：酿酒
@@ -83,9 +81,9 @@ type: story
 
 ### 方程式
 
-醋酸菌在糖原充足的环境下：$\text{C}_6\text{H}_{12}\text{O}_6 + \text{O}_2 \xrightarrow{\text{酶}} 2\text{CH}_3\text{COOH}(乳酸) + 2\text{CO}_2 + 2\text{H}_2\text{O} + \text{能量}$
+醋酸菌在糖原充足的环境下：$\text{C}_6\text{H}_{12}\text{O}_6 + \text{O}_2 \xrightarrow{\text{酶}} 2\text{CH}_3\text{COOH}(醋酸) + 2\text{CO}_2 + 2\text{H}_2\text{O} + \text{能量}$
 
-糖原不足的情况下使用酒精：$\text{C}_2\text{H}_5\text{OH} + \text{O}_2 \xrightarrow{\text{酶}} \text{CH}_3\text{COOH}(乳酸) + \text{H}_2\text{O} + \text{能量}$
+糖原不足的情况下使用酒精：$\text{C}_2\text{H}_5\text{OH} + \text{O}_2 \xrightarrow{\text{酶}} \text{CH}_3\text{COOH}(醋酸) + \text{H}_2\text{O} + \text{能量}$
 
 酵母菌产生酒精：$\text{C}_6\text{H}_{12}\text{O}_6 \xrightarrow{\text{酶}} 2\text{C}_2\text{H}_5\text{OH}(酒精) + 2\text{CO}_2 + \text{能量}$
 
