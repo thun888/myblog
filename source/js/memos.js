@@ -3,12 +3,19 @@
  * https://immmmm.com/
  */
 
-let currentUrl = window.location.href;
-let hashIndex = currentUrl.indexOf('#');
-if (hashIndex !== -1) {
-    let newUrl = currentUrl.substring(0, hashIndex);
-    history.replaceState(null, null, newUrl);
+// let currentUrl = window.location.href;
+// let hashIndex = currentUrl.indexOf('#');
+// if (hashIndex !== -1) {
+//     let newUrl = currentUrl.substring(0, hashIndex);
+//     history.replaceState(null, null, newUrl);
+// }
+
+function getQueryParam(param) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(param);
 }
+
+const page_id = getQueryParam('id');
 
 
 var memosData = {
@@ -424,6 +431,9 @@ var memosData = {
       });
     for (var i = 0; i < data.length; i++) {
       let memo = data[i];
+      if (page_id && memo.id != page_id) {
+        continue
+      }
       //console.log(memo)
       let link = memo.link;
       let memoString = JSON.stringify(memo).replace(/"/g, '&quot;');
