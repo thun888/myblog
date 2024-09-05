@@ -246,7 +246,113 @@ WantedBy=multi-user.target
 
 Code:
 
-{% coding https://raw.githubusercontent.com/thun888/MNSLXOD/main/jump/php/index.php php %}
+```php
+<?php
+// 连接 Redis 服务器
+$redis = new Redis();
+$redis->connect('127.0.0.1', 6379);
+$redis->select(2);
+//token
+$user_token = "yourtoken";
+//主服务器url
+$mainurl = "https://yourdomain.top/api/raw/?path=/";
+
+// 定义限制器类
+class Limiter {
+    private $limits;
+    private $key_func;
+    private $requests;
+
+    public function __construct($key_func, $default_limits) {
+        $this->limits = $default_limits;
+        $this->key_func = $key_func;
+        $this->requests = array();
+    }
+
+    public function limit($route, $limit) {
+        if (!isset($this->requests[$route])) {
+            $this->requests[$route] = array();
+        }
+        $key = call_user_func($this->key_func);
+        if (!isset($this->requests[$route][$key])) {
+            $this->requests[$route][$key] = array();
+        }
+        array_push($this->requests[$route][$key], time());
+        while (count($this->requests[$route][$key]) > 0 && time() - $this->requests[$route][$key][0] > 1) {
+            array_shift($this->requests[$route][$key]);
+        }
+        if (count($this->requests[$route][$key]) > $limit) {
+            http_response_code(429);
+            die('Too Many Requests');
+        }
+    }
+}
+
+// 定义获取客户端 IP 地址的函数
+function get_remote_address() {
+    return $_SERVER['REMOTE_ADDR'];
+}
+
+// 初始化限制器
+$limiter = new Limiter('get_remote_address', array('40 per second'));
+
+
+// 定义 update 路由
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && $_SERVER['REQUEST_URI'] === '/_api/update') {
+    // 检查请求速率
+    $limiter->limit('/_api/update', 5);
+
+    // 获取请求参数
+    $json = json_decode(file_get_contents('php://input'), true);
+    $token = isset($json['token']) ? $json['token'] : null;
+    $server_id = isset($json['server_id']) ? $json['server_id'] : null;
+    $url = isset($json['url']) ? $json['url'] : null;
+
+    // 检查参数完整性
+    if (!$token || !$server_id || !$url) {
+        http_response_code(400);
+        die(json_encode(array('code' => 1002, 'msg' => 'Missing required parameters.')));
+    }
+
+    // 检查 token 是否有效
+    if ($token !== $user_token) {
+        http_response_code(400);
+        die(json_encode(array('code' => 1002, 'msg' => 'Invalid token.')));
+    }
+
+    // 更新服务器信息
+    $redis->setEx("jump_$server_id", 1200, $url);
+
+    // 返回成功消息
+    header('Content-Type: application/json');
+    echo json_encode(array('code' => 0, 'msg' => 'ok'));
+}
+
+// 定义 jump 路由
+else if ($_SERVER['REQUEST_METHOD'] === 'GET' && preg_match('/^\/(.+)$/', $_SERVER['REQUEST_URI'], $matches)) {
+    // 检查请求速率
+    $limiter->limit('/<path:url>', 40);
+
+    // 获取客户端请求的 URL
+    $url = $matches[1];
+
+    // 从 Redis 中读取数据
+    for ($i = 1; $i <= 5; ++$i) {
+        if ($redis->exists("jump_$i")) {
+            $orig_url = $redis->get("jump_$i");
+            break;
+        }
+    }
+
+    // 如果未找到数据，则使用默认的原始 URL
+    if (!isset($orig_url)) {
+        $orig_url = $mainurl;
+    }
+
+    // 拼接 URL 并重定向客户端
+    header('Location: ' . ($orig_url . urlencode($url)));
+}
+```
 
 伪静态配置:
 
@@ -266,7 +372,73 @@ Code:
 pip3 install flask flask_limiter hypercorn flask_cors
 ```
 
-{% coding https://raw.githubusercontent.com/thun888/MNSLXOD/main/jump/py/main.py python %}
+```python
+from flask import Flask, jsonify, request, redirect
+from flask_limiter import Limiter
+from flask_limiter.util import get_remote_address
+import redis
+from hypercorn.asyncio import serve
+from hypercorn.config import Config
+import asyncio
+
+limiter = Limiter(
+    key_func=get_remote_address,
+    default_limits=["20 per second"],
+    storage_uri='redis://localhost:6379'
+)
+config = Config()
+#配置区
+redis_client = redis.Redis(host='localhost', port=6379, db=2)
+mainurl = "https://yourdomain.top/api/raw/?path=/"
+user_token = "user_token" #双端保持一致
+config.bind = ["0.0.0.0:56789"] #可自行修改端口号
+config.protocol = "h2"  # 启用HTTP2
+#注意需要替换为你的证书路径
+config.certfile = "./pem.pem"
+config.keyfile = "./key.key"
+#访问日志
+config.accesslog = "access.log"
+
+app = Flask(__name__)
+limiter.init_app(app)
+
+
+@app.route('/_api/update', methods=['POST'])
+@limiter.limit("5 per second")
+def update():
+    token = request.json.get('token')
+    server_id = request.json.get('server_id')
+    url = request.json.get('url')
+    if not token or not url or not server_id:
+        return jsonify({'code':1002,'msg': 'Missing required parameters.'}), 400
+    if token != user_token:
+        return jsonify({'code':1002,'msg': 'Invalid token.'}), 400
+    print(server_id)
+    key = f'jump_{server_id}'
+    redis_client.setex(key, 1200, url)
+    return jsonify({'code':0,'msg': 'ok'}), 200
+
+@app.route('/<path:url>')
+@limiter.limit("30 per second")
+def jump(url):
+    for i in range(1, 6):
+        # 从Redis中读取数据
+        orig_url = None
+        value = redis_client.get(f'jump_{i}')
+        if value:
+            orig_url = value.decode('utf-8')
+            break
+    if not orig_url:
+        orig_url = mainurl
+    backurl = orig_url + url
+    return redirect(backurl)
+
+
+if __name__ == '__main__':
+    #app.run(debug=True)
+    #app.run()
+    asyncio.run(serve(app, config))
+```
 
 <!-- tab 解析 -->
 
@@ -317,9 +489,237 @@ pip3 install flask flask_limiter hypercorn flask_cors
 
 Code:
 
-{% coding https://raw.githubusercontent.com/thun888/MNSLXOD/main/node/main.py python %}
+```python
+import os
+import requests
+from flask import Flask, jsonify, send_file, request
+from flask_limiter import Limiter
+from flask_limiter.util import get_remote_address
+import sqlite3
+import datetime
+import threading
+import time
+from hypercorn.asyncio import serve
+from hypercorn.config import Config
+import asyncio
 
-> 节点附带了两个简易api用于查看该节点运行情况
+limiter = Limiter(
+    key_func=get_remote_address,
+    default_limits=["40 per second"],
+    storage_uri='redis://localhost:6379'
+)
+config = Config()
+###配置区###
+config.bind = ["0.0.0.0:45678"]  # 自行更改端口
+config.protocol = "h2"  # 启用HTTP2
+#注意需要替换为你的证书路径，不用就连带下面两行注释掉
+config.certfile = "./pem.pem"
+config.keyfile = "./key.key"
+#访问日志目录
+config.accesslog = "access.log"
+server_id = 1
+mainurl = "https://yuordomain.top/api/raw/?path=/"
+jumpurl = "https://jumpurl/"
+apiurl = "http://apiurl/"
+backupurl = "http://backupurl/"
+token = "token"
+
+app = Flask(__name__)
+limiter.init_app(app)
+
+def savetodatabase(nowtime,outdata,indata):
+    conn = sqlite3.connect('data.db')
+    cursor_daily = conn.cursor()
+    cursor_daily.execute("SELECT COUNT(*) FROM daily WHERE date=?", (nowtime,))
+    if cursor_daily.fetchone()[0] == 0:
+        cursor_daily.execute("INSERT INTO daily (date, get, traffic_out, traffic_in) VALUES (?, ?, ?, ?)", (nowtime, 1, outdata, indata))
+    else:
+        cursor_daily.execute("UPDATE daily SET traffic_out = traffic_out + ?, get = get + ?, traffic_in = traffic_in + ? WHERE date=?", (outdata, 1, indata, nowtime))
+
+    cursor_total = conn.cursor()
+    cursor_total.execute("UPDATE total SET traffic_out = traffic_out + ?, get = get + ?, traffic_in = traffic_in + ?", (outdata, 1, indata))
+    conn.commit()
+
+    return
+
+@app.route('/_api/status')
+@limiter.limit("1 per second")
+def get_status():
+    uptime = str(datetime.datetime.now() - start_time)
+    conn = sqlite3.connect('data.db')
+    cursor = conn.cursor()
+    cursor.execute("SELECT get,traffic_in,traffic_out FROM total")
+    result = cursor.fetchone()
+    get = result[0]
+    traffic_in = result[1]
+    traffic_out = result[2]
+    # 构造状态信息
+    status = {
+        'server_id': server_id,
+        'uptime': uptime,
+        'traffic_out': traffic_out,
+        'traffic_in': traffic_in,
+        'get': get
+    }
+
+    return jsonify(status)
+
+@app.route('/_api/traffic')
+@limiter.limit("1 per second")
+def get_traffic_daily():
+    conn = sqlite3.connect('data.db')
+    cursor = conn.cursor()
+
+    cursor.execute('SELECT * FROM "daily" ORDER BY "date" DESC LIMIT 0,14')
+
+    rows = cursor.fetchall()
+    cursor.close()
+    conn.close()
+
+    data = []
+    for row in rows:
+        data.append({
+            'date': row[0],
+            'traffic_out': row[3],
+            'traffic_in': row[2]
+        })
+
+    return jsonify(data)
+
+@app.route('/_api/cache_clean')
+@limiter.limit("1 per second")
+def cache_clean():
+    day = int(request.args.get('day', 1))
+    size = clear_old_files(0)
+    status = {
+        'size': size,
+    }
+
+    return jsonify(status)
+
+@app.route('/<path:url>')
+@limiter.limit("40 per second")
+
+def download_file(url):
+    #print(url)
+    if url == "favicon.ico":
+        url = "mount/pic/favicon.webp"
+    cache_path = os.path.join('tmp', url)
+    nowtime = datetime.datetime.now().strftime("%Y-%m-%d")
+    if os.path.exists(cache_path):
+        file_size = os.path.getsize(cache_path)
+        savetodatabase(nowtime,file_size,0)
+        return send_file(cache_path)
+
+    primary_url = mainurl + url
+    response = requests.get(primary_url, allow_redirects=True)
+
+    if response.status_code == 200:
+        try:
+            os.makedirs(os.path.dirname(cache_path))
+        except OSError:
+            pass
+        with open(cache_path, 'wb') as f:
+            f.write(response.content)
+
+        file_size = os.path.getsize(cache_path)
+        savetodatabase(nowtime,file_size,file_size)
+        return send_file(cache_path)
+
+    print("从原站获取"+url)
+    secondary_url = backupurl + url
+    response = requests.get(secondary_url, allow_redirects=True)
+
+    if response.status_code == 200:
+        try:
+            os.makedirs(os.path.dirname(cache_path))
+        except OSError:
+            pass
+        with open(cache_path, 'wb') as f:
+            f.write(response.content)
+
+        file_size = os.path.getsize(cache_path)
+        savetodatabase(nowtime,file_size,file_size)
+        return send_file(cache_path)
+
+    else:
+        error_msg = 'Failed to download file. URLs: %s' % (primary_url)
+        app.logger.error(error_msg)
+        return jsonify({'error': error_msg}), 404
+    
+def get_directory_size(path):
+    total_size = 0
+    for dirpath, dirnames, filenames in os.walk(path):
+        for filename in filenames:
+            file_path = os.path.join(dirpath, filename)
+            total_size += os.path.getsize(file_path)
+    return total_size
+
+def clear_old_files(days):
+    total_deleted_size = 0  # 用于记录删除文件的总大小
+    # 获取当前时间
+    current_time = datetime.datetime.now()
+
+    # 计算1天前的时间
+    one_day_ago = current_time - datetime.timedelta(days=days)
+
+    # 遍历目录中的所有文件
+    for root, dirs, files in os.walk(current_directory):
+        for file in files:
+            file_path = os.path.join(root, file)
+
+            modification_time = datetime.datetime.fromtimestamp(os.path.getmtime(file_path))
+
+            # 如果文件的修改时间早于1天前的时间，则删除文件
+            if modification_time < one_day_ago:
+                file_size = os.path.getsize(file_path)  # 获取文件大小
+                total_deleted_size += file_size  # 累加删除文件的大小
+                os.remove(file_path)
+
+    return total_deleted_size
+
+def delcache():
+    size = get_directory_size(current_directory)
+    if size > 5368709120:
+        clear_old_files(10)                       
+def update():
+    data = {
+        "token": token,
+        "server_id": server_id, 
+        "url": jumpurl 
+    }
+
+    # 定义目标网址
+    target_url = apiurl + "_api/update"
+    # 发送post请求，并获取响应
+    response = requests.post(target_url, json=data)       
+    return response                      
+def run_timer():
+    while True:                                                                                                                                                                              
+        # 每15分钟执行一次
+        time.sleep(15 * 60)
+        threading.Thread(target=delcache).start()
+        threading.Thread(target=update).start()
+
+if __name__ == '__main__':
+    start_time = datetime.datetime.now()
+    if not os.path.exists('tmp'):
+        os.mkdir('tmp')
+    current_directory = os.path.join(os.getcwd(), 'tmp')
+    print("缓存目录为:",current_directory)
+    update()
+    #print(start_time)
+    timer_thread = threading.Thread(target=run_timer)
+    timer_thread.daemon = True
+    timer_thread.start()
+    # app.run(debug=True,host='0.0.0.0')
+    # app.run(host='0.0.0.0')
+    asyncio.run(serve(app, config))  # 启动服务器
+```
+
+
+
+> 节点附带了两个简易接口用于查看该节点运行情况
 >
 > 实际部署中可能需要自行配置ssl证书以使开启了https的网站可以正常访问
 >
