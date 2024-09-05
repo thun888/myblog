@@ -65,6 +65,24 @@
   </url>
   
   <url>
+    <loc>https://blog.hzchu.top/documents/disclaimer/</loc>
+    
+    <lastmod>2024-09-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/documents/privacy-policy/</loc>
+    
+    <lastmod>2024-09-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.hzchu.top/config.json</loc>
     
     <lastmod>2024-09-05</lastmod>
@@ -93,24 +111,6 @@
   
   <url>
     <loc>https://blog.hzchu.top/big/</loc>
-    
-    <lastmod>2024-09-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/documents/disclaimer/</loc>
-    
-    <lastmod>2024-09-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/documents/privacy-policy/</loc>
     
     <lastmod>2024-09-05</lastmod>
     
@@ -808,6 +808,13 @@
   </url>
   
   <url>
+    <loc>https://blog.hzchu.top/tags/Blog/</loc>
+    <lastmod>2024-09-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.hzchu.top/tags/oneindex/</loc>
     <lastmod>2024-09-05</lastmod>
     <changefreq>weekly</changefreq>
@@ -816,13 +823,6 @@
   
   <url>
     <loc>https://blog.hzchu.top/tags/web/</loc>
-    <lastmod>2024-09-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/tags/Blog/</loc>
     <lastmod>2024-09-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -962,13 +962,6 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/%E5%85%AC%E5%91%8A/</loc>
-    <lastmod>2024-09-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.hzchu.top/tags/Vercel/</loc>
     <lastmod>2024-09-05</lastmod>
     <changefreq>weekly</changefreq>
@@ -976,7 +969,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/CFW/</loc>
+    <loc>https://blog.hzchu.top/tags/%E5%85%AC%E5%91%8A/</loc>
     <lastmod>2024-09-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -984,6 +977,13 @@
   
   <url>
     <loc>https://blog.hzchu.top/tags/%E7%81%AB%E7%BB%92/</loc>
+    <lastmod>2024-09-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/tags/CFW/</loc>
     <lastmod>2024-09-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
