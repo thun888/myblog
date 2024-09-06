@@ -128,4 +128,5 @@ type: story
 | School Art Festival Concert                 | 校园艺术节音乐会           |
 | Student Union                               | 学生会                     |
 | Rural China                                 | 乡土中国                   |
+| library assistant                           | 图书管理员                 |
 

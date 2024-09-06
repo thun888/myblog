@@ -15,6 +15,7 @@ tree:
   '数学': 
     - maths/conceptions/index
   '英语':
+    - english/index
     - english/small-composition/index
     - english/big-composition/index
     - english/irregular-verbs/index

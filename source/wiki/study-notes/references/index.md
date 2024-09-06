@@ -22,6 +22,7 @@ updated: 2024-06-07 7:39:32
 ## 物理
 
 1. [【高中物理】物理学史最全总结！ 物理学历史都来了 - 哔哩哔哩 (bilibili.com)](https://www.bilibili.com/read/cv8291065/)
+1. [高中物理必修二·开普勒三定律 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/680101413)
 
 ## 化学
 
@@ -60,4 +61,4 @@ updated: 2024-06-07 7:39:32
 
 ## 有用的
 
-1. [ZHI-BLOG (zhwei.tech)](https://blog.zhwei.tech/)
+1. [ZHI-BLOG (zhwei101.com)](https://blog.zhwei101.com/index.php/tag/数学/)
