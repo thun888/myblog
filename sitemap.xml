@@ -20,24 +20,6 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/say/</loc>
-    
-    <lastmod>2024-09-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/settings/</loc>
-    
-    <lastmod>2024-09-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.hzchu.top/wiki/Artalk-doc/use/</loc>
     
     <lastmod>2024-09-06</lastmod>
@@ -48,6 +30,24 @@
   
   <url>
     <loc>https://blog.hzchu.top/wiki/notes/linux/</loc>
+    
+    <lastmod>2024-09-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/say/</loc>
+    
+    <lastmod>2024-09-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/settings/</loc>
     
     <lastmod>2024-09-06</lastmod>
     
@@ -380,7 +380,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/study-notes/english/vocabulary/</loc>
+    <loc>https://blog.hzchu.top/wiki/study-notes/english/small-composition/</loc>
     
     <lastmod>2024-06-07</lastmod>
     
@@ -389,7 +389,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/study-notes/english/small-composition/</loc>
+    <loc>https://blog.hzchu.top/wiki/study-notes/english/vocabulary/</loc>
     
     <lastmod>2024-06-07</lastmod>
     
@@ -808,6 +808,13 @@
   </url>
   
   <url>
+    <loc>https://blog.hzchu.top/tags/Blog/</loc>
+    <lastmod>2024-09-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.hzchu.top/tags/oneindex/</loc>
     <lastmod>2024-09-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -816,13 +823,6 @@
   
   <url>
     <loc>https://blog.hzchu.top/tags/web/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/tags/Blog/</loc>
     <lastmod>2024-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
