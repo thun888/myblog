@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/study-notes/chemistry/make-reactions/</loc>
+    <loc>https://blog.hzchu.top/wiki/notes/linux/</loc>
     
     <lastmod>2024-09-06</lastmod>
     
@@ -12,24 +12,6 @@
   
   <url>
     <loc>https://blog.hzchu.top/vercel.json</loc>
-    
-    <lastmod>2024-09-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/wiki/Artalk-doc/use/</loc>
-    
-    <lastmod>2024-09-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/wiki/notes/linux/</loc>
     
     <lastmod>2024-09-06</lastmod>
     
@@ -56,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/config.json</loc>
+    <loc>https://blog.hzchu.top/wiki/Artalk-doc/use/</loc>
     
     <lastmod>2024-09-06</lastmod>
     
@@ -66,6 +48,24 @@
   
   <url>
     <loc>https://blog.hzchu.top/go</loc>
+    
+    <lastmod>2024-09-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/friends/</loc>
+    
+    <lastmod>2024-09-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/config.json</loc>
     
     <lastmod>2024-09-06</lastmod>
     
@@ -101,7 +101,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/friends/</loc>
+    <loc>https://blog.hzchu.top/documents/privacy-policy/</loc>
     
     <lastmod>2024-09-06</lastmod>
     
@@ -119,7 +119,16 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/documents/privacy-policy/</loc>
+    <loc>https://blog.hzchu.top/wiki/study-notes/english/</loc>
+    
+    <lastmod>2024-09-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/wiki/study-notes/chemistry/make-reactions/</loc>
     
     <lastmod>2024-09-06</lastmod>
     
