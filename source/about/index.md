@@ -38,7 +38,7 @@ breadcrumb: false
 
 {% quot 联系方式 icon:hashtag %}
 
-- 邮箱: thun888#hzchu.top
+- 邮箱: thun888 at hzchu.top
 - TG: thun888
 - 本站: [留言区](/say)
 

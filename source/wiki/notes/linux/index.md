@@ -74,6 +74,7 @@ HAOZI_DL_URL="https://dl.cdn.haozi.net/panel"; curl -sSL -O ${HAOZI_DL_URL}/inst
 安装插件 OpenResty
 安装插件 phpMyAdmin（需等待前者完毕）
 安装插件 Pure-FTPd
+安装插件 Frp
 
 #安装DDNS—GO
 wget https://cfproxy.hzchu.top/https://github.com/jeessy2/ddns-go/releases/download/v6.7.0/ddns-go_6.7.0_linux_x86_64.tar.gz
@@ -106,5 +107,25 @@ docker run -d --restart=always --name CloudflareSpeedtest-Slave \
 dp.rtc.ovh/genshinminecraft/cloudflarespeedtest-slave:v0.0.6
 
 #安全性调优 https://dusays.com/737/
+
+#安装pip
+wget https://bootstrap.pypa.io/get-pip.py
+sudo python3 get-pip.py --break-system-packages  
+nano ~/.bashrc
+ > alias pi='pip install --break-system-packages'
+
+```
+
+## 缺少依赖
+
+```bash
+-bash: ./artalk: cannot execute: required file not found
+```
+
+```bash
+ldd ./artalk
+
+# libc.musl-x86_64.so.1 => not found
+sudo apt install musl
 ```
 

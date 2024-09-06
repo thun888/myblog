@@ -50,6 +50,7 @@ updated: 2024-06-07 7:39:32
 ### 化学
 
 1. [高中有机化学 加成反应、取代反应的反应条件是什么？_百度知道 (baidu.com)](https://zhidao.baidu.com/question/1373330683098245659.html)
+1. [高中化学实验——启普发生器 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/668683890)
 
 ### 生物
 
