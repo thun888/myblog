@@ -52,7 +52,7 @@ type: story
 
 ### 开篇
 
-1. {% u Learning/Hearing %} that you are {% u crazy about %} {% emp traditional Chinese culture %},I'm writing to {% u invite %} you to {% u join %} {% emp xxxx  %},which will {% u be held %} in our school next week.
+1. {% u Learning/Hearing %} that you are {% u crazy about %}&nbsp;{% emp traditional Chinese culture %},I'm writing to {% u invite %} you to {% u join %}&nbsp;{% emp xxxx  %},which will {% u be held %} in our school next week.
 
 > 喜爱：be keen on / be fond of / have a great passion for
 >
@@ -68,8 +68,8 @@ type: story
 
 #### 介绍活动
 
-1. The contest, {% wavy whose topic is " Traditional Chinese Culture" %}, will take place in the lecture hall of our school at 9 am this coming Sunday. （篇一）
-2. To start with, this concert {% wavy is scheduled for %} this Saturday evening from 7 p.m. to 10 p.m in the lecture hall. What's more, the concert is about Chinese folk music, and the players are the top musicians in China.（篇二）
+1. The contest, {% wavy whose topic is  &quot;Traditional Chinese Culture&quot; %}, will take place in the lecture hall of our school at 9 am this coming Sunday. （篇一）
+2. To start with, this concert&nbsp;{% wavy  is scheduled for %}&nbsp;this Saturday evening from 7 p.m. to 10 p.m in the lecture hall. What's more, the concert is about Chinese folk music, and the players are the top musicians in China.（篇二）
 3. {% wavy As scheduled %}, the exhibition will be held in our school exhibition hall on Saturday, which will last for a week. During the exhibition, a wide range of activities will be held, enabling you to have a better understanding of traditional Chinese culture. It will provide you with a platform to appreciate a number of works created by well-known artists in China. In addition, it is also a: good chance for you to enjoy some fantastic performances. I'm confident that you will have a wonderful time.（篇九）
 
 #### 发出邀请
