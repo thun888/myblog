@@ -102,6 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
   selectFastNode();
   });
 
+  // 看看哪个节点快
   function selectFastNode(force) {
     console.log('[ONEP,selectFastNode] Running...');
     const selectdisabled = localStorage.getItem('onep.cdn.select.disabled');
@@ -165,13 +166,34 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  navigator.serviceWorker.register('/sw.js', { updateViaCache: 'none' })
-  .then(function(registration) {
-      // 注册成功
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-  })
-  .catch(function(err) {
-      // 注册失败
-      console.log('ServiceWorker registration failed: ', err);
-  });
+// sw
+navigator.serviceWorker.register('/sw.js', { updateViaCache: 'none' })
+.then(function(registration) {
+    // 注册成功
+    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+})
+.catch(function(err) {
+    // 注册失败
+    console.log('ServiceWorker registration failed: ', err);
+});
   
+// 删除模式
+let deleteMode = false;
+
+function toggleDeleteMode() {
+    deleteMode = !deleteMode;
+    if (deleteMode) {
+      hud.toast("已开启删除模式", 2500);
+      document.addEventListener('click', deleteElement, true);
+    } else {
+      hud.toast("已关闭删除模式", 2500);
+      document.removeEventListener('click', deleteElement, true);
+    }
+}
+
+function deleteElement(event) {
+  if (deleteMode && event.target !== document.body && !event.target.closest('.delmode-btn')) {
+    event.preventDefault(); // 阻止默认行为
+    event.target.remove();
+  }
+}
