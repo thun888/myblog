@@ -40,10 +40,14 @@ updated: 2024-06-06 22:00:32
 | C     | 能秒，但有点意思/坑                   |
 | D     | 坑人题{% emoji blobcat blobcatflip %} |
 
-
-
 ## 其它
 
 试卷库及电子化笔记：[Albums - Immich](https://photo.hzchu.top/)
 
 试卷库及电子化笔记【新】：[File Browser](https://filesb.757678.xyz/)
+
+## 版权声明
+
+一部分来自网络，一部分由我自己笔记整理而成。而来自网络的部分，也{% u 经过我大量纠错和整理，是我的劳动成果 %}，因此我希望，如有转载，{% u 请务必标明本站出处 %}，不允许商业化用途。
+
+![1726498100463](https://onep.hzchu.top/mount/pic/myself/2024/09/1726498100463.jpg?fmt=avif)

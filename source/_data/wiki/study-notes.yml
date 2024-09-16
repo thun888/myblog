@@ -29,6 +29,7 @@ tree:
     - chemistry/equipments/index
     - chemistry/conceptions/index
     - chemistry/text/index
+    - chemistry/colors/index
   '生物': 
     - biology/thingsandcolors/index
     - biology/conceptions/index
