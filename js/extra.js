@@ -192,7 +192,7 @@ function toggleDeleteMode() {
 }
 
 function deleteElement(event) {
-  if (deleteMode && event.target !== document.body && !event.target.closest('.delmode-btn')) {
+  if (deleteMode && event.target !== document.body && !event.target.closest('.delmode-btn') && !event.target.closest('.float-panel')) {
     event.preventDefault(); // 阻止默认行为
     event.target.remove();
   }
