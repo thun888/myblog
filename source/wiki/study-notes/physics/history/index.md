@@ -331,3 +331,29 @@ type: story
 
 
 74、激光——被誉为20世纪的“世纪之光”。
+
+## 附录
+
+### 牛顿运动定律
+
+1. 牛顿第一运动定律：在没有外力作用下孤立质点保持静止或做匀速直线运动；
+
+2. 牛顿第二运动定律：$F=ma$
+
+   {% image https://onep.hzchu.top/mount/pic/myself/2024/09/image-20240906173142029.png download:https://onep.hzchu.top/mount/pic/myself/2024/09/image-20240906173142029.png %}
+
+3. 牛顿第三运动定律：相互作用的两个质点之间的作用力和反作用力总是大小相等，方向相反，作用在同一条直线上；
+
+
+
+{% image https://onep.hzchu.top/mount/pic/myself/2024/09/image-20240906175345391.png download:https://onep.hzchu.top/mount/pic/myself/2024/09/image-20240906175345391.png %}
+
+{% image https://onep.hzchu.top/mount/pic/myself/2024/09/image-20240906173228400.png download:https://onep.hzchu.top/mount/pic/myself/2024/09/image-20240906173228400.png %}
+
+{% image https://onep.hzchu.top/mount/pic/myself/2024/09/image-20240906173242511.png download:https://onep.hzchu.top/mount/pic/myself/2024/09/image-20240906173242511.png %}
+
+### 开普勒三大定律
+
+1. 轨道定律：每个行星都沿着一个椭圆形的轨道绕太阳转动，太阳位于该椭圆的一个焦点上。
+2. 面积定律：在任意给定的时间内，太阳和行星之间的连线扫过的面积是相等的。
+3. 周期定律：行星绕太阳公转的周期的平方与其椭圆轨道的半长轴的立方成正比。（$\frac{r^3}{T^2} = \frac{G}{4\pi^2}M = PM$）（令$P = \frac{G}{4\pi^2}$）
