@@ -29,6 +29,7 @@ type: story
 1. 合成部位：{% u 幼芽、幼根和未成熟的种子 %}
 2. 主要作用：1.促进细胞伸长，从而引起植株增高。2.促进细胞分裂与分化。3.促进种子萌发、开花和果实发育。
 3. 扩展：其可促进生长素合成，抑制生长素分解，故作用与合成部位与生长素类似。
+4. 病毒：可由赤霉菌产生使水稻患恶苗病
 
 ### 乙烯
 
@@ -83,7 +84,7 @@ type: story
 
 醋酸菌在糖原充足的环境下：$\text{C}_6\text{H}_{12}\text{O}_6 + \text{O}_2 \xrightarrow{\text{酶}} 2\text{CH}_3\text{COOH}(醋酸) + 2\text{CO}_2 + 2\text{H}_2\text{O} + \text{能量}$
 
-糖原不足的情况下使用酒精：$\text{C}_2\text{H}_5\text{OH} + \text{O}_2 \xrightarrow{\text{酶}} \text{CH}_3\text{COOH}(醋酸) + \text{H}_2\text{O} + \text{能量}$
+醋酸菌在糖原不足的情况下使用酒精：$\text{C}_2\text{H}_5\text{OH} + \text{O}_2 \xrightarrow{\text{酶}} \text{CH}_3\text{COOH}(醋酸) + \text{H}_2\text{O} + \text{能量}$
 
 酵母菌产生酒精：$\text{C}_6\text{H}_{12}\text{O}_6 \xrightarrow{\text{酶}} 2\text{C}_2\text{H}_5\text{OH}(酒精) + 2\text{CO}_2 + \text{能量}$
 

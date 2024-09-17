@@ -8,6 +8,9 @@ layout: page
 {% timeline user:thun888sthinks api:https://get-tg-channel-api.hzchu.top/?cid=2&tag=blogchanges&usetgclassification=ture&limit=2 type:memos %}
 {% endtimeline %}
 
+{% folders %}
+<!-- folder 静态存档 -->
+
 {% timeline %}
 
 <!-- node 2024/7/22 23:33:53 -->
@@ -149,3 +152,5 @@ layout: page
 <!-- node 2021/5/?\~2021/7/14 -->
 日常修改
 {% endtimeline %}
+
+{% endfolders %}

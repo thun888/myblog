@@ -92,7 +92,17 @@
   h1,h2,h3,h4,h5, h6 {
     margin: 0 !important;
   }
-
+  table {
+    overflow-x: hidden !important; /* 隐藏水平滚动条 */
+    /* white-space: nowrap; 禁止内容换行 */
+  }
+  .tag-plugin.grid[bg]>.cell {
+    padding: unset !important;
+  }
+  .l_body.story div.tag-plugin, .l_body.story p>img {
+    margin-top: unset !important;
+    margin-bottom: unset !important;
+  }
   /* 限制图片高度 */
   img {
     max-height: 100vh;
