@@ -44,7 +44,7 @@ updated: 2024-06-06 22:00:32
 
 试卷库及电子化笔记：[Albums - Immich](https://photo.hzchu.top/)
 
-试卷库及电子化笔记【新】：[File Browser](https://filesb.757678.xyz/)
+试卷库及电子化笔记【新】：[File Browser](https://filebrowser.hzchu.top/files)
 
 ## 版权声明
 
