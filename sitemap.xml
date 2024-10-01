@@ -92,7 +92,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/about/</loc>
+    <loc>https://blog.hzchu.top/bb/</loc>
     
     <lastmod>2024-10-01</lastmod>
     
@@ -101,7 +101,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/bb/</loc>
+    <loc>https://blog.hzchu.top/about/</loc>
     
     <lastmod>2024-10-01</lastmod>
     
@@ -854,14 +854,14 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/Cloudflare/</loc>
+    <loc>https://blog.hzchu.top/tags/Go/</loc>
     <lastmod>2024-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/Go/</loc>
+    <loc>https://blog.hzchu.top/tags/Cloudflare/</loc>
     <lastmod>2024-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -980,14 +980,14 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/Vercel/</loc>
+    <loc>https://blog.hzchu.top/tags/%E5%85%AC%E5%91%8A/</loc>
     <lastmod>2024-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/tags/%E5%85%AC%E5%91%8A/</loc>
+    <loc>https://blog.hzchu.top/tags/Vercel/</loc>
     <lastmod>2024-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
