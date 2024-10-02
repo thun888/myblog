@@ -119,3 +119,27 @@ table a:not([class]) {
   padding-bottom: 0.1rem;
   background: linear-gradient(0, var(--theme-link-opa), var(--theme-link-opa)) no-repeat center bottom / 100% 40%;
 }
+
+.atk-grp-switcher {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  white-space: nowrap;
+  height: 35px !important; /* You can adjust this value */
+}
+
+/* Hide default scrollbar */
+.atk-grp-switcher::-webkit-scrollbar {
+  height: 5px; /* Height of scrollbar */
+}
+
+/* Customize scrollbar track */
+.atk-grp-switcher::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+/* Customize scrollbar thumb */
+.atk-grp-switcher::-webkit-scrollbar-thumb {
+  background-color: var(--at-color-main);
+  border-radius: 3px;
+}
