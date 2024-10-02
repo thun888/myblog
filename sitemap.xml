@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.hzchu.top/2024/%E6%95%B4%E7%90%86%E4%B8%80%E4%B8%8B%E5%AE%B6%E9%87%8C%E7%9A%84%E7%BD%91%E7%BB%9C%E8%AE%BE%E5%A4%87/</loc>
+    
+    <lastmod>2024-10-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.hzchu.top/vercel.json</loc>
     
     <lastmod>2024-10-02</lastmod>
@@ -56,33 +65,6 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/config.json</loc>
-    
-    <lastmod>2024-10-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/bb/</loc>
-    
-    <lastmod>2024-10-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/big/</loc>
-    
-    <lastmod>2024-10-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.hzchu.top/documents/disclaimer/</loc>
     
     <lastmod>2024-10-02</lastmod>
@@ -101,7 +83,34 @@
   </url>
   
   <url>
+    <loc>https://blog.hzchu.top/config.json</loc>
+    
+    <lastmod>2024-10-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.hzchu.top/about/</loc>
+    
+    <lastmod>2024-10-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/bb/</loc>
+    
+    <lastmod>2024-10-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/big/</loc>
     
     <lastmod>2024-10-02</lastmod>
     
