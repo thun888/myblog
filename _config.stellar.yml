@@ -228,6 +228,8 @@ tag_plugins:
     aru-l: https://static.hzchu.top/cdn-x/emoji/aru-l/{name}.gif
     tieba: https://static.hzchu.top/cdn-x/emoji/tieba/{name}.png
     blobcat: https://static.hzchu.top/waline-blobcatemojis@1.0/blobs/{name}.png
+    azukisan: https://onep.hzchu.top/mount/pic/emotions/azukisan/{name}.png
+    neko: https://onep.hzchu.top/mount/pic/emotions/neko/{name}.png
 
 ######## JS Plugins ########
 plugins:

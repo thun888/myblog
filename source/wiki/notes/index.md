@@ -259,3 +259,14 @@ ERROR: No matching distribution found for hashlib
 ```
 
 根本不用装
+
+## Artalk
+
+1. **无法保存emoji**：
+
+```mysql
+ALTER DATABASE your_database_name CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci;
+ALTER TABLE atk_comments CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE atk_comments MODIFY COLUMN content TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+```
+
