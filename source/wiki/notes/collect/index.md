@@ -42,9 +42,18 @@ updated: 2024-06-08 12:05:32
 
 1. [Nginx 跨域设置(CORS)_nginx配置跨域-CSDN博客](https://blog.csdn.net/yujia_666/article/details/108490178)
 
+### 脚本类
+
+1. [Linux服务器磁盘空间占用情况分析与清理指南](https://www.cnblogs.com/zengzuo613/p/18434300)
+
 ## 工具
 
-[百度文库下载](https://www.mmhtml.com/)
+1. [百度文库下载](https://www.mmhtml.com/)
 
-1. 数据库管理：[DBeaver](https://dbeaver.io/)
+2. 数据库管理：
 
+   - [DBeaver](https://dbeaver.io/)
+
+   - [DB Browser for SQLite](https://sqlitebrowser.org/dl/)
+
+3. AI视频换脸：[VIGGLE](https://viggle.ai/)

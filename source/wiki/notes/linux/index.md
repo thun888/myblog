@@ -1,3 +1,11 @@
+---
+wiki: notes
+title: Linux
+updated: 2024-10-01 21:05:32
+---
+
+
+
 ## 报错类
 
 ### dpkg
@@ -27,9 +35,58 @@ sudo apt-get install -f
 
 
 
+## Neofetch 
 
+```toml ~/.config/neofetch/config.conf
+# See this wiki page for more info:
+# https://github.com/dylanaraps/neofetch/wiki/Customizing-Info
+print_info() {
+    info title
+    info underline
 
+    info "OS" distro
+    info "Host" model
+    info "Kernel" kernel
+    info "CPU" cpu
+    info "GPU" gpu
 
+    info "Shell" shell
+    info "Resolution" resolution
+
+    info underline
+
+    info "Uptime" uptime
+    # info "Packages" packages
+    info "DE" de
+    info "WM" wm
+    info "WM Theme" wm_theme
+    info "Theme" theme
+    info "Icons" icons
+    # info "Terminal" term
+    info "Terminal Font" term_font
+    info "CPU Usage" cpu_usage
+    info "Memory" memory
+
+    # info "GPU Driver" gpu_driver  # Linux/macOS only
+    info "Disk" disk
+    # info "Battery" battery
+    # info "Font" font
+    # info "Song" song
+    # [[ "$player" ]] && prin "Music Player" "$player"
+    info "Local IP" local_ip
+    # info "Public IP" public_ip
+    # info "Users" users
+    # info "Locale" locale  # This only works on glibc systems.
+
+    info cols
+}
+
+...... to be full of default config
+```
+
+ps: 修改motd{% copy sudo nano /etc/motd prefix:$ %}
+
+{% image https://onep.hzchu.top/mount/pic/myself/2024/10/image-20241001213046766.png?fmt=webp download:https://onep.hzchu.top/mount/pic/myself/2024/10/image-20241001213046766.png 样式 %}
 
 ## PVE
 
