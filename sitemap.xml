@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.hzchu.top/wiki/Artalk-doc/use/</loc>
-    
-    <lastmod>2024-10-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.hzchu.top/vercel.json</loc>
     
     <lastmod>2024-10-02</lastmod>
@@ -38,6 +29,15 @@
   </url>
   
   <url>
+    <loc>https://blog.hzchu.top/wiki/Artalk-doc/use/</loc>
+    
+    <lastmod>2024-10-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.hzchu.top/go</loc>
     
     <lastmod>2024-10-02</lastmod>
@@ -56,25 +56,7 @@
   </url>
   
   <url>
-    <loc>https://blog.hzchu.top/documents/privacy-policy/</loc>
-    
-    <lastmod>2024-10-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.hzchu.top/config.json</loc>
-    
-    <lastmod>2024-10-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hzchu.top/about/</loc>
     
     <lastmod>2024-10-02</lastmod>
     
@@ -102,6 +84,24 @@
   
   <url>
     <loc>https://blog.hzchu.top/documents/disclaimer/</loc>
+    
+    <lastmod>2024-10-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/documents/privacy-policy/</loc>
+    
+    <lastmod>2024-10-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hzchu.top/about/</loc>
     
     <lastmod>2024-10-02</lastmod>
     
