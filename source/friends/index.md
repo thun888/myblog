@@ -41,7 +41,7 @@ rightbar: [friends_timeline]
 <!-- tab Stellar -->
 
 ```yaml
-- title: Thun888's Blog
+- title: Thun888
   url: https://blog.hzchu.top/
   avatar: https://blog.hzchu.top/img/avatar.webp
   screenshot: https://onep.hzchu.top/mount/pic/blog-hzchu-top.png
@@ -52,7 +52,7 @@ rightbar: [friends_timeline]
 
 {% grid bg:card %}
 
-{% copy Thun888's Blog prefix:title %}
+{% copy Thun888 prefix:title %}
 
 {% copy https://blog.hzchu.top/img/avatar.webp prefix:avatar %}
 
